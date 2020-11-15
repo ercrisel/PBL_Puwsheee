@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BA955C79-1A4D-4F0A-A191-2B0DAB7B9FF5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PBL_Puwsheee</RootNamespace>
+    <AssemblyName>PBL_Puwsheee</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.1.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.1.2\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Analysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Analysis.Designer.cs">
+      <DependentUpon>Analysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calendar\Calendar_Card.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendar\Calendar_Card.Designer.cs">
+      <DependentUpon>Calendar_Card.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calendar\Calendar_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendar\Calendar_Main.Designer.cs">
+      <DependentUpon>Calendar_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calendar\Edit_Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendar\Edit_Entry.Designer.cs">
+      <DependentUpon>Edit_Entry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calendar\Remove_Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendar\Remove_Entry.Designer.cs">
+      <DependentUpon>Remove_Entry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authentication\Log_In.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentication\Log_In.Designer.cs">
+      <DependentUpon>Log_In.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoodTracker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoodTracker.Designer.cs">
+      <DependentUpon>MoodTracker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authentication\PositiveAffirmations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentication\PositiveAffirmations.Designer.cs">
+      <DependentUpon>PositiveAffirmations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Playables\Playables_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Playables\Playables_Main.Designer.cs">
+      <DependentUpon>Playables_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Authentication\Sign_Up.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentication\Sign_Up.Designer.cs">
+      <DependentUpon>Sign_Up.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Clear_Data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\Clear_Data.Designer.cs">
+      <DependentUpon>Clear_Data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Deactivate_Account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\Deactivate_Account.Designer.cs">
+      <DependentUpon>Deactivate_Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Settings_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\Settings_Main.Designer.cs">
+      <DependentUpon>Settings_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test\Anxiety_Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test\Anxiety_Test.Designer.cs">
+      <DependentUpon>Anxiety_Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test\Depression_Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test\Depression_Test.Designer.cs">
+      <DependentUpon>Depression_Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test\Stress_Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test\Stress_Test.Designer.cs">
+      <DependentUpon>Stress_Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test\Test_Results.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test\Test_Results.Designer.cs">
+      <DependentUpon>Test_Results.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test\Test_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test\Test_Main.Designer.cs">
+      <DependentUpon>Test_Main.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Analysis.resx">
+      <DependentUpon>Analysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendar\Calendar_Card.resx">
+      <DependentUpon>Calendar_Card.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendar\Calendar_Main.resx">
+      <DependentUpon>Calendar_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendar\Edit_Entry.resx">
+      <DependentUpon>Edit_Entry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendar\Remove_Entry.resx">
+      <DependentUpon>Remove_Entry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authentication\Log_In.resx">
+      <DependentUpon>Log_In.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoodTracker.resx">
+      <DependentUpon>MoodTracker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authentication\PositiveAffirmations.resx">
+      <DependentUpon>PositiveAffirmations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Playables\Playables_Main.resx">
+      <DependentUpon>Playables_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Authentication\Sign_Up.resx">
+      <DependentUpon>Sign_Up.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\Clear_Data.resx">
+      <DependentUpon>Clear_Data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\Deactivate_Account.resx">
+      <DependentUpon>Deactivate_Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\Settings_Main.resx">
+      <DependentUpon>Settings_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test\Anxiety_Test.resx">
+      <DependentUpon>Anxiety_Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test\Depression_Test.resx">
+      <DependentUpon>Depression_Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test\Stress_Test.resx">
+      <DependentUpon>Stress_Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test\Test_Results.resx">
+      <DependentUpon>Test_Results.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test\Test_Main.resx">
+      <DependentUpon>Test_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SamplePhoto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
