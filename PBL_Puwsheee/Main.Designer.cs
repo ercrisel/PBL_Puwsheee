@@ -74,7 +74,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel1.Controls.Add(this.pageLabel);
-            this.guna2ShadowPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(60)))), ((int)(((byte)(105)))));
+            this.guna2ShadowPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.guna2ShadowPanel1.Location = new System.Drawing.Point(260, -34);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.Radius = 15;
@@ -96,6 +96,7 @@
             // 
             this.guna2Panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+            this.guna2Panel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel3.BorderRadius = 30;
             this.guna2Panel3.Controls.Add(this.exitButton);
             this.guna2Panel3.Controls.Add(this.playablesButton);
@@ -104,11 +105,11 @@
             this.guna2Panel3.Controls.Add(this.calendarButton);
             this.guna2Panel3.Controls.Add(this.logoPicture);
             this.guna2Panel3.Controls.Add(this.moodtrackerButton);
-            this.guna2Panel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(60)))), ((int)(((byte)(105)))));
-            this.guna2Panel3.Location = new System.Drawing.Point(14, 66);
+            this.guna2Panel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.guna2Panel3.Location = new System.Drawing.Point(-9, -14);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
-            this.guna2Panel3.Size = new System.Drawing.Size(68, 487);
+            this.guna2Panel3.Size = new System.Drawing.Size(91, 608);
             this.guna2Panel3.TabIndex = 5;
             // 
             // exitButton
@@ -118,7 +119,7 @@
             this.exitButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.exitButton.ForeColor = System.Drawing.Color.White;
             this.exitButton.HoverState.Parent = this.exitButton;
-            this.exitButton.Location = new System.Drawing.Point(18, 437);
+            this.exitButton.Location = new System.Drawing.Point(30, 464);
             this.exitButton.Name = "exitButton";
             this.exitButton.ShadowDecoration.Parent = this.exitButton;
             this.exitButton.Size = new System.Drawing.Size(21, 23);
@@ -133,7 +134,7 @@
             this.playablesButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.playablesButton.ForeColor = System.Drawing.Color.White;
             this.playablesButton.HoverState.Parent = this.playablesButton;
-            this.playablesButton.Location = new System.Drawing.Point(18, 334);
+            this.playablesButton.Location = new System.Drawing.Point(30, 361);
             this.playablesButton.Name = "playablesButton";
             this.playablesButton.ShadowDecoration.Parent = this.playablesButton;
             this.playablesButton.Size = new System.Drawing.Size(21, 23);
@@ -148,7 +149,7 @@
             this.analysisButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.analysisButton.ForeColor = System.Drawing.Color.White;
             this.analysisButton.HoverState.Parent = this.analysisButton;
-            this.analysisButton.Location = new System.Drawing.Point(18, 265);
+            this.analysisButton.Location = new System.Drawing.Point(30, 292);
             this.analysisButton.Name = "analysisButton";
             this.analysisButton.ShadowDecoration.Parent = this.analysisButton;
             this.analysisButton.Size = new System.Drawing.Size(21, 23);
@@ -163,7 +164,7 @@
             this.testButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.testButton.ForeColor = System.Drawing.Color.White;
             this.testButton.HoverState.Parent = this.testButton;
-            this.testButton.Location = new System.Drawing.Point(18, 218);
+            this.testButton.Location = new System.Drawing.Point(30, 245);
             this.testButton.Name = "testButton";
             this.testButton.ShadowDecoration.Parent = this.testButton;
             this.testButton.Size = new System.Drawing.Size(21, 23);
@@ -178,7 +179,7 @@
             this.calendarButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.calendarButton.ForeColor = System.Drawing.Color.White;
             this.calendarButton.HoverState.Parent = this.calendarButton;
-            this.calendarButton.Location = new System.Drawing.Point(18, 157);
+            this.calendarButton.Location = new System.Drawing.Point(30, 184);
             this.calendarButton.Name = "calendarButton";
             this.calendarButton.ShadowDecoration.Parent = this.calendarButton;
             this.calendarButton.Size = new System.Drawing.Size(21, 23);
@@ -188,13 +189,13 @@
             // 
             // logoPicture
             // 
-            this.logoPicture.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(60)))), ((int)(((byte)(105)))));
+            this.logoPicture.BackColor = System.Drawing.Color.Transparent;
             this.logoPicture.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
-            this.logoPicture.Location = new System.Drawing.Point(5, 25);
+            this.logoPicture.Location = new System.Drawing.Point(12, 22);
             this.logoPicture.Name = "logoPicture";
             this.logoPicture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.logoPicture.ShadowDecoration.Parent = this.logoPicture;
-            this.logoPicture.Size = new System.Drawing.Size(48, 47);
+            this.logoPicture.Size = new System.Drawing.Size(64, 60);
             this.logoPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logoPicture.TabIndex = 3;
             this.logoPicture.TabStop = false;
@@ -206,7 +207,7 @@
             this.moodtrackerButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.moodtrackerButton.ForeColor = System.Drawing.Color.White;
             this.moodtrackerButton.HoverState.Parent = this.moodtrackerButton;
-            this.moodtrackerButton.Location = new System.Drawing.Point(18, 113);
+            this.moodtrackerButton.Location = new System.Drawing.Point(30, 140);
             this.moodtrackerButton.Name = "moodtrackerButton";
             this.moodtrackerButton.ShadowDecoration.Parent = this.moodtrackerButton;
             this.moodtrackerButton.Size = new System.Drawing.Size(21, 23);
@@ -216,7 +217,7 @@
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.guna2Panel1.Controls.Add(this.guna2Panel3);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
@@ -227,7 +228,7 @@
             // 
             // guna2Panel2
             // 
-            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.guna2Panel2.Controls.Add(this.usernameLabel);
             this.guna2Panel2.Controls.Add(this.guna2ShadowPanel1);
             this.guna2Panel2.Controls.Add(this.optionButton);
@@ -264,6 +265,7 @@
             // 
             // displayPanel
             // 
+            this.displayPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.displayPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.displayPanel.Location = new System.Drawing.Point(85, 75);
             this.displayPanel.Name = "displayPanel";
