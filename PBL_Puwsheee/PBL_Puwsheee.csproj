@@ -296,5 +296,68 @@
   <ItemGroup>
     <None Include="Resources\Settings.PNG" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Happy.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contented.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flirty.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Angry.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Meh.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sad.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Miserable.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Disgusted.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Disgusted1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cook.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exercise.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Game.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Music.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Read.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Watch.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shop.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sleep.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Social.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sports.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Study.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Travel.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
