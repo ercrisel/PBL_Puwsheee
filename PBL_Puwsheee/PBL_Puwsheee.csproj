@@ -275,5 +275,26 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mood Tracker.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Analysis.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Playables.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
