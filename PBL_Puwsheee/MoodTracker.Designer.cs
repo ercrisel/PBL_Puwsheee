@@ -56,6 +56,8 @@
             this.contentedIcon = new Guna.UI2.WinForms.Guna2Button();
             this.happyIcon = new Guna.UI2.WinForms.Guna2Button();
             this.activitiesLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.moodLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.SuspendLayout();
             // 
             // contentLabel1
@@ -79,7 +81,7 @@
             // contentLabel2
             // 
             this.contentLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.contentLabel2.Location = new System.Drawing.Point(175, 231);
+            this.contentLabel2.Location = new System.Drawing.Point(175, 238);
             this.contentLabel2.Name = "contentLabel2";
             this.contentLabel2.Size = new System.Drawing.Size(136, 15);
             this.contentLabel2.TabIndex = 25;
@@ -88,7 +90,7 @@
             // contentLabel3
             // 
             this.contentLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.contentLabel3.Location = new System.Drawing.Point(621, 63);
+            this.contentLabel3.Location = new System.Drawing.Point(620, 63);
             this.contentLabel3.Name = "contentLabel3";
             this.contentLabel3.Size = new System.Drawing.Size(136, 15);
             this.contentLabel3.TabIndex = 26;
@@ -116,7 +118,7 @@
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(369, 271);
+            this.guna2TextBox1.Size = new System.Drawing.Size(369, 301);
             this.guna2TextBox1.TabIndex = 27;
             // 
             // clearButton
@@ -126,7 +128,7 @@
             this.clearButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.clearButton.ForeColor = System.Drawing.Color.White;
             this.clearButton.HoverState.Parent = this.clearButton;
-            this.clearButton.Location = new System.Drawing.Point(318, 430);
+            this.clearButton.Location = new System.Drawing.Point(318, 452);
             this.clearButton.Name = "clearButton";
             this.clearButton.ShadowDecoration.Parent = this.clearButton;
             this.clearButton.Size = new System.Drawing.Size(107, 34);
@@ -140,7 +142,7 @@
             this.submitButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.submitButton.ForeColor = System.Drawing.Color.White;
             this.submitButton.HoverState.Parent = this.submitButton;
-            this.submitButton.Location = new System.Drawing.Point(452, 430);
+            this.submitButton.Location = new System.Drawing.Point(452, 452);
             this.submitButton.Name = "submitButton";
             this.submitButton.ShadowDecoration.Parent = this.submitButton;
             this.submitButton.Size = new System.Drawing.Size(107, 34);
@@ -159,7 +161,7 @@
             this.travelIcon.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.travelIcon.ForeColor = System.Drawing.Color.White;
             this.travelIcon.HoverState.Parent = this.travelIcon;
-            this.travelIcon.Location = new System.Drawing.Point(374, 326);
+            this.travelIcon.Location = new System.Drawing.Point(374, 333);
             this.travelIcon.Name = "travelIcon";
             this.travelIcon.PressedColor = System.Drawing.Color.DarkGray;
             this.travelIcon.ShadowDecoration.Parent = this.travelIcon;
@@ -179,7 +181,7 @@
             this.studyIcon.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.studyIcon.ForeColor = System.Drawing.Color.White;
             this.studyIcon.HoverState.Parent = this.studyIcon;
-            this.studyIcon.Location = new System.Drawing.Point(308, 326);
+            this.studyIcon.Location = new System.Drawing.Point(308, 333);
             this.studyIcon.Name = "studyIcon";
             this.studyIcon.PressedColor = System.Drawing.Color.DarkGray;
             this.studyIcon.ShadowDecoration.Parent = this.studyIcon;
@@ -199,7 +201,7 @@
             this.sportsIcon.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.sportsIcon.ForeColor = System.Drawing.Color.White;
             this.sportsIcon.HoverState.Parent = this.sportsIcon;
-            this.sportsIcon.Location = new System.Drawing.Point(242, 326);
+            this.sportsIcon.Location = new System.Drawing.Point(242, 333);
             this.sportsIcon.Name = "sportsIcon";
             this.sportsIcon.PressedColor = System.Drawing.Color.DarkGray;
             this.sportsIcon.ShadowDecoration.Parent = this.sportsIcon;
@@ -225,8 +227,10 @@
             this.disgustedIcon.ShadowDecoration.Parent = this.disgustedIcon;
             this.disgustedIcon.Size = new System.Drawing.Size(60, 60);
             this.disgustedIcon.TabIndex = 8;
+            this.disgustedIcon.Tag = "Disgusted";
             this.disgustedIcon.Text = " ";
-      
+            this.disgustedIcon.MouseLeave += new System.EventHandler(this.Mood_MouseLeave);
+
             // 
             // socialIcon
             // 
@@ -240,7 +244,7 @@
             this.socialIcon.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.socialIcon.ForeColor = System.Drawing.Color.White;
             this.socialIcon.HoverState.Parent = this.socialIcon;
-            this.socialIcon.Location = new System.Drawing.Point(177, 326);
+            this.socialIcon.Location = new System.Drawing.Point(177, 333);
             this.socialIcon.Name = "socialIcon";
             this.socialIcon.PressedColor = System.Drawing.Color.DarkGray;
             this.socialIcon.ShadowDecoration.Parent = this.socialIcon;
@@ -266,7 +270,10 @@
             this.miserableIcon.ShadowDecoration.Parent = this.miserableIcon;
             this.miserableIcon.Size = new System.Drawing.Size(60, 60);
             this.miserableIcon.TabIndex = 7;
+            this.miserableIcon.Tag = "Miserable";
             this.miserableIcon.Text = " ";
+            this.miserableIcon.MouseLeave += new System.EventHandler(this.Mood_MouseLeave);
+            
             // 
             // shopIcon
             // 
@@ -280,7 +287,7 @@
             this.shopIcon.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.shopIcon.ForeColor = System.Drawing.Color.White;
             this.shopIcon.HoverState.Parent = this.shopIcon;
-            this.shopIcon.Location = new System.Drawing.Point(45, 326);
+            this.shopIcon.Location = new System.Drawing.Point(45, 333);
             this.shopIcon.Name = "shopIcon";
             this.shopIcon.PressedColor = System.Drawing.Color.DarkGray;
             this.shopIcon.ShadowDecoration.Parent = this.shopIcon;
@@ -300,7 +307,7 @@
             this.sleepIcon.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.sleepIcon.ForeColor = System.Drawing.Color.White;
             this.sleepIcon.HoverState.Parent = this.sleepIcon;
-            this.sleepIcon.Location = new System.Drawing.Point(111, 326);
+            this.sleepIcon.Location = new System.Drawing.Point(111, 333);
             this.sleepIcon.Name = "sleepIcon";
             this.sleepIcon.PressedColor = System.Drawing.Color.DarkGray;
             this.sleepIcon.ShadowDecoration.Parent = this.sleepIcon;
@@ -320,7 +327,7 @@
             this.watchIcon.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.watchIcon.ForeColor = System.Drawing.Color.White;
             this.watchIcon.HoverState.Parent = this.watchIcon;
-            this.watchIcon.Location = new System.Drawing.Point(374, 260);
+            this.watchIcon.Location = new System.Drawing.Point(374, 267);
             this.watchIcon.Name = "watchIcon";
             this.watchIcon.PressedColor = System.Drawing.Color.DarkGray;
             this.watchIcon.ShadowDecoration.Parent = this.watchIcon;
@@ -346,8 +353,10 @@
             this.sadIcon.ShadowDecoration.Parent = this.sadIcon;
             this.sadIcon.Size = new System.Drawing.Size(60, 60);
             this.sadIcon.TabIndex = 6;
+            this.sadIcon.Tag = "Sad";
             this.sadIcon.Text = " ";
-            this.sadIcon.Click += new System.EventHandler(this.Mood_Click);
+            this.sadIcon.MouseLeave += new System.EventHandler(this.Mood_MouseLeave);
+            
             // 
             // readIcon
             // 
@@ -361,7 +370,7 @@
             this.readIcon.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.readIcon.ForeColor = System.Drawing.Color.White;
             this.readIcon.HoverState.Parent = this.readIcon;
-            this.readIcon.Location = new System.Drawing.Point(308, 260);
+            this.readIcon.Location = new System.Drawing.Point(308, 267);
             this.readIcon.Name = "readIcon";
             this.readIcon.PressedColor = System.Drawing.Color.DarkGray;
             this.readIcon.ShadowDecoration.Parent = this.readIcon;
@@ -387,8 +396,10 @@
             this.mehIcon.ShadowDecoration.Parent = this.mehIcon;
             this.mehIcon.Size = new System.Drawing.Size(60, 60);
             this.mehIcon.TabIndex = 5;
+            this.mehIcon.Tag = "Meh";
             this.mehIcon.Text = " ";
-            this.mehIcon.Click += new System.EventHandler(this.Mood_Click);
+            this.mehIcon.MouseLeave += new System.EventHandler(this.Mood_MouseLeave);
+            
             // 
             // musicIcon
             // 
@@ -402,7 +413,7 @@
             this.musicIcon.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.musicIcon.ForeColor = System.Drawing.Color.White;
             this.musicIcon.HoverState.Parent = this.musicIcon;
-            this.musicIcon.Location = new System.Drawing.Point(242, 260);
+            this.musicIcon.Location = new System.Drawing.Point(242, 267);
             this.musicIcon.Name = "musicIcon";
             this.musicIcon.PressedColor = System.Drawing.Color.DarkGray;
             this.musicIcon.ShadowDecoration.Parent = this.musicIcon;
@@ -428,8 +439,10 @@
             this.angryIcon.ShadowDecoration.Parent = this.angryIcon;
             this.angryIcon.Size = new System.Drawing.Size(60, 60);
             this.angryIcon.TabIndex = 3;
+            this.angryIcon.Tag = "Angry";
             this.angryIcon.Text = " ";
-            this.angryIcon.Click += new System.EventHandler(this.Mood_Click);
+            this.angryIcon.MouseLeave += new System.EventHandler(this.Mood_MouseLeave);
+            
             // 
             // gameIcon
             // 
@@ -443,7 +456,7 @@
             this.gameIcon.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gameIcon.ForeColor = System.Drawing.Color.White;
             this.gameIcon.HoverState.Parent = this.gameIcon;
-            this.gameIcon.Location = new System.Drawing.Point(177, 260);
+            this.gameIcon.Location = new System.Drawing.Point(177, 267);
             this.gameIcon.Name = "gameIcon";
             this.gameIcon.PressedColor = System.Drawing.Color.DarkGray;
             this.gameIcon.ShadowDecoration.Parent = this.gameIcon;
@@ -463,7 +476,7 @@
             this.cookIcon.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.cookIcon.ForeColor = System.Drawing.Color.White;
             this.cookIcon.HoverState.Parent = this.cookIcon;
-            this.cookIcon.Location = new System.Drawing.Point(45, 260);
+            this.cookIcon.Location = new System.Drawing.Point(45, 267);
             this.cookIcon.Name = "cookIcon";
             this.cookIcon.PressedColor = System.Drawing.Color.DarkGray;
             this.cookIcon.ShadowDecoration.Parent = this.cookIcon;
@@ -489,8 +502,10 @@
             this.flirtyIcon.ShadowDecoration.Parent = this.flirtyIcon;
             this.flirtyIcon.Size = new System.Drawing.Size(60, 60);
             this.flirtyIcon.TabIndex = 2;
+            this.flirtyIcon.Tag = "Flirty";
             this.flirtyIcon.Text = " ";
-            this.flirtyIcon.Click += new System.EventHandler(this.Mood_Click);
+            this.flirtyIcon.MouseLeave += new System.EventHandler(this.Mood_MouseLeave);
+            
             // 
             // exerciseIcon
             // 
@@ -504,7 +519,7 @@
             this.exerciseIcon.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.exerciseIcon.ForeColor = System.Drawing.Color.White;
             this.exerciseIcon.HoverState.Parent = this.exerciseIcon;
-            this.exerciseIcon.Location = new System.Drawing.Point(111, 260);
+            this.exerciseIcon.Location = new System.Drawing.Point(111, 267);
             this.exerciseIcon.Name = "exerciseIcon";
             this.exerciseIcon.PressedColor = System.Drawing.Color.DarkGray;
             this.exerciseIcon.ShadowDecoration.Parent = this.exerciseIcon;
@@ -530,14 +545,18 @@
             this.contentedIcon.ShadowDecoration.Parent = this.contentedIcon;
             this.contentedIcon.Size = new System.Drawing.Size(60, 60);
             this.contentedIcon.TabIndex = 1;
+            this.contentedIcon.Tag = "Contented";
             this.contentedIcon.Text = " ";
-            this.contentedIcon.Click += new System.EventHandler(this.Mood_Click);
+            this.contentedIcon.MouseLeave += new System.EventHandler(this.Mood_MouseLeave);
+            
             // 
             // happyIcon
             // 
             this.happyIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Happy;
             this.happyIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.happyIcon.BorderRadius = 15;
+            this.happyIcon.CheckedState.BorderColor = System.Drawing.Color.Transparent;
+            this.happyIcon.CheckedState.FillColor = System.Drawing.Color.Red;
             this.happyIcon.CheckedState.Parent = this.happyIcon;
             this.happyIcon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.happyIcon.CustomImages.Parent = this.happyIcon;
@@ -551,8 +570,36 @@
             this.happyIcon.ShadowDecoration.Parent = this.happyIcon;
             this.happyIcon.Size = new System.Drawing.Size(60, 60);
             this.happyIcon.TabIndex = 0;
-            this.happyIcon.Text = " ";
-            this.happyIcon.Click += new System.EventHandler(this.Mood_Click);
+            this.happyIcon.Tag = "Happy";
+            this.happyIcon.MouseLeave += new System.EventHandler(this.Mood_MouseLeave);
+            
+            // 
+            // activitiesLabel
+            // 
+            this.activitiesLabel.BackColor = System.Drawing.Color.Transparent;
+            this.activitiesLabel.Location = new System.Drawing.Point(0, 0);
+            this.activitiesLabel.Name = "activitiesLabel";
+            this.activitiesLabel.Size = new System.Drawing.Size(3, 2);
+            this.activitiesLabel.TabIndex = 30;
+            this.activitiesLabel.Text = null;
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(49, 410);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(69, 15);
+            this.guna2HtmlLabel1.TabIndex = 10;
+            this.guna2HtmlLabel1.Text = "How are you?";
+            // 
+            // moodLabel
+            // 
+            this.moodLabel.BackColor = System.Drawing.Color.Transparent;
+            this.moodLabel.Location = new System.Drawing.Point(124, 206);
+            this.moodLabel.Name = "moodLabel";
+            this.moodLabel.Size = new System.Drawing.Size(0, 0);
+            this.moodLabel.TabIndex = 10;
+            this.moodLabel.Text = null;
             // 
             // MoodTracker
             // 
@@ -567,6 +614,8 @@
             this.Controls.Add(this.contentLabel2);
             this.Controls.Add(this.dateLabel);
             this.Controls.Add(this.activitiesLabel);
+            this.Controls.Add(this.moodLabel);
+            this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.contentLabel1);
             this.Controls.Add(this.travelIcon);
             this.Controls.Add(this.studyIcon);
@@ -626,5 +675,7 @@
         private Guna.UI2.WinForms.Guna2Button cookIcon;
         private Guna.UI2.WinForms.Guna2Button shopIcon;
         private Guna.UI2.WinForms.Guna2HtmlLabel activitiesLabel;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel moodLabel;
     }
 }
