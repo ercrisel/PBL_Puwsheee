@@ -48,5 +48,10 @@ namespace PBL_Puwsheee
         {
             Application.Exit();
         }
+
+        private void logoLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
