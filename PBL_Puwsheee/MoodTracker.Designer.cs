@@ -55,7 +55,6 @@
             this.exerciseIcon = new Guna.UI2.WinForms.Guna2Button();
             this.contentedIcon = new Guna.UI2.WinForms.Guna2Button();
             this.happyIcon = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.SuspendLayout();
             // 
             // contentLabel1
@@ -70,7 +69,7 @@
             // dateLabel
             // 
             this.dateLabel.BackColor = System.Drawing.Color.Transparent;
-            this.dateLabel.Location = new System.Drawing.Point(827, 21);
+            this.dateLabel.Location = new System.Drawing.Point(49, 12);
             this.dateLabel.Name = "dateLabel";
             this.dateLabel.Size = new System.Drawing.Size(78, 15);
             this.dateLabel.TabIndex = 23;
@@ -226,6 +225,7 @@
             this.disgustedIcon.Size = new System.Drawing.Size(60, 60);
             this.disgustedIcon.TabIndex = 8;
             this.disgustedIcon.Text = " ";
+            this.disgustedIcon.Click += new System.EventHandler(this.Mood_Click);
             // 
             // socialIcon
             // 
@@ -346,6 +346,7 @@
             this.sadIcon.Size = new System.Drawing.Size(60, 60);
             this.sadIcon.TabIndex = 6;
             this.sadIcon.Text = " ";
+            this.sadIcon.Click += new System.EventHandler(this.Mood_Click);
             // 
             // readIcon
             // 
@@ -386,6 +387,7 @@
             this.mehIcon.Size = new System.Drawing.Size(60, 60);
             this.mehIcon.TabIndex = 5;
             this.mehIcon.Text = " ";
+            this.mehIcon.Click += new System.EventHandler(this.Mood_Click);
             // 
             // musicIcon
             // 
@@ -426,6 +428,7 @@
             this.angryIcon.Size = new System.Drawing.Size(60, 60);
             this.angryIcon.TabIndex = 3;
             this.angryIcon.Text = " ";
+            this.angryIcon.Click += new System.EventHandler(this.Mood_Click);
             // 
             // gameIcon
             // 
@@ -486,6 +489,7 @@
             this.flirtyIcon.Size = new System.Drawing.Size(60, 60);
             this.flirtyIcon.TabIndex = 2;
             this.flirtyIcon.Text = " ";
+            this.flirtyIcon.Click += new System.EventHandler(this.Mood_Click);
             // 
             // exerciseIcon
             // 
@@ -526,6 +530,7 @@
             this.contentedIcon.Size = new System.Drawing.Size(60, 60);
             this.contentedIcon.TabIndex = 1;
             this.contentedIcon.Text = " ";
+            this.contentedIcon.Click += new System.EventHandler(this.Mood_Click);
             // 
             // happyIcon
             // 
@@ -546,16 +551,7 @@
             this.happyIcon.Size = new System.Drawing.Size(60, 60);
             this.happyIcon.TabIndex = 0;
             this.happyIcon.Text = " ";
-            // 
-            // guna2ShadowPanel1
-            // 
-            this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel1.Location = new System.Drawing.Point(505, 96);
-            this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
-            this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(377, 285);
-            this.guna2ShadowPanel1.TabIndex = 30;
+            this.happyIcon.Click += new System.EventHandler(this.Mood_Click);
             // 
             // MoodTracker
             // 
@@ -590,7 +586,6 @@
             this.Controls.Add(this.exerciseIcon);
             this.Controls.Add(this.contentedIcon);
             this.Controls.Add(this.happyIcon);
-            this.Controls.Add(this.guna2ShadowPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MoodTracker";
             this.Text = "MoodTracker";
@@ -628,6 +623,5 @@
         private Guna.UI2.WinForms.Guna2Button travelIcon;
         private Guna.UI2.WinForms.Guna2Button cookIcon;
         private Guna.UI2.WinForms.Guna2Button shopIcon;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
     }
 }

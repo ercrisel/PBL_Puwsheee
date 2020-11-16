@@ -31,12 +31,7 @@
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.pageLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.usernameLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.displayPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.navBarPanel = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.optionButton = new Guna.UI2.WinForms.Guna2Button();
-            this.usericonPicture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.exitButton = new Guna.UI2.WinForms.Guna2Button();
             this.logoPicture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.analysisButton = new Guna.UI2.WinForms.Guna2Button();
@@ -44,12 +39,17 @@
             this.calendarButton = new Guna.UI2.WinForms.Guna2Button();
             this.moodtrackerButton = new Guna.UI2.WinForms.Guna2Button();
             this.testButton = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.usernameLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.optionButton = new Guna.UI2.WinForms.Guna2Button();
+            this.usericonPicture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.displayPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ShadowPanel1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
-            this.guna2Panel2.SuspendLayout();
             this.navBarPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.usericonPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoPicture)).BeginInit();
+            this.guna2Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.usericonPicture)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2ShadowPanel1
@@ -59,7 +59,7 @@
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel1.Controls.Add(this.pageLabel);
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.guna2ShadowPanel1.Location = new System.Drawing.Point(288, -34);
+            this.guna2ShadowPanel1.Location = new System.Drawing.Point(268, -34);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.Radius = 15;
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
@@ -87,40 +87,6 @@
             this.guna2Panel1.Size = new System.Drawing.Size(92, 580);
             this.guna2Panel1.TabIndex = 7;
             // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.guna2Panel2.Controls.Add(this.usernameLabel);
-            this.guna2Panel2.Controls.Add(this.guna2ShadowPanel1);
-            this.guna2Panel2.Controls.Add(this.optionButton);
-            this.guna2Panel2.Controls.Add(this.usericonPicture);
-            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel2.Location = new System.Drawing.Point(92, 0);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(928, 75);
-            this.guna2Panel2.TabIndex = 8;
-            // 
-            // usernameLabel
-            // 
-            this.usernameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.usernameLabel.BackColor = System.Drawing.Color.Transparent;
-            this.usernameLabel.Location = new System.Drawing.Point(858, 28);
-            this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(51, 15);
-            this.usernameLabel.TabIndex = 9;
-            this.usernameLabel.Text = "Username";
-            // 
-            // displayPanel
-            // 
-            this.displayPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.displayPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.displayPanel.Location = new System.Drawing.Point(92, 75);
-            this.displayPanel.Name = "displayPanel";
-            this.displayPanel.ShadowDecoration.Parent = this.displayPanel;
-            this.displayPanel.Size = new System.Drawing.Size(928, 505);
-            this.displayPanel.TabIndex = 9;
-            // 
             // navBarPanel
             // 
             this.navBarPanel.BackColor = System.Drawing.Color.Transparent;
@@ -138,37 +104,6 @@
             this.navBarPanel.ShadowColor = System.Drawing.Color.Black;
             this.navBarPanel.Size = new System.Drawing.Size(106, 612);
             this.navBarPanel.TabIndex = 9;
-            // 
-            // optionButton
-            // 
-            this.optionButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.optionButton.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Settings;
-            this.optionButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.optionButton.CheckedState.Parent = this.optionButton;
-            this.optionButton.CustomImages.Parent = this.optionButton;
-            this.optionButton.FillColor = System.Drawing.Color.Transparent;
-            this.optionButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.optionButton.ForeColor = System.Drawing.Color.White;
-            this.optionButton.HoverState.Parent = this.optionButton;
-            this.optionButton.Location = new System.Drawing.Point(738, 24);
-            this.optionButton.Name = "optionButton";
-            this.optionButton.ShadowDecoration.Parent = this.optionButton;
-            this.optionButton.Size = new System.Drawing.Size(30, 30);
-            this.optionButton.TabIndex = 6;
-            this.optionButton.Click += new System.EventHandler(this.clickOptions);
-            // 
-            // usericonPicture
-            // 
-            this.usericonPicture.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.usericonPicture.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
-            this.usericonPicture.Location = new System.Drawing.Point(790, 7);
-            this.usericonPicture.Name = "usericonPicture";
-            this.usericonPicture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.usericonPicture.ShadowDecoration.Parent = this.usericonPicture;
-            this.usericonPicture.Size = new System.Drawing.Size(60, 60);
-            this.usericonPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.usericonPicture.TabIndex = 4;
-            this.usericonPicture.TabStop = false;
             // 
             // exitButton
             // 
@@ -297,6 +232,71 @@
             this.testButton.Text = " ";
             this.testButton.Click += new System.EventHandler(this.clickTest);
             // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.guna2Panel2.Controls.Add(this.usernameLabel);
+            this.guna2Panel2.Controls.Add(this.guna2ShadowPanel1);
+            this.guna2Panel2.Controls.Add(this.optionButton);
+            this.guna2Panel2.Controls.Add(this.usericonPicture);
+            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel2.Location = new System.Drawing.Point(92, 0);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
+            this.guna2Panel2.Size = new System.Drawing.Size(928, 75);
+            this.guna2Panel2.TabIndex = 8;
+            // 
+            // usernameLabel
+            // 
+            this.usernameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.usernameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.usernameLabel.Location = new System.Drawing.Point(824, 31);
+            this.usernameLabel.Name = "usernameLabel";
+            this.usernameLabel.Size = new System.Drawing.Size(51, 15);
+            this.usernameLabel.TabIndex = 9;
+            this.usernameLabel.Text = "Username";
+            // 
+            // optionButton
+            // 
+            this.optionButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.optionButton.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Settings;
+            this.optionButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.optionButton.CheckedState.Parent = this.optionButton;
+            this.optionButton.CustomImages.Parent = this.optionButton;
+            this.optionButton.FillColor = System.Drawing.Color.Transparent;
+            this.optionButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.optionButton.ForeColor = System.Drawing.Color.White;
+            this.optionButton.HoverState.Parent = this.optionButton;
+            this.optionButton.Location = new System.Drawing.Point(715, 22);
+            this.optionButton.Name = "optionButton";
+            this.optionButton.ShadowDecoration.Parent = this.optionButton;
+            this.optionButton.Size = new System.Drawing.Size(30, 30);
+            this.optionButton.TabIndex = 6;
+            this.optionButton.Click += new System.EventHandler(this.clickOptions);
+            // 
+            // usericonPicture
+            // 
+            this.usericonPicture.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.usericonPicture.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
+            this.usericonPicture.Location = new System.Drawing.Point(756, 6);
+            this.usericonPicture.Name = "usericonPicture";
+            this.usericonPicture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.usericonPicture.ShadowDecoration.Parent = this.usericonPicture;
+            this.usericonPicture.Size = new System.Drawing.Size(60, 60);
+            this.usericonPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.usericonPicture.TabIndex = 4;
+            this.usericonPicture.TabStop = false;
+            // 
+            // displayPanel
+            // 
+            this.displayPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.displayPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.displayPanel.Location = new System.Drawing.Point(92, 75);
+            this.displayPanel.Name = "displayPanel";
+            this.displayPanel.ShadowDecoration.Parent = this.displayPanel;
+            this.displayPanel.Size = new System.Drawing.Size(928, 505);
+            this.displayPanel.TabIndex = 9;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -314,11 +314,11 @@
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2ShadowPanel1.PerformLayout();
             this.guna2Panel1.ResumeLayout(false);
+            this.navBarPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.logoPicture)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
-            this.navBarPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.usericonPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logoPicture)).EndInit();
             this.ResumeLayout(false);
 
         }
