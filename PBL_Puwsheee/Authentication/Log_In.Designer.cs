@@ -56,7 +56,8 @@
             this.passwordTextbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.passwordTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.passwordTextbox.FocusedState.Parent = this.passwordTextbox;
-            this.passwordTextbox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.passwordTextbox.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.passwordTextbox.ForeColor = System.Drawing.Color.Black;
             this.passwordTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.passwordTextbox.HoverState.Parent = this.passwordTextbox;
             this.passwordTextbox.Location = new System.Drawing.Point(156, 389);
@@ -83,6 +84,7 @@
             // 
             this.loginButton.BorderRadius = 16;
             this.loginButton.CheckedState.Parent = this.loginButton;
+            this.loginButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.loginButton.CustomImages.Parent = this.loginButton;
             this.loginButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.loginButton.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -100,7 +102,7 @@
             // 
             this.passwordLabel.BackColor = System.Drawing.Color.Transparent;
             this.passwordLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordLabel.Location = new System.Drawing.Point(64, 409);
+            this.passwordLabel.Location = new System.Drawing.Point(64, 400);
             this.passwordLabel.Name = "passwordLabel";
             this.passwordLabel.Size = new System.Drawing.Size(87, 22);
             this.passwordLabel.TabIndex = 12;
@@ -110,7 +112,7 @@
             // 
             this.usernameLabel.BackColor = System.Drawing.Color.Transparent;
             this.usernameLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameLabel.Location = new System.Drawing.Point(59, 337);
+            this.usernameLabel.Location = new System.Drawing.Point(59, 327);
             this.usernameLabel.Name = "usernameLabel";
             this.usernameLabel.Size = new System.Drawing.Size(92, 22);
             this.usernameLabel.TabIndex = 11;
@@ -130,7 +132,8 @@
             this.usernameTextbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.usernameTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.usernameTextbox.FocusedState.Parent = this.usernameTextbox;
-            this.usernameTextbox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.usernameTextbox.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.usernameTextbox.ForeColor = System.Drawing.Color.Black;
             this.usernameTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.usernameTextbox.HoverState.Parent = this.usernameTextbox;
             this.usernameTextbox.Location = new System.Drawing.Point(157, 317);
