@@ -412,7 +412,9 @@
             this.Controls.Add(this.guna2CirclePictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Calendar_Card";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calendar_Card";
+            this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

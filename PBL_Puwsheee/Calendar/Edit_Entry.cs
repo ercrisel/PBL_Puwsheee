@@ -29,5 +29,10 @@ namespace PBL_Puwsheee.Calendar
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
+
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -61,6 +61,7 @@
             this.cancelButton.Size = new System.Drawing.Size(176, 45);
             this.cancelButton.TabIndex = 6;
             this.cancelButton.Text = "Cancel";
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
             // guna2HtmlLabel2
             // 
@@ -92,6 +93,7 @@
             this.Controls.Add(this.guna2HtmlLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Edit_Entry";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Edit_Entry";
             this.ResumeLayout(false);
             this.PerformLayout();

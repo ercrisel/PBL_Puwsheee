@@ -33,9 +33,8 @@ namespace PBL_Puwsheee.Calendar
 
         private void backButton_Click(object sender, EventArgs e)
         {
-            Calendar_Main calendar = new Calendar_Main();
-            calendar.Show();
             this.Close();
+            this.Visible = false;
         }
 
         private void removeButton_Click(object sender, EventArgs e)
