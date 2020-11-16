@@ -55,12 +55,13 @@
             this.exerciseIcon = new Guna.UI2.WinForms.Guna2Button();
             this.contentedIcon = new Guna.UI2.WinForms.Guna2Button();
             this.happyIcon = new Guna.UI2.WinForms.Guna2Button();
+            this.activitiesLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.SuspendLayout();
             // 
             // contentLabel1
             // 
             this.contentLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.contentLabel1.Location = new System.Drawing.Point(210, 48);
+            this.contentLabel1.Location = new System.Drawing.Point(206, 52);
             this.contentLabel1.Name = "contentLabel1";
             this.contentLabel1.Size = new System.Drawing.Size(69, 15);
             this.contentLabel1.TabIndex = 10;
@@ -78,7 +79,7 @@
             // contentLabel2
             // 
             this.contentLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.contentLabel2.Location = new System.Drawing.Point(177, 231);
+            this.contentLabel2.Location = new System.Drawing.Point(175, 231);
             this.contentLabel2.Name = "contentLabel2";
             this.contentLabel2.Size = new System.Drawing.Size(136, 15);
             this.contentLabel2.TabIndex = 25;
@@ -87,7 +88,7 @@
             // contentLabel3
             // 
             this.contentLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.contentLabel3.Location = new System.Drawing.Point(621, 67);
+            this.contentLabel3.Location = new System.Drawing.Point(621, 63);
             this.contentLabel3.Name = "contentLabel3";
             this.contentLabel3.Size = new System.Drawing.Size(136, 15);
             this.contentLabel3.TabIndex = 26;
@@ -109,7 +110,7 @@
             this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(502, 96);
+            this.guna2TextBox1.Location = new System.Drawing.Point(502, 92);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "";
@@ -225,7 +226,6 @@
             this.disgustedIcon.Size = new System.Drawing.Size(60, 60);
             this.disgustedIcon.TabIndex = 8;
             this.disgustedIcon.Text = " ";
-            this.disgustedIcon.Click += new System.EventHandler(this.Mood_Click);
             // 
             // socialIcon
             // 
@@ -346,7 +346,6 @@
             this.sadIcon.Size = new System.Drawing.Size(60, 60);
             this.sadIcon.TabIndex = 6;
             this.sadIcon.Text = " ";
-            this.sadIcon.Click += new System.EventHandler(this.Mood_Click);
             // 
             // readIcon
             // 
@@ -387,7 +386,6 @@
             this.mehIcon.Size = new System.Drawing.Size(60, 60);
             this.mehIcon.TabIndex = 5;
             this.mehIcon.Text = " ";
-            this.mehIcon.Click += new System.EventHandler(this.Mood_Click);
             // 
             // musicIcon
             // 
@@ -428,7 +426,6 @@
             this.angryIcon.Size = new System.Drawing.Size(60, 60);
             this.angryIcon.TabIndex = 3;
             this.angryIcon.Text = " ";
-            this.angryIcon.Click += new System.EventHandler(this.Mood_Click);
             // 
             // gameIcon
             // 
@@ -489,7 +486,6 @@
             this.flirtyIcon.Size = new System.Drawing.Size(60, 60);
             this.flirtyIcon.TabIndex = 2;
             this.flirtyIcon.Text = " ";
-            this.flirtyIcon.Click += new System.EventHandler(this.Mood_Click);
             // 
             // exerciseIcon
             // 
@@ -530,7 +526,6 @@
             this.contentedIcon.Size = new System.Drawing.Size(60, 60);
             this.contentedIcon.TabIndex = 1;
             this.contentedIcon.Text = " ";
-            this.contentedIcon.Click += new System.EventHandler(this.Mood_Click);
             // 
             // happyIcon
             // 
@@ -551,7 +546,15 @@
             this.happyIcon.Size = new System.Drawing.Size(60, 60);
             this.happyIcon.TabIndex = 0;
             this.happyIcon.Text = " ";
-            this.happyIcon.Click += new System.EventHandler(this.Mood_Click);
+            // 
+            // activitiesLabel
+            // 
+            this.activitiesLabel.BackColor = System.Drawing.Color.Transparent;
+            this.activitiesLabel.Location = new System.Drawing.Point(362, 231);
+            this.activitiesLabel.Name = "activitiesLabel";
+            this.activitiesLabel.Size = new System.Drawing.Size(6, 15);
+            this.activitiesLabel.TabIndex = 10;
+            this.activitiesLabel.Text = ".";
             // 
             // MoodTracker
             // 
@@ -565,6 +568,7 @@
             this.Controls.Add(this.contentLabel3);
             this.Controls.Add(this.contentLabel2);
             this.Controls.Add(this.dateLabel);
+            this.Controls.Add(this.activitiesLabel);
             this.Controls.Add(this.contentLabel1);
             this.Controls.Add(this.travelIcon);
             this.Controls.Add(this.studyIcon);
@@ -623,5 +627,6 @@
         private Guna.UI2.WinForms.Guna2Button travelIcon;
         private Guna.UI2.WinForms.Guna2Button cookIcon;
         private Guna.UI2.WinForms.Guna2Button shopIcon;
+        private Guna.UI2.WinForms.Guna2HtmlLabel activitiesLabel;
     }
 }
