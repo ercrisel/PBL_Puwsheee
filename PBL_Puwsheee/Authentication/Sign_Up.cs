@@ -44,5 +44,10 @@ namespace PBL_Puwsheee
             pa.Show();
             this.Close();
         }
+
+        private void confirmpasswordTextbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
