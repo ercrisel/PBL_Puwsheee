@@ -44,6 +44,10 @@
             this.signupButton = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.userPicture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.firstNameCondition = new System.Windows.Forms.Label();
+            this.lastNameCondition = new System.Windows.Forms.Label();
+            this.emailCondition = new System.Windows.Forms.Label();
+            this.usernameCondition = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPicture)).BeginInit();
             this.SuspendLayout();
@@ -75,6 +79,7 @@
             this.firstnameTextbox.ShadowDecoration.Parent = this.firstnameTextbox;
             this.firstnameTextbox.Size = new System.Drawing.Size(216, 34);
             this.firstnameTextbox.TabIndex = 10;
+            this.firstnameTextbox.TextChanged += new System.EventHandler(this.firstnameTextbox_TextChanged);
             // 
             // firstnameLabel
             // 
@@ -114,6 +119,7 @@
             this.lastnameTextbox.ShadowDecoration.Parent = this.lastnameTextbox;
             this.lastnameTextbox.Size = new System.Drawing.Size(216, 34);
             this.lastnameTextbox.TabIndex = 13;
+            this.lastnameTextbox.TextChanged += new System.EventHandler(this.lastnameTextbox_TextChanged);
             // 
             // emailTextbox
             // 
@@ -142,6 +148,7 @@
             this.emailTextbox.ShadowDecoration.Parent = this.emailTextbox;
             this.emailTextbox.Size = new System.Drawing.Size(216, 34);
             this.emailTextbox.TabIndex = 14;
+            this.emailTextbox.TextChanged += new System.EventHandler(this.emailTextbox_TextChanged);
             // 
             // usernameTexbox
             // 
@@ -170,6 +177,7 @@
             this.usernameTexbox.ShadowDecoration.Parent = this.usernameTexbox;
             this.usernameTexbox.Size = new System.Drawing.Size(216, 34);
             this.usernameTexbox.TabIndex = 15;
+            this.usernameTexbox.TextChanged += new System.EventHandler(this.usernameTexbox_TextChanged);
             // 
             // passwordTextbox
             // 
@@ -342,12 +350,60 @@
             this.userPicture.TabIndex = 23;
             this.userPicture.TabStop = false;
             // 
+            // firstNameCondition
+            // 
+            this.firstNameCondition.AutoSize = true;
+            this.firstNameCondition.ForeColor = System.Drawing.Color.Maroon;
+            this.firstNameCondition.Location = new System.Drawing.Point(186, 274);
+            this.firstNameCondition.Name = "firstNameCondition";
+            this.firstNameCondition.Size = new System.Drawing.Size(173, 13);
+            this.firstNameCondition.TabIndex = 27;
+            this.firstNameCondition.Text = "MUST ONLY CONTAIN LETTERS";
+            this.firstNameCondition.Visible = false;
+            // 
+            // lastNameCondition
+            // 
+            this.lastNameCondition.AutoSize = true;
+            this.lastNameCondition.ForeColor = System.Drawing.Color.Maroon;
+            this.lastNameCondition.Location = new System.Drawing.Point(186, 327);
+            this.lastNameCondition.Name = "lastNameCondition";
+            this.lastNameCondition.Size = new System.Drawing.Size(173, 13);
+            this.lastNameCondition.TabIndex = 28;
+            this.lastNameCondition.Text = "MUST ONLY CONTAIN LETTERS";
+            this.lastNameCondition.Visible = false;
+            // 
+            // emailCondition
+            // 
+            this.emailCondition.AutoSize = true;
+            this.emailCondition.ForeColor = System.Drawing.Color.Maroon;
+            this.emailCondition.Location = new System.Drawing.Point(186, 379);
+            this.emailCondition.Name = "emailCondition";
+            this.emailCondition.Size = new System.Drawing.Size(91, 13);
+            this.emailCondition.TabIndex = 29;
+            this.emailCondition.Text = "EMAIL IS TAKEN";
+            this.emailCondition.Visible = false;
+            // 
+            // usernameCondition
+            // 
+            this.usernameCondition.AutoSize = true;
+            this.usernameCondition.ForeColor = System.Drawing.Color.Maroon;
+            this.usernameCondition.Location = new System.Drawing.Point(186, 431);
+            this.usernameCondition.Name = "usernameCondition";
+            this.usernameCondition.Size = new System.Drawing.Size(120, 13);
+            this.usernameCondition.TabIndex = 30;
+            this.usernameCondition.Text = "USERNAME IS TAKEN";
+            this.usernameCondition.Visible = false;
+            // 
             // Sign_Up
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.ClientSize = new System.Drawing.Size(450, 619);
+            this.Controls.Add(this.usernameCondition);
+            this.Controls.Add(this.emailCondition);
+            this.Controls.Add(this.lastNameCondition);
+            this.Controls.Add(this.firstNameCondition);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.signupButton);
             this.Controls.Add(this.uploadimageButton);
@@ -368,6 +424,7 @@
             this.Name = "Sign_Up";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sign_Up";
+            this.Load += new System.EventHandler(this.Sign_Up_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPicture)).EndInit();
             this.ResumeLayout(false);
@@ -393,5 +450,9 @@
         private Guna.UI2.WinForms.Guna2Button signupButton;
         protected internal Guna.UI2.WinForms.Guna2TextBox lastnameTextbox;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label firstNameCondition;
+        private System.Windows.Forms.Label lastNameCondition;
+        private System.Windows.Forms.Label emailCondition;
+        private System.Windows.Forms.Label usernameCondition;
     }
 }
