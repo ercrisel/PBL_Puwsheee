@@ -229,8 +229,6 @@
             this.disgustedIcon.TabIndex = 8;
             this.disgustedIcon.Tag = "Disgusted";
             this.disgustedIcon.Text = " ";
-            this.disgustedIcon.MouseLeave += new System.EventHandler(this.Mood_MouseLeave);
-
             // 
             // socialIcon
             // 
@@ -272,8 +270,6 @@
             this.miserableIcon.TabIndex = 7;
             this.miserableIcon.Tag = "Miserable";
             this.miserableIcon.Text = " ";
-            this.miserableIcon.MouseLeave += new System.EventHandler(this.Mood_MouseLeave);
-            
             // 
             // shopIcon
             // 
@@ -355,8 +351,6 @@
             this.sadIcon.TabIndex = 6;
             this.sadIcon.Tag = "Sad";
             this.sadIcon.Text = " ";
-            this.sadIcon.MouseLeave += new System.EventHandler(this.Mood_MouseLeave);
-            
             // 
             // readIcon
             // 
@@ -398,8 +392,6 @@
             this.mehIcon.TabIndex = 5;
             this.mehIcon.Tag = "Meh";
             this.mehIcon.Text = " ";
-            this.mehIcon.MouseLeave += new System.EventHandler(this.Mood_MouseLeave);
-            
             // 
             // musicIcon
             // 
@@ -441,8 +433,6 @@
             this.angryIcon.TabIndex = 3;
             this.angryIcon.Tag = "Angry";
             this.angryIcon.Text = " ";
-            this.angryIcon.MouseLeave += new System.EventHandler(this.Mood_MouseLeave);
-            
             // 
             // gameIcon
             // 
@@ -504,8 +494,6 @@
             this.flirtyIcon.TabIndex = 2;
             this.flirtyIcon.Tag = "Flirty";
             this.flirtyIcon.Text = " ";
-            this.flirtyIcon.MouseLeave += new System.EventHandler(this.Mood_MouseLeave);
-            
             // 
             // exerciseIcon
             // 
@@ -547,8 +535,6 @@
             this.contentedIcon.TabIndex = 1;
             this.contentedIcon.Tag = "Contented";
             this.contentedIcon.Text = " ";
-            this.contentedIcon.MouseLeave += new System.EventHandler(this.Mood_MouseLeave);
-            
             // 
             // happyIcon
             // 
@@ -571,8 +557,6 @@
             this.happyIcon.Size = new System.Drawing.Size(60, 60);
             this.happyIcon.TabIndex = 0;
             this.happyIcon.Tag = "Happy";
-            this.happyIcon.MouseLeave += new System.EventHandler(this.Mood_MouseLeave);
-            
             // 
             // activitiesLabel
             // 
@@ -588,16 +572,15 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(49, 410);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(69, 15);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(3, 2);
             this.guna2HtmlLabel1.TabIndex = 10;
-            this.guna2HtmlLabel1.Text = "How are you?";
             // 
             // moodLabel
             // 
             this.moodLabel.BackColor = System.Drawing.Color.Transparent;
             this.moodLabel.Location = new System.Drawing.Point(124, 206);
             this.moodLabel.Name = "moodLabel";
-            this.moodLabel.Size = new System.Drawing.Size(0, 0);
+            this.moodLabel.Size = new System.Drawing.Size(3, 2);
             this.moodLabel.TabIndex = 10;
             this.moodLabel.Text = null;
             // 

@@ -16,10 +16,5 @@ namespace PBL_Puwsheee
         {
             InitializeComponent();
         }
-
-        private void Mood_MouseLeave(object sender, EventArgs e)
-        {
-            moodLabel.Text = "";
-        }
     }
 }
