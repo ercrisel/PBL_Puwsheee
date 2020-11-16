@@ -225,7 +225,7 @@
             this.disgustedIcon.Size = new System.Drawing.Size(60, 60);
             this.disgustedIcon.TabIndex = 8;
             this.disgustedIcon.Text = " ";
-            this.disgustedIcon.Click += new System.EventHandler(this.Mood_Click);
+      
             // 
             // socialIcon
             // 
@@ -346,7 +346,7 @@
             this.sadIcon.Size = new System.Drawing.Size(60, 60);
             this.sadIcon.TabIndex = 6;
             this.sadIcon.Text = " ";
-            this.sadIcon.Click += new System.EventHandler(this.Mood_Click);
+           
             // 
             // readIcon
             // 
@@ -387,7 +387,7 @@
             this.mehIcon.Size = new System.Drawing.Size(60, 60);
             this.mehIcon.TabIndex = 5;
             this.mehIcon.Text = " ";
-            this.mehIcon.Click += new System.EventHandler(this.Mood_Click);
+          
             // 
             // musicIcon
             // 
@@ -428,7 +428,7 @@
             this.angryIcon.Size = new System.Drawing.Size(60, 60);
             this.angryIcon.TabIndex = 3;
             this.angryIcon.Text = " ";
-            this.angryIcon.Click += new System.EventHandler(this.Mood_Click);
+          
             // 
             // gameIcon
             // 
@@ -489,7 +489,7 @@
             this.flirtyIcon.Size = new System.Drawing.Size(60, 60);
             this.flirtyIcon.TabIndex = 2;
             this.flirtyIcon.Text = " ";
-            this.flirtyIcon.Click += new System.EventHandler(this.Mood_Click);
+            
             // 
             // exerciseIcon
             // 
@@ -530,7 +530,7 @@
             this.contentedIcon.Size = new System.Drawing.Size(60, 60);
             this.contentedIcon.TabIndex = 1;
             this.contentedIcon.Text = " ";
-            this.contentedIcon.Click += new System.EventHandler(this.Mood_Click);
+          
             // 
             // happyIcon
             // 
@@ -551,7 +551,7 @@
             this.happyIcon.Size = new System.Drawing.Size(60, 60);
             this.happyIcon.TabIndex = 0;
             this.happyIcon.Text = " ";
-            this.happyIcon.Click += new System.EventHandler(this.Mood_Click);
+          
             // 
             // MoodTracker
             // 
