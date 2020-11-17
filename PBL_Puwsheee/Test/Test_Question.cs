@@ -10,22 +10,17 @@ using System.Windows.Forms;
 
 namespace PBL_Puwsheee.Test
 {
-    public partial class Depression_Test : Form
+    public partial class Test_Question : Form
     {
-        public Depression_Test()
+        public Test_Question(string Test)
         {
             InitializeComponent();
+            guna2HtmlLabel1.Text = Test;
         }
 
-        private void backButton_Click(object sender, EventArgs e)
+        private void Test_Question_Load(object sender, EventArgs e)
         {
-            this.Close();
-        }
 
-        private void submitButton_Click(object sender, EventArgs e)
-        {
-            new Test_Results().Show();
-            this.Close();
         }
     }
 }
