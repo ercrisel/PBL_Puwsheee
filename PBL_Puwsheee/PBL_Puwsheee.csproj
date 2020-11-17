@@ -228,6 +228,9 @@
     <EmbeddedResource Include="SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Test\Test_Questions.resx">
+      <DependentUpon>Test_Questions.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Test\Test_Results.resx">
       <DependentUpon>Test_Results.cs</DependentUpon>
     </EmbeddedResource>
