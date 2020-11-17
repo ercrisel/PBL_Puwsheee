@@ -120,10 +120,14 @@
             // 
             // clearButton
             // 
+            this.clearButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
+            this.clearButton.BorderRadius = 16;
+            this.clearButton.BorderThickness = 2;
             this.clearButton.CheckedState.Parent = this.clearButton;
             this.clearButton.CustomImages.Parent = this.clearButton;
-            this.clearButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.clearButton.ForeColor = System.Drawing.Color.White;
+            this.clearButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.clearButton.Font = new System.Drawing.Font("MS Reference Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.clearButton.HoverState.Parent = this.clearButton;
             this.clearButton.Location = new System.Drawing.Point(318, 430);
             this.clearButton.Name = "clearButton";
@@ -134,10 +138,12 @@
             // 
             // submitButton
             // 
+            this.submitButton.BorderRadius = 16;
             this.submitButton.CheckedState.Parent = this.submitButton;
             this.submitButton.CustomImages.Parent = this.submitButton;
-            this.submitButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.submitButton.ForeColor = System.Drawing.Color.White;
+            this.submitButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
+            this.submitButton.Font = new System.Drawing.Font("MS Reference Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.submitButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.submitButton.HoverState.Parent = this.submitButton;
             this.submitButton.Location = new System.Drawing.Point(452, 430);
             this.submitButton.Name = "submitButton";
@@ -225,7 +231,6 @@
             this.disgustedIcon.Size = new System.Drawing.Size(60, 60);
             this.disgustedIcon.TabIndex = 8;
             this.disgustedIcon.Text = " ";
-      
             // 
             // socialIcon
             // 
@@ -346,7 +351,6 @@
             this.sadIcon.Size = new System.Drawing.Size(60, 60);
             this.sadIcon.TabIndex = 6;
             this.sadIcon.Text = " ";
-           
             // 
             // readIcon
             // 
@@ -387,7 +391,6 @@
             this.mehIcon.Size = new System.Drawing.Size(60, 60);
             this.mehIcon.TabIndex = 5;
             this.mehIcon.Text = " ";
-          
             // 
             // musicIcon
             // 
@@ -428,7 +431,6 @@
             this.angryIcon.Size = new System.Drawing.Size(60, 60);
             this.angryIcon.TabIndex = 3;
             this.angryIcon.Text = " ";
-          
             // 
             // gameIcon
             // 
@@ -489,7 +491,6 @@
             this.flirtyIcon.Size = new System.Drawing.Size(60, 60);
             this.flirtyIcon.TabIndex = 2;
             this.flirtyIcon.Text = " ";
-            
             // 
             // exerciseIcon
             // 
@@ -530,7 +531,6 @@
             this.contentedIcon.Size = new System.Drawing.Size(60, 60);
             this.contentedIcon.TabIndex = 1;
             this.contentedIcon.Text = " ";
-          
             // 
             // happyIcon
             // 
@@ -551,7 +551,6 @@
             this.happyIcon.Size = new System.Drawing.Size(60, 60);
             this.happyIcon.TabIndex = 0;
             this.happyIcon.Text = " ";
-          
             // 
             // MoodTracker
             // 
@@ -589,6 +588,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MoodTracker";
             this.Text = "MoodTracker";
+            this.Load += new System.EventHandler(this.MoodTracker_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

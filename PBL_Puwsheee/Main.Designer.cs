@@ -69,12 +69,14 @@
             // pageLabel
             // 
             this.pageLabel.BackColor = System.Drawing.Color.Transparent;
+            this.pageLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pageLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.pageLabel.Location = new System.Drawing.Point(143, 35);
+            this.pageLabel.Location = new System.Drawing.Point(140, 34);
             this.pageLabel.Name = "pageLabel";
-            this.pageLabel.Size = new System.Drawing.Size(57, 15);
+            this.pageLabel.Size = new System.Drawing.Size(93, 22);
             this.pageLabel.TabIndex = 0;
             this.pageLabel.Text = "Page Label";
+            this.pageLabel.Click += new System.EventHandler(this.pageLabel_Click);
             // 
             // guna2Panel1
             // 

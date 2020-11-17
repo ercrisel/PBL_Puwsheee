@@ -86,5 +86,10 @@ namespace PBL_Puwsheee
             new Settings.Settings_Main().Show();
             this.Close();
         }
+
+        private void pageLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

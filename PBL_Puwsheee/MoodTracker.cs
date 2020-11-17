@@ -16,5 +16,10 @@ namespace PBL_Puwsheee
         {
             InitializeComponent();
         }
+
+        private void MoodTracker_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
