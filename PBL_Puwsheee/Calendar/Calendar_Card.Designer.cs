@@ -334,10 +334,14 @@
             // 
             // removeButton
             // 
+            this.removeButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
+            this.removeButton.BorderRadius = 16;
+            this.removeButton.BorderThickness = 2;
             this.removeButton.CheckedState.Parent = this.removeButton;
             this.removeButton.CustomImages.Parent = this.removeButton;
-            this.removeButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.removeButton.ForeColor = System.Drawing.Color.White;
+            this.removeButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.removeButton.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.removeButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
             this.removeButton.HoverState.Parent = this.removeButton;
             this.removeButton.Location = new System.Drawing.Point(406, 353);
             this.removeButton.Name = "removeButton";
@@ -349,9 +353,11 @@
             // 
             // updateButton
             // 
+            this.updateButton.BorderRadius = 16;
             this.updateButton.CheckedState.Parent = this.updateButton;
             this.updateButton.CustomImages.Parent = this.updateButton;
-            this.updateButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.updateButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
+            this.updateButton.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updateButton.ForeColor = System.Drawing.Color.White;
             this.updateButton.HoverState.Parent = this.updateButton;
             this.updateButton.Location = new System.Drawing.Point(547, 353);

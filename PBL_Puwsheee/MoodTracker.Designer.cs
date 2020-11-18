@@ -57,10 +57,10 @@
             this.activitiesLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.moodLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.moodPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.activitiesPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.labelMood = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labelActivities = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.moodPanel.SuspendLayout();
             this.activitiesPanel.SuspendLayout();
             this.SuspendLayout();
@@ -128,10 +128,14 @@
             // 
             // clearButton
             // 
+            this.clearButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
+            this.clearButton.BorderRadius = 16;
+            this.clearButton.BorderThickness = 2;
             this.clearButton.CheckedState.Parent = this.clearButton;
             this.clearButton.CustomImages.Parent = this.clearButton;
-            this.clearButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.clearButton.ForeColor = System.Drawing.Color.White;
+            this.clearButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.clearButton.Font = new System.Drawing.Font("MS Reference Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.clearButton.HoverState.Parent = this.clearButton;
             this.clearButton.Location = new System.Drawing.Point(318, 452);
             this.clearButton.Name = "clearButton";
@@ -142,10 +146,12 @@
             // 
             // submitButton
             // 
+            this.submitButton.BorderRadius = 16;
             this.submitButton.CheckedState.Parent = this.submitButton;
             this.submitButton.CustomImages.Parent = this.submitButton;
-            this.submitButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.submitButton.ForeColor = System.Drawing.Color.White;
+            this.submitButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
+            this.submitButton.Font = new System.Drawing.Font("MS Reference Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.submitButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.submitButton.HoverState.Parent = this.submitButton;
             this.submitButton.Location = new System.Drawing.Point(452, 452);
             this.submitButton.Name = "submitButton";
@@ -644,6 +650,30 @@
             this.moodPanel.Size = new System.Drawing.Size(283, 135);
             this.moodPanel.TabIndex = 31;
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Contented;
+            this.guna2Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Button1.BorderRadius = 15;
+            this.guna2Button1.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(148, 4);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.PressedColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(60, 60);
+            this.guna2Button1.TabIndex = 1;
+            this.guna2Button1.Tag = "Contented";
+            this.guna2Button1.Text = " ";
+            this.guna2Button1.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
+            this.guna2Button1.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
+            // 
             // activitiesPanel
             // 
             this.activitiesPanel.Controls.Add(this.travelIcon);
@@ -681,30 +711,6 @@
             this.labelActivities.Size = new System.Drawing.Size(58, 15);
             this.labelActivities.TabIndex = 10;
             this.labelActivities.Text = "ACTIVITES";
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Contented;
-            this.guna2Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.guna2Button1.BorderRadius = 15;
-            this.guna2Button1.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(148, 4);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.PressedColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(60, 60);
-            this.guna2Button1.TabIndex = 1;
-            this.guna2Button1.Tag = "Contented";
-            this.guna2Button1.Text = " ";
-            this.guna2Button1.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
-            this.guna2Button1.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
             // 
             // MoodTracker
             // 
