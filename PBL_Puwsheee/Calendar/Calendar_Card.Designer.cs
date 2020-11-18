@@ -86,6 +86,7 @@
             // 
             this.guna2Button1.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Cook;
             this.guna2Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Button1.BorderRadius = 15;
             this.guna2Button1.CheckedState.Parent = this.guna2Button1;
             this.guna2Button1.CustomImages.Parent = this.guna2Button1;
             this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
@@ -103,6 +104,7 @@
             // 
             this.guna2Button2.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Exercise;
             this.guna2Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Button2.BorderRadius = 15;
             this.guna2Button2.CheckedState.Parent = this.guna2Button2;
             this.guna2Button2.CustomImages.Parent = this.guna2Button2;
             this.guna2Button2.FillColor = System.Drawing.Color.Transparent;
@@ -120,6 +122,7 @@
             // 
             this.guna2Button3.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Game;
             this.guna2Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Button3.BorderRadius = 15;
             this.guna2Button3.CheckedState.Parent = this.guna2Button3;
             this.guna2Button3.CustomImages.Parent = this.guna2Button3;
             this.guna2Button3.FillColor = System.Drawing.Color.Transparent;
@@ -137,6 +140,7 @@
             // 
             this.guna2Button4.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Music;
             this.guna2Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Button4.BorderRadius = 15;
             this.guna2Button4.CheckedState.Parent = this.guna2Button4;
             this.guna2Button4.CustomImages.Parent = this.guna2Button4;
             this.guna2Button4.FillColor = System.Drawing.Color.Transparent;
@@ -154,6 +158,7 @@
             // 
             this.guna2Button5.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Social;
             this.guna2Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Button5.BorderRadius = 15;
             this.guna2Button5.CheckedState.Parent = this.guna2Button5;
             this.guna2Button5.CustomImages.Parent = this.guna2Button5;
             this.guna2Button5.FillColor = System.Drawing.Color.Transparent;
@@ -171,6 +176,7 @@
             // 
             this.guna2Button6.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Sleep;
             this.guna2Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Button6.BorderRadius = 15;
             this.guna2Button6.CheckedState.Parent = this.guna2Button6;
             this.guna2Button6.CustomImages.Parent = this.guna2Button6;
             this.guna2Button6.FillColor = System.Drawing.Color.Transparent;
@@ -188,6 +194,7 @@
             // 
             this.guna2Button7.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Shop;
             this.guna2Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Button7.BorderRadius = 15;
             this.guna2Button7.CheckedState.Parent = this.guna2Button7;
             this.guna2Button7.CustomImages.Parent = this.guna2Button7;
             this.guna2Button7.FillColor = System.Drawing.Color.Transparent;
@@ -205,6 +212,7 @@
             // 
             this.guna2Button8.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Read;
             this.guna2Button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Button8.BorderRadius = 15;
             this.guna2Button8.CheckedState.Parent = this.guna2Button8;
             this.guna2Button8.CustomImages.Parent = this.guna2Button8;
             this.guna2Button8.FillColor = System.Drawing.Color.Transparent;
@@ -222,6 +230,7 @@
             // 
             this.guna2Button9.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Watch;
             this.guna2Button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Button9.BorderRadius = 15;
             this.guna2Button9.CheckedState.Parent = this.guna2Button9;
             this.guna2Button9.CustomImages.Parent = this.guna2Button9;
             this.guna2Button9.FillColor = System.Drawing.Color.Transparent;
@@ -239,6 +248,7 @@
             // 
             this.guna2Button10.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Travel;
             this.guna2Button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Button10.BorderRadius = 15;
             this.guna2Button10.CheckedState.Parent = this.guna2Button10;
             this.guna2Button10.CustomImages.Parent = this.guna2Button10;
             this.guna2Button10.FillColor = System.Drawing.Color.Transparent;
@@ -256,6 +266,7 @@
             // 
             this.guna2Button11.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Study;
             this.guna2Button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Button11.BorderRadius = 15;
             this.guna2Button11.CheckedState.Parent = this.guna2Button11;
             this.guna2Button11.CustomImages.Parent = this.guna2Button11;
             this.guna2Button11.FillColor = System.Drawing.Color.Transparent;
@@ -273,6 +284,7 @@
             // 
             this.guna2Button12.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Sports;
             this.guna2Button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Button12.BorderRadius = 15;
             this.guna2Button12.CheckedState.Parent = this.guna2Button12;
             this.guna2Button12.CustomImages.Parent = this.guna2Button12;
             this.guna2Button12.FillColor = System.Drawing.Color.Transparent;

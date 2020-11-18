@@ -50,7 +50,7 @@
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Calendar_Main";
-            this.Text = "Calendar_Main";
+            this.Text = "Calendar ";
             this.ResumeLayout(false);
 
         }
