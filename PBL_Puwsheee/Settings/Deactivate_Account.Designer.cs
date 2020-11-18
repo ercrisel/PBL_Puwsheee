@@ -70,7 +70,7 @@
             this.deleteButton.ShadowDecoration.Parent = this.deleteButton;
             this.deleteButton.Size = new System.Drawing.Size(180, 45);
             this.deleteButton.TabIndex = 5;
-            this.deleteButton.Text = "guna2Button2";
+            this.deleteButton.Text = "Delete Acount";
             // 
             // cancelButton
             // 
