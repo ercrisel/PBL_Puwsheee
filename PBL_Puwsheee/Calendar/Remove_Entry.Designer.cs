@@ -37,7 +37,7 @@
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(205, 106);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(203, 141);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(213, 15);
             this.guna2HtmlLabel1.TabIndex = 0;
@@ -46,7 +46,7 @@
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(230, 139);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(231, 174);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(164, 15);
             this.guna2HtmlLabel2.TabIndex = 1;
@@ -54,31 +54,36 @@
             // 
             // cancelButton
             // 
+            this.cancelButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
+            this.cancelButton.BorderRadius = 16;
+            this.cancelButton.BorderThickness = 2;
             this.cancelButton.CheckedState.Parent = this.cancelButton;
             this.cancelButton.CustomImages.Parent = this.cancelButton;
-            this.cancelButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.cancelButton.ForeColor = System.Drawing.Color.White;
+            this.cancelButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.cancelButton.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancelButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.cancelButton.HoverState.Parent = this.cancelButton;
-            this.cancelButton.Location = new System.Drawing.Point(115, 223);
+            this.cancelButton.Location = new System.Drawing.Point(167, 233);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.ShadowDecoration.Parent = this.cancelButton;
-            this.cancelButton.Size = new System.Drawing.Size(176, 45);
-            this.cancelButton.TabIndex = 2;
-            this.cancelButton.Text = "cancel";
-            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
+            this.cancelButton.Size = new System.Drawing.Size(113, 35);
+            this.cancelButton.TabIndex = 7;
+            this.cancelButton.Text = "Cancel";
             // 
             // removeButton
             // 
+            this.removeButton.BorderRadius = 16;
             this.removeButton.CheckedState.Parent = this.removeButton;
             this.removeButton.CustomImages.Parent = this.removeButton;
-            this.removeButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.removeButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
+            this.removeButton.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.removeButton.ForeColor = System.Drawing.Color.White;
             this.removeButton.HoverState.Parent = this.removeButton;
-            this.removeButton.Location = new System.Drawing.Point(324, 223);
+            this.removeButton.Location = new System.Drawing.Point(347, 233);
             this.removeButton.Name = "removeButton";
             this.removeButton.ShadowDecoration.Parent = this.removeButton;
-            this.removeButton.Size = new System.Drawing.Size(176, 45);
-            this.removeButton.TabIndex = 3;
+            this.removeButton.Size = new System.Drawing.Size(113, 35);
+            this.removeButton.TabIndex = 8;
             this.removeButton.Text = "Remove Entry";
             // 
             // Remove_Entry
