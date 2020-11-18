@@ -64,7 +64,8 @@
             this.cancelButton.ShadowDecoration.Parent = this.cancelButton;
             this.cancelButton.Size = new System.Drawing.Size(176, 45);
             this.cancelButton.TabIndex = 2;
-            this.cancelButton.Text = "guna2Button1";
+            this.cancelButton.Text = "cancel";
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
             // removeButton
             // 
@@ -78,12 +79,13 @@
             this.removeButton.ShadowDecoration.Parent = this.removeButton;
             this.removeButton.Size = new System.Drawing.Size(176, 45);
             this.removeButton.TabIndex = 3;
-            this.removeButton.Text = "guna2Button2";
+            this.removeButton.Text = "Remove Entry";
             // 
             // Remove_Entry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.ClientSize = new System.Drawing.Size(640, 370);
             this.Controls.Add(this.removeButton);
             this.Controls.Add(this.cancelButton);
@@ -91,6 +93,7 @@
             this.Controls.Add(this.guna2HtmlLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Remove_Entry";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Remove_Entry";
             this.ResumeLayout(false);
             this.PerformLayout();

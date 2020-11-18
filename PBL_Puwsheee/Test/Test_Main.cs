@@ -19,19 +19,19 @@ namespace PBL_Puwsheee.Test
 
         private void anxietytestButton_Click(object sender, EventArgs e)
         {
-            new Test.Anxiety_Test().Show();
+            new Test.Test_Question(anxietytestButton.Text).Show();
             this.Close();
         }
 
         private void stresstestbutton_Click(object sender, EventArgs e)
         {
-            new Test.Stress_Test().Show();
+            new Test.Test_Question(stresstestbutton.Text).Show();
             this.Close();
         }
 
         private void depressiontestButton_Click(object sender, EventArgs e)
         {
-            new Test.Depression_Test().Show();
+            new Test.Test_Question(depressiontestButton.Text).Show();
             this.Close();
         }
     }
