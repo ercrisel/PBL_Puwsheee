@@ -353,5 +353,8 @@
   <ItemGroup>
     <None Include="Resources\Edit.PNG" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back1.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

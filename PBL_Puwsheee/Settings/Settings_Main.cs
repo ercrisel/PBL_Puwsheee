@@ -19,7 +19,24 @@ namespace PBL_Puwsheee.Settings
 
         private void clickClearData(object sender, EventArgs e)
         {
-            new Clear_Data().Show();
+            Form bg = new Form();
+            using (Form settings = new Clear_Data())
+            {
+                bg.StartPosition = FormStartPosition.CenterScreen;
+                bg.FormBorderStyle = FormBorderStyle.None;
+                bg.Opacity = .50d;
+                bg.BackColor = Color.Black;
+                bg.WindowState = FormWindowState.Normal;
+                bg.TopMost = true;
+                bg.Location = this.Location;
+                bg.ShowInTaskbar = false;
+                bg.Size = new Size(1237, 622);
+                bg.Show();
+                
+                settings.Owner = bg;
+                settings.ShowDialog();
+                bg.Dispose();
+            }
         }
 
         private void clickDeactivateAccount(object sender, EventArgs e)
@@ -36,6 +53,21 @@ namespace PBL_Puwsheee.Settings
         {
             new Main().Show();
             this.Close();
+        }
+
+        private void savechangesButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void changepasswordButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void changephotoButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
