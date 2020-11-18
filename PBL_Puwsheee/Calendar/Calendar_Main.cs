@@ -19,7 +19,24 @@ namespace PBL_Puwsheee
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            Form bg = new Form();
+            using (Form card = new Calendar.Calendar_Card())
+            {
+                    bg.StartPosition = FormStartPosition.CenterScreen;
+                    bg.FormBorderStyle = FormBorderStyle.None;
+                    bg.Opacity = .50d;
+                    bg.BackColor = Color.Black;
+                    bg.WindowState = FormWindowState.Normal;
+                    bg.TopMost = true;
+                    bg.Location = this.Location;
+                    bg.ShowInTaskbar = false;
+                    bg.Size = new Size(1020, 580);
+                    bg.Show();
+
+                    card.Owner = bg;
+                    card.ShowDialog();
+                    bg.Dispose();
+            }
         }
     }
 }

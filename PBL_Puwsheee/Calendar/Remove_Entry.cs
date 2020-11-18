@@ -35,5 +35,10 @@ namespace PBL_Puwsheee.Calendar
         {
             this.Close();
         }
+
+        private void Remove_Entry_Load(object sender, EventArgs e)
+        {
+            this.BringToFront();
+        }
     }
 }

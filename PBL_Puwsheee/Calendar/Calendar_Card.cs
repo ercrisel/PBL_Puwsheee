@@ -34,19 +34,54 @@ namespace PBL_Puwsheee.Calendar
         private void backButton_Click(object sender, EventArgs e)
         {
             this.Close();
-            this.Visible = false;
         }
 
         private void removeButton_Click(object sender, EventArgs e)
         {
-            Remove_Entry remove = new Remove_Entry();
-            remove.Show();
+            Form bg = new Form();
+
+            using (Remove_Entry remove = new Remove_Entry())
+            {
+                bg.StartPosition = FormStartPosition.CenterScreen;
+                bg.FormBorderStyle = FormBorderStyle.None;
+                bg.Opacity = .50d;
+                bg.BackColor = Color.Black;
+                bg.WindowState = FormWindowState.Normal;
+                bg.TopMost = true;
+                bg.Location = this.Location;
+                bg.ShowInTaskbar = false;
+                bg.Size = new Size(1020, 580);
+                bg.Show();
+
+                remove.Owner = bg;
+                remove.BringToFront();
+                remove.ShowDialog();
+                bg.Dispose();
+            } 
         }
 
         private void updateButton_Click(object sender, EventArgs e)
         {
-            Edit_Entry edit = new Edit_Entry();
-            edit.Show();
+            Form bg = new Form();
+
+            using (Edit_Entry edit = new Edit_Entry())
+            {
+                bg.StartPosition = FormStartPosition.CenterScreen;
+                bg.FormBorderStyle = FormBorderStyle.None;
+                bg.Opacity = .50d;
+                bg.BackColor = Color.Black;
+                bg.WindowState = FormWindowState.Normal;
+                bg.TopMost = true;
+                bg.Location = this.Location;
+                bg.ShowInTaskbar = false;
+                bg.Size = new Size(1020, 580);
+                bg.Show();
+
+                edit.Owner = bg;
+                edit.BringToFront();
+                edit.ShowDialog();
+                bg.Dispose();
+            }
         }
     }
 }

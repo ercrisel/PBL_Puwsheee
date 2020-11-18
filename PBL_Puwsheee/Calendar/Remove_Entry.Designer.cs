@@ -95,6 +95,8 @@
             this.Name = "Remove_Entry";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Remove_Entry";
+            this.TopMost = true;
+            this.Load += new System.EventHandler(this.Remove_Entry_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
