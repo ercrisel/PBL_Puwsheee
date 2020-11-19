@@ -146,6 +146,7 @@
             this.usernameTextbox.ShadowDecoration.Parent = this.usernameTextbox;
             this.usernameTextbox.Size = new System.Drawing.Size(216, 42);
             this.usernameTextbox.TabIndex = 14;
+            this.usernameTextbox.TextChanged += new System.EventHandler(this.usernameTextbox_TextChanged);
             // 
             // guna2HtmlLabel1
             // 
