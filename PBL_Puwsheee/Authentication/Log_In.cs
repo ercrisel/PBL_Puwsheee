@@ -60,5 +60,10 @@ namespace PBL_Puwsheee
             su.Show();
             this.Close();
         }
+
+        private void Log_In_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

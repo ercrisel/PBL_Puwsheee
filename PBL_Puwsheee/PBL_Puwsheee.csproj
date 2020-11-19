@@ -351,6 +351,7 @@
     <None Include="Resources\Read.PNG" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Typo_Round_Bold_Demo.ttf" />
     <None Include="Resources\Watch.PNG" />
   </ItemGroup>
   <ItemGroup>

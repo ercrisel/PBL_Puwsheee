@@ -451,6 +451,16 @@ namespace PBL_Puwsheee.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Typo_Round_Bold_Demo {
+            get {
+                object obj = ResourceManager.GetObject("Typo_Round_Bold_Demo", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Up {

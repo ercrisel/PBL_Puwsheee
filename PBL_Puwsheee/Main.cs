@@ -87,9 +87,6 @@ namespace PBL_Puwsheee
             var form = new Settings.Settings_Main();
             form.Closed += (s, args) => this.Close();
             form.Show();
-
-
-
         }
 
         private void pageLabel_Click(object sender, EventArgs e)
