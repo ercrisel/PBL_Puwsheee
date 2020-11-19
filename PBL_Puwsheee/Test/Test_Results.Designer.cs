@@ -36,6 +36,8 @@
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.testresultLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.currentscoreLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.SuspendLayout();
             // 
             // guna2HtmlLabel1
@@ -59,6 +61,7 @@
             // currentscoreProgressBar
             // 
             this.currentscoreProgressBar.Location = new System.Drawing.Point(56, 75);
+            this.currentscoreProgressBar.Maximum = 50;
             this.currentscoreProgressBar.Name = "currentscoreProgressBar";
             this.currentscoreProgressBar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.currentscoreProgressBar.ShadowDecoration.Parent = this.currentscoreProgressBar;
@@ -95,7 +98,7 @@
             // guna2HtmlLabel5
             // 
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(361, 314);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(294, 314);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(106, 15);
             this.guna2HtmlLabel5.TabIndex = 7;
@@ -108,7 +111,7 @@
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(12, 12);
+            this.guna2Button1.Location = new System.Drawing.Point(421, 303);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(118, 36);
@@ -116,11 +119,31 @@
             this.guna2Button1.Text = "guna2Button1";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
+            // testresultLabel
+            // 
+            this.testresultLabel.BackColor = System.Drawing.Color.Transparent;
+            this.testresultLabel.Location = new System.Drawing.Point(233, 33);
+            this.testresultLabel.Name = "testresultLabel";
+            this.testresultLabel.Size = new System.Drawing.Size(57, 15);
+            this.testresultLabel.TabIndex = 9;
+            this.testresultLabel.Text = "Test Result";
+            // 
+            // currentscoreLabel
+            // 
+            this.currentscoreLabel.BackColor = System.Drawing.Color.Transparent;
+            this.currentscoreLabel.Location = new System.Drawing.Point(160, 165);
+            this.currentscoreLabel.Name = "currentscoreLabel";
+            this.currentscoreLabel.Size = new System.Drawing.Size(57, 15);
+            this.currentscoreLabel.TabIndex = 10;
+            this.currentscoreLabel.Text = "Test Result";
+            // 
             // Test_Results
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(640, 370);
+            this.Controls.Add(this.currentscoreLabel);
+            this.Controls.Add(this.testresultLabel);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.guna2HtmlLabel5);
             this.Controls.Add(this.guna2HtmlLabel4);
@@ -131,7 +154,10 @@
             this.Controls.Add(this.guna2HtmlLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Test_Results";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TestResults";
+            this.TopMost = true;
+            this.Load += new System.EventHandler(this.Test_Results_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -147,5 +173,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel testresultLabel;
+        private Guna.UI2.WinForms.Guna2HtmlLabel currentscoreLabel;
     }
 }

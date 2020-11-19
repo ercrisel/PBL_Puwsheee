@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Guna.UI2.WinForms;
 
 namespace PBL_Puwsheee.Test
 {
@@ -17,22 +18,29 @@ namespace PBL_Puwsheee.Test
             InitializeComponent();
         }
 
-        private void anxietytestButton_Click(object sender, EventArgs e)
-        {
-            new Test.Anxiety_Test().Show();
-            this.Close();
-        }
-
-        private void stresstestbutton_Click(object sender, EventArgs e)
-        {
-            new Test.Stress_Test().Show();
-            this.Close();
-        }
-
         private void depressiontestButton_Click(object sender, EventArgs e)
         {
-            new Test.Depression_Test().Show();
-            this.Close();
+            Guna2Button btn = sender as Guna2Button;
+
+            Form bg = new Form();
+            using (Form Test = new Test.Test_Questions(btn.Text))
+            {
+                bg.StartPosition = FormStartPosition.CenterScreen;
+                bg.FormBorderStyle = FormBorderStyle.None;
+                bg.Opacity = .50d;
+                bg.BackColor = Color.Black;
+                bg.WindowState = FormWindowState.Normal;
+                bg.TopMost = true;
+                bg.Location = this.Location;
+                bg.ShowInTaskbar = false;
+                bg.Size = new Size(1020, 580);
+                bg.Show();
+
+                Test.Owner = bg;
+                Test.ShowDialog();
+                bg.Dispose();
+            }
         }
     }
 }
+

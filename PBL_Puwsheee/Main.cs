@@ -70,8 +70,15 @@ namespace PBL_Puwsheee
 
         private void clickOptions(object sender, EventArgs e)
         {
-            new Settings.Settings_Main().Show();
-            this.Close();
+            this.Hide();
+            var form = new Settings.Settings_Main();
+            form.Closed += (s, args) => this.Close();
+            form.Show();
+        }
+
+        private void displayPanel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

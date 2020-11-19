@@ -114,8 +114,8 @@
             this.anxietytestButton.ShadowDecoration.Parent = this.anxietytestButton;
             this.anxietytestButton.Size = new System.Drawing.Size(180, 45);
             this.anxietytestButton.TabIndex = 6;
-            this.anxietytestButton.Text = "guna2Button1";
-            this.anxietytestButton.Click += new System.EventHandler(this.anxietytestButton_Click);
+            this.anxietytestButton.Text = "Anxiety";
+            this.anxietytestButton.Click += new System.EventHandler(this.depressiontestButton_Click);
             // 
             // stresstestbutton
             // 
@@ -129,8 +129,8 @@
             this.stresstestbutton.ShadowDecoration.Parent = this.stresstestbutton;
             this.stresstestbutton.Size = new System.Drawing.Size(180, 45);
             this.stresstestbutton.TabIndex = 7;
-            this.stresstestbutton.Text = "guna2Button2";
-            this.stresstestbutton.Click += new System.EventHandler(this.stresstestbutton_Click);
+            this.stresstestbutton.Text = "Stress";
+            this.stresstestbutton.Click += new System.EventHandler(this.depressiontestButton_Click);
             // 
             // depressiontestButton
             // 
@@ -144,7 +144,7 @@
             this.depressiontestButton.ShadowDecoration.Parent = this.depressiontestButton;
             this.depressiontestButton.Size = new System.Drawing.Size(180, 45);
             this.depressiontestButton.TabIndex = 8;
-            this.depressiontestButton.Text = "guna2Button2";
+            this.depressiontestButton.Text = "Depression";
             this.depressiontestButton.Click += new System.EventHandler(this.depressiontestButton_Click);
             // 
             // Test_Main
