@@ -61,7 +61,7 @@
             this.contentLabel1.BackColor = System.Drawing.Color.Transparent;
             this.contentLabel1.Font = new System.Drawing.Font("Robaga Rounded Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contentLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.contentLabel1.Location = new System.Drawing.Point(185, 59);
+            this.contentLabel1.Location = new System.Drawing.Point(132, 59);
             this.contentLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.contentLabel1.Name = "contentLabel1";
             this.contentLabel1.Size = new System.Drawing.Size(211, 30);
@@ -363,7 +363,7 @@
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Robaga Rounded Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(185, 342);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(132, 342);
             this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(117, 30);
@@ -403,7 +403,7 @@
             this.contentLabel3.BackColor = System.Drawing.Color.Transparent;
             this.contentLabel3.Font = new System.Drawing.Font("Robaga Rounded Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contentLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.contentLabel3.Location = new System.Drawing.Point(743, 342);
+            this.contentLabel3.Location = new System.Drawing.Point(684, 342);
             this.contentLabel3.Margin = new System.Windows.Forms.Padding(4);
             this.contentLabel3.Name = "contentLabel3";
             this.contentLabel3.Size = new System.Drawing.Size(106, 30);
