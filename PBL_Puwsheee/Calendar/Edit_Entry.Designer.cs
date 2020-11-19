@@ -40,13 +40,14 @@
             this.updateButton.CheckedState.Parent = this.updateButton;
             this.updateButton.CustomImages.Parent = this.updateButton;
             this.updateButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
-            this.updateButton.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updateButton.ForeColor = System.Drawing.Color.White;
+            this.updateButton.Font = new System.Drawing.Font("Typo Round Bold Demo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.updateButton.HoverState.Parent = this.updateButton;
-            this.updateButton.Location = new System.Drawing.Point(362, 209);
+            this.updateButton.Location = new System.Drawing.Point(483, 257);
+            this.updateButton.Margin = new System.Windows.Forms.Padding(4);
             this.updateButton.Name = "updateButton";
             this.updateButton.ShadowDecoration.Parent = this.updateButton;
-            this.updateButton.Size = new System.Drawing.Size(113, 35);
+            this.updateButton.Size = new System.Drawing.Size(151, 43);
             this.updateButton.TabIndex = 7;
             this.updateButton.Text = "Update Entry";
             // 
@@ -58,13 +59,14 @@
             this.cancelButton.CheckedState.Parent = this.cancelButton;
             this.cancelButton.CustomImages.Parent = this.cancelButton;
             this.cancelButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.cancelButton.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancelButton.Font = new System.Drawing.Font("Typo Round Bold Demo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cancelButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.cancelButton.HoverState.Parent = this.cancelButton;
-            this.cancelButton.Location = new System.Drawing.Point(153, 209);
+            this.cancelButton.Location = new System.Drawing.Point(204, 257);
+            this.cancelButton.Margin = new System.Windows.Forms.Padding(4);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.ShadowDecoration.Parent = this.cancelButton;
-            this.cancelButton.Size = new System.Drawing.Size(113, 35);
+            this.cancelButton.Size = new System.Drawing.Size(151, 43);
             this.cancelButton.TabIndex = 6;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
@@ -72,32 +74,37 @@
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(224, 157);
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Typo Round Bold Demo", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(299, 193);
+            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(168, 15);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(226, 18);
             this.guna2HtmlLabel2.TabIndex = 5;
             this.guna2HtmlLabel2.Text = "All entry for this day will be updated";
             // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(199, 127);
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Robaga Rounded Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(265, 156);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(211, 15);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(310, 18);
             this.guna2HtmlLabel1.TabIndex = 4;
             this.guna2HtmlLabel1.Text = "Are you sure you want to update your entry?";
             // 
             // Edit_Entry
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.ClientSize = new System.Drawing.Size(640, 370);
+            this.ClientSize = new System.Drawing.Size(853, 455);
             this.Controls.Add(this.updateButton);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Edit_Entry";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Edit_Entry";
