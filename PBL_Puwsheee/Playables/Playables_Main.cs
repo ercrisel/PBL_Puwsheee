@@ -16,5 +16,18 @@ namespace PBL_Puwsheee.Playables
         {
             InitializeComponent();
         }
+
+        private void upButton_Click(object sender, EventArgs e)
+        {
+            Breathing_Exercise be = new Breathing_Exercise() { TopLevel = false, TopMost = true };
+            this.playPanel.Controls.Add(be);
+            be.BringToFront();
+            be.Show();
+        }
+
+        private void downButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

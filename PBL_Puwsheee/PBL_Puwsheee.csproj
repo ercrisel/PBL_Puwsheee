@@ -120,6 +120,18 @@
     <Compile Include="Authentication\PositiveAffirmations.Designer.cs">
       <DependentUpon>PositiveAffirmations.cs</DependentUpon>
     </Compile>
+    <Compile Include="Playables\Breathing_Exercise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Playables\Breathing_Exercise.Designer.cs">
+      <DependentUpon>Breathing_Exercise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Playables\Calming_Music.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Playables\Calming_Music.Designer.cs">
+      <DependentUpon>Calming_Music.cs</DependentUpon>
+    </Compile>
     <Compile Include="Playables\Playables_Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,6 +214,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Authentication\PositiveAffirmations.resx">
       <DependentUpon>PositiveAffirmations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Playables\Breathing_Exercise.resx">
+      <DependentUpon>Breathing_Exercise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Playables\Calming_Music.resx">
+      <DependentUpon>Calming_Music.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Playables\Playables_Main.resx">
       <DependentUpon>Playables_Main.cs</DependentUpon>
@@ -355,6 +373,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Back1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plan A sticker.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Up.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Down.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plan-a-2.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

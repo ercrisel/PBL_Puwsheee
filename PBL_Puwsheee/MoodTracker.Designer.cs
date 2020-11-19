@@ -118,6 +118,7 @@
             this.notesTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.notesTextbox.HoverState.Parent = this.notesTextbox;
             this.notesTextbox.Location = new System.Drawing.Point(502, 92);
+            this.notesTextbox.MaxLength = 3000;
             this.notesTextbox.Name = "notesTextbox";
             this.notesTextbox.PasswordChar = '\0';
             this.notesTextbox.PlaceholderText = "";
