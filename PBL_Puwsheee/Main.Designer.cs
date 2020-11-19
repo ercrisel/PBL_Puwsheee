@@ -70,12 +70,12 @@
             // pageLabel
             // 
             this.pageLabel.BackColor = System.Drawing.Color.Transparent;
-            this.pageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pageLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pageLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.pageLabel.Location = new System.Drawing.Point(111, 39);
             this.pageLabel.Margin = new System.Windows.Forms.Padding(4);
             this.pageLabel.Name = "pageLabel";
-            this.pageLabel.Size = new System.Drawing.Size(93, 22);
+            this.pageLabel.Size = new System.Drawing.Size(91, 22);
             this.pageLabel.TabIndex = 0;
             this.pageLabel.Text = "Page Label";
             this.pageLabel.Click += new System.EventHandler(this.pageLabel_Click);
@@ -264,10 +264,11 @@
             // 
             this.usernameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.usernameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.usernameLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameLabel.Location = new System.Drawing.Point(877, 25);
             this.usernameLabel.Margin = new System.Windows.Forms.Padding(4);
             this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(51, 15);
+            this.usernameLabel.Size = new System.Drawing.Size(56, 16);
             this.usernameLabel.TabIndex = 9;
             this.usernameLabel.Text = "Username";
             // 
