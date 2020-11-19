@@ -409,9 +409,9 @@
             this.passwordCondition3.ForeColor = System.Drawing.Color.Red;
             this.passwordCondition3.Location = new System.Drawing.Point(370, 444);
             this.passwordCondition3.Name = "passwordCondition3";
-            this.passwordCondition3.Size = new System.Drawing.Size(299, 13);
+            this.passwordCondition3.Size = new System.Drawing.Size(143, 13);
             this.passwordCondition3.TabIndex = 35;
-            this.passwordCondition3.Text = "MUST BE A MIXTURE OF UPPERCASE AND LOWERCASE";
+            this.passwordCondition3.Text = "MUST BE ALPHANUMERIC";
             this.passwordCondition3.Visible = false;
             // 
             // showPassword

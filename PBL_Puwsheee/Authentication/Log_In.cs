@@ -24,7 +24,6 @@ namespace PBL_Puwsheee
         private void signupButton_Click(object sender, EventArgs e)
         {
             new Sign_Up().Show();
-            this.Close();
         }
 
         private void loginButton_Click(object sender, EventArgs e)
