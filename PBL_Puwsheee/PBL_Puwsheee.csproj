@@ -132,6 +132,12 @@
     <Compile Include="Playables\Calming_Music.Designer.cs">
       <DependentUpon>Calming_Music.cs</DependentUpon>
     </Compile>
+    <Compile Include="Playables\Pause Music.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Playables\Pause Music.Designer.cs">
+      <DependentUpon>Pause Music.cs</DependentUpon>
+    </Compile>
     <Compile Include="Playables\Playables_Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -220,6 +226,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Playables\Calming_Music.resx">
       <DependentUpon>Calming_Music.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Playables\Pause Music.resx">
+      <DependentUpon>Pause Music.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Playables\Playables_Main.resx">
       <DependentUpon>Playables_Main.cs</DependentUpon>
@@ -385,6 +394,40 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\plan-a-2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rain Ambience Text.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RainGif.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rain gif.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

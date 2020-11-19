@@ -27,7 +27,10 @@ namespace PBL_Puwsheee.Playables
 
         private void downButton_Click(object sender, EventArgs e)
         {
-
+            Calming_Music cm = new Calming_Music { TopLevel = false, TopMost = true };
+            this.playPanel.Controls.Add(cm);
+            cm.BringToFront();
+            cm.Show();
         }
     }
 }
