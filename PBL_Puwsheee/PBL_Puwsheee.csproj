@@ -132,12 +132,6 @@
     <Compile Include="Playables\Calming_Music.Designer.cs">
       <DependentUpon>Calming_Music.cs</DependentUpon>
     </Compile>
-    <Compile Include="Playables\Pause Music.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Playables\Pause Music.Designer.cs">
-      <DependentUpon>Pause Music.cs</DependentUpon>
-    </Compile>
     <Compile Include="Playables\Playables_Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -226,9 +220,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Playables\Calming_Music.resx">
       <DependentUpon>Calming_Music.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Playables\Pause Music.resx">
-      <DependentUpon>Pause Music.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Playables\Playables_Main.resx">
       <DependentUpon>Playables_Main.cs</DependentUpon>
