@@ -91,7 +91,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Playables_Main";
             this.Text = "Playables";
-            this.Load += new System.EventHandler(this.upButton_Click);
             this.ResumeLayout(false);
 
         }

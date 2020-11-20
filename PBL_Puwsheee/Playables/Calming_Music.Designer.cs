@@ -38,6 +38,29 @@ namespace PBL_Puwsheee.Playables
             ((System.ComponentModel.ISupportInitialize)(this.rainAmbienceText)).BeginInit();
             this.SuspendLayout();
             // 
+            // play
+            // 
+            play.BackColor = System.Drawing.Color.Transparent;
+            play.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            play.CheckedState.Parent = play;
+            play.Cursor = System.Windows.Forms.Cursors.Hand;
+            play.CustomImages.Parent = play;
+            play.FillColor = System.Drawing.Color.Transparent;
+            play.Font = new System.Drawing.Font("Segoe UI", 9F);
+            play.ForeColor = System.Drawing.Color.White;
+            play.HoverState.Parent = play;
+            play.Image = global::PBL_Puwsheee.Properties.Resources.play_button;
+            play.ImageSize = new System.Drawing.Size(104, 105);
+            play.Location = new System.Drawing.Point(314, 156);
+            play.Name = "play";
+            play.PressedColor = System.Drawing.Color.DarkGray;
+            play.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            play.ShadowDecoration.Parent = play;
+            play.Size = new System.Drawing.Size(117, 105);
+            play.TabIndex = 1;
+            play.UseTransparentBackground = true;
+            play.Click += new System.EventHandler(this.play_Click);
+            // 
             // rainGif
             // 
             this.rainGif.Image = global::PBL_Puwsheee.Properties.Resources.rain_gif;
@@ -83,29 +106,6 @@ namespace PBL_Puwsheee.Playables
             this.rainAmbienceText.TabIndex = 0;
             this.rainAmbienceText.TabStop = false;
             // 
-            // play
-            // 
-            play.BackColor = System.Drawing.Color.Transparent;
-            play.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            play.CheckedState.Parent = play;
-            play.Cursor = System.Windows.Forms.Cursors.Hand;
-            play.CustomImages.Parent = play;
-            play.FillColor = System.Drawing.Color.Transparent;
-            play.Font = new System.Drawing.Font("Segoe UI", 9F);
-            play.ForeColor = System.Drawing.Color.White;
-            play.HoverState.Parent = play;
-            play.Image = global::PBL_Puwsheee.Properties.Resources.play_button;
-            play.ImageSize = new System.Drawing.Size(104, 105);
-            play.Location = new System.Drawing.Point(314, 156);
-            play.Name = "play";
-            play.PressedColor = System.Drawing.Color.DarkGray;
-            play.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            play.ShadowDecoration.Parent = play;
-            play.Size = new System.Drawing.Size(117, 105);
-            play.TabIndex = 1;
-            play.UseTransparentBackground = true;
-            play.Click += new System.EventHandler(this.play_Click);
-            // 
             // Calming_Music
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -118,6 +118,7 @@ namespace PBL_Puwsheee.Playables
             this.Controls.Add(this.rainGif);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Calming_Music";
+            this.Tag = "music";
             this.Text = "Calming_Music";
             ((System.ComponentModel.ISupportInitialize)(this.rainGif)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rainAmbienceText)).EndInit();

@@ -78,6 +78,7 @@
             this.pageLabel.Size = new System.Drawing.Size(91, 22);
             this.pageLabel.TabIndex = 0;
             this.pageLabel.Text = "Page Label";
+            this.pageLabel.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
             this.pageLabel.Click += new System.EventHandler(this.pageLabel_Click);
             // 
             // guna2Panel1
