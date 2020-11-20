@@ -74,11 +74,11 @@
             // logoLabel
             // 
             this.logoLabel.BackColor = System.Drawing.Color.Transparent;
-            this.logoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logoLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
             this.logoLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.logoLabel.Location = new System.Drawing.Point(175, 252);
             this.logoLabel.Name = "logoLabel";
-            this.logoLabel.Size = new System.Drawing.Size(115, 32);
+            this.logoLabel.Size = new System.Drawing.Size(51, 16);
             this.logoLabel.TabIndex = 8;
             this.logoLabel.Text = "Puwshee";
             this.logoLabel.Click += new System.EventHandler(this.logoLabel_Click);
@@ -90,7 +90,7 @@
             this.loginButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.loginButton.CustomImages.Parent = this.loginButton;
             this.loginButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.loginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginButton.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
             this.loginButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.loginButton.HoverState.Parent = this.loginButton;
             this.loginButton.Location = new System.Drawing.Point(222, 450);
@@ -104,22 +104,22 @@
             // passwordLabel
             // 
             this.passwordLabel.BackColor = System.Drawing.Color.Transparent;
-            this.passwordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
             this.passwordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.passwordLabel.Location = new System.Drawing.Point(64, 400);
+            this.passwordLabel.Location = new System.Drawing.Point(88, 403);
             this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(85, 22);
+            this.passwordLabel.Size = new System.Drawing.Size(58, 16);
             this.passwordLabel.TabIndex = 12;
             this.passwordLabel.Text = "Password:";
             // 
             // usernameLabel
             // 
             this.usernameLabel.BackColor = System.Drawing.Color.Transparent;
-            this.usernameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
             this.usernameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.usernameLabel.Location = new System.Drawing.Point(59, 327);
+            this.usernameLabel.Location = new System.Drawing.Point(83, 330);
             this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(90, 22);
+            this.usernameLabel.Size = new System.Drawing.Size(59, 16);
             this.usernameLabel.TabIndex = 11;
             this.usernameLabel.Text = "Username:";
             // 
@@ -155,22 +155,22 @@
             // textLabel
             // 
             this.textLabel.BackColor = System.Drawing.Color.Transparent;
-            this.textLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
             this.textLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.textLabel.Location = new System.Drawing.Point(88, 521);
+            this.textLabel.Location = new System.Drawing.Point(126, 521);
             this.textLabel.Name = "textLabel";
-            this.textLabel.Size = new System.Drawing.Size(193, 22);
+            this.textLabel.Size = new System.Drawing.Size(123, 16);
             this.textLabel.TabIndex = 15;
             this.textLabel.Text = "Don\'t have an account?";
             // 
             // signupButton
             // 
             this.signupButton.AutoSize = true;
-            this.signupButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signupButton.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
             this.signupButton.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.signupButton.Location = new System.Drawing.Point(289, 521);
+            this.signupButton.Location = new System.Drawing.Point(255, 523);
             this.signupButton.Name = "signupButton";
-            this.signupButton.Size = new System.Drawing.Size(73, 20);
+            this.signupButton.Size = new System.Drawing.Size(46, 14);
             this.signupButton.TabIndex = 18;
             this.signupButton.TabStop = true;
             this.signupButton.Text = "Sign Up";
@@ -190,7 +190,7 @@
             // 
             this.pictureBox1.Image = global::PBL_Puwsheee.Properties.Resources.Exit;
             this.pictureBox1.Location = new System.Drawing.Point(21, 20);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(43, 40);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -215,7 +215,7 @@
             this.Controls.Add(this.usernameLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Log_In";
-            this.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Padding = new System.Windows.Forms.Padding(5);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Log_In";
             this.Load += new System.EventHandler(this.Log_In_Load);
