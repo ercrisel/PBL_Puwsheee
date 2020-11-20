@@ -15,7 +15,7 @@ namespace PBL_Puwsheee.Playables
     public partial class Calming_Music : Form
     {
         //WindowsMediaPlayer rain = new WindowsMediaPlayer();
-        
+        SoundPlayer rain = new SoundPlayer(@"C:\Users\ashle\source\repos\PBL_Puwsheee9\PBL_Puwsheee\Resources\Rain sounds.wav");
 
         public Calming_Music()
         {
@@ -26,8 +26,8 @@ namespace PBL_Puwsheee.Playables
         {
             
             //rain.URL = "Rain Ambience.mp3";
-            //rain.Play();
-            //rain.PlayLooping();
+            rain.Play();
+            rain.PlayLooping();
             //rainGif.BringToFront();
             rainGif.Visible = true;
             pauseButton.BringToFront();
@@ -36,7 +36,7 @@ namespace PBL_Puwsheee.Playables
 
         private void pause_Click(object sender, EventArgs e)
         {
-           // rain.Stop();
+            rain.Stop();
             rainGif.Visible = false;
             pauseButton.Visible = false;
             pauseButton.SendToBack();
