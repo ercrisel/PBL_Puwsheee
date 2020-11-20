@@ -15,7 +15,7 @@ namespace PBL_Puwsheee.Playables
     public partial class Calming_Music : Form
     {
         //WindowsMediaPlayer rain = new WindowsMediaPlayer();
-        SoundPlayer rain = new SoundPlayer(@"C:\Users\ashle\source\repos\PBL_Puwsheee9\PBL_Puwsheee\Resources\Rain sounds.wav");
+        SoundPlayer rain = new SoundPlayer(PBL_Puwsheee.Properties.Resources.Rain_sounds);
 
         public Calming_Music()
         {

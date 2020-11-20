@@ -322,6 +322,7 @@
             this.clearButton.Size = new System.Drawing.Size(85, 35);
             this.clearButton.TabIndex = 28;
             this.clearButton.Text = "clear";
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // notesTextbox
             // 

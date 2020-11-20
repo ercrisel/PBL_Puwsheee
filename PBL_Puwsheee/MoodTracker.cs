@@ -41,5 +41,28 @@ namespace PBL_Puwsheee
         {
             labelActivities.Text = "";
         }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            foreach (Control moodButton in moodPanel.Controls.OfType<Guna2Button>())
+            {
+                Guna2Button mood = (Guna2Button)moodButton;
+                if (mood.Checked == true)
+                {
+                    mood.Checked = false;
+                }
+            }
+
+            foreach(Control actButton in activitiesPanel.Controls.OfType<Guna2Button>())
+            { 
+                Guna2Button act = (Guna2Button)actButton;
+                if (act.Checked == true)
+                {
+                    act.Checked = false;
+                }
+            }
+
+            notesTextbox.Text = "";
+        }
     }
 }
