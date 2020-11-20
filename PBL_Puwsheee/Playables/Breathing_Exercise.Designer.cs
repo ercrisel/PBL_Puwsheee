@@ -53,6 +53,7 @@ namespace PBL_Puwsheee.Playables
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Breathing_Exercise";
+            this.Tag = "breathing";
             this.Text = "Breathing_Exercise";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
