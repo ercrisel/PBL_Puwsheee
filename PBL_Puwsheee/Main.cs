@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PBL_Puwsheee.Authentication.Class;
+using PBL_Puwsheee.Authentication.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,8 +14,10 @@ namespace PBL_Puwsheee
 {
     public partial class Main : Form
     {
+        MainLoad user = new MainLoad();
+        
         private Form activeForm;
-
+        
         public Main()
         {
             InitializeComponent();
@@ -22,6 +26,12 @@ namespace PBL_Puwsheee
 
         private void Main_Load(object sender, EventArgs e)
         {
+            Console.WriteLine("loaded");
+            user.Username = Log_In.publicUserName;
+            usernameLabel.Text = user.Username;
+            user.LoadPicture(usericonPicture);
+
+            
         }
 
         private void openChildForm(Form childForm)

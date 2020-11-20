@@ -35,7 +35,6 @@ namespace PBL_Puwsheee.Authentication.Model
                 }
                 password = builder.ToString();
                 return password;
-
             }
         }
 

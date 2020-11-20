@@ -38,6 +38,8 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.signupButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.requiredFirst = new System.Windows.Forms.Label();
+            this.requiredPass = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.logoPicture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,6 +68,7 @@
             this.passwordTextbox.ShadowDecoration.Parent = this.passwordTextbox;
             this.passwordTextbox.Size = new System.Drawing.Size(216, 42);
             this.passwordTextbox.TabIndex = 10;
+            this.passwordTextbox.TextChanged += new System.EventHandler(this.passwordTextbox_TextChanged);
             // 
             // logoLabel
             // 
@@ -187,12 +190,36 @@
             this.guna2Button1.Text = "guna2Button1";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
+            // requiredFirst
+            // 
+            this.requiredFirst.AutoSize = true;
+            this.requiredFirst.ForeColor = System.Drawing.Color.Red;
+            this.requiredFirst.Location = new System.Drawing.Point(596, 353);
+            this.requiredFirst.Name = "requiredFirst";
+            this.requiredFirst.Size = new System.Drawing.Size(152, 13);
+            this.requiredFirst.TabIndex = 38;
+            this.requiredFirst.Text = "*THIS IS A REQUIRED FIELD";
+            this.requiredFirst.Visible = false;
+            // 
+            // requiredPass
+            // 
+            this.requiredPass.AutoSize = true;
+            this.requiredPass.ForeColor = System.Drawing.Color.Red;
+            this.requiredPass.Location = new System.Drawing.Point(596, 402);
+            this.requiredPass.Name = "requiredPass";
+            this.requiredPass.Size = new System.Drawing.Size(152, 13);
+            this.requiredPass.TabIndex = 39;
+            this.requiredPass.Text = "*THIS IS A REQUIRED FIELD";
+            this.requiredPass.Visible = false;
+            // 
             // Log_In
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1020, 580);
+            this.Controls.Add(this.requiredPass);
+            this.Controls.Add(this.requiredFirst);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.signupButton);
             this.Controls.Add(this.guna2HtmlLabel1);
@@ -226,5 +253,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2Button signupButton;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.Label requiredFirst;
+        private System.Windows.Forms.Label requiredPass;
     }
 }

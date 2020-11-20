@@ -72,10 +72,11 @@
     <Compile Include="Analysis.Designer.cs">
       <DependentUpon>Analysis.cs</DependentUpon>
     </Compile>
-    <Compile Include="Authentication\Model\ConnectToDatabase.cs" />
-    <Compile Include="Authentication\Model\LogIn.cs" />
-    <Compile Include="Authentication\Model\PasswordEncryption.cs" />
-    <Compile Include="Authentication\Model\SignUp.cs">
+    <Compile Include="Authentication\Class\ConnectToDatabase.cs" />
+    <Compile Include="Authentication\Class\LogIn.cs" />
+    <Compile Include="Authentication\Class\MainLoad.cs" />
+    <Compile Include="Authentication\Class\PasswordEncryption.cs" />
+    <Compile Include="Authentication\Class\SignUp.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Calendar\Calendar_Card.cs">
@@ -287,5 +288,6 @@
   <ItemGroup>
     <None Include="Resources\testphoto.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

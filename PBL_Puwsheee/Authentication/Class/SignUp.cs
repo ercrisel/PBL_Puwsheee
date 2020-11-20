@@ -16,8 +16,6 @@ namespace PBL_Puwsheee.Authentication.Model
     
     public class SignUp
     {
-        
-        
         //fields
         private string firstName;
         private string lastName;
@@ -31,6 +29,7 @@ namespace PBL_Puwsheee.Authentication.Model
         private string hashPassword;
         private char verified = 'Y';
         private string generatedCode;
+
         // properties
         public string FirstName
         {
@@ -73,11 +72,8 @@ namespace PBL_Puwsheee.Authentication.Model
             set { code = value; }
         }
         // methods
-
-        // method to check if all the text are only characters
-        public bool AreAllCharacters(string toCheck)
+        public void AreAllCharacters(string toCheck, Label condition)
         {
-            bool allLetters = false;
             char[] textCharArray = toCheck.ToCharArray();
             for (int i = 0; i < textCharArray.Length; i++)
             {
@@ -85,20 +81,19 @@ namespace PBL_Puwsheee.Authentication.Model
                 //checks if letter lang laman 65-90 caps 97-122 small
                 if (letter >= 65 && letter <= 90 || letter >= 97 && letter <= 122 || letter == 32)
                 {
-                    allLetters = true;
+                    condition.Visible = false;
                 }
                 else
                 {
-                    allLetters = false;
+                    condition.Visible = true;
                     break;
                 }
             }
-            return allLetters;
-        }
-        // method to check if it is unique in the database
-        public bool IsUniqueInDatabase(string storedProcedure, string parameterName, string parameterValue, string column)
-        {
            
+        } // method to check if all the text are only characters
+        public void IsUniqueInDatabase(string storedProcedure, string parameterName, string parameterValue, string column, Label condition)
+        {
+            
             bool unique = true;
             SqlConnection connect = new SqlConnection(connectionString);
             connect.Open();
@@ -109,34 +104,27 @@ namespace PBL_Puwsheee.Authentication.Model
             while (read.Read())
             {
                 string checkSimilar = read[column].ToString();
-                if (checkSimilar == parameterValue)
+                if (checkSimilar == parameterValue )
                 {
                     unique = false;
                 }
             }
             read.Close();
             connect.Close();
+            if (unique)
+            {
+                condition.Visible = false;
+            }
+            else
+            {
+                condition.Visible = true;
+            }
+            
 
-            return unique;
-
-        }
-        // method to check if the password is strong
-        public int IsPasswordStrong(string password)
+        } // method to check if it is unique in the database
+        public void IsPasswordStrong(Label condition1, Label condition2, Label condition3) // method to check if the password is strong
         {
-            int total = 0;
             int minLength = 8;
-            bool correctLength = false ;
-            //first condition  must be 8 + char
-            if (password.Length >= minLength)
-            {
-                correctLength = true ;
-
-            }
-            if (password.Length < minLength)
-            {
-                correctLength = false;
-            }
-            // must contain at least upper or lower
             bool mayUpperCase = false;
             bool mayLowerCase = false;
             bool mayNumber = false;
@@ -161,60 +149,41 @@ namespace PBL_Puwsheee.Authentication.Model
                     continue;
                 }
             }
-            bool mayUpperCaseAtLower = mayUpperCase && mayLowerCase;
-            bool mayLetter = mayUpperCase || mayLowerCase;
-            bool mayNumberAtLetter = mayNumber && mayLetter;          
-            if (!correctLength && mayUpperCaseAtLower && mayNumberAtLetter) // if wala ginawa
+            if (password.Length >= minLength) // condition 1 must be 8 or more char
             {
-                total = 0;
+                condition1.Visible = false;
             }
-            if (correctLength) // nagawa si first condition
+            else
             {
-                total = 1;
+                condition1.Visible = true;
             }
-            if (mayUpperCaseAtLower) // second conditin nagawa
+            if (mayUpperCase && mayLowerCase) // condition 2 if may upp and low case
             {
-                total = 2;
+                condition2.Visible = false;
             }
-            if (mayNumberAtLetter)   // third condition nagawa = 3
+            else
             {
-                total = 3;
+                condition2.Visible = true;
             }
-            if (correctLength && mayUpperCaseAtLower) // if nagawa si 1st at second condition
+            if (mayLowerCase || mayUpperCase && mayNumber)
             {
-                total = 4;
+                condition3.Visible = false;
             }
-            if (correctLength && mayNumberAtLetter)  // if nagawa nya si 1 at 3
+            else
             {
-                total = 5;
+                condition3.Visible = true;
             }
-            if (mayNumberAtLetter && mayUpperCaseAtLower)     // if nagawa si 2 at 3
-            {
-                total = 6;
-            }
-            if (mayUpperCaseAtLower && correctLength && mayNumberAtLetter) // if nagawa nya lahat
-            {
-                total = 7;
-            }
-            return total;
         }
         
-        // checks if the pass and confirm pass is the same returns a true or false
-        public bool SamePassword()
+        public void SamePassword(Label text) // checks if the pass and confirm pass is the same label will notify 
         {
-           
-            bool samePass = true;
+            text.Visible = false;
             if (password  != confirmPassword)
             {
-                samePass = false;
-
+                text.Visible = true;
             }
-            return samePass;
-        }
-
-     
-        // method to generate the confirmation code
-        private string GenerateCodeToBeSent()
+        }  
+        private string GenerateCodeToBeSent() // method to generate the confirmation code  
         {
             string code = string.Empty;
             char[] generateCodeCharacters =
@@ -234,8 +203,7 @@ namespace PBL_Puwsheee.Authentication.Model
             generatedCode = code;
             return code;
         }
-        // method to send the code to email
-        public void SendEmailToCode()
+        public void SendEmailToCode()  // method to send the code to email
         {
             string codeToBeSent = GenerateCodeToBeSent();
             Console.WriteLine(codeToBeSent + " send mail function");
@@ -263,8 +231,8 @@ namespace PBL_Puwsheee.Authentication.Model
                 MessageBox.Show(ex.Message);
             }
         }
-        // method to check if code inputed is same as generated
-        public bool CorrectConfirmationCode()
+
+        public bool CorrectConfirmationCode() // method to check if code inputed is same as generated
         {
             bool same = false;
             if (code == generatedCode)
@@ -273,10 +241,9 @@ namespace PBL_Puwsheee.Authentication.Model
             }
             return same;
         }
-        PasswordEncryption encrypt = new PasswordEncryption();
- 
-        public void UploadEntriesToDatabase()
+        public void UploadEntriesToDatabase() // upload entries to database
         {
+            PasswordEncryption encrypt = new PasswordEncryption();
             // prepare photo to upload
             byte[] img = null;
             FileStream fs = new FileStream(imageLocation, FileMode.Open, FileAccess.Read);
@@ -286,7 +253,6 @@ namespace PBL_Puwsheee.Authentication.Model
             encrypt.Password = password;
             // encrypt si pass save sa hash
             hashPassword =encrypt.EncryptedPassword(emailAddress,firstName, lastName);
-            Console.WriteLine(hashPassword + "eto encrypted");
             // parameters
             string[] parameters = { "@FirstName", "@LastName", "@EmailAddress", "@Username", "@Password" };
             string[] parameterValues = { firstName, lastName, emailAddress, username, hashPassword};

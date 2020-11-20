@@ -46,13 +46,14 @@
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.firstnameTextbox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.userPicture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.changephotoButton = new Guna.UI2.WinForms.Guna2Button();
             this.contentLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.backButton = new Guna.UI2.WinForms.Guna2Button();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            this.emailTaken = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.userPicture)).BeginInit();
             this.SuspendLayout();
             // 
             // contentLabel1
@@ -125,6 +126,7 @@
             this.lastnameTextbox.ShadowDecoration.Parent = this.lastnameTextbox;
             this.lastnameTextbox.Size = new System.Drawing.Size(144, 23);
             this.lastnameTextbox.TabIndex = 11;
+            this.lastnameTextbox.TextChanged += new System.EventHandler(this.lastnameTextbox_TextChanged);
             // 
             // emailTextbox
             // 
@@ -151,6 +153,7 @@
             this.emailTextbox.ShadowDecoration.Parent = this.emailTextbox;
             this.emailTextbox.Size = new System.Drawing.Size(144, 23);
             this.emailTextbox.TabIndex = 12;
+            this.emailTextbox.TextChanged += new System.EventHandler(this.emailTextbox_TextChanged);
             // 
             // usernameTextbox
             // 
@@ -177,20 +180,23 @@
             this.usernameTextbox.ShadowDecoration.Parent = this.usernameTextbox;
             this.usernameTextbox.Size = new System.Drawing.Size(144, 23);
             this.usernameTextbox.TabIndex = 13;
+            this.usernameTextbox.TextChanged += new System.EventHandler(this.usernameTextbox_TextChanged);
             // 
             // savechangesButton
             // 
             this.savechangesButton.CheckedState.Parent = this.savechangesButton;
             this.savechangesButton.CustomImages.Parent = this.savechangesButton;
+            this.savechangesButton.Enabled = false;
             this.savechangesButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.savechangesButton.ForeColor = System.Drawing.Color.White;
             this.savechangesButton.HoverState.Parent = this.savechangesButton;
-            this.savechangesButton.Location = new System.Drawing.Point(251, 244);
+            this.savechangesButton.Location = new System.Drawing.Point(224, 233);
             this.savechangesButton.Name = "savechangesButton";
             this.savechangesButton.ShadowDecoration.Parent = this.savechangesButton;
             this.savechangesButton.Size = new System.Drawing.Size(80, 25);
             this.savechangesButton.TabIndex = 14;
-            this.savechangesButton.Text = "guna2Button1";
+            this.savechangesButton.Text = "Save ";
+            this.savechangesButton.Click += new System.EventHandler(this.savechangesButton_Click);
             // 
             // changepasswordButton
             // 
@@ -204,7 +210,7 @@
             this.changepasswordButton.ShadowDecoration.Parent = this.changepasswordButton;
             this.changepasswordButton.Size = new System.Drawing.Size(80, 25);
             this.changepasswordButton.TabIndex = 24;
-            this.changepasswordButton.Text = "guna2Button2";
+            this.changepasswordButton.Text = "Save Changes";
             // 
             // confirmTexbox
             // 
@@ -314,7 +320,7 @@
             // guna2HtmlLabel5
             // 
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(143, 310);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(132, 310);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(49, 15);
             this.guna2HtmlLabel5.TabIndex = 15;
@@ -345,18 +351,19 @@
             this.firstnameTextbox.ShadowDecoration.Parent = this.firstnameTextbox;
             this.firstnameTextbox.Size = new System.Drawing.Size(144, 23);
             this.firstnameTextbox.TabIndex = 25;
+            this.firstnameTextbox.TextChanged += new System.EventHandler(this.firstnameTextbox_TextChanged);
             // 
-            // guna2CirclePictureBox1
+            // userPicture
             // 
-            this.guna2CirclePictureBox1.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(536, 81);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(176, 177);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2CirclePictureBox1.TabIndex = 26;
-            this.guna2CirclePictureBox1.TabStop = false;
+            this.userPicture.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
+            this.userPicture.Location = new System.Drawing.Point(536, 81);
+            this.userPicture.Name = "userPicture";
+            this.userPicture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.userPicture.ShadowDecoration.Parent = this.userPicture;
+            this.userPicture.Size = new System.Drawing.Size(176, 177);
+            this.userPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.userPicture.TabIndex = 26;
+            this.userPicture.TabStop = false;
             // 
             // changephotoButton
             // 
@@ -426,17 +433,29 @@
             this.backButton.Text = "back";
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
+            // emailTaken
+            // 
+            this.emailTaken.AutoSize = true;
+            this.emailTaken.ForeColor = System.Drawing.Color.Red;
+            this.emailTaken.Location = new System.Drawing.Point(354, 172);
+            this.emailTaken.Name = "emailTaken";
+            this.emailTaken.Size = new System.Drawing.Size(91, 13);
+            this.emailTaken.TabIndex = 32;
+            this.emailTaken.Text = "EMAIL IS TAKEN";
+            this.emailTaken.Visible = false;
+            // 
             // Settings_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1020, 580);
+            this.Controls.Add(this.emailTaken);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.contentLabel3);
             this.Controls.Add(this.changephotoButton);
-            this.Controls.Add(this.guna2CirclePictureBox1);
+            this.Controls.Add(this.userPicture);
             this.Controls.Add(this.firstnameTextbox);
             this.Controls.Add(this.changepasswordButton);
             this.Controls.Add(this.confirmTexbox);
@@ -457,9 +476,10 @@
             this.Controls.Add(this.contentLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Settings_Main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Settings_Main";
             this.Load += new System.EventHandler(this.Settings_Main_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -485,11 +505,12 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2TextBox firstnameTextbox;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox userPicture;
         private Guna.UI2.WinForms.Guna2Button changephotoButton;
         private Guna.UI2.WinForms.Guna2HtmlLabel contentLabel3;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button backButton;
+        private System.Windows.Forms.Label emailTaken;
     }
 }

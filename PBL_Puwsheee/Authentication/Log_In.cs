@@ -20,31 +20,49 @@ namespace PBL_Puwsheee
         {
             InitializeComponent();
         }
-
+        public static string publicUserName;
         private void signupButton_Click(object sender, EventArgs e)
         {
-            new Sign_Up().Show();
-            this.Close();
-        }
 
-        private void loginButton_Click(object sender, EventArgs e)
-        {
+            this.Hide();
+            Sign_Up form = new Sign_Up();
+            form.Show();
             
-            user.Username = usernameTextbox.Text;
-            user.Password = passwordTextbox.Text;
-            user.checkIfAccountInDatabase();
-            if (user.checkIfAccountInDatabase())
+        }
+        public void requiredFieldShow(string textBox, Label required)
+        {
+            if (textBox != string.Empty)
             {
-                MessageBox.Show("You will be redirected to the homepage, Login Success");
-                PositiveAffirmations pa = new PositiveAffirmations();
-                pa.Show();
-                this.Close();
+                required.Visible = false;
             }
             else
             {
-                MessageBox.Show("Invalid Account");
+                required.Visible = true;
             }
-            
+        }
+        private void loginButton_Click(object sender, EventArgs e)
+        {
+            user.Username = usernameTextbox.Text;
+            user.Password = passwordTextbox.Text;
+            if (user.Username != string.Empty && user.Password != string.Empty)
+            {
+                if (user.checkIfAccountInDatabase())
+                {
+                    publicUserName = user.Username;
+                    MessageBox.Show("You will be redirected to the homepage, Login Success");
+                    PositiveAffirmations pa = new PositiveAffirmations();
+                    pa.Show();
+                }
+                else
+                {
+                    MessageBox.Show("NO ACCOUNT REGISTERED IN THAT USERNAME AND PASSWORD");
+                }
+            }
+            else
+            {
+                user.requiredFieldShow(user.Username, requiredFirst);
+                user.requiredFieldShow(user.Password, requiredPass);
+            }
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
@@ -54,9 +72,17 @@ namespace PBL_Puwsheee
 
         private void usernameTextbox_TextChanged(object sender, EventArgs e)
         {
-           
+            user.Username = usernameTextbox.Text;
+            user.requiredFieldShow(user.Username,requiredFirst);
            
 
+
+        }
+
+        private void passwordTextbox_TextChanged(object sender, EventArgs e)
+        {
+            user.Password = passwordTextbox.Text;
+            user.requiredFieldShow(user.Password, requiredPass);
         }
     }
 }

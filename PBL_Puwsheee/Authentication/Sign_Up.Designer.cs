@@ -409,9 +409,9 @@
             this.passwordCondition3.ForeColor = System.Drawing.Color.Red;
             this.passwordCondition3.Location = new System.Drawing.Point(370, 444);
             this.passwordCondition3.Name = "passwordCondition3";
-            this.passwordCondition3.Size = new System.Drawing.Size(299, 13);
+            this.passwordCondition3.Size = new System.Drawing.Size(191, 13);
             this.passwordCondition3.TabIndex = 35;
-            this.passwordCondition3.Text = "MUST BE A MIXTURE OF UPPERCASE AND LOWERCASE";
+            this.passwordCondition3.Text = "MUST HAVE NUMBER AND LETTER";
             this.passwordCondition3.Visible = false;
             // 
             // showPassword
@@ -572,6 +572,7 @@
             this.Controls.Add(this.firstNameTextBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Sign_Up";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sign_Up";
             this.Load += new System.EventHandler(this.Sign_Up_Load);
             ((System.ComponentModel.ISupportInitialize)(this.userPicture)).EndInit();

@@ -17,65 +17,7 @@ namespace PBL_Puwsheee
     public partial class Sign_Up : Form
     {
         SignUp user = new SignUp();
-        public void displayPasswordCondition (int num, string password)
-        {
-            int strengthOfPassword = user.IsPasswordStrong(password);
-            if (strengthOfPassword == 0)
-            {
-                passwordCondition1.Visible = true;
-                passwordCondtion2.Visible = true;
-                passwordCondition3.Visible = true;
-                
-            }
-            if (strengthOfPassword == 1)
-            {
-                passwordCondtion2.Visible = true;
-                passwordCondition3.Visible = true;
-                passwordCondition1.Visible = false;
-            }
-            if (strengthOfPassword == 2)
-            {
-                passwordCondition1.Visible = true;
-                passwordCondition3.Visible = true;
-                passwordCondtion2.Visible = false;
-
-            }
-            if (strengthOfPassword == 3)
-            {
-                passwordCondition1.Visible = true;
-                passwordCondtion2.Visible = true;
-                passwordCondition3.Visible = false;
-
-            }
-            if (strengthOfPassword == 4)
-            {
-                passwordCondition3.Visible = true;
-                passwordCondtion2.Visible = false;
-                passwordCondition1.Visible = false;
-
-            }
-            if (strengthOfPassword == 5)
-            {
-                passwordCondtion2.Visible = true;
-                passwordCondition1.Visible = false;
-                passwordCondition3.Visible = false;
-              
-
-            }
-            if (strengthOfPassword == 6)
-            {
-                passwordCondition1.Visible = true;
-                passwordCondition3.Visible = false;
-                passwordCondtion2.Visible = false;
-
-            }
-            if (strengthOfPassword == 7)
-            {
-                passwordCondition1.Visible = false;
-                passwordCondtion2.Visible = false;
-                passwordCondition3.Visible = false;
-            }
-        }
+     
         // checks if conditions are met
         public bool conditions()
         {
@@ -128,12 +70,15 @@ namespace PBL_Puwsheee
             else
             {
                 MessageBox.Show("Please complete all fields and the conditions required");
+                string[] checkField = {user.FirstName, user.LastName,user.EmailAddress, user.Username, user.Password, user.ConfirmPassword };
+                Label[] labels = { requiredFirst, requiredLast, requiredEmail, requiredUsername, requiredPassword, requiredConfirm };
+                for (int i = 0; i < labels.Length; i++)
+                {
+                    requiredFieldShow(checkField[i], labels[i]);
+                }
+                
             }
-            //PositiveAffirmations pa = new PositiveAffirmations();
-            //pa.Show();
-            //this.Close();
         }
-
         private void uploadimageButton_Click(object sender, EventArgs e)
         {
             OpenFileDialog dlg = new OpenFileDialog();
@@ -156,7 +101,7 @@ namespace PBL_Puwsheee
         }
         public void requiredFieldShow(string textBox, Label required)
         {
-            if (textBox != string.Empty)
+            if (textBox !=string.Empty)
             {
                 required.Visible = false;
             }
@@ -169,73 +114,41 @@ namespace PBL_Puwsheee
         {
         
             user.FirstName = firstNameTextBox.Text;
-            bool allLeters = user.AreAllCharacters(user.FirstName);
+            user.AreAllCharacters(user.FirstName, charactersOnly1);
             requiredFieldShow(user.FirstName, requiredFirst);
-            if (user.FirstName != string.Empty)
-            {
-
-
-                if (allLeters) charactersOnly1.Visible = false;
-                if (!allLeters) charactersOnly1.Visible = true;
-            }
         }
 
         private void lastNameTextBox_TextChanged(object sender, EventArgs e)
         {
             user.LastName = lastNameTextBox.Text;
-            bool allLeters = user.AreAllCharacters(user.LastName);
+            user.AreAllCharacters(user.LastName, charactersOnly2);
             requiredFieldShow(user.LastName, requiredLast);
-            if (user.LastName != string.Empty)
-            {
-                if (allLeters) charactersOnly2.Visible = false;
-                if (!allLeters) charactersOnly2.Visible = true;
-            }
         }
         private void emailTextBox_TextChanged(object sender, EventArgs e)
         {
             user.EmailAddress = emailTextBox.Text;
-            bool isEmailUnique = user.IsUniqueInDatabase("spCheckUniqueEmail", "@EmailAddress", user.EmailAddress, "EmailAddress" );
+            user.IsUniqueInDatabase("spCheckUniqueEmail", "@EmailAddress", user.EmailAddress, "EmailAddress", emailCondition);
             requiredFieldShow(user.EmailAddress, requiredEmail);
-            if (isEmailUnique) emailCondition.Visible = false;
-            if (!isEmailUnique) emailCondition.Visible = true;
          
         }
         private void usernameTexBox_TextChanged(object sender, EventArgs e)
         {
             user.Username = usernameTexBox.Text;
-            bool isUsernameUnique = user.IsUniqueInDatabase("spCheckUniqueUsername", "@Username", user.Username, "Username");
+            user.IsUniqueInDatabase("spCheckUniqueUsername", "@Username", user.Username, "Username", usernameCondition);
             requiredFieldShow(user.Username, requiredUsername);
-            if (isUsernameUnique) usernameCondition.Visible = false;
-            if (!isUsernameUnique) usernameCondition.Visible = true;
         }
-
         private void passwordTextBox_TextChanged(object sender, EventArgs e)
         {
             user.Password = passwordTextBox.Text;
-            int strenthOfPassword = user.IsPasswordStrong(user.Password);
+            user.IsPasswordStrong(passwordCondition1, passwordCondtion2, passwordCondition3);
             requiredFieldShow(user.Password, requiredPassword);
-            displayPasswordCondition(strenthOfPassword, user.Password);
-            if (user.SamePassword())
-            {
-                passAndConfirm.Visible = false;
-            }
-            else
-            {
-                passAndConfirm.Visible = true;
-            }
+            user.SamePassword(passAndConfirm);
         }
         private void confirmPasswordTextBox_TextChanged(object sender, EventArgs e)
         {
             user.ConfirmPassword = confirmPasswordTextBox.Text;
             requiredFieldShow(user.ConfirmPassword, requiredConfirm);
-            if (user.SamePassword())
-            {
-                passAndConfirm.Visible = false;
-            }
-            else
-            {
-                passAndConfirm.Visible = true;
-            }
+            user.SamePassword(passAndConfirm);
         }
 
         private void showPassword_Click(object sender, EventArgs e)
