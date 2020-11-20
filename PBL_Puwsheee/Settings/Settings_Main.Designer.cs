@@ -53,6 +53,16 @@
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.backButton = new Guna.UI2.WinForms.Guna2Button();
             this.emailTaken = new System.Windows.Forms.Label();
+            this.nameCondition = new System.Windows.Forms.Label();
+            this.usernameTaken = new System.Windows.Forms.Label();
+            this.enterCodeTextBox = new System.Windows.Forms.TextBox();
+            this.checkCodeIfSame = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lastCondition = new System.Windows.Forms.Label();
+            this.requiredFirstName = new System.Windows.Forms.Label();
+            this.requiredLastName = new System.Windows.Forms.Label();
+            this.requiredEmail = new System.Windows.Forms.Label();
+            this.requiredUsername = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.userPicture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -378,6 +388,7 @@
             this.changephotoButton.Size = new System.Drawing.Size(80, 25);
             this.changephotoButton.TabIndex = 27;
             this.changephotoButton.Text = "guna2Button2";
+            this.changephotoButton.Click += new System.EventHandler(this.changephotoButton_Click);
             // 
             // contentLabel3
             // 
@@ -444,11 +455,126 @@
             this.emailTaken.Text = "EMAIL IS TAKEN";
             this.emailTaken.Visible = false;
             // 
+            // nameCondition
+            // 
+            this.nameCondition.AutoSize = true;
+            this.nameCondition.ForeColor = System.Drawing.Color.Red;
+            this.nameCondition.Location = new System.Drawing.Point(333, 122);
+            this.nameCondition.Name = "nameCondition";
+            this.nameCondition.Size = new System.Drawing.Size(173, 13);
+            this.nameCondition.TabIndex = 33;
+            this.nameCondition.Text = "MUST ONLY CONTAIN LETTERS";
+            this.nameCondition.Visible = false;
+            // 
+            // usernameTaken
+            // 
+            this.usernameTaken.AutoSize = true;
+            this.usernameTaken.ForeColor = System.Drawing.Color.Red;
+            this.usernameTaken.Location = new System.Drawing.Point(354, 211);
+            this.usernameTaken.Name = "usernameTaken";
+            this.usernameTaken.Size = new System.Drawing.Size(120, 13);
+            this.usernameTaken.TabIndex = 34;
+            this.usernameTaken.Text = "USERNAME IS TAKEN";
+            this.usernameTaken.Visible = false;
+            // 
+            // enterCodeTextBox
+            // 
+            this.enterCodeTextBox.Location = new System.Drawing.Point(374, 264);
+            this.enterCodeTextBox.Name = "enterCodeTextBox";
+            this.enterCodeTextBox.Size = new System.Drawing.Size(100, 20);
+            this.enterCodeTextBox.TabIndex = 35;
+            this.enterCodeTextBox.Visible = false;
+            // 
+            // checkCodeIfSame
+            // 
+            this.checkCodeIfSame.Location = new System.Drawing.Point(480, 261);
+            this.checkCodeIfSame.Name = "checkCodeIfSame";
+            this.checkCodeIfSame.Size = new System.Drawing.Size(75, 23);
+            this.checkCodeIfSame.TabIndex = 36;
+            this.checkCodeIfSame.Text = "button1";
+            this.checkCodeIfSame.UseVisualStyleBackColor = true;
+            this.checkCodeIfSame.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(333, 267);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(37, 13);
+            this.label1.TabIndex = 37;
+            this.label1.Text = "CODE";
+            this.label1.Visible = false;
+            // 
+            // lastCondition
+            // 
+            this.lastCondition.AutoSize = true;
+            this.lastCondition.ForeColor = System.Drawing.Color.Red;
+            this.lastCondition.Location = new System.Drawing.Point(333, 151);
+            this.lastCondition.Name = "lastCondition";
+            this.lastCondition.Size = new System.Drawing.Size(173, 13);
+            this.lastCondition.TabIndex = 38;
+            this.lastCondition.Text = "MUST ONLY CONTAIN LETTERS";
+            this.lastCondition.Visible = false;
+            // 
+            // requiredFirstName
+            // 
+            this.requiredFirstName.AutoSize = true;
+            this.requiredFirstName.ForeColor = System.Drawing.Color.Red;
+            this.requiredFirstName.Location = new System.Drawing.Point(21, 124);
+            this.requiredFirstName.Name = "requiredFirstName";
+            this.requiredFirstName.Size = new System.Drawing.Size(97, 13);
+            this.requiredFirstName.TabIndex = 39;
+            this.requiredFirstName.Text = "REQUIRED FIELD";
+            this.requiredFirstName.Visible = false;
+            // 
+            // requiredLastName
+            // 
+            this.requiredLastName.AutoSize = true;
+            this.requiredLastName.ForeColor = System.Drawing.Color.Red;
+            this.requiredLastName.Location = new System.Drawing.Point(21, 153);
+            this.requiredLastName.Name = "requiredLastName";
+            this.requiredLastName.Size = new System.Drawing.Size(97, 13);
+            this.requiredLastName.TabIndex = 40;
+            this.requiredLastName.Text = "REQUIRED FIELD";
+            this.requiredLastName.Visible = false;
+            // 
+            // requiredEmail
+            // 
+            this.requiredEmail.AutoSize = true;
+            this.requiredEmail.ForeColor = System.Drawing.Color.Red;
+            this.requiredEmail.Location = new System.Drawing.Point(21, 182);
+            this.requiredEmail.Name = "requiredEmail";
+            this.requiredEmail.Size = new System.Drawing.Size(97, 13);
+            this.requiredEmail.TabIndex = 41;
+            this.requiredEmail.Text = "REQUIRED FIELD";
+            this.requiredEmail.Visible = false;
+            // 
+            // requiredUsername
+            // 
+            this.requiredUsername.AutoSize = true;
+            this.requiredUsername.ForeColor = System.Drawing.Color.Red;
+            this.requiredUsername.Location = new System.Drawing.Point(21, 211);
+            this.requiredUsername.Name = "requiredUsername";
+            this.requiredUsername.Size = new System.Drawing.Size(97, 13);
+            this.requiredUsername.TabIndex = 42;
+            this.requiredUsername.Text = "REQUIRED FIELD";
+            this.requiredUsername.Visible = false;
+            // 
             // Settings_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1020, 580);
+            this.Controls.Add(this.requiredUsername);
+            this.Controls.Add(this.requiredEmail);
+            this.Controls.Add(this.requiredLastName);
+            this.Controls.Add(this.requiredFirstName);
+            this.Controls.Add(this.lastCondition);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.checkCodeIfSame);
+            this.Controls.Add(this.enterCodeTextBox);
+            this.Controls.Add(this.usernameTaken);
+            this.Controls.Add(this.nameCondition);
             this.Controls.Add(this.emailTaken);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.guna2Button2);
@@ -512,5 +638,15 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button backButton;
         private System.Windows.Forms.Label emailTaken;
+        private System.Windows.Forms.Label nameCondition;
+        private System.Windows.Forms.Label usernameTaken;
+        private System.Windows.Forms.TextBox enterCodeTextBox;
+        private System.Windows.Forms.Button checkCodeIfSame;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lastCondition;
+        private System.Windows.Forms.Label requiredFirstName;
+        private System.Windows.Forms.Label requiredLastName;
+        private System.Windows.Forms.Label requiredEmail;
+        private System.Windows.Forms.Label requiredUsername;
     }
 }

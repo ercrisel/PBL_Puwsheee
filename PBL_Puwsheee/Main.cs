@@ -26,12 +26,9 @@ namespace PBL_Puwsheee
 
         private void Main_Load(object sender, EventArgs e)
         {
-            Console.WriteLine("loaded");
             user.Username = Log_In.publicUserName;
             usernameLabel.Text = user.Username;
             user.LoadPicture(usericonPicture);
-
-            
         }
 
         private void openChildForm(Form childForm)
