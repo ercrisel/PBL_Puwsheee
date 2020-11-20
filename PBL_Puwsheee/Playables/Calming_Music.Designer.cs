@@ -30,12 +30,12 @@ namespace PBL_Puwsheee.Playables
         private void InitializeComponent()
         {
             Guna.UI2.WinForms.Guna2CircleButton play;
-            this.rainGif = new System.Windows.Forms.PictureBox();
             this.pauseButton = new Guna.UI2.WinForms.Guna2CircleButton();
             this.rainAmbienceText = new System.Windows.Forms.PictureBox();
+            this.rainGif = new System.Windows.Forms.PictureBox();
             play = new Guna.UI2.WinForms.Guna2CircleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.rainGif)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rainAmbienceText)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rainGif)).BeginInit();
             this.SuspendLayout();
             // 
             // play
@@ -60,17 +60,6 @@ namespace PBL_Puwsheee.Playables
             play.TabIndex = 1;
             play.UseTransparentBackground = true;
             play.Click += new System.EventHandler(this.play_Click);
-            // 
-            // rainGif
-            // 
-            this.rainGif.Image = global::PBL_Puwsheee.Properties.Resources.rain_gif;
-            this.rainGif.Location = new System.Drawing.Point(40, -53);
-            this.rainGif.Name = "rainGif";
-            this.rainGif.Size = new System.Drawing.Size(638, 473);
-            this.rainGif.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.rainGif.TabIndex = 4;
-            this.rainGif.TabStop = false;
-            this.rainGif.Visible = false;
             // 
             // pauseButton
             // 
@@ -106,6 +95,18 @@ namespace PBL_Puwsheee.Playables
             this.rainAmbienceText.TabIndex = 0;
             this.rainAmbienceText.TabStop = false;
             // 
+            // rainGif
+            // 
+            this.rainGif.Image = global::PBL_Puwsheee.Properties.Resources.rain_gif;
+            this.rainGif.Location = new System.Drawing.Point(40, -53);
+            this.rainGif.Name = "rainGif";
+            this.rainGif.Size = new System.Drawing.Size(638, 473);
+            this.rainGif.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.rainGif.TabIndex = 4;
+            this.rainGif.TabStop = false;
+            this.rainGif.Visible = false;
+            this.rainGif.Click += new System.EventHandler(this.rainGif_Click);
+            // 
             // Calming_Music
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -120,8 +121,8 @@ namespace PBL_Puwsheee.Playables
             this.Name = "Calming_Music";
             this.Tag = "music";
             this.Text = "Calming_Music";
-            ((System.ComponentModel.ISupportInitialize)(this.rainGif)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rainAmbienceText)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rainGif)).EndInit();
             this.ResumeLayout(false);
 
         }

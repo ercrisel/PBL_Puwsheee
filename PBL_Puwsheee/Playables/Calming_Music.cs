@@ -8,12 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WMPLib;
+using System.Media;
 
 namespace PBL_Puwsheee.Playables
 {
     public partial class Calming_Music : Form
     {
-        WindowsMediaPlayer rain = new WindowsMediaPlayer();
+        //WindowsMediaPlayer rain = new WindowsMediaPlayer();
+        
 
         public Calming_Music()
         {
@@ -22,8 +24,10 @@ namespace PBL_Puwsheee.Playables
 
         private void play_Click(object sender, EventArgs e)
         {
-            rain.URL = "Rain Ambience.mp3";
-            rain.controls.play();
+            
+            //rain.URL = "Rain Ambience.mp3";
+            //rain.Play();
+            //rain.PlayLooping();
             //rainGif.BringToFront();
             rainGif.Visible = true;
             pauseButton.BringToFront();
@@ -32,11 +36,15 @@ namespace PBL_Puwsheee.Playables
 
         private void pause_Click(object sender, EventArgs e)
         {
-            rain.controls.stop();
-            rain.close();
+           // rain.Stop();
             rainGif.Visible = false;
             pauseButton.Visible = false;
             pauseButton.SendToBack();
+        }
+
+        private void rainGif_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -244,4 +244,10 @@
   <data name="Typo_Round_Bold_Demo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Typo_Round_Bold_Demo.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="Rain_Ambience" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rain Ambience.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Rain_sounds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rain sounds.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

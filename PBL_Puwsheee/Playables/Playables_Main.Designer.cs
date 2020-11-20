@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.playPanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // playPanel
@@ -40,25 +40,6 @@
             this.playPanel.ShadowDecoration.Parent = this.playPanel;
             this.playPanel.Size = new System.Drawing.Size(792, 481);
             this.playPanel.TabIndex = 0;
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Down;
-            this.guna2Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(824, 256);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.PressedColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(34, 31);
-            this.guna2Button1.TabIndex = 1;
-            this.guna2Button1.Click += new System.EventHandler(this.downButton_Click);
             // 
             // guna2Button2
             // 
@@ -79,6 +60,25 @@
             this.guna2Button2.TabIndex = 1;
             this.guna2Button2.Click += new System.EventHandler(this.upButton_Click);
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Down;
+            this.guna2Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Button1.BorderRadius = 10;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(824, 256);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.PressedColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(34, 31);
+            this.guna2Button1.TabIndex = 1;
+            this.guna2Button1.Click += new System.EventHandler(this.downButton_Click);
+            // 
             // Playables_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -91,6 +91,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Playables_Main";
             this.Text = "Playables";
+            this.Load += new System.EventHandler(this.upButton_Click);
             this.ResumeLayout(false);
 
         }
