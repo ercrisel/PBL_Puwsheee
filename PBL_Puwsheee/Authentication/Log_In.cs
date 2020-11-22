@@ -21,6 +21,7 @@ namespace PBL_Puwsheee
             InitializeComponent();
         }
         public static string publicUserName;
+        public static string passwordInput;
         private void signupButton_Click(object sender, EventArgs e)
         {
 
@@ -49,6 +50,7 @@ namespace PBL_Puwsheee
                 if (user.checkIfAccountInDatabase())
                 {
                     publicUserName = user.Username;
+                    passwordInput = user.Password;
                     MessageBox.Show("You will be redirected to the homepage, Login Success");
                     PositiveAffirmations pa = new PositiveAffirmations();
                     pa.Show();

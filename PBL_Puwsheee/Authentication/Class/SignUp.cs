@@ -29,7 +29,6 @@ namespace PBL_Puwsheee.Authentication.Model
         private string hashPassword;
         private char verified = 'Y';
         private string generatedCode;
-
         // properties
         public string FirstName
         {
@@ -71,6 +70,7 @@ namespace PBL_Puwsheee.Authentication.Model
             get { return code; }
             set { code = value; }
         }
+
         // methods
         public void AreAllCharacters(string toCheck, Label condition)
         {
@@ -165,7 +165,8 @@ namespace PBL_Puwsheee.Authentication.Model
             {
                 condition2.Visible = true;
             }
-            if (mayLowerCase || mayUpperCase && mayNumber)
+            bool mayLetter = mayUpperCase || mayLowerCase;
+            if (mayLetter && mayNumber)
             {
                 condition3.Visible = false;
             }
@@ -183,7 +184,7 @@ namespace PBL_Puwsheee.Authentication.Model
                 text.Visible = true;
             }
         }  
-        private string GenerateCodeToBeSent() // method to generate the confirmation code  
+        public string GenerateCodeToBeSent() // method to generate the confirmation code  
         {
             string code = string.Empty;
             char[] generateCodeCharacters =
@@ -200,18 +201,19 @@ namespace PBL_Puwsheee.Authentication.Model
                 code += generateCodeCharacters[rand];
                 counter++;
             }
-            generatedCode = code;
             return code;
         }
         public void SendEmailToCode()  // method to send the code to email
         {
             string codeToBeSent = GenerateCodeToBeSent();
+            generatedCode = codeToBeSent;
             Console.WriteLine(codeToBeSent + " send mail function");
             try
             {
                 MailMessage msg = new MailMessage();
                 msg.From = new MailAddress("puwshee@gmail.com");
                 msg.To.Add(emailAddress);
+                Console.WriteLine(emailAddress);
                 msg.Subject = "===PUWSHEE CONFIRMATION CODE===";
 
                 msg.Body = "Hi, " + username + " this is your confirmation code :   " + codeToBeSent + "." + DateTime.Now.ToString();
@@ -267,6 +269,7 @@ namespace PBL_Puwsheee.Authentication.Model
             command.Parameters.AddWithValue("@Image", img);
             command.Parameters.AddWithValue("@Verified", verified);
             command.ExecuteNonQuery();
+            connect.Close();
             MessageBox.Show("Account Created Successfully");
         }
     }

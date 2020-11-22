@@ -28,58 +28,60 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.yesClear = new Guna.UI2.WinForms.Guna2Button();
+            this.noClear = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.SuspendLayout();
             // 
-            // guna2Button1
+            // yesClear
             // 
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(107, 286);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button1.TabIndex = 0;
-            this.guna2Button1.Text = "guna2Button1";
-            this.guna2Button1.Click += new System.EventHandler(this.clickCancel);
+            this.yesClear.CheckedState.Parent = this.yesClear;
+            this.yesClear.CustomImages.Parent = this.yesClear;
+            this.yesClear.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.yesClear.ForeColor = System.Drawing.Color.White;
+            this.yesClear.HoverState.Parent = this.yesClear;
+            this.yesClear.Location = new System.Drawing.Point(107, 286);
+            this.yesClear.Name = "yesClear";
+            this.yesClear.ShadowDecoration.Parent = this.yesClear;
+            this.yesClear.Size = new System.Drawing.Size(180, 45);
+            this.yesClear.TabIndex = 0;
+            this.yesClear.Text = "YES";
+            this.yesClear.Click += new System.EventHandler(this.clickCancel);
             // 
-            // guna2Button2
+            // noClear
             // 
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(326, 286);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button2.TabIndex = 1;
-            this.guna2Button2.Text = "guna2Button2";
+            this.noClear.CheckedState.Parent = this.noClear;
+            this.noClear.CustomImages.Parent = this.noClear;
+            this.noClear.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.noClear.ForeColor = System.Drawing.Color.White;
+            this.noClear.HoverState.Parent = this.noClear;
+            this.noClear.Location = new System.Drawing.Point(326, 286);
+            this.noClear.Name = "noClear";
+            this.noClear.ShadowDecoration.Parent = this.noClear;
+            this.noClear.Size = new System.Drawing.Size(180, 45);
+            this.noClear.TabIndex = 1;
+            this.noClear.Text = "NO";
             // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(263, 84);
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Red;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(219, 107);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(86, 15);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(187, 15);
             this.guna2HtmlLabel1.TabIndex = 2;
-            this.guna2HtmlLabel1.Text = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Text = "ALL YOUR DATA WILL BE CLEARED";
             // 
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(263, 128);
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.Red;
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(139, 128);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(86, 15);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(355, 15);
             this.guna2HtmlLabel2.TabIndex = 3;
-            this.guna2HtmlLabel2.Text = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Text = "ARE U SURE U WANT TO DELETE ALL OF YOUR PROGRESS / DATA";
             // 
             // Clear_Data
             // 
@@ -88,8 +90,8 @@
             this.ClientSize = new System.Drawing.Size(640, 370);
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.guna2HtmlLabel1);
-            this.Controls.Add(this.guna2Button2);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.noClear);
+            this.Controls.Add(this.yesClear);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Clear_Data";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
@@ -101,8 +103,8 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button yesClear;
+        private Guna.UI2.WinForms.Guna2Button noClear;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
     }

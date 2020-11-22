@@ -63,6 +63,12 @@
             this.requiredLastName = new System.Windows.Forms.Label();
             this.requiredEmail = new System.Windows.Forms.Label();
             this.requiredUsername = new System.Windows.Forms.Label();
+            this.passCondition1 = new System.Windows.Forms.Label();
+            this.passCondition2 = new System.Windows.Forms.Label();
+            this.passCondition3 = new System.Windows.Forms.Label();
+            this.passAndConfirm = new System.Windows.Forms.Label();
+            this.confPassReq = new System.Windows.Forms.Label();
+            this.newPassReq = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.userPicture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -212,6 +218,7 @@
             // 
             this.changepasswordButton.CheckedState.Parent = this.changepasswordButton;
             this.changepasswordButton.CustomImages.Parent = this.changepasswordButton;
+            this.changepasswordButton.Enabled = false;
             this.changepasswordButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.changepasswordButton.ForeColor = System.Drawing.Color.White;
             this.changepasswordButton.HoverState.Parent = this.changepasswordButton;
@@ -221,6 +228,7 @@
             this.changepasswordButton.Size = new System.Drawing.Size(80, 25);
             this.changepasswordButton.TabIndex = 24;
             this.changepasswordButton.Text = "Save Changes";
+            this.changepasswordButton.Click += new System.EventHandler(this.changepasswordButton_Click);
             // 
             // confirmTexbox
             // 
@@ -247,6 +255,7 @@
             this.confirmTexbox.ShadowDecoration.Parent = this.confirmTexbox;
             this.confirmTexbox.Size = new System.Drawing.Size(144, 23);
             this.confirmTexbox.TabIndex = 22;
+            this.confirmTexbox.TextChanged += new System.EventHandler(this.confirmTexbox_TextChanged);
             // 
             // newpasswordTextbox
             // 
@@ -273,6 +282,7 @@
             this.newpasswordTextbox.ShadowDecoration.Parent = this.newpasswordTextbox;
             this.newpasswordTextbox.Size = new System.Drawing.Size(144, 23);
             this.newpasswordTextbox.TabIndex = 21;
+            this.newpasswordTextbox.TextChanged += new System.EventHandler(this.newpasswordTextbox_TextChanged);
             // 
             // currentpasswordTextbox
             // 
@@ -299,6 +309,7 @@
             this.currentpasswordTextbox.ShadowDecoration.Parent = this.currentpasswordTextbox;
             this.currentpasswordTextbox.Size = new System.Drawing.Size(144, 23);
             this.currentpasswordTextbox.TabIndex = 20;
+            this.currentpasswordTextbox.TextChanged += new System.EventHandler(this.currentpasswordTextbox_TextChanged);
             // 
             // guna2HtmlLabel2
             // 
@@ -491,9 +502,10 @@
             this.checkCodeIfSame.Name = "checkCodeIfSame";
             this.checkCodeIfSame.Size = new System.Drawing.Size(75, 23);
             this.checkCodeIfSame.TabIndex = 36;
-            this.checkCodeIfSame.Text = "button1";
+            this.checkCodeIfSame.Text = "Submit Code";
             this.checkCodeIfSame.UseVisualStyleBackColor = true;
             this.checkCodeIfSame.Visible = false;
+            this.checkCodeIfSame.Click += new System.EventHandler(this.checkCodeIfSame_Click);
             // 
             // label1
             // 
@@ -560,11 +572,83 @@
             this.requiredUsername.Text = "REQUIRED FIELD";
             this.requiredUsername.Visible = false;
             // 
+            // passCondition1
+            // 
+            this.passCondition1.AutoSize = true;
+            this.passCondition1.ForeColor = System.Drawing.Color.Red;
+            this.passCondition1.Location = new System.Drawing.Point(337, 462);
+            this.passCondition1.Name = "passCondition1";
+            this.passCondition1.Size = new System.Drawing.Size(97, 13);
+            this.passCondition1.TabIndex = 43;
+            this.passCondition1.Text = "ATLEAST 8 CHAR";
+            this.passCondition1.Visible = false;
+            // 
+            // passCondition2
+            // 
+            this.passCondition2.AutoSize = true;
+            this.passCondition2.ForeColor = System.Drawing.Color.Red;
+            this.passCondition2.Location = new System.Drawing.Point(333, 475);
+            this.passCondition2.Name = "passCondition2";
+            this.passCondition2.Size = new System.Drawing.Size(179, 13);
+            this.passCondition2.TabIndex = 44;
+            this.passCondition2.Text = "MUST HAVE UPPER AND LOWER";
+            this.passCondition2.Visible = false;
+            // 
+            // passCondition3
+            // 
+            this.passCondition3.AutoSize = true;
+            this.passCondition3.ForeColor = System.Drawing.Color.Red;
+            this.passCondition3.Location = new System.Drawing.Point(332, 488);
+            this.passCondition3.Name = "passCondition3";
+            this.passCondition3.Size = new System.Drawing.Size(191, 13);
+            this.passCondition3.TabIndex = 45;
+            this.passCondition3.Text = "MUST HAVE NUMBER AND LETTER";
+            this.passCondition3.Visible = false;
+            // 
+            // passAndConfirm
+            // 
+            this.passAndConfirm.AutoSize = true;
+            this.passAndConfirm.ForeColor = System.Drawing.Color.Red;
+            this.passAndConfirm.Location = new System.Drawing.Point(91, 488);
+            this.passAndConfirm.Name = "passAndConfirm";
+            this.passAndConfirm.Size = new System.Drawing.Size(213, 13);
+            this.passAndConfirm.TabIndex = 46;
+            this.passAndConfirm.Text = "PASS AND CONFIRM DOES NOT MATCH";
+            this.passAndConfirm.Visible = false;
+            // 
+            // confPassReq
+            // 
+            this.confPassReq.AutoSize = true;
+            this.confPassReq.ForeColor = System.Drawing.Color.Red;
+            this.confPassReq.Location = new System.Drawing.Point(348, 400);
+            this.confPassReq.Name = "confPassReq";
+            this.confPassReq.Size = new System.Drawing.Size(97, 13);
+            this.confPassReq.TabIndex = 47;
+            this.confPassReq.Text = "REQUIRED FIELD";
+            this.confPassReq.Visible = false;
+            // 
+            // newPassReq
+            // 
+            this.newPassReq.AutoSize = true;
+            this.newPassReq.ForeColor = System.Drawing.Color.Red;
+            this.newPassReq.Location = new System.Drawing.Point(348, 371);
+            this.newPassReq.Name = "newPassReq";
+            this.newPassReq.Size = new System.Drawing.Size(97, 13);
+            this.newPassReq.TabIndex = 48;
+            this.newPassReq.Text = "REQUIRED FIELD";
+            this.newPassReq.Visible = false;
+            // 
             // Settings_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1020, 580);
+            this.Controls.Add(this.newPassReq);
+            this.Controls.Add(this.confPassReq);
+            this.Controls.Add(this.passAndConfirm);
+            this.Controls.Add(this.passCondition3);
+            this.Controls.Add(this.passCondition2);
+            this.Controls.Add(this.passCondition1);
             this.Controls.Add(this.requiredUsername);
             this.Controls.Add(this.requiredEmail);
             this.Controls.Add(this.requiredLastName);
@@ -648,5 +732,11 @@
         private System.Windows.Forms.Label requiredLastName;
         private System.Windows.Forms.Label requiredEmail;
         private System.Windows.Forms.Label requiredUsername;
+        private System.Windows.Forms.Label passCondition1;
+        private System.Windows.Forms.Label passCondition2;
+        private System.Windows.Forms.Label passCondition3;
+        private System.Windows.Forms.Label passAndConfirm;
+        private System.Windows.Forms.Label confPassReq;
+        private System.Windows.Forms.Label newPassReq;
     }
 }

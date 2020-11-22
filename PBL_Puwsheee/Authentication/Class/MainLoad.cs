@@ -18,11 +18,16 @@ namespace PBL_Puwsheee.Authentication.Class
         // fields
         private string username;
         private string connectionString = ConnectToDatabase.ReturnConnectionString();
-        private string password;
+        private string passwordEnc;
         private string firstName;
         private string lastName;
         private string emailAddress;
-        private string previousImage;
+        private string previousUsername;
+        private string imageLocation;
+        private string password;
+  
+
+        
         //PROPERTIES
         public string FirstName
         {
@@ -45,10 +50,15 @@ namespace PBL_Puwsheee.Authentication.Class
             get { return username; }
             set { username = value; }
         }
-        public string PreviousImage
+        public string ImageLocation
         {
-            get { return previousImage; }
-            set { previousImage = value; }
+            get { return imageLocation; }
+            set { imageLocation = value; }
+        }
+        public string Password
+        {
+            get { return password; }
+            set { password = value; }
         }
         // METHODS
         public void LoadPicture(Guna2CirclePictureBox pic) // load mo yung picture nya pag load ng form
@@ -80,7 +90,7 @@ namespace PBL_Puwsheee.Authentication.Class
                 lastName = read["LastName"].ToString();
                 emailAddress = read["EmailAddress"].ToString();
                 username = read["Username"].ToString();
-                password = read["Password"].ToString();
+                passwordEnc = read["Password"].ToString();
                 byte[] img = (byte[])read["Image"];
                 MemoryStream ms = new MemoryStream(img);
                 pic.Image = Image.FromStream(ms);
@@ -88,12 +98,7 @@ namespace PBL_Puwsheee.Authentication.Class
                 lastNameTB.Text = lastName;
                 emailTB.Text = EmailAddress;
                 userTB.Text = username;
-                Console.WriteLine("first name " + firstName);
-                Console.WriteLine("Last name " + lastName);
-                Console.WriteLine("Email add " + emailAddress);
-                Console.WriteLine("Username " + username);
-                Console.WriteLine("Password " + password);
-               
+                previousUsername = username;          
             }
             read.Close();
             connect.Close();
@@ -129,10 +134,87 @@ namespace PBL_Puwsheee.Authentication.Class
         }
         public void updateEntries()
         {
-           
+            // hash naten si password
+            PasswordEncryption pass = new PasswordEncryption();
+            pass.Password = Log_In.passwordInput;
+            string hashedPass = pass.EncryptedPassword(emailAddress, firstName, lastName);
+            string[] parameters = { "FirstName", "LastName", "EmailAddress", "Username", "Password", "PreviousUsername" };
+            string[] parameterValue = { firstName, lastName, emailAddress, username, hashedPass, previousUsername };
+            SqlConnection connect = new SqlConnection(connectionString);
+            connect.Open();
+            SqlCommand command = new SqlCommand("spUpdateInformation", connect);
+            command.CommandType = CommandType.StoredProcedure;
+            for (int i = 0; i < parameters.Length; i++)
+            {
+                command.Parameters.AddWithValue(parameters[i], parameterValue[i]);
+            }
+            command.ExecuteNonQuery();
+            connect.Close();
+        }
+        public void updateEntriesWithImage()
+        {
+            // hash naten si password
+            PasswordEncryption pass = new PasswordEncryption();
+            pass.Password = Log_In.passwordInput;
+            // prepare image to upload
+            byte[] img = null;
+            FileStream fs = new FileStream(imageLocation, FileMode.Open, FileAccess.Read);
+            BinaryReader br = new BinaryReader(fs);
+            img = br.ReadBytes((int)fs.Length);
+            // end ng phoyo upload
+            string hashedPass = pass.EncryptedPassword(emailAddress, firstName, lastName);
+            SqlConnection connect = new SqlConnection(connectionString);
+            connect.Open();
+            string[] parameters = { "FirstName", "LastName", "EmailAddress", "Username", "Password", "PreviousUsername" };
+            string[] parameterValue = { firstName, lastName, emailAddress, username, hashedPass, previousUsername };
+            SqlCommand command = new SqlCommand("spUpdateInfoPic", connect);
+            command.CommandType = CommandType.StoredProcedure;
+            for (int i = 0; i < parameters.Length; i++)
+            {
+                command.Parameters.AddWithValue(parameters[i], parameterValue[i]);
+            }
+            command.Parameters.AddWithValue("Image", img);
+            command.ExecuteNonQuery();
+            connect.Close();
         }
         
-
-        
+        public void SamePassword(Guna2Button btn) // checks if current pass is correct
+        {
+            PasswordEncryption pass = new PasswordEncryption();
+            pass.Password = password;
+            if(pass.EncryptedPassword(emailAddress,firstName,lastName)== passwordEnc)
+            {
+                btn.Enabled = true;
+            }
+            else
+            {
+                btn.Enabled = false;
+            }
+        }
+        public void updatePassword()  // uupdates the password
+        {
+            PasswordEncryption pass = new PasswordEncryption();
+            pass.Password = password;
+            Console.WriteLine(pass.Password + " eto orig");
+            
+            string enc = pass.EncryptedPassword(emailAddress,firstName,lastName);
+            Console.WriteLine(enc + " eto encrypted nya");
+            Console.WriteLine("encrypted dapat to " + enc);
+            SqlConnection connect = new SqlConnection(connectionString);
+            connect.Open();
+            SqlCommand command = new SqlCommand("spUpdatePassword", connect);
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.AddWithValue("@Username", username);
+            command.Parameters.AddWithValue("@Password", enc);
+            command.ExecuteNonQuery();
+            connect.Close();
+        }
+        public void HideConditions(Label cond1, Label cond2, Label cond3, Label cond4, Label cond5, Label cond6) // hide lahat ng condition sa change pass
+        {
+            cond1.Visible = cond2.Visible = cond3.Visible = cond4.Visible= cond5.Visible = cond6.Visible = false;
+        }
     }
+
+
+
 }
