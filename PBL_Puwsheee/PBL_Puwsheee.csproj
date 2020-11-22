@@ -424,5 +424,8 @@
   <ItemGroup>
     <None Include="Resources\Rain sounds.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clicked Mood.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

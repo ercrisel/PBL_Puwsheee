@@ -326,6 +326,7 @@
             // 
             // notesTextbox
             // 
+            this.notesTextbox.AutoScroll = true;
             this.notesTextbox.BorderRadius = 20;
             this.notesTextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.notesTextbox.DefaultText = "";
@@ -337,16 +338,19 @@
             this.notesTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
             this.notesTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.notesTextbox.FocusedState.Parent = this.notesTextbox;
-            this.notesTextbox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.notesTextbox.Font = new System.Drawing.Font("Typo Round Bold Demo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.notesTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.notesTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.notesTextbox.HoverState.Parent = this.notesTextbox;
             this.notesTextbox.Location = new System.Drawing.Point(504, 96);
             this.notesTextbox.Margin = new System.Windows.Forms.Padding(4);
             this.notesTextbox.MaxLength = 3000;
+            this.notesTextbox.Multiline = true;
             this.notesTextbox.Name = "notesTextbox";
             this.notesTextbox.PasswordChar = '\0';
             this.notesTextbox.PlaceholderText = "";
             this.notesTextbox.SelectedText = "";
+            this.notesTextbox.ShadowDecoration.BorderRadius = 15;
             this.notesTextbox.ShadowDecoration.Parent = this.notesTextbox;
             this.notesTextbox.Size = new System.Drawing.Size(387, 307);
             this.notesTextbox.TabIndex = 27;

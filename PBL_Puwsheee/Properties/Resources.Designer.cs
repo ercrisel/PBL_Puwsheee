@@ -113,6 +113,36 @@ namespace PBL_Puwsheee.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Clicked_Mood {
+            get {
+                object obj = ResourceManager.GetObject("Clicked Mood", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Clicked_Playables {
+            get {
+                object obj = ResourceManager.GetObject("Clicked Playables", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Clicked_Playables1 {
+            get {
+                object obj = ResourceManager.GetObject("Clicked Playables1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Contented {
             get {
                 object obj = ResourceManager.GetObject("Contented", resourceCulture);
@@ -466,6 +496,66 @@ namespace PBL_Puwsheee.Properties {
             get {
                 object obj = ResourceManager.GetObject("Typo_Round_Bold_Demo", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Unclicked_Analysis {
+            get {
+                object obj = ResourceManager.GetObject("Unclicked Analysis", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Unclicked_Calendar {
+            get {
+                object obj = ResourceManager.GetObject("Unclicked Calendar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Unclicked_Exit {
+            get {
+                object obj = ResourceManager.GetObject("Unclicked Exit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Unclicked_Mood {
+            get {
+                object obj = ResourceManager.GetObject("Unclicked Mood", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Unclicked_Playables {
+            get {
+                object obj = ResourceManager.GetObject("Unclicked Playables", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Unclicked_Tests {
+            get {
+                object obj = ResourceManager.GetObject("Unclicked Tests", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

@@ -15,6 +15,7 @@ namespace PBL_Puwsheee
     {
         private Form activeForm;
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+
         private static extern IntPtr CreateRoundRectRgn
         (
             int nLeftRect,     // x-coordinate of upper-left corner
@@ -24,6 +25,16 @@ namespace PBL_Puwsheee
             int nWidthEllipse, // height of ellipse
             int nHeightEllipse // width of ellipse
         );
+
+        protected override CreateParams CreateParams // double buffeirng daw sabi ni google 
+        {
+            get
+            {
+                CreateParams handleparam = base.CreateParams;
+                handleparam.ExStyle |= 0x02000000;
+                return handleparam;
+            }
+        }
 
         public Main()
         {
@@ -35,6 +46,8 @@ namespace PBL_Puwsheee
 
         private void Main_Load(object sender, EventArgs e)
         {
+            indicatorButton.Location = new Point(57, 160);
+            pageLabel.Location = new Point(108, 35);
         }
 
         private void openChildForm(Form childForm)
@@ -54,26 +67,36 @@ namespace PBL_Puwsheee
         private void clickMoodTracker(object sender, EventArgs e)
         {
             openChildForm(new MoodTracker());
+            indicatorButton.Location = new Point(57, 160);
+            pageLabel.Location = new Point(108, 35);
         }
 
         private void clickCalendar(object sender, EventArgs e)
         {
             openChildForm(new Calendar_Main());
+            indicatorButton.Location = new Point(57, 220);
+            pageLabel.Location = new Point(127, 35);
         }
 
         private void clickTest(object sender, EventArgs e)
         {
             openChildForm(new Test.Test_Main());
+            indicatorButton.Location = new Point(57, 360);
+            pageLabel.Location = new Point(141, 35);
         }
 
         private void clickAnalysis(object sender, EventArgs e)
         {
             openChildForm(new Analysis());
+            indicatorButton.Location = new Point(57, 290);
+            pageLabel.Location = new Point(130, 35);
         }
 
         private void clickPlayables(object sender, EventArgs e)
         {
             openChildForm(new Playables.Playables_Main());
+            indicatorButton.Location = new Point(57, 430);
+            pageLabel.Location = new Point(124, 35);
         }
 
         private void exitPuwshee(object sender, EventArgs e)
@@ -87,16 +110,6 @@ namespace PBL_Puwsheee
             var form = new Settings.Settings_Main();
             form.Closed += (s, args) => this.Close();
             form.Show();
-        }
-
-        private void pageLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void displayPanel_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
