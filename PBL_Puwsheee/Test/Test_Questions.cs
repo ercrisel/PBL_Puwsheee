@@ -106,9 +106,9 @@ namespace PBL_Puwsheee.Test
             {
                 question1Label.Text = "I feel tired out for no good reason.";
                 question2Label.Text = "I feel nervous.";
-                question3Label.Text = "I feel so nevous that nothing could calm you down?";
-                question4Label.Text = "I feel hopeless.";
-                question5Label.Text = "I feel restless or fidgety.";
+                question3Label.Text = "I feel restless or fidgety.";
+                question4Label.Text = "I feel so nevous that nothing could calm you down?";
+                question5Label.Text = "I feel hopeless.";
                 question6Label.Text = "I feel so restless I could not sit still?";
                 question7Label.Text = "I feel depressed.";
                 question8Label.Text = "I feel that everything was an effort.";
@@ -116,7 +116,7 @@ namespace PBL_Puwsheee.Test
                 question10Label.Text = "I feel worthless.";
             }
 
-            if (typeoftestLabel.Text == "Emotional Intelligence")
+            else if (typeoftestLabel.Text == "Emotional Intelligence")
             {
                 question1Label.Text = "I recognize my emotions as I experience them.";
                 question2Label.Text = "I lose my temper when I feel frustrated.";
@@ -128,6 +128,20 @@ namespace PBL_Puwsheee.Test
                 question8Label.Text = "I know my strengths and weaknesses.";
                 question9Label.Text = "I avoid conflict and negotiations.";
                 question10Label.Text = "I feel that I don't enjoy my work.";
+            }
+
+            else if (typeoftestLabel.Text == "Good Self-Care")
+            {
+                question1Label.Text = "I get enough sleep.";
+                question2Label.Text = "I make time to be with my thoughts and self-reflect.";
+                question3Label.Text = "I say no to extra responsibilities when my plate is already full.";
+                question4Label.Text = "I allow myself to show emotions.";
+                question5Label.Text = "I ask for help if I need it.";
+                question6Label.Text = "I make quiet time for myself to complete necessary tasks";
+                question7Label.Text = "I strive for balance among work, family, relationships, play and rest.";
+                question8Label.Text = "I spend time with my pets or in spaces in which I feel comfortable.";
+                question9Label.Text = "I love myself and give myself positive affirmations";
+                question10Label.Text = "I spend time with people who make me happy.";
             }
 
         }

@@ -20,6 +20,8 @@ namespace PBL_Puwsheee.Test
 
         private void depressiontestButton_Click(object sender, EventArgs e)
         {
+            //TIKWA CHECHECK SA DATABASE IF NASAGUTAN NA BA NIYA YUNG TEST TEEHEEE
+
             Guna2Button btn = sender as Guna2Button;
 
             Form bg = new Form();

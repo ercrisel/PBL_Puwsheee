@@ -140,19 +140,18 @@
             this.Q1S2RadioButton = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.Q1S4RadioButton = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.Q1S3RadioButton = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.question9Label = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.question10Label = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.question8Label = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.question7Label = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.question6Label = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.question5Label = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.question4Label = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.question3Label = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.question2Label = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.question1Label = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.typeoftestLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.backButton = new Guna.UI2.WinForms.Guna2Button();
-            this.testingka = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.question1Label = new Guna.UI2.WinForms.Guna2TextBox();
+            this.question5Label = new Guna.UI2.WinForms.Guna2TextBox();
+            this.question9Label = new Guna.UI2.WinForms.Guna2TextBox();
+            this.question2Label = new Guna.UI2.WinForms.Guna2TextBox();
+            this.question6Label = new Guna.UI2.WinForms.Guna2TextBox();
+            this.question10Label = new Guna.UI2.WinForms.Guna2TextBox();
+            this.question8Label = new Guna.UI2.WinForms.Guna2TextBox();
+            this.question4Label = new Guna.UI2.WinForms.Guna2TextBox();
+            this.question7Label = new Guna.UI2.WinForms.Guna2TextBox();
+            this.question3Label = new Guna.UI2.WinForms.Guna2TextBox();
+            this.typeoftestLabel = new Guna.UI2.WinForms.Guna2TextBox();
             this.question10Panel.SuspendLayout();
             this.question5Panel.SuspendLayout();
             this.question9Panel.SuspendLayout();
@@ -1874,105 +1873,6 @@
             this.Q1S3RadioButton.UncheckedState.InnerOffset = 1;
             this.Q1S3RadioButton.UncheckedState.Parent = this.Q1S3RadioButton;
             // 
-            // question9Label
-            // 
-            this.question9Label.BackColor = System.Drawing.Color.Transparent;
-            this.question9Label.Location = new System.Drawing.Point(638, 138);
-            this.question9Label.Name = "question9Label";
-            this.question9Label.Size = new System.Drawing.Size(54, 15);
-            this.question9Label.TabIndex = 43;
-            this.question9Label.Text = "Question 3";
-            // 
-            // question10Label
-            // 
-            this.question10Label.BackColor = System.Drawing.Color.Transparent;
-            this.question10Label.Location = new System.Drawing.Point(638, 241);
-            this.question10Label.Name = "question10Label";
-            this.question10Label.Size = new System.Drawing.Size(54, 15);
-            this.question10Label.TabIndex = 44;
-            this.question10Label.Text = "Question 3";
-            // 
-            // question8Label
-            // 
-            this.question8Label.BackColor = System.Drawing.Color.Transparent;
-            this.question8Label.Location = new System.Drawing.Point(638, 35);
-            this.question8Label.Name = "question8Label";
-            this.question8Label.Size = new System.Drawing.Size(54, 15);
-            this.question8Label.TabIndex = 42;
-            this.question8Label.Text = "Question 3";
-            // 
-            // question7Label
-            // 
-            this.question7Label.BackColor = System.Drawing.Color.Transparent;
-            this.question7Label.Location = new System.Drawing.Point(375, 344);
-            this.question7Label.Name = "question7Label";
-            this.question7Label.Size = new System.Drawing.Size(54, 15);
-            this.question7Label.TabIndex = 41;
-            this.question7Label.Text = "Question 3";
-            // 
-            // question6Label
-            // 
-            this.question6Label.BackColor = System.Drawing.Color.Transparent;
-            this.question6Label.Location = new System.Drawing.Point(382, 241);
-            this.question6Label.Name = "question6Label";
-            this.question6Label.Size = new System.Drawing.Size(54, 15);
-            this.question6Label.TabIndex = 40;
-            this.question6Label.Text = "Question 3";
-            // 
-            // question5Label
-            // 
-            this.question5Label.BackColor = System.Drawing.Color.Transparent;
-            this.question5Label.Location = new System.Drawing.Point(375, 138);
-            this.question5Label.Name = "question5Label";
-            this.question5Label.Size = new System.Drawing.Size(54, 15);
-            this.question5Label.TabIndex = 39;
-            this.question5Label.Text = "Question 3";
-            // 
-            // question4Label
-            // 
-            this.question4Label.BackColor = System.Drawing.Color.Transparent;
-            this.question4Label.Location = new System.Drawing.Point(375, 35);
-            this.question4Label.Name = "question4Label";
-            this.question4Label.Size = new System.Drawing.Size(54, 15);
-            this.question4Label.TabIndex = 38;
-            this.question4Label.Text = "Question 3";
-            // 
-            // question3Label
-            // 
-            this.question3Label.BackColor = System.Drawing.Color.Transparent;
-            this.question3Label.Location = new System.Drawing.Point(121, 344);
-            this.question3Label.Name = "question3Label";
-            this.question3Label.Size = new System.Drawing.Size(54, 15);
-            this.question3Label.TabIndex = 37;
-            this.question3Label.Text = "Question 3";
-            // 
-            // question2Label
-            // 
-            this.question2Label.BackColor = System.Drawing.Color.Transparent;
-            this.question2Label.Location = new System.Drawing.Point(104, 241);
-            this.question2Label.Name = "question2Label";
-            this.question2Label.Size = new System.Drawing.Size(86, 15);
-            this.question2Label.TabIndex = 36;
-            this.question2Label.Text = "guna2HtmlLabel3";
-            // 
-            // question1Label
-            // 
-            this.question1Label.BackColor = System.Drawing.Color.Transparent;
-            this.question1Label.Location = new System.Drawing.Point(105, 138);
-            this.question1Label.Name = "question1Label";
-            this.question1Label.Size = new System.Drawing.Size(86, 15);
-            this.question1Label.TabIndex = 35;
-            this.question1Label.Text = "guna2HtmlLabel2";
-            // 
-            // typeoftestLabel
-            // 
-            this.typeoftestLabel.BackColor = System.Drawing.Color.Transparent;
-            this.typeoftestLabel.Location = new System.Drawing.Point(104, 82);
-            this.typeoftestLabel.Name = "typeoftestLabel";
-            this.typeoftestLabel.Size = new System.Drawing.Size(86, 15);
-            this.typeoftestLabel.TabIndex = 34;
-            this.typeoftestLabel.Text = "guna2HtmlLabel1";
-            // 
             // backButton
             // 
             this.backButton.CheckedState.Parent = this.backButton;
@@ -1988,14 +1888,355 @@
             this.backButton.Text = "clear";
             this.backButton.Click += new System.EventHandler(this.clickBack);
             // 
-            // testingka
+            // question1Label
             // 
-            this.testingka.BackColor = System.Drawing.Color.Transparent;
-            this.testingka.Location = new System.Drawing.Point(174, 101);
-            this.testingka.Name = "testingka";
-            this.testingka.Size = new System.Drawing.Size(86, 15);
-            this.testingka.TabIndex = 59;
-            this.testingka.Text = "guna2HtmlLabel1";
+            this.question1Label.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.question1Label.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.question1Label.DefaultText = "I spend time with my pets or in spaces in which I feel comfortable";
+            this.question1Label.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.question1Label.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.question1Label.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.question1Label.DisabledState.Parent = this.question1Label;
+            this.question1Label.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.question1Label.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.question1Label.FocusedState.BorderColor = System.Drawing.Color.Transparent;
+            this.question1Label.FocusedState.Parent = this.question1Label;
+            this.question1Label.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.question1Label.ForeColor = System.Drawing.Color.Black;
+            this.question1Label.HoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.question1Label.HoverState.Parent = this.question1Label;
+            this.question1Label.Location = new System.Drawing.Point(31, 122);
+            this.question1Label.Margin = new System.Windows.Forms.Padding(0);
+            this.question1Label.Multiline = true;
+            this.question1Label.Name = "question1Label";
+            this.question1Label.PasswordChar = '\0';
+            this.question1Label.PlaceholderForeColor = System.Drawing.Color.White;
+            this.question1Label.PlaceholderText = "";
+            this.question1Label.ReadOnly = true;
+            this.question1Label.SelectedText = "";
+            this.question1Label.SelectionStart = 66;
+            this.question1Label.ShadowDecoration.Parent = this.question1Label;
+            this.question1Label.Size = new System.Drawing.Size(243, 50);
+            this.question1Label.TabIndex = 60;
+            this.question1Label.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // question5Label
+            // 
+            this.question5Label.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.question5Label.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.question5Label.DefaultText = "I spend time with my pets or in spaces in which I feel comfortable";
+            this.question5Label.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.question5Label.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.question5Label.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.question5Label.DisabledState.Parent = this.question5Label;
+            this.question5Label.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.question5Label.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.question5Label.FocusedState.BorderColor = System.Drawing.Color.Transparent;
+            this.question5Label.FocusedState.Parent = this.question5Label;
+            this.question5Label.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.question5Label.ForeColor = System.Drawing.Color.Black;
+            this.question5Label.HoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.question5Label.HoverState.Parent = this.question5Label;
+            this.question5Label.Location = new System.Drawing.Point(280, 125);
+            this.question5Label.Margin = new System.Windows.Forms.Padding(0);
+            this.question5Label.Multiline = true;
+            this.question5Label.Name = "question5Label";
+            this.question5Label.PasswordChar = '\0';
+            this.question5Label.PlaceholderForeColor = System.Drawing.Color.White;
+            this.question5Label.PlaceholderText = "";
+            this.question5Label.ReadOnly = true;
+            this.question5Label.SelectedText = "";
+            this.question5Label.SelectionStart = 66;
+            this.question5Label.ShadowDecoration.Parent = this.question5Label;
+            this.question5Label.Size = new System.Drawing.Size(243, 47);
+            this.question5Label.TabIndex = 61;
+            this.question5Label.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // question9Label
+            // 
+            this.question9Label.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.question9Label.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.question9Label.DefaultText = "I spend time with my pets or in spaces in which I feel comfortable";
+            this.question9Label.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.question9Label.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.question9Label.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.question9Label.DisabledState.Parent = this.question9Label;
+            this.question9Label.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.question9Label.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.question9Label.FocusedState.BorderColor = System.Drawing.Color.Transparent;
+            this.question9Label.FocusedState.Parent = this.question9Label;
+            this.question9Label.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.question9Label.ForeColor = System.Drawing.Color.Black;
+            this.question9Label.HoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.question9Label.HoverState.Parent = this.question9Label;
+            this.question9Label.Location = new System.Drawing.Point(541, 122);
+            this.question9Label.Margin = new System.Windows.Forms.Padding(0);
+            this.question9Label.Multiline = true;
+            this.question9Label.Name = "question9Label";
+            this.question9Label.PasswordChar = '\0';
+            this.question9Label.PlaceholderForeColor = System.Drawing.Color.White;
+            this.question9Label.PlaceholderText = "";
+            this.question9Label.ReadOnly = true;
+            this.question9Label.SelectedText = "";
+            this.question9Label.SelectionStart = 66;
+            this.question9Label.ShadowDecoration.Parent = this.question9Label;
+            this.question9Label.Size = new System.Drawing.Size(243, 50);
+            this.question9Label.TabIndex = 62;
+            this.question9Label.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // question2Label
+            // 
+            this.question2Label.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.question2Label.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.question2Label.DefaultText = "I spend time with my pets or in spaces in which I feel comfortable";
+            this.question2Label.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.question2Label.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.question2Label.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.question2Label.DisabledState.Parent = this.question2Label;
+            this.question2Label.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.question2Label.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.question2Label.FocusedState.BorderColor = System.Drawing.Color.Transparent;
+            this.question2Label.FocusedState.Parent = this.question2Label;
+            this.question2Label.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.question2Label.ForeColor = System.Drawing.Color.Black;
+            this.question2Label.HoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.question2Label.HoverState.Parent = this.question2Label;
+            this.question2Label.Location = new System.Drawing.Point(31, 226);
+            this.question2Label.Margin = new System.Windows.Forms.Padding(0);
+            this.question2Label.Multiline = true;
+            this.question2Label.Name = "question2Label";
+            this.question2Label.PasswordChar = '\0';
+            this.question2Label.PlaceholderForeColor = System.Drawing.Color.White;
+            this.question2Label.PlaceholderText = "";
+            this.question2Label.ReadOnly = true;
+            this.question2Label.SelectedText = "";
+            this.question2Label.SelectionStart = 66;
+            this.question2Label.ShadowDecoration.Parent = this.question2Label;
+            this.question2Label.Size = new System.Drawing.Size(243, 50);
+            this.question2Label.TabIndex = 63;
+            this.question2Label.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // question6Label
+            // 
+            this.question6Label.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.question6Label.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.question6Label.DefaultText = "I spend time with my pets or in spaces in which I feel comfortable";
+            this.question6Label.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.question6Label.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.question6Label.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.question6Label.DisabledState.Parent = this.question6Label;
+            this.question6Label.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.question6Label.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.question6Label.FocusedState.BorderColor = System.Drawing.Color.Transparent;
+            this.question6Label.FocusedState.Parent = this.question6Label;
+            this.question6Label.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.question6Label.ForeColor = System.Drawing.Color.Black;
+            this.question6Label.HoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.question6Label.HoverState.Parent = this.question6Label;
+            this.question6Label.Location = new System.Drawing.Point(280, 226);
+            this.question6Label.Margin = new System.Windows.Forms.Padding(0);
+            this.question6Label.Multiline = true;
+            this.question6Label.Name = "question6Label";
+            this.question6Label.PasswordChar = '\0';
+            this.question6Label.PlaceholderForeColor = System.Drawing.Color.White;
+            this.question6Label.PlaceholderText = "";
+            this.question6Label.ReadOnly = true;
+            this.question6Label.SelectedText = "";
+            this.question6Label.SelectionStart = 66;
+            this.question6Label.ShadowDecoration.Parent = this.question6Label;
+            this.question6Label.Size = new System.Drawing.Size(243, 50);
+            this.question6Label.TabIndex = 64;
+            this.question6Label.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // question10Label
+            // 
+            this.question10Label.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.question10Label.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.question10Label.DefaultText = "I spend time with my pets or in spaces in which I feel comfortable";
+            this.question10Label.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.question10Label.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.question10Label.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.question10Label.DisabledState.Parent = this.question10Label;
+            this.question10Label.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.question10Label.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.question10Label.FocusedState.BorderColor = System.Drawing.Color.Transparent;
+            this.question10Label.FocusedState.Parent = this.question10Label;
+            this.question10Label.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.question10Label.ForeColor = System.Drawing.Color.Black;
+            this.question10Label.HoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.question10Label.HoverState.Parent = this.question10Label;
+            this.question10Label.Location = new System.Drawing.Point(541, 226);
+            this.question10Label.Margin = new System.Windows.Forms.Padding(0);
+            this.question10Label.Multiline = true;
+            this.question10Label.Name = "question10Label";
+            this.question10Label.PasswordChar = '\0';
+            this.question10Label.PlaceholderForeColor = System.Drawing.Color.White;
+            this.question10Label.PlaceholderText = "";
+            this.question10Label.ReadOnly = true;
+            this.question10Label.SelectedText = "";
+            this.question10Label.SelectionStart = 66;
+            this.question10Label.ShadowDecoration.Parent = this.question10Label;
+            this.question10Label.Size = new System.Drawing.Size(243, 50);
+            this.question10Label.TabIndex = 65;
+            this.question10Label.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // question8Label
+            // 
+            this.question8Label.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.question8Label.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.question8Label.DefaultText = "I spend time with my pets or in spaces in which I feel comfortable";
+            this.question8Label.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.question8Label.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.question8Label.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.question8Label.DisabledState.Parent = this.question8Label;
+            this.question8Label.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.question8Label.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.question8Label.FocusedState.BorderColor = System.Drawing.Color.Transparent;
+            this.question8Label.FocusedState.Parent = this.question8Label;
+            this.question8Label.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.question8Label.ForeColor = System.Drawing.Color.Black;
+            this.question8Label.HoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.question8Label.HoverState.Parent = this.question8Label;
+            this.question8Label.Location = new System.Drawing.Point(541, 19);
+            this.question8Label.Margin = new System.Windows.Forms.Padding(0);
+            this.question8Label.Multiline = true;
+            this.question8Label.Name = "question8Label";
+            this.question8Label.PasswordChar = '\0';
+            this.question8Label.PlaceholderForeColor = System.Drawing.Color.White;
+            this.question8Label.PlaceholderText = "";
+            this.question8Label.ReadOnly = true;
+            this.question8Label.SelectedText = "";
+            this.question8Label.SelectionStart = 66;
+            this.question8Label.ShadowDecoration.Parent = this.question8Label;
+            this.question8Label.Size = new System.Drawing.Size(243, 50);
+            this.question8Label.TabIndex = 66;
+            this.question8Label.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // question4Label
+            // 
+            this.question4Label.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.question4Label.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.question4Label.DefaultText = "I spend time with my pets or in spaces in which I feel comfortable";
+            this.question4Label.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.question4Label.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.question4Label.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.question4Label.DisabledState.Parent = this.question4Label;
+            this.question4Label.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.question4Label.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.question4Label.FocusedState.BorderColor = System.Drawing.Color.Transparent;
+            this.question4Label.FocusedState.Parent = this.question4Label;
+            this.question4Label.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.question4Label.ForeColor = System.Drawing.Color.Black;
+            this.question4Label.HoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.question4Label.HoverState.Parent = this.question4Label;
+            this.question4Label.Location = new System.Drawing.Point(289, 19);
+            this.question4Label.Margin = new System.Windows.Forms.Padding(0);
+            this.question4Label.Multiline = true;
+            this.question4Label.Name = "question4Label";
+            this.question4Label.PasswordChar = '\0';
+            this.question4Label.PlaceholderForeColor = System.Drawing.Color.White;
+            this.question4Label.PlaceholderText = "";
+            this.question4Label.ReadOnly = true;
+            this.question4Label.SelectedText = "";
+            this.question4Label.SelectionStart = 66;
+            this.question4Label.ShadowDecoration.Parent = this.question4Label;
+            this.question4Label.Size = new System.Drawing.Size(243, 50);
+            this.question4Label.TabIndex = 67;
+            this.question4Label.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // question7Label
+            // 
+            this.question7Label.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.question7Label.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.question7Label.DefaultText = "I spend time with my pets or in spaces in which I feel comfortable";
+            this.question7Label.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.question7Label.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.question7Label.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.question7Label.DisabledState.Parent = this.question7Label;
+            this.question7Label.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.question7Label.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.question7Label.FocusedState.BorderColor = System.Drawing.Color.Transparent;
+            this.question7Label.FocusedState.Parent = this.question7Label;
+            this.question7Label.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.question7Label.ForeColor = System.Drawing.Color.Black;
+            this.question7Label.HoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.question7Label.HoverState.Parent = this.question7Label;
+            this.question7Label.Location = new System.Drawing.Point(280, 330);
+            this.question7Label.Margin = new System.Windows.Forms.Padding(0);
+            this.question7Label.Multiline = true;
+            this.question7Label.Name = "question7Label";
+            this.question7Label.PasswordChar = '\0';
+            this.question7Label.PlaceholderForeColor = System.Drawing.Color.White;
+            this.question7Label.PlaceholderText = "";
+            this.question7Label.ReadOnly = true;
+            this.question7Label.SelectedText = "";
+            this.question7Label.SelectionStart = 66;
+            this.question7Label.ShadowDecoration.Parent = this.question7Label;
+            this.question7Label.Size = new System.Drawing.Size(243, 50);
+            this.question7Label.TabIndex = 68;
+            this.question7Label.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // question3Label
+            // 
+            this.question3Label.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.question3Label.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.question3Label.DefaultText = "I spend time with my pets or in spaces in which I feel comfortable";
+            this.question3Label.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.question3Label.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.question3Label.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.question3Label.DisabledState.Parent = this.question3Label;
+            this.question3Label.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.question3Label.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.question3Label.FocusedState.BorderColor = System.Drawing.Color.Transparent;
+            this.question3Label.FocusedState.Parent = this.question3Label;
+            this.question3Label.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.question3Label.ForeColor = System.Drawing.Color.Black;
+            this.question3Label.HoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.question3Label.HoverState.Parent = this.question3Label;
+            this.question3Label.Location = new System.Drawing.Point(31, 330);
+            this.question3Label.Margin = new System.Windows.Forms.Padding(0);
+            this.question3Label.Multiline = true;
+            this.question3Label.Name = "question3Label";
+            this.question3Label.PasswordChar = '\0';
+            this.question3Label.PlaceholderForeColor = System.Drawing.Color.White;
+            this.question3Label.PlaceholderText = "";
+            this.question3Label.ReadOnly = true;
+            this.question3Label.SelectedText = "";
+            this.question3Label.SelectionStart = 66;
+            this.question3Label.ShadowDecoration.Parent = this.question3Label;
+            this.question3Label.Size = new System.Drawing.Size(243, 50);
+            this.question3Label.TabIndex = 69;
+            this.question3Label.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // typeoftestLabel
+            // 
+            this.typeoftestLabel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.typeoftestLabel.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.typeoftestLabel.DefaultText = "TESTESTEST";
+            this.typeoftestLabel.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.typeoftestLabel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.typeoftestLabel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.typeoftestLabel.DisabledState.Parent = this.typeoftestLabel;
+            this.typeoftestLabel.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.typeoftestLabel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.typeoftestLabel.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.typeoftestLabel.FocusedState.Parent = this.typeoftestLabel;
+            this.typeoftestLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.typeoftestLabel.ForeColor = System.Drawing.Color.Black;
+            this.typeoftestLabel.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.typeoftestLabel.HoverState.Parent = this.typeoftestLabel;
+            this.typeoftestLabel.Location = new System.Drawing.Point(31, 75);
+            this.typeoftestLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.typeoftestLabel.Multiline = true;
+            this.typeoftestLabel.Name = "typeoftestLabel";
+            this.typeoftestLabel.PasswordChar = '\0';
+            this.typeoftestLabel.PlaceholderForeColor = System.Drawing.Color.White;
+            this.typeoftestLabel.PlaceholderText = "";
+            this.typeoftestLabel.SelectedText = "";
+            this.typeoftestLabel.ShadowDecoration.Parent = this.typeoftestLabel;
+            this.typeoftestLabel.Size = new System.Drawing.Size(243, 43);
+            this.typeoftestLabel.TabIndex = 70;
+            this.typeoftestLabel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Test_Questions
             // 
@@ -2003,7 +2244,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.ClientSize = new System.Drawing.Size(850, 475);
-            this.Controls.Add(this.testingka);
+            this.Controls.Add(this.typeoftestLabel);
+            this.Controls.Add(this.question3Label);
+            this.Controls.Add(this.question7Label);
+            this.Controls.Add(this.question4Label);
+            this.Controls.Add(this.question8Label);
+            this.Controls.Add(this.question10Label);
+            this.Controls.Add(this.question6Label);
+            this.Controls.Add(this.question2Label);
+            this.Controls.Add(this.question9Label);
+            this.Controls.Add(this.question5Label);
+            this.Controls.Add(this.question1Label);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.submitButton);
             this.Controls.Add(this.clearButton);
@@ -2017,17 +2268,6 @@
             this.Controls.Add(this.question2Panel);
             this.Controls.Add(this.question6Panel);
             this.Controls.Add(this.question1Panel);
-            this.Controls.Add(this.question9Label);
-            this.Controls.Add(this.question10Label);
-            this.Controls.Add(this.question8Label);
-            this.Controls.Add(this.question7Label);
-            this.Controls.Add(this.question6Label);
-            this.Controls.Add(this.question5Label);
-            this.Controls.Add(this.question4Label);
-            this.Controls.Add(this.question3Label);
-            this.Controls.Add(this.question2Label);
-            this.Controls.Add(this.question1Label);
-            this.Controls.Add(this.typeoftestLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Test_Questions";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -2055,7 +2295,6 @@
             this.question1Panel.ResumeLayout(false);
             this.question1Panel.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -2173,18 +2412,17 @@
         private Guna.UI2.WinForms.Guna2CustomRadioButton Q1S2RadioButton;
         private Guna.UI2.WinForms.Guna2CustomRadioButton Q1S4RadioButton;
         private Guna.UI2.WinForms.Guna2CustomRadioButton Q1S3RadioButton;
-        private Guna.UI2.WinForms.Guna2HtmlLabel question9Label;
-        private Guna.UI2.WinForms.Guna2HtmlLabel question10Label;
-        private Guna.UI2.WinForms.Guna2HtmlLabel question8Label;
-        private Guna.UI2.WinForms.Guna2HtmlLabel question7Label;
-        private Guna.UI2.WinForms.Guna2HtmlLabel question6Label;
-        private Guna.UI2.WinForms.Guna2HtmlLabel question5Label;
-        private Guna.UI2.WinForms.Guna2HtmlLabel question4Label;
-        private Guna.UI2.WinForms.Guna2HtmlLabel question3Label;
-        private Guna.UI2.WinForms.Guna2HtmlLabel question2Label;
-        private Guna.UI2.WinForms.Guna2HtmlLabel question1Label;
-        private Guna.UI2.WinForms.Guna2HtmlLabel typeoftestLabel;
         private Guna.UI2.WinForms.Guna2Button backButton;
-        private Guna.UI2.WinForms.Guna2HtmlLabel testingka;
+        private Guna.UI2.WinForms.Guna2TextBox question1Label;
+        private Guna.UI2.WinForms.Guna2TextBox question5Label;
+        private Guna.UI2.WinForms.Guna2TextBox question9Label;
+        private Guna.UI2.WinForms.Guna2TextBox question2Label;
+        private Guna.UI2.WinForms.Guna2TextBox question6Label;
+        private Guna.UI2.WinForms.Guna2TextBox question10Label;
+        private Guna.UI2.WinForms.Guna2TextBox question8Label;
+        private Guna.UI2.WinForms.Guna2TextBox question4Label;
+        private Guna.UI2.WinForms.Guna2TextBox question7Label;
+        private Guna.UI2.WinForms.Guna2TextBox question3Label;
+        private Guna.UI2.WinForms.Guna2TextBox typeoftestLabel;
     }
 }
