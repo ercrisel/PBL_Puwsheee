@@ -47,6 +47,11 @@ namespace PBL_Puwsheee
             this.Close();
         }
 
-        
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Log_In li = new Log_In();
+            li.Show();
+            this.Close();
+        }
     }
 }

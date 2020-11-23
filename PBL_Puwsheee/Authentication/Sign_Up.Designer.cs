@@ -83,11 +83,11 @@
             // firstnameLabel
             // 
             this.firstnameLabel.BackColor = System.Drawing.Color.Transparent;
-            this.firstnameLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.firstnameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.firstnameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.firstnameLabel.Location = new System.Drawing.Point(113, 247);
             this.firstnameLabel.Name = "firstnameLabel";
-            this.firstnameLabel.Size = new System.Drawing.Size(61, 16);
+            this.firstnameLabel.Size = new System.Drawing.Size(56, 15);
             this.firstnameLabel.TabIndex = 12;
             this.firstnameLabel.Text = "First Name:";
             // 
@@ -234,55 +234,55 @@
             // lastnameLabel
             // 
             this.lastnameLabel.BackColor = System.Drawing.Color.Transparent;
-            this.lastnameLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.lastnameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.lastnameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.lastnameLabel.Location = new System.Drawing.Point(113, 299);
             this.lastnameLabel.Name = "lastnameLabel";
-            this.lastnameLabel.Size = new System.Drawing.Size(61, 16);
+            this.lastnameLabel.Size = new System.Drawing.Size(57, 15);
             this.lastnameLabel.TabIndex = 18;
             this.lastnameLabel.Text = "Last Name:";
             // 
             // emailLabel
             // 
             this.emailLabel.BackColor = System.Drawing.Color.Transparent;
-            this.emailLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.emailLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.emailLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.emailLabel.Location = new System.Drawing.Point(90, 351);
             this.emailLabel.Name = "emailLabel";
-            this.emailLabel.Size = new System.Drawing.Size(79, 16);
+            this.emailLabel.Size = new System.Drawing.Size(72, 15);
             this.emailLabel.TabIndex = 19;
             this.emailLabel.Text = "Email Address:";
             // 
             // usernameLabel
             // 
             this.usernameLabel.BackColor = System.Drawing.Color.Transparent;
-            this.usernameLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.usernameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.usernameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.usernameLabel.Location = new System.Drawing.Point(118, 403);
             this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(56, 16);
+            this.usernameLabel.Size = new System.Drawing.Size(51, 15);
             this.usernameLabel.TabIndex = 20;
             this.usernameLabel.Text = "Username";
             // 
             // passwordLabel
             // 
             this.passwordLabel.BackColor = System.Drawing.Color.Transparent;
-            this.passwordLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.passwordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.passwordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.passwordLabel.Location = new System.Drawing.Point(113, 455);
             this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(58, 16);
+            this.passwordLabel.Size = new System.Drawing.Size(52, 15);
             this.passwordLabel.TabIndex = 21;
             this.passwordLabel.Text = "Password:";
             // 
             // confirmpasswordLabel
             // 
             this.confirmpasswordLabel.BackColor = System.Drawing.Color.Transparent;
-            this.confirmpasswordLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.confirmpasswordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.confirmpasswordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.confirmpasswordLabel.Location = new System.Drawing.Point(70, 507);
             this.confirmpasswordLabel.Name = "confirmpasswordLabel";
-            this.confirmpasswordLabel.Size = new System.Drawing.Size(101, 16);
+            this.confirmpasswordLabel.Size = new System.Drawing.Size(90, 15);
             this.confirmpasswordLabel.TabIndex = 22;
             this.confirmpasswordLabel.Text = "Confirm Password:";
             // 
@@ -295,7 +295,7 @@
             this.uploadimageButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uploadimageButton.CustomImages.Parent = this.uploadimageButton;
             this.uploadimageButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.uploadimageButton.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.uploadimageButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.uploadimageButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.uploadimageButton.HoverState.Parent = this.uploadimageButton;
             this.uploadimageButton.Location = new System.Drawing.Point(189, 177);
@@ -312,7 +312,7 @@
             this.signupButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.signupButton.CustomImages.Parent = this.signupButton;
             this.signupButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.signupButton.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.signupButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.signupButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.signupButton.HoverState.Parent = this.signupButton;
             this.signupButton.Location = new System.Drawing.Point(189, 573);
@@ -332,6 +332,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // userPicture
             // 
@@ -348,11 +349,11 @@
             // firstNameCondition
             // 
             this.firstNameCondition.AutoSize = true;
-            this.firstNameCondition.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.firstNameCondition.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.firstNameCondition.ForeColor = System.Drawing.Color.Maroon;
             this.firstNameCondition.Location = new System.Drawing.Point(186, 274);
             this.firstNameCondition.Name = "firstNameCondition";
-            this.firstNameCondition.Size = new System.Drawing.Size(157, 14);
+            this.firstNameCondition.Size = new System.Drawing.Size(173, 13);
             this.firstNameCondition.TabIndex = 27;
             this.firstNameCondition.Text = "MUST ONLY CONTAIN LETTERS";
             this.firstNameCondition.Visible = false;
@@ -360,11 +361,11 @@
             // lastNameCondition
             // 
             this.lastNameCondition.AutoSize = true;
-            this.lastNameCondition.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.lastNameCondition.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.lastNameCondition.ForeColor = System.Drawing.Color.Maroon;
             this.lastNameCondition.Location = new System.Drawing.Point(186, 327);
             this.lastNameCondition.Name = "lastNameCondition";
-            this.lastNameCondition.Size = new System.Drawing.Size(157, 14);
+            this.lastNameCondition.Size = new System.Drawing.Size(173, 13);
             this.lastNameCondition.TabIndex = 28;
             this.lastNameCondition.Text = "MUST ONLY CONTAIN LETTERS";
             this.lastNameCondition.Visible = false;
@@ -372,11 +373,11 @@
             // emailCondition
             // 
             this.emailCondition.AutoSize = true;
-            this.emailCondition.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.emailCondition.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.emailCondition.ForeColor = System.Drawing.Color.Maroon;
             this.emailCondition.Location = new System.Drawing.Point(186, 379);
             this.emailCondition.Name = "emailCondition";
-            this.emailCondition.Size = new System.Drawing.Size(83, 14);
+            this.emailCondition.Size = new System.Drawing.Size(91, 13);
             this.emailCondition.TabIndex = 29;
             this.emailCondition.Text = "EMAIL IS TAKEN";
             this.emailCondition.Visible = false;
@@ -384,11 +385,11 @@
             // usernameCondition
             // 
             this.usernameCondition.AutoSize = true;
-            this.usernameCondition.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.usernameCondition.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.usernameCondition.ForeColor = System.Drawing.Color.Maroon;
             this.usernameCondition.Location = new System.Drawing.Point(186, 431);
             this.usernameCondition.Name = "usernameCondition";
-            this.usernameCondition.Size = new System.Drawing.Size(106, 14);
+            this.usernameCondition.Size = new System.Drawing.Size(120, 13);
             this.usernameCondition.TabIndex = 30;
             this.usernameCondition.Text = "USERNAME IS TAKEN";
             this.usernameCondition.Visible = false;
