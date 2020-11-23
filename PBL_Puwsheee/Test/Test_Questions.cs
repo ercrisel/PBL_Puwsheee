@@ -16,7 +16,7 @@ namespace PBL_Puwsheee.Test
         public Test_Questions(string Test)
         {
             InitializeComponent();
-            typeoftestLabel.Text = Test;
+            this.Text = Test;
         }
 
         public Boolean checkValidation()
@@ -100,6 +100,35 @@ namespace PBL_Puwsheee.Test
 
         private void Test_Questions_Load(object sender, EventArgs e)
         {
+            typeoftestLabel.Text = this.Text;
+
+            if (typeoftestLabel.Text == "Anxiety and Depression")
+            {
+                question1Label.Text = "I feel tired out for no good reason.";
+                question2Label.Text = "I feel nervous.";
+                question3Label.Text = "I feel so nevous that nothing could calm you down?";
+                question4Label.Text = "I feel hopeless.";
+                question5Label.Text = "I feel restless or fidgety.";
+                question6Label.Text = "I feel so restless I could not sit still?";
+                question7Label.Text = "I feel depressed.";
+                question8Label.Text = "I feel that everything was an effort.";
+                question9Label.Text = "I feel so sad that nothing could cheer you up.";
+                question10Label.Text = "I feel worthless.";
+            }
+
+            if (typeoftestLabel.Text == "Emotional Intelligence")
+            {
+                question1Label.Text = "I recognize my emotions as I experience them.";
+                question2Label.Text = "I lose my temper when I feel frustrated.";
+                question3Label.Text = "People have told me that I'm a good listener.";
+                question4Label.Text = "I know how to calm myself down when I feel anxious or upset.";
+                question5Label.Text = "I enjoy organizing groups.";
+                question6Label.Text = "I find it hard to focus on something ove the long term.";
+                question7Label.Text = "I find it difficult to move on when I feel frustrated or unhappy.";
+                question8Label.Text = "I know my strengths and weaknesses.";
+                question9Label.Text = "I avoid conflict and negotiations.";
+                question10Label.Text = "I feel that I don't enjoy my work.";
+            }
 
         }
 

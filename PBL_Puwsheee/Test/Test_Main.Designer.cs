@@ -129,7 +129,7 @@
             this.stresstestbutton.ShadowDecoration.Parent = this.stresstestbutton;
             this.stresstestbutton.Size = new System.Drawing.Size(180, 45);
             this.stresstestbutton.TabIndex = 7;
-            this.stresstestbutton.Text = "Stress";
+            this.stresstestbutton.Text = "Emotional Intelligence";
             this.stresstestbutton.Click += new System.EventHandler(this.depressiontestButton_Click);
             // 
             // depressiontestButton
@@ -144,13 +144,14 @@
             this.depressiontestButton.ShadowDecoration.Parent = this.depressiontestButton;
             this.depressiontestButton.Size = new System.Drawing.Size(180, 45);
             this.depressiontestButton.TabIndex = 8;
-            this.depressiontestButton.Text = "Depression";
+            this.depressiontestButton.Text = "Anxiety and Depression";
             this.depressiontestButton.Click += new System.EventHandler(this.depressiontestButton_Click);
             // 
             // Test_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.ClientSize = new System.Drawing.Size(935, 505);
             this.Controls.Add(this.depressiontestButton);
             this.Controls.Add(this.stresstestbutton);
