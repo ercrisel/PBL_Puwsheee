@@ -101,7 +101,7 @@ namespace PBL_Puwsheee
 
         private void exitPuwshee(object sender, EventArgs e)
         {
-            Application.Exit();
+            Control.Exit();
         }
 
         private void clickOptions(object sender, EventArgs e)
@@ -110,6 +110,16 @@ namespace PBL_Puwsheee
             var form = new Settings.Settings_Main();
             form.Closed += (s, args) => this.Close();
             form.Show();
+        }
+
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+            Control.Minimize(this);
+        }
+
+        private void guna2CircleButton2_Click(object sender, EventArgs e)
+        {
+            Control.DoFullscreen(this);
         }
     }
 }
