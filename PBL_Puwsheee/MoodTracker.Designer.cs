@@ -126,6 +126,7 @@
             this.angryIcon.TabIndex = 3;
             this.angryIcon.Tag = "Angry";
             this.angryIcon.Text = " ";
+            this.angryIcon.Click += new System.EventHandler(this.angryIcon_Click);
             this.angryIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
             this.angryIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
             // 
