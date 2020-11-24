@@ -73,36 +73,43 @@ namespace PBL_Puwsheee
         private void clickMoodTracker(object sender, EventArgs e)
         {
             openChildForm(new MoodTracker());
-            indicatorButton.Location = new Point(57, 160);
+            indicatorButton.Location = new Point(57, 140);
             pageLabel.Location = new Point(108, 35);
         }
 
         private void clickCalendar(object sender, EventArgs e)
         {
             openChildForm(new Calendar_Main());
-            indicatorButton.Location = new Point(57, 220);
-            pageLabel.Location = new Point(127, 35);
+            indicatorButton.Location = new Point(57, 195);
+            pageLabel.Location = new Point(126, 35);
+        }
+        
+        private void clickAnalysis(object sender, EventArgs e)
+        {
+            openChildForm(new Analysis());
+            indicatorButton.Location = new Point(57, 253);
+            pageLabel.Location = new Point(130, 35);
         }
 
         private void clickTest(object sender, EventArgs e)
         {
             openChildForm(new Test.Test_Main());
-            indicatorButton.Location = new Point(57, 360);
+            indicatorButton.Location = new Point(57, 318);
             pageLabel.Location = new Point(141, 35);
-        }
-
-        private void clickAnalysis(object sender, EventArgs e)
-        {
-            openChildForm(new Analysis());
-            indicatorButton.Location = new Point(57, 290);
-            pageLabel.Location = new Point(130, 35);
         }
 
         private void clickPlayables(object sender, EventArgs e)
         {
             openChildForm(new Playables.Playables_Main());
-            indicatorButton.Location = new Point(57, 430);
+            indicatorButton.Location = new Point(57, 378);
             pageLabel.Location = new Point(124, 35);
+        }
+
+        private void clickVisualization(object sender, EventArgs e)
+        {
+            openChildForm(new MainVisualization());
+            indicatorButton.Location = new Point(57, 437);
+            pageLabel.Location = new Point(113, 35);
         }
 
         private void exitPuwshee(object sender, EventArgs e)
@@ -118,12 +125,12 @@ namespace PBL_Puwsheee
             form.Show();
         }
 
-        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        private void minimizePuwshee(object sender, EventArgs e)
         {
             Control.Minimize(this);
         }
 
-        private void guna2CircleButton2_Click(object sender, EventArgs e)
+        private void maximizePuwshee(object sender, EventArgs e)
         {
             Control.DoFullscreen(this);
         }

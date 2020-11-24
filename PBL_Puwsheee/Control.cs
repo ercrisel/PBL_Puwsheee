@@ -66,8 +66,9 @@ namespace PBL_Puwsheee
             }
         }
 
-        static void Fullscreen(Form form)
+       public  static void Fullscreen(Form form)
         {
+
             if(form.WindowState == FormWindowState.Maximized)
             {
                 form.WindowState = FormWindowState.Normal;
