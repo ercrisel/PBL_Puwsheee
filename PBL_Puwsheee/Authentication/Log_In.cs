@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using PBL_Puwsheee.Authentication.Class;
 
 namespace PBL_Puwsheee
 {
     public partial class Log_In : Form
     {
+        LogIn user = new LogIn();
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
         (
@@ -24,6 +26,8 @@ namespace PBL_Puwsheee
             int nHeightEllipse 
         );
 
+        public static string publicUserName;
+        public static string publicPasswordInput;
         public Log_In()
         {
             InitializeComponent();
@@ -37,13 +41,41 @@ namespace PBL_Puwsheee
             this.Close();
         }
 
+        public bool conditions()
+        {
+            bool conditionsMet = false;
+            if (requiredUsername.Visible == false && requiredPassword.Visible == false && usernameTextbox.Text!= string.Empty && passwordTextbox.Text != string.Empty)
+            {
+                conditionsMet = true;
+            }
+            return conditionsMet;
+        }
         private void loginButton_Click(object sender, EventArgs e)
         {
-            PositiveAffirmations pa = new PositiveAffirmations();
-            pa.Show();
-            this.Close();
+            user.Username = usernameTextbox.Text;
+            user.Password = passwordTextbox.Text;
+            if (conditions())
+            {
+                if (user.checkIfAccountInDatabase())
+                {
+                    publicUserName = user.Username;
+                    publicPasswordInput = user.Password;
+                    MessageBox.Show("You will be redirected to the homepage, Login Success");
+                    PositiveAffirmations pa = new PositiveAffirmations();
+                    pa.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("NO ACCOUNT REGISTERED IN THAT USERNAME AND PASSWORD");
+                }
+            }
+            else
+            {
+                user.requiredFieldShow(usernameTextbox.Text, requiredUsername);
+                user.requiredFieldShow(passwordTextbox.Text, requiredPassword);
+            }
         }
-
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -60,10 +92,32 @@ namespace PBL_Puwsheee
             su.Show();
             this.Close();
         }
+        protected override CreateParams CreateParams // double buffeirng daw sabi ni google 
+        {
+            get
+            {
+                CreateParams handleparam = base.CreateParams;
+                handleparam.ExStyle |= 0x02000000;
+                return handleparam;
+            }
+        }
 
         private void Log_In_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void usernameTextbox_TextChanged(object sender, EventArgs e)
+        {
+            user.Username = usernameTextbox.Text;
+            user.requiredFieldShow(usernameTextbox.Text, requiredUsername);
+            
+        }
+
+        private void passwordTextbox_TextChanged(object sender, EventArgs e)
+        {
+            user.Password = passwordTextbox.Text;
+            user.requiredFieldShow(passwordTextbox.Text, requiredPassword);
         }
     }
 }

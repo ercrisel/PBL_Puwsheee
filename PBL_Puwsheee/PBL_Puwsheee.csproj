@@ -72,6 +72,11 @@
     <Compile Include="Analysis.Designer.cs">
       <DependentUpon>Analysis.cs</DependentUpon>
     </Compile>
+    <Compile Include="Authentication\Class\ChangeSettings.cs" />
+    <Compile Include="Authentication\Class\ConnectToDatabase.cs" />
+    <Compile Include="Authentication\Class\LogIn.cs" />
+    <Compile Include="Authentication\Class\PasswordEncryption.cs" />
+    <Compile Include="Authentication\Class\SignUp.cs" />
     <Compile Include="Calendar\Calendar_Card.cs">
       <SubType>Form</SubType>
     </Compile>

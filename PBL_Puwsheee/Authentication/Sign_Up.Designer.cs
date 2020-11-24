@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.firstnameTextbox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.firstNameTextbox = new Guna.UI2.WinForms.Guna2TextBox();
             this.firstnameLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lastnameTextbox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lastNameTextbox = new Guna.UI2.WinForms.Guna2TextBox();
             this.emailTextbox = new Guna.UI2.WinForms.Guna2TextBox();
             this.usernameTexbox = new Guna.UI2.WinForms.Guna2TextBox();
             this.passwordTextbox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.confirmpasswordTextbox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.confirmPasswordTextbox = new Guna.UI2.WinForms.Guna2TextBox();
             this.lastnameLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.emailLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.usernameLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -48,76 +48,92 @@
             this.lastNameCondition = new System.Windows.Forms.Label();
             this.emailCondition = new System.Windows.Forms.Label();
             this.usernameCondition = new System.Windows.Forms.Label();
+            this.showPasswordButton = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.requiredFirstName = new System.Windows.Forms.Label();
+            this.requiredUsername = new System.Windows.Forms.Label();
+            this.requiredLastName = new System.Windows.Forms.Label();
+            this.requiredEmail = new System.Windows.Forms.Label();
+            this.requiredPassword = new System.Windows.Forms.Label();
+            this.requiredConfirmPassword = new System.Windows.Forms.Label();
+            this.passAndConfirm = new System.Windows.Forms.Label();
+            this.passwordCondition3 = new System.Windows.Forms.Label();
+            this.passwordCondition2 = new System.Windows.Forms.Label();
+            this.passwordCondition1 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.submitCodeButton = new Guna.UI2.WinForms.Guna2Button();
+            this.enterCodeTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPicture)).BeginInit();
             this.SuspendLayout();
             // 
-            // firstnameTextbox
+            // firstNameTextbox
             // 
-            this.firstnameTextbox.BorderColor = System.Drawing.Color.Black;
-            this.firstnameTextbox.BorderRadius = 20;
-            this.firstnameTextbox.BorderThickness = 0;
-            this.firstnameTextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.firstnameTextbox.DefaultText = "";
-            this.firstnameTextbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.firstnameTextbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.firstnameTextbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.firstnameTextbox.DisabledState.Parent = this.firstnameTextbox;
-            this.firstnameTextbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.firstnameTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.firstnameTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.firstnameTextbox.FocusedState.Parent = this.firstnameTextbox;
-            this.firstnameTextbox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.firstnameTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.firstnameTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.firstnameTextbox.HoverState.Parent = this.firstnameTextbox;
-            this.firstnameTextbox.Location = new System.Drawing.Point(177, 238);
-            this.firstnameTextbox.Name = "firstnameTextbox";
-            this.firstnameTextbox.PasswordChar = '\0';
-            this.firstnameTextbox.PlaceholderText = "";
-            this.firstnameTextbox.SelectedText = "";
-            this.firstnameTextbox.ShadowDecoration.Parent = this.firstnameTextbox;
-            this.firstnameTextbox.Size = new System.Drawing.Size(216, 34);
-            this.firstnameTextbox.TabIndex = 10;
+            this.firstNameTextbox.BorderColor = System.Drawing.Color.Black;
+            this.firstNameTextbox.BorderRadius = 20;
+            this.firstNameTextbox.BorderThickness = 0;
+            this.firstNameTextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.firstNameTextbox.DefaultText = "";
+            this.firstNameTextbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.firstNameTextbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.firstNameTextbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.firstNameTextbox.DisabledState.Parent = this.firstNameTextbox;
+            this.firstNameTextbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.firstNameTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
+            this.firstNameTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.firstNameTextbox.FocusedState.Parent = this.firstNameTextbox;
+            this.firstNameTextbox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.firstNameTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.firstNameTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.firstNameTextbox.HoverState.Parent = this.firstNameTextbox;
+            this.firstNameTextbox.Location = new System.Drawing.Point(277, 238);
+            this.firstNameTextbox.Name = "firstNameTextbox";
+            this.firstNameTextbox.PasswordChar = '\0';
+            this.firstNameTextbox.PlaceholderText = "";
+            this.firstNameTextbox.SelectedText = "";
+            this.firstNameTextbox.ShadowDecoration.Parent = this.firstNameTextbox;
+            this.firstNameTextbox.Size = new System.Drawing.Size(216, 34);
+            this.firstNameTextbox.TabIndex = 10;
+            this.firstNameTextbox.TextChanged += new System.EventHandler(this.firstNameTextbox_TextChanged);
             // 
             // firstnameLabel
             // 
             this.firstnameLabel.BackColor = System.Drawing.Color.Transparent;
             this.firstnameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.firstnameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.firstnameLabel.Location = new System.Drawing.Point(113, 247);
+            this.firstnameLabel.Location = new System.Drawing.Point(213, 247);
             this.firstnameLabel.Name = "firstnameLabel";
             this.firstnameLabel.Size = new System.Drawing.Size(56, 15);
             this.firstnameLabel.TabIndex = 12;
             this.firstnameLabel.Text = "First Name:";
             // 
-            // lastnameTextbox
+            // lastNameTextbox
             // 
-            this.lastnameTextbox.BorderColor = System.Drawing.Color.Black;
-            this.lastnameTextbox.BorderRadius = 20;
-            this.lastnameTextbox.BorderThickness = 0;
-            this.lastnameTextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lastnameTextbox.DefaultText = "";
-            this.lastnameTextbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.lastnameTextbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.lastnameTextbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.lastnameTextbox.DisabledState.Parent = this.lastnameTextbox;
-            this.lastnameTextbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.lastnameTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.lastnameTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lastnameTextbox.FocusedState.Parent = this.lastnameTextbox;
-            this.lastnameTextbox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lastnameTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.lastnameTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lastnameTextbox.HoverState.Parent = this.lastnameTextbox;
-            this.lastnameTextbox.Location = new System.Drawing.Point(177, 290);
-            this.lastnameTextbox.Name = "lastnameTextbox";
-            this.lastnameTextbox.PasswordChar = '\0';
-            this.lastnameTextbox.PlaceholderText = "";
-            this.lastnameTextbox.SelectedText = "";
-            this.lastnameTextbox.ShadowDecoration.Parent = this.lastnameTextbox;
-            this.lastnameTextbox.Size = new System.Drawing.Size(216, 34);
-            this.lastnameTextbox.TabIndex = 13;
+            this.lastNameTextbox.BorderColor = System.Drawing.Color.Black;
+            this.lastNameTextbox.BorderRadius = 20;
+            this.lastNameTextbox.BorderThickness = 0;
+            this.lastNameTextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lastNameTextbox.DefaultText = "";
+            this.lastNameTextbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.lastNameTextbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.lastNameTextbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lastNameTextbox.DisabledState.Parent = this.lastNameTextbox;
+            this.lastNameTextbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lastNameTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
+            this.lastNameTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lastNameTextbox.FocusedState.Parent = this.lastNameTextbox;
+            this.lastNameTextbox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lastNameTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.lastNameTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lastNameTextbox.HoverState.Parent = this.lastNameTextbox;
+            this.lastNameTextbox.Location = new System.Drawing.Point(277, 290);
+            this.lastNameTextbox.Name = "lastNameTextbox";
+            this.lastNameTextbox.PasswordChar = '\0';
+            this.lastNameTextbox.PlaceholderText = "";
+            this.lastNameTextbox.SelectedText = "";
+            this.lastNameTextbox.ShadowDecoration.Parent = this.lastNameTextbox;
+            this.lastNameTextbox.Size = new System.Drawing.Size(216, 34);
+            this.lastNameTextbox.TabIndex = 13;
+            this.lastNameTextbox.TextChanged += new System.EventHandler(this.lastNameTextbox_TextChanged);
             // 
             // emailTextbox
             // 
@@ -138,7 +154,7 @@
             this.emailTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.emailTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.emailTextbox.HoverState.Parent = this.emailTextbox;
-            this.emailTextbox.Location = new System.Drawing.Point(177, 342);
+            this.emailTextbox.Location = new System.Drawing.Point(277, 342);
             this.emailTextbox.Name = "emailTextbox";
             this.emailTextbox.PasswordChar = '\0';
             this.emailTextbox.PlaceholderText = "";
@@ -146,6 +162,7 @@
             this.emailTextbox.ShadowDecoration.Parent = this.emailTextbox;
             this.emailTextbox.Size = new System.Drawing.Size(216, 34);
             this.emailTextbox.TabIndex = 14;
+            this.emailTextbox.TextChanged += new System.EventHandler(this.emailTextbox_TextChanged);
             // 
             // usernameTexbox
             // 
@@ -166,7 +183,7 @@
             this.usernameTexbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.usernameTexbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.usernameTexbox.HoverState.Parent = this.usernameTexbox;
-            this.usernameTexbox.Location = new System.Drawing.Point(177, 394);
+            this.usernameTexbox.Location = new System.Drawing.Point(277, 394);
             this.usernameTexbox.Name = "usernameTexbox";
             this.usernameTexbox.PasswordChar = '\0';
             this.usernameTexbox.PlaceholderText = "";
@@ -174,6 +191,7 @@
             this.usernameTexbox.ShadowDecoration.Parent = this.usernameTexbox;
             this.usernameTexbox.Size = new System.Drawing.Size(216, 34);
             this.usernameTexbox.TabIndex = 15;
+            this.usernameTexbox.TextChanged += new System.EventHandler(this.usernameTexbox_TextChanged);
             // 
             // passwordTextbox
             // 
@@ -194,49 +212,51 @@
             this.passwordTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.passwordTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.passwordTextbox.HoverState.Parent = this.passwordTextbox;
-            this.passwordTextbox.Location = new System.Drawing.Point(177, 446);
+            this.passwordTextbox.Location = new System.Drawing.Point(277, 446);
             this.passwordTextbox.Name = "passwordTextbox";
-            this.passwordTextbox.PasswordChar = '\0';
+            this.passwordTextbox.PasswordChar = '*';
             this.passwordTextbox.PlaceholderText = "";
             this.passwordTextbox.SelectedText = "";
             this.passwordTextbox.ShadowDecoration.Parent = this.passwordTextbox;
             this.passwordTextbox.Size = new System.Drawing.Size(216, 34);
             this.passwordTextbox.TabIndex = 16;
+            this.passwordTextbox.TextChanged += new System.EventHandler(this.passwordTextbox_TextChanged);
             // 
-            // confirmpasswordTextbox
+            // confirmPasswordTextbox
             // 
-            this.confirmpasswordTextbox.BorderColor = System.Drawing.Color.Black;
-            this.confirmpasswordTextbox.BorderRadius = 20;
-            this.confirmpasswordTextbox.BorderThickness = 0;
-            this.confirmpasswordTextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.confirmpasswordTextbox.DefaultText = "";
-            this.confirmpasswordTextbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.confirmpasswordTextbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.confirmpasswordTextbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.confirmpasswordTextbox.DisabledState.Parent = this.confirmpasswordTextbox;
-            this.confirmpasswordTextbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.confirmpasswordTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.confirmpasswordTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.confirmpasswordTextbox.FocusedState.Parent = this.confirmpasswordTextbox;
-            this.confirmpasswordTextbox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.confirmpasswordTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.confirmpasswordTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.confirmpasswordTextbox.HoverState.Parent = this.confirmpasswordTextbox;
-            this.confirmpasswordTextbox.Location = new System.Drawing.Point(177, 498);
-            this.confirmpasswordTextbox.Name = "confirmpasswordTextbox";
-            this.confirmpasswordTextbox.PasswordChar = '\0';
-            this.confirmpasswordTextbox.PlaceholderText = "";
-            this.confirmpasswordTextbox.SelectedText = "";
-            this.confirmpasswordTextbox.ShadowDecoration.Parent = this.confirmpasswordTextbox;
-            this.confirmpasswordTextbox.Size = new System.Drawing.Size(216, 34);
-            this.confirmpasswordTextbox.TabIndex = 17;
+            this.confirmPasswordTextbox.BorderColor = System.Drawing.Color.Black;
+            this.confirmPasswordTextbox.BorderRadius = 20;
+            this.confirmPasswordTextbox.BorderThickness = 0;
+            this.confirmPasswordTextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.confirmPasswordTextbox.DefaultText = "";
+            this.confirmPasswordTextbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.confirmPasswordTextbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.confirmPasswordTextbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.confirmPasswordTextbox.DisabledState.Parent = this.confirmPasswordTextbox;
+            this.confirmPasswordTextbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.confirmPasswordTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
+            this.confirmPasswordTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.confirmPasswordTextbox.FocusedState.Parent = this.confirmPasswordTextbox;
+            this.confirmPasswordTextbox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.confirmPasswordTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.confirmPasswordTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.confirmPasswordTextbox.HoverState.Parent = this.confirmPasswordTextbox;
+            this.confirmPasswordTextbox.Location = new System.Drawing.Point(277, 498);
+            this.confirmPasswordTextbox.Name = "confirmPasswordTextbox";
+            this.confirmPasswordTextbox.PasswordChar = '*';
+            this.confirmPasswordTextbox.PlaceholderText = "";
+            this.confirmPasswordTextbox.SelectedText = "";
+            this.confirmPasswordTextbox.ShadowDecoration.Parent = this.confirmPasswordTextbox;
+            this.confirmPasswordTextbox.Size = new System.Drawing.Size(216, 34);
+            this.confirmPasswordTextbox.TabIndex = 17;
+            this.confirmPasswordTextbox.TextChanged += new System.EventHandler(this.confirmPasswordTextbox_TextChanged);
             // 
             // lastnameLabel
             // 
             this.lastnameLabel.BackColor = System.Drawing.Color.Transparent;
             this.lastnameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.lastnameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.lastnameLabel.Location = new System.Drawing.Point(113, 299);
+            this.lastnameLabel.Location = new System.Drawing.Point(213, 299);
             this.lastnameLabel.Name = "lastnameLabel";
             this.lastnameLabel.Size = new System.Drawing.Size(57, 15);
             this.lastnameLabel.TabIndex = 18;
@@ -247,7 +267,7 @@
             this.emailLabel.BackColor = System.Drawing.Color.Transparent;
             this.emailLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.emailLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.emailLabel.Location = new System.Drawing.Point(90, 351);
+            this.emailLabel.Location = new System.Drawing.Point(190, 351);
             this.emailLabel.Name = "emailLabel";
             this.emailLabel.Size = new System.Drawing.Size(72, 15);
             this.emailLabel.TabIndex = 19;
@@ -258,7 +278,7 @@
             this.usernameLabel.BackColor = System.Drawing.Color.Transparent;
             this.usernameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.usernameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.usernameLabel.Location = new System.Drawing.Point(118, 403);
+            this.usernameLabel.Location = new System.Drawing.Point(218, 403);
             this.usernameLabel.Name = "usernameLabel";
             this.usernameLabel.Size = new System.Drawing.Size(51, 15);
             this.usernameLabel.TabIndex = 20;
@@ -269,7 +289,7 @@
             this.passwordLabel.BackColor = System.Drawing.Color.Transparent;
             this.passwordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.passwordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.passwordLabel.Location = new System.Drawing.Point(113, 455);
+            this.passwordLabel.Location = new System.Drawing.Point(213, 455);
             this.passwordLabel.Name = "passwordLabel";
             this.passwordLabel.Size = new System.Drawing.Size(52, 15);
             this.passwordLabel.TabIndex = 21;
@@ -280,7 +300,7 @@
             this.confirmpasswordLabel.BackColor = System.Drawing.Color.Transparent;
             this.confirmpasswordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.confirmpasswordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.confirmpasswordLabel.Location = new System.Drawing.Point(70, 507);
+            this.confirmpasswordLabel.Location = new System.Drawing.Point(170, 507);
             this.confirmpasswordLabel.Name = "confirmpasswordLabel";
             this.confirmpasswordLabel.Size = new System.Drawing.Size(90, 15);
             this.confirmpasswordLabel.TabIndex = 22;
@@ -298,12 +318,13 @@
             this.uploadimageButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.uploadimageButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.uploadimageButton.HoverState.Parent = this.uploadimageButton;
-            this.uploadimageButton.Location = new System.Drawing.Point(189, 177);
+            this.uploadimageButton.Location = new System.Drawing.Point(289, 177);
             this.uploadimageButton.Name = "uploadimageButton";
             this.uploadimageButton.ShadowDecoration.Parent = this.uploadimageButton;
             this.uploadimageButton.Size = new System.Drawing.Size(100, 34);
             this.uploadimageButton.TabIndex = 24;
             this.uploadimageButton.Text = "Upload Image";
+            this.uploadimageButton.Click += new System.EventHandler(this.uploadimageButton_Click);
             // 
             // signupButton
             // 
@@ -315,7 +336,7 @@
             this.signupButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.signupButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.signupButton.HoverState.Parent = this.signupButton;
-            this.signupButton.Location = new System.Drawing.Point(189, 573);
+            this.signupButton.Location = new System.Drawing.Point(289, 573);
             this.signupButton.Name = "signupButton";
             this.signupButton.ShadowDecoration.Parent = this.signupButton;
             this.signupButton.Size = new System.Drawing.Size(100, 34);
@@ -337,12 +358,12 @@
             // userPicture
             // 
             this.userPicture.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
-            this.userPicture.Location = new System.Drawing.Point(158, 22);
+            this.userPicture.Location = new System.Drawing.Point(258, 22);
             this.userPicture.Name = "userPicture";
             this.userPicture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.userPicture.ShadowDecoration.Parent = this.userPicture;
             this.userPicture.Size = new System.Drawing.Size(152, 144);
-            this.userPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.userPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.userPicture.TabIndex = 23;
             this.userPicture.TabStop = false;
             // 
@@ -351,7 +372,7 @@
             this.firstNameCondition.AutoSize = true;
             this.firstNameCondition.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.firstNameCondition.ForeColor = System.Drawing.Color.Maroon;
-            this.firstNameCondition.Location = new System.Drawing.Point(186, 274);
+            this.firstNameCondition.Location = new System.Drawing.Point(286, 274);
             this.firstNameCondition.Name = "firstNameCondition";
             this.firstNameCondition.Size = new System.Drawing.Size(173, 13);
             this.firstNameCondition.TabIndex = 27;
@@ -363,7 +384,7 @@
             this.lastNameCondition.AutoSize = true;
             this.lastNameCondition.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.lastNameCondition.ForeColor = System.Drawing.Color.Maroon;
-            this.lastNameCondition.Location = new System.Drawing.Point(186, 327);
+            this.lastNameCondition.Location = new System.Drawing.Point(286, 327);
             this.lastNameCondition.Name = "lastNameCondition";
             this.lastNameCondition.Size = new System.Drawing.Size(173, 13);
             this.lastNameCondition.TabIndex = 28;
@@ -375,7 +396,7 @@
             this.emailCondition.AutoSize = true;
             this.emailCondition.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.emailCondition.ForeColor = System.Drawing.Color.Maroon;
-            this.emailCondition.Location = new System.Drawing.Point(186, 379);
+            this.emailCondition.Location = new System.Drawing.Point(286, 379);
             this.emailCondition.Name = "emailCondition";
             this.emailCondition.Size = new System.Drawing.Size(91, 13);
             this.emailCondition.TabIndex = 29;
@@ -387,19 +408,209 @@
             this.usernameCondition.AutoSize = true;
             this.usernameCondition.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.usernameCondition.ForeColor = System.Drawing.Color.Maroon;
-            this.usernameCondition.Location = new System.Drawing.Point(186, 431);
+            this.usernameCondition.Location = new System.Drawing.Point(286, 431);
             this.usernameCondition.Name = "usernameCondition";
             this.usernameCondition.Size = new System.Drawing.Size(120, 13);
             this.usernameCondition.TabIndex = 30;
             this.usernameCondition.Text = "USERNAME IS TAKEN";
             this.usernameCondition.Visible = false;
             // 
+            // showPasswordButton
+            // 
+            this.showPasswordButton.CheckedState.Parent = this.showPasswordButton;
+            this.showPasswordButton.CustomImages.Parent = this.showPasswordButton;
+            this.showPasswordButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.showPasswordButton.ForeColor = System.Drawing.Color.White;
+            this.showPasswordButton.HoverState.Parent = this.showPasswordButton;
+            this.showPasswordButton.Location = new System.Drawing.Point(535, 446);
+            this.showPasswordButton.Name = "showPasswordButton";
+            this.showPasswordButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.showPasswordButton.ShadowDecoration.Parent = this.showPasswordButton;
+            this.showPasswordButton.Size = new System.Drawing.Size(67, 53);
+            this.showPasswordButton.TabIndex = 31;
+            this.showPasswordButton.Text = "Show Password";
+            this.showPasswordButton.Click += new System.EventHandler(this.showPasswordButton_Click);
+            // 
+            // requiredFirstName
+            // 
+            this.requiredFirstName.AutoSize = true;
+            this.requiredFirstName.ForeColor = System.Drawing.Color.Red;
+            this.requiredFirstName.Location = new System.Drawing.Point(52, 249);
+            this.requiredFirstName.Name = "requiredFirstName";
+            this.requiredFirstName.Size = new System.Drawing.Size(155, 13);
+            this.requiredFirstName.TabIndex = 32;
+            this.requiredFirstName.Text = "* THIS IS A REQUIRED FIELD";
+            this.requiredFirstName.Visible = false;
+            // 
+            // requiredUsername
+            // 
+            this.requiredUsername.AutoSize = true;
+            this.requiredUsername.ForeColor = System.Drawing.Color.Red;
+            this.requiredUsername.Location = new System.Drawing.Point(42, 405);
+            this.requiredUsername.Name = "requiredUsername";
+            this.requiredUsername.Size = new System.Drawing.Size(155, 13);
+            this.requiredUsername.TabIndex = 33;
+            this.requiredUsername.Text = "* THIS IS A REQUIRED FIELD";
+            this.requiredUsername.Visible = false;
+            // 
+            // requiredLastName
+            // 
+            this.requiredLastName.AutoSize = true;
+            this.requiredLastName.ForeColor = System.Drawing.Color.Red;
+            this.requiredLastName.Location = new System.Drawing.Point(42, 301);
+            this.requiredLastName.Name = "requiredLastName";
+            this.requiredLastName.Size = new System.Drawing.Size(155, 13);
+            this.requiredLastName.TabIndex = 34;
+            this.requiredLastName.Text = "* THIS IS A REQUIRED FIELD";
+            this.requiredLastName.Visible = false;
+            // 
+            // requiredEmail
+            // 
+            this.requiredEmail.AutoSize = true;
+            this.requiredEmail.ForeColor = System.Drawing.Color.Red;
+            this.requiredEmail.Location = new System.Drawing.Point(29, 353);
+            this.requiredEmail.Name = "requiredEmail";
+            this.requiredEmail.Size = new System.Drawing.Size(155, 13);
+            this.requiredEmail.TabIndex = 35;
+            this.requiredEmail.Text = "* THIS IS A REQUIRED FIELD";
+            this.requiredEmail.Visible = false;
+            // 
+            // requiredPassword
+            // 
+            this.requiredPassword.AutoSize = true;
+            this.requiredPassword.ForeColor = System.Drawing.Color.Red;
+            this.requiredPassword.Location = new System.Drawing.Point(42, 455);
+            this.requiredPassword.Name = "requiredPassword";
+            this.requiredPassword.Size = new System.Drawing.Size(155, 13);
+            this.requiredPassword.TabIndex = 36;
+            this.requiredPassword.Text = "* THIS IS A REQUIRED FIELD";
+            this.requiredPassword.Visible = false;
+            // 
+            // requiredConfirmPassword
+            // 
+            this.requiredConfirmPassword.AutoSize = true;
+            this.requiredConfirmPassword.ForeColor = System.Drawing.Color.Red;
+            this.requiredConfirmPassword.Location = new System.Drawing.Point(9, 507);
+            this.requiredConfirmPassword.Name = "requiredConfirmPassword";
+            this.requiredConfirmPassword.Size = new System.Drawing.Size(155, 13);
+            this.requiredConfirmPassword.TabIndex = 37;
+            this.requiredConfirmPassword.Text = "* THIS IS A REQUIRED FIELD";
+            this.requiredConfirmPassword.Visible = false;
+            // 
+            // passAndConfirm
+            // 
+            this.passAndConfirm.AutoSize = true;
+            this.passAndConfirm.ForeColor = System.Drawing.Color.Red;
+            this.passAndConfirm.Location = new System.Drawing.Point(240, 557);
+            this.passAndConfirm.Name = "passAndConfirm";
+            this.passAndConfirm.Size = new System.Drawing.Size(279, 13);
+            this.passAndConfirm.TabIndex = 38;
+            this.passAndConfirm.Text = "PASS AND CONFIRM PASSWORD DOES NOT MATCH";
+            this.passAndConfirm.Visible = false;
+            // 
+            // passwordCondition3
+            // 
+            this.passwordCondition3.AutoSize = true;
+            this.passwordCondition3.ForeColor = System.Drawing.Color.Red;
+            this.passwordCondition3.Location = new System.Drawing.Point(584, 594);
+            this.passwordCondition3.Name = "passwordCondition3";
+            this.passwordCondition3.Size = new System.Drawing.Size(205, 13);
+            this.passwordCondition3.TabIndex = 39;
+            this.passwordCondition3.Text = "MUST HAVE NUMBERS AND LETTERS";
+            this.passwordCondition3.Visible = false;
+            // 
+            // passwordCondition2
+            // 
+            this.passwordCondition2.AutoSize = true;
+            this.passwordCondition2.ForeColor = System.Drawing.Color.Red;
+            this.passwordCondition2.Location = new System.Drawing.Point(584, 557);
+            this.passwordCondition2.Name = "passwordCondition2";
+            this.passwordCondition2.Size = new System.Drawing.Size(254, 13);
+            this.passwordCondition2.TabIndex = 40;
+            this.passwordCondition2.Text = "MUST CONTAIN UPPERCASE AND LOWERCASE";
+            this.passwordCondition2.Visible = false;
+            // 
+            // passwordCondition1
+            // 
+            this.passwordCondition1.AutoSize = true;
+            this.passwordCondition1.ForeColor = System.Drawing.Color.Red;
+            this.passwordCondition1.Location = new System.Drawing.Point(584, 519);
+            this.passwordCondition1.Name = "passwordCondition1";
+            this.passwordCondition1.Size = new System.Drawing.Size(194, 13);
+            this.passwordCondition1.TabIndex = 41;
+            this.passwordCondition1.Text = "Password Must be 8 or more characters";
+            this.passwordCondition1.Visible = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(433, 96);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(154, 13);
+            this.label11.TabIndex = 42;
+            this.label11.Text = "ENTER VERIFICATION CODE";
+            this.label11.Visible = false;
+            // 
+            // submitCodeButton
+            // 
+            this.submitCodeButton.CheckedState.Parent = this.submitCodeButton;
+            this.submitCodeButton.CustomImages.Parent = this.submitCodeButton;
+            this.submitCodeButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.submitCodeButton.ForeColor = System.Drawing.Color.White;
+            this.submitCodeButton.HoverState.Parent = this.submitCodeButton;
+            this.submitCodeButton.Location = new System.Drawing.Point(757, 86);
+            this.submitCodeButton.Name = "submitCodeButton";
+            this.submitCodeButton.ShadowDecoration.Parent = this.submitCodeButton;
+            this.submitCodeButton.Size = new System.Drawing.Size(106, 45);
+            this.submitCodeButton.TabIndex = 43;
+            this.submitCodeButton.Text = "submitCode";
+            this.submitCodeButton.Visible = false;
+            this.submitCodeButton.Click += new System.EventHandler(this.submitCodeButton_Click);
+            // 
+            // enterCodeTextBox
+            // 
+            this.enterCodeTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.enterCodeTextBox.DefaultText = "";
+            this.enterCodeTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.enterCodeTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.enterCodeTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.enterCodeTextBox.DisabledState.Parent = this.enterCodeTextBox;
+            this.enterCodeTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.enterCodeTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.enterCodeTextBox.FocusedState.Parent = this.enterCodeTextBox;
+            this.enterCodeTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.enterCodeTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.enterCodeTextBox.HoverState.Parent = this.enterCodeTextBox;
+            this.enterCodeTextBox.Location = new System.Drawing.Point(593, 86);
+            this.enterCodeTextBox.Name = "enterCodeTextBox";
+            this.enterCodeTextBox.PasswordChar = '\0';
+            this.enterCodeTextBox.PlaceholderText = "";
+            this.enterCodeTextBox.SelectedText = "";
+            this.enterCodeTextBox.ShadowDecoration.Parent = this.enterCodeTextBox;
+            this.enterCodeTextBox.Size = new System.Drawing.Size(149, 36);
+            this.enterCodeTextBox.TabIndex = 44;
+            this.enterCodeTextBox.Visible = false;
+            // 
             // Sign_Up
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.ClientSize = new System.Drawing.Size(450, 619);
+            this.ClientSize = new System.Drawing.Size(1006, 690);
+            this.Controls.Add(this.enterCodeTextBox);
+            this.Controls.Add(this.submitCodeButton);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.passwordCondition1);
+            this.Controls.Add(this.passwordCondition2);
+            this.Controls.Add(this.passwordCondition3);
+            this.Controls.Add(this.passAndConfirm);
+            this.Controls.Add(this.requiredConfirmPassword);
+            this.Controls.Add(this.requiredPassword);
+            this.Controls.Add(this.requiredEmail);
+            this.Controls.Add(this.requiredLastName);
+            this.Controls.Add(this.requiredUsername);
+            this.Controls.Add(this.requiredFirstName);
+            this.Controls.Add(this.showPasswordButton);
             this.Controls.Add(this.usernameCondition);
             this.Controls.Add(this.emailCondition);
             this.Controls.Add(this.lastNameCondition);
@@ -413,17 +624,17 @@
             this.Controls.Add(this.usernameLabel);
             this.Controls.Add(this.emailLabel);
             this.Controls.Add(this.lastnameLabel);
-            this.Controls.Add(this.confirmpasswordTextbox);
+            this.Controls.Add(this.confirmPasswordTextbox);
             this.Controls.Add(this.passwordTextbox);
             this.Controls.Add(this.usernameTexbox);
             this.Controls.Add(this.emailTextbox);
-            this.Controls.Add(this.lastnameTextbox);
+            this.Controls.Add(this.lastNameTextbox);
             this.Controls.Add(this.firstnameLabel);
-            this.Controls.Add(this.firstnameTextbox);
+            this.Controls.Add(this.firstNameTextbox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Sign_Up";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Sign_Up";
+            this.Load += new System.EventHandler(this.Sign_Up_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPicture)).EndInit();
             this.ResumeLayout(false);
@@ -433,12 +644,12 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2TextBox firstnameTextbox;
+        private Guna.UI2.WinForms.Guna2TextBox firstNameTextbox;
         private Guna.UI2.WinForms.Guna2HtmlLabel firstnameLabel;
         private Guna.UI2.WinForms.Guna2TextBox emailTextbox;
         private Guna.UI2.WinForms.Guna2TextBox usernameTexbox;
         private Guna.UI2.WinForms.Guna2TextBox passwordTextbox;
-        private Guna.UI2.WinForms.Guna2TextBox confirmpasswordTextbox;
+        private Guna.UI2.WinForms.Guna2TextBox confirmPasswordTextbox;
         private Guna.UI2.WinForms.Guna2HtmlLabel lastnameLabel;
         private Guna.UI2.WinForms.Guna2HtmlLabel emailLabel;
         private Guna.UI2.WinForms.Guna2HtmlLabel usernameLabel;
@@ -447,11 +658,25 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox userPicture;
         private Guna.UI2.WinForms.Guna2Button uploadimageButton;
         private Guna.UI2.WinForms.Guna2Button signupButton;
-        protected internal Guna.UI2.WinForms.Guna2TextBox lastnameTextbox;
+        protected internal Guna.UI2.WinForms.Guna2TextBox lastNameTextbox;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label firstNameCondition;
         private System.Windows.Forms.Label lastNameCondition;
         private System.Windows.Forms.Label emailCondition;
         private System.Windows.Forms.Label usernameCondition;
+        private Guna.UI2.WinForms.Guna2CircleButton showPasswordButton;
+        private System.Windows.Forms.Label requiredFirstName;
+        private System.Windows.Forms.Label requiredUsername;
+        private System.Windows.Forms.Label requiredLastName;
+        private System.Windows.Forms.Label requiredEmail;
+        private System.Windows.Forms.Label requiredPassword;
+        private System.Windows.Forms.Label requiredConfirmPassword;
+        private System.Windows.Forms.Label passAndConfirm;
+        private System.Windows.Forms.Label passwordCondition3;
+        private System.Windows.Forms.Label passwordCondition2;
+        private System.Windows.Forms.Label passwordCondition1;
+        private System.Windows.Forms.Label label11;
+        private Guna.UI2.WinForms.Guna2Button submitCodeButton;
+        private Guna.UI2.WinForms.Guna2TextBox enterCodeTextBox;
     }
 }

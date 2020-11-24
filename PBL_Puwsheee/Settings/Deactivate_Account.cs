@@ -40,5 +40,10 @@ namespace PBL_Puwsheee.Settings
         {
 
         }
+
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
