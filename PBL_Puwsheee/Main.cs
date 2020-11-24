@@ -103,7 +103,7 @@ namespace PBL_Puwsheee
         {
             openChildForm(new MainVisualization());
             indicatorButton.Location = new Point(57, 437);
-            pageLabel.Location = new Point(113, 35);
+            pageLabel.Location = new Point(76, 35);
         }
 
         private void exitPuwshee(object sender, EventArgs e)

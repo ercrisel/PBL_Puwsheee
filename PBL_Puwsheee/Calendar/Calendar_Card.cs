@@ -50,7 +50,7 @@ namespace PBL_Puwsheee.Calendar
                 bg.TopMost = true;
                 bg.Location = this.Location;
                 bg.ShowInTaskbar = false;
-                bg.Size = new Size(1020, 580);
+                bg.Size = new Size(1020, 610);
                 bg.Show();
 
                 remove.Owner = bg;
@@ -74,7 +74,7 @@ namespace PBL_Puwsheee.Calendar
                 bg.TopMost = true;
                 bg.Location = this.Location;
                 bg.ShowInTaskbar = false;
-                bg.Size = new Size(1020, 580);
+                bg.Size = new Size(1020, 610);
                 bg.Show();
 
                 edit.Owner = bg;

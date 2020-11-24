@@ -30,7 +30,7 @@ namespace PBL_Puwsheee
                     bg.TopMost = true;
                     bg.Location = this.Location;
                     bg.ShowInTaskbar = false;
-                    bg.Size = new Size(1020, 580);
+                    bg.Size = new Size(1020, 610);
                     bg.Show();
 
                     card.Owner = bg;

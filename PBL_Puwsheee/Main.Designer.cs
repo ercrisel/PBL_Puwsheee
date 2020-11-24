@@ -32,14 +32,12 @@
             this.pageLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.usernameLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.optionButton = new Guna.UI2.WinForms.Guna2Button();
+            this.usericonPicture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.displayPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.navBarPanel = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.indicatorButton = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.navPanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.guna2CircleButton3 = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.guna2CircleButton2 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.visualizationButton = new Guna.UI2.WinForms.Guna2Button();
+            this.indicatorButton = new Guna.UI2.WinForms.Guna2CircleButton();
             this.exitButton = new Guna.UI2.WinForms.Guna2Button();
             this.logoPicture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.analysisButton = new Guna.UI2.WinForms.Guna2Button();
@@ -47,14 +45,16 @@
             this.calendarButton = new Guna.UI2.WinForms.Guna2Button();
             this.moodtrackerButton = new Guna.UI2.WinForms.Guna2Button();
             this.testButton = new Guna.UI2.WinForms.Guna2Button();
-            this.optionButton = new Guna.UI2.WinForms.Guna2Button();
-            this.usericonPicture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.navPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.guna2CircleButton3 = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.guna2CircleButton2 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2ShadowPanel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
-            this.navBarPanel.SuspendLayout();
-            this.navPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.logoPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usericonPicture)).BeginInit();
+            this.navBarPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logoPicture)).BeginInit();
+            this.navPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2ShadowPanel1
@@ -65,7 +65,7 @@
             this.guna2ShadowPanel1.Controls.Add(this.pageLabel);
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.guna2ShadowPanel1.Location = new System.Drawing.Point(275, -31);
-            this.guna2ShadowPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2ShadowPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.Radius = 15;
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
@@ -77,12 +77,12 @@
             this.pageLabel.BackColor = System.Drawing.Color.Transparent;
             this.pageLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pageLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.pageLabel.Location = new System.Drawing.Point(126, 35);
-            this.pageLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pageLabel.Location = new System.Drawing.Point(117, 35);
+            this.pageLabel.Margin = new System.Windows.Forms.Padding(4);
             this.pageLabel.Name = "pageLabel";
-            this.pageLabel.Size = new System.Drawing.Size(73, 22);
+            this.pageLabel.Size = new System.Drawing.Size(91, 22);
             this.pageLabel.TabIndex = 0;
-            this.pageLabel.Text = "Calendar";
+            this.pageLabel.Text = "Page Label";
             this.pageLabel.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // guna2Panel2
@@ -93,7 +93,7 @@
             this.guna2Panel2.Controls.Add(this.optionButton);
             this.guna2Panel2.Controls.Add(this.usericonPicture);
             this.guna2Panel2.Location = new System.Drawing.Point(84, 30);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(936, 66);
@@ -105,20 +105,53 @@
             this.usernameLabel.BackColor = System.Drawing.Color.Transparent;
             this.usernameLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameLabel.Location = new System.Drawing.Point(877, 25);
-            this.usernameLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.usernameLabel.Margin = new System.Windows.Forms.Padding(4);
             this.usernameLabel.Name = "usernameLabel";
             this.usernameLabel.Size = new System.Drawing.Size(56, 16);
             this.usernameLabel.TabIndex = 9;
             this.usernameLabel.Text = "Username";
             // 
+            // optionButton
+            // 
+            this.optionButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.optionButton.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Settings;
+            this.optionButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.optionButton.CheckedState.Parent = this.optionButton;
+            this.optionButton.CustomImages.Parent = this.optionButton;
+            this.optionButton.FillColor = System.Drawing.Color.Transparent;
+            this.optionButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.optionButton.ForeColor = System.Drawing.Color.White;
+            this.optionButton.HoverState.Parent = this.optionButton;
+            this.optionButton.Location = new System.Drawing.Point(763, 20);
+            this.optionButton.Margin = new System.Windows.Forms.Padding(4);
+            this.optionButton.Name = "optionButton";
+            this.optionButton.ShadowDecoration.Parent = this.optionButton;
+            this.optionButton.Size = new System.Drawing.Size(30, 26);
+            this.optionButton.TabIndex = 6;
+            this.optionButton.Click += new System.EventHandler(this.clickOptions);
+            // 
+            // usericonPicture
+            // 
+            this.usericonPicture.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.usericonPicture.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
+            this.usericonPicture.Location = new System.Drawing.Point(805, 4);
+            this.usericonPicture.Margin = new System.Windows.Forms.Padding(4);
+            this.usericonPicture.Name = "usericonPicture";
+            this.usericonPicture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.usericonPicture.ShadowDecoration.Parent = this.usericonPicture;
+            this.usericonPicture.Size = new System.Drawing.Size(66, 57);
+            this.usericonPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.usericonPicture.TabIndex = 4;
+            this.usericonPicture.TabStop = false;
+            // 
             // displayPanel
             // 
             this.displayPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.displayPanel.Location = new System.Drawing.Point(82, 95);
-            this.displayPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.displayPanel.Location = new System.Drawing.Point(84, 95);
+            this.displayPanel.Margin = new System.Windows.Forms.Padding(4);
             this.displayPanel.Name = "displayPanel";
             this.displayPanel.ShadowDecoration.Parent = this.displayPanel;
-            this.displayPanel.Size = new System.Drawing.Size(936, 514);
+            this.displayPanel.Size = new System.Drawing.Size(938, 514);
             this.displayPanel.TabIndex = 9;
             // 
             // navBarPanel
@@ -135,95 +168,12 @@
             this.navBarPanel.Controls.Add(this.testButton);
             this.navBarPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.navBarPanel.Location = new System.Drawing.Point(-15, -12);
-            this.navBarPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.navBarPanel.Margin = new System.Windows.Forms.Padding(4);
             this.navBarPanel.Name = "navBarPanel";
             this.navBarPanel.Radius = 15;
             this.navBarPanel.ShadowColor = System.Drawing.Color.Black;
             this.navBarPanel.Size = new System.Drawing.Size(106, 609);
             this.navBarPanel.TabIndex = 9;
-            // 
-            // indicatorButton
-            // 
-            this.indicatorButton.BackColor = System.Drawing.Color.Transparent;
-            this.indicatorButton.CheckedState.Parent = this.indicatorButton;
-            this.indicatorButton.CustomImages.Parent = this.indicatorButton;
-            this.indicatorButton.Enabled = false;
-            this.indicatorButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.indicatorButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.indicatorButton.ForeColor = System.Drawing.Color.White;
-            this.indicatorButton.HoverState.Parent = this.indicatorButton;
-            this.indicatorButton.Location = new System.Drawing.Point(57, 140);
-            this.indicatorButton.Name = "indicatorButton";
-            this.indicatorButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.indicatorButton.ShadowDecoration.Parent = this.indicatorButton;
-            this.indicatorButton.Size = new System.Drawing.Size(8, 8);
-            this.indicatorButton.TabIndex = 0;
-            this.indicatorButton.UseTransparentBackground = true;
-            // 
-            // navPanel
-            // 
-            this.navPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.navPanel.Controls.Add(this.navBarPanel);
-            this.navPanel.Location = new System.Drawing.Point(-10, 30);
-            this.navPanel.Name = "navPanel";
-            this.navPanel.ShadowDecoration.Parent = this.navPanel;
-            this.navPanel.Size = new System.Drawing.Size(95, 580);
-            this.navPanel.TabIndex = 10;
-            // 
-            // guna2CircleButton1
-            // 
-            this.guna2CircleButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CircleButton1.CheckedState.Parent = this.guna2CircleButton1;
-            this.guna2CircleButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2CircleButton1.CustomImages.Parent = this.guna2CircleButton1;
-            this.guna2CircleButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleButton1.HoverState.Parent = this.guna2CircleButton1;
-            this.guna2CircleButton1.Location = new System.Drawing.Point(973, 5);
-            this.guna2CircleButton1.Name = "guna2CircleButton1";
-            this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleButton1.ShadowDecoration.Parent = this.guna2CircleButton1;
-            this.guna2CircleButton1.Size = new System.Drawing.Size(15, 15);
-            this.guna2CircleButton1.TabIndex = 0;
-            this.guna2CircleButton1.Click += new System.EventHandler(this.maximizePuwshee);
-            // 
-            // guna2CircleButton3
-            // 
-            this.guna2CircleButton3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CircleButton3.CheckedState.Parent = this.guna2CircleButton3;
-            this.guna2CircleButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2CircleButton3.CustomImages.Parent = this.guna2CircleButton3;
-            this.guna2CircleButton3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
-            this.guna2CircleButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2CircleButton3.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleButton3.HoverState.Parent = this.guna2CircleButton3;
-            this.guna2CircleButton3.Location = new System.Drawing.Point(994, 5);
-            this.guna2CircleButton3.Name = "guna2CircleButton3";
-            this.guna2CircleButton3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleButton3.ShadowDecoration.Parent = this.guna2CircleButton3;
-            this.guna2CircleButton3.Size = new System.Drawing.Size(15, 15);
-            this.guna2CircleButton3.TabIndex = 0;
-            this.guna2CircleButton3.Click += new System.EventHandler(this.exitPuwshee);
-            // 
-            // guna2CircleButton2
-            // 
-            this.guna2CircleButton2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CircleButton2.CheckedState.Parent = this.guna2CircleButton2;
-            this.guna2CircleButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2CircleButton2.CustomImages.Parent = this.guna2CircleButton2;
-            this.guna2CircleButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.guna2CircleButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2CircleButton2.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleButton2.HoverState.Parent = this.guna2CircleButton2;
-            this.guna2CircleButton2.Location = new System.Drawing.Point(952, 5);
-            this.guna2CircleButton2.Name = "guna2CircleButton2";
-            this.guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleButton2.ShadowDecoration.Parent = this.guna2CircleButton2;
-            this.guna2CircleButton2.Size = new System.Drawing.Size(15, 15);
-            this.guna2CircleButton2.TabIndex = 0;
-            this.guna2CircleButton2.Visible = false;
-            this.guna2CircleButton2.Click += new System.EventHandler(this.minimizePuwshee);
             // 
             // visualizationButton
             // 
@@ -244,6 +194,24 @@
             this.visualizationButton.TabIndex = 9;
             this.visualizationButton.Text = " ";
             this.visualizationButton.Click += new System.EventHandler(this.clickVisualization);
+            // 
+            // indicatorButton
+            // 
+            this.indicatorButton.BackColor = System.Drawing.Color.Transparent;
+            this.indicatorButton.CheckedState.Parent = this.indicatorButton;
+            this.indicatorButton.CustomImages.Parent = this.indicatorButton;
+            this.indicatorButton.Enabled = false;
+            this.indicatorButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
+            this.indicatorButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.indicatorButton.ForeColor = System.Drawing.Color.White;
+            this.indicatorButton.HoverState.Parent = this.indicatorButton;
+            this.indicatorButton.Location = new System.Drawing.Point(57, 140);
+            this.indicatorButton.Name = "indicatorButton";
+            this.indicatorButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.indicatorButton.ShadowDecoration.Parent = this.indicatorButton;
+            this.indicatorButton.Size = new System.Drawing.Size(8, 8);
+            this.indicatorButton.TabIndex = 0;
+            this.indicatorButton.UseTransparentBackground = true;
             // 
             // exitButton
             // 
@@ -379,38 +347,70 @@
             this.testButton.Text = " ";
             this.testButton.Click += new System.EventHandler(this.clickTest);
             // 
-            // optionButton
+            // navPanel
             // 
-            this.optionButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.optionButton.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Settings;
-            this.optionButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.optionButton.CheckedState.Parent = this.optionButton;
-            this.optionButton.CustomImages.Parent = this.optionButton;
-            this.optionButton.FillColor = System.Drawing.Color.Transparent;
-            this.optionButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.optionButton.ForeColor = System.Drawing.Color.White;
-            this.optionButton.HoverState.Parent = this.optionButton;
-            this.optionButton.Location = new System.Drawing.Point(763, 20);
-            this.optionButton.Margin = new System.Windows.Forms.Padding(4);
-            this.optionButton.Name = "optionButton";
-            this.optionButton.ShadowDecoration.Parent = this.optionButton;
-            this.optionButton.Size = new System.Drawing.Size(30, 26);
-            this.optionButton.TabIndex = 6;
-            this.optionButton.Click += new System.EventHandler(this.clickOptions);
+            this.navPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.navPanel.Controls.Add(this.navBarPanel);
+            this.navPanel.Location = new System.Drawing.Point(-10, 30);
+            this.navPanel.Name = "navPanel";
+            this.navPanel.ShadowDecoration.Parent = this.navPanel;
+            this.navPanel.Size = new System.Drawing.Size(95, 580);
+            this.navPanel.TabIndex = 10;
             // 
-            // usericonPicture
+            // guna2CircleButton1
             // 
-            this.usericonPicture.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.usericonPicture.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
-            this.usericonPicture.Location = new System.Drawing.Point(805, 4);
-            this.usericonPicture.Margin = new System.Windows.Forms.Padding(4);
-            this.usericonPicture.Name = "usericonPicture";
-            this.usericonPicture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.usericonPicture.ShadowDecoration.Parent = this.usericonPicture;
-            this.usericonPicture.Size = new System.Drawing.Size(66, 57);
-            this.usericonPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.usericonPicture.TabIndex = 4;
-            this.usericonPicture.TabStop = false;
+            this.guna2CircleButton1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CircleButton1.CheckedState.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2CircleButton1.CustomImages.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
+            this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2CircleButton1.HoverState.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.Location = new System.Drawing.Point(973, 5);
+            this.guna2CircleButton1.Name = "guna2CircleButton1";
+            this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CircleButton1.ShadowDecoration.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.Size = new System.Drawing.Size(15, 15);
+            this.guna2CircleButton1.TabIndex = 0;
+            this.guna2CircleButton1.Click += new System.EventHandler(this.maximizePuwshee);
+            // 
+            // guna2CircleButton3
+            // 
+            this.guna2CircleButton3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CircleButton3.CheckedState.Parent = this.guna2CircleButton3;
+            this.guna2CircleButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2CircleButton3.CustomImages.Parent = this.guna2CircleButton3;
+            this.guna2CircleButton3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
+            this.guna2CircleButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2CircleButton3.ForeColor = System.Drawing.Color.White;
+            this.guna2CircleButton3.HoverState.Parent = this.guna2CircleButton3;
+            this.guna2CircleButton3.Location = new System.Drawing.Point(994, 5);
+            this.guna2CircleButton3.Name = "guna2CircleButton3";
+            this.guna2CircleButton3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CircleButton3.ShadowDecoration.Parent = this.guna2CircleButton3;
+            this.guna2CircleButton3.Size = new System.Drawing.Size(15, 15);
+            this.guna2CircleButton3.TabIndex = 0;
+            this.guna2CircleButton3.Click += new System.EventHandler(this.exitPuwshee);
+            // 
+            // guna2CircleButton2
+            // 
+            this.guna2CircleButton2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CircleButton2.CheckedState.Parent = this.guna2CircleButton2;
+            this.guna2CircleButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2CircleButton2.CustomImages.Parent = this.guna2CircleButton2;
+            this.guna2CircleButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
+            this.guna2CircleButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2CircleButton2.ForeColor = System.Drawing.Color.White;
+            this.guna2CircleButton2.HoverState.Parent = this.guna2CircleButton2;
+            this.guna2CircleButton2.Location = new System.Drawing.Point(952, 5);
+            this.guna2CircleButton2.Name = "guna2CircleButton2";
+            this.guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CircleButton2.ShadowDecoration.Parent = this.guna2CircleButton2;
+            this.guna2CircleButton2.Size = new System.Drawing.Size(15, 15);
+            this.guna2CircleButton2.TabIndex = 0;
+            this.guna2CircleButton2.Visible = false;
+            this.guna2CircleButton2.Click += new System.EventHandler(this.minimizePuwshee);
             // 
             // Main
             // 
@@ -425,7 +425,7 @@
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.displayPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -434,10 +434,10 @@
             this.guna2ShadowPanel1.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
-            this.navBarPanel.ResumeLayout(false);
-            this.navPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.logoPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usericonPicture)).EndInit();
+            this.navBarPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.logoPicture)).EndInit();
+            this.navPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
