@@ -44,7 +44,7 @@ namespace PBL_Puwsheee
 
         private void clearButton_Click(object sender, EventArgs e)
         {
-            foreach (Control moodButton in moodPanel.Controls.OfType<Guna2Button>())
+            foreach (var moodButton in moodPanel.Controls.OfType<Guna2Button>())
             {
                 Guna2Button mood = (Guna2Button)moodButton;
                 if (mood.Checked == true)
@@ -53,7 +53,7 @@ namespace PBL_Puwsheee
                 }
             }
 
-            foreach(Control actButton in activitiesPanel.Controls.OfType<Guna2Button>())
+            foreach(var actButton in activitiesPanel.Controls.OfType<Guna2Button>())
             { 
                 Guna2Button act = (Guna2Button)actButton;
                 if (act.Checked == true)

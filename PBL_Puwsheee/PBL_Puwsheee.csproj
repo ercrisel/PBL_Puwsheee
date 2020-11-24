@@ -96,6 +96,7 @@
     <Compile Include="Calendar\Remove_Entry.Designer.cs">
       <DependentUpon>Remove_Entry.cs</DependentUpon>
     </Compile>
+    <Compile Include="Control.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
