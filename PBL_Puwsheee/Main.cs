@@ -101,7 +101,8 @@ namespace PBL_Puwsheee
 
         private void exitPuwshee(object sender, EventArgs e)
         {
-            Control.Exit();
+            //Control.Exit();
+            Application.Exit();
         }
 
         private void clickOptions(object sender, EventArgs e)
@@ -112,14 +113,30 @@ namespace PBL_Puwsheee
             form.Show();
         }
 
-        private void guna2CircleButton1_Click(object sender, EventArgs e)
+
+        private void guna2CircleButton2_Click(object sender, EventArgs e)
         {
             Control.Minimize(this);
         }
 
-        private void guna2CircleButton2_Click(object sender, EventArgs e)
+        private void guna2CircleButton1_Click_1(object sender, EventArgs e)
+        {
+          
+            this.Width = 1248;
+            this.Height = 633;
+            guna2CircleButton5.Visible = true;
+            guna2CircleButton1.Visible = false;
+        }
+
+        private void guna2CircleButton5_Click_1(object sender, EventArgs e)
         {
             Control.DoFullscreen(this);
+            /*
+            this.Width = 1290;
+            this.Height = 770;
+            guna2CircleButton5.Visible = false;
+            guna2CircleButton1.Visible = true;
+            */
         }
     }
 }
