@@ -194,6 +194,12 @@
     <Compile Include="Test\Test_Main.Designer.cs">
       <DependentUpon>Test_Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Visualization\MainVisualization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visualization\MainVisualization.Designer.cs">
+      <DependentUpon>MainVisualization.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Analysis.resx">
       <DependentUpon>Analysis.cs</DependentUpon>
     </EmbeddedResource>
@@ -258,6 +264,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Test\Test_Main.resx">
       <DependentUpon>Test_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visualization\MainVisualization.resx">
+      <DependentUpon>MainVisualization.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -427,6 +436,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Clicked Mood.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visualization.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
