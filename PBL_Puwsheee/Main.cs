@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using PBL_Puwsheee.Authentication.Class;
 
 namespace PBL_Puwsheee
 {
     public partial class Main : Form
     {
+        ChangeSettings user = new ChangeSettings();
         private Form activeForm;
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
@@ -46,7 +48,11 @@ namespace PBL_Puwsheee
 
         private void Main_Load(object sender, EventArgs e)
         {
-            indicatorButton.Location = new Point(57, 140);
+            string username = Log_In.publicUserName;
+            usernameLabel.Text = username;
+            user.Username = username;
+            user.LoadPicture(usericonPicture);
+            indicatorButton.Location = new Point(57, 160);
             pageLabel.Location = new Point(108, 35);
         }
 

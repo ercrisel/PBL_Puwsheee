@@ -37,10 +37,10 @@
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(102, 149);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(395, 16);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(347, 15);
             this.guna2HtmlLabel2.TabIndex = 7;
             this.guna2HtmlLabel2.Text = "If you delete your account, you will permanently lose your profile and data";
             this.guna2HtmlLabel2.Click += new System.EventHandler(this.guna2HtmlLabel2_Click);
@@ -48,10 +48,10 @@
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(169, 110);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(247, 16);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(223, 15);
             this.guna2HtmlLabel1.TabIndex = 6;
             this.guna2HtmlLabel1.Text = "Are you sure you want to delete your account?";
             // 
@@ -62,7 +62,7 @@
             this.deleteButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.deleteButton.CustomImages.Parent = this.deleteButton;
             this.deleteButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
-            this.deleteButton.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.deleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.deleteButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.deleteButton.HoverState.Parent = this.deleteButton;
             this.deleteButton.Location = new System.Drawing.Point(317, 250);
@@ -71,6 +71,7 @@
             this.deleteButton.Size = new System.Drawing.Size(180, 45);
             this.deleteButton.TabIndex = 5;
             this.deleteButton.Text = "Delete Acount";
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
             // cancelButton
             // 
@@ -81,7 +82,7 @@
             this.cancelButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cancelButton.CustomImages.Parent = this.cancelButton;
             this.cancelButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.cancelButton.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.cancelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.cancelButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.cancelButton.HoverState.Parent = this.cancelButton;
             this.cancelButton.Location = new System.Drawing.Point(93, 250);
