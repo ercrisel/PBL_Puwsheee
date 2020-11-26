@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using PBL_Puwsheee.Authentication.Class;
+using System;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Runtime.InteropServices;
-using PBL_Puwsheee.Authentication.Class;
+using System.Windows.Forms;
 
 namespace PBL_Puwsheee
 {
@@ -53,7 +47,6 @@ namespace PBL_Puwsheee
             user.Username = username;
             user.LoadPicture(usericonPicture);
             indicatorButton.Location = new Point(57, 160);
-            pageLabel.Location = new Point(108, 35);
         }
 
         private void openChildForm(Form childForm)
@@ -63,53 +56,46 @@ namespace PBL_Puwsheee
             activeForm = childForm;
             childForm.TopLevel = false;
             childForm.Dock = DockStyle.Fill;
-            this.displayPanel.Controls.Add(childForm);
-            this.displayPanel.Tag = childForm;
+            this.pan.Controls.Add(childForm);
+            this.pan.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-            pageLabel.Text = childForm.Text;
         }
 
         private void clickMoodTracker(object sender, EventArgs e)
         {
             openChildForm(new MoodTracker());
-            indicatorButton.Location = new Point(57, 140);
-            pageLabel.Location = new Point(108, 35);
+            indicatorButton.Location = new Point(57, 178);
         }
 
         private void clickCalendar(object sender, EventArgs e)
         {
             openChildForm(new Calendar_Main());
-            indicatorButton.Location = new Point(57, 195);
-            pageLabel.Location = new Point(126, 35);
+            indicatorButton.Location = new Point(57, 233);
         }
         
         private void clickAnalysis(object sender, EventArgs e)
         {
             openChildForm(new Analysis());
-            indicatorButton.Location = new Point(57, 253);
-            pageLabel.Location = new Point(130, 35);
+            indicatorButton.Location = new Point(57, 291);
         }
 
         private void clickTest(object sender, EventArgs e)
         {
             openChildForm(new Test.Test_Main());
-            indicatorButton.Location = new Point(57, 318);
-            pageLabel.Location = new Point(141, 35);
+            indicatorButton.Location = new Point(57, 356);
         }
 
         private void clickPlayables(object sender, EventArgs e)
         {
             openChildForm(new Playables.Playables_Main());
-            indicatorButton.Location = new Point(57, 378);
-            pageLabel.Location = new Point(124, 35);
+            indicatorButton.Location = new Point(57, 416);
         }
 
         private void clickVisualization(object sender, EventArgs e)
         {
             openChildForm(new MainVisualization());
-            indicatorButton.Location = new Point(57, 437);
-            pageLabel.Location = new Point(76, 35);
+            indicatorButton.Location = new Point(57, 475);
         }
 
         private void exitPuwshee(object sender, EventArgs e)
