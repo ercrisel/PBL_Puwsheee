@@ -346,6 +346,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::PBL_Puwsheee.Properties.Resources.Back;
             this.pictureBox1.Location = new System.Drawing.Point(23, 22);
             this.pictureBox1.Name = "pictureBox1";

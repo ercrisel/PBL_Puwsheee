@@ -384,6 +384,7 @@
             // settingsLabel
             // 
             this.settingsLabel.AutoSize = true;
+            this.settingsLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.settingsLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.settingsLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.settingsLabel.Location = new System.Drawing.Point(34, 595);
@@ -401,6 +402,7 @@
             this.usericonPicture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.usericonPicture.ShadowDecoration.Parent = this.usericonPicture;
             this.usericonPicture.Size = new System.Drawing.Size(55, 55);
+            this.usericonPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.usericonPicture.TabIndex = 5;
             this.usericonPicture.TabStop = false;
             // 

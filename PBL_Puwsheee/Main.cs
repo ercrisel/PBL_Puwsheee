@@ -46,7 +46,7 @@ namespace PBL_Puwsheee
             usernameLabel.Text = username;
             user.Username = username;
             user.LoadPicture(usericonPicture);
-            indicatorButton.Location = new Point(57, 160);
+            indicatorButton.Location = new Point(57, 178);
         }
 
         private void openChildForm(Form childForm)
@@ -56,8 +56,8 @@ namespace PBL_Puwsheee
             activeForm = childForm;
             childForm.TopLevel = false;
             childForm.Dock = DockStyle.Fill;
-            this.pan.Controls.Add(childForm);
-            this.pan.Tag = childForm;
+            this.displayPanel.Controls.Add(childForm);
+            this.displayPanel.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
         }
