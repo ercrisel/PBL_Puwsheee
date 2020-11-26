@@ -30,13 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.usernameLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.visualizationButton = new Guna.UI2.WinForms.Guna2Button();
             this.indicatorButton = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.analysisButton = new Guna.UI2.WinForms.Guna2Button();
-            this.playablesButton = new Guna.UI2.WinForms.Guna2Button();
-            this.calendarButton = new Guna.UI2.WinForms.Guna2Button();
-            this.moodtrackerButton = new Guna.UI2.WinForms.Guna2Button();
-            this.testButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2CircleButton3 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2CircleButton2 = new Guna.UI2.WinForms.Guna2CircleButton();
@@ -47,7 +41,6 @@
             this.playablesLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.visualizationLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.settingsLabel = new System.Windows.Forms.Label();
-            this.usericonPicture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.windowsPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.navBarPanel = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -55,11 +48,20 @@
             this.bgPanel = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.displayPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.animateTimer = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.usericonPicture)).BeginInit();
+            this.usericonPicture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.testButton = new Guna.UI2.WinForms.Guna2Button();
+            this.moodtrackerButton = new Guna.UI2.WinForms.Guna2Button();
+            this.calendarButton = new Guna.UI2.WinForms.Guna2Button();
+            this.visualizationButton = new Guna.UI2.WinForms.Guna2Button();
+            this.playablesButton = new Guna.UI2.WinForms.Guna2Button();
+            this.analysisButton = new Guna.UI2.WinForms.Guna2Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.windowsPanel.SuspendLayout();
             this.navBarPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.bgPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.usericonPicture)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // usernameLabel
@@ -75,26 +77,6 @@
             this.usernameLabel.TabIndex = 9;
             this.usernameLabel.Text = "Username";
             // 
-            // visualizationButton
-            // 
-            this.visualizationButton.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.visualization;
-            this.visualizationButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.visualizationButton.CheckedState.Parent = this.visualizationButton;
-            this.visualizationButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.visualizationButton.CustomImages.Parent = this.visualizationButton;
-            this.visualizationButton.FillColor = System.Drawing.Color.Transparent;
-            this.visualizationButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.visualizationButton.ForeColor = System.Drawing.Color.White;
-            this.visualizationButton.HoverState.Parent = this.visualizationButton;
-            this.visualizationButton.Location = new System.Drawing.Point(26, 426);
-            this.visualizationButton.Margin = new System.Windows.Forms.Padding(4);
-            this.visualizationButton.Name = "visualizationButton";
-            this.visualizationButton.ShadowDecoration.Parent = this.visualizationButton;
-            this.visualizationButton.Size = new System.Drawing.Size(22, 22);
-            this.visualizationButton.TabIndex = 9;
-            this.visualizationButton.Text = " ";
-            this.visualizationButton.Click += new System.EventHandler(this.clickVisualization);
-            // 
             // indicatorButton
             // 
             this.indicatorButton.BackColor = System.Drawing.Color.Transparent;
@@ -105,113 +87,13 @@
             this.indicatorButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.indicatorButton.ForeColor = System.Drawing.Color.White;
             this.indicatorButton.HoverState.Parent = this.indicatorButton;
-            this.indicatorButton.Location = new System.Drawing.Point(35, 159);
+            this.indicatorButton.Location = new System.Drawing.Point(36, 131);
             this.indicatorButton.Name = "indicatorButton";
             this.indicatorButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.indicatorButton.ShadowDecoration.Parent = this.indicatorButton;
             this.indicatorButton.Size = new System.Drawing.Size(8, 8);
             this.indicatorButton.TabIndex = 0;
             this.indicatorButton.UseTransparentBackground = true;
-            // 
-            // analysisButton
-            // 
-            this.analysisButton.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Analysis;
-            this.analysisButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.analysisButton.CheckedState.Parent = this.analysisButton;
-            this.analysisButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.analysisButton.CustomImages.Parent = this.analysisButton;
-            this.analysisButton.FillColor = System.Drawing.Color.Transparent;
-            this.analysisButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.analysisButton.ForeColor = System.Drawing.Color.White;
-            this.analysisButton.HoverState.Parent = this.analysisButton;
-            this.analysisButton.Location = new System.Drawing.Point(26, 242);
-            this.analysisButton.Margin = new System.Windows.Forms.Padding(4);
-            this.analysisButton.Name = "analysisButton";
-            this.analysisButton.ShadowDecoration.Parent = this.analysisButton;
-            this.analysisButton.Size = new System.Drawing.Size(22, 22);
-            this.analysisButton.TabIndex = 5;
-            this.analysisButton.Text = " ";
-            this.analysisButton.Click += new System.EventHandler(this.clickAnalysis);
-            // 
-            // playablesButton
-            // 
-            this.playablesButton.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Playables;
-            this.playablesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.playablesButton.CheckedState.Parent = this.playablesButton;
-            this.playablesButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.playablesButton.CustomImages.Parent = this.playablesButton;
-            this.playablesButton.FillColor = System.Drawing.Color.Transparent;
-            this.playablesButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.playablesButton.ForeColor = System.Drawing.Color.White;
-            this.playablesButton.HoverState.Parent = this.playablesButton;
-            this.playablesButton.Location = new System.Drawing.Point(26, 367);
-            this.playablesButton.Margin = new System.Windows.Forms.Padding(4);
-            this.playablesButton.Name = "playablesButton";
-            this.playablesButton.ShadowDecoration.Parent = this.playablesButton;
-            this.playablesButton.Size = new System.Drawing.Size(22, 22);
-            this.playablesButton.TabIndex = 7;
-            this.playablesButton.Text = " ";
-            this.playablesButton.Click += new System.EventHandler(this.clickPlayables);
-            // 
-            // calendarButton
-            // 
-            this.calendarButton.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Calendar;
-            this.calendarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.calendarButton.CheckedState.Parent = this.calendarButton;
-            this.calendarButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.calendarButton.CustomImages.Parent = this.calendarButton;
-            this.calendarButton.FillColor = System.Drawing.Color.Transparent;
-            this.calendarButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.calendarButton.ForeColor = System.Drawing.Color.White;
-            this.calendarButton.HoverState.Parent = this.calendarButton;
-            this.calendarButton.Location = new System.Drawing.Point(26, 184);
-            this.calendarButton.Margin = new System.Windows.Forms.Padding(4);
-            this.calendarButton.Name = "calendarButton";
-            this.calendarButton.ShadowDecoration.Parent = this.calendarButton;
-            this.calendarButton.Size = new System.Drawing.Size(22, 22);
-            this.calendarButton.TabIndex = 4;
-            this.calendarButton.Text = " ";
-            this.calendarButton.Click += new System.EventHandler(this.clickCalendar);
-            // 
-            // moodtrackerButton
-            // 
-            this.moodtrackerButton.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Mood_Tracker;
-            this.moodtrackerButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.moodtrackerButton.CheckedState.Parent = this.moodtrackerButton;
-            this.moodtrackerButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.moodtrackerButton.CustomImages.Parent = this.moodtrackerButton;
-            this.moodtrackerButton.FillColor = System.Drawing.Color.Transparent;
-            this.moodtrackerButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.moodtrackerButton.ForeColor = System.Drawing.Color.White;
-            this.moodtrackerButton.HoverState.Parent = this.moodtrackerButton;
-            this.moodtrackerButton.Location = new System.Drawing.Point(26, 129);
-            this.moodtrackerButton.Margin = new System.Windows.Forms.Padding(4);
-            this.moodtrackerButton.Name = "moodtrackerButton";
-            this.moodtrackerButton.ShadowDecoration.Parent = this.moodtrackerButton;
-            this.moodtrackerButton.Size = new System.Drawing.Size(22, 22);
-            this.moodtrackerButton.TabIndex = 3;
-            this.moodtrackerButton.Text = " ";
-            this.moodtrackerButton.Click += new System.EventHandler(this.clickMoodTracker);
-            // 
-            // testButton
-            // 
-            this.testButton.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Test;
-            this.testButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.testButton.CheckedState.Parent = this.testButton;
-            this.testButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.testButton.CustomImages.Parent = this.testButton;
-            this.testButton.FillColor = System.Drawing.Color.Transparent;
-            this.testButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.testButton.ForeColor = System.Drawing.Color.White;
-            this.testButton.HoverState.Parent = this.testButton;
-            this.testButton.Location = new System.Drawing.Point(26, 307);
-            this.testButton.Margin = new System.Windows.Forms.Padding(4);
-            this.testButton.Name = "testButton";
-            this.testButton.ShadowDecoration.Parent = this.testButton;
-            this.testButton.Size = new System.Drawing.Size(22, 22);
-            this.testButton.TabIndex = 6;
-            this.testButton.Text = " ";
-            this.testButton.Click += new System.EventHandler(this.clickTest);
             // 
             // guna2CircleButton1
             // 
@@ -359,18 +241,6 @@
             this.settingsLabel.Text = "Settings";
             this.settingsLabel.Click += new System.EventHandler(this.clickOptions);
             // 
-            // usericonPicture
-            // 
-            this.usericonPicture.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.usericonPicture.Location = new System.Drawing.Point(13, 42);
-            this.usericonPicture.Name = "usericonPicture";
-            this.usericonPicture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.usericonPicture.ShadowDecoration.Parent = this.usericonPicture;
-            this.usericonPicture.Size = new System.Drawing.Size(55, 55);
-            this.usericonPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.usericonPicture.TabIndex = 5;
-            this.usericonPicture.TabStop = false;
-            // 
             // windowsPanel
             // 
             this.windowsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
@@ -389,21 +259,14 @@
             this.navBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.navBarPanel.Controls.Add(this.panel2);
             this.navBarPanel.Controls.Add(this.settingsLabel);
-            this.navBarPanel.Controls.Add(this.usericonPicture);
-            this.navBarPanel.Controls.Add(this.testButton);
-            this.navBarPanel.Controls.Add(this.moodtrackerButton);
-            this.navBarPanel.Controls.Add(this.calendarButton);
-            this.navBarPanel.Controls.Add(this.visualizationButton);
-            this.navBarPanel.Controls.Add(this.indicatorButton);
-            this.navBarPanel.Controls.Add(this.playablesButton);
-            this.navBarPanel.Controls.Add(this.analysisButton);
             this.navBarPanel.Controls.Add(this.panel1);
+            this.navBarPanel.Controls.Add(this.panel3);
             this.navBarPanel.Location = new System.Drawing.Point(-1, -2);
             this.navBarPanel.Name = "navBarPanel";
             this.navBarPanel.Size = new System.Drawing.Size(84, 655);
             this.navBarPanel.TabIndex = 12;
-            this.navBarPanel.Click += new System.EventHandler(this.navBarPanel_MouseHover);
-            this.navBarPanel.MouseHover += new System.EventHandler(this.navBarPanel_MouseHover);
+            this.navBarPanel.MouseEnter += new System.EventHandler(this.navBarPanelHover);
+            this.navBarPanel.MouseLeave += new System.EventHandler(this.navBarPanelHover);
             // 
             // panel2
             // 
@@ -440,16 +303,166 @@
             // 
             // displayPanel
             // 
-            this.displayPanel.Location = new System.Drawing.Point(12, 15);
+            this.displayPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.displayPanel.BorderRadius = 20;
+            this.displayPanel.Location = new System.Drawing.Point(15, 15);
             this.displayPanel.Name = "displayPanel";
             this.displayPanel.ShadowDecoration.Parent = this.displayPanel;
-            this.displayPanel.Size = new System.Drawing.Size(892, 533);
+            this.displayPanel.Size = new System.Drawing.Size(885, 533);
             this.displayPanel.TabIndex = 0;
             // 
             // animateTimer
             // 
-            this.animateTimer.Interval = 30;
+            this.animateTimer.Interval = 1;
             this.animateTimer.Tick += new System.EventHandler(this.animateTimer_Tick);
+            // 
+            // usericonPicture
+            // 
+            this.usericonPicture.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.usericonPicture.Location = new System.Drawing.Point(14, 14);
+            this.usericonPicture.Name = "usericonPicture";
+            this.usericonPicture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.usericonPicture.ShadowDecoration.Parent = this.usericonPicture;
+            this.usericonPicture.Size = new System.Drawing.Size(55, 55);
+            this.usericonPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.usericonPicture.TabIndex = 5;
+            this.usericonPicture.TabStop = false;
+            // 
+            // testButton
+            // 
+            this.testButton.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Test;
+            this.testButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.testButton.CheckedState.Parent = this.testButton;
+            this.testButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.testButton.CustomImages.Parent = this.testButton;
+            this.testButton.FillColor = System.Drawing.Color.Transparent;
+            this.testButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.testButton.ForeColor = System.Drawing.Color.White;
+            this.testButton.HoverState.Parent = this.testButton;
+            this.testButton.Location = new System.Drawing.Point(27, 279);
+            this.testButton.Margin = new System.Windows.Forms.Padding(4);
+            this.testButton.Name = "testButton";
+            this.testButton.ShadowDecoration.Parent = this.testButton;
+            this.testButton.Size = new System.Drawing.Size(22, 22);
+            this.testButton.TabIndex = 6;
+            this.testButton.Text = " ";
+            this.testButton.Click += new System.EventHandler(this.clickTest);
+            // 
+            // moodtrackerButton
+            // 
+            this.moodtrackerButton.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Mood_Tracker;
+            this.moodtrackerButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.moodtrackerButton.CheckedState.Parent = this.moodtrackerButton;
+            this.moodtrackerButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.moodtrackerButton.CustomImages.Parent = this.moodtrackerButton;
+            this.moodtrackerButton.FillColor = System.Drawing.Color.Transparent;
+            this.moodtrackerButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.moodtrackerButton.ForeColor = System.Drawing.Color.White;
+            this.moodtrackerButton.HoverState.Parent = this.moodtrackerButton;
+            this.moodtrackerButton.Location = new System.Drawing.Point(27, 101);
+            this.moodtrackerButton.Margin = new System.Windows.Forms.Padding(4);
+            this.moodtrackerButton.Name = "moodtrackerButton";
+            this.moodtrackerButton.ShadowDecoration.Parent = this.moodtrackerButton;
+            this.moodtrackerButton.Size = new System.Drawing.Size(22, 22);
+            this.moodtrackerButton.TabIndex = 3;
+            this.moodtrackerButton.Text = " ";
+            this.moodtrackerButton.Click += new System.EventHandler(this.clickMoodTracker);
+            // 
+            // calendarButton
+            // 
+            this.calendarButton.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Calendar;
+            this.calendarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.calendarButton.CheckedState.Parent = this.calendarButton;
+            this.calendarButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.calendarButton.CustomImages.Parent = this.calendarButton;
+            this.calendarButton.FillColor = System.Drawing.Color.Transparent;
+            this.calendarButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.calendarButton.ForeColor = System.Drawing.Color.White;
+            this.calendarButton.HoverState.Parent = this.calendarButton;
+            this.calendarButton.Location = new System.Drawing.Point(27, 156);
+            this.calendarButton.Margin = new System.Windows.Forms.Padding(4);
+            this.calendarButton.Name = "calendarButton";
+            this.calendarButton.ShadowDecoration.Parent = this.calendarButton;
+            this.calendarButton.Size = new System.Drawing.Size(22, 22);
+            this.calendarButton.TabIndex = 4;
+            this.calendarButton.Text = " ";
+            this.calendarButton.Click += new System.EventHandler(this.clickCalendar);
+            // 
+            // visualizationButton
+            // 
+            this.visualizationButton.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.visualization;
+            this.visualizationButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.visualizationButton.CheckedState.Parent = this.visualizationButton;
+            this.visualizationButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.visualizationButton.CustomImages.Parent = this.visualizationButton;
+            this.visualizationButton.FillColor = System.Drawing.Color.Transparent;
+            this.visualizationButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.visualizationButton.ForeColor = System.Drawing.Color.White;
+            this.visualizationButton.HoverState.Parent = this.visualizationButton;
+            this.visualizationButton.Location = new System.Drawing.Point(27, 398);
+            this.visualizationButton.Margin = new System.Windows.Forms.Padding(4);
+            this.visualizationButton.Name = "visualizationButton";
+            this.visualizationButton.ShadowDecoration.Parent = this.visualizationButton;
+            this.visualizationButton.Size = new System.Drawing.Size(22, 22);
+            this.visualizationButton.TabIndex = 9;
+            this.visualizationButton.Text = " ";
+            this.visualizationButton.Click += new System.EventHandler(this.clickVisualization);
+            // 
+            // playablesButton
+            // 
+            this.playablesButton.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Playables;
+            this.playablesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.playablesButton.CheckedState.Parent = this.playablesButton;
+            this.playablesButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.playablesButton.CustomImages.Parent = this.playablesButton;
+            this.playablesButton.FillColor = System.Drawing.Color.Transparent;
+            this.playablesButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.playablesButton.ForeColor = System.Drawing.Color.White;
+            this.playablesButton.HoverState.Parent = this.playablesButton;
+            this.playablesButton.Location = new System.Drawing.Point(27, 339);
+            this.playablesButton.Margin = new System.Windows.Forms.Padding(4);
+            this.playablesButton.Name = "playablesButton";
+            this.playablesButton.ShadowDecoration.Parent = this.playablesButton;
+            this.playablesButton.Size = new System.Drawing.Size(22, 22);
+            this.playablesButton.TabIndex = 7;
+            this.playablesButton.Text = " ";
+            this.playablesButton.Click += new System.EventHandler(this.clickPlayables);
+            // 
+            // analysisButton
+            // 
+            this.analysisButton.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Analysis;
+            this.analysisButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.analysisButton.CheckedState.Parent = this.analysisButton;
+            this.analysisButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.analysisButton.CustomImages.Parent = this.analysisButton;
+            this.analysisButton.FillColor = System.Drawing.Color.Transparent;
+            this.analysisButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.analysisButton.ForeColor = System.Drawing.Color.White;
+            this.analysisButton.HoverState.Parent = this.analysisButton;
+            this.analysisButton.Location = new System.Drawing.Point(27, 214);
+            this.analysisButton.Margin = new System.Windows.Forms.Padding(4);
+            this.analysisButton.Name = "analysisButton";
+            this.analysisButton.ShadowDecoration.Parent = this.analysisButton;
+            this.analysisButton.Size = new System.Drawing.Size(22, 22);
+            this.analysisButton.TabIndex = 5;
+            this.analysisButton.Text = " ";
+            this.analysisButton.Click += new System.EventHandler(this.clickAnalysis);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.playablesButton);
+            this.panel3.Controls.Add(this.analysisButton);
+            this.panel3.Controls.Add(this.usericonPicture);
+            this.panel3.Controls.Add(this.indicatorButton);
+            this.panel3.Controls.Add(this.testButton);
+            this.panel3.Controls.Add(this.visualizationButton);
+            this.panel3.Controls.Add(this.moodtrackerButton);
+            this.panel3.Controls.Add(this.calendarButton);
+            this.panel3.Location = new System.Drawing.Point(0, 28);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(70, 439);
+            this.panel3.TabIndex = 0;
             // 
             // Main
             // 
@@ -466,13 +479,14 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Main_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.usericonPicture)).EndInit();
             this.windowsPanel.ResumeLayout(false);
             this.navBarPanel.ResumeLayout(false);
             this.navBarPanel.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.bgPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.usericonPicture)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -504,6 +518,7 @@
         private Guna.UI2.WinForms.Guna2Panel displayPanel;
         private System.Windows.Forms.Timer animateTimer;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel3;
     }
 }
 

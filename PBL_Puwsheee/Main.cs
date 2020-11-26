@@ -48,7 +48,7 @@ namespace PBL_Puwsheee
            // usernameLabel.Text = username;
           //  user.Username = username;
             //user.LoadPicture(usericonPicture);
-            indicatorButton.Location = new Point(33, 153);
+            indicatorButton.Location = new Point(33, 131);
         }
 
         private void openChildForm(Form childForm)
@@ -67,37 +67,37 @@ namespace PBL_Puwsheee
         private void clickMoodTracker(object sender, EventArgs e)
         {
             openChildForm(new MoodTracker());
-            indicatorButton.Location = new Point(33, 153);
+            indicatorButton.Location = new Point(33, 131);
         }
 
         private void clickCalendar(object sender, EventArgs e)
         {
             openChildForm(new Calendar_Main());
-            indicatorButton.Location = new Point(33, 208);
+            indicatorButton.Location = new Point(33, 186);
         }
         
         private void clickAnalysis(object sender, EventArgs e)
         {
             openChildForm(new Analysis());
-            indicatorButton.Location = new Point(33, 266);
+            indicatorButton.Location = new Point(33, 244);
         }
 
         private void clickTest(object sender, EventArgs e)
         {
             openChildForm(new Test.Test_Main());
-            indicatorButton.Location = new Point(33, 331);
+            indicatorButton.Location = new Point(33, 309);
         }
 
         private void clickPlayables(object sender, EventArgs e)
         {
             openChildForm(new Playables.Playables_Main());
-            indicatorButton.Location = new Point(33, 391);
+            indicatorButton.Location = new Point(33, 369);
         }
 
         private void clickVisualization(object sender, EventArgs e)
         {
             openChildForm(new MainVisualization());
-            indicatorButton.Location = new Point(33, 450);
+            indicatorButton.Location = new Point(33, 428);
         }
 
         private void exitPuwshee(object sender, EventArgs e)
@@ -123,7 +123,7 @@ namespace PBL_Puwsheee
             Control.DoFullscreen(this);
         }
 
-        private void navBarPanel_MouseHover(object sender, EventArgs e)
+        private void navBarPanelHover(object sender, EventArgs e)
         {
             animateTimer.Start();
         }
@@ -132,43 +132,41 @@ namespace PBL_Puwsheee
         {
             if(hided)
             {
-                navBarPanel.Width += 20;
+                navBarPanel.Width += 25;
 
                 if(navBarPanel.Width >= 165)
                 {
                     animateTimer.Stop();
-                    hided = false;
-                    this.Refresh();
+                    hided = false; 
                 }
 
                 settingsLabel.Left += 10;
                 if (settingsLabel.Left >= 63) settingsLabel.Left = 63;
 
-                //bgPanel.Width -= 50;
-                //if(bgPanel.Width <= 806) bgPanel.Width = 806;
+                bgPanel.Width -= 30;
+                if(bgPanel.Width <= 806) bgPanel.Width = 806;
 
-                //bgPanel.Left += 70;
-                //if (bgPanel.Left <= 100) bgPanel.Left = 100;
+                bgPanel.Left += 30;
+                if (bgPanel.Left <= 100) bgPanel.Left = 100;
             }
             else
             {
-                navBarPanel.Width -= 20;
+                navBarPanel.Width -= 25;
 
                 if (navBarPanel.Width <= 84)
                 {
                     animateTimer.Stop();
                     hided = true;
-                    this.Refresh();
                 }
 
                 settingsLabel.Left -= 10;
                 if (settingsLabel.Left <= 17) settingsLabel.Left = 15;
 
-                //bgPanel.Width += 70;
-                //if (bgPanel.Width >= 918) bgPanel.Width = 918;
+                bgPanel.Width += 30;
+                if (bgPanel.Width >= 918) bgPanel.Width = 918;
 
-                //bgPanel.Left -= 70;
-                //if (bgPanel.Left == 87) bgPanel.Left = 87;
+                bgPanel.Left -= 30;
+                if (bgPanel.Left == 87) bgPanel.Left = 87; 
             }
         }
     }

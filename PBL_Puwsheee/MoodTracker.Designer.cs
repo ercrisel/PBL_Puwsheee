@@ -282,7 +282,7 @@
             // 
             // disgustedIcon
             // 
-            this.disgustedIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Disgusted1;
+            this.disgustedIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Disgusted;
             this.disgustedIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.disgustedIcon.BorderRadius = 15;
             this.disgustedIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
