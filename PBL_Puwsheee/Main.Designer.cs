@@ -305,6 +305,7 @@
             // 
             this.displayPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.displayPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.displayPanel.BorderRadius = 20;
             this.displayPanel.Location = new System.Drawing.Point(15, 15);
             this.displayPanel.Name = "displayPanel";
@@ -314,7 +315,7 @@
             // 
             // animateTimer
             // 
-            this.animateTimer.Interval = 1;
+            this.animateTimer.Interval = 50;
             this.animateTimer.Tick += new System.EventHandler(this.animateTimer_Tick);
             // 
             // usericonPicture
