@@ -32,20 +32,28 @@ namespace PBL_Puwsheee
             }
         }
 
+        int panelWidth;
+        bool hided;
+        bool center;
+
         public Main()
         {
             InitializeComponent();
             openChildForm(new MoodTracker());
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+
+            panelWidth = navBarPanel.Width;
+            hided = false;
+            center = false;
         }
 
         private void Main_Load(object sender, EventArgs e)
         {
-            string username = Log_In.publicUserName;
-            usernameLabel.Text = username;
-            user.Username = username;
-            user.LoadPicture(usericonPicture);
+           // string username = Log_In.publicUserName;
+           // usernameLabel.Text = username;
+          //  user.Username = username;
+            //user.LoadPicture(usericonPicture);
             indicatorButton.Location = new Point(33, 153);
         }
 
@@ -119,6 +127,70 @@ namespace PBL_Puwsheee
         private void maximizePuwshee(object sender, EventArgs e)
         {
             Control.DoFullscreen(this);
+        }
+
+        private void navBarPanel_MouseHover(object sender, EventArgs e)
+        {
+            navBarTimer.Start();
+            settingsTimer.Start();
+        }
+
+        private void navBarTimer_Tick(object sender, EventArgs e)
+        {
+            if(hided)
+            {
+                navBarPanel.Width += 20;
+
+                if(navBarPanel.Width >= panelWidth)
+                {
+                    navBarTimer.Stop();
+                    hided = false;
+                    this.Refresh();
+                }
+
+            }
+            else
+            {
+                navBarPanel.Width -= 20;
+
+                if (navBarPanel.Width <= 86)
+                {
+                    navBarTimer.Stop();
+                    hided = true;
+                    this.Refresh();
+                    //labelPanel.Visible = false;
+                    settingsLabel.Location = new Point(17, 581);
+                }
+            }
+        }
+
+        private void settingsTimer_Tick(object sender, EventArgs e)
+        {
+            if(center)
+            {
+                // 63 
+                // 17
+
+                settingsLabel.Left += 8;
+
+                if (settingsLabel.Left >= 63)
+                {
+                    settingsTimer.Stop();
+                    center = false;
+                    this.Refresh();
+                }
+            }
+            else
+            {
+                settingsLabel.Left -= 6;
+
+                if (settingsLabel.Left <= 17)
+                {
+                    settingsTimer.Stop();
+                    center = true;
+                    this.Refresh();
+                }
+            }
         }
     }
 }
