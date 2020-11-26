@@ -711,7 +711,7 @@
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(936, 514);
+            this.guna2Panel1.Size = new System.Drawing.Size(932, 564);
             this.guna2Panel1.TabIndex = 33;
             // 
             // contentLabel1
@@ -785,7 +785,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.ClientSize = new System.Drawing.Size(1026, 622);
+            this.ClientSize = new System.Drawing.Size(932, 564);
             this.Controls.Add(this.activitiesLabel);
             this.Controls.Add(this.moodLabel);
             this.Controls.Add(this.guna2Panel1);

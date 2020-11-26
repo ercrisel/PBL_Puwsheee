@@ -237,6 +237,7 @@
             this.changepasswordButton.CheckedState.Parent = this.changepasswordButton;
             this.changepasswordButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.changepasswordButton.CustomImages.Parent = this.changepasswordButton;
+            this.changepasswordButton.Enabled = false;
             this.changepasswordButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.changepasswordButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.changepasswordButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));

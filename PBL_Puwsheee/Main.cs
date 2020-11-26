@@ -46,7 +46,7 @@ namespace PBL_Puwsheee
             usernameLabel.Text = username;
             user.Username = username;
             user.LoadPicture(usericonPicture);
-            indicatorButton.Location = new Point(57, 160);
+            indicatorButton.Location = new Point(33, 153);
         }
 
         private void openChildForm(Form childForm)
@@ -55,9 +55,9 @@ namespace PBL_Puwsheee
                 activeForm.Close();
             activeForm = childForm;
             childForm.TopLevel = false;
-            childForm.Dock = DockStyle.Fill;
-            this.pan.Controls.Add(childForm);
-            this.pan.Tag = childForm;
+            childForm.TopMost = true;
+            this.displayPanel.Controls.Add(childForm);
+            this.displayPanel.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
         }
@@ -65,37 +65,37 @@ namespace PBL_Puwsheee
         private void clickMoodTracker(object sender, EventArgs e)
         {
             openChildForm(new MoodTracker());
-            indicatorButton.Location = new Point(57, 178);
+            indicatorButton.Location = new Point(33, 153);
         }
 
         private void clickCalendar(object sender, EventArgs e)
         {
             openChildForm(new Calendar_Main());
-            indicatorButton.Location = new Point(57, 233);
+            indicatorButton.Location = new Point(33, 208);
         }
         
         private void clickAnalysis(object sender, EventArgs e)
         {
             openChildForm(new Analysis());
-            indicatorButton.Location = new Point(57, 291);
+            indicatorButton.Location = new Point(33, 266);
         }
 
         private void clickTest(object sender, EventArgs e)
         {
             openChildForm(new Test.Test_Main());
-            indicatorButton.Location = new Point(57, 356);
+            indicatorButton.Location = new Point(33, 331);
         }
 
         private void clickPlayables(object sender, EventArgs e)
         {
             openChildForm(new Playables.Playables_Main());
-            indicatorButton.Location = new Point(57, 416);
+            indicatorButton.Location = new Point(33, 391);
         }
 
         private void clickVisualization(object sender, EventArgs e)
         {
             openChildForm(new MainVisualization());
-            indicatorButton.Location = new Point(57, 475);
+            indicatorButton.Location = new Point(33, 450);
         }
 
         private void exitPuwshee(object sender, EventArgs e)
