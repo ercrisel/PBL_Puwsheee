@@ -9,6 +9,7 @@ namespace PBL_Puwsheee
     public partial class Main : Form
     {
         ChangeSettings user = new ChangeSettings();
+
         private Form activeForm;
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
@@ -32,6 +33,12 @@ namespace PBL_Puwsheee
             }
         }
 
+        public static void enableDoubleBuff(System.Windows.Forms.Control cont)
+        {
+            System.Reflection.PropertyInfo DemoProp = typeof(System.Windows.Forms.Control).GetProperty("DoubleBuffered", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+            DemoProp.SetValue(cont, true, null);
+        }
+
         bool hided = true;
 
         public Main()
@@ -41,6 +48,8 @@ namespace PBL_Puwsheee
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
 
+            this.DoubleBuffered = true;
+            enableDoubleBuff(displayPanel);
         }
 
         private void Main_Load(object sender, EventArgs e)
@@ -144,10 +153,10 @@ namespace PBL_Puwsheee
                 settingsLabel.Left += 10;
                 if (settingsLabel.Left >= 63) settingsLabel.Left = 63;
 
-                bgPanel.Width -= 30;
+                bgPanel.Width -= 22;
                 if(bgPanel.Width <= 806) bgPanel.Width = 806;
 
-                bgPanel.Left += 30;
+                bgPanel.Left += 22;
                 if (bgPanel.Left <= 100) bgPanel.Left = 100;
             }
             else
@@ -163,10 +172,10 @@ namespace PBL_Puwsheee
                 settingsLabel.Left -= 10;
                 if (settingsLabel.Left <= 17) settingsLabel.Left = 15;
 
-                bgPanel.Width += 30;
+                bgPanel.Width += 23;
                 if (bgPanel.Width >= 918) bgPanel.Width = 918;
 
-                bgPanel.Left -= 30;
+                bgPanel.Left -= 23;
                 if (bgPanel.Left == 87) bgPanel.Left = 87; 
             }
         }

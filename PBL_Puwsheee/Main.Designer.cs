@@ -291,10 +291,10 @@
             // 
             // bgPanel
             // 
-            this.bgPanel.BackColor = System.Drawing.Color.Transparent;
+            this.bgPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.bgPanel.Controls.Add(this.displayPanel);
             this.bgPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.bgPanel.Location = new System.Drawing.Point(87, 37);
+            this.bgPanel.Location = new System.Drawing.Point(84, 31);
             this.bgPanel.Name = "bgPanel";
             this.bgPanel.Radius = 10;
             this.bgPanel.ShadowColor = System.Drawing.Color.Black;
@@ -306,8 +306,9 @@
             this.displayPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.displayPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.displayPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.displayPanel.BorderRadius = 20;
-            this.displayPanel.Location = new System.Drawing.Point(15, 15);
+            this.displayPanel.Location = new System.Drawing.Point(17, 16);
             this.displayPanel.Name = "displayPanel";
             this.displayPanel.ShadowDecoration.Parent = this.displayPanel;
             this.displayPanel.Size = new System.Drawing.Size(885, 533);
@@ -315,7 +316,7 @@
             // 
             // animateTimer
             // 
-            this.animateTimer.Interval = 50;
+            this.animateTimer.Interval = 10;
             this.animateTimer.Tick += new System.EventHandler(this.animateTimer_Tick);
             // 
             // usericonPicture
