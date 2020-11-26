@@ -97,7 +97,7 @@
             this.moodPanel.Controls.Add(this.mehIcon);
             this.moodPanel.Controls.Add(this.miserableIcon);
             this.moodPanel.Controls.Add(this.disgustedIcon);
-            this.moodPanel.Location = new System.Drawing.Point(95, 66);
+            this.moodPanel.Location = new System.Drawing.Point(81, 79);
             this.moodPanel.Margin = new System.Windows.Forms.Padding(4);
             this.moodPanel.Name = "moodPanel";
             this.moodPanel.ShadowDecoration.Parent = this.moodPanel;
@@ -316,7 +316,7 @@
             this.clearButton.Font = new System.Drawing.Font("MS Reference Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clearButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.clearButton.HoverState.Parent = this.clearButton;
-            this.clearButton.Location = new System.Drawing.Point(374, 468);
+            this.clearButton.Location = new System.Drawing.Point(360, 475);
             this.clearButton.Margin = new System.Windows.Forms.Padding(4);
             this.clearButton.Name = "clearButton";
             this.clearButton.ShadowDecoration.Parent = this.clearButton;
@@ -343,7 +343,7 @@
             this.notesTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.notesTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.notesTextbox.HoverState.Parent = this.notesTextbox;
-            this.notesTextbox.Location = new System.Drawing.Point(504, 96);
+            this.notesTextbox.Location = new System.Drawing.Point(467, 100);
             this.notesTextbox.Margin = new System.Windows.Forms.Padding(4);
             this.notesTextbox.MaxLength = 3000;
             this.notesTextbox.Multiline = true;
@@ -370,7 +370,7 @@
             this.activitiesPanel.Controls.Add(this.gameIcon);
             this.activitiesPanel.Controls.Add(this.cookIcon);
             this.activitiesPanel.Controls.Add(this.exerciseIcon);
-            this.activitiesPanel.Location = new System.Drawing.Point(49, 268);
+            this.activitiesPanel.Location = new System.Drawing.Point(35, 281);
             this.activitiesPanel.Margin = new System.Windows.Forms.Padding(4);
             this.activitiesPanel.Name = "activitiesPanel";
             this.activitiesPanel.ShadowDecoration.Parent = this.activitiesPanel;
@@ -686,7 +686,7 @@
             this.submitButton.Font = new System.Drawing.Font("MS Reference Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.submitButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.submitButton.HoverState.Parent = this.submitButton;
-            this.submitButton.Location = new System.Drawing.Point(480, 468);
+            this.submitButton.Location = new System.Drawing.Point(466, 475);
             this.submitButton.Margin = new System.Windows.Forms.Padding(4);
             this.submitButton.Name = "submitButton";
             this.submitButton.ShadowDecoration.Parent = this.submitButton;
@@ -715,14 +715,14 @@
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(933, 564);
+            this.guna2Panel1.Size = new System.Drawing.Size(886, 536);
             this.guna2Panel1.TabIndex = 33;
             // 
             // contentLabel1
             // 
             this.contentLabel1.BackColor = System.Drawing.Color.Transparent;
             this.contentLabel1.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contentLabel1.Location = new System.Drawing.Point(195, 43);
+            this.contentLabel1.Location = new System.Drawing.Point(181, 56);
             this.contentLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.contentLabel1.Name = "contentLabel1";
             this.contentLabel1.Size = new System.Drawing.Size(76, 16);
@@ -733,7 +733,7 @@
             // 
             this.contentLabel3.BackColor = System.Drawing.Color.Transparent;
             this.contentLabel3.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contentLabel3.Location = new System.Drawing.Point(624, 73);
+            this.contentLabel3.Location = new System.Drawing.Point(587, 77);
             this.contentLabel3.Margin = new System.Windows.Forms.Padding(4);
             this.contentLabel3.Name = "contentLabel3";
             this.contentLabel3.Size = new System.Drawing.Size(147, 16);
@@ -744,7 +744,7 @@
             // 
             this.labelMood.BackColor = System.Drawing.Color.Transparent;
             this.labelMood.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMood.Location = new System.Drawing.Point(119, 207);
+            this.labelMood.Location = new System.Drawing.Point(105, 220);
             this.labelMood.Margin = new System.Windows.Forms.Padding(4);
             this.labelMood.Name = "labelMood";
             this.labelMood.Size = new System.Drawing.Size(38, 16);
@@ -755,7 +755,7 @@
             // 
             this.dateLabel.BackColor = System.Drawing.Color.Transparent;
             this.dateLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateLabel.Location = new System.Drawing.Point(13, 13);
+            this.dateLabel.Location = new System.Drawing.Point(13, 9);
             this.dateLabel.Margin = new System.Windows.Forms.Padding(4);
             this.dateLabel.Name = "dateLabel";
             this.dateLabel.Size = new System.Drawing.Size(75, 16);
@@ -766,7 +766,7 @@
             // 
             this.contentLabel2.BackColor = System.Drawing.Color.Transparent;
             this.contentLabel2.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contentLabel2.Location = new System.Drawing.Point(158, 245);
+            this.contentLabel2.Location = new System.Drawing.Point(144, 258);
             this.contentLabel2.Margin = new System.Windows.Forms.Padding(4);
             this.contentLabel2.Name = "contentLabel2";
             this.contentLabel2.Size = new System.Drawing.Size(147, 16);
@@ -777,7 +777,7 @@
             // 
             this.labelActivities.BackColor = System.Drawing.Color.Transparent;
             this.labelActivities.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelActivities.Location = new System.Drawing.Point(59, 422);
+            this.labelActivities.Location = new System.Drawing.Point(45, 435);
             this.labelActivities.Margin = new System.Windows.Forms.Padding(4);
             this.labelActivities.Name = "labelActivities";
             this.labelActivities.Size = new System.Drawing.Size(52, 16);

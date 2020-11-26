@@ -37,7 +37,7 @@ namespace PBL_Puwsheee.Playables
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Image = global::PBL_Puwsheee.Properties.Resources.plan_a_2;
-            this.pictureBox1.Location = new System.Drawing.Point(64, -116);
+            this.pictureBox1.Location = new System.Drawing.Point(64, -111);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(680, 661);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

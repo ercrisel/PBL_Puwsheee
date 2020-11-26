@@ -58,7 +58,7 @@ namespace PBL_Puwsheee
            // usernameLabel.Text = username;
           //  user.Username = username;
             //user.LoadPicture(usericonPicture);
-            indicatorButton.Location = new Point(33, 131);
+            indicatorButton.Location = new Point(47, 131);
         }
 
         private void openChildForm(Form childForm)
@@ -77,37 +77,37 @@ namespace PBL_Puwsheee
         private void clickMoodTracker(object sender, EventArgs e)
         {
             openChildForm(new MoodTracker());
-            indicatorButton.Location = new Point(33, 131);
+            indicatorButton.Location = new Point(47, 131);
         }
 
         private void clickCalendar(object sender, EventArgs e)
         {
             openChildForm(new Calendar_Main());
-            indicatorButton.Location = new Point(33, 186);
+            indicatorButton.Location = new Point(47, 186);
         }
         
         private void clickAnalysis(object sender, EventArgs e)
         {
             openChildForm(new Analysis());
-            indicatorButton.Location = new Point(33, 244);
+            indicatorButton.Location = new Point(44, 244);
         }
 
         private void clickTest(object sender, EventArgs e)
         {
             openChildForm(new Test.Test_Main());
-            indicatorButton.Location = new Point(33, 309);
+            indicatorButton.Location = new Point(47, 309);
         }
 
         private void clickPlayables(object sender, EventArgs e)
         {
             openChildForm(new Playables.Playables_Main());
-            indicatorButton.Location = new Point(33, 369);
+            indicatorButton.Location = new Point(47, 369);
         }
 
         private void clickVisualization(object sender, EventArgs e)
         {
             openChildForm(new MainVisualization());
-            indicatorButton.Location = new Point(33, 428);
+            indicatorButton.Location = new Point(47, 428);
         }
 
         private void exitPuwshee(object sender, EventArgs e)
@@ -157,7 +157,7 @@ namespace PBL_Puwsheee
                 if(bgPanel.Width <= 806) bgPanel.Width = 806;
 
                 bgPanel.Left += 22;
-                if (bgPanel.Left <= 100) bgPanel.Left = 100;
+                if (bgPanel.Left <= 100) bgPanel.Left = 100; 
             }
             else
             {
@@ -172,12 +172,14 @@ namespace PBL_Puwsheee
                 settingsLabel.Left -= 10;
                 if (settingsLabel.Left <= 17) settingsLabel.Left = 15;
 
-                bgPanel.Width += 23;
-                if (bgPanel.Width >= 918) bgPanel.Width = 918;
+               bgPanel.Width += 23;
+                if (bgPanel.Width >= 917) bgPanel.Width = 917;
 
                 bgPanel.Left -= 23;
-                if (bgPanel.Left == 87) bgPanel.Left = 87; 
+                if (bgPanel.Left == 93) bgPanel.Left = 93; 
             }
         }
+
+
     }
 }
