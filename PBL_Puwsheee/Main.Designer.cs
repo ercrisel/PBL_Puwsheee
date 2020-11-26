@@ -457,8 +457,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.ClientSize = new System.Drawing.Size(1020, 610);
-            this.Controls.Add(this.bgPanel);
             this.Controls.Add(this.navBarPanel);
+            this.Controls.Add(this.bgPanel);
             this.Controls.Add(this.windowsPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
