@@ -157,13 +157,13 @@ namespace PBL_Puwsheee
                 if(bgPanel.Width <= 806) bgPanel.Width = 806;
 
                 bgPanel.Left += 22;
-                if (bgPanel.Left <= 100) bgPanel.Left = 100; 
+                if (bgPanel.Left >= 201) bgPanel.Left = 201; 
             }
             else
             {
                 navBarPanel.Width -= 25;
 
-                if (navBarPanel.Width <= 84)
+                if (navBarPanel.Width <= 86)
                 {
                     animateTimer.Stop();
                     hided = true;
@@ -172,11 +172,11 @@ namespace PBL_Puwsheee
                 settingsLabel.Left -= 10;
                 if (settingsLabel.Left <= 17) settingsLabel.Left = 15;
 
-               bgPanel.Width += 23;
+                bgPanel.Width += 23;
                 if (bgPanel.Width >= 917) bgPanel.Width = 917;
 
                 bgPanel.Left -= 23;
-                if (bgPanel.Left == 93) bgPanel.Left = 93; 
+                if (bgPanel.Left <= 89) bgPanel.Left = 89;
             }
         }
 

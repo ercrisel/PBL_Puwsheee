@@ -240,10 +240,10 @@
             // 
             this.navBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.navBarPanel.Controls.Add(this.usericonPicture);
-            this.navBarPanel.Controls.Add(this.panel2);
-            this.navBarPanel.Controls.Add(this.settingsLabel);
             this.navBarPanel.Controls.Add(this.panel1);
             this.navBarPanel.Controls.Add(this.panel3);
+            this.navBarPanel.Controls.Add(this.panel2);
+            this.navBarPanel.Controls.Add(this.settingsLabel);
             this.navBarPanel.Location = new System.Drawing.Point(-1, -2);
             this.navBarPanel.Name = "navBarPanel";
             this.navBarPanel.Size = new System.Drawing.Size(85, 655);
@@ -253,8 +253,9 @@
             // 
             // usericonPicture
             // 
+            this.usericonPicture.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.usericonPicture.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.usericonPicture.Location = new System.Drawing.Point(14, 39);
+            this.usericonPicture.Location = new System.Drawing.Point(14, 40);
             this.usericonPicture.Name = "usericonPicture";
             this.usericonPicture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.usericonPicture.ShadowDecoration.Parent = this.usericonPicture;
@@ -272,6 +273,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.panel1.Controls.Add(this.calendarLabel);
             this.panel1.Controls.Add(this.playablesLabel);
             this.panel1.Controls.Add(this.visualizationLabel);
@@ -286,6 +288,7 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.panel3.Controls.Add(this.playablesButton);
             this.panel3.Controls.Add(this.analysisButton);
             this.panel3.Controls.Add(this.indicatorButton);
@@ -441,10 +444,11 @@
             this.bgPanel.BackColor = System.Drawing.Color.Transparent;
             this.bgPanel.Controls.Add(this.displayPanel);
             this.bgPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.bgPanel.Location = new System.Drawing.Point(93, 31);
+            this.bgPanel.Location = new System.Drawing.Point(94, 34);
             this.bgPanel.Name = "bgPanel";
             this.bgPanel.Radius = 10;
             this.bgPanel.ShadowColor = System.Drawing.Color.Black;
+            this.bgPanel.ShadowShift = 1;
             this.bgPanel.Size = new System.Drawing.Size(917, 564);
             this.bgPanel.TabIndex = 13;
             // 
@@ -473,8 +477,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.ClientSize = new System.Drawing.Size(1020, 610);
             this.Controls.Add(this.navBarPanel);
-            this.Controls.Add(this.bgPanel);
             this.Controls.Add(this.windowsPanel);
+            this.Controls.Add(this.bgPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Main";
