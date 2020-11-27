@@ -83,5 +83,10 @@ namespace PBL_Puwsheee.Calendar
                 bg.Dispose();
             }
         }
+
+        private void fade_Tick(object sender, EventArgs e)
+        {
+
+        }
     }
 }

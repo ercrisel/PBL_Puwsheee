@@ -150,14 +150,9 @@ namespace PBL_Puwsheee
                     hided = false; 
                 }
 
-                settingsLabel.Left += 10;
-                if (settingsLabel.Left >= 63) settingsLabel.Left = 63;
-
-                bgPanel.Width -= 22;
-                if(bgPanel.Width <= 806) bgPanel.Width = 806;
-
-                bgPanel.Left += 22;
-                if (bgPanel.Left >= 201) bgPanel.Left = 201; 
+                if (settingsLabel.Left <= 63) settingsLabel.Left += 10;
+                if (bgPanel.Width >= 806) bgPanel.Width -= 22;
+                if (bgPanel.Left <= 201) bgPanel.Left += 22;
             }
             else
             {
@@ -169,14 +164,9 @@ namespace PBL_Puwsheee
                     hided = true;
                 }
 
-                settingsLabel.Left -= 10;
-                if (settingsLabel.Left <= 17) settingsLabel.Left = 15;
-
-                bgPanel.Width += 23;
-                if (bgPanel.Width >= 917) bgPanel.Width = 917;
-
-                bgPanel.Left -= 23;
-                if (bgPanel.Left <= 89) bgPanel.Left = 89;
+                if (settingsLabel.Left >= 17) settingsLabel.Left -= 10;
+                if (bgPanel.Width <= 917) bgPanel.Width += 22;
+                if (bgPanel.Left >= 89) bgPanel.Left -= 22; 
             }
         }
 
