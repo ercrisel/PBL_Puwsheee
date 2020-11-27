@@ -348,7 +348,7 @@
             this.signupButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.signupButton.CustomImages.Parent = this.signupButton;
             this.signupButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.signupButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.signupButton.Font = new System.Drawing.Font("Typo Round Bold Demo", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signupButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.signupButton.HoverState.Parent = this.signupButton;
             this.signupButton.Location = new System.Drawing.Point(551, 474);
@@ -607,7 +607,7 @@
             this.submitCodeButton.CheckedState.Parent = this.submitCodeButton;
             this.submitCodeButton.CustomImages.Parent = this.submitCodeButton;
             this.submitCodeButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.submitCodeButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.submitCodeButton.Font = new System.Drawing.Font("Typo Round Bold Demo", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.submitCodeButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.submitCodeButton.HoverState.Parent = this.submitCodeButton;
             this.submitCodeButton.Location = new System.Drawing.Point(294, 474);
@@ -616,7 +616,7 @@
             this.submitCodeButton.ShadowDecoration.Parent = this.submitCodeButton;
             this.submitCodeButton.Size = new System.Drawing.Size(95, 38);
             this.submitCodeButton.TabIndex = 43;
-            this.submitCodeButton.Text = "submitCode";
+            this.submitCodeButton.Text = "Submit Code";
             this.submitCodeButton.Visible = false;
             this.submitCodeButton.Click += new System.EventHandler(this.submitCodeButton_Click);
             // 
