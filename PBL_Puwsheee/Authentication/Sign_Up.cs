@@ -55,6 +55,7 @@ namespace PBL_Puwsheee
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+            
         }
 
         private void backButton_Click(object sender, EventArgs e)
@@ -210,5 +211,12 @@ namespace PBL_Puwsheee
         {
             Fade.fadeOutEffect(this);
         }
+
+        private void enterCodeTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
+
+    
 }
