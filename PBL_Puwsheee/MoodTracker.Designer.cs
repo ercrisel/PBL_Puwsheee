@@ -30,17 +30,7 @@
         {
             this.activitiesLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.moodLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.moodPanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.angryIcon = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.contentedIcon = new Guna.UI2.WinForms.Guna2Button();
-            this.flirtyIcon = new Guna.UI2.WinForms.Guna2Button();
-            this.sadIcon = new Guna.UI2.WinForms.Guna2Button();
-            this.mehIcon = new Guna.UI2.WinForms.Guna2Button();
-            this.miserableIcon = new Guna.UI2.WinForms.Guna2Button();
-            this.disgustedIcon = new Guna.UI2.WinForms.Guna2Button();
-            this.clearButton = new Guna.UI2.WinForms.Guna2Button();
-            this.notesTextbox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.submitButton = new Guna.UI2.WinForms.Guna2Button();
             this.activitiesPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.travelIcon = new Guna.UI2.WinForms.Guna2Button();
             this.studyIcon = new Guna.UI2.WinForms.Guna2Button();
@@ -54,17 +44,25 @@
             this.gameIcon = new Guna.UI2.WinForms.Guna2Button();
             this.cookIcon = new Guna.UI2.WinForms.Guna2Button();
             this.exerciseIcon = new Guna.UI2.WinForms.Guna2Button();
-            this.submitButton = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.clearButton = new Guna.UI2.WinForms.Guna2Button();
             this.contentLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.contentLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.notesTextbox = new Guna.UI2.WinForms.Guna2TextBox();
             this.labelMood = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dateLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.contentLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.moodPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.angryIcon = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.contentedIcon = new Guna.UI2.WinForms.Guna2Button();
+            this.flirtyIcon = new Guna.UI2.WinForms.Guna2Button();
+            this.sadIcon = new Guna.UI2.WinForms.Guna2Button();
+            this.mehIcon = new Guna.UI2.WinForms.Guna2Button();
+            this.miserableIcon = new Guna.UI2.WinForms.Guna2Button();
+            this.disgustedIcon = new Guna.UI2.WinForms.Guna2Button();
             this.labelActivities = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.moodPanel.SuspendLayout();
             this.activitiesPanel.SuspendLayout();
-            this.guna2Panel1.SuspendLayout();
+            this.moodPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // activitiesLabel
@@ -87,274 +85,22 @@
             this.moodLabel.TabIndex = 10;
             this.moodLabel.Text = null;
             // 
-            // moodPanel
+            // submitButton
             // 
-            this.moodPanel.Controls.Add(this.angryIcon);
-            this.moodPanel.Controls.Add(this.guna2Button1);
-            this.moodPanel.Controls.Add(this.contentedIcon);
-            this.moodPanel.Controls.Add(this.flirtyIcon);
-            this.moodPanel.Controls.Add(this.sadIcon);
-            this.moodPanel.Controls.Add(this.mehIcon);
-            this.moodPanel.Controls.Add(this.miserableIcon);
-            this.moodPanel.Controls.Add(this.disgustedIcon);
-            this.moodPanel.Location = new System.Drawing.Point(95, 66);
-            this.moodPanel.Margin = new System.Windows.Forms.Padding(4);
-            this.moodPanel.Name = "moodPanel";
-            this.moodPanel.ShadowDecoration.Parent = this.moodPanel;
-            this.moodPanel.Size = new System.Drawing.Size(290, 132);
-            this.moodPanel.TabIndex = 31;
-            // 
-            // angryIcon
-            // 
-            this.angryIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Angry;
-            this.angryIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.angryIcon.BorderRadius = 15;
-            this.angryIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.angryIcon.CheckedState.Parent = this.angryIcon;
-            this.angryIcon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.angryIcon.CustomImages.Parent = this.angryIcon;
-            this.angryIcon.FillColor = System.Drawing.Color.Transparent;
-            this.angryIcon.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.angryIcon.ForeColor = System.Drawing.Color.White;
-            this.angryIcon.HoverState.Parent = this.angryIcon;
-            this.angryIcon.Location = new System.Drawing.Point(20, 5);
-            this.angryIcon.Margin = new System.Windows.Forms.Padding(4);
-            this.angryIcon.Name = "angryIcon";
-            this.angryIcon.PressedColor = System.Drawing.Color.DarkGray;
-            this.angryIcon.ShadowDecoration.Parent = this.angryIcon;
-            this.angryIcon.Size = new System.Drawing.Size(55, 55);
-            this.angryIcon.TabIndex = 3;
-            this.angryIcon.Tag = "Angry";
-            this.angryIcon.Text = " ";
-            this.angryIcon.Click += new System.EventHandler(this.angryIcon_Click);
-            this.angryIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
-            this.angryIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Contented;
-            this.guna2Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.guna2Button1.BorderRadius = 15;
-            this.guna2Button1.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(146, 5);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.PressedColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(55, 55);
-            this.guna2Button1.TabIndex = 1;
-            this.guna2Button1.Tag = "Contented";
-            this.guna2Button1.Text = " ";
-            this.guna2Button1.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
-            this.guna2Button1.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
-            // 
-            // contentedIcon
-            // 
-            this.contentedIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Happy;
-            this.contentedIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.contentedIcon.BorderRadius = 15;
-            this.contentedIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.contentedIcon.CheckedState.Parent = this.contentedIcon;
-            this.contentedIcon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.contentedIcon.CustomImages.Parent = this.contentedIcon;
-            this.contentedIcon.FillColor = System.Drawing.Color.Transparent;
-            this.contentedIcon.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.contentedIcon.ForeColor = System.Drawing.Color.White;
-            this.contentedIcon.HoverState.Parent = this.contentedIcon;
-            this.contentedIcon.Location = new System.Drawing.Point(209, 5);
-            this.contentedIcon.Margin = new System.Windows.Forms.Padding(4);
-            this.contentedIcon.Name = "contentedIcon";
-            this.contentedIcon.PressedColor = System.Drawing.Color.DarkGray;
-            this.contentedIcon.ShadowDecoration.Parent = this.contentedIcon;
-            this.contentedIcon.Size = new System.Drawing.Size(55, 55);
-            this.contentedIcon.TabIndex = 1;
-            this.contentedIcon.Tag = "Contented";
-            this.contentedIcon.Text = " ";
-            this.contentedIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
-            this.contentedIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
-            // 
-            // flirtyIcon
-            // 
-            this.flirtyIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Flirty;
-            this.flirtyIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.flirtyIcon.BorderRadius = 15;
-            this.flirtyIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.flirtyIcon.CheckedState.Parent = this.flirtyIcon;
-            this.flirtyIcon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.flirtyIcon.CustomImages.Parent = this.flirtyIcon;
-            this.flirtyIcon.FillColor = System.Drawing.Color.Transparent;
-            this.flirtyIcon.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.flirtyIcon.ForeColor = System.Drawing.Color.White;
-            this.flirtyIcon.HoverState.Parent = this.flirtyIcon;
-            this.flirtyIcon.Location = new System.Drawing.Point(83, 5);
-            this.flirtyIcon.Margin = new System.Windows.Forms.Padding(4);
-            this.flirtyIcon.Name = "flirtyIcon";
-            this.flirtyIcon.PressedColor = System.Drawing.Color.DarkGray;
-            this.flirtyIcon.ShadowDecoration.Parent = this.flirtyIcon;
-            this.flirtyIcon.Size = new System.Drawing.Size(55, 55);
-            this.flirtyIcon.TabIndex = 2;
-            this.flirtyIcon.Tag = "Flirty";
-            this.flirtyIcon.Text = " ";
-            this.flirtyIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
-            this.flirtyIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
-            // 
-            // sadIcon
-            // 
-            this.sadIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Sad;
-            this.sadIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.sadIcon.BorderRadius = 15;
-            this.sadIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.sadIcon.CheckedState.Parent = this.sadIcon;
-            this.sadIcon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sadIcon.CustomImages.Parent = this.sadIcon;
-            this.sadIcon.FillColor = System.Drawing.Color.Transparent;
-            this.sadIcon.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.sadIcon.ForeColor = System.Drawing.Color.White;
-            this.sadIcon.HoverState.Parent = this.sadIcon;
-            this.sadIcon.Location = new System.Drawing.Point(83, 68);
-            this.sadIcon.Margin = new System.Windows.Forms.Padding(4);
-            this.sadIcon.Name = "sadIcon";
-            this.sadIcon.PressedColor = System.Drawing.Color.DarkGray;
-            this.sadIcon.ShadowDecoration.Parent = this.sadIcon;
-            this.sadIcon.Size = new System.Drawing.Size(55, 55);
-            this.sadIcon.TabIndex = 6;
-            this.sadIcon.Tag = "Sad";
-            this.sadIcon.Text = " ";
-            this.sadIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
-            this.sadIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
-            // 
-            // mehIcon
-            // 
-            this.mehIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Meh;
-            this.mehIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.mehIcon.BorderRadius = 15;
-            this.mehIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.mehIcon.CheckedState.Parent = this.mehIcon;
-            this.mehIcon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mehIcon.CustomImages.Parent = this.mehIcon;
-            this.mehIcon.FillColor = System.Drawing.Color.Transparent;
-            this.mehIcon.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.mehIcon.ForeColor = System.Drawing.Color.White;
-            this.mehIcon.HoverState.Parent = this.mehIcon;
-            this.mehIcon.Location = new System.Drawing.Point(20, 68);
-            this.mehIcon.Margin = new System.Windows.Forms.Padding(4);
-            this.mehIcon.Name = "mehIcon";
-            this.mehIcon.PressedColor = System.Drawing.Color.DarkGray;
-            this.mehIcon.ShadowDecoration.Parent = this.mehIcon;
-            this.mehIcon.Size = new System.Drawing.Size(55, 55);
-            this.mehIcon.TabIndex = 5;
-            this.mehIcon.Tag = "Meh";
-            this.mehIcon.Text = " ";
-            this.mehIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
-            this.mehIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
-            // 
-            // miserableIcon
-            // 
-            this.miserableIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Miserable;
-            this.miserableIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.miserableIcon.BorderRadius = 15;
-            this.miserableIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.miserableIcon.CheckedState.Parent = this.miserableIcon;
-            this.miserableIcon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.miserableIcon.CustomImages.Parent = this.miserableIcon;
-            this.miserableIcon.FillColor = System.Drawing.Color.Transparent;
-            this.miserableIcon.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.miserableIcon.ForeColor = System.Drawing.Color.White;
-            this.miserableIcon.HoverState.Parent = this.miserableIcon;
-            this.miserableIcon.Location = new System.Drawing.Point(146, 68);
-            this.miserableIcon.Margin = new System.Windows.Forms.Padding(4);
-            this.miserableIcon.Name = "miserableIcon";
-            this.miserableIcon.PressedColor = System.Drawing.Color.DarkGray;
-            this.miserableIcon.ShadowDecoration.Parent = this.miserableIcon;
-            this.miserableIcon.Size = new System.Drawing.Size(55, 55);
-            this.miserableIcon.TabIndex = 7;
-            this.miserableIcon.Tag = "Miserable";
-            this.miserableIcon.Text = " ";
-            this.miserableIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
-            this.miserableIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
-            // 
-            // disgustedIcon
-            // 
-            this.disgustedIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Disgusted1;
-            this.disgustedIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.disgustedIcon.BorderRadius = 15;
-            this.disgustedIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.disgustedIcon.CheckedState.Parent = this.disgustedIcon;
-            this.disgustedIcon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.disgustedIcon.CustomImages.Parent = this.disgustedIcon;
-            this.disgustedIcon.FillColor = System.Drawing.Color.Transparent;
-            this.disgustedIcon.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.disgustedIcon.ForeColor = System.Drawing.Color.White;
-            this.disgustedIcon.HoverState.Parent = this.disgustedIcon;
-            this.disgustedIcon.Location = new System.Drawing.Point(209, 68);
-            this.disgustedIcon.Margin = new System.Windows.Forms.Padding(4);
-            this.disgustedIcon.Name = "disgustedIcon";
-            this.disgustedIcon.PressedColor = System.Drawing.Color.DarkGray;
-            this.disgustedIcon.ShadowDecoration.Parent = this.disgustedIcon;
-            this.disgustedIcon.Size = new System.Drawing.Size(55, 55);
-            this.disgustedIcon.TabIndex = 8;
-            this.disgustedIcon.Tag = "Disgusted";
-            this.disgustedIcon.Text = " ";
-            this.disgustedIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
-            this.disgustedIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
-            // 
-            // clearButton
-            // 
-            this.clearButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.clearButton.BorderRadius = 16;
-            this.clearButton.BorderThickness = 2;
-            this.clearButton.CheckedState.Parent = this.clearButton;
-            this.clearButton.CustomImages.Parent = this.clearButton;
-            this.clearButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.clearButton.Font = new System.Drawing.Font("MS Reference Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clearButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.clearButton.HoverState.Parent = this.clearButton;
-            this.clearButton.Location = new System.Drawing.Point(374, 468);
-            this.clearButton.Margin = new System.Windows.Forms.Padding(4);
-            this.clearButton.Name = "clearButton";
-            this.clearButton.ShadowDecoration.Parent = this.clearButton;
-            this.clearButton.Size = new System.Drawing.Size(85, 35);
-            this.clearButton.TabIndex = 28;
-            this.clearButton.Text = "clear";
-            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
-            // 
-            // notesTextbox
-            // 
-            this.notesTextbox.AutoScroll = true;
-            this.notesTextbox.BorderRadius = 20;
-            this.notesTextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.notesTextbox.DefaultText = "";
-            this.notesTextbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.notesTextbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.notesTextbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.notesTextbox.DisabledState.Parent = this.notesTextbox;
-            this.notesTextbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.notesTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.notesTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.notesTextbox.FocusedState.Parent = this.notesTextbox;
-            this.notesTextbox.Font = new System.Drawing.Font("Typo Round Bold Demo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.notesTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.notesTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.notesTextbox.HoverState.Parent = this.notesTextbox;
-            this.notesTextbox.Location = new System.Drawing.Point(504, 96);
-            this.notesTextbox.Margin = new System.Windows.Forms.Padding(4);
-            this.notesTextbox.MaxLength = 3000;
-            this.notesTextbox.Multiline = true;
-            this.notesTextbox.Name = "notesTextbox";
-            this.notesTextbox.PasswordChar = '\0';
-            this.notesTextbox.PlaceholderText = "";
-            this.notesTextbox.SelectedText = "";
-            this.notesTextbox.ShadowDecoration.BorderRadius = 15;
-            this.notesTextbox.ShadowDecoration.Parent = this.notesTextbox;
-            this.notesTextbox.Size = new System.Drawing.Size(387, 307);
-            this.notesTextbox.TabIndex = 27;
+            this.submitButton.BorderRadius = 16;
+            this.submitButton.CheckedState.Parent = this.submitButton;
+            this.submitButton.CustomImages.Parent = this.submitButton;
+            this.submitButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
+            this.submitButton.Font = new System.Drawing.Font("MS Reference Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.submitButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.submitButton.HoverState.Parent = this.submitButton;
+            this.submitButton.Location = new System.Drawing.Point(464, 479);
+            this.submitButton.Margin = new System.Windows.Forms.Padding(4);
+            this.submitButton.Name = "submitButton";
+            this.submitButton.ShadowDecoration.Parent = this.submitButton;
+            this.submitButton.Size = new System.Drawing.Size(85, 35);
+            this.submitButton.TabIndex = 42;
+            this.submitButton.Text = "submit";
             // 
             // activitiesPanel
             // 
@@ -370,12 +116,12 @@
             this.activitiesPanel.Controls.Add(this.gameIcon);
             this.activitiesPanel.Controls.Add(this.cookIcon);
             this.activitiesPanel.Controls.Add(this.exerciseIcon);
-            this.activitiesPanel.Location = new System.Drawing.Point(49, 268);
+            this.activitiesPanel.Location = new System.Drawing.Point(33, 285);
             this.activitiesPanel.Margin = new System.Windows.Forms.Padding(4);
             this.activitiesPanel.Name = "activitiesPanel";
             this.activitiesPanel.ShadowDecoration.Parent = this.activitiesPanel;
             this.activitiesPanel.Size = new System.Drawing.Size(397, 146);
-            this.activitiesPanel.TabIndex = 32;
+            this.activitiesPanel.TabIndex = 44;
             // 
             // travelIcon
             // 
@@ -399,8 +145,6 @@
             this.travelIcon.TabIndex = 8;
             this.travelIcon.Tag = "Traveling";
             this.travelIcon.Text = " ";
-            this.travelIcon.MouseLeave += new System.EventHandler(this.activitiesIcon_MouseLeave);
-            this.travelIcon.MouseHover += new System.EventHandler(this.activitiesIcon_MouseHover);
             // 
             // studyIcon
             // 
@@ -424,8 +168,6 @@
             this.studyIcon.TabIndex = 8;
             this.studyIcon.Tag = "Studying";
             this.studyIcon.Text = " ";
-            this.studyIcon.MouseLeave += new System.EventHandler(this.activitiesIcon_MouseLeave);
-            this.studyIcon.MouseHover += new System.EventHandler(this.activitiesIcon_MouseHover);
             // 
             // sportsIcon
             // 
@@ -449,8 +191,6 @@
             this.sportsIcon.TabIndex = 7;
             this.sportsIcon.Tag = "Sports";
             this.sportsIcon.Text = " ";
-            this.sportsIcon.MouseLeave += new System.EventHandler(this.activitiesIcon_MouseLeave);
-            this.sportsIcon.MouseHover += new System.EventHandler(this.activitiesIcon_MouseHover);
             // 
             // socialIcon
             // 
@@ -474,8 +214,6 @@
             this.socialIcon.TabIndex = 6;
             this.socialIcon.Tag = "Socializing";
             this.socialIcon.Text = " ";
-            this.socialIcon.MouseLeave += new System.EventHandler(this.activitiesIcon_MouseLeave);
-            this.socialIcon.MouseHover += new System.EventHandler(this.activitiesIcon_MouseHover);
             // 
             // shopIcon
             // 
@@ -499,8 +237,6 @@
             this.shopIcon.TabIndex = 5;
             this.shopIcon.Tag = "Shopping";
             this.shopIcon.Text = " ";
-            this.shopIcon.MouseLeave += new System.EventHandler(this.activitiesIcon_MouseLeave);
-            this.shopIcon.MouseHover += new System.EventHandler(this.activitiesIcon_MouseHover);
             // 
             // sleepIcon
             // 
@@ -524,8 +260,6 @@
             this.sleepIcon.TabIndex = 5;
             this.sleepIcon.Tag = "Sleeping";
             this.sleepIcon.Text = " ";
-            this.sleepIcon.MouseLeave += new System.EventHandler(this.activitiesIcon_MouseLeave);
-            this.sleepIcon.MouseHover += new System.EventHandler(this.activitiesIcon_MouseHover);
             // 
             // watchIcon
             // 
@@ -549,8 +283,6 @@
             this.watchIcon.TabIndex = 3;
             this.watchIcon.Tag = "Watching";
             this.watchIcon.Text = " ";
-            this.watchIcon.MouseLeave += new System.EventHandler(this.activitiesIcon_MouseLeave);
-            this.watchIcon.MouseHover += new System.EventHandler(this.activitiesIcon_MouseHover);
             // 
             // readIcon
             // 
@@ -574,8 +306,6 @@
             this.readIcon.TabIndex = 3;
             this.readIcon.Tag = "Reading";
             this.readIcon.Text = " ";
-            this.readIcon.MouseLeave += new System.EventHandler(this.activitiesIcon_MouseLeave);
-            this.readIcon.MouseHover += new System.EventHandler(this.activitiesIcon_MouseHover);
             // 
             // musicIcon
             // 
@@ -599,8 +329,6 @@
             this.musicIcon.TabIndex = 2;
             this.musicIcon.Tag = "Music";
             this.musicIcon.Text = " ";
-            this.musicIcon.MouseLeave += new System.EventHandler(this.activitiesIcon_MouseLeave);
-            this.musicIcon.MouseHover += new System.EventHandler(this.activitiesIcon_MouseHover);
             // 
             // gameIcon
             // 
@@ -624,8 +352,6 @@
             this.gameIcon.TabIndex = 1;
             this.gameIcon.Tag = "Gaming";
             this.gameIcon.Text = " ";
-            this.gameIcon.MouseLeave += new System.EventHandler(this.activitiesIcon_MouseLeave);
-            this.gameIcon.MouseHover += new System.EventHandler(this.activitiesIcon_MouseHover);
             // 
             // cookIcon
             // 
@@ -649,8 +375,6 @@
             this.cookIcon.TabIndex = 0;
             this.cookIcon.Tag = "Cooking";
             this.cookIcon.Text = " ";
-            this.cookIcon.MouseLeave += new System.EventHandler(this.activitiesIcon_MouseLeave);
-            this.cookIcon.MouseHover += new System.EventHandler(this.activitiesIcon_MouseHover);
             // 
             // exerciseIcon
             // 
@@ -674,110 +398,322 @@
             this.exerciseIcon.TabIndex = 0;
             this.exerciseIcon.Tag = "Exercising ";
             this.exerciseIcon.Text = " ";
-            this.exerciseIcon.MouseLeave += new System.EventHandler(this.activitiesIcon_MouseLeave);
-            this.exerciseIcon.MouseHover += new System.EventHandler(this.activitiesIcon_MouseHover);
             // 
-            // submitButton
+            // clearButton
             // 
-            this.submitButton.BorderRadius = 16;
-            this.submitButton.CheckedState.Parent = this.submitButton;
-            this.submitButton.CustomImages.Parent = this.submitButton;
-            this.submitButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.submitButton.Font = new System.Drawing.Font("MS Reference Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.submitButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.submitButton.HoverState.Parent = this.submitButton;
-            this.submitButton.Location = new System.Drawing.Point(480, 468);
-            this.submitButton.Margin = new System.Windows.Forms.Padding(4);
-            this.submitButton.Name = "submitButton";
-            this.submitButton.ShadowDecoration.Parent = this.submitButton;
-            this.submitButton.Size = new System.Drawing.Size(85, 35);
-            this.submitButton.TabIndex = 29;
-            this.submitButton.Text = "submit";
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.guna2Panel1.Controls.Add(this.submitButton);
-            this.guna2Panel1.Controls.Add(this.activitiesPanel);
-            this.guna2Panel1.Controls.Add(this.clearButton);
-            this.guna2Panel1.Controls.Add(this.contentLabel1);
-            this.guna2Panel1.Controls.Add(this.contentLabel3);
-            this.guna2Panel1.Controls.Add(this.notesTextbox);
-            this.guna2Panel1.Controls.Add(this.labelMood);
-            this.guna2Panel1.Controls.Add(this.dateLabel);
-            this.guna2Panel1.Controls.Add(this.contentLabel2);
-            this.guna2Panel1.Controls.Add(this.moodPanel);
-            this.guna2Panel1.Controls.Add(this.labelActivities);
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(932, 564);
-            this.guna2Panel1.TabIndex = 33;
+            this.clearButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
+            this.clearButton.BorderRadius = 16;
+            this.clearButton.BorderThickness = 2;
+            this.clearButton.CheckedState.Parent = this.clearButton;
+            this.clearButton.CustomImages.Parent = this.clearButton;
+            this.clearButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.clearButton.Font = new System.Drawing.Font("MS Reference Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
+            this.clearButton.HoverState.Parent = this.clearButton;
+            this.clearButton.Location = new System.Drawing.Point(358, 479);
+            this.clearButton.Margin = new System.Windows.Forms.Padding(4);
+            this.clearButton.Name = "clearButton";
+            this.clearButton.ShadowDecoration.Parent = this.clearButton;
+            this.clearButton.Size = new System.Drawing.Size(85, 35);
+            this.clearButton.TabIndex = 41;
+            this.clearButton.Text = "clear";
             // 
             // contentLabel1
             // 
             this.contentLabel1.BackColor = System.Drawing.Color.Transparent;
             this.contentLabel1.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contentLabel1.Location = new System.Drawing.Point(195, 43);
+            this.contentLabel1.Location = new System.Drawing.Point(179, 60);
             this.contentLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.contentLabel1.Name = "contentLabel1";
             this.contentLabel1.Size = new System.Drawing.Size(76, 16);
-            this.contentLabel1.TabIndex = 10;
+            this.contentLabel1.TabIndex = 34;
             this.contentLabel1.Text = "How are you?";
             // 
             // contentLabel3
             // 
             this.contentLabel3.BackColor = System.Drawing.Color.Transparent;
             this.contentLabel3.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contentLabel3.Location = new System.Drawing.Point(624, 73);
+            this.contentLabel3.Location = new System.Drawing.Point(585, 81);
             this.contentLabel3.Margin = new System.Windows.Forms.Padding(4);
             this.contentLabel3.Name = "contentLabel3";
             this.contentLabel3.Size = new System.Drawing.Size(147, 16);
-            this.contentLabel3.TabIndex = 26;
+            this.contentLabel3.TabIndex = 39;
             this.contentLabel3.Text = "What have you been up to?";
+            // 
+            // notesTextbox
+            // 
+            this.notesTextbox.AutoScroll = true;
+            this.notesTextbox.BorderRadius = 20;
+            this.notesTextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.notesTextbox.DefaultText = "";
+            this.notesTextbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.notesTextbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.notesTextbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.notesTextbox.DisabledState.Parent = this.notesTextbox;
+            this.notesTextbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.notesTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
+            this.notesTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.notesTextbox.FocusedState.Parent = this.notesTextbox;
+            this.notesTextbox.Font = new System.Drawing.Font("Typo Round Bold Demo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.notesTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.notesTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.notesTextbox.HoverState.Parent = this.notesTextbox;
+            this.notesTextbox.Location = new System.Drawing.Point(465, 104);
+            this.notesTextbox.Margin = new System.Windows.Forms.Padding(4);
+            this.notesTextbox.MaxLength = 3000;
+            this.notesTextbox.Multiline = true;
+            this.notesTextbox.Name = "notesTextbox";
+            this.notesTextbox.PasswordChar = '\0';
+            this.notesTextbox.PlaceholderText = "";
+            this.notesTextbox.SelectedText = "";
+            this.notesTextbox.ShadowDecoration.BorderRadius = 15;
+            this.notesTextbox.ShadowDecoration.Parent = this.notesTextbox;
+            this.notesTextbox.Size = new System.Drawing.Size(387, 307);
+            this.notesTextbox.TabIndex = 40;
             // 
             // labelMood
             // 
             this.labelMood.BackColor = System.Drawing.Color.Transparent;
             this.labelMood.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMood.Location = new System.Drawing.Point(119, 207);
+            this.labelMood.Location = new System.Drawing.Point(103, 224);
             this.labelMood.Margin = new System.Windows.Forms.Padding(4);
             this.labelMood.Name = "labelMood";
             this.labelMood.Size = new System.Drawing.Size(38, 16);
-            this.labelMood.TabIndex = 10;
+            this.labelMood.TabIndex = 35;
             this.labelMood.Text = "MOOD";
             // 
             // dateLabel
             // 
             this.dateLabel.BackColor = System.Drawing.Color.Transparent;
             this.dateLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateLabel.Location = new System.Drawing.Point(13, 13);
+            this.dateLabel.Location = new System.Drawing.Point(11, 13);
             this.dateLabel.Margin = new System.Windows.Forms.Padding(4);
             this.dateLabel.Name = "dateLabel";
             this.dateLabel.Size = new System.Drawing.Size(75, 16);
-            this.dateLabel.TabIndex = 23;
+            this.dateLabel.TabIndex = 37;
             this.dateLabel.Text = "Date: 12/12/12";
             // 
             // contentLabel2
             // 
             this.contentLabel2.BackColor = System.Drawing.Color.Transparent;
             this.contentLabel2.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contentLabel2.Location = new System.Drawing.Point(158, 245);
+            this.contentLabel2.Location = new System.Drawing.Point(142, 262);
             this.contentLabel2.Margin = new System.Windows.Forms.Padding(4);
             this.contentLabel2.Name = "contentLabel2";
             this.contentLabel2.Size = new System.Drawing.Size(147, 16);
-            this.contentLabel2.TabIndex = 25;
+            this.contentLabel2.TabIndex = 38;
             this.contentLabel2.Text = "What have you been up to?";
+            // 
+            // moodPanel
+            // 
+            this.moodPanel.Controls.Add(this.angryIcon);
+            this.moodPanel.Controls.Add(this.guna2Button1);
+            this.moodPanel.Controls.Add(this.contentedIcon);
+            this.moodPanel.Controls.Add(this.flirtyIcon);
+            this.moodPanel.Controls.Add(this.sadIcon);
+            this.moodPanel.Controls.Add(this.mehIcon);
+            this.moodPanel.Controls.Add(this.miserableIcon);
+            this.moodPanel.Controls.Add(this.disgustedIcon);
+            this.moodPanel.Location = new System.Drawing.Point(79, 83);
+            this.moodPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.moodPanel.Name = "moodPanel";
+            this.moodPanel.ShadowDecoration.Parent = this.moodPanel;
+            this.moodPanel.Size = new System.Drawing.Size(290, 132);
+            this.moodPanel.TabIndex = 43;
+            // 
+            // angryIcon
+            // 
+            this.angryIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Angry;
+            this.angryIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.angryIcon.BorderRadius = 15;
+            this.angryIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.angryIcon.CheckedState.Parent = this.angryIcon;
+            this.angryIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.angryIcon.CustomImages.Parent = this.angryIcon;
+            this.angryIcon.FillColor = System.Drawing.Color.Transparent;
+            this.angryIcon.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.angryIcon.ForeColor = System.Drawing.Color.White;
+            this.angryIcon.HoverState.Parent = this.angryIcon;
+            this.angryIcon.Location = new System.Drawing.Point(20, 5);
+            this.angryIcon.Margin = new System.Windows.Forms.Padding(4);
+            this.angryIcon.Name = "angryIcon";
+            this.angryIcon.PressedColor = System.Drawing.Color.DarkGray;
+            this.angryIcon.ShadowDecoration.Parent = this.angryIcon;
+            this.angryIcon.Size = new System.Drawing.Size(55, 55);
+            this.angryIcon.TabIndex = 3;
+            this.angryIcon.Tag = "Angry";
+            this.angryIcon.Text = " ";
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Contented;
+            this.guna2Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Button1.BorderRadius = 15;
+            this.guna2Button1.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(146, 5);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.PressedColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(55, 55);
+            this.guna2Button1.TabIndex = 1;
+            this.guna2Button1.Tag = "Contented";
+            this.guna2Button1.Text = " ";
+            // 
+            // contentedIcon
+            // 
+            this.contentedIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Happy;
+            this.contentedIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.contentedIcon.BorderRadius = 15;
+            this.contentedIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.contentedIcon.CheckedState.Parent = this.contentedIcon;
+            this.contentedIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.contentedIcon.CustomImages.Parent = this.contentedIcon;
+            this.contentedIcon.FillColor = System.Drawing.Color.Transparent;
+            this.contentedIcon.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.contentedIcon.ForeColor = System.Drawing.Color.White;
+            this.contentedIcon.HoverState.Parent = this.contentedIcon;
+            this.contentedIcon.Location = new System.Drawing.Point(209, 5);
+            this.contentedIcon.Margin = new System.Windows.Forms.Padding(4);
+            this.contentedIcon.Name = "contentedIcon";
+            this.contentedIcon.PressedColor = System.Drawing.Color.DarkGray;
+            this.contentedIcon.ShadowDecoration.Parent = this.contentedIcon;
+            this.contentedIcon.Size = new System.Drawing.Size(55, 55);
+            this.contentedIcon.TabIndex = 1;
+            this.contentedIcon.Tag = "Contented";
+            this.contentedIcon.Text = " ";
+            // 
+            // flirtyIcon
+            // 
+            this.flirtyIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Flirty;
+            this.flirtyIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.flirtyIcon.BorderRadius = 15;
+            this.flirtyIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.flirtyIcon.CheckedState.Parent = this.flirtyIcon;
+            this.flirtyIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.flirtyIcon.CustomImages.Parent = this.flirtyIcon;
+            this.flirtyIcon.FillColor = System.Drawing.Color.Transparent;
+            this.flirtyIcon.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.flirtyIcon.ForeColor = System.Drawing.Color.White;
+            this.flirtyIcon.HoverState.Parent = this.flirtyIcon;
+            this.flirtyIcon.Location = new System.Drawing.Point(83, 5);
+            this.flirtyIcon.Margin = new System.Windows.Forms.Padding(4);
+            this.flirtyIcon.Name = "flirtyIcon";
+            this.flirtyIcon.PressedColor = System.Drawing.Color.DarkGray;
+            this.flirtyIcon.ShadowDecoration.Parent = this.flirtyIcon;
+            this.flirtyIcon.Size = new System.Drawing.Size(55, 55);
+            this.flirtyIcon.TabIndex = 2;
+            this.flirtyIcon.Tag = "Flirty";
+            this.flirtyIcon.Text = " ";
+            // 
+            // sadIcon
+            // 
+            this.sadIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Sad;
+            this.sadIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.sadIcon.BorderRadius = 15;
+            this.sadIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.sadIcon.CheckedState.Parent = this.sadIcon;
+            this.sadIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sadIcon.CustomImages.Parent = this.sadIcon;
+            this.sadIcon.FillColor = System.Drawing.Color.Transparent;
+            this.sadIcon.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.sadIcon.ForeColor = System.Drawing.Color.White;
+            this.sadIcon.HoverState.Parent = this.sadIcon;
+            this.sadIcon.Location = new System.Drawing.Point(83, 68);
+            this.sadIcon.Margin = new System.Windows.Forms.Padding(4);
+            this.sadIcon.Name = "sadIcon";
+            this.sadIcon.PressedColor = System.Drawing.Color.DarkGray;
+            this.sadIcon.ShadowDecoration.Parent = this.sadIcon;
+            this.sadIcon.Size = new System.Drawing.Size(55, 55);
+            this.sadIcon.TabIndex = 6;
+            this.sadIcon.Tag = "Sad";
+            this.sadIcon.Text = " ";
+            // 
+            // mehIcon
+            // 
+            this.mehIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Meh;
+            this.mehIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.mehIcon.BorderRadius = 15;
+            this.mehIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.mehIcon.CheckedState.Parent = this.mehIcon;
+            this.mehIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mehIcon.CustomImages.Parent = this.mehIcon;
+            this.mehIcon.FillColor = System.Drawing.Color.Transparent;
+            this.mehIcon.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.mehIcon.ForeColor = System.Drawing.Color.White;
+            this.mehIcon.HoverState.Parent = this.mehIcon;
+            this.mehIcon.Location = new System.Drawing.Point(20, 68);
+            this.mehIcon.Margin = new System.Windows.Forms.Padding(4);
+            this.mehIcon.Name = "mehIcon";
+            this.mehIcon.PressedColor = System.Drawing.Color.DarkGray;
+            this.mehIcon.ShadowDecoration.Parent = this.mehIcon;
+            this.mehIcon.Size = new System.Drawing.Size(55, 55);
+            this.mehIcon.TabIndex = 5;
+            this.mehIcon.Tag = "Meh";
+            this.mehIcon.Text = " ";
+            // 
+            // miserableIcon
+            // 
+            this.miserableIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Miserable;
+            this.miserableIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.miserableIcon.BorderRadius = 15;
+            this.miserableIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.miserableIcon.CheckedState.Parent = this.miserableIcon;
+            this.miserableIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.miserableIcon.CustomImages.Parent = this.miserableIcon;
+            this.miserableIcon.FillColor = System.Drawing.Color.Transparent;
+            this.miserableIcon.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.miserableIcon.ForeColor = System.Drawing.Color.White;
+            this.miserableIcon.HoverState.Parent = this.miserableIcon;
+            this.miserableIcon.Location = new System.Drawing.Point(146, 68);
+            this.miserableIcon.Margin = new System.Windows.Forms.Padding(4);
+            this.miserableIcon.Name = "miserableIcon";
+            this.miserableIcon.PressedColor = System.Drawing.Color.DarkGray;
+            this.miserableIcon.ShadowDecoration.Parent = this.miserableIcon;
+            this.miserableIcon.Size = new System.Drawing.Size(55, 55);
+            this.miserableIcon.TabIndex = 7;
+            this.miserableIcon.Tag = "Miserable";
+            this.miserableIcon.Text = " ";
+            // 
+            // disgustedIcon
+            // 
+            this.disgustedIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Disgusted;
+            this.disgustedIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.disgustedIcon.BorderRadius = 15;
+            this.disgustedIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.disgustedIcon.CheckedState.Parent = this.disgustedIcon;
+            this.disgustedIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.disgustedIcon.CustomImages.Parent = this.disgustedIcon;
+            this.disgustedIcon.FillColor = System.Drawing.Color.Transparent;
+            this.disgustedIcon.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.disgustedIcon.ForeColor = System.Drawing.Color.White;
+            this.disgustedIcon.HoverState.Parent = this.disgustedIcon;
+            this.disgustedIcon.Location = new System.Drawing.Point(209, 68);
+            this.disgustedIcon.Margin = new System.Windows.Forms.Padding(4);
+            this.disgustedIcon.Name = "disgustedIcon";
+            this.disgustedIcon.PressedColor = System.Drawing.Color.DarkGray;
+            this.disgustedIcon.ShadowDecoration.Parent = this.disgustedIcon;
+            this.disgustedIcon.Size = new System.Drawing.Size(55, 55);
+            this.disgustedIcon.TabIndex = 8;
+            this.disgustedIcon.Tag = "Disgusted";
+            this.disgustedIcon.Text = " ";
             // 
             // labelActivities
             // 
             this.labelActivities.BackColor = System.Drawing.Color.Transparent;
             this.labelActivities.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelActivities.Location = new System.Drawing.Point(59, 422);
+            this.labelActivities.Location = new System.Drawing.Point(43, 439);
             this.labelActivities.Margin = new System.Windows.Forms.Padding(4);
             this.labelActivities.Name = "labelActivities";
             this.labelActivities.Size = new System.Drawing.Size(52, 16);
-            this.labelActivities.TabIndex = 10;
+            this.labelActivities.TabIndex = 36;
             this.labelActivities.Text = "ACTIVITES";
             // 
             // MoodTracker
@@ -785,19 +721,27 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.ClientSize = new System.Drawing.Size(932, 564);
+            this.ClientSize = new System.Drawing.Size(886, 536);
+            this.Controls.Add(this.submitButton);
+            this.Controls.Add(this.activitiesPanel);
+            this.Controls.Add(this.clearButton);
+            this.Controls.Add(this.contentLabel1);
+            this.Controls.Add(this.contentLabel3);
+            this.Controls.Add(this.notesTextbox);
+            this.Controls.Add(this.labelMood);
+            this.Controls.Add(this.dateLabel);
+            this.Controls.Add(this.contentLabel2);
+            this.Controls.Add(this.moodPanel);
+            this.Controls.Add(this.labelActivities);
             this.Controls.Add(this.activitiesLabel);
             this.Controls.Add(this.moodLabel);
-            this.Controls.Add(this.guna2Panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MoodTracker";
             this.Text = "Mood Tracker";
-            this.moodPanel.ResumeLayout(false);
             this.activitiesPanel.ResumeLayout(false);
-            this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel1.PerformLayout();
+            this.moodPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -806,17 +750,7 @@
         #endregion
         private Guna.UI2.WinForms.Guna2HtmlLabel activitiesLabel;
         private Guna.UI2.WinForms.Guna2HtmlLabel moodLabel;
-        private Guna.UI2.WinForms.Guna2Panel moodPanel;
-        private Guna.UI2.WinForms.Guna2Button angryIcon;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button contentedIcon;
-        private Guna.UI2.WinForms.Guna2Button flirtyIcon;
-        private Guna.UI2.WinForms.Guna2Button sadIcon;
-        private Guna.UI2.WinForms.Guna2Button mehIcon;
-        private Guna.UI2.WinForms.Guna2Button miserableIcon;
-        private Guna.UI2.WinForms.Guna2Button disgustedIcon;
-        private Guna.UI2.WinForms.Guna2Button clearButton;
-        private Guna.UI2.WinForms.Guna2TextBox notesTextbox;
+        private Guna.UI2.WinForms.Guna2Button submitButton;
         private Guna.UI2.WinForms.Guna2Panel activitiesPanel;
         private Guna.UI2.WinForms.Guna2Button travelIcon;
         private Guna.UI2.WinForms.Guna2Button studyIcon;
@@ -830,13 +764,22 @@
         private Guna.UI2.WinForms.Guna2Button gameIcon;
         private Guna.UI2.WinForms.Guna2Button cookIcon;
         private Guna.UI2.WinForms.Guna2Button exerciseIcon;
-        private Guna.UI2.WinForms.Guna2Button submitButton;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Button clearButton;
         private Guna.UI2.WinForms.Guna2HtmlLabel contentLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel contentLabel3;
+        private Guna.UI2.WinForms.Guna2TextBox notesTextbox;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelMood;
         private Guna.UI2.WinForms.Guna2HtmlLabel dateLabel;
         private Guna.UI2.WinForms.Guna2HtmlLabel contentLabel2;
+        private Guna.UI2.WinForms.Guna2Panel moodPanel;
+        private Guna.UI2.WinForms.Guna2Button angryIcon;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button contentedIcon;
+        private Guna.UI2.WinForms.Guna2Button flirtyIcon;
+        private Guna.UI2.WinForms.Guna2Button sadIcon;
+        private Guna.UI2.WinForms.Guna2Button mehIcon;
+        private Guna.UI2.WinForms.Guna2Button miserableIcon;
+        private Guna.UI2.WinForms.Guna2Button disgustedIcon;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelActivities;
     }
 }

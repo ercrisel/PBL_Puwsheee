@@ -35,7 +35,7 @@
             // 
             // playPanel
             // 
-            this.playPanel.Location = new System.Drawing.Point(12, 12);
+            this.playPanel.Location = new System.Drawing.Point(12, 37);
             this.playPanel.Name = "playPanel";
             this.playPanel.ShadowDecoration.Parent = this.playPanel;
             this.playPanel.Size = new System.Drawing.Size(792, 481);
@@ -52,7 +52,7 @@
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(824, 189);
+            this.guna2Button2.Location = new System.Drawing.Point(824, 205);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.PressedColor = System.Drawing.Color.DarkGray;
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
@@ -71,7 +71,7 @@
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(824, 256);
+            this.guna2Button1.Location = new System.Drawing.Point(824, 272);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.PressedColor = System.Drawing.Color.DarkGray;
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
@@ -84,7 +84,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.ClientSize = new System.Drawing.Size(935, 505);
+            this.ClientSize = new System.Drawing.Size(886, 536);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.playPanel);
             this.Controls.Add(this.guna2Button1);
