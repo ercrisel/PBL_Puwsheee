@@ -43,7 +43,6 @@
             this.windowsPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.navBarPanel = new System.Windows.Forms.Panel();
             this.usericonPicture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.playablesButton = new Guna.UI2.WinForms.Guna2Button();
@@ -53,6 +52,7 @@
             this.visualizationButton = new Guna.UI2.WinForms.Guna2Button();
             this.moodtrackerButton = new Guna.UI2.WinForms.Guna2Button();
             this.calendarButton = new Guna.UI2.WinForms.Guna2Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.bgPanel = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.displayPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.animateTimer = new System.Windows.Forms.Timer(this.components);
@@ -264,13 +264,6 @@
             this.usericonPicture.TabIndex = 5;
             this.usericonPicture.TabStop = false;
             // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(200, 33);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(821, 601);
-            this.panel2.TabIndex = 13;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
@@ -439,6 +432,13 @@
             this.calendarButton.Text = " ";
             this.calendarButton.Click += new System.EventHandler(this.clickCalendar);
             // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(200, 33);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(821, 601);
+            this.panel2.TabIndex = 13;
+            // 
             // bgPanel
             // 
             this.bgPanel.BackColor = System.Drawing.Color.Transparent;
@@ -483,7 +483,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "d";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.Main_Load);
             this.windowsPanel.ResumeLayout(false);
             this.navBarPanel.ResumeLayout(false);
