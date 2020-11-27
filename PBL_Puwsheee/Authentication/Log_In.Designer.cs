@@ -251,18 +251,6 @@
             this.guna2HtmlLabel1.TabIndex = 40;
             this.guna2HtmlLabel1.Text = "Don\'t have an account?";
             // 
-            // signUpLabel
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Typo Round Bold Demo", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.linkLabel1.Location = new System.Drawing.Point(318, 521);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(77, 24);
-            this.linkLabel1.TabIndex = 41;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Sign up";
-            // 
             // Log_In
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
