@@ -12,13 +12,15 @@ namespace PBL_Puwsheee.Test
 {
     public partial class Test_Results : Form
     {
+        TestResult result = new TestResult();
         int currentscore = 0;
-
+        double average = 0;
         public Test_Results(string test, int score)
         {
             InitializeComponent();
             this.Text = test;
             currentscore = score;
+            
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
@@ -32,6 +34,59 @@ namespace PBL_Puwsheee.Test
         {
             //TIKWAAA gawa ka nalang siguro ng method na cocomputin ung overall na mga sagot niya..
             //Stotore rin pala si current score sa database
+            string submittedDate = DateTime.Now.ToString("yyyyMMdd");
+            result.Username = Main.nameOfUser;
+            result.Date = submittedDate;
+            result.Score = currentscore;
+            string typeOfTest = this.Text;
+            
+            //////////////////////////////////////////////////////////// Stre mo sa database/////////////////////////////////////////////////////////////////////
+            if (result.IsDateAndUserUniqueInDatabase()) // if unique sya wag ka na mag create i update mo n lng pero pag hinde ede waw gago
+            {
+                Console.WriteLine(" existing na sya update values pls ");
+                if (typeOfTest == "Anxiety and Depression")
+                {
+                    result.UploadToDatabase("spInsertAnxietyAndDepressionScore");
+                    average = result.ComputeAverageScore("spComputeAverageAnxietyAndDepressionTest", "AnxietyAndDepressionScore");
+
+                }
+                if (typeOfTest == "Emotional Intelligence")
+                {
+                    result.UploadToDatabase("spInsertEmotionalIntelligenceScore");
+                    average = result.ComputeAverageScore("spComputeAverageEmotionalIntelligenceTest", "EmotionalIntelligenceScore");
+                }
+                if (typeOfTest == "Good Self-Care")
+                {
+                    result.UploadToDatabase("spInsertGoodSelfCareScore");
+                    average = result.ComputeAverageScore("spComputeAverageGoodSelfCareTest", "GoodSelfCareScore");
+                }
+            }
+            if (!result.IsDateAndUserUniqueInDatabase())
+            {
+                // create kang bagong username ganern
+                Console.WriteLine(" gawa bago gago");
+                result.InsertUsernameAndDateTestTaken();
+                if (typeOfTest == "Anxiety and Depression")
+                {
+                    result.UploadToDatabase("spInsertAnxietyAndDepressionScore");
+                    average = result.ComputeAverageScore("spComputeAverageAnxietyAndDepressionTest", "AnxietyAndDepressionScore");
+
+                }
+                if (typeOfTest == "Emotional Intelligence")
+                {
+                    result.UploadToDatabase("spInsertEmotionalIntelligenceScore");
+                    average = result.ComputeAverageScore("spComputeAverageEmotionalIntelligenceTest", "EmotionalIntelligenceScore");
+                }
+                if (typeOfTest == "Good Self-Care")
+                {
+                    result.UploadToDatabase("spInsertGoodSelfCareScore");
+                    average = result.ComputeAverageScore("spComputeAverageGoodSelfCareTest", "GoodSelfCareScore");
+                }
+            }
+            ////////////////////////////////// Compute naten si average////////////////////////////////////////////////////////////////
+
+
+
 
             int low_min = 1, low_max = 15, mid_min = 16, mid_max = 29, high_min = 30, high_max = 50;
 
@@ -120,6 +175,13 @@ namespace PBL_Puwsheee.Test
             currentscoreProgressBar.Value++;
             currentscoreLabel.Text = currentscoreProgressBar.Value.ToString();
             if (currentscoreProgressBar.Value == currentscore) currentScoreTimer.Stop();
+        }
+
+        private void animateAverageScore(object sender, EventArgs e)
+        {
+            averagescoreProgressBar.Value++;
+            averageProgressBarLabel.Text = averagescoreProgressBar.Value.ToString();
+            if (averagescoreProgressBar.Value == average) averageScoreTimer.Stop();
         }
     }
 }
