@@ -84,9 +84,5 @@ namespace PBL_Puwsheee.Calendar
             }
         }
 
-        private void fade_Tick(object sender, EventArgs e)
-        {
-
-        }
     }
 }

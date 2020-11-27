@@ -24,6 +24,7 @@ namespace PBL_Puwsheee
             int nHeightEllipse // width of ellipse
         );
 
+
         public PositiveAffirmations()
         {
             InitializeComponent();
@@ -31,12 +32,48 @@ namespace PBL_Puwsheee
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        int count = 70;
+
+        private void CloseForm(object sender, EventArgs e)
         {
-            timer1.Stop();
-            Main main = new Main();
-            main.Show();
-            this.Close();
+            if (count == 0)
+            {
+                timer1.Enabled = false;
+                fadeIn.Enabled = true;
+                return;
+            }
+
+            count -= 1;
+        } 
+
+        private void fadeInTick(object sender, EventArgs e)
+        {
+            if(this.Opacity == 0)
+            {
+                fadeIn.Enabled = false;
+                Main main = new Main();
+                main.Show();
+                this.Hide();
+                return;
+            }
+            this.Opacity -= 0.01;
+        }
+
+
+        private void PositiveAffirmations_Load(object sender, EventArgs e)
+        {
+            //this.TransparencyKey = BackColor;
+        }
+
+        private void fadeOut_Tick_1(object sender, EventArgs e)
+        {
+            if(this.Opacity ==1)
+            {
+                fadeOut.Enabled = false;
+                timer1.Enabled = true;
+                return;
+            }
+            this.Opacity += 0.01;
         }
     }
 }

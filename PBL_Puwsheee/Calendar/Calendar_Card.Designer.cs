@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.contentLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.contentLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -50,7 +49,6 @@
             this.updateButton = new Guna.UI2.WinForms.Guna2Button();
             this.backButton = new Guna.UI2.WinForms.Guna2Button();
             this.editButton = new Guna.UI2.WinForms.Guna2Button();
-            this.fade = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -406,10 +404,6 @@
             this.editButton.Size = new System.Drawing.Size(37, 31);
             this.editButton.TabIndex = 20;
             // 
-            // fade
-            // 
-            this.fade.Tick += new System.EventHandler(this.fade_Tick);
-            // 
             // Calendar_Card
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -439,7 +433,6 @@
             this.Controls.Add(this.guna2CirclePictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Calendar_Card";
-            this.Opacity = 0D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calendar_Card";
             this.TopMost = true;
@@ -472,6 +465,5 @@
         private Guna.UI2.WinForms.Guna2Button updateButton;
         private Guna.UI2.WinForms.Guna2Button backButton;
         private Guna.UI2.WinForms.Guna2Button editButton;
-        private System.Windows.Forms.Timer fade;
     }
 }

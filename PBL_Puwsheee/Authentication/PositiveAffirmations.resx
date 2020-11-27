@@ -120,7 +120,16 @@
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Hello, kung sino man makabasa neto sana masarap ulam niyo at tara watch party :&lt; Wag kayo masyadong pastress at matulog kayoo di masayang sira ang sleepsched HAHAHHA actually gsuto ko lang malaman ano itsura neto pag maraming sinasabi so here I am HAHAH kung sino man magpapalit ng quoations dito goodluck~~</value>
+  </data>
+  <metadata name="fadeIn.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>104, 17</value>
+  </metadata>
+  <metadata name="fadeOut.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>190, 17</value>
+  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>25</value>
+    <value>110</value>
   </metadata>
 </root>

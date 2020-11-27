@@ -56,6 +56,7 @@
             this.bgPanel = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.displayPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.animateTimer = new System.Windows.Forms.Timer(this.components);
+            this.panel4 = new System.Windows.Forms.Panel();
             this.windowsPanel.SuspendLayout();
             this.navBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.usericonPicture)).BeginInit();
@@ -244,6 +245,7 @@
             this.navBarPanel.Controls.Add(this.panel3);
             this.navBarPanel.Controls.Add(this.panel2);
             this.navBarPanel.Controls.Add(this.settingsLabel);
+            this.navBarPanel.Controls.Add(this.panel4);
             this.navBarPanel.Location = new System.Drawing.Point(-1, -2);
             this.navBarPanel.Name = "navBarPanel";
             this.navBarPanel.Size = new System.Drawing.Size(85, 655);
@@ -470,6 +472,13 @@
             this.animateTimer.Interval = 10;
             this.animateTimer.Tick += new System.EventHandler(this.animateTimer_Tick);
             // 
+            // panel4
+            // 
+            this.panel4.Location = new System.Drawing.Point(3, 567);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(86, 67);
+            this.panel4.TabIndex = 0;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -525,6 +534,7 @@
         private Guna.UI2.WinForms.Guna2Button visualizationButton;
         private Guna.UI2.WinForms.Guna2Button moodtrackerButton;
         private Guna.UI2.WinForms.Guna2Button calendarButton;
+        private System.Windows.Forms.Panel panel4;
     }
 }
 
