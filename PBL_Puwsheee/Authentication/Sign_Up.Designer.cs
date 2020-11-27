@@ -87,7 +87,7 @@
             this.firstNameTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.firstNameTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.firstNameTextbox.HoverState.Parent = this.firstNameTextbox;
-            this.firstNameTextbox.Location = new System.Drawing.Point(124, 195);
+            this.firstNameTextbox.Location = new System.Drawing.Point(135, 214);
             this.firstNameTextbox.Margin = new System.Windows.Forms.Padding(4);
             this.firstNameTextbox.Name = "firstNameTextbox";
             this.firstNameTextbox.PasswordChar = '\0';
@@ -101,12 +101,12 @@
             // firstnameLabel
             // 
             this.firstnameLabel.BackColor = System.Drawing.Color.Transparent;
-            this.firstnameLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstnameLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.firstnameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.firstnameLabel.Location = new System.Drawing.Point(46, 209);
+            this.firstnameLabel.Location = new System.Drawing.Point(42, 228);
             this.firstnameLabel.Margin = new System.Windows.Forms.Padding(4);
             this.firstnameLabel.Name = "firstnameLabel";
-            this.firstnameLabel.Size = new System.Drawing.Size(70, 18);
+            this.firstnameLabel.Size = new System.Drawing.Size(80, 21);
             this.firstnameLabel.TabIndex = 12;
             this.firstnameLabel.Text = "First Name:";
             // 
@@ -129,7 +129,7 @@
             this.lastNameTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.lastNameTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.lastNameTextbox.HoverState.Parent = this.lastNameTextbox;
-            this.lastNameTextbox.Location = new System.Drawing.Point(551, 195);
+            this.lastNameTextbox.Location = new System.Drawing.Point(590, 214);
             this.lastNameTextbox.Margin = new System.Windows.Forms.Padding(4);
             this.lastNameTextbox.Name = "lastNameTextbox";
             this.lastNameTextbox.PasswordChar = '\0';
@@ -159,7 +159,7 @@
             this.emailTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.emailTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.emailTextbox.HoverState.Parent = this.emailTextbox;
-            this.emailTextbox.Location = new System.Drawing.Point(124, 278);
+            this.emailTextbox.Location = new System.Drawing.Point(135, 297);
             this.emailTextbox.Margin = new System.Windows.Forms.Padding(4);
             this.emailTextbox.Name = "emailTextbox";
             this.emailTextbox.PasswordChar = '\0';
@@ -189,7 +189,7 @@
             this.usernameTexbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.usernameTexbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.usernameTexbox.HoverState.Parent = this.usernameTexbox;
-            this.usernameTexbox.Location = new System.Drawing.Point(551, 278);
+            this.usernameTexbox.Location = new System.Drawing.Point(590, 297);
             this.usernameTexbox.Margin = new System.Windows.Forms.Padding(4);
             this.usernameTexbox.Name = "usernameTexbox";
             this.usernameTexbox.PasswordChar = '\0';
@@ -219,7 +219,7 @@
             this.passwordTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.passwordTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.passwordTextbox.HoverState.Parent = this.passwordTextbox;
-            this.passwordTextbox.Location = new System.Drawing.Point(124, 360);
+            this.passwordTextbox.Location = new System.Drawing.Point(135, 379);
             this.passwordTextbox.Margin = new System.Windows.Forms.Padding(4);
             this.passwordTextbox.Name = "passwordTextbox";
             this.passwordTextbox.PasswordChar = '*';
@@ -249,7 +249,7 @@
             this.confirmPasswordTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.confirmPasswordTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.confirmPasswordTextbox.HoverState.Parent = this.confirmPasswordTextbox;
-            this.confirmPasswordTextbox.Location = new System.Drawing.Point(551, 359);
+            this.confirmPasswordTextbox.Location = new System.Drawing.Point(590, 378);
             this.confirmPasswordTextbox.Margin = new System.Windows.Forms.Padding(4);
             this.confirmPasswordTextbox.Name = "confirmPasswordTextbox";
             this.confirmPasswordTextbox.PasswordChar = '*';
@@ -263,60 +263,60 @@
             // lastnameLabel
             // 
             this.lastnameLabel.BackColor = System.Drawing.Color.Transparent;
-            this.lastnameLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastnameLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lastnameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.lastnameLabel.Location = new System.Drawing.Point(472, 209);
+            this.lastnameLabel.Location = new System.Drawing.Point(504, 228);
             this.lastnameLabel.Margin = new System.Windows.Forms.Padding(4);
             this.lastnameLabel.Name = "lastnameLabel";
-            this.lastnameLabel.Size = new System.Drawing.Size(71, 18);
+            this.lastnameLabel.Size = new System.Drawing.Size(81, 21);
             this.lastnameLabel.TabIndex = 18;
             this.lastnameLabel.Text = "Last Name:";
             // 
             // emailLabel
             // 
             this.emailLabel.BackColor = System.Drawing.Color.Transparent;
-            this.emailLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.emailLabel.Location = new System.Drawing.Point(31, 288);
+            this.emailLabel.Location = new System.Drawing.Point(27, 307);
             this.emailLabel.Margin = new System.Windows.Forms.Padding(4);
             this.emailLabel.Name = "emailLabel";
-            this.emailLabel.Size = new System.Drawing.Size(90, 18);
+            this.emailLabel.Size = new System.Drawing.Size(105, 21);
             this.emailLabel.TabIndex = 19;
             this.emailLabel.Text = "Email Address:";
             // 
             // usernameLabel
             // 
             this.usernameLabel.BackColor = System.Drawing.Color.Transparent;
-            this.usernameLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.usernameLabel.Location = new System.Drawing.Point(478, 288);
+            this.usernameLabel.Location = new System.Drawing.Point(510, 307);
             this.usernameLabel.Margin = new System.Windows.Forms.Padding(4);
             this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(65, 18);
+            this.usernameLabel.Size = new System.Drawing.Size(74, 21);
             this.usernameLabel.TabIndex = 20;
             this.usernameLabel.Text = "Username";
             // 
             // passwordLabel
             // 
             this.passwordLabel.BackColor = System.Drawing.Color.Transparent;
-            this.passwordLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.passwordLabel.Location = new System.Drawing.Point(55, 370);
+            this.passwordLabel.Location = new System.Drawing.Point(51, 389);
             this.passwordLabel.Margin = new System.Windows.Forms.Padding(4);
             this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(66, 18);
+            this.passwordLabel.Size = new System.Drawing.Size(76, 21);
             this.passwordLabel.TabIndex = 21;
             this.passwordLabel.Text = "Password:";
             // 
             // confirmpasswordLabel
             // 
             this.confirmpasswordLabel.BackColor = System.Drawing.Color.Transparent;
-            this.confirmpasswordLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirmpasswordLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.confirmpasswordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.confirmpasswordLabel.Location = new System.Drawing.Point(425, 370);
+            this.confirmpasswordLabel.Location = new System.Drawing.Point(457, 389);
             this.confirmpasswordLabel.Margin = new System.Windows.Forms.Padding(4);
             this.confirmpasswordLabel.Name = "confirmpasswordLabel";
-            this.confirmpasswordLabel.Size = new System.Drawing.Size(118, 18);
+            this.confirmpasswordLabel.Size = new System.Drawing.Size(136, 21);
             this.confirmpasswordLabel.TabIndex = 22;
             this.confirmpasswordLabel.Text = "Confirm Password:";
             // 
@@ -332,7 +332,7 @@
             this.uploadimageButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.uploadimageButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.uploadimageButton.HoverState.Parent = this.uploadimageButton;
-            this.uploadimageButton.Location = new System.Drawing.Point(677, 75);
+            this.uploadimageButton.Location = new System.Drawing.Point(730, 94);
             this.uploadimageButton.Margin = new System.Windows.Forms.Padding(4);
             this.uploadimageButton.Name = "uploadimageButton";
             this.uploadimageButton.ShadowDecoration.Parent = this.uploadimageButton;
@@ -351,7 +351,7 @@
             this.signupButton.Font = new System.Drawing.Font("Typo Round Bold Demo", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signupButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.signupButton.HoverState.Parent = this.signupButton;
-            this.signupButton.Location = new System.Drawing.Point(551, 474);
+            this.signupButton.Location = new System.Drawing.Point(597, 470);
             this.signupButton.Margin = new System.Windows.Forms.Padding(4);
             this.signupButton.Name = "signupButton";
             this.signupButton.ShadowDecoration.Parent = this.signupButton;
@@ -376,7 +376,7 @@
             // userPicture
             // 
             this.userPicture.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
-            this.userPicture.Location = new System.Drawing.Point(530, 27);
+            this.userPicture.Location = new System.Drawing.Point(569, 47);
             this.userPicture.Margin = new System.Windows.Forms.Padding(4);
             this.userPicture.Name = "userPicture";
             this.userPicture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -391,7 +391,7 @@
             this.firstNameCondition.AutoSize = true;
             this.firstNameCondition.Font = new System.Drawing.Font("Typo Round Bold Demo", 6.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.firstNameCondition.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
-            this.firstNameCondition.Location = new System.Drawing.Point(176, 237);
+            this.firstNameCondition.Location = new System.Drawing.Point(187, 256);
             this.firstNameCondition.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.firstNameCondition.Name = "firstNameCondition";
             this.firstNameCondition.Size = new System.Drawing.Size(157, 14);
@@ -405,7 +405,7 @@
             this.lastNameCondition.AutoSize = true;
             this.lastNameCondition.Font = new System.Drawing.Font("Typo Round Bold Demo", 6.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lastNameCondition.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
-            this.lastNameCondition.Location = new System.Drawing.Point(605, 238);
+            this.lastNameCondition.Location = new System.Drawing.Point(644, 257);
             this.lastNameCondition.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lastNameCondition.Name = "lastNameCondition";
             this.lastNameCondition.Size = new System.Drawing.Size(157, 14);
@@ -419,7 +419,7 @@
             this.emailCondition.AutoSize = true;
             this.emailCondition.Font = new System.Drawing.Font("Typo Round Bold Demo", 6.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailCondition.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
-            this.emailCondition.Location = new System.Drawing.Point(212, 323);
+            this.emailCondition.Location = new System.Drawing.Point(223, 342);
             this.emailCondition.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.emailCondition.Name = "emailCondition";
             this.emailCondition.Size = new System.Drawing.Size(83, 14);
@@ -433,7 +433,7 @@
             this.usernameCondition.AutoSize = true;
             this.usernameCondition.Font = new System.Drawing.Font("Typo Round Bold Demo", 6.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameCondition.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
-            this.usernameCondition.Location = new System.Drawing.Point(630, 323);
+            this.usernameCondition.Location = new System.Drawing.Point(669, 341);
             this.usernameCondition.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.usernameCondition.Name = "usernameCondition";
             this.usernameCondition.Size = new System.Drawing.Size(106, 14);
@@ -448,7 +448,7 @@
             this.showPasswordButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.showPasswordButton.ForeColor = System.Drawing.Color.White;
             this.showPasswordButton.HoverState.Parent = this.showPasswordButton;
-            this.showPasswordButton.Location = new System.Drawing.Point(323, 370);
+            this.showPasswordButton.Location = new System.Drawing.Point(334, 389);
             this.showPasswordButton.Margin = new System.Windows.Forms.Padding(4);
             this.showPasswordButton.Name = "showPasswordButton";
             this.showPasswordButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -463,7 +463,7 @@
             this.requiredFirstName.AutoSize = true;
             this.requiredFirstName.Font = new System.Drawing.Font("Typo Round Bold Demo", 6.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.requiredFirstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
-            this.requiredFirstName.Location = new System.Drawing.Point(176, 238);
+            this.requiredFirstName.Location = new System.Drawing.Point(187, 257);
             this.requiredFirstName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.requiredFirstName.Name = "requiredFirstName";
             this.requiredFirstName.Size = new System.Drawing.Size(138, 14);
@@ -477,7 +477,7 @@
             this.requiredUsername.AutoSize = true;
             this.requiredUsername.Font = new System.Drawing.Font("Typo Round Bold Demo", 6.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.requiredUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
-            this.requiredUsername.Location = new System.Drawing.Point(616, 323);
+            this.requiredUsername.Location = new System.Drawing.Point(655, 341);
             this.requiredUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.requiredUsername.Name = "requiredUsername";
             this.requiredUsername.Size = new System.Drawing.Size(138, 14);
@@ -490,7 +490,7 @@
             this.requiredLastName.AutoSize = true;
             this.requiredLastName.Font = new System.Drawing.Font("Typo Round Bold Demo", 6.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.requiredLastName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
-            this.requiredLastName.Location = new System.Drawing.Point(616, 238);
+            this.requiredLastName.Location = new System.Drawing.Point(655, 257);
             this.requiredLastName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.requiredLastName.Name = "requiredLastName";
             this.requiredLastName.Size = new System.Drawing.Size(138, 14);
@@ -503,7 +503,7 @@
             this.requiredEmail.AutoSize = true;
             this.requiredEmail.Font = new System.Drawing.Font("Typo Round Bold Demo", 6.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.requiredEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
-            this.requiredEmail.Location = new System.Drawing.Point(176, 323);
+            this.requiredEmail.Location = new System.Drawing.Point(187, 342);
             this.requiredEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.requiredEmail.Name = "requiredEmail";
             this.requiredEmail.Size = new System.Drawing.Size(138, 14);
@@ -517,7 +517,7 @@
             this.requiredPassword.AutoSize = true;
             this.requiredPassword.Font = new System.Drawing.Font("Typo Round Bold Demo", 6.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.requiredPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
-            this.requiredPassword.Location = new System.Drawing.Point(176, 402);
+            this.requiredPassword.Location = new System.Drawing.Point(187, 421);
             this.requiredPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.requiredPassword.Name = "requiredPassword";
             this.requiredPassword.Size = new System.Drawing.Size(138, 14);
@@ -530,7 +530,7 @@
             this.requiredConfirmPassword.AutoSize = true;
             this.requiredConfirmPassword.Font = new System.Drawing.Font("Typo Round Bold Demo", 6.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.requiredConfirmPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
-            this.requiredConfirmPassword.Location = new System.Drawing.Point(624, 402);
+            this.requiredConfirmPassword.Location = new System.Drawing.Point(663, 421);
             this.requiredConfirmPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.requiredConfirmPassword.Name = "requiredConfirmPassword";
             this.requiredConfirmPassword.Size = new System.Drawing.Size(138, 14);
@@ -543,7 +543,7 @@
             this.passAndConfirm.AutoSize = true;
             this.passAndConfirm.Font = new System.Drawing.Font("Typo Round Bold Demo", 6.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passAndConfirm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
-            this.passAndConfirm.Location = new System.Drawing.Point(555, 403);
+            this.passAndConfirm.Location = new System.Drawing.Point(594, 422);
             this.passAndConfirm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.passAndConfirm.Name = "passAndConfirm";
             this.passAndConfirm.Size = new System.Drawing.Size(261, 14);
@@ -556,7 +556,7 @@
             this.passwordCondition3.AutoSize = true;
             this.passwordCondition3.Font = new System.Drawing.Font("Typo Round Bold Demo", 6.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordCondition3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
-            this.passwordCondition3.Location = new System.Drawing.Point(132, 474);
+            this.passwordCondition3.Location = new System.Drawing.Point(143, 493);
             this.passwordCondition3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.passwordCondition3.Name = "passwordCondition3";
             this.passwordCondition3.Size = new System.Drawing.Size(181, 14);
@@ -569,7 +569,7 @@
             this.passwordCondition2.AutoSize = true;
             this.passwordCondition2.Font = new System.Drawing.Font("Typo Round Bold Demo", 6.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordCondition2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
-            this.passwordCondition2.Location = new System.Drawing.Point(132, 451);
+            this.passwordCondition2.Location = new System.Drawing.Point(143, 470);
             this.passwordCondition2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.passwordCondition2.Name = "passwordCondition2";
             this.passwordCondition2.Size = new System.Drawing.Size(229, 14);
@@ -582,7 +582,7 @@
             this.passwordCondition1.AutoSize = true;
             this.passwordCondition1.Font = new System.Drawing.Font("Typo Round Bold Demo", 6.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordCondition1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
-            this.passwordCondition1.Location = new System.Drawing.Point(132, 428);
+            this.passwordCondition1.Location = new System.Drawing.Point(143, 447);
             this.passwordCondition1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.passwordCondition1.Name = "passwordCondition1";
             this.passwordCondition1.Size = new System.Drawing.Size(216, 14);
@@ -593,7 +593,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(121, 486);
+            this.label11.Location = new System.Drawing.Point(132, 482);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(176, 17);
@@ -610,7 +610,7 @@
             this.submitCodeButton.Font = new System.Drawing.Font("Typo Round Bold Demo", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.submitCodeButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.submitCodeButton.HoverState.Parent = this.submitCodeButton;
-            this.submitCodeButton.Location = new System.Drawing.Point(294, 474);
+            this.submitCodeButton.Location = new System.Drawing.Point(305, 470);
             this.submitCodeButton.Margin = new System.Windows.Forms.Padding(4);
             this.submitCodeButton.Name = "submitCodeButton";
             this.submitCodeButton.ShadowDecoration.Parent = this.submitCodeButton;
@@ -637,7 +637,7 @@
             this.enterCodeTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.enterCodeTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.enterCodeTextBox.HoverState.Parent = this.enterCodeTextBox;
-            this.enterCodeTextBox.Location = new System.Drawing.Point(124, 474);
+            this.enterCodeTextBox.Location = new System.Drawing.Point(135, 470);
             this.enterCodeTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.enterCodeTextBox.Name = "enterCodeTextBox";
             this.enterCodeTextBox.PasswordChar = '\0';
@@ -655,7 +655,7 @@
             this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
             this.guna2CircleButton1.HoverState.Parent = this.guna2CircleButton1;
-            this.guna2CircleButton1.Location = new System.Drawing.Point(753, 370);
+            this.guna2CircleButton1.Location = new System.Drawing.Point(792, 389);
             this.guna2CircleButton1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2CircleButton1.Name = "guna2CircleButton1";
             this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -668,7 +668,7 @@
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Robaga Rounded Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(179, 69);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(190, 88);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(130, 39);
             this.guna2HtmlLabel1.TabIndex = 46;

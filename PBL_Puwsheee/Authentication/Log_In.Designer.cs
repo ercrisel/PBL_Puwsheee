@@ -253,17 +253,15 @@
             // 
             // signUpLabel
             // 
-            this.signUpLabel.AutoSize = true;
-            this.signUpLabel.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
-            this.signUpLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signUpLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.signUpLabel.Location = new System.Drawing.Point(236, 396);
-            this.signUpLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.signUpLabel.Name = "signUpLabel";
-            this.signUpLabel.Size = new System.Drawing.Size(50, 15);
-            this.signUpLabel.TabIndex = 41;
-            this.signUpLabel.TabStop = true;
-            this.signUpLabel.Text = "Sign up";
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Typo Round Bold Demo", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
+            this.linkLabel1.Location = new System.Drawing.Point(318, 521);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(77, 24);
+            this.linkLabel1.TabIndex = 41;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Sign up";
             // 
             // Log_In
             // 
