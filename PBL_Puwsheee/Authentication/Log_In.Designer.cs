@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.passwordTextbox = new Guna.UI2.WinForms.Guna2TextBox();
             this.logoLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.loginButton = new Guna.UI2.WinForms.Guna2Button();
@@ -40,6 +41,8 @@
             this.requiredUsername = new System.Windows.Forms.Label();
             this.requiredPassword = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.fadeIn = new System.Windows.Forms.Timer(this.components);
+            this.fadeOut = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -84,7 +87,6 @@
             this.logoLabel.Size = new System.Drawing.Size(81, 31);
             this.logoLabel.TabIndex = 8;
             this.logoLabel.Text = "LOGIN";
-            this.logoLabel.Click += new System.EventHandler(this.logoLabel_Click);
             // 
             // loginButton
             // 
@@ -225,6 +227,16 @@
             this.pictureBox1.TabIndex = 39;
             this.pictureBox1.TabStop = false;
             // 
+            // fadeIn
+            // 
+            this.fadeIn.Enabled = true;
+            this.fadeIn.Interval = 50;
+            this.fadeIn.Tick += new System.EventHandler(this.fadeIn_Tick);
+            // 
+            // fadeOut
+            // 
+            this.fadeOut.Tick += new System.EventHandler(this.fadeOut_Tick);
+            // 
             // Log_In
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -245,10 +257,10 @@
             this.Controls.Add(this.usernameLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Log_In";
+            this.Opacity = 0D;
             this.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Log_In";
-            this.Load += new System.EventHandler(this.Log_In_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -270,5 +282,7 @@
         private System.Windows.Forms.Label requiredUsername;
         private System.Windows.Forms.Label requiredPassword;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Timer fadeIn;
+        private System.Windows.Forms.Timer fadeOut;
     }
 }

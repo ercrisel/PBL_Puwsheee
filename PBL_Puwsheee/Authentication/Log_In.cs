@@ -61,9 +61,10 @@ namespace PBL_Puwsheee
                     publicUserName = user.Username;
                     publicPasswordInput = user.Password;
                     MessageBox.Show("You will be redirected to the homepage, Login Success");
+                    
+                    fadeOut.Start();
                     PositiveAffirmations pa = new PositiveAffirmations();
                     pa.Show();
-                    this.Close();
                 }
                 else
                 {
@@ -79,11 +80,6 @@ namespace PBL_Puwsheee
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void logoLabel_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void signupButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -102,11 +98,6 @@ namespace PBL_Puwsheee
             }
         }
 
-        private void Log_In_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void usernameTextbox_TextChanged(object sender, EventArgs e)
         {
             user.Username = usernameTextbox.Text;
@@ -118,6 +109,16 @@ namespace PBL_Puwsheee
         {
             user.Password = passwordTextbox.Text;
             user.requiredFieldShow(passwordTextbox.Text, requiredPassword);
+        }
+
+        private void fadeIn_Tick(object sender, EventArgs e)
+        {
+            Fade.fadeInEffect(this, fadeIn);
+        }
+
+        private void fadeOut_Tick(object sender, EventArgs e)
+        {
+            Fade.fadeOutEffect(this);
         }
     }
 }
