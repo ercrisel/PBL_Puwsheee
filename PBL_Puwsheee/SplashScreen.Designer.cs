@@ -32,6 +32,8 @@
             this.logoLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.logoPicture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.countdown = new System.Windows.Forms.Timer(this.components);
+            this.fadeIn = new System.Windows.Forms.Timer(this.components);
+            this.fadeOut = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.logoPicture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,9 +60,19 @@
             // 
             // countdown
             // 
-            this.countdown.Enabled = true;
-            this.countdown.Interval = 3000;
-            this.countdown.Tick += new System.EventHandler(this.countdown_Tick);
+            this.countdown.Interval = 70;
+            this.countdown.Tick += new System.EventHandler(this.countdownTick);
+            // 
+            // fadeIn
+            // 
+            this.fadeIn.Enabled = true;
+            this.fadeIn.Interval = 3;
+            this.fadeIn.Tick += new System.EventHandler(this.fadeInTick);
+            // 
+            // fadeOut
+            // 
+            this.fadeOut.Interval = 2;
+            this.fadeOut.Tick += new System.EventHandler(this.fadeOutTick);
             // 
             // SplashScreen
             // 
@@ -72,10 +84,10 @@
             this.Controls.Add(this.logoPicture);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SplashScreen";
+            this.Opacity = 0D;
             this.Padding = new System.Windows.Forms.Padding(5);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SplashScreen";
-            this.Load += new System.EventHandler(this.SplashScreen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.logoPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -87,5 +99,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel logoLabel;
         private Guna.UI2.WinForms.Guna2CirclePictureBox logoPicture;
         private System.Windows.Forms.Timer countdown;
+        private System.Windows.Forms.Timer fadeIn;
+        private System.Windows.Forms.Timer fadeOut;
     }
 }

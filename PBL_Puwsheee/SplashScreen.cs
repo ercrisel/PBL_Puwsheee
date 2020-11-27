@@ -31,16 +31,41 @@ namespace PBL_Puwsheee
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
 
-        private void countdown_Tick(object sender, EventArgs e)
+        int count = 70;
+        private void countdownTick(object sender, EventArgs e)
         {
-            countdown.Stop();
-            new Log_In().Show();
-            this.Hide();
+
+            if (count == 0)
+            {
+                countdown.Enabled = false;
+                fadeOut.Enabled = true;
+                return;
+            }
+
+            count -= 1;
         }
 
-        private void SplashScreen_Load(object sender, EventArgs e)
+        private void fadeOutTick(object sender, EventArgs e)
         {
+            if (this.Opacity == 0)
+            {
+                fadeOut.Enabled = false;
+                new Log_In().Show();
+                this.Hide();
+                return;
+            }
+            this.Opacity -= 0.01;
+        }
 
+        private void fadeInTick(object sender, EventArgs e)
+        {
+            if (this.Opacity == 1)
+            {
+                fadeIn.Enabled = false;
+                countdown.Enabled = true;
+                return;
+            }
+            this.Opacity += 0.01;
         }
     }
 }

@@ -32,8 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PositiveAffirmations));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
-            this.fadeIn = new System.Windows.Forms.Timer(this.components);
             this.fadeOut = new System.Windows.Forms.Timer(this.components);
+            this.fadeIn = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // timer1
@@ -52,21 +52,21 @@
             this.label1.Location = new System.Drawing.Point(197, 215);
             this.label1.MaximumSize = new System.Drawing.Size(630, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(627, 150);
+            this.label1.Size = new System.Drawing.Size(626, 150);
             this.label1.TabIndex = 1;
             this.label1.Text = resources.GetString("label1.Text");
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // fadeIn
-            // 
-            this.fadeIn.Interval = 2;
-            this.fadeIn.Tick += new System.EventHandler(this.fadeInTick);
-            // 
             // fadeOut
             // 
-            this.fadeOut.Enabled = true;
-            this.fadeOut.Interval = 5;
-            this.fadeOut.Tick += new System.EventHandler(this.fadeOut_Tick_1);
+            this.fadeOut.Interval = 2;
+            this.fadeOut.Tick += new System.EventHandler(this.fadeOutTick);
+            // 
+            // fadeIn
+            // 
+            this.fadeIn.Enabled = true;
+            this.fadeIn.Interval = 5;
+            this.fadeIn.Tick += new System.EventHandler(this.fadeInTick);
             // 
             // PositiveAffirmations
             // 
@@ -82,7 +82,6 @@
             this.Opacity = 0D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PositiveAffirmations";
-            this.Load += new System.EventHandler(this.PositiveAffirmations_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -91,7 +90,7 @@
         #endregion
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Timer fadeOut;
         private System.Windows.Forms.Timer fadeIn;
+        private System.Windows.Forms.Timer fadeOut;
     }
 }
