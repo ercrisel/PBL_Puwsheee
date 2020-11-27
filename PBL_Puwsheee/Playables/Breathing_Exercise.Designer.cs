@@ -50,7 +50,7 @@ namespace PBL_Puwsheee.Playables
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Typo Round Bold Demo", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.label1.Location = new System.Drawing.Point(12, 19);
+            this.label1.Location = new System.Drawing.Point(2, -3);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(249, 34);
             this.label1.TabIndex = 1;

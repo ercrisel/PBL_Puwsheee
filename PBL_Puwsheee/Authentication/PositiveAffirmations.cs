@@ -39,18 +39,18 @@ namespace PBL_Puwsheee
             if (count == 0)
             {
                 timer1.Enabled = false;
-                fadeIn.Enabled = true;
+                fadeOut.Enabled = true;
                 return;
             }
 
             count -= 1;
         } 
 
-        private void fadeInTick(object sender, EventArgs e)
+        private void fadeOutTick(object sender, EventArgs e)
         {
-            if(this.Opacity == 0)
+            if (this.Opacity == 0)
             {
-                fadeIn.Enabled = false;
+                fadeOut.Enabled = false;
                 Main main = new Main();
                 main.Show();
                 this.Hide();
@@ -59,17 +59,11 @@ namespace PBL_Puwsheee
             this.Opacity -= 0.01;
         }
 
-
-        private void PositiveAffirmations_Load(object sender, EventArgs e)
+        private void fadeInTick(object sender, EventArgs e)
         {
-            //this.TransparencyKey = BackColor;
-        }
-
-        private void fadeOut_Tick_1(object sender, EventArgs e)
-        {
-            if(this.Opacity ==1)
+            if (this.Opacity == 1)
             {
-                fadeOut.Enabled = false;
+                fadeIn.Enabled = false;
                 timer1.Enabled = true;
                 return;
             }
