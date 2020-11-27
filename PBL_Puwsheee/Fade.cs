@@ -26,5 +26,14 @@ namespace PBL_Puwsheee
             }
             form.Opacity -= .2;
         }
+
+        public static void exitFade(Form form)
+        {
+            if (form.Opacity <= 0)
+            {
+                Application.Exit();
+            }
+            form.Opacity -= .2;
+        }
     }
 }

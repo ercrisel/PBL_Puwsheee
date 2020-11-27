@@ -53,10 +53,12 @@
             this.moodtrackerButton = new Guna.UI2.WinForms.Guna2Button();
             this.calendarButton = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.bgPanel = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.displayPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.animateTimer = new System.Windows.Forms.Timer(this.components);
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.fadeIn = new System.Windows.Forms.Timer(this.components);
+            this.fadeOut = new System.Windows.Forms.Timer(this.components);
             this.windowsPanel.SuspendLayout();
             this.navBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.usericonPicture)).BeginInit();
@@ -441,6 +443,13 @@
             this.panel2.Size = new System.Drawing.Size(821, 601);
             this.panel2.TabIndex = 13;
             // 
+            // panel4
+            // 
+            this.panel4.Location = new System.Drawing.Point(3, 567);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(86, 67);
+            this.panel4.TabIndex = 0;
+            // 
             // bgPanel
             // 
             this.bgPanel.BackColor = System.Drawing.Color.Transparent;
@@ -472,12 +481,16 @@
             this.animateTimer.Interval = 10;
             this.animateTimer.Tick += new System.EventHandler(this.animateTimer_Tick);
             // 
-            // panel4
+            // fadeIn
             // 
-            this.panel4.Location = new System.Drawing.Point(3, 567);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(86, 67);
-            this.panel4.TabIndex = 0;
+            this.fadeIn.Enabled = true;
+            this.fadeIn.Interval = 50;
+            this.fadeIn.Tick += new System.EventHandler(this.fadeIn_Tick);
+            // 
+            // fadeOut
+            // 
+            this.fadeOut.Interval = 50;
+            this.fadeOut.Tick += new System.EventHandler(this.fadeOut_Tick);
             // 
             // Main
             // 
@@ -491,6 +504,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Main";
+            this.Opacity = 0D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
             this.Load += new System.EventHandler(this.Main_Load);
@@ -535,6 +549,8 @@
         private Guna.UI2.WinForms.Guna2Button moodtrackerButton;
         private Guna.UI2.WinForms.Guna2Button calendarButton;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Timer fadeIn;
+        private System.Windows.Forms.Timer fadeOut;
     }
 }
 

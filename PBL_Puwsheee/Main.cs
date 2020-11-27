@@ -112,7 +112,7 @@ namespace PBL_Puwsheee
 
         private void exitPuwshee(object sender, EventArgs e)
         {
-            Control.Exit();
+            fadeOut.Start();
         }
 
         private void clickOptions(object sender, EventArgs e)
@@ -170,6 +170,14 @@ namespace PBL_Puwsheee
             }
         }
 
+        private void fadeIn_Tick(object sender, EventArgs e)
+        {
+            Fade.fadeInEffect(this, fadeIn);
+        }
 
+        private void fadeOut_Tick(object sender, EventArgs e)
+        {
+            Fade.exitFade(this);
+        }
     }
 }
