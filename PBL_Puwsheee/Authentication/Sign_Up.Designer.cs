@@ -733,6 +733,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Sign_Up";
+            this.Opacity = 0D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Sign_Up_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

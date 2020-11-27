@@ -85,6 +85,8 @@ namespace PBL_Puwsheee
         private void signupButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             fadeOut.Start();
+            Sign_Up su = new Sign_Up();
+            su.Show();
         }
         protected override CreateParams CreateParams // double buffeirng daw sabi ni google 
         {
@@ -116,14 +118,7 @@ namespace PBL_Puwsheee
 
         private void fadeOut_Tick(object sender, EventArgs e)
         {
-            if (this.Opacity == 0)
-            {
-                fadeOut.Enabled = false;
-                Sign_Up su = new Sign_Up();
-                su.Show();
-                this.Hide();
-            }
-            this.Opacity -= .2;
+            Fade.fadeOutEffect(this);
         }
 
         private void Log_In_Load(object sender, EventArgs e)
