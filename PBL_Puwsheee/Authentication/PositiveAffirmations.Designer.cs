@@ -65,7 +65,7 @@
             // fadeIn
             // 
             this.fadeIn.Enabled = true;
-            this.fadeIn.Interval = 5;
+            this.fadeIn.Interval = 3;
             this.fadeIn.Tick += new System.EventHandler(this.fadeInTick);
             // 
             // PositiveAffirmations
