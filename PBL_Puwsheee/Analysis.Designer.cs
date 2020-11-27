@@ -229,7 +229,7 @@
             this.resetButton.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
             this.resetButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.resetButton.HoverState.Parent = this.resetButton;
-            this.resetButton.Location = new System.Drawing.Point(538, 538);
+            this.resetButton.Location = new System.Drawing.Point(532, 541);
             this.resetButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.resetButton.Name = "resetButton";
             this.resetButton.ShadowDecoration.Parent = this.resetButton;
