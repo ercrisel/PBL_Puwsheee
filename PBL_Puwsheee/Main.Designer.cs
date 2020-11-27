@@ -484,7 +484,7 @@
             // fadeIn
             // 
             this.fadeIn.Enabled = true;
-            this.fadeIn.Interval = 50;
+            this.fadeIn.Interval = 30;
             this.fadeIn.Tick += new System.EventHandler(this.fadeIn_Tick);
             // 
             // fadeOut

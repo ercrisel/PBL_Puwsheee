@@ -37,16 +37,16 @@
             this.usernameTextbox = new Guna.UI2.WinForms.Guna2TextBox();
             this.textLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.signupButton = new System.Windows.Forms.LinkLabel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.requiredUsername = new System.Windows.Forms.Label();
             this.requiredPassword = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.fadeIn = new System.Windows.Forms.Timer(this.components);
             this.fadeOut = new System.Windows.Forms.Timer(this.components);
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.signUpLabel = new System.Windows.Forms.LinkLabel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // passwordTextbox
@@ -184,16 +184,6 @@
             this.signupButton.Text = "Sign Up";
             this.signupButton.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.signupButton_LinkClicked);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::PBL_Puwsheee.Properties.Resources.Puwshee;
-            this.pictureBox2.Location = new System.Drawing.Point(378, 188);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(250, 250);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 19;
-            this.pictureBox2.TabStop = false;
-            // 
             // requiredUsername
             // 
             this.requiredUsername.AutoSize = true;
@@ -218,6 +208,36 @@
             this.requiredPassword.Text = "* THIS IS A REQUIRED FIELD";
             this.requiredPassword.Visible = false;
             // 
+            // fadeIn
+            // 
+            this.fadeIn.Enabled = true;
+            this.fadeIn.Interval = 30;
+            this.fadeIn.Tick += new System.EventHandler(this.fadeIn_Tick);
+            // 
+            // fadeOut
+            // 
+            this.fadeOut.Interval = 40;
+            this.fadeOut.Tick += new System.EventHandler(this.fadeOut_Tick);
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Typo Round Bold Demo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(91, 396);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(142, 17);
+            this.guna2HtmlLabel1.TabIndex = 40;
+            this.guna2HtmlLabel1.Text = "Don\'t have an account?";
+            // 
+            // signUpLabel
+            // 
+            this.signUpLabel.Location = new System.Drawing.Point(0, 0);
+            this.signUpLabel.Name = "signUpLabel";
+            this.signUpLabel.Size = new System.Drawing.Size(100, 23);
+            this.signUpLabel.TabIndex = 0;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -229,27 +249,15 @@
             this.pictureBox1.TabIndex = 39;
             this.pictureBox1.TabStop = false;
             // 
-            // fadeIn
+            // pictureBox2
             // 
-            this.fadeIn.Enabled = true;
-            this.fadeIn.Interval = 50;
-            this.fadeIn.Tick += new System.EventHandler(this.fadeIn_Tick);
-            // 
-            // fadeOut
-            // 
-            this.fadeOut.Tick += new System.EventHandler(this.fadeOut_Tick);
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Typo Round Bold Demo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(91, 396);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(142, 17);
-            this.guna2HtmlLabel1.TabIndex = 40;
-            this.guna2HtmlLabel1.Text = "Don\'t have an account?";
+            this.pictureBox2.Image = global::PBL_Puwsheee.Properties.Resources.Puwshee;
+            this.pictureBox2.Location = new System.Drawing.Point(378, 188);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(250, 250);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 19;
+            this.pictureBox2.TabStop = false;
             // 
             // Log_In
             // 
@@ -274,11 +282,11 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Log_In";
             this.Opacity = 0D;
-            this.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Padding = new System.Windows.Forms.Padding(5);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Log_In";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
