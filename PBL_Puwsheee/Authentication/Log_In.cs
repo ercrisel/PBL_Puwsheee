@@ -125,5 +125,12 @@ namespace PBL_Puwsheee
         {
 
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Sign_Up su = new Sign_Up();
+            su.Show();
+            this.Close();
+        }
     }
 }
