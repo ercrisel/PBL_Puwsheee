@@ -59,9 +59,9 @@ namespace PBL_Puwsheee
 
         private void backButton_Click(object sender, EventArgs e)
         {
+            fadeOut.Start();
             Log_In login = new Log_In();
             login.Show();
-            this.Close();
         }
         public void showCode()
         {
@@ -96,14 +96,15 @@ namespace PBL_Puwsheee
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            fadeOut.Start();
             Log_In li = new Log_In();
             li.Show();
-            this.Close();
         }
 
         // pag nag load si form
         private void Sign_Up_Load(object sender, EventArgs e)
         {
+            fadeIn.Start();
             var projectPath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
             string filePath = Path.Combine(projectPath, "Resources");
             string location = filePath + "\\SamplePhoto.png";
@@ -117,12 +118,12 @@ namespace PBL_Puwsheee
             if (passwordTextbox.PasswordChar == '*')
             {
                 passwordTextbox.PasswordChar = confirmPasswordTextbox.PasswordChar = '\0';
-                showPasswordButton.Text = "Hide Password ";
+                showPasswordIcon.Text = "Hide Password ";
             }
             else
             {
                 passwordTextbox.PasswordChar = confirmPasswordTextbox.PasswordChar = '*';
-                showPasswordButton.Text = "Show Password EYE ICON";
+                showPasswordIcon.Text = "Show Password EYE ICON";
             }
         }
         // pag nag input check mo kung lahat chars sa firstname
@@ -190,6 +191,7 @@ namespace PBL_Puwsheee
             {
                 MessageBox.Show("Success", "Account Created");
                 user.UploadEntriesToDatabase();
+                fadeOut.Start();
                 Log_In li = new Log_In();
                 li.Show();
             }
@@ -199,29 +201,14 @@ namespace PBL_Puwsheee
             }
         }
 
-        private void firstNameCondition_Click(object sender, EventArgs e)
+        private void fadeIn_Tick(object sender, EventArgs e)
         {
-
+            Fade.fadeInEffect(this, fadeIn);
         }
 
-        private void requiredFirstName_Click(object sender, EventArgs e)
+        private void fadeOut_Tick(object sender, EventArgs e)
         {
-
-        }
-
-        private void emailCondition_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void requiredEmail_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lastNameCondition_Click(object sender, EventArgs e)
-        {
-
+            Fade.fadeOutEffect(this);
         }
     }
 }

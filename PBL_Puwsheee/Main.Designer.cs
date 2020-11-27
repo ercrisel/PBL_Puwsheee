@@ -302,6 +302,7 @@
             // 
             this.playablesButton.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Playables;
             this.playablesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.playablesButton.BorderRadius = 10;
             this.playablesButton.CheckedState.Parent = this.playablesButton;
             this.playablesButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.playablesButton.CustomImages.Parent = this.playablesButton;
@@ -322,6 +323,7 @@
             // 
             this.analysisButton.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Analysis;
             this.analysisButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.analysisButton.BorderRadius = 10;
             this.analysisButton.CheckedState.Parent = this.analysisButton;
             this.analysisButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.analysisButton.CustomImages.Parent = this.analysisButton;
@@ -360,6 +362,7 @@
             // 
             this.testButton.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Test;
             this.testButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.testButton.BorderRadius = 10;
             this.testButton.CheckedState.Parent = this.testButton;
             this.testButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.testButton.CustomImages.Parent = this.testButton;
@@ -380,6 +383,7 @@
             // 
             this.visualizationButton.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.visualization;
             this.visualizationButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.visualizationButton.BorderRadius = 10;
             this.visualizationButton.CheckedState.Parent = this.visualizationButton;
             this.visualizationButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.visualizationButton.CustomImages.Parent = this.visualizationButton;
@@ -400,6 +404,7 @@
             // 
             this.moodtrackerButton.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Mood_Tracker;
             this.moodtrackerButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.moodtrackerButton.BorderRadius = 10;
             this.moodtrackerButton.CheckedState.Parent = this.moodtrackerButton;
             this.moodtrackerButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.moodtrackerButton.CustomImages.Parent = this.moodtrackerButton;
@@ -420,6 +425,7 @@
             // 
             this.calendarButton.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Calendar;
             this.calendarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.calendarButton.BorderRadius = 10;
             this.calendarButton.CheckedState.Parent = this.calendarButton;
             this.calendarButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.calendarButton.CustomImages.Parent = this.calendarButton;
