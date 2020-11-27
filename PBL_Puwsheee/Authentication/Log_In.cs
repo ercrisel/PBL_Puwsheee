@@ -120,5 +120,10 @@ namespace PBL_Puwsheee
         {
             Fade.fadeOutEffect(this);
         }
+
+        private void Log_In_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
