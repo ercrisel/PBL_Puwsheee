@@ -28,7 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
+            this.fadeInBg = new System.Windows.Forms.Timer(this.components);
+            this.fadeInCard = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // button1
@@ -58,5 +61,7 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Timer fadeInBg;
+        private System.Windows.Forms.Timer fadeInCard;
     }
 }

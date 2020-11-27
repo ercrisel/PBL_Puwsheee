@@ -375,7 +375,9 @@
             // 
             this.backButton.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Back;
             this.backButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.backButton.BorderRadius = 10;
             this.backButton.CheckedState.Parent = this.backButton;
+            this.backButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.backButton.CustomImages.Parent = this.backButton;
             this.backButton.FillColor = System.Drawing.Color.Transparent;
             this.backButton.Font = new System.Drawing.Font("Segoe UI", 9F);
