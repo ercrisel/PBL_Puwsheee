@@ -16,5 +16,18 @@ namespace PBL_Puwsheee
         {
             InitializeComponent();
         }
+
+        private void seeresultButton_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            guna2ShadowPanel1.Visible = true;
+            startdateDateTimePicker.Visible = true;
+            enddateDateTimePicker.Visible = true;
+            seeresultButton.Visible = true;
+        }
     }
 }
