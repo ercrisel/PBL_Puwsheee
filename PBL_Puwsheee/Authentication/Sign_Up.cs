@@ -198,5 +198,30 @@ namespace PBL_Puwsheee
                 MessageBox.Show("Wrong Confirmation Code");
             }
         }
+
+        private void firstNameCondition_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void requiredFirstName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void emailCondition_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void requiredEmail_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lastNameCondition_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
