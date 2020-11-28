@@ -151,6 +151,12 @@
     <Compile Include="Playables\EnergizerMeditation.Designer.cs">
       <DependentUpon>EnergizerMeditation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Playables\GratitudeMeditation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Playables\GratitudeMeditation.Designer.cs">
+      <DependentUpon>GratitudeMeditation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Playables\NewBreathing.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +186,12 @@
     </Compile>
     <Compile Include="Playables\Playables_Main.Designer.cs">
       <DependentUpon>Playables_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Playables\RelaxationMeditation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Playables\RelaxationMeditation.Designer.cs">
+      <DependentUpon>RelaxationMeditation.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -287,6 +299,9 @@
     <EmbeddedResource Include="Playables\EnergizerMeditation.resx">
       <DependentUpon>EnergizerMeditation.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Playables\GratitudeMeditation.resx">
+      <DependentUpon>GratitudeMeditation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Playables\NewBreathing.resx">
       <DependentUpon>NewBreathing.cs</DependentUpon>
     </EmbeddedResource>
@@ -301,6 +316,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Playables\Playables_Main.resx">
       <DependentUpon>Playables_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Playables\RelaxationMeditation.resx">
+      <DependentUpon>RelaxationMeditation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -572,6 +590,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Anxiety .wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\energizeClose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\energizePause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\energizePlay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Energizer.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\energizerGIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gratClose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gratitude .wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gratitudeGIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gratPause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gratPlay.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

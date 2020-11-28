@@ -29,21 +29,135 @@ namespace PBL_Puwsheee.Playables
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.fadeOut = new System.Windows.Forms.Timer(this.components);
+            this.fadeIn = new System.Windows.Forms.Timer(this.components);
+            this.playButton = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.pauseButton = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.backButton = new Guna.UI2.WinForms.Guna2Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // fadeOut
+            // 
+            this.fadeOut.Interval = 50;
+            this.fadeOut.Tick += new System.EventHandler(this.fadeOut_Tick);
+            // 
+            // fadeIn
+            // 
+            this.fadeIn.Enabled = true;
+            this.fadeIn.Interval = 30;
+            this.fadeIn.Tick += new System.EventHandler(this.fadeIn_Tick);
+            // 
+            // playButton
+            // 
+            this.playButton.BackColor = System.Drawing.Color.Transparent;
+            this.playButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.playButton.CheckedState.Parent = this.playButton;
+            this.playButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.playButton.CustomImages.Parent = this.playButton;
+            this.playButton.FillColor = System.Drawing.Color.Transparent;
+            this.playButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.playButton.ForeColor = System.Drawing.Color.White;
+            this.playButton.HoverState.Parent = this.playButton;
+            this.playButton.Image = global::PBL_Puwsheee.Properties.Resources.energizePlay;
+            this.playButton.ImageOffset = new System.Drawing.Point(1, 0);
+            this.playButton.ImageSize = new System.Drawing.Size(95, 95);
+            this.playButton.Location = new System.Drawing.Point(474, 220);
+            this.playButton.Name = "playButton";
+            this.playButton.PressedColor = System.Drawing.Color.DarkGray;
+            this.playButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.playButton.ShadowDecoration.Parent = this.playButton;
+            this.playButton.Size = new System.Drawing.Size(96, 95);
+            this.playButton.TabIndex = 42;
+            this.playButton.UseTransparentBackground = true;
+            this.playButton.Click += new System.EventHandler(this.play_Click);
+            // 
+            // pauseButton
+            // 
+            this.pauseButton.BackColor = System.Drawing.Color.Transparent;
+            this.pauseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pauseButton.CheckedState.Parent = this.pauseButton;
+            this.pauseButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pauseButton.CustomImages.Parent = this.pauseButton;
+            this.pauseButton.FillColor = System.Drawing.Color.Transparent;
+            this.pauseButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.pauseButton.ForeColor = System.Drawing.Color.White;
+            this.pauseButton.HoverState.Parent = this.pauseButton;
+            this.pauseButton.Image = global::PBL_Puwsheee.Properties.Resources.energizePause;
+            this.pauseButton.ImageOffset = new System.Drawing.Point(1, 0);
+            this.pauseButton.ImageSize = new System.Drawing.Size(95, 95);
+            this.pauseButton.Location = new System.Drawing.Point(474, 220);
+            this.pauseButton.Name = "pauseButton";
+            this.pauseButton.PressedColor = System.Drawing.Color.DarkGray;
+            this.pauseButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.pauseButton.ShadowDecoration.Parent = this.pauseButton;
+            this.pauseButton.Size = new System.Drawing.Size(96, 95);
+            this.pauseButton.TabIndex = 41;
+            this.pauseButton.UseTransparentBackground = true;
+            this.pauseButton.Visible = false;
+            this.pauseButton.Click += new System.EventHandler(this.pause_Click);
+            // 
+            // backButton
+            // 
+            this.backButton.BackColor = System.Drawing.Color.Transparent;
+            this.backButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.backButton.BorderRadius = 5;
+            this.backButton.CheckedState.Parent = this.backButton;
+            this.backButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.backButton.CustomImages.Parent = this.backButton;
+            this.backButton.FillColor = System.Drawing.Color.Transparent;
+            this.backButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.backButton.ForeColor = System.Drawing.Color.White;
+            this.backButton.HoverState.Parent = this.backButton;
+            this.backButton.Image = global::PBL_Puwsheee.Properties.Resources.energizeClose;
+            this.backButton.ImageOffset = new System.Drawing.Point(1, 0);
+            this.backButton.ImageSize = new System.Drawing.Size(65, 65);
+            this.backButton.Location = new System.Drawing.Point(972, 12);
+            this.backButton.Name = "backButton";
+            this.backButton.ShadowDecoration.Parent = this.backButton;
+            this.backButton.Size = new System.Drawing.Size(36, 35);
+            this.backButton.TabIndex = 38;
+            this.backButton.UseTransparentBackground = true;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PBL_Puwsheee.Properties.Resources.energizerGIF;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1021, 614);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 27;
+            this.pictureBox1.TabStop = false;
             // 
             // EnergizerMeditation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1004, 571);
+            this.ClientSize = new System.Drawing.Size(1020, 610);
+            this.Controls.Add(this.playButton);
+            this.Controls.Add(this.pauseButton);
+            this.Controls.Add(this.backButton);
+            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "EnergizerMeditation";
             this.Opacity = 0D;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EnergizerMeditation";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Timer fadeOut;
+        private System.Windows.Forms.Timer fadeIn;
+        private Guna.UI2.WinForms.Guna2Button backButton;
+        private Guna.UI2.WinForms.Guna2CircleButton playButton;
+        private Guna.UI2.WinForms.Guna2CircleButton pauseButton;
     }
 }

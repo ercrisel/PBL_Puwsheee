@@ -40,5 +40,23 @@ namespace PBL_Puwsheee.Playables
             AnxietyMeditation anxietyForm = new AnxietyMeditation();
             anxietyForm.Show();
         }
+
+        private void energizerLabel_Click(object sender, EventArgs e)
+        {
+            EnergizerMeditation energizerForm = new EnergizerMeditation();
+            energizerForm.Show();
+        }
+
+        private void gratitudeLabel_Click(object sender, EventArgs e)
+        {
+            GratitudeMeditation gratitudeForm = new GratitudeMeditation();
+            gratitudeForm.Show();
+        }
+
+        private void relaxationLabel_Click(object sender, EventArgs e)
+        {
+            RelaxationMeditation relaxationForm = new RelaxationMeditation();
+            relaxationForm.Show();
+        }
     }
 }

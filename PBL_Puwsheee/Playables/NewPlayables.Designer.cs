@@ -32,31 +32,31 @@ namespace PBL_Puwsheee.Playables
             this.breathingPanel = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.breathingButton = new Guna.UI2.WinForms.Guna2Button();
             this.breathingLabel = new System.Windows.Forms.Label();
+            this.breathingPic = new System.Windows.Forms.PictureBox();
             this.musicPanel = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.musicButton = new Guna.UI2.WinForms.Guna2Button();
             this.musicLabel = new System.Windows.Forms.Label();
+            this.musicPic = new System.Windows.Forms.PictureBox();
             this.naturePanel = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.natureButton = new Guna.UI2.WinForms.Guna2Button();
             this.natureLabel = new System.Windows.Forms.Label();
+            this.naturePicture = new System.Windows.Forms.PictureBox();
             this.meditationPanel = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.energizerLabel = new System.Windows.Forms.Label();
             this.wakeUpLabel = new System.Windows.Forms.Label();
             this.relaxationLabel = new System.Windows.Forms.Label();
             this.gratitudeLabel = new System.Windows.Forms.Label();
             this.anxietyLabel = new System.Windows.Forms.Label();
-            this.meditationLabel = new System.Windows.Forms.Label();
             this.meditationPicture = new System.Windows.Forms.PictureBox();
-            this.naturePicture = new System.Windows.Forms.PictureBox();
-            this.musicPic = new System.Windows.Forms.PictureBox();
-            this.breathingPic = new System.Windows.Forms.PictureBox();
+            this.meditationLabel = new System.Windows.Forms.Label();
             this.breathingPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.breathingPic)).BeginInit();
             this.musicPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.musicPic)).BeginInit();
             this.naturePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.naturePicture)).BeginInit();
             this.meditationPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.meditationPicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.naturePicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.musicPic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.breathingPic)).BeginInit();
             this.SuspendLayout();
             // 
             // breathingPanel
@@ -104,6 +104,16 @@ namespace PBL_Puwsheee.Playables
             this.breathingLabel.TabIndex = 0;
             this.breathingLabel.Text = "Breathing Exercise";
             // 
+            // breathingPic
+            // 
+            this.breathingPic.Image = global::PBL_Puwsheee.Properties.Resources.medidatePic;
+            this.breathingPic.Location = new System.Drawing.Point(120, -40);
+            this.breathingPic.Name = "breathingPic";
+            this.breathingPic.Size = new System.Drawing.Size(355, 196);
+            this.breathingPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.breathingPic.TabIndex = 1;
+            this.breathingPic.TabStop = false;
+            // 
             // musicPanel
             // 
             this.musicPanel.BackColor = System.Drawing.Color.Transparent;
@@ -148,6 +158,16 @@ namespace PBL_Puwsheee.Playables
             this.musicLabel.Size = new System.Drawing.Size(86, 34);
             this.musicLabel.TabIndex = 0;
             this.musicLabel.Text = "Music";
+            // 
+            // musicPic
+            // 
+            this.musicPic.Image = global::PBL_Puwsheee.Properties.Resources.musicPic;
+            this.musicPic.Location = new System.Drawing.Point(21, 10);
+            this.musicPic.Name = "musicPic";
+            this.musicPic.Size = new System.Drawing.Size(204, 138);
+            this.musicPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.musicPic.TabIndex = 1;
+            this.musicPic.TabStop = false;
             // 
             // naturePanel
             // 
@@ -194,6 +214,16 @@ namespace PBL_Puwsheee.Playables
             this.natureLabel.TabIndex = 0;
             this.natureLabel.Text = "Nature";
             // 
+            // naturePicture
+            // 
+            this.naturePicture.Image = global::PBL_Puwsheee.Properties.Resources.naturePic;
+            this.naturePicture.Location = new System.Drawing.Point(12, -22);
+            this.naturePicture.Name = "naturePicture";
+            this.naturePicture.Size = new System.Drawing.Size(223, 154);
+            this.naturePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.naturePicture.TabIndex = 1;
+            this.naturePicture.TabStop = false;
+            // 
             // meditationPanel
             // 
             this.meditationPanel.BackColor = System.Drawing.Color.Transparent;
@@ -224,6 +254,7 @@ namespace PBL_Puwsheee.Playables
             this.energizerLabel.Size = new System.Drawing.Size(90, 22);
             this.energizerLabel.TabIndex = 0;
             this.energizerLabel.Text = "Energizer";
+            this.energizerLabel.Click += new System.EventHandler(this.energizerLabel_Click);
             // 
             // wakeUpLabel
             // 
@@ -248,6 +279,7 @@ namespace PBL_Puwsheee.Playables
             this.relaxationLabel.Size = new System.Drawing.Size(102, 22);
             this.relaxationLabel.TabIndex = 0;
             this.relaxationLabel.Text = "Relaxation";
+            this.relaxationLabel.Click += new System.EventHandler(this.relaxationLabel_Click);
             // 
             // gratitudeLabel
             // 
@@ -260,6 +292,7 @@ namespace PBL_Puwsheee.Playables
             this.gratitudeLabel.Size = new System.Drawing.Size(93, 22);
             this.gratitudeLabel.TabIndex = 0;
             this.gratitudeLabel.Text = "Gratitude";
+            this.gratitudeLabel.Click += new System.EventHandler(this.gratitudeLabel_Click);
             // 
             // anxietyLabel
             // 
@@ -274,17 +307,6 @@ namespace PBL_Puwsheee.Playables
             this.anxietyLabel.Text = "Anxiety";
             this.anxietyLabel.Click += new System.EventHandler(this.anxietyLabel_Click);
             // 
-            // meditationLabel
-            // 
-            this.meditationLabel.AutoSize = true;
-            this.meditationLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.meditationLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.meditationLabel.Location = new System.Drawing.Point(21, 19);
-            this.meditationLabel.Name = "meditationLabel";
-            this.meditationLabel.Size = new System.Drawing.Size(156, 34);
-            this.meditationLabel.TabIndex = 0;
-            this.meditationLabel.Text = "Meditation";
-            // 
             // meditationPicture
             // 
             this.meditationPicture.Image = global::PBL_Puwsheee.Properties.Resources.breathingPic;
@@ -295,35 +317,16 @@ namespace PBL_Puwsheee.Playables
             this.meditationPicture.TabIndex = 1;
             this.meditationPicture.TabStop = false;
             // 
-            // naturePicture
+            // meditationLabel
             // 
-            this.naturePicture.Image = global::PBL_Puwsheee.Properties.Resources.naturePic;
-            this.naturePicture.Location = new System.Drawing.Point(12, -22);
-            this.naturePicture.Name = "naturePicture";
-            this.naturePicture.Size = new System.Drawing.Size(223, 154);
-            this.naturePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.naturePicture.TabIndex = 1;
-            this.naturePicture.TabStop = false;
-            // 
-            // musicPic
-            // 
-            this.musicPic.Image = global::PBL_Puwsheee.Properties.Resources.musicPic;
-            this.musicPic.Location = new System.Drawing.Point(21, 10);
-            this.musicPic.Name = "musicPic";
-            this.musicPic.Size = new System.Drawing.Size(204, 138);
-            this.musicPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.musicPic.TabIndex = 1;
-            this.musicPic.TabStop = false;
-            // 
-            // breathingPic
-            // 
-            this.breathingPic.Image = global::PBL_Puwsheee.Properties.Resources.medidatePic;
-            this.breathingPic.Location = new System.Drawing.Point(120, -40);
-            this.breathingPic.Name = "breathingPic";
-            this.breathingPic.Size = new System.Drawing.Size(355, 196);
-            this.breathingPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.breathingPic.TabIndex = 1;
-            this.breathingPic.TabStop = false;
+            this.meditationLabel.AutoSize = true;
+            this.meditationLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.meditationLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.meditationLabel.Location = new System.Drawing.Point(21, 19);
+            this.meditationLabel.Name = "meditationLabel";
+            this.meditationLabel.Size = new System.Drawing.Size(156, 34);
+            this.meditationLabel.TabIndex = 0;
+            this.meditationLabel.Text = "Meditation";
             // 
             // NewPlayables
             // 
@@ -340,16 +343,16 @@ namespace PBL_Puwsheee.Playables
             this.Text = "NewPlayables";
             this.breathingPanel.ResumeLayout(false);
             this.breathingPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.breathingPic)).EndInit();
             this.musicPanel.ResumeLayout(false);
             this.musicPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.musicPic)).EndInit();
             this.naturePanel.ResumeLayout(false);
             this.naturePanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.naturePicture)).EndInit();
             this.meditationPanel.ResumeLayout(false);
             this.meditationPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.meditationPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.naturePicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.musicPic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.breathingPic)).EndInit();
             this.ResumeLayout(false);
 
         }
