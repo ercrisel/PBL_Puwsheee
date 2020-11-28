@@ -125,12 +125,12 @@ namespace PBL_Puwsheee
 
         private void minimizePuwshee(object sender, EventArgs e)
         {
-            Control.Minimize(this);
+            this.WindowState = FormWindowState.Minimized;
         }
 
         private void maximizePuwshee(object sender, EventArgs e)
         {
-            Control.DoFullscreen(this);
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void navBarPanelHover(object sender, EventArgs e)

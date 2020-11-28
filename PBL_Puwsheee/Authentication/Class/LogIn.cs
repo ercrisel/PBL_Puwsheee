@@ -38,6 +38,7 @@ namespace PBL_Puwsheee.Authentication.Class
                 required.Visible = true;
             }
         }
+        
         public bool checkIfAccountInDatabase()
         {
             bool mayAcc = false;
@@ -61,6 +62,6 @@ namespace PBL_Puwsheee.Authentication.Class
             }
             return mayAcc;
         }
-
+        
     }
 }
