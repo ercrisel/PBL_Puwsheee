@@ -58,7 +58,7 @@ namespace PBL_Puwsheee
            // usernameLabel.Text = username;
           //  user.Username = username;
             //user.LoadPicture(usericonPicture);
-            indicatorButton.Location = new Point(47, 131);
+            indicatorButton.Location = new Point(46, 130);
         }
 
         private void openChildForm(Form childForm)
@@ -77,37 +77,37 @@ namespace PBL_Puwsheee
         private void clickMoodTracker(object sender, EventArgs e)
         {
             openChildForm(new MoodTracker());
-            indicatorButton.Location = new Point(47, 131);
+            indicatorButton.Location = new Point(46, 130);
         }
 
         private void clickCalendar(object sender, EventArgs e)
         {
             openChildForm(new Calendar_Main());
-            indicatorButton.Location = new Point(47, 186);
+            indicatorButton.Location = new Point(46, 186);
         }
         
         private void clickAnalysis(object sender, EventArgs e)
         {
             openChildForm(new Analysis());
-            indicatorButton.Location = new Point(44, 244);
+            indicatorButton.Location = new Point(46, 244);
         }
 
         private void clickTest(object sender, EventArgs e)
         {
             openChildForm(new Test.Test_Main());
-            indicatorButton.Location = new Point(47, 309);
+            indicatorButton.Location = new Point(46, 309);
         }
 
         private void clickPlayables(object sender, EventArgs e)
         {
             openChildForm(new Playables.NewPlayables());
-            indicatorButton.Location = new Point(47, 369);
+            indicatorButton.Location = new Point(46, 369);
         }
 
         private void clickVisualization(object sender, EventArgs e)
         {
             openChildForm(new MainVisualization());
-            indicatorButton.Location = new Point(47, 428);
+            indicatorButton.Location = new Point(46, 428);
         }
 
         private void exitPuwshee(object sender, EventArgs e)

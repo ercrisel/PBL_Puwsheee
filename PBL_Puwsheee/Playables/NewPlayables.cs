@@ -22,5 +22,11 @@ namespace PBL_Puwsheee.Playables
             NewBreathing breathingForm = new NewBreathing();
             breathingForm.Show();
         }
+
+        private void musicButton_Click(object sender, EventArgs e)
+        {
+            NewMusic musicForm = new NewMusic();
+            musicForm.Show();
+        }
     }
 }

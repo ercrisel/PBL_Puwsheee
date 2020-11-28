@@ -145,11 +145,23 @@
     <Compile Include="Playables\NewBreathing.Designer.cs">
       <DependentUpon>NewBreathing.cs</DependentUpon>
     </Compile>
+    <Compile Include="Playables\NewMusic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Playables\NewMusic.Designer.cs">
+      <DependentUpon>NewMusic.cs</DependentUpon>
+    </Compile>
     <Compile Include="Playables\NewPlayables.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Playables\NewPlayables.Designer.cs">
       <DependentUpon>NewPlayables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Playables\NewRain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Playables\NewRain.Designer.cs">
+      <DependentUpon>NewRain.cs</DependentUpon>
     </Compile>
     <Compile Include="Playables\Playables_Main.cs">
       <SubType>Form</SubType>
@@ -164,6 +176,11 @@
     </Compile>
     <Compile Include="Authentication\Sign_Up.Designer.cs">
       <DependentUpon>Sign_Up.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Settings\Clear_Data.cs">
       <SubType>Form</SubType>
@@ -255,8 +272,14 @@
     <EmbeddedResource Include="Playables\NewBreathing.resx">
       <DependentUpon>NewBreathing.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Playables\NewMusic.resx">
+      <DependentUpon>NewMusic.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Playables\NewPlayables.resx">
       <DependentUpon>NewPlayables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Playables\NewRain.resx">
+      <DependentUpon>NewRain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Playables\Playables_Main.resx">
       <DependentUpon>Playables_Main.cs</DependentUpon>
@@ -264,6 +287,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Authentication\Sign_Up.resx">
       <DependentUpon>Sign_Up.cs</DependentUpon>
@@ -488,6 +512,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\X.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\And So It Begins - Artificial Music.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musicBackground.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musicClose.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musicPause.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musicPlay.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rainPlay.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rainPause.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rainClose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rainGIF.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
