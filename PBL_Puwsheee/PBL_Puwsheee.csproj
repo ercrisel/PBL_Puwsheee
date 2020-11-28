@@ -133,18 +133,6 @@
     <Compile Include="Playables\AnxietyMeditation.Designer.cs">
       <DependentUpon>AnxietyMeditation.cs</DependentUpon>
     </Compile>
-    <Compile Include="Playables\Breathing_Exercise.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Playables\Breathing_Exercise.Designer.cs">
-      <DependentUpon>Breathing_Exercise.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Playables\Calming_Music.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Playables\Calming_Music.Designer.cs">
-      <DependentUpon>Calming_Music.cs</DependentUpon>
-    </Compile>
     <Compile Include="Playables\EnergizerMeditation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,12 +168,6 @@
     </Compile>
     <Compile Include="Playables\NewRain.Designer.cs">
       <DependentUpon>NewRain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Playables\Playables_Main.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Playables\Playables_Main.Designer.cs">
-      <DependentUpon>Playables_Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Playables\RelaxationMeditation.cs">
       <SubType>Form</SubType>
@@ -290,12 +272,6 @@
     <EmbeddedResource Include="Playables\AnxietyMeditation.resx">
       <DependentUpon>AnxietyMeditation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Playables\Breathing_Exercise.resx">
-      <DependentUpon>Breathing_Exercise.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Playables\Calming_Music.resx">
-      <DependentUpon>Calming_Music.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Playables\EnergizerMeditation.resx">
       <DependentUpon>EnergizerMeditation.cs</DependentUpon>
     </EmbeddedResource>
@@ -313,9 +289,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Playables\NewRain.resx">
       <DependentUpon>NewRain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Playables\Playables_Main.resx">
-      <DependentUpon>Playables_Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Playables\RelaxationMeditation.resx">
       <DependentUpon>RelaxationMeditation.cs</DependentUpon>

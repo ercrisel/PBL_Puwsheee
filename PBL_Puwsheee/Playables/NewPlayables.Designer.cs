@@ -43,7 +43,6 @@ namespace PBL_Puwsheee.Playables
             this.naturePicture = new System.Windows.Forms.PictureBox();
             this.meditationPanel = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.energizerLabel = new System.Windows.Forms.Label();
-            this.wakeUpLabel = new System.Windows.Forms.Label();
             this.relaxationLabel = new System.Windows.Forms.Label();
             this.gratitudeLabel = new System.Windows.Forms.Label();
             this.anxietyLabel = new System.Windows.Forms.Label();
@@ -228,7 +227,6 @@ namespace PBL_Puwsheee.Playables
             // 
             this.meditationPanel.BackColor = System.Drawing.Color.Transparent;
             this.meditationPanel.Controls.Add(this.energizerLabel);
-            this.meditationPanel.Controls.Add(this.wakeUpLabel);
             this.meditationPanel.Controls.Add(this.relaxationLabel);
             this.meditationPanel.Controls.Add(this.gratitudeLabel);
             this.meditationPanel.Controls.Add(this.anxietyLabel);
@@ -249,24 +247,12 @@ namespace PBL_Puwsheee.Playables
             this.energizerLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.energizerLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.energizerLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.energizerLabel.Location = new System.Drawing.Point(30, 98);
+            this.energizerLabel.Location = new System.Drawing.Point(23, 106);
             this.energizerLabel.Name = "energizerLabel";
             this.energizerLabel.Size = new System.Drawing.Size(90, 22);
             this.energizerLabel.TabIndex = 0;
             this.energizerLabel.Text = "Energizer";
             this.energizerLabel.Click += new System.EventHandler(this.energizerLabel_Click);
-            // 
-            // wakeUpLabel
-            // 
-            this.wakeUpLabel.AutoSize = true;
-            this.wakeUpLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.wakeUpLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wakeUpLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.wakeUpLabel.Location = new System.Drawing.Point(30, 207);
-            this.wakeUpLabel.Name = "wakeUpLabel";
-            this.wakeUpLabel.Size = new System.Drawing.Size(87, 22);
-            this.wakeUpLabel.TabIndex = 0;
-            this.wakeUpLabel.Text = "Wake Up";
             // 
             // relaxationLabel
             // 
@@ -274,7 +260,7 @@ namespace PBL_Puwsheee.Playables
             this.relaxationLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.relaxationLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.relaxationLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.relaxationLabel.Location = new System.Drawing.Point(30, 170);
+            this.relaxationLabel.Location = new System.Drawing.Point(23, 178);
             this.relaxationLabel.Name = "relaxationLabel";
             this.relaxationLabel.Size = new System.Drawing.Size(102, 22);
             this.relaxationLabel.TabIndex = 0;
@@ -287,7 +273,7 @@ namespace PBL_Puwsheee.Playables
             this.gratitudeLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gratitudeLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gratitudeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.gratitudeLabel.Location = new System.Drawing.Point(30, 135);
+            this.gratitudeLabel.Location = new System.Drawing.Point(23, 143);
             this.gratitudeLabel.Name = "gratitudeLabel";
             this.gratitudeLabel.Size = new System.Drawing.Size(93, 22);
             this.gratitudeLabel.TabIndex = 0;
@@ -300,7 +286,7 @@ namespace PBL_Puwsheee.Playables
             this.anxietyLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.anxietyLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.anxietyLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.anxietyLabel.Location = new System.Drawing.Point(30, 64);
+            this.anxietyLabel.Location = new System.Drawing.Point(23, 72);
             this.anxietyLabel.Name = "anxietyLabel";
             this.anxietyLabel.Size = new System.Drawing.Size(73, 22);
             this.anxietyLabel.TabIndex = 0;
@@ -369,7 +355,6 @@ namespace PBL_Puwsheee.Playables
         private System.Windows.Forms.Label natureLabel;
         private System.Windows.Forms.PictureBox naturePicture;
         private Guna.UI2.WinForms.Guna2ShadowPanel meditationPanel;
-        private System.Windows.Forms.Label wakeUpLabel;
         private System.Windows.Forms.Label relaxationLabel;
         private System.Windows.Forms.PictureBox meditationPicture;
         private System.Windows.Forms.Label gratitudeLabel;

@@ -57,7 +57,7 @@ namespace PBL_Puwsheee.Playables
             // fadeIn
             // 
             this.fadeIn.Enabled = true;
-            this.fadeIn.Interval = 30;
+            this.fadeIn.Interval = 50;
             this.fadeIn.Tick += new System.EventHandler(this.fadeIn_Tick);
             // 
             // playButton
@@ -130,7 +130,7 @@ namespace PBL_Puwsheee.Playables
             this.backButton.Size = new System.Drawing.Size(36, 35);
             this.backButton.TabIndex = 43;
             this.backButton.UseTransparentBackground = true;
-            this.backButton.Click += new System.EventHandler(this.pause_Click);
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
             // RelaxationMeditation
             // 
@@ -143,6 +143,8 @@ namespace PBL_Puwsheee.Playables
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RelaxationMeditation";
+            this.Opacity = 0D;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RelaxationMeditation";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
