@@ -139,6 +139,18 @@
     <Compile Include="Playables\Calming_Music.Designer.cs">
       <DependentUpon>Calming_Music.cs</DependentUpon>
     </Compile>
+    <Compile Include="Playables\NewBreathing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Playables\NewBreathing.Designer.cs">
+      <DependentUpon>NewBreathing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Playables\NewPlayables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Playables\NewPlayables.Designer.cs">
+      <DependentUpon>NewPlayables.cs</DependentUpon>
+    </Compile>
     <Compile Include="Playables\Playables_Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,11 +164,6 @@
     </Compile>
     <Compile Include="Authentication\Sign_Up.Designer.cs">
       <DependentUpon>Sign_Up.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Settings\Clear_Data.cs">
       <SubType>Form</SubType>
@@ -245,13 +252,18 @@
     <EmbeddedResource Include="Playables\Calming_Music.resx">
       <DependentUpon>Calming_Music.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Playables\NewBreathing.resx">
+      <DependentUpon>NewBreathing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Playables\NewPlayables.resx">
+      <DependentUpon>NewPlayables.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Playables\Playables_Main.resx">
       <DependentUpon>Playables_Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Authentication\Sign_Up.resx">
       <DependentUpon>Sign_Up.cs</DependentUpon>
@@ -458,6 +470,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Back.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\breathingPic.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medidatePic.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musicPic.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\naturePic.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\breathingGIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

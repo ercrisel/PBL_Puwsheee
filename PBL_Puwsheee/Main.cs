@@ -100,7 +100,7 @@ namespace PBL_Puwsheee
 
         private void clickPlayables(object sender, EventArgs e)
         {
-            openChildForm(new Playables.Playables_Main());
+            openChildForm(new Playables.NewPlayables());
             indicatorButton.Location = new Point(47, 369);
         }
 

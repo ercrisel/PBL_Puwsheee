@@ -36,6 +36,15 @@ namespace PBL_Puwsheee
             form.Opacity -= .2;
         }
 
+        public static void closeFade(Form form)
+        {
+            if (form.Opacity <= 0)
+            {
+                form.Close();
+            }
+            form.Opacity -= .2;
+        }
+
         public static void fadeInModalBg(Form form, Timer timer)
         {
             if (form.Opacity == .50)
