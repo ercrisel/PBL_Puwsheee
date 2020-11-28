@@ -621,5 +621,20 @@
   <ItemGroup>
     <None Include="Resources\gratPlay.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Relax.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\relaxationGIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\relaxClose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\relaxPause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\relaxPlay.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

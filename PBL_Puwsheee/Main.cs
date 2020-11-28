@@ -31,7 +31,7 @@ namespace PBL_Puwsheee
                 handleparam.ExStyle |= 0x02000000;
                 return handleparam;
             }
-        }
+        } 
 
         public static void enableDoubleBuff(System.Windows.Forms.Control cont)
         {
