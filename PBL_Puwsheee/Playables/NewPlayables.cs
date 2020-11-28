@@ -28,5 +28,17 @@ namespace PBL_Puwsheee.Playables
             NewMusic musicForm = new NewMusic();
             musicForm.Show();
         }
+
+        private void natureButton_Click(object sender, EventArgs e)
+        {
+            NewRain rainForm = new NewRain();
+            rainForm.Show();
+        }
+
+        private void anxietyLabel_Click(object sender, EventArgs e)
+        {
+            AnxietyMeditation anxietyForm = new AnxietyMeditation();
+            anxietyForm.Show();
+        }
     }
 }

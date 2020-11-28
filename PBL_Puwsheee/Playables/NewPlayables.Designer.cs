@@ -181,6 +181,7 @@ namespace PBL_Puwsheee.Playables
             this.natureButton.Size = new System.Drawing.Size(236, 174);
             this.natureButton.TabIndex = 2;
             this.natureButton.UseTransparentBackground = true;
+            this.natureButton.Click += new System.EventHandler(this.natureButton_Click);
             // 
             // natureLabel
             // 
@@ -230,7 +231,7 @@ namespace PBL_Puwsheee.Playables
             this.wakeUpLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.wakeUpLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wakeUpLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.wakeUpLabel.Location = new System.Drawing.Point(31, 207);
+            this.wakeUpLabel.Location = new System.Drawing.Point(30, 207);
             this.wakeUpLabel.Name = "wakeUpLabel";
             this.wakeUpLabel.Size = new System.Drawing.Size(87, 22);
             this.wakeUpLabel.TabIndex = 0;
@@ -254,7 +255,7 @@ namespace PBL_Puwsheee.Playables
             this.gratitudeLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gratitudeLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gratitudeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.gratitudeLabel.Location = new System.Drawing.Point(29, 135);
+            this.gratitudeLabel.Location = new System.Drawing.Point(30, 135);
             this.gratitudeLabel.Name = "gratitudeLabel";
             this.gratitudeLabel.Size = new System.Drawing.Size(93, 22);
             this.gratitudeLabel.TabIndex = 0;
@@ -271,6 +272,7 @@ namespace PBL_Puwsheee.Playables
             this.anxietyLabel.Size = new System.Drawing.Size(73, 22);
             this.anxietyLabel.TabIndex = 0;
             this.anxietyLabel.Text = "Anxiety";
+            this.anxietyLabel.Click += new System.EventHandler(this.anxietyLabel_Click);
             // 
             // meditationLabel
             // 

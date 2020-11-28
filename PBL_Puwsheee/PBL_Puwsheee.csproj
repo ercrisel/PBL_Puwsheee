@@ -127,6 +127,12 @@
     <Compile Include="Authentication\PositiveAffirmations.Designer.cs">
       <DependentUpon>PositiveAffirmations.cs</DependentUpon>
     </Compile>
+    <Compile Include="Playables\AnxietyMeditation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Playables\AnxietyMeditation.Designer.cs">
+      <DependentUpon>AnxietyMeditation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Playables\Breathing_Exercise.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +144,12 @@
     </Compile>
     <Compile Include="Playables\Calming_Music.Designer.cs">
       <DependentUpon>Calming_Music.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Playables\EnergizerMeditation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Playables\EnergizerMeditation.Designer.cs">
+      <DependentUpon>EnergizerMeditation.cs</DependentUpon>
     </Compile>
     <Compile Include="Playables\NewBreathing.cs">
       <SubType>Form</SubType>
@@ -263,11 +275,17 @@
     <EmbeddedResource Include="Authentication\PositiveAffirmations.resx">
       <DependentUpon>PositiveAffirmations.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Playables\AnxietyMeditation.resx">
+      <DependentUpon>AnxietyMeditation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Playables\Breathing_Exercise.resx">
       <DependentUpon>Breathing_Exercise.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Playables\Calming_Music.resx">
       <DependentUpon>Calming_Music.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Playables\EnergizerMeditation.resx">
+      <DependentUpon>EnergizerMeditation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Playables\NewBreathing.resx">
       <DependentUpon>NewBreathing.cs</DependentUpon>
@@ -539,6 +557,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\rainGIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anxietyClose.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anxietyPause.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anxietyPlay.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anxietyGIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Anxiety .wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

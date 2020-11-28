@@ -31,13 +31,13 @@ namespace PBL_Puwsheee.Playables
         {
             this.components = new System.ComponentModel.Container();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.playButton = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.pauseButton = new Guna.UI2.WinForms.Guna2CircleButton();
             this.backButton = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.fadeIn = new System.Windows.Forms.Timer(this.components);
             this.fadeOut = new System.Windows.Forms.Timer(this.components);
+            this.playButton = new Guna.UI2.WinForms.Guna2Button();
+            this.pauseButton = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,55 +51,6 @@ namespace PBL_Puwsheee.Playables
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
-            // 
-            // playButton
-            // 
-            this.playButton.BackColor = System.Drawing.Color.Transparent;
-            this.playButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.playButton.CheckedState.Parent = this.playButton;
-            this.playButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.playButton.CustomImages.Parent = this.playButton;
-            this.playButton.FillColor = System.Drawing.Color.Transparent;
-            this.playButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.playButton.ForeColor = System.Drawing.Color.White;
-            this.playButton.HoverState.Parent = this.playButton;
-            this.playButton.Image = global::PBL_Puwsheee.Properties.Resources.rainPlay;
-            this.playButton.ImageOffset = new System.Drawing.Point(1, 0);
-            this.playButton.ImageSize = new System.Drawing.Size(65, 65);
-            this.playButton.Location = new System.Drawing.Point(190, 228);
-            this.playButton.Name = "playButton";
-            this.playButton.PressedColor = System.Drawing.Color.DarkGray;
-            this.playButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.playButton.ShadowDecoration.Parent = this.playButton;
-            this.playButton.Size = new System.Drawing.Size(66, 65);
-            this.playButton.TabIndex = 31;
-            this.playButton.UseTransparentBackground = true;
-            this.playButton.Click += new System.EventHandler(this.play_Click);
-            // 
-            // pauseButton
-            // 
-            this.pauseButton.BackColor = System.Drawing.Color.Transparent;
-            this.pauseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pauseButton.CheckedState.Parent = this.pauseButton;
-            this.pauseButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pauseButton.CustomImages.Parent = this.pauseButton;
-            this.pauseButton.FillColor = System.Drawing.Color.Transparent;
-            this.pauseButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.pauseButton.ForeColor = System.Drawing.Color.White;
-            this.pauseButton.HoverState.Parent = this.pauseButton;
-            this.pauseButton.Image = global::PBL_Puwsheee.Properties.Resources.rainPause;
-            this.pauseButton.ImageOffset = new System.Drawing.Point(1, 0);
-            this.pauseButton.ImageSize = new System.Drawing.Size(65, 65);
-            this.pauseButton.Location = new System.Drawing.Point(190, 228);
-            this.pauseButton.Name = "pauseButton";
-            this.pauseButton.PressedColor = System.Drawing.Color.DarkGray;
-            this.pauseButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.pauseButton.ShadowDecoration.Parent = this.pauseButton;
-            this.pauseButton.Size = new System.Drawing.Size(66, 65);
-            this.pauseButton.TabIndex = 30;
-            this.pauseButton.UseTransparentBackground = true;
-            this.pauseButton.Visible = false;
-            this.pauseButton.Click += new System.EventHandler(this.pause_Click);
             // 
             // backButton
             // 
@@ -142,7 +93,7 @@ namespace PBL_Puwsheee.Playables
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(201)))), ((int)(((byte)(203)))));
             this.label1.Font = new System.Drawing.Font("Typo Round Bold Demo", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(157)))), ((int)(((byte)(138)))));
-            this.label1.Location = new System.Drawing.Point(49, 231);
+            this.label1.Location = new System.Drawing.Point(53, 231);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(135, 29);
             this.label1.TabIndex = 34;
@@ -152,25 +103,75 @@ namespace PBL_Puwsheee.Playables
             // 
             this.fadeIn.Enabled = true;
             this.fadeIn.Interval = 30;
+            this.fadeIn.Tick += new System.EventHandler(this.fadeIn_Tick);
             // 
             // fadeOut
             // 
             this.fadeOut.Interval = 50;
+            this.fadeOut.Tick += new System.EventHandler(this.fadeOut_Tick);
+            // 
+            // playButton
+            // 
+            this.playButton.BackColor = System.Drawing.Color.Transparent;
+            this.playButton.BorderRadius = 10;
+            this.playButton.CheckedState.Parent = this.playButton;
+            this.playButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.playButton.CustomImages.Parent = this.playButton;
+            this.playButton.FillColor = System.Drawing.Color.Transparent;
+            this.playButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.playButton.ForeColor = System.Drawing.Color.White;
+            this.playButton.HoverState.Parent = this.playButton;
+            this.playButton.Image = global::PBL_Puwsheee.Properties.Resources.rainPlay;
+            this.playButton.ImageOffset = new System.Drawing.Point(3, 0);
+            this.playButton.ImageSize = new System.Drawing.Size(65, 65);
+            this.playButton.Location = new System.Drawing.Point(193, 229);
+            this.playButton.Name = "playButton";
+            this.playButton.PressedColor = System.Drawing.Color.DarkGray;
+            this.playButton.ShadowDecoration.Parent = this.playButton;
+            this.playButton.Size = new System.Drawing.Size(66, 65);
+            this.playButton.TabIndex = 35;
+            this.playButton.UseTransparentBackground = true;
+            this.playButton.Click += new System.EventHandler(this.play_Click);
+            // 
+            // pauseButton
+            // 
+            this.pauseButton.BackColor = System.Drawing.Color.Transparent;
+            this.pauseButton.BorderRadius = 10;
+            this.pauseButton.CheckedState.Parent = this.pauseButton;
+            this.pauseButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pauseButton.CustomImages.Parent = this.pauseButton;
+            this.pauseButton.FillColor = System.Drawing.Color.Transparent;
+            this.pauseButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.pauseButton.ForeColor = System.Drawing.Color.White;
+            this.pauseButton.HoverState.Parent = this.pauseButton;
+            this.pauseButton.Image = global::PBL_Puwsheee.Properties.Resources.rainPause;
+            this.pauseButton.ImageOffset = new System.Drawing.Point(3, 0);
+            this.pauseButton.ImageSize = new System.Drawing.Size(65, 65);
+            this.pauseButton.Location = new System.Drawing.Point(193, 229);
+            this.pauseButton.Name = "pauseButton";
+            this.pauseButton.PressedColor = System.Drawing.Color.DarkGray;
+            this.pauseButton.ShadowDecoration.Parent = this.pauseButton;
+            this.pauseButton.Size = new System.Drawing.Size(66, 65);
+            this.pauseButton.TabIndex = 35;
+            this.pauseButton.UseTransparentBackground = true;
+            this.pauseButton.Visible = false;
+            this.pauseButton.Click += new System.EventHandler(this.pause_Click);
             // 
             // NewRain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1020, 610);
+            this.Controls.Add(this.pauseButton);
+            this.Controls.Add(this.playButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.backButton);
-            this.Controls.Add(this.playButton);
-            this.Controls.Add(this.pauseButton);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NewRain";
             this.Opacity = 0D;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NewRain";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -181,12 +182,12 @@ namespace PBL_Puwsheee.Playables
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Guna.UI2.WinForms.Guna2CircleButton playButton;
-        private Guna.UI2.WinForms.Guna2CircleButton pauseButton;
         private Guna.UI2.WinForms.Guna2Button backButton;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer fadeIn;
         private System.Windows.Forms.Timer fadeOut;
+        private Guna.UI2.WinForms.Guna2Button playButton;
+        private Guna.UI2.WinForms.Guna2Button pauseButton;
     }
 }

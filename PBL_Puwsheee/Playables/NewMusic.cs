@@ -48,6 +48,7 @@ namespace PBL_Puwsheee.Playables
 
         private void backButton_Click(object sender, EventArgs e)
         {
+            music.Stop();
             fadeOut.Start();
         }
 
