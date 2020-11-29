@@ -421,22 +421,22 @@
             // contentLabel1
             // 
             this.contentLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.contentLabel1.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contentLabel1.Location = new System.Drawing.Point(179, 60);
+            this.contentLabel1.Font = new System.Drawing.Font("Typo Round Bold Demo", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contentLabel1.Location = new System.Drawing.Point(173, 56);
             this.contentLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.contentLabel1.Name = "contentLabel1";
-            this.contentLabel1.Size = new System.Drawing.Size(76, 16);
+            this.contentLabel1.Size = new System.Drawing.Size(90, 18);
             this.contentLabel1.TabIndex = 34;
             this.contentLabel1.Text = "How are you?";
             // 
             // contentLabel3
             // 
             this.contentLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.contentLabel3.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contentLabel3.Location = new System.Drawing.Point(585, 81);
+            this.contentLabel3.Font = new System.Drawing.Font("Typo Round Bold Demo", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contentLabel3.Location = new System.Drawing.Point(579, 77);
             this.contentLabel3.Margin = new System.Windows.Forms.Padding(4);
             this.contentLabel3.Name = "contentLabel3";
-            this.contentLabel3.Size = new System.Drawing.Size(147, 16);
+            this.contentLabel3.Size = new System.Drawing.Size(173, 18);
             this.contentLabel3.TabIndex = 39;
             this.contentLabel3.Text = "What have you been up to?";
             // 
@@ -496,11 +496,11 @@
             // contentLabel2
             // 
             this.contentLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.contentLabel2.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contentLabel2.Location = new System.Drawing.Point(142, 262);
+            this.contentLabel2.Font = new System.Drawing.Font("Typo Round Bold Demo", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contentLabel2.Location = new System.Drawing.Point(136, 258);
             this.contentLabel2.Margin = new System.Windows.Forms.Padding(4);
             this.contentLabel2.Name = "contentLabel2";
-            this.contentLabel2.Size = new System.Drawing.Size(147, 16);
+            this.contentLabel2.Size = new System.Drawing.Size(173, 18);
             this.contentLabel2.TabIndex = 38;
             this.contentLabel2.Text = "What have you been up to?";
             // 

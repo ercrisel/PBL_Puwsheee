@@ -313,7 +313,7 @@
             this.notesTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
             this.notesTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.notesTextbox.FocusedState.Parent = this.notesTextbox;
-            this.notesTextbox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.notesTextbox.Font = new System.Drawing.Font("Typo Round Bold Demo", 9F);
             this.notesTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.notesTextbox.HoverState.Parent = this.notesTextbox;
             this.notesTextbox.Location = new System.Drawing.Point(361, 107);
