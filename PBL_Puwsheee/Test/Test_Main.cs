@@ -25,7 +25,7 @@ namespace PBL_Puwsheee.Test
 
             string dateClicked = DateTime.Now.ToString("yyyyMMdd");
             result.Date = dateClicked;
-            result.Username = Main.nameOfUser;
+            result.Username = Log_In.publicUserName;
 
             Guna2Button btn = sender as Guna2Button;
             if (result.CheckIfAlreadyAnswered(btn))

@@ -33,7 +33,7 @@ namespace PBL_Puwsheee.Test
         private void Test_Results_Load(object sender, EventArgs e)
         {
             string submittedDate = DateTime.Now.ToString("yyyyMMdd");
-            result.Username = Main.nameOfUser;
+            result.Username = Log_In.publicUserName;
             result.Date = submittedDate;
             result.Score = currentscore;
             string typeOfTest = this.Text;

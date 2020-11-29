@@ -86,7 +86,7 @@
             this.Padding = new System.Windows.Forms.Padding(5);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SplashScreen";
-            this.Load += new System.EventHandler(this.SplashScreen_Load);
+          //  this.Load += new System.EventHandler(this.SplashScreen_Load);
             this.ResumeLayout(false);
 
         }
