@@ -17,17 +17,9 @@ namespace PBL_Puwsheee
             InitializeComponent();
         }
 
-        private void countdown_Tick(object sender, EventArgs e)
+        private void SplashScreen_Load(object sender, EventArgs e)
         {
-            countdown.Stop();
-            new Log_In().Show();
-            this.Hide();
-        }
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            loadingPanel.Width += 1;
-            if (loadingPanel.Width <= 250) loadingTimer.Stop();
         }
     }
 }
