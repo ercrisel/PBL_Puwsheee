@@ -354,7 +354,7 @@
             this.signupButton.Font = new System.Drawing.Font("Typo Round Bold Demo", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signupButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.signupButton.HoverState.Parent = this.signupButton;
-            this.signupButton.Location = new System.Drawing.Point(590, 505);
+            this.signupButton.Location = new System.Drawing.Point(345, 507);
             this.signupButton.Margin = new System.Windows.Forms.Padding(4);
             this.signupButton.Name = "signupButton";
             this.signupButton.ShadowDecoration.Parent = this.signupButton;
