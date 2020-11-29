@@ -68,7 +68,8 @@ namespace PBL_Puwsheee
         public void showCode()
         {
             label11.Visible = enterCodeTextBox.Visible = submitCodeButton.Visible = true;
-            signupButton.Left = 590;
+            signupButton.Left = 509;
+ 
         }
 
         private void signupButton_Click(object sender, EventArgs e)
