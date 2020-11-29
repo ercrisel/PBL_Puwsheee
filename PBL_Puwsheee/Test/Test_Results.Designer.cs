@@ -47,18 +47,22 @@
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Typo Round Bold Demo", 9F);
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(46, 67);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(56, 15);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(64, 17);
             this.guna2HtmlLabel1.TabIndex = 0;
             this.guna2HtmlLabel1.Text = "Your Score";
             // 
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Typo Round Bold Demo", 9F);
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(46, 211);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(74, 15);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(86, 17);
             this.guna2HtmlLabel2.TabIndex = 1;
             this.guna2HtmlLabel2.Text = "Average Score";
             // 
@@ -89,13 +93,13 @@
             this.currentscoreLabel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.currentscoreLabel.FocusedState.BorderColor = System.Drawing.Color.Transparent;
             this.currentscoreLabel.FocusedState.Parent = this.currentscoreLabel;
-            this.currentscoreLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentscoreLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 10F);
             this.currentscoreLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.currentscoreLabel.HoverState.BorderColor = System.Drawing.Color.Transparent;
             this.currentscoreLabel.HoverState.Parent = this.currentscoreLabel;
             this.currentscoreLabel.IconLeftSize = new System.Drawing.Size(0, 0);
             this.currentscoreLabel.IconRightSize = new System.Drawing.Size(0, 0);
-            this.currentscoreLabel.Location = new System.Drawing.Point(32, 33);
+            this.currentscoreLabel.Location = new System.Drawing.Point(34, 35);
             this.currentscoreLabel.Margin = new System.Windows.Forms.Padding(0);
             this.currentscoreLabel.Multiline = true;
             this.currentscoreLabel.Name = "currentscoreLabel";
@@ -104,9 +108,9 @@
             this.currentscoreLabel.SelectedText = "";
             this.currentscoreLabel.SelectionStart = 2;
             this.currentscoreLabel.ShadowDecoration.Parent = this.currentscoreLabel;
-            this.currentscoreLabel.Size = new System.Drawing.Size(42, 36);
+            this.currentscoreLabel.Size = new System.Drawing.Size(37, 35);
             this.currentscoreLabel.TabIndex = 11;
-            this.currentscoreLabel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.currentscoreLabel.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // averagescoreProgressBar
             // 
@@ -134,13 +138,13 @@
             this.averageLabel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.averageLabel.FocusedState.BorderColor = System.Drawing.Color.Transparent;
             this.averageLabel.FocusedState.Parent = this.averageLabel;
-            this.averageLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.averageLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 10F);
             this.averageLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.averageLabel.HoverState.BorderColor = System.Drawing.Color.Transparent;
             this.averageLabel.HoverState.Parent = this.averageLabel;
             this.averageLabel.IconLeftSize = new System.Drawing.Size(0, 0);
             this.averageLabel.IconRightSize = new System.Drawing.Size(0, 0);
-            this.averageLabel.Location = new System.Drawing.Point(34, 33);
+            this.averageLabel.Location = new System.Drawing.Point(36, 35);
             this.averageLabel.Margin = new System.Windows.Forms.Padding(0);
             this.averageLabel.Multiline = true;
             this.averageLabel.Name = "averageLabel";
@@ -149,9 +153,9 @@
             this.averageLabel.SelectedText = "";
             this.averageLabel.SelectionStart = 2;
             this.averageLabel.ShadowDecoration.Parent = this.averageLabel;
-            this.averageLabel.Size = new System.Drawing.Size(42, 36);
+            this.averageLabel.Size = new System.Drawing.Size(37, 35);
             this.averageLabel.TabIndex = 12;
-            this.averageLabel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.averageLabel.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // guna2Button1
             // 
@@ -161,7 +165,7 @@
             this.guna2Button1.CheckedState.Parent = this.guna2Button1;
             this.guna2Button1.CustomImages.Parent = this.guna2Button1;
             this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Location = new System.Drawing.Point(339, 301);
@@ -194,7 +198,7 @@
             this.DescriptionLabel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
             this.DescriptionLabel.FocusedState.BorderColor = System.Drawing.Color.Transparent;
             this.DescriptionLabel.FocusedState.Parent = this.DescriptionLabel;
-            this.DescriptionLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DescriptionLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 10F);
             this.DescriptionLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.DescriptionLabel.HoverState.BorderColor = System.Drawing.Color.Transparent;
             this.DescriptionLabel.HoverState.Parent = this.DescriptionLabel;
@@ -228,8 +232,8 @@
             this.testresultLabel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.testresultLabel.FocusedState.BorderColor = System.Drawing.Color.Transparent;
             this.testresultLabel.FocusedState.Parent = this.testresultLabel;
-            this.testresultLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.testresultLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
+            this.testresultLabel.Font = new System.Drawing.Font("Robaga Rounded Black", 15F);
+            this.testresultLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.testresultLabel.HoverState.BorderColor = System.Drawing.Color.Transparent;
             this.testresultLabel.HoverState.Parent = this.testresultLabel;
             this.testresultLabel.Location = new System.Drawing.Point(258, 44);
@@ -257,11 +261,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.ClientSize = new System.Drawing.Size(640, 370);
+            this.Controls.Add(this.averagescoreProgressBar);
             this.Controls.Add(this.testresultLabel);
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.DescriptionLabel);
             this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.averagescoreProgressBar);
             this.Controls.Add(this.currentscoreProgressBar);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

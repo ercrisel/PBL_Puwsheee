@@ -32,7 +32,6 @@
             this.submitButton = new Guna.UI2.WinForms.Guna2Button();
             this.clearButton = new Guna.UI2.WinForms.Guna2Button();
             this.slot1RadioButton = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.backButton = new Guna.UI2.WinForms.Guna2Button();
             this.questionLabel = new Guna.UI2.WinForms.Guna2TextBox();
             this.typeoftestLabel = new Guna.UI2.WinForms.Guna2TextBox();
             this.decrementButton = new Guna.UI2.WinForms.Guna2Button();
@@ -48,6 +47,7 @@
             this.decrementTimer = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.backButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,7 +63,7 @@
             this.submitButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.submitButton.ForeColor = System.Drawing.Color.White;
             this.submitButton.HoverState.Parent = this.submitButton;
-            this.submitButton.Location = new System.Drawing.Point(443, 357);
+            this.submitButton.Location = new System.Drawing.Point(443, 364);
             this.submitButton.Name = "submitButton";
             this.submitButton.ShadowDecoration.Parent = this.submitButton;
             this.submitButton.Size = new System.Drawing.Size(124, 37);
@@ -83,7 +83,7 @@
             this.clearButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.clearButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.clearButton.HoverState.Parent = this.clearButton;
-            this.clearButton.Location = new System.Drawing.Point(282, 357);
+            this.clearButton.Location = new System.Drawing.Point(282, 364);
             this.clearButton.Name = "clearButton";
             this.clearButton.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.clearButton.ShadowDecoration.Parent = this.clearButton;
@@ -100,10 +100,11 @@
             this.slot1RadioButton.CheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.slot1RadioButton.CheckedState.InnerOffset = 1;
             this.slot1RadioButton.CheckedState.Parent = this.slot1RadioButton;
-            this.slot1RadioButton.Location = new System.Drawing.Point(210, 272);
+            this.slot1RadioButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.slot1RadioButton.Location = new System.Drawing.Point(210, 269);
             this.slot1RadioButton.Name = "slot1RadioButton";
             this.slot1RadioButton.ShadowDecoration.Parent = this.slot1RadioButton;
-            this.slot1RadioButton.Size = new System.Drawing.Size(28, 28);
+            this.slot1RadioButton.Size = new System.Drawing.Size(26, 26);
             this.slot1RadioButton.TabIndex = 3;
             this.slot1RadioButton.Tag = "1";
             this.slot1RadioButton.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
@@ -113,21 +114,6 @@
             this.slot1RadioButton.UncheckedState.InnerOffset = 1;
             this.slot1RadioButton.UncheckedState.Parent = this.slot1RadioButton;
             this.slot1RadioButton.Click += new System.EventHandler(this.slot5RadioButton_Click);
-            // 
-            // backButton
-            // 
-            this.backButton.CheckedState.Parent = this.backButton;
-            this.backButton.CustomImages.Parent = this.backButton;
-            this.backButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.backButton.ForeColor = System.Drawing.Color.White;
-            this.backButton.HoverState.Parent = this.backButton;
-            this.backButton.Location = new System.Drawing.Point(12, 12);
-            this.backButton.Name = "backButton";
-            this.backButton.ShadowDecoration.Parent = this.backButton;
-            this.backButton.Size = new System.Drawing.Size(107, 34);
-            this.backButton.TabIndex = 58;
-            this.backButton.Text = "clear";
-            this.backButton.Click += new System.EventHandler(this.clickBack);
             // 
             // questionLabel
             // 
@@ -143,11 +129,11 @@
             this.questionLabel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.questionLabel.FocusedState.BorderColor = System.Drawing.Color.Transparent;
             this.questionLabel.FocusedState.Parent = this.questionLabel;
-            this.questionLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.questionLabel.ForeColor = System.Drawing.Color.Black;
+            this.questionLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 15F);
+            this.questionLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.questionLabel.HoverState.BorderColor = System.Drawing.Color.Transparent;
             this.questionLabel.HoverState.Parent = this.questionLabel;
-            this.questionLabel.Location = new System.Drawing.Point(208, 159);
+            this.questionLabel.Location = new System.Drawing.Point(208, 154);
             this.questionLabel.Margin = new System.Windows.Forms.Padding(0);
             this.questionLabel.Multiline = true;
             this.questionLabel.Name = "questionLabel";
@@ -176,7 +162,7 @@
             this.typeoftestLabel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.typeoftestLabel.FocusedState.BorderColor = System.Drawing.Color.Transparent;
             this.typeoftestLabel.FocusedState.Parent = this.typeoftestLabel;
-            this.typeoftestLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.typeoftestLabel.Font = new System.Drawing.Font("Robaga Rounded Black", 9F);
             this.typeoftestLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.typeoftestLabel.HoverState.BorderColor = System.Drawing.Color.Transparent;
             this.typeoftestLabel.HoverState.Parent = this.typeoftestLabel;
@@ -189,6 +175,7 @@
             this.typeoftestLabel.PlaceholderText = "";
             this.typeoftestLabel.ReadOnly = true;
             this.typeoftestLabel.SelectedText = "";
+            this.typeoftestLabel.SelectionStart = 22;
             this.typeoftestLabel.ShadowDecoration.Parent = this.typeoftestLabel;
             this.typeoftestLabel.Size = new System.Drawing.Size(187, 34);
             this.typeoftestLabel.TabIndex = 70;
@@ -206,11 +193,11 @@
             this.decrementButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.decrementButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.decrementButton.HoverState.Parent = this.decrementButton;
-            this.decrementButton.Location = new System.Drawing.Point(79, 225);
+            this.decrementButton.Location = new System.Drawing.Point(80, 225);
             this.decrementButton.Name = "decrementButton";
             this.decrementButton.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.decrementButton.ShadowDecoration.Parent = this.decrementButton;
-            this.decrementButton.Size = new System.Drawing.Size(40, 40);
+            this.decrementButton.Size = new System.Drawing.Size(41, 38);
             this.decrementButton.TabIndex = 81;
             this.decrementButton.Text = "<";
             this.decrementButton.Click += new System.EventHandler(this.changeQuestion);
@@ -227,10 +214,10 @@
             this.incrementButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.incrementButton.ForeColor = System.Drawing.Color.White;
             this.incrementButton.HoverState.Parent = this.incrementButton;
-            this.incrementButton.Location = new System.Drawing.Point(730, 225);
+            this.incrementButton.Location = new System.Drawing.Point(731, 225);
             this.incrementButton.Name = "incrementButton";
             this.incrementButton.ShadowDecoration.Parent = this.incrementButton;
-            this.incrementButton.Size = new System.Drawing.Size(40, 40);
+            this.incrementButton.Size = new System.Drawing.Size(41, 38);
             this.incrementButton.TabIndex = 82;
             this.incrementButton.Text = ">";
             this.incrementButton.Click += new System.EventHandler(this.changeQuestion);
@@ -243,10 +230,11 @@
             this.slot3RadioButton.CheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.slot3RadioButton.CheckedState.InnerOffset = 1;
             this.slot3RadioButton.CheckedState.Parent = this.slot3RadioButton;
-            this.slot3RadioButton.Location = new System.Drawing.Point(412, 272);
+            this.slot3RadioButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.slot3RadioButton.Location = new System.Drawing.Point(412, 269);
             this.slot3RadioButton.Name = "slot3RadioButton";
             this.slot3RadioButton.ShadowDecoration.Parent = this.slot3RadioButton;
-            this.slot3RadioButton.Size = new System.Drawing.Size(28, 28);
+            this.slot3RadioButton.Size = new System.Drawing.Size(26, 26);
             this.slot3RadioButton.TabIndex = 83;
             this.slot3RadioButton.Tag = "3";
             this.slot3RadioButton.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
@@ -265,10 +253,11 @@
             this.slot2RadioButton.CheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.slot2RadioButton.CheckedState.InnerOffset = 1;
             this.slot2RadioButton.CheckedState.Parent = this.slot2RadioButton;
-            this.slot2RadioButton.Location = new System.Drawing.Point(311, 272);
+            this.slot2RadioButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.slot2RadioButton.Location = new System.Drawing.Point(311, 269);
             this.slot2RadioButton.Name = "slot2RadioButton";
             this.slot2RadioButton.ShadowDecoration.Parent = this.slot2RadioButton;
-            this.slot2RadioButton.Size = new System.Drawing.Size(28, 28);
+            this.slot2RadioButton.Size = new System.Drawing.Size(26, 26);
             this.slot2RadioButton.TabIndex = 83;
             this.slot2RadioButton.Tag = "2";
             this.slot2RadioButton.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
@@ -287,10 +276,11 @@
             this.slot5RadioButton.CheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.slot5RadioButton.CheckedState.InnerOffset = 1;
             this.slot5RadioButton.CheckedState.Parent = this.slot5RadioButton;
-            this.slot5RadioButton.Location = new System.Drawing.Point(615, 272);
+            this.slot5RadioButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.slot5RadioButton.Location = new System.Drawing.Point(615, 269);
             this.slot5RadioButton.Name = "slot5RadioButton";
             this.slot5RadioButton.ShadowDecoration.Parent = this.slot5RadioButton;
-            this.slot5RadioButton.Size = new System.Drawing.Size(28, 28);
+            this.slot5RadioButton.Size = new System.Drawing.Size(26, 26);
             this.slot5RadioButton.TabIndex = 84;
             this.slot5RadioButton.Tag = "5";
             this.slot5RadioButton.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
@@ -309,10 +299,11 @@
             this.slot4RadioButton.CheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.slot4RadioButton.CheckedState.InnerOffset = 1;
             this.slot4RadioButton.CheckedState.Parent = this.slot4RadioButton;
-            this.slot4RadioButton.Location = new System.Drawing.Point(513, 272);
+            this.slot4RadioButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.slot4RadioButton.Location = new System.Drawing.Point(513, 269);
             this.slot4RadioButton.Name = "slot4RadioButton";
             this.slot4RadioButton.ShadowDecoration.Parent = this.slot4RadioButton;
-            this.slot4RadioButton.Size = new System.Drawing.Size(28, 28);
+            this.slot4RadioButton.Size = new System.Drawing.Size(26, 26);
             this.slot4RadioButton.TabIndex = 84;
             this.slot4RadioButton.Tag = "4";
             this.slot4RadioButton.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
@@ -337,11 +328,11 @@
             this.currentquestionTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.currentquestionTextbox.FocusedState.BorderColor = System.Drawing.Color.Transparent;
             this.currentquestionTextbox.FocusedState.Parent = this.currentquestionTextbox;
-            this.currentquestionTextbox.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentquestionTextbox.Font = new System.Drawing.Font("Robaga Rounded Black", 16F);
             this.currentquestionTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.currentquestionTextbox.HoverState.BorderColor = System.Drawing.Color.Transparent;
             this.currentquestionTextbox.HoverState.Parent = this.currentquestionTextbox;
-            this.currentquestionTextbox.Location = new System.Drawing.Point(177, 63);
+            this.currentquestionTextbox.Location = new System.Drawing.Point(177, 53);
             this.currentquestionTextbox.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.currentquestionTextbox.Name = "currentquestionTextbox";
             this.currentquestionTextbox.PasswordChar = '\0';
@@ -359,7 +350,7 @@
             this.guna2Panel1.BorderRadius = 5;
             this.guna2Panel1.Controls.Add(this.loadingPanel);
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.guna2Panel1.Location = new System.Drawing.Point(177, 104);
+            this.guna2Panel1.Location = new System.Drawing.Point(177, 94);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(500, 10);
@@ -391,9 +382,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(193, 305);
+            this.label1.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.label1.Location = new System.Drawing.Point(190, 304);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 13);
+            this.label1.Size = new System.Drawing.Size(70, 14);
             this.label1.TabIndex = 90;
             this.label1.Text = "not so often";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -401,12 +394,33 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(602, 305);
+            this.label2.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.label2.Location = new System.Drawing.Point(601, 304);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 13);
+            this.label2.Size = new System.Drawing.Size(67, 14);
             this.label2.TabIndex = 91;
             this.label2.Text = "all the time";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // backButton
+            // 
+            this.backButton.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Back;
+            this.backButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.backButton.BorderRadius = 10;
+            this.backButton.CheckedState.Parent = this.backButton;
+            this.backButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.backButton.CustomImages.Parent = this.backButton;
+            this.backButton.FillColor = System.Drawing.Color.Transparent;
+            this.backButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.backButton.ForeColor = System.Drawing.Color.White;
+            this.backButton.HoverState.Parent = this.backButton;
+            this.backButton.Location = new System.Drawing.Point(12, 12);
+            this.backButton.Name = "backButton";
+            this.backButton.ShadowDecoration.Parent = this.backButton;
+            this.backButton.Size = new System.Drawing.Size(44, 28);
+            this.backButton.TabIndex = 92;
+            this.backButton.Click += new System.EventHandler(this.clickBack);
             // 
             // Test_Questions
             // 
@@ -414,6 +428,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.ClientSize = new System.Drawing.Size(850, 475);
+            this.Controls.Add(this.backButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2Panel1);
@@ -425,7 +440,6 @@
             this.Controls.Add(this.incrementButton);
             this.Controls.Add(this.slot1RadioButton);
             this.Controls.Add(this.typeoftestLabel);
-            this.Controls.Add(this.backButton);
             this.Controls.Add(this.decrementButton);
             this.Controls.Add(this.submitButton);
             this.Controls.Add(this.clearButton);
@@ -447,7 +461,6 @@
         private Guna.UI2.WinForms.Guna2Button submitButton;
         private Guna.UI2.WinForms.Guna2Button clearButton;
         private Guna.UI2.WinForms.Guna2CustomRadioButton slot1RadioButton;
-        private Guna.UI2.WinForms.Guna2Button backButton;
         private Guna.UI2.WinForms.Guna2TextBox questionLabel;
         private Guna.UI2.WinForms.Guna2TextBox typeoftestLabel;
         private Guna.UI2.WinForms.Guna2Button decrementButton;
@@ -463,5 +476,6 @@
         private System.Windows.Forms.Timer decrementTimer;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2Button backButton;
     }
 }

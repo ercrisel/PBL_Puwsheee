@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using Guna.UI2.WinForms;
 
@@ -13,6 +14,19 @@ namespace PBL_Puwsheee.Test
 {
     public partial class Test_Questions : Form
     {
+        private Form activeForm;
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+
+        private static extern IntPtr CreateRoundRectRgn
+        (
+            int nLeftRect,     // x-coordinate of upper-left corner
+            int nTopRect,      // y-coordinate of upper-left corner
+            int nRightRect,    // x-coordinate of lower-right corner
+            int nBottomRect,   // y-coordinate of lower-right corner
+            int nWidthEllipse, // height of ellipse
+            int nHeightEllipse // width of ellipse
+        );
+
         int currentQ = 1, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, loading = 50;
 
         private void incrementTimer_Tick(object sender, EventArgs e)
@@ -96,6 +110,8 @@ namespace PBL_Puwsheee.Test
         {
             InitializeComponent();
             this.Text = Test;
+            this.FormBorderStyle = FormBorderStyle.None;
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
 
         public Boolean checkValidation()
@@ -128,7 +144,7 @@ namespace PBL_Puwsheee.Test
                     bg.TopMost = true;
                     bg.Location = this.Location;
                     bg.ShowInTaskbar = false;
-                    bg.Size = new Size(1020, 580);
+                    bg.Size = new Size(1020, 610);
                     bg.Show();
 
                     TestResults.Owner = bg;

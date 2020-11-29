@@ -1,4 +1,5 @@
 ﻿using Guna.UI2.WinForms;
+using PBL_Puwsheee.Authentication.Class;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -35,12 +36,12 @@ namespace PBL_Puwsheee.Test
         // properties
 
 
-        public string conStr = "Data Source=DESKTOP-8NV2VQJ;Initial Catalog=Puwshee;Integrated Security=True;";
+      //  public string ConnectToDatabase.ReturnConnectionString() = "Data Source=DESKTOP-8NV2VQJ;Initial Catalog=Puwshee;Integrated Security=True;";
         //methods
         public bool IsDateAndUserUniqueInDatabase() // checheck mo kung unique sya 
         {
             bool unique = false;
-            SqlConnection connect = new SqlConnection(conStr);
+            SqlConnection connect = new SqlConnection(ConnectToDatabase.ReturnConnectionString());
             connect.Open();
             SqlCommand command = new SqlCommand("spIsUserAndDateUniqueTest", connect);
             command.CommandType = CommandType.StoredProcedure;
@@ -61,7 +62,7 @@ namespace PBL_Puwsheee.Test
         }
         public void InsertUsernameAndDateTestTaken() // pag sa araw na to wala pa sya ginagawa insert mo ulet si datas
         {
-            SqlConnection connection = new SqlConnection(conStr);
+            SqlConnection connection = new SqlConnection(ConnectToDatabase.ReturnConnectionString());
             connection.Open();
             SqlCommand command = new SqlCommand("spInsertUsernameAndDateTest", connection);
             command.CommandType = CommandType.StoredProcedure;
@@ -74,7 +75,7 @@ namespace PBL_Puwsheee.Test
 
         public void UploadToDatabase(string storedProcedure) // update mo values sa entries
         {
-            SqlConnection connect = new SqlConnection(conStr);
+            SqlConnection connect = new SqlConnection(ConnectToDatabase.ReturnConnectionString());
             connect.Open();
             SqlCommand command = new SqlCommand(storedProcedure, connect);
             command.CommandType = CommandType.StoredProcedure;
@@ -89,7 +90,7 @@ namespace PBL_Puwsheee.Test
         {
             bool nasagutanNa = true;
             Console.WriteLine(date + " pinindot ");
-            SqlConnection connect = new SqlConnection(conStr);
+            SqlConnection connect = new SqlConnection(ConnectToDatabase.ReturnConnectionString());
             connect.Open();
             SqlCommand command = new SqlCommand("spLoadTestResult", connect);
             command.CommandType = CommandType.StoredProcedure;
@@ -138,7 +139,7 @@ namespace PBL_Puwsheee.Test
         public int ComputeAverageScore(string storedProcedure, string column)
         {
             int average = 0;
-            SqlConnection connect = new SqlConnection(conStr);
+            SqlConnection connect = new SqlConnection(ConnectToDatabase.ReturnConnectionString());
             connect.Open();
             SqlCommand command = new SqlCommand(storedProcedure, connect);
             command.CommandType = CommandType.StoredProcedure;
