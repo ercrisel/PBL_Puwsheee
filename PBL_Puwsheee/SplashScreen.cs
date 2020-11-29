@@ -32,6 +32,7 @@ namespace PBL_Puwsheee
         }
 
         int count = 70;
+
         private void countdownTick(object sender, EventArgs e)
         {
 
