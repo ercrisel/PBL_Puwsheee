@@ -110,6 +110,7 @@ namespace PBL_Puwsheee
         private void Sign_Up_Load(object sender, EventArgs e)
         {
             fadeIn.Start();
+            firstNameTextbox.Focus();
             var projectPath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
             string filePath = Path.Combine(projectPath, "Resources");
             string location = filePath + "\\SamplePhoto.png";
@@ -216,6 +217,7 @@ namespace PBL_Puwsheee
         private void fadeIn_Tick(object sender, EventArgs e)
         {
             Fade.fadeInEffect(this, fadeIn);
+            firstNameTextbox.Focus(); 
         }
 
         private void fadeOut_Tick(object sender, EventArgs e)

@@ -106,7 +106,7 @@
             this.firstnameLabel.BackColor = System.Drawing.Color.Transparent;
             this.firstnameLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.firstnameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.firstnameLabel.Location = new System.Drawing.Point(42, 228);
+            this.firstnameLabel.Location = new System.Drawing.Point(49, 225);
             this.firstnameLabel.Margin = new System.Windows.Forms.Padding(4);
             this.firstnameLabel.Name = "firstnameLabel";
             this.firstnameLabel.Size = new System.Drawing.Size(64, 17);
@@ -268,7 +268,7 @@
             this.lastnameLabel.BackColor = System.Drawing.Color.Transparent;
             this.lastnameLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lastnameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.lastnameLabel.Location = new System.Drawing.Point(504, 228);
+            this.lastnameLabel.Location = new System.Drawing.Point(504, 225);
             this.lastnameLabel.Margin = new System.Windows.Forms.Padding(4);
             this.lastnameLabel.Name = "lastnameLabel";
             this.lastnameLabel.Size = new System.Drawing.Size(65, 17);
@@ -280,7 +280,7 @@
             this.emailLabel.BackColor = System.Drawing.Color.Transparent;
             this.emailLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.emailLabel.Location = new System.Drawing.Point(27, 307);
+            this.emailLabel.Location = new System.Drawing.Point(28, 308);
             this.emailLabel.Margin = new System.Windows.Forms.Padding(4);
             this.emailLabel.Name = "emailLabel";
             this.emailLabel.Size = new System.Drawing.Size(85, 17);
@@ -292,19 +292,19 @@
             this.usernameLabel.BackColor = System.Drawing.Color.Transparent;
             this.usernameLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.usernameLabel.Location = new System.Drawing.Point(510, 307);
+            this.usernameLabel.Location = new System.Drawing.Point(507, 308);
             this.usernameLabel.Margin = new System.Windows.Forms.Padding(4);
             this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(59, 17);
+            this.usernameLabel.Size = new System.Drawing.Size(62, 17);
             this.usernameLabel.TabIndex = 20;
-            this.usernameLabel.Text = "Username";
+            this.usernameLabel.Text = "Username:";
             // 
             // passwordLabel
             // 
             this.passwordLabel.BackColor = System.Drawing.Color.Transparent;
             this.passwordLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.passwordLabel.Location = new System.Drawing.Point(51, 389);
+            this.passwordLabel.Location = new System.Drawing.Point(51, 391);
             this.passwordLabel.Margin = new System.Windows.Forms.Padding(4);
             this.passwordLabel.Name = "passwordLabel";
             this.passwordLabel.Size = new System.Drawing.Size(62, 17);
@@ -316,11 +316,11 @@
             this.confirmpasswordLabel.BackColor = System.Drawing.Color.Transparent;
             this.confirmpasswordLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.confirmpasswordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.confirmpasswordLabel.Location = new System.Drawing.Point(457, 389);
+            this.confirmpasswordLabel.Location = new System.Drawing.Point(459, 391);
             this.confirmpasswordLabel.Margin = new System.Windows.Forms.Padding(4);
             this.confirmpasswordLabel.Name = "confirmpasswordLabel";
             this.confirmpasswordLabel.Size = new System.Drawing.Size(110, 17);
-            this.confirmpasswordLabel.TabIndex = 22;
+            this.confirmpasswordLabel.TabIndex = 0;
             this.confirmpasswordLabel.Text = "Confirm Password:";
             // 
             // uploadimageButton
