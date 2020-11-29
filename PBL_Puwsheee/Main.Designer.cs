@@ -512,6 +512,7 @@
             this.Controls.Add(this.navBarPanel);
             this.Controls.Add(this.windowsPanel);
             this.Controls.Add(this.bgPanel);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Main";

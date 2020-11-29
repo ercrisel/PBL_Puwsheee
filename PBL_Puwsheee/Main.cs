@@ -50,14 +50,16 @@ namespace PBL_Puwsheee
 
             this.DoubleBuffered = true;
             enableDoubleBuff(displayPanel);
+            enableDoubleBuff(bgPanel);
+            enableDoubleBuff(navBarPanel);
         }
 
         private void Main_Load(object sender, EventArgs e)
         {
-           // string username = Log_In.publicUserName;
-           // usernameLabel.Text = username;
-          //  user.Username = username;
-            //user.LoadPicture(usericonPicture);
+            string username = Log_In.publicUserName;
+            usernameLabel.Text = username;
+            user.Username = username;
+            user.LoadPicture(usericonPicture);
             indicatorButton.Location = new Point(46, 130);
         }
 

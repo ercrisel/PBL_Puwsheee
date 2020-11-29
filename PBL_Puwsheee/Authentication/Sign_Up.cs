@@ -64,9 +64,11 @@ namespace PBL_Puwsheee
             Log_In login = new Log_In();
             login.Show();
         }
+
         public void showCode()
         {
             label11.Visible = enterCodeTextBox.Visible = submitCodeButton.Visible = true;
+            signupButton.Left = 590;
         }
 
         private void signupButton_Click(object sender, EventArgs e)
@@ -92,6 +94,7 @@ namespace PBL_Puwsheee
                 {
                     user.ShowRequiredFields(textboxes[i], labels[i]);
 ;               }
+                MessageBox.Show("Please fill up all fields","Error", MessageBoxButtons.OK,MessageBoxIcon.Error);
             }          
         }
 
@@ -162,21 +165,28 @@ namespace PBL_Puwsheee
         {
             user.Password = passwordTextbox.Text;
             user.IsPasswordStrong(passwordCondition1, passwordCondition2, passwordCondition3);
-            user.SamePassword(passAndConfirm);
+            if (confirmPasswordTextbox.Text != string.Empty)
+            {
+                user.SamePassword(passAndConfirm);
+            }
             user.ShowRequiredFields(passwordTextbox, requiredPassword);
         }
         // check mo kung similar sila ni passwrd
         private void confirmPasswordTextbox_TextChanged(object sender, EventArgs e)
         {
             user.ConfirmPassword = confirmPasswordTextbox.Text;
-            user.SamePassword(passAndConfirm);
+            
+            if(confirmPasswordTextbox.Text != string.Empty)
+            {
+                user.SamePassword(passAndConfirm);
+            }
             user.ShowRequiredFields(confirmPasswordTextbox, requiredConfirmPassword);
         }
 
         private void uploadimageButton_Click(object sender, EventArgs e)
         {
             OpenFileDialog dlg = new OpenFileDialog();
-            dlg.Title = "Chooce Image";
+            dlg.Title = "Choose Image";
             dlg.Filter = "*.jpg, *.jpeg, *.jpe, *.jfif, *.png) | *.jpg; *.jpeg; *.jpe; *.jfif; *.png";
             if (dlg.ShowDialog()== DialogResult.OK)
             {
