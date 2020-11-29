@@ -39,7 +39,7 @@
             this.currentScoreTimer = new System.Windows.Forms.Timer(this.components);
             this.DescriptionLabel = new Guna.UI2.WinForms.Guna2TextBox();
             this.testresultLabel = new Guna.UI2.WinForms.Guna2TextBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.averageScoreTimer = new System.Windows.Forms.Timer(this.components);
             this.currentscoreProgressBar.SuspendLayout();
             this.averagescoreProgressBar.SuspendLayout();
             this.SuspendLayout();
@@ -110,7 +110,7 @@
             // 
             // averagescoreProgressBar
             // 
-            this.averagescoreProgressBar.Controls.Add(this.guna2TextBox2);
+            this.averagescoreProgressBar.Controls.Add(this.averageProgressBarLabel);
             this.averagescoreProgressBar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
             this.averagescoreProgressBar.Location = new System.Drawing.Point(51, 232);
             this.averagescoreProgressBar.Name = "averagescoreProgressBar";
@@ -120,7 +120,6 @@
             this.averagescoreProgressBar.ShadowDecoration.Parent = this.averagescoreProgressBar;
             this.averagescoreProgressBar.Size = new System.Drawing.Size(109, 105);
             this.averagescoreProgressBar.TabIndex = 4;
-            this.averagescoreProgressBar.Value = 100;
             // 
             // guna2TextBox2
             // 
@@ -245,6 +244,12 @@
             this.testresultLabel.TabIndex = 11;
             this.testresultLabel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // averageScoreTimer
+            // 
+            this.averageScoreTimer.Enabled = true;
+            this.averageScoreTimer.Interval = 30;
+            this.averageScoreTimer.Tick += new System.EventHandler(this.animateAverageScore);
+            // 
             // Test_Results
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -281,8 +286,8 @@
         private System.Windows.Forms.Timer currentScoreTimer;
         private Guna.UI2.WinForms.Guna2TextBox DescriptionLabel;
         private Guna.UI2.WinForms.Guna2TextBox currentscoreLabel;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2TextBox averageProgressBarLabel;
         private Guna.UI2.WinForms.Guna2TextBox testresultLabel;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer averageScoreTimer;
     }
 }

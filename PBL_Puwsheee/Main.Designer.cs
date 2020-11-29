@@ -245,9 +245,9 @@
             this.usernameLabel.BackColor = System.Drawing.Color.Transparent;
             this.usernameLabel.Location = new System.Drawing.Point(749, 16);
             this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(86, 15);
+            this.usernameLabel.Size = new System.Drawing.Size(35, 15);
             this.usernameLabel.TabIndex = 9;
-            this.usernameLabel.Text = "guna2HtmlLabel1";
+            this.usernameLabel.Text = "Wilson";
             // 
             // usericonPicture
             // 

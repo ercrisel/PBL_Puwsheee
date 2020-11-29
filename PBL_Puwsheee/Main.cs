@@ -13,7 +13,7 @@ namespace PBL_Puwsheee
     public partial class Main : Form
     {
         private Form activeForm;
-
+        public static string nameOfUser;
         public Main()
         {
             InitializeComponent();
@@ -22,6 +22,7 @@ namespace PBL_Puwsheee
 
         private void Main_Load(object sender, EventArgs e)
         {
+            nameOfUser = usernameLabel.Text;
         }
 
         private void openChildForm(Form childForm)
