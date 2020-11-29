@@ -23,5 +23,11 @@ namespace PBL_Puwsheee
             new Log_In().Show();
             this.Hide();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            loadingPanel.Width += 1;
+            if (loadingPanel.Width <= 250) loadingTimer.Stop();
+        }
     }
 }

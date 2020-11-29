@@ -28,25 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Test_Main));
             this.anxietytestButton = new Guna.UI2.WinForms.Guna2Button();
             this.stresstestbutton = new Guna.UI2.WinForms.Guna2Button();
             this.depressiontestButton = new Guna.UI2.WinForms.Guna2Button();
-            this.DescriptionLabel = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2CirclePictureBox3 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).BeginInit();
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Panel1.SuspendLayout();
+            this.guna2Panel2.SuspendLayout();
+            this.guna2Panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // anxietytestButton
             // 
+            this.anxietytestButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
             this.anxietytestButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.anxietytestButton.BorderRadius = 16;
+            this.anxietytestButton.BorderRadius = 14;
             this.anxietytestButton.BorderThickness = 2;
             this.anxietytestButton.CheckedState.Parent = this.anxietytestButton;
             this.anxietytestButton.CustomBorderColor = System.Drawing.Color.Transparent;
@@ -55,18 +58,19 @@
             this.anxietytestButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.anxietytestButton.ForeColor = System.Drawing.Color.White;
             this.anxietytestButton.HoverState.Parent = this.anxietytestButton;
-            this.anxietytestButton.Location = new System.Drawing.Point(87, 418);
+            this.anxietytestButton.Location = new System.Drawing.Point(14, 197);
             this.anxietytestButton.Name = "anxietytestButton";
             this.anxietytestButton.ShadowDecoration.Parent = this.anxietytestButton;
-            this.anxietytestButton.Size = new System.Drawing.Size(180, 45);
+            this.anxietytestButton.Size = new System.Drawing.Size(120, 32);
             this.anxietytestButton.TabIndex = 6;
             this.anxietytestButton.Text = "Good Self-Care";
             this.anxietytestButton.Click += new System.EventHandler(this.depressiontestButton_Click);
             // 
             // stresstestbutton
             // 
+            this.stresstestbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
             this.stresstestbutton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.stresstestbutton.BorderRadius = 16;
+            this.stresstestbutton.BorderRadius = 14;
             this.stresstestbutton.BorderThickness = 2;
             this.stresstestbutton.CheckedState.Parent = this.stresstestbutton;
             this.stresstestbutton.CustomBorderColor = System.Drawing.Color.Transparent;
@@ -75,18 +79,19 @@
             this.stresstestbutton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.stresstestbutton.ForeColor = System.Drawing.Color.White;
             this.stresstestbutton.HoverState.Parent = this.stresstestbutton;
-            this.stresstestbutton.Location = new System.Drawing.Point(372, 418);
+            this.stresstestbutton.Location = new System.Drawing.Point(17, 197);
             this.stresstestbutton.Name = "stresstestbutton";
             this.stresstestbutton.ShadowDecoration.Parent = this.stresstestbutton;
-            this.stresstestbutton.Size = new System.Drawing.Size(180, 45);
+            this.stresstestbutton.Size = new System.Drawing.Size(159, 32);
             this.stresstestbutton.TabIndex = 7;
             this.stresstestbutton.Text = "Emotional Intelligence";
             this.stresstestbutton.Click += new System.EventHandler(this.depressiontestButton_Click);
             // 
             // depressiontestButton
             // 
+            this.depressiontestButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
             this.depressiontestButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.depressiontestButton.BorderRadius = 16;
+            this.depressiontestButton.BorderRadius = 14;
             this.depressiontestButton.BorderThickness = 2;
             this.depressiontestButton.CheckedState.Parent = this.depressiontestButton;
             this.depressiontestButton.CustomBorderColor = System.Drawing.Color.Transparent;
@@ -95,55 +100,45 @@
             this.depressiontestButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.depressiontestButton.ForeColor = System.Drawing.Color.White;
             this.depressiontestButton.HoverState.Parent = this.depressiontestButton;
-            this.depressiontestButton.Location = new System.Drawing.Point(653, 418);
+            this.depressiontestButton.Location = new System.Drawing.Point(16, 197);
             this.depressiontestButton.Name = "depressiontestButton";
             this.depressiontestButton.ShadowDecoration.Parent = this.depressiontestButton;
-            this.depressiontestButton.Size = new System.Drawing.Size(180, 45);
+            this.depressiontestButton.Size = new System.Drawing.Size(159, 32);
             this.depressiontestButton.TabIndex = 8;
             this.depressiontestButton.Text = "Anxiety and Depression";
             this.depressiontestButton.Click += new System.EventHandler(this.depressiontestButton_Click);
             // 
-            // DescriptionLabel
+            // guna2Panel1
             // 
-            this.DescriptionLabel.BackColor = System.Drawing.Color.Transparent;
-            this.DescriptionLabel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.DescriptionLabel.BorderRadius = 16;
-            this.DescriptionLabel.BorderThickness = 2;
-            this.DescriptionLabel.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.DescriptionLabel.DefaultText = resources.GetString("DescriptionLabel.DefaultText");
-            this.DescriptionLabel.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.DescriptionLabel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.DescriptionLabel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.DescriptionLabel.DisabledState.Parent = this.DescriptionLabel;
-            this.DescriptionLabel.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.DescriptionLabel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.DescriptionLabel.FocusedState.BorderColor = System.Drawing.Color.Transparent;
-            this.DescriptionLabel.FocusedState.Parent = this.DescriptionLabel;
-            this.DescriptionLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.DescriptionLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.DescriptionLabel.HoverState.BorderColor = System.Drawing.Color.Transparent;
-            this.DescriptionLabel.HoverState.Parent = this.DescriptionLabel;
-            this.DescriptionLabel.Location = new System.Drawing.Point(59, 141);
-            this.DescriptionLabel.Multiline = true;
-            this.DescriptionLabel.Name = "DescriptionLabel";
-            this.DescriptionLabel.PasswordChar = '\0';
-            this.DescriptionLabel.PlaceholderForeColor = System.Drawing.Color.White;
-            this.DescriptionLabel.PlaceholderText = "";
-            this.DescriptionLabel.ReadOnly = true;
-            this.DescriptionLabel.SelectedText = "";
-            this.DescriptionLabel.ShadowDecoration.Parent = this.DescriptionLabel;
-            this.DescriptionLabel.Size = new System.Drawing.Size(239, 244);
-            this.DescriptionLabel.TabIndex = 11;
-            this.DescriptionLabel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2Panel1.BorderRadius = 25;
+            this.guna2Panel1.Controls.Add(this.guna2GradientPanel1);
+            this.guna2Panel1.Controls.Add(this.anxietytestButton);
+            this.guna2Panel1.Controls.Add(this.guna2TextBox1);
+            this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
+            this.guna2Panel1.Location = new System.Drawing.Point(33, 100);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
+            this.guna2Panel1.Size = new System.Drawing.Size(265, 297);
+            this.guna2Panel1.TabIndex = 19;
+            // 
+            // guna2GradientPanel1
+            // 
+            this.guna2GradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
+            this.guna2GradientPanel1.BorderRadius = 14;
+            this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(13, 14);
+            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
+            this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(239, 172);
+            this.guna2GradientPanel1.TabIndex = 21;
             // 
             // guna2TextBox1
             // 
-            this.guna2TextBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2TextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.guna2TextBox1.BorderRadius = 16;
-            this.guna2TextBox1.BorderThickness = 2;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.guna2TextBox1.DefaultText = resources.GetString("guna2TextBox1.DefaultText");
+            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox1.DefaultText = "The necessary human regulatory function which is under individual control, delibe" +
+    "rate and self-initiated.";
             this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -153,31 +148,49 @@
             this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.Transparent;
             this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
             this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.Transparent;
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(342, 141);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(5);
+            this.guna2TextBox1.Location = new System.Drawing.Point(4, 225);
             this.guna2TextBox1.Multiline = true;
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.White;
             this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.ReadOnly = true;
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(239, 244);
-            this.guna2TextBox1.TabIndex = 12;
-            this.guna2TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox1.Size = new System.Drawing.Size(258, 60);
+            this.guna2TextBox1.TabIndex = 20;
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.BorderRadius = 25;
+            this.guna2Panel2.Controls.Add(this.guna2GradientPanel2);
+            this.guna2Panel2.Controls.Add(this.stresstestbutton);
+            this.guna2Panel2.Controls.Add(this.guna2TextBox2);
+            this.guna2Panel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
+            this.guna2Panel2.Location = new System.Drawing.Point(333, 100);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
+            this.guna2Panel2.Size = new System.Drawing.Size(265, 297);
+            this.guna2Panel2.TabIndex = 21;
+            // 
+            // guna2GradientPanel2
+            // 
+            this.guna2GradientPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
+            this.guna2GradientPanel2.BorderRadius = 14;
+            this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(14, 13);
+            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
+            this.guna2GradientPanel2.ShadowDecoration.Parent = this.guna2GradientPanel2;
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(239, 172);
+            this.guna2GradientPanel2.TabIndex = 22;
             // 
             // guna2TextBox2
             // 
-            this.guna2TextBox2.BackColor = System.Drawing.Color.Transparent;
             this.guna2TextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.guna2TextBox2.BorderRadius = 16;
-            this.guna2TextBox2.BorderThickness = 2;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.guna2TextBox2.DefaultText = resources.GetString("guna2TextBox2.DefaultText");
+            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox2.DefaultText = "The capacity to be aware of, control, and express one\'s emotions, and to handle i" +
+    "nterpersonal relationships empathetically.";
             this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -187,57 +200,69 @@
             this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.Transparent;
             this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
             this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.Transparent;
             this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Location = new System.Drawing.Point(626, 141);
+            this.guna2TextBox2.Location = new System.Drawing.Point(4, 225);
             this.guna2TextBox2.Multiline = true;
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.White;
             this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.ReadOnly = true;
             this.guna2TextBox2.SelectedText = "";
             this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(239, 244);
-            this.guna2TextBox2.TabIndex = 13;
-            this.guna2TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox2.Size = new System.Drawing.Size(258, 69);
+            this.guna2TextBox2.TabIndex = 20;
             // 
-            // guna2CirclePictureBox1
+            // guna2Panel3
             // 
-            this.guna2CirclePictureBox1.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(128, 25);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(99, 94);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2CirclePictureBox1.TabIndex = 14;
-            this.guna2CirclePictureBox1.TabStop = false;
+            this.guna2Panel3.BorderRadius = 25;
+            this.guna2Panel3.Controls.Add(this.guna2GradientPanel3);
+            this.guna2Panel3.Controls.Add(this.depressiontestButton);
+            this.guna2Panel3.Controls.Add(this.guna2TextBox3);
+            this.guna2Panel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
+            this.guna2Panel3.Location = new System.Drawing.Point(633, 100);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
+            this.guna2Panel3.Size = new System.Drawing.Size(265, 297);
+            this.guna2Panel3.TabIndex = 22;
             // 
-            // guna2CirclePictureBox2
+            // guna2GradientPanel3
             // 
-            this.guna2CirclePictureBox2.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
-            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(695, 25);
-            this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
-            this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox2.ShadowDecoration.Parent = this.guna2CirclePictureBox2;
-            this.guna2CirclePictureBox2.Size = new System.Drawing.Size(99, 94);
-            this.guna2CirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2CirclePictureBox2.TabIndex = 15;
-            this.guna2CirclePictureBox2.TabStop = false;
+            this.guna2GradientPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
+            this.guna2GradientPanel3.BorderRadius = 14;
+            this.guna2GradientPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.guna2GradientPanel3.Location = new System.Drawing.Point(14, 14);
+            this.guna2GradientPanel3.Name = "guna2GradientPanel3";
+            this.guna2GradientPanel3.ShadowDecoration.Parent = this.guna2GradientPanel3;
+            this.guna2GradientPanel3.Size = new System.Drawing.Size(239, 172);
+            this.guna2GradientPanel3.TabIndex = 23;
             // 
-            // guna2CirclePictureBox3
+            // guna2TextBox3
             // 
-            this.guna2CirclePictureBox3.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
-            this.guna2CirclePictureBox3.Location = new System.Drawing.Point(412, 25);
-            this.guna2CirclePictureBox3.Name = "guna2CirclePictureBox3";
-            this.guna2CirclePictureBox3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox3.ShadowDecoration.Parent = this.guna2CirclePictureBox3;
-            this.guna2CirclePictureBox3.Size = new System.Drawing.Size(99, 94);
-            this.guna2CirclePictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2CirclePictureBox3.TabIndex = 16;
-            this.guna2CirclePictureBox3.TabStop = false;
+            this.guna2TextBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
+            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox3.DefaultText = " A simple checklist aims to measure whether you may have been affected by depress" +
+    "ion and anxiety experiened.";
+            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox3.DisabledState.Parent = this.guna2TextBox3;
+            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
+            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2TextBox3.FocusedState.Parent = this.guna2TextBox3;
+            this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
+            this.guna2TextBox3.Location = new System.Drawing.Point(4, 225);
+            this.guna2TextBox3.Multiline = true;
+            this.guna2TextBox3.Name = "guna2TextBox3";
+            this.guna2TextBox3.PasswordChar = '\0';
+            this.guna2TextBox3.PlaceholderText = "";
+            this.guna2TextBox3.SelectedText = "";
+            this.guna2TextBox3.ShadowDecoration.Parent = this.guna2TextBox3;
+            this.guna2TextBox3.Size = new System.Drawing.Size(258, 69);
+            this.guna2TextBox3.TabIndex = 20;
             // 
             // Test_Main
             // 
@@ -245,21 +270,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.ClientSize = new System.Drawing.Size(935, 505);
-            this.Controls.Add(this.guna2CirclePictureBox3);
-            this.Controls.Add(this.guna2CirclePictureBox2);
-            this.Controls.Add(this.guna2CirclePictureBox1);
-            this.Controls.Add(this.guna2TextBox2);
-            this.Controls.Add(this.guna2TextBox1);
-            this.Controls.Add(this.DescriptionLabel);
-            this.Controls.Add(this.depressiontestButton);
-            this.Controls.Add(this.stresstestbutton);
-            this.Controls.Add(this.anxietytestButton);
+            this.Controls.Add(this.guna2Panel3);
+            this.Controls.Add(this.guna2Panel2);
+            this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Test_Main";
             this.Text = "Test_Main";
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).EndInit();
+            this.Load += new System.EventHandler(this.Test_Main_Load);
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel2.ResumeLayout(false);
+            this.guna2Panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -268,11 +288,14 @@
         private Guna.UI2.WinForms.Guna2Button anxietytestButton;
         private Guna.UI2.WinForms.Guna2Button stresstestbutton;
         private Guna.UI2.WinForms.Guna2Button depressiontestButton;
-        private Guna.UI2.WinForms.Guna2TextBox DescriptionLabel;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox2;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox3;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel3;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
     }
 }

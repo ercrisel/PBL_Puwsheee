@@ -32,12 +32,12 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.currentscoreProgressBar = new Guna.UI2.WinForms.Guna2CircleProgressBar();
+            this.currentscoreLabel = new Guna.UI2.WinForms.Guna2TextBox();
             this.averagescoreProgressBar = new Guna.UI2.WinForms.Guna2CircleProgressBar();
+            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.currentScoreTimer = new System.Windows.Forms.Timer(this.components);
             this.DescriptionLabel = new Guna.UI2.WinForms.Guna2TextBox();
-            this.currentscoreLabel = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.testresultLabel = new Guna.UI2.WinForms.Guna2TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.currentscoreProgressBar.SuspendLayout();
@@ -47,7 +47,7 @@
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(46, 31);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(46, 67);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(56, 15);
             this.guna2HtmlLabel1.TabIndex = 0;
@@ -56,7 +56,7 @@
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(46, 176);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(46, 211);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(74, 15);
             this.guna2HtmlLabel2.TabIndex = 1;
@@ -66,7 +66,7 @@
             // 
             this.currentscoreProgressBar.Controls.Add(this.currentscoreLabel);
             this.currentscoreProgressBar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.currentscoreProgressBar.Location = new System.Drawing.Point(51, 52);
+            this.currentscoreProgressBar.Location = new System.Drawing.Point(56, 88);
             this.currentscoreProgressBar.Maximum = 50;
             this.currentscoreProgressBar.Name = "currentscoreProgressBar";
             this.currentscoreProgressBar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
@@ -76,11 +76,43 @@
             this.currentscoreProgressBar.Size = new System.Drawing.Size(109, 105);
             this.currentscoreProgressBar.TabIndex = 3;
             // 
+            // currentscoreLabel
+            // 
+            this.currentscoreLabel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.currentscoreLabel.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.currentscoreLabel.DefaultText = "50";
+            this.currentscoreLabel.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.currentscoreLabel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.currentscoreLabel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.currentscoreLabel.DisabledState.Parent = this.currentscoreLabel;
+            this.currentscoreLabel.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.currentscoreLabel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.currentscoreLabel.FocusedState.BorderColor = System.Drawing.Color.Transparent;
+            this.currentscoreLabel.FocusedState.Parent = this.currentscoreLabel;
+            this.currentscoreLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentscoreLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.currentscoreLabel.HoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.currentscoreLabel.HoverState.Parent = this.currentscoreLabel;
+            this.currentscoreLabel.IconLeftSize = new System.Drawing.Size(0, 0);
+            this.currentscoreLabel.IconRightSize = new System.Drawing.Size(0, 0);
+            this.currentscoreLabel.Location = new System.Drawing.Point(32, 33);
+            this.currentscoreLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.currentscoreLabel.Multiline = true;
+            this.currentscoreLabel.Name = "currentscoreLabel";
+            this.currentscoreLabel.PasswordChar = '\0';
+            this.currentscoreLabel.PlaceholderText = "";
+            this.currentscoreLabel.SelectedText = "";
+            this.currentscoreLabel.SelectionStart = 2;
+            this.currentscoreLabel.ShadowDecoration.Parent = this.currentscoreLabel;
+            this.currentscoreLabel.Size = new System.Drawing.Size(42, 36);
+            this.currentscoreLabel.TabIndex = 11;
+            this.currentscoreLabel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // averagescoreProgressBar
             // 
             this.averagescoreProgressBar.Controls.Add(this.guna2TextBox2);
             this.averagescoreProgressBar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.averagescoreProgressBar.Location = new System.Drawing.Point(51, 197);
+            this.averagescoreProgressBar.Location = new System.Drawing.Point(51, 232);
             this.averagescoreProgressBar.Name = "averagescoreProgressBar";
             this.averagescoreProgressBar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.averagescoreProgressBar.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
@@ -89,6 +121,38 @@
             this.averagescoreProgressBar.Size = new System.Drawing.Size(109, 105);
             this.averagescoreProgressBar.TabIndex = 4;
             this.averagescoreProgressBar.Value = 100;
+            // 
+            // guna2TextBox2
+            // 
+            this.guna2TextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox2.DefaultText = "60";
+            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
+            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
+            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox2.ForeColor = System.Drawing.Color.Black;
+            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
+            this.guna2TextBox2.IconLeftSize = new System.Drawing.Size(0, 0);
+            this.guna2TextBox2.IconRightSize = new System.Drawing.Size(0, 0);
+            this.guna2TextBox2.Location = new System.Drawing.Point(32, 33);
+            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(0);
+            this.guna2TextBox2.Multiline = true;
+            this.guna2TextBox2.Name = "guna2TextBox2";
+            this.guna2TextBox2.PasswordChar = '\0';
+            this.guna2TextBox2.PlaceholderText = "";
+            this.guna2TextBox2.SelectedText = "";
+            this.guna2TextBox2.SelectionStart = 2;
+            this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
+            this.guna2TextBox2.Size = new System.Drawing.Size(42, 37);
+            this.guna2TextBox2.TabIndex = 12;
+            this.guna2TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // guna2Button1
             // 
@@ -101,7 +165,7 @@
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(335, 297);
+            this.guna2Button1.Location = new System.Drawing.Point(339, 301);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(118, 36);
@@ -142,72 +206,11 @@
             this.DescriptionLabel.PlaceholderText = "";
             this.DescriptionLabel.ReadOnly = true;
             this.DescriptionLabel.SelectedText = "";
+            this.DescriptionLabel.SelectionStart = 59;
             this.DescriptionLabel.ShadowDecoration.Parent = this.DescriptionLabel;
             this.DescriptionLabel.Size = new System.Drawing.Size(384, 182);
             this.DescriptionLabel.TabIndex = 10;
             this.DescriptionLabel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // currentscoreLabel
-            // 
-            this.currentscoreLabel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.currentscoreLabel.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.currentscoreLabel.DefaultText = "50";
-            this.currentscoreLabel.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.currentscoreLabel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.currentscoreLabel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.currentscoreLabel.DisabledState.Parent = this.currentscoreLabel;
-            this.currentscoreLabel.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.currentscoreLabel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.currentscoreLabel.FocusedState.BorderColor = System.Drawing.Color.Transparent;
-            this.currentscoreLabel.FocusedState.Parent = this.currentscoreLabel;
-            this.currentscoreLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentscoreLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.currentscoreLabel.HoverState.BorderColor = System.Drawing.Color.Transparent;
-            this.currentscoreLabel.HoverState.Parent = this.currentscoreLabel;
-            this.currentscoreLabel.IconLeftSize = new System.Drawing.Size(0, 0);
-            this.currentscoreLabel.IconRightSize = new System.Drawing.Size(0, 0);
-            this.currentscoreLabel.Location = new System.Drawing.Point(30, 36);
-            this.currentscoreLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.currentscoreLabel.Multiline = true;
-            this.currentscoreLabel.Name = "currentscoreLabel";
-            this.currentscoreLabel.PasswordChar = '\0';
-            this.currentscoreLabel.PlaceholderText = "";
-            this.currentscoreLabel.SelectedText = "";
-            this.currentscoreLabel.ShadowDecoration.Parent = this.currentscoreLabel;
-            this.currentscoreLabel.Size = new System.Drawing.Size(47, 36);
-            this.currentscoreLabel.TabIndex = 11;
-            this.currentscoreLabel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // guna2TextBox2
-            // 
-            this.guna2TextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "60";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox2.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.IconLeftSize = new System.Drawing.Size(0, 0);
-            this.guna2TextBox2.IconRightSize = new System.Drawing.Size(0, 0);
-            this.guna2TextBox2.Location = new System.Drawing.Point(32, 34);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2TextBox2.Multiline = true;
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(46, 37);
-            this.guna2TextBox2.TabIndex = 12;
-            this.guna2TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // testresultLabel
             // 
@@ -223,21 +226,22 @@
             this.testresultLabel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.testresultLabel.DisabledState.Parent = this.testresultLabel;
             this.testresultLabel.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.testresultLabel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.testresultLabel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.testresultLabel.FocusedState.BorderColor = System.Drawing.Color.Transparent;
             this.testresultLabel.FocusedState.Parent = this.testresultLabel;
             this.testresultLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.testresultLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
+            this.testresultLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.testresultLabel.HoverState.BorderColor = System.Drawing.Color.Transparent;
             this.testresultLabel.HoverState.Parent = this.testresultLabel;
-            this.testresultLabel.Location = new System.Drawing.Point(200, 44);
+            this.testresultLabel.Location = new System.Drawing.Point(249, 44);
             this.testresultLabel.Name = "testresultLabel";
             this.testresultLabel.PasswordChar = '\0';
             this.testresultLabel.PlaceholderText = "";
             this.testresultLabel.ReadOnly = true;
             this.testresultLabel.SelectedText = "";
+            this.testresultLabel.SelectionStart = 59;
             this.testresultLabel.ShadowDecoration.Parent = this.testresultLabel;
-            this.testresultLabel.Size = new System.Drawing.Size(384, 38);
+            this.testresultLabel.Size = new System.Drawing.Size(277, 38);
             this.testresultLabel.TabIndex = 11;
             this.testresultLabel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 

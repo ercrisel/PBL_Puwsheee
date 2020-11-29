@@ -43,6 +43,11 @@ namespace PBL_Puwsheee.Test
                 bg.Dispose();
             }
         }
+
+        private void Test_Main_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

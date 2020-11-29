@@ -117,23 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="DescriptionLabel.DefaultText" xml:space="preserve">
-    <value>Self-care is any necessary human regulatory function which is under individual control, deliberate and self-initiated.
-
-Some people know intuitively when they need to stop, take a break, or even take a day off. Other people forget when to eat. You can judge how well you take care of yourself by noting how you feel physically, emotionally, and mentally.
-
-Do You Think You’re Practicing Good Self-Care?</value>
-  </data>
-  <data name="guna2TextBox1.DefaultText" xml:space="preserve">
-    <value>We all know people who are in full control of their emotions. They're calm in a crisis, and they make decisions sensitively, however stressful the situation.
-
-We also know people who can read the emotions of others. They understand what to say to make people feel better, and they know how to inspire them to take action.
-
-So, how emotionally intelligent are you, and how can you develop further?</value>
-  </data>
-  <data name="guna2TextBox2.DefaultText" xml:space="preserve">
-    <value>Having a low mood or feeling on edge are common experiences for us all. When these moods persist, it may be that you are experiencing depression or anxiety – or both. These self tests ask some important questions that can help you take stock of where you are at so you can make a plan for feeling better sooner.
-
-This test simply measure of general distress without identifying its cause. This is to identify people in need of further assessment for anxiety and depression.</value>
-  </data>
 </root>

@@ -58,6 +58,7 @@
             this.Name = "PositiveAffirmations";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PositiveAffirmations";
+            this.Load += new System.EventHandler(this.PositiveAffirmations_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
