@@ -34,7 +34,7 @@
             this.currentscoreProgressBar = new Guna.UI2.WinForms.Guna2CircleProgressBar();
             this.currentscoreLabel = new Guna.UI2.WinForms.Guna2TextBox();
             this.averagescoreProgressBar = new Guna.UI2.WinForms.Guna2CircleProgressBar();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.currentScoreTimer = new System.Windows.Forms.Timer(this.components);
             this.DescriptionLabel = new Guna.UI2.WinForms.Guna2TextBox();
@@ -110,7 +110,7 @@
             // 
             // averagescoreProgressBar
             // 
-            this.averagescoreProgressBar.Controls.Add(this.averageProgressBarLabel);
+            this.averagescoreProgressBar.Controls.Add(this.guna2TextBox1);
             this.averagescoreProgressBar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
             this.averagescoreProgressBar.Location = new System.Drawing.Point(51, 232);
             this.averagescoreProgressBar.Name = "averagescoreProgressBar";
@@ -121,37 +121,37 @@
             this.averagescoreProgressBar.Size = new System.Drawing.Size(109, 105);
             this.averagescoreProgressBar.TabIndex = 4;
             // 
-            // guna2TextBox2
+            // guna2TextBox1
             // 
-            this.guna2TextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "60";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox2.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.IconLeftSize = new System.Drawing.Size(0, 0);
-            this.guna2TextBox2.IconRightSize = new System.Drawing.Size(0, 0);
-            this.guna2TextBox2.Location = new System.Drawing.Point(32, 33);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2TextBox2.Multiline = true;
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.SelectionStart = 2;
-            this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(42, 37);
-            this.guna2TextBox2.TabIndex = 12;
-            this.guna2TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox1.DefaultText = "50";
+            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.IconLeftSize = new System.Drawing.Size(0, 0);
+            this.guna2TextBox1.IconRightSize = new System.Drawing.Size(0, 0);
+            this.guna2TextBox1.Location = new System.Drawing.Point(34, 33);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.guna2TextBox1.Multiline = true;
+            this.guna2TextBox1.Name = "guna2TextBox1";
+            this.guna2TextBox1.PasswordChar = '\0';
+            this.guna2TextBox1.PlaceholderText = "";
+            this.guna2TextBox1.SelectedText = "";
+            this.guna2TextBox1.SelectionStart = 2;
+            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Size = new System.Drawing.Size(42, 36);
+            this.guna2TextBox1.TabIndex = 12;
+            this.guna2TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // guna2Button1
             // 
@@ -219,28 +219,27 @@
             this.testresultLabel.BorderRadius = 16;
             this.testresultLabel.BorderThickness = 2;
             this.testresultLabel.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.testresultLabel.DefaultText = "asassad\r\nsasasdddddddddddddddddddddddddddda\r\nadsdads\r\ndasda";
+            this.testresultLabel.DefaultText = "Emotional Intelligence";
             this.testresultLabel.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.testresultLabel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.testresultLabel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.testresultLabel.DisabledState.Parent = this.testresultLabel;
             this.testresultLabel.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.testresultLabel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
+            this.testresultLabel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.testresultLabel.FocusedState.BorderColor = System.Drawing.Color.Transparent;
             this.testresultLabel.FocusedState.Parent = this.testresultLabel;
-            this.testresultLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.testresultLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.testresultLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.testresultLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.testresultLabel.HoverState.BorderColor = System.Drawing.Color.Transparent;
             this.testresultLabel.HoverState.Parent = this.testresultLabel;
-            this.testresultLabel.Location = new System.Drawing.Point(249, 44);
+            this.testresultLabel.Location = new System.Drawing.Point(258, 44);
             this.testresultLabel.Name = "testresultLabel";
             this.testresultLabel.PasswordChar = '\0';
             this.testresultLabel.PlaceholderText = "";
             this.testresultLabel.ReadOnly = true;
             this.testresultLabel.SelectedText = "";
-            this.testresultLabel.SelectionStart = 59;
             this.testresultLabel.ShadowDecoration.Parent = this.testresultLabel;
-            this.testresultLabel.Size = new System.Drawing.Size(277, 38);
+            this.testresultLabel.Size = new System.Drawing.Size(266, 38);
             this.testresultLabel.TabIndex = 11;
             this.testresultLabel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -248,7 +247,6 @@
             // 
             this.averageScoreTimer.Enabled = true;
             this.averageScoreTimer.Interval = 30;
-            this.averageScoreTimer.Tick += new System.EventHandler(this.animateAverageScore);
             // 
             // Test_Results
             // 
@@ -286,8 +284,8 @@
         private System.Windows.Forms.Timer currentScoreTimer;
         private Guna.UI2.WinForms.Guna2TextBox DescriptionLabel;
         private Guna.UI2.WinForms.Guna2TextBox currentscoreLabel;
-        private Guna.UI2.WinForms.Guna2TextBox averageProgressBarLabel;
         private Guna.UI2.WinForms.Guna2TextBox testresultLabel;
         private System.Windows.Forms.Timer averageScoreTimer;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
     }
 }

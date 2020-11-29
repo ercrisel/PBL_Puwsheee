@@ -46,6 +46,8 @@
             this.loadingPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.incrementTimer = new System.Windows.Forms.Timer(this.components);
             this.decrementTimer = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,6 +57,7 @@
             this.submitButton.BorderRadius = 16;
             this.submitButton.BorderThickness = 2;
             this.submitButton.CheckedState.Parent = this.submitButton;
+            this.submitButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.submitButton.CustomImages.Parent = this.submitButton;
             this.submitButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.submitButton.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -74,6 +77,7 @@
             this.clearButton.BorderRadius = 16;
             this.clearButton.BorderThickness = 2;
             this.clearButton.CheckedState.Parent = this.clearButton;
+            this.clearButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.clearButton.CustomImages.Parent = this.clearButton;
             this.clearButton.FillColor = System.Drawing.Color.Transparent;
             this.clearButton.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -143,7 +147,7 @@
             this.questionLabel.ForeColor = System.Drawing.Color.Black;
             this.questionLabel.HoverState.BorderColor = System.Drawing.Color.Transparent;
             this.questionLabel.HoverState.Parent = this.questionLabel;
-            this.questionLabel.Location = new System.Drawing.Point(210, 184);
+            this.questionLabel.Location = new System.Drawing.Point(208, 159);
             this.questionLabel.Margin = new System.Windows.Forms.Padding(0);
             this.questionLabel.Multiline = true;
             this.questionLabel.Name = "questionLabel";
@@ -161,34 +165,34 @@
             // typeoftestLabel
             // 
             this.typeoftestLabel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.typeoftestLabel.BorderRadius = 20;
+            this.typeoftestLabel.BorderRadius = 15;
             this.typeoftestLabel.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.typeoftestLabel.DefaultText = "TESTESTEST";
+            this.typeoftestLabel.DefaultText = "Anxiety and Depression";
             this.typeoftestLabel.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.typeoftestLabel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.typeoftestLabel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.typeoftestLabel.DisabledState.Parent = this.typeoftestLabel;
             this.typeoftestLabel.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.typeoftestLabel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
+            this.typeoftestLabel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.typeoftestLabel.FocusedState.BorderColor = System.Drawing.Color.Transparent;
             this.typeoftestLabel.FocusedState.Parent = this.typeoftestLabel;
-            this.typeoftestLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.typeoftestLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.typeoftestLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.typeoftestLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.typeoftestLabel.HoverState.BorderColor = System.Drawing.Color.Transparent;
             this.typeoftestLabel.HoverState.Parent = this.typeoftestLabel;
-            this.typeoftestLabel.Location = new System.Drawing.Point(259, 51);
+            this.typeoftestLabel.Location = new System.Drawing.Point(654, 9);
             this.typeoftestLabel.Margin = new System.Windows.Forms.Padding(0);
             this.typeoftestLabel.Multiline = true;
             this.typeoftestLabel.Name = "typeoftestLabel";
             this.typeoftestLabel.PasswordChar = '\0';
             this.typeoftestLabel.PlaceholderForeColor = System.Drawing.Color.White;
             this.typeoftestLabel.PlaceholderText = "";
+            this.typeoftestLabel.ReadOnly = true;
             this.typeoftestLabel.SelectedText = "";
-            this.typeoftestLabel.SelectionStart = 10;
             this.typeoftestLabel.ShadowDecoration.Parent = this.typeoftestLabel;
-            this.typeoftestLabel.Size = new System.Drawing.Size(333, 40);
+            this.typeoftestLabel.Size = new System.Drawing.Size(187, 34);
             this.typeoftestLabel.TabIndex = 70;
-            this.typeoftestLabel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.typeoftestLabel.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // decrementButton
             // 
@@ -196,6 +200,7 @@
             this.decrementButton.BorderRadius = 16;
             this.decrementButton.BorderThickness = 2;
             this.decrementButton.CheckedState.Parent = this.decrementButton;
+            this.decrementButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.decrementButton.CustomImages.Parent = this.decrementButton;
             this.decrementButton.FillColor = System.Drawing.Color.Transparent;
             this.decrementButton.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -216,6 +221,7 @@
             this.incrementButton.BorderRadius = 16;
             this.incrementButton.BorderThickness = 2;
             this.incrementButton.CheckedState.Parent = this.incrementButton;
+            this.incrementButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.incrementButton.CustomImages.Parent = this.incrementButton;
             this.incrementButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.incrementButton.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -321,7 +327,7 @@
             // 
             this.currentquestionTextbox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.currentquestionTextbox.BorderRadius = 20;
-            this.currentquestionTextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.currentquestionTextbox.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.currentquestionTextbox.DefaultText = "Question 1";
             this.currentquestionTextbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.currentquestionTextbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -333,14 +339,16 @@
             this.currentquestionTextbox.FocusedState.Parent = this.currentquestionTextbox;
             this.currentquestionTextbox.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.currentquestionTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.currentquestionTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.currentquestionTextbox.HoverState.BorderColor = System.Drawing.Color.Transparent;
             this.currentquestionTextbox.HoverState.Parent = this.currentquestionTextbox;
-            this.currentquestionTextbox.Location = new System.Drawing.Point(177, 114);
+            this.currentquestionTextbox.Location = new System.Drawing.Point(177, 63);
             this.currentquestionTextbox.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.currentquestionTextbox.Name = "currentquestionTextbox";
             this.currentquestionTextbox.PasswordChar = '\0';
             this.currentquestionTextbox.PlaceholderText = "";
+            this.currentquestionTextbox.ReadOnly = true;
             this.currentquestionTextbox.SelectedText = "";
+            this.currentquestionTextbox.SelectionStart = 10;
             this.currentquestionTextbox.ShadowDecoration.Parent = this.currentquestionTextbox;
             this.currentquestionTextbox.Size = new System.Drawing.Size(500, 45);
             this.currentquestionTextbox.TabIndex = 88;
@@ -351,7 +359,7 @@
             this.guna2Panel1.BorderRadius = 5;
             this.guna2Panel1.Controls.Add(this.loadingPanel);
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.guna2Panel1.Location = new System.Drawing.Point(177, 155);
+            this.guna2Panel1.Location = new System.Drawing.Point(177, 104);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(500, 10);
@@ -380,12 +388,34 @@
             this.decrementTimer.Tag = "Decrement";
             this.decrementTimer.Tick += new System.EventHandler(this.decrementTimer_Tick);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(193, 305);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 13);
+            this.label1.TabIndex = 90;
+            this.label1.Text = "not so often";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(602, 305);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(57, 13);
+            this.label2.TabIndex = 91;
+            this.label2.Text = "all the time";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Test_Questions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.ClientSize = new System.Drawing.Size(850, 475);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.currentquestionTextbox);
             this.Controls.Add(this.slot4RadioButton);
@@ -408,6 +438,7 @@
             this.Load += new System.EventHandler(this.Test_Questions_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -430,5 +461,7 @@
         private Guna.UI2.WinForms.Guna2Panel loadingPanel;
         private System.Windows.Forms.Timer incrementTimer;
         private System.Windows.Forms.Timer decrementTimer;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
