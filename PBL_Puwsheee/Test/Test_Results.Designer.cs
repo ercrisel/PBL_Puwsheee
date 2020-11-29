@@ -34,7 +34,7 @@
             this.currentscoreProgressBar = new Guna.UI2.WinForms.Guna2CircleProgressBar();
             this.currentscoreLabel = new Guna.UI2.WinForms.Guna2TextBox();
             this.averagescoreProgressBar = new Guna.UI2.WinForms.Guna2CircleProgressBar();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.averageLabel = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.currentScoreTimer = new System.Windows.Forms.Timer(this.components);
             this.DescriptionLabel = new Guna.UI2.WinForms.Guna2TextBox();
@@ -110,7 +110,7 @@
             // 
             // averagescoreProgressBar
             // 
-            this.averagescoreProgressBar.Controls.Add(this.guna2TextBox1);
+            this.averagescoreProgressBar.Controls.Add(this.averageLabel);
             this.averagescoreProgressBar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
             this.averagescoreProgressBar.Location = new System.Drawing.Point(51, 232);
             this.averagescoreProgressBar.Name = "averagescoreProgressBar";
@@ -121,37 +121,37 @@
             this.averagescoreProgressBar.Size = new System.Drawing.Size(109, 105);
             this.averagescoreProgressBar.TabIndex = 4;
             // 
-            // guna2TextBox1
+            // averageLabel
             // 
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "50";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.IconLeftSize = new System.Drawing.Size(0, 0);
-            this.guna2TextBox1.IconRightSize = new System.Drawing.Size(0, 0);
-            this.guna2TextBox1.Location = new System.Drawing.Point(34, 33);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2TextBox1.Multiline = true;
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.SelectionStart = 2;
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(42, 36);
-            this.guna2TextBox1.TabIndex = 12;
-            this.guna2TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.averageLabel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.averageLabel.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.averageLabel.DefaultText = "50";
+            this.averageLabel.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.averageLabel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.averageLabel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.averageLabel.DisabledState.Parent = this.averageLabel;
+            this.averageLabel.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.averageLabel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.averageLabel.FocusedState.BorderColor = System.Drawing.Color.Transparent;
+            this.averageLabel.FocusedState.Parent = this.averageLabel;
+            this.averageLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.averageLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.averageLabel.HoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.averageLabel.HoverState.Parent = this.averageLabel;
+            this.averageLabel.IconLeftSize = new System.Drawing.Size(0, 0);
+            this.averageLabel.IconRightSize = new System.Drawing.Size(0, 0);
+            this.averageLabel.Location = new System.Drawing.Point(34, 33);
+            this.averageLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.averageLabel.Multiline = true;
+            this.averageLabel.Name = "averageLabel";
+            this.averageLabel.PasswordChar = '\0';
+            this.averageLabel.PlaceholderText = "";
+            this.averageLabel.SelectedText = "";
+            this.averageLabel.SelectionStart = 2;
+            this.averageLabel.ShadowDecoration.Parent = this.averageLabel;
+            this.averageLabel.Size = new System.Drawing.Size(42, 36);
+            this.averageLabel.TabIndex = 12;
+            this.averageLabel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // guna2Button1
             // 
@@ -233,11 +233,13 @@
             this.testresultLabel.HoverState.BorderColor = System.Drawing.Color.Transparent;
             this.testresultLabel.HoverState.Parent = this.testresultLabel;
             this.testresultLabel.Location = new System.Drawing.Point(258, 44);
+            this.testresultLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.testresultLabel.Name = "testresultLabel";
             this.testresultLabel.PasswordChar = '\0';
             this.testresultLabel.PlaceholderText = "";
             this.testresultLabel.ReadOnly = true;
             this.testresultLabel.SelectedText = "";
+            this.testresultLabel.SelectionStart = 22;
             this.testresultLabel.ShadowDecoration.Parent = this.testresultLabel;
             this.testresultLabel.Size = new System.Drawing.Size(266, 38);
             this.testresultLabel.TabIndex = 11;
@@ -247,6 +249,7 @@
             // 
             this.averageScoreTimer.Enabled = true;
             this.averageScoreTimer.Interval = 30;
+            this.averageScoreTimer.Tick += new System.EventHandler(this.averageScoreTimer_Tick);
             // 
             // Test_Results
             // 
@@ -286,6 +289,6 @@
         private Guna.UI2.WinForms.Guna2TextBox currentscoreLabel;
         private Guna.UI2.WinForms.Guna2TextBox testresultLabel;
         private System.Windows.Forms.Timer averageScoreTimer;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox averageLabel;
     }
 }

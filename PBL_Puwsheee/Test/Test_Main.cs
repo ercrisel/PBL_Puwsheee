@@ -23,56 +23,36 @@ namespace PBL_Puwsheee.Test
         {
             // date 
 
-            //string dateClicked = DateTime.Now.ToString("yyyyMMdd");
-            //result.Date = dateClicked;
-            //result.Username = Main.nameOfUser;
+            string dateClicked = DateTime.Now.ToString("yyyyMMdd");
+            result.Date = dateClicked;
+            result.Username = Main.nameOfUser;
 
             Guna2Button btn = sender as Guna2Button;
-
-            Form bg = new Form();
-            using (Form Test = new Test.Test_Questions(btn.Text))
+            if (result.CheckIfAlreadyAnswered(btn))
             {
-                bg.StartPosition = FormStartPosition.CenterScreen;
-                bg.FormBorderStyle = FormBorderStyle.None;
-                bg.Opacity = .50d;
-                bg.BackColor = Color.Black;
-                bg.WindowState = FormWindowState.Normal;
-                bg.TopMost = true;
-                bg.Location = this.Location;
-                bg.ShowInTaskbar = false;
-                bg.Size = new Size(1020, 580);
-                bg.Show();
+                Form bg = new Form();
+                using (Form Test = new Test.Test_Questions(btn.Text))
+                {
+                    bg.StartPosition = FormStartPosition.CenterScreen;
+                    bg.FormBorderStyle = FormBorderStyle.None;
+                    bg.Opacity = .50d;
+                    bg.BackColor = Color.Black;
+                    bg.WindowState = FormWindowState.Normal;
+                    bg.TopMost = true;
+                    bg.Location = this.Location;
+                    bg.ShowInTaskbar = false;
+                    bg.Size = new Size(1020, 580);
+                    bg.Show();
 
-                Test.Owner = bg;
-                Test.ShowDialog();
-                bg.Dispose();
+                    Test.Owner = bg;
+                    Test.ShowDialog();
+                    bg.Dispose();
+                }
             }
-
-            //if (result.CheckIfAlreadyAnswered(btn))
-            //{
-            //    Form bg = new Form();
-            //    using (Form Test = new Test.Test_Questions(btn.Text))
-            //    {
-            //        bg.StartPosition = FormStartPosition.CenterScreen;
-            //        bg.FormBorderStyle = FormBorderStyle.None;
-            //        bg.Opacity = .50d;
-            //        bg.BackColor = Color.Black;
-            //        bg.WindowState = FormWindowState.Normal;
-            //        bg.TopMost = true;
-            //        bg.Location = this.Location;
-            //        bg.ShowInTaskbar = false;
-            //        bg.Size = new Size(1020, 580);
-            //        bg.Show();
-
-            //        Test.Owner = bg;
-            //        Test.ShowDialog();
-            //        bg.Dispose();
-            //    }
-            //}
-            //else
-            //{
-            //    MessageBox.Show(" bawal na sagutan gago next day na lang");
-            //}
+            else
+            {
+                MessageBox.Show(" bawal na sagutan gago next day na lang");
+            }
         }
 
         private void Test_Main_Load(object sender, EventArgs e)

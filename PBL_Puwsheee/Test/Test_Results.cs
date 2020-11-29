@@ -14,7 +14,7 @@ namespace PBL_Puwsheee.Test
     {
         TestResult result = new TestResult();
         int currentscore = 0;
-        //double average = 0;
+        double average = 0;
         public Test_Results(string test, int score)
         {
             InitializeComponent();
@@ -32,56 +32,56 @@ namespace PBL_Puwsheee.Test
 
         private void Test_Results_Load(object sender, EventArgs e)
         {
-            //string submittedDate = DateTime.Now.ToString("yyyyMMdd");
-            //result.Username = Main.nameOfUser;
-            //result.Date = submittedDate;
-            //result.Score = currentscore;
-            //string typeOfTest = this.Text;
-            
-            //////////////////////////////////////////////////////////// Stre mo sa database/////////////////////////////////////////////////////////////////////
-            //if (result.IsDateAndUserUniqueInDatabase()) // if unique sya wag ka na mag create i update mo n lng pero pag hinde ede waw gago
-            //{
-            //    Console.WriteLine(" existing na sya update values pls ");
-            //    if (typeOfTest == "Anxiety and Depression")
-            //    {
-            //        result.UploadToDatabase("spInsertAnxietyAndDepressionScore");
-            //        average = result.ComputeAverageScore("spComputeAverageAnxietyAndDepressionTest", "AnxietyAndDepressionScore");
+            string submittedDate = DateTime.Now.ToString("yyyyMMdd");
+            result.Username = Main.nameOfUser;
+            result.Date = submittedDate;
+            result.Score = currentscore;
+            string typeOfTest = this.Text;
 
-            //    }
-            //    if (typeOfTest == "Emotional Intelligence")
-            //    {
-            //        result.UploadToDatabase("spInsertEmotionalIntelligenceScore");
-            //        average = result.ComputeAverageScore("spComputeAverageEmotionalIntelligenceTest", "EmotionalIntelligenceScore");
-            //    }
-            //    if (typeOfTest == "Good Self-Care")
-            //    {
-            //        result.UploadToDatabase("spInsertGoodSelfCareScore");
-            //        average = result.ComputeAverageScore("spComputeAverageGoodSelfCareTest", "GoodSelfCareScore");
-            //    }
-            //}
-            //if (!result.IsDateAndUserUniqueInDatabase())
-            //{
-            //    // create kang bagong username ganern
-            //    Console.WriteLine(" gawa bago gago");
-            //    result.InsertUsernameAndDateTestTaken();
-            //    if (typeOfTest == "Anxiety and Depression")
-            //    {
-            //        result.UploadToDatabase("spInsertAnxietyAndDepressionScore");
-            //        average = result.ComputeAverageScore("spComputeAverageAnxietyAndDepressionTest", "AnxietyAndDepressionScore");
+            ////////////////////////////////////////////////////////// Stre mo sa database/////////////////////////////////////////////////////////////////////
+            if (result.IsDateAndUserUniqueInDatabase()) // if unique sya wag ka na mag create i update mo n lng pero pag hinde ede waw gago
+            {
+                Console.WriteLine(" existing na sya update values pls ");
+                if (typeOfTest == "Anxiety and Depression")
+                {
+                    result.UploadToDatabase("spInsertAnxietyAndDepressionScore");
+                    average = result.ComputeAverageScore("spComputeAverageAnxietyAndDepressionTest", "AnxietyAndDepressionScore");
 
-            //    }
-            //    if (typeOfTest == "Emotional Intelligence")
-            //    {
-            //        result.UploadToDatabase("spInsertEmotionalIntelligenceScore");
-            //        average = result.ComputeAverageScore("spComputeAverageEmotionalIntelligenceTest", "EmotionalIntelligenceScore");
-            //    }
-            //    if (typeOfTest == "Good Self-Care")
-            //    {
-            //        result.UploadToDatabase("spInsertGoodSelfCareScore");
-            //        average = result.ComputeAverageScore("spComputeAverageGoodSelfCareTest", "GoodSelfCareScore");
-            //    }
-            //}
-            ////////////////////////////////// Compute naten si average////////////////////////////////////////////////////////////////
+                }
+                if (typeOfTest == "Emotional Intelligence")
+                {
+                    result.UploadToDatabase("spInsertEmotionalIntelligenceScore");
+                    average = result.ComputeAverageScore("spComputeAverageEmotionalIntelligenceTest", "EmotionalIntelligenceScore");
+                }
+                if (typeOfTest == "Good Self-Care")
+                {
+                    result.UploadToDatabase("spInsertGoodSelfCareScore");
+                    average = result.ComputeAverageScore("spComputeAverageGoodSelfCareTest", "GoodSelfCareScore");
+                }
+            }
+            if (!result.IsDateAndUserUniqueInDatabase())
+            {
+                // create kang bagong username ganern
+                Console.WriteLine(" gawa bago gago");
+                result.InsertUsernameAndDateTestTaken();
+                if (typeOfTest == "Anxiety and Depression")
+                {
+                    result.UploadToDatabase("spInsertAnxietyAndDepressionScore");
+                    average = result.ComputeAverageScore("spComputeAverageAnxietyAndDepressionTest", "AnxietyAndDepressionScore");
+
+                }
+                if (typeOfTest == "Emotional Intelligence")
+                {
+                    result.UploadToDatabase("spInsertEmotionalIntelligenceScore");
+                    average = result.ComputeAverageScore("spComputeAverageEmotionalIntelligenceTest", "EmotionalIntelligenceScore");
+                }
+                if (typeOfTest == "Good Self-Care")
+                {
+                    result.UploadToDatabase("spInsertGoodSelfCareScore");
+                    average = result.ComputeAverageScore("spComputeAverageGoodSelfCareTest", "GoodSelfCareScore");
+                }
+            }
+            //////////////////////////////// Compute naten si average////////////////////////////////////////////////////////////////
 
 
 
@@ -173,6 +173,13 @@ namespace PBL_Puwsheee.Test
             currentscoreProgressBar.Value++;
             currentscoreLabel.Text = currentscoreProgressBar.Value.ToString();
             if (currentscoreProgressBar.Value == currentscore) currentScoreTimer.Stop();
+        }
+
+        private void averageScoreTimer_Tick(object sender, EventArgs e)
+        {
+            averagescoreProgressBar.Value++;
+            averageLabel.Text =averagescoreProgressBar.Value.ToString();
+            if (averagescoreProgressBar.Value == average) averageScoreTimer.Stop();
         }
     }
 }
