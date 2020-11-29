@@ -225,9 +225,14 @@ namespace PBL_Puwsheee
             Fade.fadeOutEffect(this);
         }
 
-        private void enterCodeTextBox_TextChanged(object sender, EventArgs e)
+        private void enterKeySignUp(object sender, KeyEventArgs e)
         {
-
+            bool notEmpty = firstNameTextbox.Text != string.Empty && lastNameTextbox.Text != string.Empty && emailTextbox.Text != string.Empty && usernameTexbox.Text != string.Empty
+                && passwordTextbox.Text != string.Empty && confirmPasswordTextbox.Text != string.Empty && enterCodeTextBox.Text != string.Empty;
+            if (e.KeyCode == Keys.Enter && notEmpty)
+            {
+                signupButton.PerformClick();
+            }
         }
     }
 

@@ -76,7 +76,7 @@
             this.passwordTextbox.ShadowDecoration.Parent = this.passwordTextbox;
             this.passwordTextbox.Size = new System.Drawing.Size(214, 40);
             this.passwordTextbox.TabIndex = 1;
-            this.passwordTextbox.TextChanged += new System.EventHandler(this.passwordTextbox_TextChanged);
+            this.passwordTextbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.enterKeyLogIn);
             // 
             // logoLabel
             // 
@@ -158,6 +158,7 @@
             this.usernameTextbox.Size = new System.Drawing.Size(213, 40);
             this.usernameTextbox.TabIndex = 0;
             this.usernameTextbox.TextChanged += new System.EventHandler(this.usernameTextbox_TextChanged);
+            this.usernameTextbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.enterKeyLogIn);
             // 
             // textLabel
             // 

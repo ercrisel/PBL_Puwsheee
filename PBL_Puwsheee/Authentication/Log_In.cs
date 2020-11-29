@@ -52,7 +52,6 @@ namespace PBL_Puwsheee
         }
         private void loginButton_Click(object sender, EventArgs e)
         {
-            
             user.Username = usernameTextbox.Text;
             user.Password = passwordTextbox.Text;
             if (conditions())
@@ -135,6 +134,15 @@ namespace PBL_Puwsheee
         private void Log_In_Load_1(object sender, EventArgs e)
         {
             usernameTextbox.Focus();
+        }
+
+        private void enterKeyLogIn(object sender, KeyEventArgs e)
+        {
+            bool notEmpty = usernameTextbox.Text != string.Empty && passwordTextbox.Text != string.Empty;
+            if (e.KeyCode == Keys.Enter && notEmpty)
+            {
+                loginButton.PerformClick();
+            }
         }
     }
 }

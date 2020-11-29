@@ -100,6 +100,7 @@
             this.firstNameTextbox.Size = new System.Drawing.Size(265, 39);
             this.firstNameTextbox.TabIndex = 1;
             this.firstNameTextbox.TextChanged += new System.EventHandler(this.firstNameTextbox_TextChanged);
+            this.firstNameTextbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.enterKeySignUp);
             // 
             // firstnameLabel
             // 
@@ -142,6 +143,7 @@
             this.lastNameTextbox.Size = new System.Drawing.Size(265, 39);
             this.lastNameTextbox.TabIndex = 2;
             this.lastNameTextbox.TextChanged += new System.EventHandler(this.lastNameTextbox_TextChanged);
+            this.lastNameTextbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.enterKeySignUp);
             // 
             // emailTextbox
             // 
@@ -172,6 +174,7 @@
             this.emailTextbox.Size = new System.Drawing.Size(265, 39);
             this.emailTextbox.TabIndex = 3;
             this.emailTextbox.TextChanged += new System.EventHandler(this.emailTextbox_TextChanged);
+            this.emailTextbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.enterKeySignUp);
             // 
             // usernameTexbox
             // 
@@ -202,6 +205,7 @@
             this.usernameTexbox.Size = new System.Drawing.Size(265, 39);
             this.usernameTexbox.TabIndex = 4;
             this.usernameTexbox.TextChanged += new System.EventHandler(this.usernameTexbox_TextChanged);
+            this.usernameTexbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.enterKeySignUp);
             // 
             // passwordTextbox
             // 
@@ -232,6 +236,7 @@
             this.passwordTextbox.Size = new System.Drawing.Size(265, 39);
             this.passwordTextbox.TabIndex = 5;
             this.passwordTextbox.TextChanged += new System.EventHandler(this.passwordTextbox_TextChanged);
+            this.passwordTextbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.enterKeySignUp);
             // 
             // confirmPasswordTextbox
             // 
@@ -262,6 +267,7 @@
             this.confirmPasswordTextbox.Size = new System.Drawing.Size(265, 39);
             this.confirmPasswordTextbox.TabIndex = 6;
             this.confirmPasswordTextbox.TextChanged += new System.EventHandler(this.confirmPasswordTextbox_TextChanged);
+            this.confirmPasswordTextbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.enterKeySignUp);
             // 
             // lastnameLabel
             // 
@@ -629,7 +635,7 @@
             this.enterCodeTextBox.Size = new System.Drawing.Size(171, 38);
             this.enterCodeTextBox.TabIndex = 7;
             this.enterCodeTextBox.Visible = false;
-            this.enterCodeTextBox.TextChanged += new System.EventHandler(this.enterCodeTextBox_TextChanged);
+            this.enterCodeTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.enterKeySignUp);
             // 
             // guna2HtmlLabel1
             // 
