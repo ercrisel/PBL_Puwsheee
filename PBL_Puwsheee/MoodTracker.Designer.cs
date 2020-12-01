@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.activitiesLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.moodLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.submitButton = new Guna.UI2.WinForms.Guna2Button();
             this.activitiesPanel = new Guna.UI2.WinForms.Guna2Panel();
@@ -64,16 +63,6 @@
             this.activitiesPanel.SuspendLayout();
             this.moodPanel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // activitiesLabel
-            // 
-            this.activitiesLabel.BackColor = System.Drawing.Color.Transparent;
-            this.activitiesLabel.Location = new System.Drawing.Point(0, 0);
-            this.activitiesLabel.Margin = new System.Windows.Forms.Padding(4);
-            this.activitiesLabel.Name = "activitiesLabel";
-            this.activitiesLabel.Size = new System.Drawing.Size(3, 2);
-            this.activitiesLabel.TabIndex = 30;
-            this.activitiesLabel.Text = null;
             // 
             // moodLabel
             // 
@@ -145,6 +134,8 @@
             this.travelIcon.TabIndex = 8;
             this.travelIcon.Tag = "Traveling";
             this.travelIcon.Text = " ";
+            this.travelIcon.MouseLeave += new System.EventHandler(this.activitiesIcon_MouseLeave);
+            this.travelIcon.MouseHover += new System.EventHandler(this.activitiesIcon_MouseHover);
             // 
             // studyIcon
             // 
@@ -168,6 +159,8 @@
             this.studyIcon.TabIndex = 8;
             this.studyIcon.Tag = "Studying";
             this.studyIcon.Text = " ";
+            this.studyIcon.MouseLeave += new System.EventHandler(this.activitiesIcon_MouseLeave);
+            this.studyIcon.MouseHover += new System.EventHandler(this.activitiesIcon_MouseHover);
             // 
             // sportsIcon
             // 
@@ -191,6 +184,8 @@
             this.sportsIcon.TabIndex = 7;
             this.sportsIcon.Tag = "Sports";
             this.sportsIcon.Text = " ";
+            this.sportsIcon.MouseLeave += new System.EventHandler(this.activitiesIcon_MouseLeave);
+            this.sportsIcon.MouseHover += new System.EventHandler(this.activitiesIcon_MouseHover);
             // 
             // socialIcon
             // 
@@ -214,6 +209,8 @@
             this.socialIcon.TabIndex = 6;
             this.socialIcon.Tag = "Socializing";
             this.socialIcon.Text = " ";
+            this.socialIcon.MouseLeave += new System.EventHandler(this.activitiesIcon_MouseLeave);
+            this.socialIcon.MouseHover += new System.EventHandler(this.activitiesIcon_MouseHover);
             // 
             // shopIcon
             // 
@@ -237,6 +234,8 @@
             this.shopIcon.TabIndex = 5;
             this.shopIcon.Tag = "Shopping";
             this.shopIcon.Text = " ";
+            this.shopIcon.MouseLeave += new System.EventHandler(this.activitiesIcon_MouseLeave);
+            this.shopIcon.MouseHover += new System.EventHandler(this.activitiesIcon_MouseHover);
             // 
             // sleepIcon
             // 
@@ -260,6 +259,8 @@
             this.sleepIcon.TabIndex = 5;
             this.sleepIcon.Tag = "Sleeping";
             this.sleepIcon.Text = " ";
+            this.sleepIcon.MouseLeave += new System.EventHandler(this.activitiesIcon_MouseLeave);
+            this.sleepIcon.MouseHover += new System.EventHandler(this.activitiesIcon_MouseHover);
             // 
             // watchIcon
             // 
@@ -283,6 +284,8 @@
             this.watchIcon.TabIndex = 3;
             this.watchIcon.Tag = "Watching";
             this.watchIcon.Text = " ";
+            this.watchIcon.MouseLeave += new System.EventHandler(this.activitiesIcon_MouseLeave);
+            this.watchIcon.MouseHover += new System.EventHandler(this.activitiesIcon_MouseHover);
             // 
             // readIcon
             // 
@@ -306,6 +309,8 @@
             this.readIcon.TabIndex = 3;
             this.readIcon.Tag = "Reading";
             this.readIcon.Text = " ";
+            this.readIcon.MouseLeave += new System.EventHandler(this.activitiesIcon_MouseLeave);
+            this.readIcon.MouseHover += new System.EventHandler(this.activitiesIcon_MouseHover);
             // 
             // musicIcon
             // 
@@ -329,6 +334,8 @@
             this.musicIcon.TabIndex = 2;
             this.musicIcon.Tag = "Music";
             this.musicIcon.Text = " ";
+            this.musicIcon.MouseLeave += new System.EventHandler(this.activitiesIcon_MouseLeave);
+            this.musicIcon.MouseHover += new System.EventHandler(this.activitiesIcon_MouseHover);
             // 
             // gameIcon
             // 
@@ -352,6 +359,8 @@
             this.gameIcon.TabIndex = 1;
             this.gameIcon.Tag = "Gaming";
             this.gameIcon.Text = " ";
+            this.gameIcon.MouseLeave += new System.EventHandler(this.activitiesIcon_MouseLeave);
+            this.gameIcon.MouseHover += new System.EventHandler(this.activitiesIcon_MouseHover);
             // 
             // cookIcon
             // 
@@ -375,6 +384,8 @@
             this.cookIcon.TabIndex = 0;
             this.cookIcon.Tag = "Cooking";
             this.cookIcon.Text = " ";
+            this.cookIcon.MouseLeave += new System.EventHandler(this.activitiesIcon_MouseLeave);
+            this.cookIcon.MouseHover += new System.EventHandler(this.activitiesIcon_MouseHover);
             // 
             // exerciseIcon
             // 
@@ -398,6 +409,8 @@
             this.exerciseIcon.TabIndex = 0;
             this.exerciseIcon.Tag = "Exercising ";
             this.exerciseIcon.Text = " ";
+            this.exerciseIcon.MouseLeave += new System.EventHandler(this.activitiesIcon_MouseLeave);
+            this.exerciseIcon.MouseHover += new System.EventHandler(this.activitiesIcon_MouseHover);
             // 
             // clearButton
             // 
@@ -543,6 +556,8 @@
             this.angryIcon.TabIndex = 3;
             this.angryIcon.Tag = "Angry";
             this.angryIcon.Text = " ";
+            this.angryIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
+            this.angryIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
             // 
             // guna2Button1
             // 
@@ -566,6 +581,8 @@
             this.guna2Button1.TabIndex = 1;
             this.guna2Button1.Tag = "Contented";
             this.guna2Button1.Text = " ";
+            this.guna2Button1.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
+            this.guna2Button1.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
             // 
             // contentedIcon
             // 
@@ -589,6 +606,8 @@
             this.contentedIcon.TabIndex = 1;
             this.contentedIcon.Tag = "Contented";
             this.contentedIcon.Text = " ";
+            this.contentedIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
+            this.contentedIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
             // 
             // flirtyIcon
             // 
@@ -612,6 +631,8 @@
             this.flirtyIcon.TabIndex = 2;
             this.flirtyIcon.Tag = "Flirty";
             this.flirtyIcon.Text = " ";
+            this.flirtyIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
+            this.flirtyIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
             // 
             // sadIcon
             // 
@@ -635,6 +656,8 @@
             this.sadIcon.TabIndex = 6;
             this.sadIcon.Tag = "Sad";
             this.sadIcon.Text = " ";
+            this.sadIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
+            this.sadIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
             // 
             // mehIcon
             // 
@@ -658,6 +681,8 @@
             this.mehIcon.TabIndex = 5;
             this.mehIcon.Tag = "Meh";
             this.mehIcon.Text = " ";
+            this.mehIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
+            this.mehIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
             // 
             // miserableIcon
             // 
@@ -681,6 +706,8 @@
             this.miserableIcon.TabIndex = 7;
             this.miserableIcon.Tag = "Miserable";
             this.miserableIcon.Text = " ";
+            this.miserableIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
+            this.miserableIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
             // 
             // disgustedIcon
             // 
@@ -704,6 +731,8 @@
             this.disgustedIcon.TabIndex = 8;
             this.disgustedIcon.Tag = "Disgusted";
             this.disgustedIcon.Text = " ";
+            this.disgustedIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
+            this.disgustedIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
             // 
             // labelActivities
             // 
@@ -733,7 +762,6 @@
             this.Controls.Add(this.contentLabel2);
             this.Controls.Add(this.moodPanel);
             this.Controls.Add(this.labelActivities);
-            this.Controls.Add(this.activitiesLabel);
             this.Controls.Add(this.moodLabel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -748,7 +776,6 @@
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2HtmlLabel activitiesLabel;
         private Guna.UI2.WinForms.Guna2HtmlLabel moodLabel;
         private Guna.UI2.WinForms.Guna2Button submitButton;
         private Guna.UI2.WinForms.Guna2Panel activitiesPanel;

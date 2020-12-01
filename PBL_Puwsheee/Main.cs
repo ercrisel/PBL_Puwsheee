@@ -31,12 +31,24 @@ namespace PBL_Puwsheee
                 handleparam.ExStyle |= 0x02000000;
                 return handleparam;
             }
-        } 
+        }
 
         public static void enableDoubleBuff(System.Windows.Forms.Control cont)
         {
             System.Reflection.PropertyInfo DemoProp = typeof(System.Windows.Forms.Control).GetProperty("DoubleBuffered", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
             DemoProp.SetValue(cont, true, null);
+        }
+
+        internal static class NativeWinAPI
+        {
+            internal static readonly int GWL_EXSTYLE = -20;
+            internal static readonly int WS_EX_COMPOSITED = 0x02000000;
+
+            [DllImport("user32")]
+            internal static extern int GetWindowLong(IntPtr hWnd, int nIndex);
+
+            [DllImport("user32")]
+            internal static extern int SetWindowLong(IntPtr hWnd, int nIndex, int dwNewLong);
         }
 
         bool hided = true;
@@ -52,14 +64,18 @@ namespace PBL_Puwsheee
             enableDoubleBuff(displayPanel);
             enableDoubleBuff(bgPanel);
             enableDoubleBuff(navBarPanel);
+
+            int style = NativeWinAPI.GetWindowLong(this.Handle, NativeWinAPI.GWL_EXSTYLE);
+            style |= NativeWinAPI.WS_EX_COMPOSITED;
+            NativeWinAPI.SetWindowLong(this.Handle, NativeWinAPI.GWL_EXSTYLE, style);
         }
 
         private void Main_Load(object sender, EventArgs e)
         {
-            string username = Log_In.publicUserName;
-            usernameLabel.Text = username;
-            user.Username = username;
-            user.LoadPicture(usericonPicture);
+            //string username = Log_In.publicUserName;
+            //usernameLabel.Text = username;
+            //user.Username = username;
+            //user.LoadPicture(usericonPicture);
             indicatorButton.Location = new Point(46, 130);
         }
 
@@ -161,6 +177,10 @@ namespace PBL_Puwsheee
         {
             if(hided)
             {
+                if (settingsLabel.Left <= 63) settingsLabel.Left += 10;
+                if (bgPanel.Width >= 806) bgPanel.Width -= 22;
+                if (bgPanel.Left <= 201) bgPanel.Left += 22;
+
                 navBarPanel.Width += 25;
 
                 if(navBarPanel.Width >= 165)
@@ -168,13 +188,13 @@ namespace PBL_Puwsheee
                     animateTimer.Stop();
                     hided = false; 
                 }
-
-                if (settingsLabel.Left <= 63) settingsLabel.Left += 10;
-                if (bgPanel.Width >= 806) bgPanel.Width -= 22;
-                if (bgPanel.Left <= 201) bgPanel.Left += 22;
             }
             else
             {
+                if (settingsLabel.Left >= 17) settingsLabel.Left -= 10;
+                if (bgPanel.Width <= 917) bgPanel.Width += 22;
+                if (bgPanel.Left >= 89) bgPanel.Left -= 22;
+
                 navBarPanel.Width -= 25;
 
                 if (navBarPanel.Width <= 86)
@@ -182,10 +202,6 @@ namespace PBL_Puwsheee
                     animateTimer.Stop();
                     hided = true;
                 }
-
-                if (settingsLabel.Left >= 17) settingsLabel.Left -= 10;
-                if (bgPanel.Width <= 917) bgPanel.Width += 22;
-                if (bgPanel.Left >= 89) bgPanel.Left -= 22; 
             }
         }
 

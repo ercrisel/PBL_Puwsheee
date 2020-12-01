@@ -33,35 +33,35 @@ namespace PBL_Puwsheee.Visualization
             this.nextButton = new Guna.UI2.WinForms.Guna2Button();
             this.prevButton = new Guna.UI2.WinForms.Guna2Button();
             this.stepOnePanel = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.stepTwoPanel = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.stepThreePanel = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.writePanel = new System.Windows.Forms.Panel();
-            this.label31 = new System.Windows.Forms.Label();
             this.notesTextbox = new System.Windows.Forms.RichTextBox();
+            this.label31 = new System.Windows.Forms.Label();
             this.stepOnePanel.SuspendLayout();
             this.stepTwoPanel.SuspendLayout();
             this.stepThreePanel.SuspendLayout();
@@ -143,91 +143,17 @@ namespace PBL_Puwsheee.Visualization
             this.stepOnePanel.Size = new System.Drawing.Size(828, 409);
             this.stepOnePanel.TabIndex = 21;
             // 
-            // label1
+            // label9
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Typo Round Bold Demo", 20F);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.label1.Location = new System.Drawing.Point(66, 72);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 34);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "step 1";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.label3.Location = new System.Drawing.Point(169, 84);
-            this.label3.MaximumSize = new System.Drawing.Size(860, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(14, 18);
-            this.label3.TabIndex = 48;
-            this.label3.Text = ".";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.label2.Location = new System.Drawing.Point(149, 84);
-            this.label2.MaximumSize = new System.Drawing.Size(860, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(14, 18);
-            this.label2.TabIndex = 49;
-            this.label2.Text = ".";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.label4.Location = new System.Drawing.Point(158, 84);
-            this.label4.MaximumSize = new System.Drawing.Size(860, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(14, 18);
-            this.label4.TabIndex = 50;
-            this.label4.Text = ".";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Typo Round Bold Demo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.label5.Location = new System.Drawing.Point(70, 121);
-            this.label5.MaximumSize = new System.Drawing.Size(750, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(365, 20);
-            this.label5.TabIndex = 51;
-            this.label5.Text = "Imagine something bad has happened to you:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Typo Round Bold Demo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.label6.Location = new System.Drawing.Point(148, 154);
-            this.label6.MaximumSize = new System.Drawing.Size(750, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(255, 20);
-            this.label6.TabIndex = 51;
-            this.label6.Text = "- You\'ve lost your home and job";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Typo Round Bold Demo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.label7.Location = new System.Drawing.Point(148, 186);
-            this.label7.MaximumSize = new System.Drawing.Size(750, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(196, 20);
-            this.label7.TabIndex = 51;
-            this.label7.Text = "- You\'ve lost your family";
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Typo Round Bold Demo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.label9.Location = new System.Drawing.Point(148, 273);
+            this.label9.MaximumSize = new System.Drawing.Size(600, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(541, 20);
+            this.label9.TabIndex = 51;
+            this.label9.Text = "- You were born in a country where there are no hospitals or doctors";
             // 
             // label8
             // 
@@ -242,17 +168,91 @@ namespace PBL_Puwsheee.Visualization
             this.label8.Text = "- You\'ve lost an important ability like your sight or the ability to talk or walk" +
     " (or, imagine that you were born without such an)";
             // 
-            // label9
+            // label7
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Typo Round Bold Demo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.label9.Location = new System.Drawing.Point(148, 273);
-            this.label9.MaximumSize = new System.Drawing.Size(600, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(541, 20);
-            this.label9.TabIndex = 51;
-            this.label9.Text = "- You were born in a country where there are no hospitals or doctors";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Typo Round Bold Demo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.label7.Location = new System.Drawing.Point(148, 186);
+            this.label7.MaximumSize = new System.Drawing.Size(750, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(196, 20);
+            this.label7.TabIndex = 51;
+            this.label7.Text = "- You\'ve lost your family";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Typo Round Bold Demo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.label6.Location = new System.Drawing.Point(148, 154);
+            this.label6.MaximumSize = new System.Drawing.Size(750, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(255, 20);
+            this.label6.TabIndex = 51;
+            this.label6.Text = "- You\'ve lost your home and job";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Typo Round Bold Demo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.label5.Location = new System.Drawing.Point(70, 121);
+            this.label5.MaximumSize = new System.Drawing.Size(750, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(365, 20);
+            this.label5.TabIndex = 51;
+            this.label5.Text = "Imagine something bad has happened to you:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.label4.Location = new System.Drawing.Point(158, 84);
+            this.label4.MaximumSize = new System.Drawing.Size(860, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(14, 18);
+            this.label4.TabIndex = 50;
+            this.label4.Text = ".";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.label2.Location = new System.Drawing.Point(149, 84);
+            this.label2.MaximumSize = new System.Drawing.Size(860, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(14, 18);
+            this.label2.TabIndex = 49;
+            this.label2.Text = ".";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.label3.Location = new System.Drawing.Point(169, 84);
+            this.label3.MaximumSize = new System.Drawing.Size(860, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(14, 18);
+            this.label3.TabIndex = 48;
+            this.label3.Text = ".";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Typo Round Bold Demo", 20F);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.label1.Location = new System.Drawing.Point(66, 72);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(86, 34);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "step 1";
             // 
             // stepTwoPanel
             // 
@@ -268,6 +268,45 @@ namespace PBL_Puwsheee.Visualization
             this.stepTwoPanel.Name = "stepTwoPanel";
             this.stepTwoPanel.Size = new System.Drawing.Size(828, 409);
             this.stepTwoPanel.TabIndex = 52;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Typo Round Bold Demo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.label11.Location = new System.Drawing.Point(70, 245);
+            this.label11.MaximumSize = new System.Drawing.Size(700, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(673, 40);
+            this.label11.TabIndex = 51;
+            this.label11.Text = "How much harder would be your life be if you were born 500 years ago? How many th" +
+    "ings do you use daily that you would painfully miss?";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Typo Round Bold Demo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.label10.Location = new System.Drawing.Point(70, 191);
+            this.label10.MaximumSize = new System.Drawing.Size(700, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(673, 40);
+            this.label10.TabIndex = 51;
+            this.label10.Text = "Imagine that the plane or a public train that you or your loved one is on breaks " +
+    "down and crashes";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Typo Round Bold Demo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.label19.Location = new System.Drawing.Point(70, 157);
+            this.label19.MaximumSize = new System.Drawing.Size(750, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(641, 20);
+            this.label19.TabIndex = 51;
+            this.label19.Text = "Try to picture the worst-case scenario: list everything that could possibly go wr" +
+    "ong";
             // 
             // label14
             // 
@@ -331,45 +370,6 @@ namespace PBL_Puwsheee.Visualization
             this.label18.TabIndex = 0;
             this.label18.Text = "step 2";
             // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Typo Round Bold Demo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.label19.Location = new System.Drawing.Point(70, 157);
-            this.label19.MaximumSize = new System.Drawing.Size(750, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(641, 20);
-            this.label19.TabIndex = 51;
-            this.label19.Text = "Try to picture the worst-case scenario: list everything that could possibly go wr" +
-    "ong";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Typo Round Bold Demo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.label10.Location = new System.Drawing.Point(70, 191);
-            this.label10.MaximumSize = new System.Drawing.Size(700, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(673, 40);
-            this.label10.TabIndex = 51;
-            this.label10.Text = "Imagine that the plane or a public train that you or your loved one is on breaks " +
-    "down and crashes";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Typo Round Bold Demo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.label11.Location = new System.Drawing.Point(70, 245);
-            this.label11.MaximumSize = new System.Drawing.Size(700, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(673, 40);
-            this.label11.TabIndex = 51;
-            this.label11.Text = "How much harder would be your life be if you were born 500 years ago? How many th" +
-    "ings do you use daily that you would painfully miss?";
-            // 
             // stepThreePanel
             // 
             this.stepThreePanel.Controls.Add(this.label12);
@@ -395,6 +395,19 @@ namespace PBL_Puwsheee.Visualization
             this.label12.Size = new System.Drawing.Size(615, 20);
             this.label12.TabIndex = 51;
             this.label12.Text = "Contrast this with the work you just did in picturing how much worse it could be";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Typo Round Bold Demo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.label13.Location = new System.Drawing.Point(70, 154);
+            this.label13.MaximumSize = new System.Drawing.Size(700, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(689, 40);
+            this.label13.TabIndex = 51;
+            this.label13.Text = "List the ways that you are - specifically - fortunate to be in the very place you" +
+    " are, right now";
             // 
             // label21
             // 
@@ -458,19 +471,6 @@ namespace PBL_Puwsheee.Visualization
             this.label25.TabIndex = 0;
             this.label25.Text = "step 3";
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Typo Round Bold Demo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.label13.Location = new System.Drawing.Point(70, 154);
-            this.label13.MaximumSize = new System.Drawing.Size(700, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(689, 40);
-            this.label13.TabIndex = 51;
-            this.label13.Text = "List the ways that you are - specifically - fortunate to be in the very place you" +
-    " are, right now";
-            // 
             // writePanel
             // 
             this.writePanel.Controls.Add(this.notesTextbox);
@@ -479,6 +479,20 @@ namespace PBL_Puwsheee.Visualization
             this.writePanel.Name = "writePanel";
             this.writePanel.Size = new System.Drawing.Size(828, 409);
             this.writePanel.TabIndex = 53;
+            // 
+            // notesTextbox
+            // 
+            this.notesTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.notesTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.notesTextbox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.notesTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(144)))), ((int)(((byte)(173)))));
+            this.notesTextbox.Location = new System.Drawing.Point(71, 144);
+            this.notesTextbox.MaximumSize = new System.Drawing.Size(662, 233);
+            this.notesTextbox.Name = "notesTextbox";
+            this.notesTextbox.Size = new System.Drawing.Size(662, 233);
+            this.notesTextbox.TabIndex = 52;
+            this.notesTextbox.Text = "i\'m grateful for...";
+            this.notesTextbox.Enter += new System.EventHandler(this.notesTextbox_Enter);
             // 
             // label31
             // 
@@ -491,19 +505,6 @@ namespace PBL_Puwsheee.Visualization
             this.label31.Size = new System.Drawing.Size(670, 54);
             this.label31.TabIndex = 0;
             this.label31.Text = "write about the people, decisions, events, and things you are grateful for";
-            // 
-            // notesTextbox
-            // 
-            this.notesTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.notesTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.notesTextbox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.notesTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(144)))), ((int)(((byte)(173)))));
-            this.notesTextbox.Location = new System.Drawing.Point(71, 144);
-            this.notesTextbox.Name = "notesTextbox";
-            this.notesTextbox.Size = new System.Drawing.Size(662, 233);
-            this.notesTextbox.TabIndex = 52;
-            this.notesTextbox.Text = "i\'m grateful for...";
-            this.notesTextbox.Enter += new System.EventHandler(this.notesTextbox_Enter);
             // 
             // VisualizationSteps
             // 
