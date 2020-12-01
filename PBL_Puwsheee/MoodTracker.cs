@@ -16,14 +16,6 @@ namespace PBL_Puwsheee
         public MoodTracker()
         {
             InitializeComponent();
-            enableDoubleBuff(moodPanel);
-            enableDoubleBuff(activitiesPanel);
-        }
-
-        public static void enableDoubleBuff(System.Windows.Forms.Control cont)
-        {
-            System.Reflection.PropertyInfo DemoProp = typeof(System.Windows.Forms.Control).GetProperty("DoubleBuffered", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
-            DemoProp.SetValue(cont, true, null);
         }
 
         protected override CreateParams CreateParams // double buffeirng daw sabi ni google 

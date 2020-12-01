@@ -19,6 +19,16 @@ namespace PBL_Puwsheee.Test
             InitializeComponent();
         }
 
+        protected override CreateParams CreateParams // double buffeirng daw sabi ni google 
+        {
+            get
+            {
+                CreateParams handleparam = base.CreateParams;
+                handleparam.ExStyle |= 0x02000000;
+                return handleparam;
+            }
+        }
+
         private void depressiontestButton_Click(object sender, EventArgs e)
         {
             // date 

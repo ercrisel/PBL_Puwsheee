@@ -23,15 +23,15 @@ namespace PBL_Puwsheee
             int nHeightEllipse // width of ellipse
         );
 
-        protected override CreateParams CreateParams // double buffeirng daw sabi ni google 
-        {
-            get
-            {
-                CreateParams handleparam = base.CreateParams;
-                handleparam.ExStyle |= 0x02000000;
-                return handleparam;
-            }
-        }
+        //protected override CreateParams CreateParams // double buffeirng daw sabi ni google 
+        //{
+        //    get
+        //    {
+        //        CreateParams handleparam = base.CreateParams;
+        //        handleparam.ExStyle |= 0x02000000;
+        //        return handleparam;
+        //    }
+        //}
 
         public static void enableDoubleBuff(System.Windows.Forms.Control cont)
         {
@@ -39,17 +39,17 @@ namespace PBL_Puwsheee
             DemoProp.SetValue(cont, true, null);
         }
 
-        internal static class NativeWinAPI
-        {
-            internal static readonly int GWL_EXSTYLE = -20;
-            internal static readonly int WS_EX_COMPOSITED = 0x02000000;
+        //internal static class NativeWinAPI
+        //{
+        //    internal static readonly int GWL_EXSTYLE = -20;
+        //    internal static readonly int WS_EX_COMPOSITED = 0x02000000;
 
-            [DllImport("user32")]
-            internal static extern int GetWindowLong(IntPtr hWnd, int nIndex);
+        //    [DllImport("user32")]
+        //    internal static extern int GetWindowLong(IntPtr hWnd, int nIndex);
 
-            [DllImport("user32")]
-            internal static extern int SetWindowLong(IntPtr hWnd, int nIndex, int dwNewLong);
-        }
+        //    [DllImport("user32")]
+        //    internal static extern int SetWindowLong(IntPtr hWnd, int nIndex, int dwNewLong);
+        //}
 
         bool hided = true;
 
@@ -64,10 +64,12 @@ namespace PBL_Puwsheee
             enableDoubleBuff(displayPanel);
             enableDoubleBuff(bgPanel);
             enableDoubleBuff(navBarPanel);
-
-            int style = NativeWinAPI.GetWindowLong(this.Handle, NativeWinAPI.GWL_EXSTYLE);
-            style |= NativeWinAPI.WS_EX_COMPOSITED;
-            NativeWinAPI.SetWindowLong(this.Handle, NativeWinAPI.GWL_EXSTYLE, style);
+            enableDoubleBuff(panel1);
+            enableDoubleBuff(panel3);
+            enableDoubleBuff(panel4);
+            //int style = NativeWinAPI.GetWindowLong(this.Handle, NativeWinAPI.GWL_EXSTYLE);
+            //style |= NativeWinAPI.WS_EX_COMPOSITED;
+            //NativeWinAPI.SetWindowLong(this.Handle, NativeWinAPI.GWL_EXSTYLE, style);
         }
 
         private void Main_Load(object sender, EventArgs e)
