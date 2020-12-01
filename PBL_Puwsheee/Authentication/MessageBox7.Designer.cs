@@ -30,6 +30,8 @@
         {
             this.label2 = new System.Windows.Forms.Label();
             this.OkButton = new Guna.UI2.WinForms.Guna2Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -57,6 +59,18 @@
             this.OkButton.Size = new System.Drawing.Size(90, 28);
             this.OkButton.TabIndex = 9;
             this.OkButton.Text = "OK";
+            this.OkButton.Click += new System.EventHandler(this.OkButton_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PBL_Puwsheee.Properties.Resources.X;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(23, 22);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // MessageBox7
             // 
@@ -64,11 +78,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.ClientSize = new System.Drawing.Size(510, 137);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.OkButton);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MessageBox7";
             this.Text = "MessageBox7";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -78,5 +94,6 @@
 
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Button OkButton;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
