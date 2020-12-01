@@ -131,5 +131,18 @@ namespace PBL_Puwsheee
             //omg
         }
 
+        private void Log_In_Load_1(object sender, EventArgs e)
+        {
+            usernameTextbox.Focus();
+        }
+
+        private void enterKeyLogIn(object sender, KeyEventArgs e)
+        {
+            bool notEmpty = usernameTextbox.Text != string.Empty && passwordTextbox.Text != string.Empty;
+            if (e.KeyCode == Keys.Enter && notEmpty)
+            {
+                loginButton.PerformClick();
+            }
+        }
     }
 }

@@ -296,7 +296,7 @@ namespace PBL_Puwsheee.Playables
             // meditationPicture
             // 
             this.meditationPicture.Image = global::PBL_Puwsheee.Properties.Resources.breathingPic;
-            this.meditationPicture.Location = new System.Drawing.Point(20, 242);
+            this.meditationPicture.Location = new System.Drawing.Point(20, 221);
             this.meditationPicture.Name = "meditationPicture";
             this.meditationPicture.Size = new System.Drawing.Size(214, 150);
             this.meditationPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

@@ -76,7 +76,7 @@ namespace PBL_Puwsheee.Settings
                 bg.TopMost = true;
                 bg.Location = this.Location;
                 bg.ShowInTaskbar = false;
-                bg.Size = new Size(928, 505);
+                bg.Size = new Size(770, 517);
                 bg.Show();
                 
                 clearForm.Owner = bg;
@@ -99,7 +99,7 @@ namespace PBL_Puwsheee.Settings
                 bg.TopMost = true;
                 bg.Location = this.Location;
                 bg.ShowInTaskbar = false;
-                bg.Size = new Size(928, 505);
+                bg.Size = new Size(770, 517);
                 bg.Show();
 
                 deactivateForm.Owner = bg;

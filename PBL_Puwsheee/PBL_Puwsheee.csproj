@@ -260,11 +260,12 @@
     <Compile Include="SplashScreen.Designer.cs">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Test\Test_Question.cs">
+    <Compile Include="Test\TestResult.cs" />
+    <Compile Include="Test\Test_Questions.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Test\Test_Question.Designer.cs">
-      <DependentUpon>Test_Question.cs</DependentUpon>
+    <Compile Include="Test\Test_Questions.Designer.cs">
+      <DependentUpon>Test_Questions.cs</DependentUpon>
     </Compile>
     <Compile Include="Test\Test_Results.cs">
       <SubType>Form</SubType>
@@ -385,8 +386,8 @@
     <EmbeddedResource Include="SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Test\Test_Question.resx">
-      <DependentUpon>Test_Question.cs</DependentUpon>
+    <EmbeddedResource Include="Test\Test_Questions.resx">
+      <DependentUpon>Test_Questions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Test\Test_Results.resx">
       <DependentUpon>Test_Results.cs</DependentUpon>

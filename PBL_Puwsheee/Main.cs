@@ -50,14 +50,16 @@ namespace PBL_Puwsheee
 
             this.DoubleBuffered = true;
             enableDoubleBuff(displayPanel);
+            enableDoubleBuff(bgPanel);
+            enableDoubleBuff(navBarPanel);
         }
 
         private void Main_Load(object sender, EventArgs e)
         {
-           // string username = Log_In.publicUserName;
-           // usernameLabel.Text = username;
-          //  user.Username = username;
-            //user.LoadPicture(usericonPicture);
+            string username = Log_In.publicUserName;
+            usernameLabel.Text = username;
+            user.Username = username;
+            user.LoadPicture(usericonPicture);
             indicatorButton.Location = new Point(46, 130);
         }
 
@@ -117,10 +119,27 @@ namespace PBL_Puwsheee
 
         private void clickOptions(object sender, EventArgs e)
         {
-            this.Hide();
+            Form bg = new Form();
+            Form settings = new Settings.Settings_Main();
+            bg.StartPosition = FormStartPosition.CenterScreen;
+            bg.FormBorderStyle = FormBorderStyle.None;
+            bg.Opacity = .50d;
+            bg.BackColor = Color.Black;
+            bg.WindowState = FormWindowState.Normal;
+            bg.TopMost = true;
+            bg.Location = this.Location;
+            bg.ShowInTaskbar = false;
+            bg.Size = new Size(1020, 610);
+            bg.Show();
+
+            settings.Owner = bg;
+            settings.ShowDialog();
+            bg.Dispose();
+
+            /*this.Hide();
             var form = new Settings.Settings_Main();
             form.Closed += (s, args) => this.Close();
-            form.Show();
+            form.Show(); */
         }
 
         private void minimizePuwshee(object sender, EventArgs e)

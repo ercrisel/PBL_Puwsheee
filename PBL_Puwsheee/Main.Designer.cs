@@ -456,7 +456,7 @@
             this.panel4.Location = new System.Drawing.Point(-24, 571);
             this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(107, 54);
+            this.panel4.Size = new System.Drawing.Size(182, 54);
             this.panel4.TabIndex = 0;
             // 
             // bgPanel
@@ -512,6 +512,7 @@
             this.Controls.Add(this.navBarPanel);
             this.Controls.Add(this.windowsPanel);
             this.Controls.Add(this.bgPanel);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Main";

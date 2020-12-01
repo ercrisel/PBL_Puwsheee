@@ -43,13 +43,13 @@
             this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2Button1.CustomImages.Parent = this.guna2Button1;
             this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.guna2Button1.Font = new System.Drawing.Font("Typo Round Bold Demo", 8F);
             this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(106, 255);
+            this.guna2Button1.Location = new System.Drawing.Point(144, 194);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button1.Size = new System.Drawing.Size(88, 38);
             this.guna2Button1.TabIndex = 0;
             this.guna2Button1.Text = "Cancel";
             this.guna2Button1.Click += new System.EventHandler(this.clickCancel);
@@ -61,35 +61,35 @@
             this.guna2Button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2Button2.CustomImages.Parent = this.guna2Button2;
             this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.guna2Button2.Font = new System.Drawing.Font("Typo Round Bold Demo", 8F);
             this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(325, 255);
+            this.guna2Button2.Location = new System.Drawing.Point(299, 194);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button2.Size = new System.Drawing.Size(88, 38);
             this.guna2Button2.TabIndex = 1;
             this.guna2Button2.Text = "Clear Data";
             // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Typo Round Bold Demo", 11F);
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(194, 123);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(145, 87);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(197, 16);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(267, 21);
             this.guna2HtmlLabel1.TabIndex = 2;
             this.guna2HtmlLabel1.Text = " Are you sure you want to clear data?";
             // 
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Typo Round Bold Demo", 11F);
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(125, 161);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(35, 129);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(357, 16);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(487, 21);
             this.guna2HtmlLabel2.TabIndex = 3;
             this.guna2HtmlLabel2.Text = "\n\nIf you clear your data, you will lose all recorded data in your profile";
             // 
@@ -98,14 +98,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.ClientSize = new System.Drawing.Size(640, 370);
+            this.ClientSize = new System.Drawing.Size(577, 316);
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2Button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Clear_Data";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clear_Data";
             this.TopMost = true;
             this.ResumeLayout(false);

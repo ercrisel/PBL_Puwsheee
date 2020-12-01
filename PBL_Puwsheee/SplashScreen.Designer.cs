@@ -78,19 +78,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(60)))), ((int)(((byte)(105)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.ClientSize = new System.Drawing.Size(1020, 580);
-            this.Controls.Add(this.logoLabel);
-            this.Controls.Add(this.logoPicture);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SplashScreen";
             this.Opacity = 0D;
             this.Padding = new System.Windows.Forms.Padding(5);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SplashScreen";
-            ((System.ComponentModel.ISupportInitialize)(this.logoPicture)).EndInit();
+          //  this.Load += new System.EventHandler(this.SplashScreen_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
