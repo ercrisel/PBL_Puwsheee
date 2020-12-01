@@ -506,6 +506,7 @@
             this.requiredPassword.TabIndex = 36;
             this.requiredPassword.Text = "* THIS IS A REQUIRED FIELD";
             this.requiredPassword.Visible = false;
+            this.requiredPassword.Click += new System.EventHandler(this.requiredPassword_Click);
             // 
             // requiredConfirmPassword
             // 

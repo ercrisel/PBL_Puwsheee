@@ -77,6 +77,54 @@
     <Compile Include="Authentication\Class\LogIn.cs" />
     <Compile Include="Authentication\Class\PasswordEncryption.cs" />
     <Compile Include="Authentication\Class\SignUp.cs" />
+    <Compile Include="Authentication\MessageBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentication\MessageBox1.Designer.cs">
+      <DependentUpon>MessageBox1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authentication\MessageBox2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentication\MessageBox2.Designer.cs">
+      <DependentUpon>MessageBox2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authentication\MessageBox3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentication\MessageBox3.Designer.cs">
+      <DependentUpon>MessageBox3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authentication\MessageBox4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentication\MessageBox4.Designer.cs">
+      <DependentUpon>MessageBox4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authentication\MessageBox5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentication\MessageBox5.Designer.cs">
+      <DependentUpon>MessageBox5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authentication\MessageBox6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentication\MessageBox6.Designer.cs">
+      <DependentUpon>MessageBox6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authentication\MessageBox7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentication\MessageBox7.Designer.cs">
+      <DependentUpon>MessageBox7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authentication\MessageBox8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentication\MessageBox8.Designer.cs">
+      <DependentUpon>MessageBox8.cs</DependentUpon>
+    </Compile>
     <Compile Include="Calendar\Calendar_Card.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -244,6 +292,30 @@
     </Compile>
     <EmbeddedResource Include="Analysis.resx">
       <DependentUpon>Analysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authentication\MessageBox1.resx">
+      <DependentUpon>MessageBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authentication\MessageBox2.resx">
+      <DependentUpon>MessageBox2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authentication\MessageBox3.resx">
+      <DependentUpon>MessageBox3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authentication\MessageBox4.resx">
+      <DependentUpon>MessageBox4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authentication\MessageBox5.resx">
+      <DependentUpon>MessageBox5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authentication\MessageBox6.resx">
+      <DependentUpon>MessageBox6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authentication\MessageBox7.resx">
+      <DependentUpon>MessageBox7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authentication\MessageBox8.resx">
+      <DependentUpon>MessageBox8.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Calendar\Calendar_Card.resx">
       <DependentUpon>Calendar_Card.cs</DependentUpon>

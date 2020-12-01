@@ -81,6 +81,7 @@ namespace PBL_Puwsheee
             user.ConfirmPassword = confirmPasswordTextbox.Text;
             if (conditions())
             {
+                
                 MessageBox.Show("Account is being created.. Please wait for the confirmation email sent to the email provided", "Success", MessageBoxButtons.OK);
                 user.SendEmailToCode();
                 showCode();
@@ -215,6 +216,11 @@ namespace PBL_Puwsheee
         }
 
         private void enterCodeTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void requiredPassword_Click(object sender, EventArgs e)
         {
 
         }
