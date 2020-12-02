@@ -51,7 +51,7 @@ namespace PBL_Puwsheee
         //    internal static extern int SetWindowLong(IntPtr hWnd, int nIndex, int dwNewLong);
         //}
 
-        bool hided = true;
+        bool hided = false;
 
         public Main()
         {
@@ -64,9 +64,9 @@ namespace PBL_Puwsheee
             enableDoubleBuff(displayPanel);
             enableDoubleBuff(bgPanel);
             enableDoubleBuff(navBarPanel);
-            enableDoubleBuff(panel1);
-            enableDoubleBuff(panel3);
-            enableDoubleBuff(panel4);
+            enableDoubleBuff(navBarIconsPanel);
+            enableDoubleBuff(settingsPanel);
+
             //int style = NativeWinAPI.GetWindowLong(this.Handle, NativeWinAPI.GWL_EXSTYLE);
             //style |= NativeWinAPI.WS_EX_COMPOSITED;
             //NativeWinAPI.SetWindowLong(this.Handle, NativeWinAPI.GWL_EXSTYLE, style);
@@ -78,7 +78,7 @@ namespace PBL_Puwsheee
             //usernameLabel.Text = username;
             //user.Username = username;
             //user.LoadPicture(usericonPicture);
-            indicatorButton.Location = new Point(46, 130);
+            indicatorButton.Location = new Point(46, 54);
         }
 
         private void openChildForm(Form childForm)
@@ -97,37 +97,37 @@ namespace PBL_Puwsheee
         private void clickMoodTracker(object sender, EventArgs e)
         {
             openChildForm(new MoodTracker());
-            indicatorButton.Location = new Point(46, 130);
+            indicatorButton.Location = new Point(46, 54);
         }
 
         private void clickCalendar(object sender, EventArgs e)
         {
             openChildForm(new Calendar_Main());
-            indicatorButton.Location = new Point(46, 186);
+            indicatorButton.Location = new Point(46, 110);
         }
         
         private void clickAnalysis(object sender, EventArgs e)
         {
             openChildForm(new Analysis());
-            indicatorButton.Location = new Point(46, 244);
+            indicatorButton.Location = new Point(46, 168);
         }
 
         private void clickTest(object sender, EventArgs e)
         {
             openChildForm(new Test.Test_Main());
-            indicatorButton.Location = new Point(46, 309);
+            indicatorButton.Location = new Point(46, 232);
         }
 
         private void clickPlayables(object sender, EventArgs e)
         {
             openChildForm(new Playables.NewPlayables());
-            indicatorButton.Location = new Point(46, 369);
+            indicatorButton.Location = new Point(46, 292);
         }
 
         private void clickVisualization(object sender, EventArgs e)
         {
             openChildForm(new MainVisualization());
-            indicatorButton.Location = new Point(46, 428);
+            indicatorButton.Location = new Point(46, 346);
         }
 
         private void exitPuwshee(object sender, EventArgs e)
@@ -181,7 +181,7 @@ namespace PBL_Puwsheee
             {
                 if (settingsLabel.Left <= 63) settingsLabel.Left += 10;
                 if (bgPanel.Width >= 806) bgPanel.Width -= 22;
-                if (bgPanel.Left <= 201) bgPanel.Left += 22;
+                if (bgPanel.Location.X <= 201) bgPanel.Location = new Point(bgPanel.Location.X + 22, 40); //bgPanel.Left += 22;
 
                 navBarPanel.Width += 25;
 
@@ -195,7 +195,8 @@ namespace PBL_Puwsheee
             {
                 if (settingsLabel.Left >= 17) settingsLabel.Left -= 10;
                 if (bgPanel.Width <= 917) bgPanel.Width += 22;
-                if (bgPanel.Left >= 89) bgPanel.Left -= 22;
+                if (bgPanel.Location.X >= 89) bgPanel.Location = new Point(bgPanel.Location.X - 22, 40);//bgPanel.Left -= 22;
+
 
                 navBarPanel.Width -= 25;
 
