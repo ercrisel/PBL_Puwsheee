@@ -173,6 +173,8 @@ namespace PBL_Puwsheee
         private void navBarPanelHover(object sender, EventArgs e)
         {
             animateTimer.Start();
+            tm.Start();
+      
         }
 
         private void animateTimer_Tick(object sender, EventArgs e)
@@ -180,7 +182,7 @@ namespace PBL_Puwsheee
             if(hided)
             {
                 if (settingsLabel.Left <= 63) settingsLabel.Left += 10;
-                if (bgPanel.Width >= 806) bgPanel.Width -= 22;
+               // if (bgPanel.Width >= 806) bgPanel.Width -= 22;
                 if (bgPanel.Location.X <= 201) bgPanel.Location = new Point(bgPanel.Location.X + 22, 40); //bgPanel.Left += 22;
 
                 navBarPanel.Width += 25;
@@ -194,7 +196,7 @@ namespace PBL_Puwsheee
             else
             {
                 if (settingsLabel.Left >= 17) settingsLabel.Left -= 10;
-                if (bgPanel.Width <= 917) bgPanel.Width += 22;
+            //    if (bgPanel.Width <= 917) bgPanel.Width += 22;
                 if (bgPanel.Location.X >= 89) bgPanel.Location = new Point(bgPanel.Location.X - 22, 40);//bgPanel.Left -= 22;
 
 
@@ -217,5 +219,28 @@ namespace PBL_Puwsheee
         {
             Fade.exitFade(this);
         }
+
+        // eto code
+        private void tm_Tick(object sender, EventArgs e)
+        {
+            if (hided)
+            {
+                if (bgPanel.Width <= 806)
+                {
+
+                    tm.Enabled = false;
+                }
+                else
+                {
+                    bgPanel.Width -= 42;
+                }
+
+            }
+         
+        }
+
+     
+
+        
     }
 }

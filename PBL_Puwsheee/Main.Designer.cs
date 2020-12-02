@@ -43,6 +43,7 @@
             this.windowsPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.navBarPanel = new System.Windows.Forms.Panel();
             this.usericonPicture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.navBarIconsPanel = new System.Windows.Forms.Panel();
             this.playablesButton = new Guna.UI2.WinForms.Guna2Button();
             this.analysisButton = new Guna.UI2.WinForms.Guna2Button();
             this.indicatorButton = new Guna.UI2.WinForms.Guna2CircleButton();
@@ -56,12 +57,12 @@
             this.animateTimer = new System.Windows.Forms.Timer(this.components);
             this.fadeIn = new System.Windows.Forms.Timer(this.components);
             this.fadeOut = new System.Windows.Forms.Timer(this.components);
-            this.navBarIconsPanel = new System.Windows.Forms.Panel();
+            this.tm = new System.Windows.Forms.Timer(this.components);
             this.windowsPanel.SuspendLayout();
             this.navBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.usericonPicture)).BeginInit();
-            this.bgPanel.SuspendLayout();
             this.navBarIconsPanel.SuspendLayout();
+            this.bgPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // usernameLabel
@@ -70,12 +71,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.usernameLabel.BackColor = System.Drawing.Color.Transparent;
-            this.usernameLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.usernameLabel.Location = new System.Drawing.Point(98, 64);
             this.usernameLabel.Margin = new System.Windows.Forms.Padding(4);
             this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(56, 16);
+            this.usernameLabel.Size = new System.Drawing.Size(59, 15);
             this.usernameLabel.TabIndex = 9;
             this.usernameLabel.Text = "Username";
             // 
@@ -139,12 +140,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.moodTrackerLabel.BackColor = System.Drawing.Color.Transparent;
-            this.moodTrackerLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.moodTrackerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.moodTrackerLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.moodTrackerLabel.Location = new System.Drawing.Point(94, 137);
             this.moodTrackerLabel.Margin = new System.Windows.Forms.Padding(4);
             this.moodTrackerLabel.Name = "moodTrackerLabel";
-            this.moodTrackerLabel.Size = new System.Drawing.Size(76, 16);
+            this.moodTrackerLabel.Size = new System.Drawing.Size(82, 15);
             this.moodTrackerLabel.TabIndex = 9;
             this.moodTrackerLabel.Text = "Mood Tracker";
             // 
@@ -154,12 +155,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.calendarLabel.BackColor = System.Drawing.Color.Transparent;
-            this.calendarLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calendarLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calendarLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.calendarLabel.Location = new System.Drawing.Point(94, 193);
             this.calendarLabel.Margin = new System.Windows.Forms.Padding(4);
             this.calendarLabel.Name = "calendarLabel";
-            this.calendarLabel.Size = new System.Drawing.Size(50, 16);
+            this.calendarLabel.Size = new System.Drawing.Size(53, 15);
             this.calendarLabel.TabIndex = 9;
             this.calendarLabel.Text = "Calendar";
             // 
@@ -169,12 +170,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.analysisLabel.BackColor = System.Drawing.Color.Transparent;
-            this.analysisLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.analysisLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.analysisLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.analysisLabel.Location = new System.Drawing.Point(94, 251);
             this.analysisLabel.Margin = new System.Windows.Forms.Padding(4);
             this.analysisLabel.Name = "analysisLabel";
-            this.analysisLabel.Size = new System.Drawing.Size(45, 16);
+            this.analysisLabel.Size = new System.Drawing.Size(49, 15);
             this.analysisLabel.TabIndex = 9;
             this.analysisLabel.Text = "Analysis";
             // 
@@ -184,12 +185,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.testLabel.BackColor = System.Drawing.Color.Transparent;
-            this.testLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.testLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.testLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.testLabel.Location = new System.Drawing.Point(94, 313);
             this.testLabel.Margin = new System.Windows.Forms.Padding(4);
             this.testLabel.Name = "testLabel";
-            this.testLabel.Size = new System.Drawing.Size(30, 16);
+            this.testLabel.Size = new System.Drawing.Size(34, 15);
             this.testLabel.TabIndex = 9;
             this.testLabel.Text = "Tests";
             // 
@@ -199,12 +200,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.playablesLabel.BackColor = System.Drawing.Color.Transparent;
-            this.playablesLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playablesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.playablesLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.playablesLabel.Location = new System.Drawing.Point(94, 372);
             this.playablesLabel.Margin = new System.Windows.Forms.Padding(4);
             this.playablesLabel.Name = "playablesLabel";
-            this.playablesLabel.Size = new System.Drawing.Size(55, 16);
+            this.playablesLabel.Size = new System.Drawing.Size(57, 15);
             this.playablesLabel.TabIndex = 9;
             this.playablesLabel.Text = "Playables";
             // 
@@ -214,12 +215,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.visualizationLabel.BackColor = System.Drawing.Color.Transparent;
-            this.visualizationLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visualizationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.visualizationLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.visualizationLabel.Location = new System.Drawing.Point(94, 431);
             this.visualizationLabel.Margin = new System.Windows.Forms.Padding(4);
             this.visualizationLabel.Name = "visualizationLabel";
-            this.visualizationLabel.Size = new System.Drawing.Size(70, 16);
+            this.visualizationLabel.Size = new System.Drawing.Size(74, 15);
             this.visualizationLabel.TabIndex = 9;
             this.visualizationLabel.Text = "Visualization";
             // 
@@ -227,11 +228,11 @@
             // 
             this.settingsLabel.AutoSize = true;
             this.settingsLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.settingsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.settingsLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.settingsLabel.Location = new System.Drawing.Point(15, 581);
             this.settingsLabel.Name = "settingsLabel";
-            this.settingsLabel.Size = new System.Drawing.Size(49, 14);
+            this.settingsLabel.Size = new System.Drawing.Size(53, 13);
             this.settingsLabel.TabIndex = 10;
             this.settingsLabel.Text = "Settings";
             this.settingsLabel.Click += new System.EventHandler(this.clickOptions);
@@ -264,7 +265,7 @@
             this.navBarPanel.Controls.Add(this.moodTrackerLabel);
             this.navBarPanel.Location = new System.Drawing.Point(-1, -2);
             this.navBarPanel.Name = "navBarPanel";
-            this.navBarPanel.Size = new System.Drawing.Size(197, 655);
+            this.navBarPanel.Size = new System.Drawing.Size(86, 655);
             this.navBarPanel.TabIndex = 12;
             this.navBarPanel.MouseEnter += new System.EventHandler(this.navBarPanelHover);
             this.navBarPanel.MouseLeave += new System.EventHandler(this.navBarPanelHover);
@@ -282,6 +283,21 @@
             this.usericonPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.usericonPicture.TabIndex = 5;
             this.usericonPicture.TabStop = false;
+            // 
+            // navBarIconsPanel
+            // 
+            this.navBarIconsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.navBarIconsPanel.Controls.Add(this.playablesButton);
+            this.navBarIconsPanel.Controls.Add(this.analysisButton);
+            this.navBarIconsPanel.Controls.Add(this.indicatorButton);
+            this.navBarIconsPanel.Controls.Add(this.testButton);
+            this.navBarIconsPanel.Controls.Add(this.visualizationButton);
+            this.navBarIconsPanel.Controls.Add(this.moodtrackerButton);
+            this.navBarIconsPanel.Controls.Add(this.calendarButton);
+            this.navBarIconsPanel.Location = new System.Drawing.Point(-8, 104);
+            this.navBarIconsPanel.Name = "navBarIconsPanel";
+            this.navBarIconsPanel.Size = new System.Drawing.Size(72, 363);
+            this.navBarIconsPanel.TabIndex = 0;
             // 
             // playablesButton
             // 
@@ -448,13 +464,13 @@
             this.bgPanel.BackColor = System.Drawing.Color.Transparent;
             this.bgPanel.Controls.Add(this.displayPanel);
             this.bgPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.bgPanel.Location = new System.Drawing.Point(201, 40);
+            this.bgPanel.Location = new System.Drawing.Point(89, 40);
             this.bgPanel.Margin = new System.Windows.Forms.Padding(2);
             this.bgPanel.Name = "bgPanel";
             this.bgPanel.Radius = 10;
             this.bgPanel.ShadowColor = System.Drawing.Color.Black;
             this.bgPanel.ShadowShift = 1;
-            this.bgPanel.Size = new System.Drawing.Size(806, 557);
+            this.bgPanel.Size = new System.Drawing.Size(917, 557);
             this.bgPanel.TabIndex = 13;
             // 
             // displayPanel
@@ -468,7 +484,7 @@
             this.displayPanel.Margin = new System.Windows.Forms.Padding(2);
             this.displayPanel.Name = "displayPanel";
             this.displayPanel.ShadowDecoration.Parent = this.displayPanel;
-            this.displayPanel.Size = new System.Drawing.Size(773, 531);
+            this.displayPanel.Size = new System.Drawing.Size(884, 531);
             this.displayPanel.TabIndex = 0;
             // 
             // animateTimer
@@ -487,20 +503,9 @@
             this.fadeOut.Interval = 50;
             this.fadeOut.Tick += new System.EventHandler(this.fadeOut_Tick);
             // 
-            // navBarIconsPanel
+            // tm
             // 
-            this.navBarIconsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.navBarIconsPanel.Controls.Add(this.playablesButton);
-            this.navBarIconsPanel.Controls.Add(this.analysisButton);
-            this.navBarIconsPanel.Controls.Add(this.indicatorButton);
-            this.navBarIconsPanel.Controls.Add(this.testButton);
-            this.navBarIconsPanel.Controls.Add(this.visualizationButton);
-            this.navBarIconsPanel.Controls.Add(this.moodtrackerButton);
-            this.navBarIconsPanel.Controls.Add(this.calendarButton);
-            this.navBarIconsPanel.Location = new System.Drawing.Point(-8, 104);
-            this.navBarIconsPanel.Name = "navBarIconsPanel";
-            this.navBarIconsPanel.Size = new System.Drawing.Size(72, 363);
-            this.navBarIconsPanel.TabIndex = 0;
+            this.tm.Tick += new System.EventHandler(this.tm_Tick);
             // 
             // Main
             // 
@@ -523,8 +528,8 @@
             this.navBarPanel.ResumeLayout(false);
             this.navBarPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.usericonPicture)).EndInit();
-            this.bgPanel.ResumeLayout(false);
             this.navBarIconsPanel.ResumeLayout(false);
+            this.bgPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -558,6 +563,7 @@
         private System.Windows.Forms.Timer fadeOut;
         private Guna.UI2.WinForms.Guna2Panel windowsPanel;
         private System.Windows.Forms.Panel navBarIconsPanel;
+        private System.Windows.Forms.Timer tm;
     }
 }
 
