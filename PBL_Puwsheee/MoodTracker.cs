@@ -74,10 +74,5 @@ namespace PBL_Puwsheee
 
             notesTextbox.Text = "";
         }
-
-        private void angryIcon_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

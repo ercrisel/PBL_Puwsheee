@@ -439,11 +439,11 @@
             // 
             this.contentLabel1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.contentLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.contentLabel1.Font = new System.Drawing.Font("Typo Round Bold Demo", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contentLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contentLabel1.Location = new System.Drawing.Point(173, 56);
             this.contentLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.contentLabel1.Name = "contentLabel1";
-            this.contentLabel1.Size = new System.Drawing.Size(90, 18);
+            this.contentLabel1.Size = new System.Drawing.Size(118, 22);
             this.contentLabel1.TabIndex = 34;
             this.contentLabel1.Text = "How are you?";
             // 
@@ -451,11 +451,11 @@
             // 
             this.contentLabel3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.contentLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.contentLabel3.Font = new System.Drawing.Font("Typo Round Bold Demo", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contentLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contentLabel3.Location = new System.Drawing.Point(579, 77);
             this.contentLabel3.Margin = new System.Windows.Forms.Padding(4);
             this.contentLabel3.Name = "contentLabel3";
-            this.contentLabel3.Size = new System.Drawing.Size(173, 18);
+            this.contentLabel3.Size = new System.Drawing.Size(230, 22);
             this.contentLabel3.TabIndex = 39;
             this.contentLabel3.Text = "What have you been up to?";
             // 
@@ -474,7 +474,7 @@
             this.notesTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
             this.notesTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.notesTextbox.FocusedState.Parent = this.notesTextbox;
-            this.notesTextbox.Font = new System.Drawing.Font("Typo Round Bold Demo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.notesTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.notesTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.notesTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.notesTextbox.HoverState.Parent = this.notesTextbox;
@@ -495,11 +495,11 @@
             // 
             this.labelMood.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.labelMood.BackColor = System.Drawing.Color.Transparent;
-            this.labelMood.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMood.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMood.Location = new System.Drawing.Point(103, 224);
             this.labelMood.Margin = new System.Windows.Forms.Padding(4);
             this.labelMood.Name = "labelMood";
-            this.labelMood.Size = new System.Drawing.Size(38, 16);
+            this.labelMood.Size = new System.Drawing.Size(50, 19);
             this.labelMood.TabIndex = 35;
             this.labelMood.Text = "MOOD";
             // 
@@ -507,11 +507,11 @@
             // 
             this.dateLabel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.dateLabel.BackColor = System.Drawing.Color.Transparent;
-            this.dateLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateLabel.Location = new System.Drawing.Point(11, 13);
             this.dateLabel.Margin = new System.Windows.Forms.Padding(4);
             this.dateLabel.Name = "dateLabel";
-            this.dateLabel.Size = new System.Drawing.Size(75, 16);
+            this.dateLabel.Size = new System.Drawing.Size(111, 19);
             this.dateLabel.TabIndex = 37;
             this.dateLabel.Text = "Date: 12/12/12";
             // 
@@ -519,11 +519,11 @@
             // 
             this.contentLabel2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.contentLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.contentLabel2.Font = new System.Drawing.Font("Typo Round Bold Demo", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contentLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contentLabel2.Location = new System.Drawing.Point(136, 258);
             this.contentLabel2.Margin = new System.Windows.Forms.Padding(4);
             this.contentLabel2.Name = "contentLabel2";
-            this.contentLabel2.Size = new System.Drawing.Size(173, 18);
+            this.contentLabel2.Size = new System.Drawing.Size(230, 22);
             this.contentLabel2.TabIndex = 38;
             this.contentLabel2.Text = "What have you been up to?";
             // 
@@ -749,17 +749,17 @@
             // 
             this.labelActivities.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.labelActivities.BackColor = System.Drawing.Color.Transparent;
-            this.labelActivities.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelActivities.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelActivities.Location = new System.Drawing.Point(43, 439);
             this.labelActivities.Margin = new System.Windows.Forms.Padding(4);
             this.labelActivities.Name = "labelActivities";
-            this.labelActivities.Size = new System.Drawing.Size(52, 16);
+            this.labelActivities.Size = new System.Drawing.Size(81, 19);
             this.labelActivities.TabIndex = 36;
             this.labelActivities.Text = "ACTIVITES";
             // 
             // MoodTracker
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.ClientSize = new System.Drawing.Size(886, 536);
