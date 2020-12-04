@@ -48,11 +48,15 @@
     <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
       <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
     </Reference>
+    <Reference Include="MonthCalendar">
+      <HintPath>..\..\..\..\Downloads\MonthCalendar_demo_vs2005\MonthCalendar.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -64,6 +68,9 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsCalendar">
+      <HintPath>..\..\..\..\Downloads\WinFormsCalendar_1.1\WindowsFormsCalendar.dll</HintPath>
+    </Reference>
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
