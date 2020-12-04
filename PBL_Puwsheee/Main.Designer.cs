@@ -73,7 +73,7 @@
             this.usernameLabel.BackColor = System.Drawing.Color.Transparent;
             this.usernameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.usernameLabel.Location = new System.Drawing.Point(98, 64);
+            this.usernameLabel.Location = new System.Drawing.Point(88, 64);
             this.usernameLabel.Margin = new System.Windows.Forms.Padding(4);
             this.usernameLabel.Name = "usernameLabel";
             this.usernameLabel.Size = new System.Drawing.Size(59, 15);
@@ -142,7 +142,7 @@
             this.moodTrackerLabel.BackColor = System.Drawing.Color.Transparent;
             this.moodTrackerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.moodTrackerLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.moodTrackerLabel.Location = new System.Drawing.Point(94, 137);
+            this.moodTrackerLabel.Location = new System.Drawing.Point(88, 137);
             this.moodTrackerLabel.Margin = new System.Windows.Forms.Padding(4);
             this.moodTrackerLabel.Name = "moodTrackerLabel";
             this.moodTrackerLabel.Size = new System.Drawing.Size(82, 15);
@@ -157,7 +157,7 @@
             this.calendarLabel.BackColor = System.Drawing.Color.Transparent;
             this.calendarLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calendarLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.calendarLabel.Location = new System.Drawing.Point(94, 193);
+            this.calendarLabel.Location = new System.Drawing.Point(88, 193);
             this.calendarLabel.Margin = new System.Windows.Forms.Padding(4);
             this.calendarLabel.Name = "calendarLabel";
             this.calendarLabel.Size = new System.Drawing.Size(53, 15);
@@ -172,7 +172,7 @@
             this.analysisLabel.BackColor = System.Drawing.Color.Transparent;
             this.analysisLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.analysisLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.analysisLabel.Location = new System.Drawing.Point(94, 251);
+            this.analysisLabel.Location = new System.Drawing.Point(88, 251);
             this.analysisLabel.Margin = new System.Windows.Forms.Padding(4);
             this.analysisLabel.Name = "analysisLabel";
             this.analysisLabel.Size = new System.Drawing.Size(49, 15);
@@ -187,7 +187,7 @@
             this.testLabel.BackColor = System.Drawing.Color.Transparent;
             this.testLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.testLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.testLabel.Location = new System.Drawing.Point(94, 313);
+            this.testLabel.Location = new System.Drawing.Point(88, 313);
             this.testLabel.Margin = new System.Windows.Forms.Padding(4);
             this.testLabel.Name = "testLabel";
             this.testLabel.Size = new System.Drawing.Size(34, 15);
@@ -202,7 +202,7 @@
             this.playablesLabel.BackColor = System.Drawing.Color.Transparent;
             this.playablesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.playablesLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.playablesLabel.Location = new System.Drawing.Point(94, 372);
+            this.playablesLabel.Location = new System.Drawing.Point(88, 372);
             this.playablesLabel.Margin = new System.Windows.Forms.Padding(4);
             this.playablesLabel.Name = "playablesLabel";
             this.playablesLabel.Size = new System.Drawing.Size(57, 15);
@@ -217,7 +217,7 @@
             this.visualizationLabel.BackColor = System.Drawing.Color.Transparent;
             this.visualizationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.visualizationLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.visualizationLabel.Location = new System.Drawing.Point(94, 431);
+            this.visualizationLabel.Location = new System.Drawing.Point(88, 431);
             this.visualizationLabel.Margin = new System.Windows.Forms.Padding(4);
             this.visualizationLabel.Name = "visualizationLabel";
             this.visualizationLabel.Size = new System.Drawing.Size(74, 15);
@@ -265,7 +265,7 @@
             this.navBarPanel.Controls.Add(this.moodTrackerLabel);
             this.navBarPanel.Location = new System.Drawing.Point(-1, -2);
             this.navBarPanel.Name = "navBarPanel";
-            this.navBarPanel.Size = new System.Drawing.Size(86, 655);
+            this.navBarPanel.Size = new System.Drawing.Size(82, 655);
             this.navBarPanel.TabIndex = 12;
             this.navBarPanel.MouseEnter += new System.EventHandler(this.navBarPanelHover);
             this.navBarPanel.MouseLeave += new System.EventHandler(this.navBarPanelHover);
@@ -461,6 +461,7 @@
             // 
             // bgPanel
             // 
+            this.bgPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.bgPanel.BackColor = System.Drawing.Color.Transparent;
             this.bgPanel.Controls.Add(this.displayPanel);
             this.bgPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
@@ -470,26 +471,27 @@
             this.bgPanel.Radius = 10;
             this.bgPanel.ShadowColor = System.Drawing.Color.Black;
             this.bgPanel.ShadowShift = 1;
-            this.bgPanel.Size = new System.Drawing.Size(917, 557);
+            this.bgPanel.Size = new System.Drawing.Size(916, 557);
             this.bgPanel.TabIndex = 13;
             // 
             // displayPanel
             // 
-            this.displayPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.displayPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.displayPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.displayPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.displayPanel.BorderRadius = 20;
-            this.displayPanel.Location = new System.Drawing.Point(12, 11);
+            this.displayPanel.Location = new System.Drawing.Point(15, 11);
             this.displayPanel.Margin = new System.Windows.Forms.Padding(2);
             this.displayPanel.Name = "displayPanel";
             this.displayPanel.ShadowDecoration.Parent = this.displayPanel;
-            this.displayPanel.Size = new System.Drawing.Size(884, 531);
+            this.displayPanel.Size = new System.Drawing.Size(883, 531);
             this.displayPanel.TabIndex = 0;
             // 
             // animateTimer
             // 
-            this.animateTimer.Interval = 10;
+            this.animateTimer.Interval = 1;
             this.animateTimer.Tick += new System.EventHandler(this.animateTimer_Tick);
             // 
             // fadeIn
@@ -505,6 +507,7 @@
             // 
             // tm
             // 
+            this.tm.Interval = 1;
             this.tm.Tick += new System.EventHandler(this.tm_Tick);
             // 
             // Main

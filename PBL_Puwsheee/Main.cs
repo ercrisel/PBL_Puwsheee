@@ -51,8 +51,6 @@ namespace PBL_Puwsheee
         //    internal static extern int SetWindowLong(IntPtr hWnd, int nIndex, int dwNewLong);
         //}
 
-        bool hided = false;
-
         public Main()
         {
             InitializeComponent();
@@ -87,7 +85,7 @@ namespace PBL_Puwsheee
                 activeForm.Close();
             activeForm = childForm;
             childForm.TopLevel = false;
-            childForm.TopMost = true;
+            //childForm.TopMost = true;
             this.displayPanel.Controls.Add(childForm);
             this.displayPanel.Tag = childForm;
             childForm.BringToFront();
@@ -177,12 +175,15 @@ namespace PBL_Puwsheee
       
         }
 
+        bool hided = true;
+        bool small = false;
+
         private void animateTimer_Tick(object sender, EventArgs e)
         {
             if(hided)
             {
                 if (settingsLabel.Left <= 63) settingsLabel.Left += 10;
-               // if (bgPanel.Width >= 806) bgPanel.Width -= 22;
+             //   if (bgPanel.Width >= 806) bgPanel.Width -= 22;
                 if (bgPanel.Location.X <= 201) bgPanel.Location = new Point(bgPanel.Location.X + 22, 40); //bgPanel.Left += 22;
 
                 navBarPanel.Width += 25;
@@ -192,6 +193,7 @@ namespace PBL_Puwsheee
                     animateTimer.Stop();
                     hided = false; 
                 }
+
             }
             else
             {
@@ -223,24 +225,41 @@ namespace PBL_Puwsheee
         // eto code
         private void tm_Tick(object sender, EventArgs e)
         {
-            if (hided)
+            if (!small)
             {
+                bgPanel.Width -= 20;
+                if (bgPanel.Width <= 832)
+                {
+                    tm.Stop();
+                    small = true;
+                }
+
+                /*
+                bgPanel.Width += 45;
+
+                if (bgPanel.Width >= 917)
+                {
+                    tm.Stop();
+                } */
+            }
+            else
+            {
+                bgPanel.Width += 20;
+                if (bgPanel.Width >= 910)
+                {
+                    tm.Stop();
+                    small = false;
+                }
+
+                /*
+                bgPanel.Width -= 35;
                 if (bgPanel.Width <= 806)
                 {
-
-                    tm.Enabled = false;
-                }
-                else
-                {
-                    bgPanel.Width -= 42;
-                }
-
+                    tm.Stop();
+                } */
             }
-         
-        }
 
-     
+        }   
 
-        
     }
 }

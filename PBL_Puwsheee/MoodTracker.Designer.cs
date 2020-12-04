@@ -66,6 +66,7 @@
             // 
             // moodLabel
             // 
+            this.moodLabel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.moodLabel.BackColor = System.Drawing.Color.Transparent;
             this.moodLabel.Location = new System.Drawing.Point(144, 239);
             this.moodLabel.Margin = new System.Windows.Forms.Padding(4);
@@ -76,6 +77,7 @@
             // 
             // submitButton
             // 
+            this.submitButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitButton.BorderRadius = 16;
             this.submitButton.CheckedState.Parent = this.submitButton;
             this.submitButton.CustomImages.Parent = this.submitButton;
@@ -93,6 +95,7 @@
             // 
             // activitiesPanel
             // 
+            this.activitiesPanel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.activitiesPanel.Controls.Add(this.travelIcon);
             this.activitiesPanel.Controls.Add(this.studyIcon);
             this.activitiesPanel.Controls.Add(this.sportsIcon);
@@ -414,6 +417,7 @@
             // 
             // clearButton
             // 
+            this.clearButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.clearButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.clearButton.BorderRadius = 16;
             this.clearButton.BorderThickness = 2;
@@ -433,6 +437,7 @@
             // 
             // contentLabel1
             // 
+            this.contentLabel1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.contentLabel1.BackColor = System.Drawing.Color.Transparent;
             this.contentLabel1.Font = new System.Drawing.Font("Typo Round Bold Demo", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contentLabel1.Location = new System.Drawing.Point(173, 56);
@@ -444,6 +449,7 @@
             // 
             // contentLabel3
             // 
+            this.contentLabel3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.contentLabel3.BackColor = System.Drawing.Color.Transparent;
             this.contentLabel3.Font = new System.Drawing.Font("Typo Round Bold Demo", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contentLabel3.Location = new System.Drawing.Point(579, 77);
@@ -455,6 +461,7 @@
             // 
             // notesTextbox
             // 
+            this.notesTextbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.notesTextbox.AutoScroll = true;
             this.notesTextbox.BorderRadius = 20;
             this.notesTextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -486,6 +493,7 @@
             // 
             // labelMood
             // 
+            this.labelMood.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.labelMood.BackColor = System.Drawing.Color.Transparent;
             this.labelMood.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMood.Location = new System.Drawing.Point(103, 224);
@@ -497,6 +505,7 @@
             // 
             // dateLabel
             // 
+            this.dateLabel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.dateLabel.BackColor = System.Drawing.Color.Transparent;
             this.dateLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateLabel.Location = new System.Drawing.Point(11, 13);
@@ -508,6 +517,7 @@
             // 
             // contentLabel2
             // 
+            this.contentLabel2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.contentLabel2.BackColor = System.Drawing.Color.Transparent;
             this.contentLabel2.Font = new System.Drawing.Font("Typo Round Bold Demo", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contentLabel2.Location = new System.Drawing.Point(136, 258);
@@ -519,6 +529,7 @@
             // 
             // moodPanel
             // 
+            this.moodPanel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.moodPanel.Controls.Add(this.angryIcon);
             this.moodPanel.Controls.Add(this.guna2Button1);
             this.moodPanel.Controls.Add(this.contentedIcon);
@@ -736,6 +747,7 @@
             // 
             // labelActivities
             // 
+            this.labelActivities.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.labelActivities.BackColor = System.Drawing.Color.Transparent;
             this.labelActivities.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelActivities.Location = new System.Drawing.Point(43, 439);
@@ -767,7 +779,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MoodTracker";
-            this.Text = "Mood Tracker";
+            this.Text = "s";
             this.activitiesPanel.ResumeLayout(false);
             this.moodPanel.ResumeLayout(false);
             this.ResumeLayout(false);

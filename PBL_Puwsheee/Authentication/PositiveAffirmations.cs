@@ -95,7 +95,7 @@ namespace PBL_Puwsheee
                 "I am not my Mistakes.",
                 "I accept Myself Unconditionally.",
                 "I am Enough.",
-                "I believe in the Person I bream of Becoming.",
+                "I believe in the Person I dream of Becoming.",
                 "Positivity is a choice; I choose to be positive.",
                 "I am now creating my Live exactly as I want it.",
                 "There is no wrong Decision.",
