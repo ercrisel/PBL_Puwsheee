@@ -72,20 +72,20 @@
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(223, 157);
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Typo Round Bold Demo", 15F);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(153, 143);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(195, 16);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(347, 27);
             this.guna2HtmlLabel2.TabIndex = 5;
             this.guna2HtmlLabel2.Text = "All entry for this day will be updated";
             // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(198, 127);
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Typo Round Bold Demo", 15F);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(114, 113);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(237, 16);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(425, 27);
             this.guna2HtmlLabel1.TabIndex = 4;
             this.guna2HtmlLabel1.Text = "Are you sure you want to update your entry?";
             // 

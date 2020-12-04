@@ -12,6 +12,16 @@ namespace PBL_Puwsheee.Playables
 {
     public partial class NewPlayables : Form
     {
+        protected override CreateParams CreateParams // double buffeirng daw sabi ni google 
+        {
+            get
+            {
+                CreateParams handleparam = base.CreateParams;
+                handleparam.ExStyle |= 0x02000000;
+                return handleparam;
+            }
+        }
+
         public NewPlayables()
         {
             InitializeComponent();

@@ -18,6 +18,16 @@ namespace PBL_Puwsheee
             InitializeComponent();
         }
 
+        protected override CreateParams CreateParams // double buffeirng daw sabi ni google 
+        {
+            get
+            {
+                CreateParams handleparam = base.CreateParams;
+                handleparam.ExStyle |= 0x02000000;
+                return handleparam;
+            }
+        }
+
         private void moodIcon_MouseHover(object sender, EventArgs e)
         {
             Guna2Button btn = sender as Guna2Button;

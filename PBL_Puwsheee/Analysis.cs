@@ -16,7 +16,15 @@ namespace PBL_Puwsheee
         {
             InitializeComponent();
         }
-
+        protected override CreateParams CreateParams // double buffeirng daw sabi ni google 
+        {
+            get
+            {
+                CreateParams handleparam = base.CreateParams;
+                handleparam.ExStyle |= 0x02000000;
+                return handleparam;
+            }
+        }
         private void seeresultButton_Click(object sender, EventArgs e)
         {
           
@@ -24,10 +32,20 @@ namespace PBL_Puwsheee
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            guna2ShadowPanel1.Visible = true;
-            startdateDateTimePicker.Visible = true;
-            enddateDateTimePicker.Visible = true;
-            seeresultButton.Visible = true;
+            if (guna2ShadowPanel1.Visible == false)
+            {
+                guna2ShadowPanel1.Visible = true;
+                startdateDateTimePicker.Visible = true;
+                enddateDateTimePicker.Visible = true;
+                seeresultButton.Visible = true;
+            }
+            else
+            {
+                guna2ShadowPanel1.Visible = false;
+                startdateDateTimePicker.Visible = false;
+                enddateDateTimePicker.Visible = false;
+                seeresultButton.Visible = false;
+            }
         }
     }
 }

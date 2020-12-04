@@ -23,15 +23,15 @@ namespace PBL_Puwsheee
             int nHeightEllipse // width of ellipse
         );
 
-        protected override CreateParams CreateParams // double buffeirng daw sabi ni google 
-        {
-            get
-            {
-                CreateParams handleparam = base.CreateParams;
-                handleparam.ExStyle |= 0x02000000;
-                return handleparam;
-            }
-        } 
+        //protected override CreateParams CreateParams // double buffeirng daw sabi ni google 
+        //{
+        //    get
+        //    {
+        //        CreateParams handleparam = base.CreateParams;
+        //        handleparam.ExStyle |= 0x02000000;
+        //        return handleparam;
+        //    }
+        //}
 
         public static void enableDoubleBuff(System.Windows.Forms.Control cont)
         {
@@ -39,7 +39,19 @@ namespace PBL_Puwsheee
             DemoProp.SetValue(cont, true, null);
         }
 
-        bool hided = true;
+        //internal static class NativeWinAPI
+        //{
+        //    internal static readonly int GWL_EXSTYLE = -20;
+        //    internal static readonly int WS_EX_COMPOSITED = 0x02000000;
+
+        //    [DllImport("user32")]
+        //    internal static extern int GetWindowLong(IntPtr hWnd, int nIndex);
+
+        //    [DllImport("user32")]
+        //    internal static extern int SetWindowLong(IntPtr hWnd, int nIndex, int dwNewLong);
+        //}
+
+        bool hided = false;
 
         public Main()
         {
@@ -50,15 +62,23 @@ namespace PBL_Puwsheee
 
             this.DoubleBuffered = true;
             enableDoubleBuff(displayPanel);
+            enableDoubleBuff(bgPanel);
+            enableDoubleBuff(navBarPanel);
+            enableDoubleBuff(navBarIconsPanel);
+            enableDoubleBuff(settingsPanel);
+
+            //int style = NativeWinAPI.GetWindowLong(this.Handle, NativeWinAPI.GWL_EXSTYLE);
+            //style |= NativeWinAPI.WS_EX_COMPOSITED;
+            //NativeWinAPI.SetWindowLong(this.Handle, NativeWinAPI.GWL_EXSTYLE, style);
         }
 
         private void Main_Load(object sender, EventArgs e)
         {
-           // string username = Log_In.publicUserName;
-           // usernameLabel.Text = username;
-          //  user.Username = username;
+            //string username = Log_In.publicUserName;
+            //usernameLabel.Text = username;
+            //user.Username = username;
             //user.LoadPicture(usericonPicture);
-            indicatorButton.Location = new Point(46, 130);
+            indicatorButton.Location = new Point(46, 54);
         }
 
         private void openChildForm(Form childForm)
@@ -77,37 +97,37 @@ namespace PBL_Puwsheee
         private void clickMoodTracker(object sender, EventArgs e)
         {
             openChildForm(new MoodTracker());
-            indicatorButton.Location = new Point(46, 130);
+            indicatorButton.Location = new Point(46, 54);
         }
 
         private void clickCalendar(object sender, EventArgs e)
         {
             openChildForm(new Calendar_Main());
-            indicatorButton.Location = new Point(46, 186);
+            indicatorButton.Location = new Point(46, 110);
         }
         
         private void clickAnalysis(object sender, EventArgs e)
         {
             openChildForm(new Analysis());
-            indicatorButton.Location = new Point(46, 244);
+            indicatorButton.Location = new Point(46, 168);
         }
 
         private void clickTest(object sender, EventArgs e)
         {
             openChildForm(new Test.Test_Main());
-            indicatorButton.Location = new Point(46, 309);
+            indicatorButton.Location = new Point(46, 232);
         }
 
         private void clickPlayables(object sender, EventArgs e)
         {
             openChildForm(new Playables.NewPlayables());
-            indicatorButton.Location = new Point(46, 369);
+            indicatorButton.Location = new Point(46, 292);
         }
 
         private void clickVisualization(object sender, EventArgs e)
         {
             openChildForm(new MainVisualization());
-            indicatorButton.Location = new Point(46, 428);
+            indicatorButton.Location = new Point(46, 346);
         }
 
         private void exitPuwshee(object sender, EventArgs e)
@@ -117,10 +137,27 @@ namespace PBL_Puwsheee
 
         private void clickOptions(object sender, EventArgs e)
         {
-            this.Hide();
+            Form bg = new Form();
+            Form settings = new Settings.Settings_Main();
+            bg.StartPosition = FormStartPosition.CenterScreen;
+            bg.FormBorderStyle = FormBorderStyle.None;
+            bg.Opacity = .50d;
+            bg.BackColor = Color.Black;
+            bg.WindowState = FormWindowState.Normal;
+            bg.TopMost = true;
+            bg.Location = this.Location;
+            bg.ShowInTaskbar = false;
+            bg.Size = new Size(1020, 610);
+            bg.Show();
+
+            settings.Owner = bg;
+            settings.ShowDialog();
+            bg.Dispose();
+
+            /*this.Hide();
             var form = new Settings.Settings_Main();
             form.Closed += (s, args) => this.Close();
-            form.Show();
+            form.Show(); */
         }
 
         private void minimizePuwshee(object sender, EventArgs e)
@@ -136,12 +173,18 @@ namespace PBL_Puwsheee
         private void navBarPanelHover(object sender, EventArgs e)
         {
             animateTimer.Start();
+            tm.Start();
+      
         }
 
         private void animateTimer_Tick(object sender, EventArgs e)
         {
             if(hided)
             {
+                if (settingsLabel.Left <= 63) settingsLabel.Left += 10;
+               // if (bgPanel.Width >= 806) bgPanel.Width -= 22;
+                if (bgPanel.Location.X <= 201) bgPanel.Location = new Point(bgPanel.Location.X + 22, 40); //bgPanel.Left += 22;
+
                 navBarPanel.Width += 25;
 
                 if(navBarPanel.Width >= 165)
@@ -149,13 +192,14 @@ namespace PBL_Puwsheee
                     animateTimer.Stop();
                     hided = false; 
                 }
-
-                if (settingsLabel.Left <= 63) settingsLabel.Left += 10;
-                if (bgPanel.Width >= 806) bgPanel.Width -= 22;
-                if (bgPanel.Left <= 201) bgPanel.Left += 22;
             }
             else
             {
+                if (settingsLabel.Left >= 17) settingsLabel.Left -= 10;
+            //    if (bgPanel.Width <= 917) bgPanel.Width += 22;
+                if (bgPanel.Location.X >= 89) bgPanel.Location = new Point(bgPanel.Location.X - 22, 40);//bgPanel.Left -= 22;
+
+
                 navBarPanel.Width -= 25;
 
                 if (navBarPanel.Width <= 86)
@@ -163,10 +207,6 @@ namespace PBL_Puwsheee
                     animateTimer.Stop();
                     hided = true;
                 }
-
-                if (settingsLabel.Left >= 17) settingsLabel.Left -= 10;
-                if (bgPanel.Width <= 917) bgPanel.Width += 22;
-                if (bgPanel.Left >= 89) bgPanel.Left -= 22; 
             }
         }
 
@@ -179,5 +219,28 @@ namespace PBL_Puwsheee
         {
             Fade.exitFade(this);
         }
+
+        // eto code
+        private void tm_Tick(object sender, EventArgs e)
+        {
+            if (hided)
+            {
+                if (bgPanel.Width <= 806)
+                {
+
+                    tm.Enabled = false;
+                }
+                else
+                {
+                    bgPanel.Width -= 42;
+                }
+
+            }
+         
+        }
+
+     
+
+        
     }
 }

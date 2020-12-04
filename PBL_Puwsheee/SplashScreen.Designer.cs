@@ -112,7 +112,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(60)))), ((int)(((byte)(105)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.ClientSize = new System.Drawing.Size(1020, 580);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.logoLabel);
@@ -126,7 +126,6 @@
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.logoPicture)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
