@@ -350,6 +350,9 @@
     <EmbeddedResource Include="Calendar\Remove_Entry.resx">
       <DependentUpon>Remove_Entry.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Charts.resx">
+      <DependentUpon>Charts.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>

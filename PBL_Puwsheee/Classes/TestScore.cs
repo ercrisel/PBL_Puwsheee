@@ -72,6 +72,7 @@ namespace PBL_Puwsheee.Classes
 
                 SqlCommand isExistingCommand = new SqlCommand("spCheckExistingTestScores", connection);
                 isExistingCommand.CommandType = CommandType.StoredProcedure;
+                isExistingCommand.Parameters.AddWithValue("@Username", username);
                 isExistingCommand.Parameters.AddWithValue("@DateTaken", dateTaken);
                 SqlDataReader reader = isExistingCommand.ExecuteReader();
 

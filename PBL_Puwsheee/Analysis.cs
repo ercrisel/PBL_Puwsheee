@@ -47,6 +47,7 @@ namespace PBL_Puwsheee
         public Analysis()
         {
             InitializeComponent();
+            user.Username = "hrvlrdn";
         }
         public Analysis(UserInfo userInfo)
         {
@@ -134,6 +135,7 @@ namespace PBL_Puwsheee
         {
             InitializeDates();
             LoadAnalysisOverview();
+            moodComboBox.Enabled = true; //just in case user changes dateTimePicker, did not press seeResult but pressed resetButton
         }
 
         //CUSTOM METHODS

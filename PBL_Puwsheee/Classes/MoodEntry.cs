@@ -77,6 +77,7 @@ namespace PBL_Puwsheee.Classes
 
                 SqlCommand isExistingCommand = new SqlCommand("spCheckExistingMoodEntries", connection);
                 isExistingCommand.CommandType = CommandType.StoredProcedure;
+                isExistingCommand.Parameters.AddWithValue("@Username", username);
                 isExistingCommand.Parameters.AddWithValue("@Date", date);
                 SqlDataReader reader = isExistingCommand.ExecuteReader();
 
@@ -109,6 +110,7 @@ namespace PBL_Puwsheee.Classes
 
                 SqlCommand checkEntryIdCommand = new SqlCommand("spCheckEntryID", connection);
                 checkEntryIdCommand.CommandType = CommandType.StoredProcedure;
+                checkEntryIdCommand.Parameters.AddWithValue("@Username", username);
                 checkEntryIdCommand.Parameters.AddWithValue("@Date", date);
                 SqlDataReader reader = checkEntryIdCommand.ExecuteReader();
 

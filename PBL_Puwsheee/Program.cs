@@ -16,7 +16,8 @@ namespace PBL_Puwsheee
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main());
+            Application.Run(new Charts());
+            //Application.Run(new Main());
         }
     }
 }
