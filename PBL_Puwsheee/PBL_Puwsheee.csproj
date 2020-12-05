@@ -157,6 +157,12 @@
     <Compile Include="Calendar\Remove_Entry.Designer.cs">
       <DependentUpon>Remove_Entry.cs</DependentUpon>
     </Compile>
+    <Compile Include="Charts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Charts.Designer.cs">
+      <DependentUpon>Charts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Classes\Activity.cs" />
     <Compile Include="Classes\ConnectionAccess.cs" />
     <Compile Include="Classes\Mood.cs" />
