@@ -39,7 +39,7 @@
             this.monthCalendar.ActiveMonth.Month = 12;
             this.monthCalendar.ActiveMonth.Year = 2020;
             this.monthCalendar.Culture = new System.Globalization.CultureInfo("en-PH");
-            this.monthCalendar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.monthCalendar.Dock = System.Windows.Forms.DockStyle.Left;
             this.monthCalendar.Footer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.monthCalendar.Header.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.monthCalendar.Header.TextColor = System.Drawing.Color.White;
@@ -51,7 +51,8 @@
             this.monthCalendar.Month.DateFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.monthCalendar.Month.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.monthCalendar.Name = "monthCalendar";
-            this.monthCalendar.Size = new System.Drawing.Size(1247, 622);
+            this.monthCalendar.SelectionMode = Pabo.Calendar.mcSelectionMode.One;
+            this.monthCalendar.Size = new System.Drawing.Size(1049, 622);
             this.monthCalendar.TabIndex = 1;
             this.monthCalendar.Weekdays.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.monthCalendar.Weeknumbers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);

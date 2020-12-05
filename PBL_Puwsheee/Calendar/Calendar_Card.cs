@@ -289,9 +289,8 @@ namespace PBL_Puwsheee.Calendar
                 }
             }
 
-            foreach (var textBox in this.Controls.OfType<Guna2TextBox>()) //empties all textboxes
+            foreach (var textBox in this.Controls.OfType<Guna2TextBox>()) //shows texts but is either 
             {
-                textBox.Text = string.Empty;
                 textBox.Enabled = isEnabled;
             }
         }

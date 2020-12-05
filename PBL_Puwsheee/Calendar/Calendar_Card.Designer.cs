@@ -104,6 +104,7 @@
             this.cookIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Cook;
             this.cookIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.cookIcon.BorderRadius = 15;
+            this.cookIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
             this.cookIcon.CheckedState.Parent = this.cookIcon;
             this.cookIcon.CustomImages.Parent = this.cookIcon;
             this.cookIcon.FillColor = System.Drawing.Color.Transparent;
@@ -123,6 +124,7 @@
             this.exerciseIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Exercise;
             this.exerciseIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.exerciseIcon.BorderRadius = 15;
+            this.exerciseIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
             this.exerciseIcon.CheckedState.Parent = this.exerciseIcon;
             this.exerciseIcon.CustomImages.Parent = this.exerciseIcon;
             this.exerciseIcon.FillColor = System.Drawing.Color.Transparent;
@@ -142,6 +144,7 @@
             this.gameIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Game;
             this.gameIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gameIcon.BorderRadius = 15;
+            this.gameIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
             this.gameIcon.CheckedState.Parent = this.gameIcon;
             this.gameIcon.CustomImages.Parent = this.gameIcon;
             this.gameIcon.FillColor = System.Drawing.Color.Transparent;
@@ -161,6 +164,7 @@
             this.musicIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Music;
             this.musicIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.musicIcon.BorderRadius = 15;
+            this.musicIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
             this.musicIcon.CheckedState.Parent = this.musicIcon;
             this.musicIcon.CustomImages.Parent = this.musicIcon;
             this.musicIcon.FillColor = System.Drawing.Color.Transparent;
@@ -180,6 +184,7 @@
             this.socialIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Social;
             this.socialIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.socialIcon.BorderRadius = 15;
+            this.socialIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
             this.socialIcon.CheckedState.Parent = this.socialIcon;
             this.socialIcon.CustomImages.Parent = this.socialIcon;
             this.socialIcon.FillColor = System.Drawing.Color.Transparent;
@@ -199,6 +204,7 @@
             this.sleepIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Sleep;
             this.sleepIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.sleepIcon.BorderRadius = 15;
+            this.sleepIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
             this.sleepIcon.CheckedState.Parent = this.sleepIcon;
             this.sleepIcon.CustomImages.Parent = this.sleepIcon;
             this.sleepIcon.FillColor = System.Drawing.Color.Transparent;
@@ -218,6 +224,7 @@
             this.shopIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Shop;
             this.shopIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.shopIcon.BorderRadius = 15;
+            this.shopIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
             this.shopIcon.CheckedState.Parent = this.shopIcon;
             this.shopIcon.CustomImages.Parent = this.shopIcon;
             this.shopIcon.FillColor = System.Drawing.Color.Transparent;
@@ -237,6 +244,7 @@
             this.readIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Read;
             this.readIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.readIcon.BorderRadius = 15;
+            this.readIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
             this.readIcon.CheckedState.Parent = this.readIcon;
             this.readIcon.CustomImages.Parent = this.readIcon;
             this.readIcon.FillColor = System.Drawing.Color.Transparent;
@@ -256,6 +264,7 @@
             this.watchIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Watch;
             this.watchIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.watchIcon.BorderRadius = 15;
+            this.watchIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
             this.watchIcon.CheckedState.Parent = this.watchIcon;
             this.watchIcon.CustomImages.Parent = this.watchIcon;
             this.watchIcon.FillColor = System.Drawing.Color.Transparent;
@@ -275,6 +284,7 @@
             this.travelIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Travel;
             this.travelIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.travelIcon.BorderRadius = 15;
+            this.travelIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
             this.travelIcon.CheckedState.Parent = this.travelIcon;
             this.travelIcon.CustomImages.Parent = this.travelIcon;
             this.travelIcon.FillColor = System.Drawing.Color.Transparent;
@@ -294,6 +304,7 @@
             this.studyIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Study;
             this.studyIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.studyIcon.BorderRadius = 15;
+            this.studyIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
             this.studyIcon.CheckedState.Parent = this.studyIcon;
             this.studyIcon.CustomImages.Parent = this.studyIcon;
             this.studyIcon.FillColor = System.Drawing.Color.Transparent;
@@ -313,6 +324,7 @@
             this.sportsIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Sports;
             this.sportsIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.sportsIcon.BorderRadius = 15;
+            this.sportsIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
             this.sportsIcon.CheckedState.Parent = this.sportsIcon;
             this.sportsIcon.CustomImages.Parent = this.sportsIcon;
             this.sportsIcon.FillColor = System.Drawing.Color.Transparent;

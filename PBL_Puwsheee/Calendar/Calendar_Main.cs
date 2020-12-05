@@ -29,6 +29,14 @@ namespace PBL_Puwsheee
             user.Username = "hrvrldn";
         }
 
+        public Calendar_Main(UserInfo userInfo)
+        {
+            InitializeComponent();
+
+            var user = userInfo;
+            moodEntry = new MoodEntry(user.Username);
+        }
+
         private void Calendar_Main_Load(object sender, EventArgs e)
         {
             LoadDates();
@@ -48,14 +56,6 @@ namespace PBL_Puwsheee
         private void cardFormClosing(object sender, FormClosingEventArgs e)
         {
             LoadDates();
-        }
-
-        public Calendar_Main(UserInfo userInfo)
-        {
-            InitializeComponent();
-
-            var user = userInfo;
-            moodEntry = new MoodEntry(user.Username);
         }
 
         //CUSTOM METHODS
