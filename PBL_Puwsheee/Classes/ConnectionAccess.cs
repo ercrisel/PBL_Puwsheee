@@ -13,6 +13,7 @@ namespace PBL_Puwsheee.Classes
         {
             get
             {
+                //🌻💛🔆🧸💕 babe: change connection string 💕🧸🔆💛🌻
                 return "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Puwshee;Integrated Security=True";
             }
         }
