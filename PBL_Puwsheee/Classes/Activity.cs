@@ -15,7 +15,6 @@ namespace PBL_Puwsheee.Classes
 
         public Activity(int id)
         {
-            //accepts the type of id
             Id = id;
         }
 

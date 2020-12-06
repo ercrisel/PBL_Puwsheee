@@ -16,13 +16,11 @@ namespace PBL_Puwsheee
     {
         private List<Guna2Button> moodButtonsList = new List<Guna2Button>();
         private List<Guna2Button> activitiesButtonsList = new List<Guna2Button>();
-        private MoodEntry moodEntry;
+        private MoodEntry moodEntry = new MoodEntry();
 
         public MoodTracker()
         {
             InitializeComponent();
-
-            moodEntry = new MoodEntry("hrvrldn", DateTime.Today);
         }
 
         public MoodTracker(UserInfo userInfo)
@@ -30,7 +28,8 @@ namespace PBL_Puwsheee
             InitializeComponent();
 
             var user = userInfo;
-            moodEntry = new MoodEntry(user.Username, DateTime.Today);
+            moodEntry.Username = user.Username; 
+            moodEntry.Date = DateTime.Today; //automatically sets date as today
         }
 
         protected override CreateParams CreateParams // double buffering daw sabi ni google 

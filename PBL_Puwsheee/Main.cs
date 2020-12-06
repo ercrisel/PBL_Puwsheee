@@ -1,4 +1,5 @@
 ﻿using PBL_Puwsheee.Authentication.Class;
+using PBL_Puwsheee.Classes;
 using System;
 using System.Drawing;
 using System.Runtime.InteropServices;
@@ -9,6 +10,7 @@ namespace PBL_Puwsheee
     public partial class Main : Form
     {
         ChangeSettings user = new ChangeSettings();
+        UserInfo userInfo;
 
         private Form activeForm;
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
@@ -54,7 +56,8 @@ namespace PBL_Puwsheee
         public Main()
         {
             InitializeComponent();
-            openChildForm(new MoodTracker());
+            userInfo = new UserInfo() { Username = "hrvrldn" }; //sets up userInfo !!!!!! wee woo wee woo !!!!!! enter username first before you run; or idk, pwede niyo rin run ng wala, iz just that walang ipapakita
+            openChildForm(new MoodTracker(userInfo));
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
 
@@ -94,19 +97,19 @@ namespace PBL_Puwsheee
 
         private void clickMoodTracker(object sender, EventArgs e)
         {
-            openChildForm(new MoodTracker());
+            openChildForm(new MoodTracker(userInfo));
             indicatorButton.Location = new Point(46, 54);
         }
 
         private void clickCalendar(object sender, EventArgs e)
         {
-            openChildForm(new Calendar_Main());
+            openChildForm(new Calendar_Main(userInfo));
             indicatorButton.Location = new Point(46, 110);
         }
         
         private void clickAnalysis(object sender, EventArgs e)
         {
-            openChildForm(new Analysis());
+            openChildForm(new Analysis(userInfo));
             indicatorButton.Location = new Point(46, 168);
         }
 

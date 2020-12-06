@@ -47,7 +47,6 @@ namespace PBL_Puwsheee
         public Analysis()
         {
             InitializeComponent();
-            user.Username = "hrvlrdn";
         }
         public Analysis(UserInfo userInfo)
         {

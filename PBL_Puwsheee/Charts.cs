@@ -44,7 +44,6 @@ namespace PBL_Puwsheee
         public Charts()
         {
             InitializeComponent();
-            user.Username = "hrvrldn";
         }
 
         public Charts(UserInfo userInfo)

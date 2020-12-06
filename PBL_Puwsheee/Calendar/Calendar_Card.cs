@@ -36,9 +36,6 @@ namespace PBL_Puwsheee.Calendar
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
-
-            moodEntry = new MoodEntry("hrvrldn", date);
-            moodEntry.SelectMoodEntry();
         }
 
         public Calendar_Card(UserInfo userInfo, DateTime date)

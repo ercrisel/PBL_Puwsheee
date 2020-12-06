@@ -18,23 +18,19 @@ namespace PBL_Puwsheee
 
         private List<DateItem> dateItems = new List<DateItem>();
         private UserInfo user = new UserInfo();
-        private MoodEntry moodEntry;
+        private MoodEntry moodEntry = new MoodEntry();
 
         public Calendar_Main()
         {
             InitializeComponent();
-
-            moodEntry = new MoodEntry(user.Username);
-            moodEntry.Username = "hrvrldn";
-            user.Username = "hrvrldn";
         }
 
         public Calendar_Main(UserInfo userInfo)
         {
             InitializeComponent();
 
-            var user = userInfo;
-            moodEntry = new MoodEntry(user.Username);
+            user = userInfo;
+            moodEntry.Username = user.Username;
         }
 
         private void Calendar_Main_Load(object sender, EventArgs e)
@@ -183,7 +179,7 @@ namespace PBL_Puwsheee
             if (date <= DateTime.Today) //if it is today or an earlier date, show a form; else, nothing happens
             {
                 Form bg = new Form();
-                Form card = new Calendar.Calendar_Card(date);
+                Form card = new Calendar.Calendar_Card(user, date);
                 card.FormClosing += new FormClosingEventHandler(this.cardFormClosing); //creates custom event
                 bg.StartPosition = FormStartPosition.CenterScreen;
                 bg.FormBorderStyle = FormBorderStyle.None;
