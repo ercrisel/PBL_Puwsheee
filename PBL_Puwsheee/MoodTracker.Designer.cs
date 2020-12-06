@@ -441,11 +441,12 @@
             // 
             this.contentLabel1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.contentLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.contentLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contentLabel1.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.contentLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.contentLabel1.Location = new System.Drawing.Point(173, 56);
             this.contentLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.contentLabel1.Name = "contentLabel1";
-            this.contentLabel1.Size = new System.Drawing.Size(118, 22);
+            this.contentLabel1.Size = new System.Drawing.Size(76, 16);
             this.contentLabel1.TabIndex = 34;
             this.contentLabel1.Text = "How are you?";
             // 
@@ -453,11 +454,12 @@
             // 
             this.contentLabel3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.contentLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.contentLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contentLabel3.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.contentLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.contentLabel3.Location = new System.Drawing.Point(579, 77);
             this.contentLabel3.Margin = new System.Windows.Forms.Padding(4);
             this.contentLabel3.Name = "contentLabel3";
-            this.contentLabel3.Size = new System.Drawing.Size(230, 22);
+            this.contentLabel3.Size = new System.Drawing.Size(147, 16);
             this.contentLabel3.TabIndex = 39;
             this.contentLabel3.Text = "What have you been up to?";
             // 
@@ -497,11 +499,12 @@
             // 
             this.labelMood.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.labelMood.BackColor = System.Drawing.Color.Transparent;
-            this.labelMood.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMood.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.labelMood.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.labelMood.Location = new System.Drawing.Point(103, 224);
             this.labelMood.Margin = new System.Windows.Forms.Padding(4);
             this.labelMood.Name = "labelMood";
-            this.labelMood.Size = new System.Drawing.Size(50, 19);
+            this.labelMood.Size = new System.Drawing.Size(38, 16);
             this.labelMood.TabIndex = 35;
             this.labelMood.Text = "MOOD";
             // 
@@ -509,11 +512,12 @@
             // 
             this.dateLabel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.dateLabel.BackColor = System.Drawing.Color.Transparent;
-            this.dateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.dateLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.dateLabel.Location = new System.Drawing.Point(11, 13);
             this.dateLabel.Margin = new System.Windows.Forms.Padding(4);
             this.dateLabel.Name = "dateLabel";
-            this.dateLabel.Size = new System.Drawing.Size(111, 19);
+            this.dateLabel.Size = new System.Drawing.Size(75, 16);
             this.dateLabel.TabIndex = 37;
             this.dateLabel.Text = "Date: 12/12/12";
             // 
@@ -521,11 +525,12 @@
             // 
             this.contentLabel2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.contentLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.contentLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contentLabel2.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.contentLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.contentLabel2.Location = new System.Drawing.Point(136, 258);
             this.contentLabel2.Margin = new System.Windows.Forms.Padding(4);
             this.contentLabel2.Name = "contentLabel2";
-            this.contentLabel2.Size = new System.Drawing.Size(230, 22);
+            this.contentLabel2.Size = new System.Drawing.Size(147, 16);
             this.contentLabel2.TabIndex = 38;
             this.contentLabel2.Text = "What have you been up to?";
             // 
@@ -567,7 +572,7 @@
             this.angryIcon.ShadowDecoration.Parent = this.angryIcon;
             this.angryIcon.Size = new System.Drawing.Size(55, 55);
             this.angryIcon.TabIndex = 3;
-            this.angryIcon.Tag = "";
+            this.angryIcon.Tag = "Angry";
             this.angryIcon.Text = " ";
             this.angryIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
             this.angryIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
@@ -592,7 +597,7 @@
             this.contentedIcon.ShadowDecoration.Parent = this.contentedIcon;
             this.contentedIcon.Size = new System.Drawing.Size(55, 55);
             this.contentedIcon.TabIndex = 1;
-            this.contentedIcon.Tag = "";
+            this.contentedIcon.Tag = "Contented";
             this.contentedIcon.Text = " ";
             this.contentedIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
             this.contentedIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
@@ -617,7 +622,7 @@
             this.happyIcon.ShadowDecoration.Parent = this.happyIcon;
             this.happyIcon.Size = new System.Drawing.Size(55, 55);
             this.happyIcon.TabIndex = 1;
-            this.happyIcon.Tag = "";
+            this.happyIcon.Tag = "Happy";
             this.happyIcon.Text = " ";
             this.happyIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
             this.happyIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
@@ -642,7 +647,7 @@
             this.flirtyIcon.ShadowDecoration.Parent = this.flirtyIcon;
             this.flirtyIcon.Size = new System.Drawing.Size(55, 55);
             this.flirtyIcon.TabIndex = 2;
-            this.flirtyIcon.Tag = "";
+            this.flirtyIcon.Tag = "Flirty";
             this.flirtyIcon.Text = " ";
             this.flirtyIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
             this.flirtyIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
@@ -667,7 +672,7 @@
             this.sadIcon.ShadowDecoration.Parent = this.sadIcon;
             this.sadIcon.Size = new System.Drawing.Size(55, 55);
             this.sadIcon.TabIndex = 6;
-            this.sadIcon.Tag = "";
+            this.sadIcon.Tag = "Sad";
             this.sadIcon.Text = " ";
             this.sadIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
             this.sadIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
@@ -692,7 +697,7 @@
             this.mehIcon.ShadowDecoration.Parent = this.mehIcon;
             this.mehIcon.Size = new System.Drawing.Size(55, 55);
             this.mehIcon.TabIndex = 5;
-            this.mehIcon.Tag = "";
+            this.mehIcon.Tag = "Meh";
             this.mehIcon.Text = " ";
             this.mehIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
             this.mehIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
@@ -717,7 +722,7 @@
             this.miserableIcon.ShadowDecoration.Parent = this.miserableIcon;
             this.miserableIcon.Size = new System.Drawing.Size(55, 55);
             this.miserableIcon.TabIndex = 7;
-            this.miserableIcon.Tag = "";
+            this.miserableIcon.Tag = "Miserable";
             this.miserableIcon.Text = " ";
             this.miserableIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
             this.miserableIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
@@ -742,7 +747,7 @@
             this.disgustedIcon.ShadowDecoration.Parent = this.disgustedIcon;
             this.disgustedIcon.Size = new System.Drawing.Size(55, 55);
             this.disgustedIcon.TabIndex = 8;
-            this.disgustedIcon.Tag = "";
+            this.disgustedIcon.Tag = "Disgusted";
             this.disgustedIcon.Text = " ";
             this.disgustedIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
             this.disgustedIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
@@ -751,17 +756,18 @@
             // 
             this.labelActivities.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.labelActivities.BackColor = System.Drawing.Color.Transparent;
-            this.labelActivities.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelActivities.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.labelActivities.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.labelActivities.Location = new System.Drawing.Point(43, 439);
             this.labelActivities.Margin = new System.Windows.Forms.Padding(4);
             this.labelActivities.Name = "labelActivities";
-            this.labelActivities.Size = new System.Drawing.Size(81, 19);
+            this.labelActivities.Size = new System.Drawing.Size(52, 16);
             this.labelActivities.TabIndex = 36;
             this.labelActivities.Text = "ACTIVITES";
             // 
             // MoodTracker
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.ClientSize = new System.Drawing.Size(886, 536);
