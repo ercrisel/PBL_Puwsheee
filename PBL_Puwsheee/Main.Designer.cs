@@ -58,11 +58,13 @@
             this.fadeIn = new System.Windows.Forms.Timer(this.components);
             this.fadeOut = new System.Windows.Forms.Timer(this.components);
             this.tm = new System.Windows.Forms.Timer(this.components);
+            this.monthCalendar1 = new Pabo.Calendar.MonthCalendar();
             this.windowsPanel.SuspendLayout();
             this.navBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.usericonPicture)).BeginInit();
             this.navBarIconsPanel.SuspendLayout();
             this.bgPanel.SuspendLayout();
+            this.displayPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // usernameLabel
@@ -482,6 +484,7 @@
             this.displayPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.displayPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.displayPanel.BorderRadius = 20;
+            this.displayPanel.Controls.Add(this.monthCalendar1);
             this.displayPanel.Location = new System.Drawing.Point(15, 11);
             this.displayPanel.Margin = new System.Windows.Forms.Padding(2);
             this.displayPanel.Name = "displayPanel";
@@ -510,6 +513,27 @@
             this.tm.Interval = 1;
             this.tm.Tick += new System.EventHandler(this.tm_Tick);
             // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.ActiveMonth.Month = 12;
+            this.monthCalendar1.ActiveMonth.Year = 2020;
+            this.monthCalendar1.Culture = new System.Globalization.CultureInfo("en-PH");
+            this.monthCalendar1.Footer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.monthCalendar1.Header.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.monthCalendar1.Header.TextColor = System.Drawing.Color.White;
+            this.monthCalendar1.ImageList = null;
+            this.monthCalendar1.Location = new System.Drawing.Point(739, 183);
+            this.monthCalendar1.MaxDate = new System.DateTime(2030, 12, 8, 0, 21, 51, 459);
+            this.monthCalendar1.MinDate = new System.DateTime(2010, 12, 8, 0, 21, 51, 459);
+            this.monthCalendar1.Month.BackgroundImage = null;
+            this.monthCalendar1.Month.DateFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.monthCalendar1.Month.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.Size = new System.Drawing.Size(176, 184);
+            this.monthCalendar1.TabIndex = 0;
+            this.monthCalendar1.Weekdays.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.monthCalendar1.Weeknumbers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -533,6 +557,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.usericonPicture)).EndInit();
             this.navBarIconsPanel.ResumeLayout(false);
             this.bgPanel.ResumeLayout(false);
+            this.displayPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -567,6 +592,7 @@
         private Guna.UI2.WinForms.Guna2Panel windowsPanel;
         private System.Windows.Forms.Panel navBarIconsPanel;
         private System.Windows.Forms.Timer tm;
+        private Pabo.Calendar.MonthCalendar monthCalendar1;
     }
 }
 

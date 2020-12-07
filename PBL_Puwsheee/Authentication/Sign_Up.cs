@@ -118,20 +118,21 @@ namespace PBL_Puwsheee
             userPicture.Image = Image.FromFile(location);
             user.ImageLocation = location;
         }
-
-        // responsible para mag show and hide password
-        private void showPasswordButton_Click(object sender, EventArgs e)
+        public void showHidePassword(Guna2TextBox tb)
         {
-            if (passwordTextbox.PasswordChar == '*')
+            if (tb.PasswordChar== '*')
             {
-                passwordTextbox.PasswordChar = confirmPasswordTextbox.PasswordChar = '\0';
-                showPasswordIcon.Text = "Hide Password ";
+                tb.PasswordChar = '\0';
             }
             else
             {
-                passwordTextbox.PasswordChar = confirmPasswordTextbox.PasswordChar = '*';
-                showPasswordIcon.Text = "Show Password EYE ICON";
+                tb.PasswordChar = '*';
             }
+        }
+        // responsible para mag show and hide password
+        private void showPasswordButton_Click(object sender, EventArgs e)
+        {
+            showHidePassword(passwordTextbox);
         }
         // pag nag input check mo kung lahat chars sa firstname
         private void firstNameTextbox_TextChanged(object sender, EventArgs e)
@@ -239,6 +240,11 @@ namespace PBL_Puwsheee
         private void requiredPassword_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void showConfirmPasswordButton_Click(object sender, EventArgs e)
+        {
+            showHidePassword(confirmPasswordTextbox);
         }
     }
 
