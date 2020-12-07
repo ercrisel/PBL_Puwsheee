@@ -82,6 +82,9 @@ namespace PBL_Puwsheee
             //user.Username = username;
             //user.LoadPicture(usericonPicture);
             indicatorButton.Location = new Point(46, 54);
+            //user.Username = Log_In.publicUserName;
+            //userInfo.Username = Log_In.publicUserName;
+           
         }
 
         private void openChildForm(Form childForm)
