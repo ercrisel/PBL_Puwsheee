@@ -301,5 +301,31 @@ namespace PBL_Puwsheee.Settings
             }
 
         }
+        public void showHidePassword(Guna2TextBox tb)
+        {
+            if (tb.PasswordChar == '*')
+            {
+                tb.PasswordChar = '\0';
+            }
+            else
+            {
+                tb.PasswordChar = '*';
+            }
+        }
+
+        private void guna2CircleButton2_Click(object sender, EventArgs e)
+        {
+            showHidePassword(currentpasswordTextbox);
+        }
+
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+            showHidePassword(newpasswordTextbox);
+        }
+
+        private void guna2CircleButton3_Click(object sender, EventArgs e)
+        {
+            showHidePassword(confirmTexbox);
+        }
     }
 }

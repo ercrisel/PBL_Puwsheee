@@ -144,5 +144,17 @@ namespace PBL_Puwsheee
                 loginButton.PerformClick();
             }
         }
+
+        private void showPasswordIcon_Click(object sender, EventArgs e)
+        {
+            if (passwordTextbox.PasswordChar == '*')
+            {
+                passwordTextbox.PasswordChar = '\0';
+            }
+            else
+            {
+                passwordTextbox.PasswordChar = '*';
+            }
+        }
     }
 }

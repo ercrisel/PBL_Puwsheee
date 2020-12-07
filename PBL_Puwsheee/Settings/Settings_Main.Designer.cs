@@ -79,31 +79,31 @@
             // contentLabel1
             // 
             this.contentLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.contentLabel1.Font = new System.Drawing.Font("Robaga Rounded Black", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contentLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contentLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.contentLabel1.Location = new System.Drawing.Point(43, 45);
             this.contentLabel1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.contentLabel1.Name = "contentLabel1";
-            this.contentLabel1.Size = new System.Drawing.Size(159, 23);
+            this.contentLabel1.Size = new System.Drawing.Size(143, 22);
             this.contentLabel1.TabIndex = 0;
             this.contentLabel1.Text = "User Information";
             // 
             // firstnameLabel
             // 
             this.firstnameLabel.BackColor = System.Drawing.Color.Transparent;
-            this.firstnameLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 10F);
+            this.firstnameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.firstnameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.firstnameLabel.Location = new System.Drawing.Point(45, 78);
             this.firstnameLabel.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.firstnameLabel.Name = "firstnameLabel";
-            this.firstnameLabel.Size = new System.Drawing.Size(67, 18);
+            this.firstnameLabel.Size = new System.Drawing.Size(68, 18);
             this.firstnameLabel.TabIndex = 1;
             this.firstnameLabel.Text = "First Name";
             // 
             // lastnameLabel
             // 
             this.lastnameLabel.BackColor = System.Drawing.Color.Transparent;
-            this.lastnameLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 10F);
+            this.lastnameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lastnameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.lastnameLabel.Location = new System.Drawing.Point(318, 78);
             this.lastnameLabel.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -115,24 +115,24 @@
             // emailLabel
             // 
             this.emailLabel.BackColor = System.Drawing.Color.Transparent;
-            this.emailLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 10F);
+            this.emailLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.emailLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.emailLabel.Location = new System.Drawing.Point(45, 154);
             this.emailLabel.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.emailLabel.Name = "emailLabel";
-            this.emailLabel.Size = new System.Drawing.Size(36, 18);
+            this.emailLabel.Size = new System.Drawing.Size(37, 18);
             this.emailLabel.TabIndex = 3;
             this.emailLabel.Text = "Email";
             // 
             // usernameLabel
             // 
             this.usernameLabel.BackColor = System.Drawing.Color.Transparent;
-            this.usernameLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 10F);
+            this.usernameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.usernameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.usernameLabel.Location = new System.Drawing.Point(320, 154);
             this.usernameLabel.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(65, 18);
+            this.usernameLabel.Size = new System.Drawing.Size(66, 18);
             this.usernameLabel.TabIndex = 4;
             this.usernameLabel.Text = "Username";
             // 
@@ -151,7 +151,7 @@
             this.lastnameTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
             this.lastnameTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.lastnameTextbox.FocusedState.Parent = this.lastnameTextbox;
-            this.lastnameTextbox.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastnameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lastnameTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.lastnameTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.lastnameTextbox.HoverState.Parent = this.lastnameTextbox;
@@ -181,7 +181,7 @@
             this.emailTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
             this.emailTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.emailTextbox.FocusedState.Parent = this.emailTextbox;
-            this.emailTextbox.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.emailTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.emailTextbox.HoverState.Parent = this.emailTextbox;
@@ -211,7 +211,7 @@
             this.usernameTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
             this.usernameTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.usernameTextbox.FocusedState.Parent = this.usernameTextbox;
-            this.usernameTextbox.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.usernameTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.usernameTextbox.HoverState.Parent = this.usernameTextbox;
@@ -234,7 +234,7 @@
             this.savechangesButton.CustomImages.Parent = this.savechangesButton;
             this.savechangesButton.Enabled = false;
             this.savechangesButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.savechangesButton.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.savechangesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.savechangesButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.savechangesButton.HoverState.Parent = this.savechangesButton;
             this.savechangesButton.Location = new System.Drawing.Point(316, 229);
@@ -254,7 +254,7 @@
             this.changepasswordButton.CustomImages.Parent = this.changepasswordButton;
             this.changepasswordButton.Enabled = false;
             this.changepasswordButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.changepasswordButton.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.changepasswordButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.changepasswordButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.changepasswordButton.HoverState.Parent = this.changepasswordButton;
             this.changepasswordButton.Location = new System.Drawing.Point(312, 394);
@@ -281,14 +281,14 @@
             this.confirmTexbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
             this.confirmTexbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.confirmTexbox.FocusedState.Parent = this.confirmTexbox;
-            this.confirmTexbox.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirmTexbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.confirmTexbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.confirmTexbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.confirmTexbox.HoverState.Parent = this.confirmTexbox;
             this.confirmTexbox.Location = new System.Drawing.Point(312, 335);
             this.confirmTexbox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.confirmTexbox.Name = "confirmTexbox";
-            this.confirmTexbox.PasswordChar = '\0';
+            this.confirmTexbox.PasswordChar = '*';
             this.confirmTexbox.PlaceholderText = "";
             this.confirmTexbox.SelectedText = "";
             this.confirmTexbox.ShadowDecoration.Parent = this.confirmTexbox;
@@ -311,14 +311,14 @@
             this.newpasswordTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
             this.newpasswordTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.newpasswordTextbox.FocusedState.Parent = this.newpasswordTextbox;
-            this.newpasswordTextbox.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newpasswordTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newpasswordTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.newpasswordTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.newpasswordTextbox.HoverState.Parent = this.newpasswordTextbox;
             this.newpasswordTextbox.Location = new System.Drawing.Point(43, 394);
             this.newpasswordTextbox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.newpasswordTextbox.Name = "newpasswordTextbox";
-            this.newpasswordTextbox.PasswordChar = '\0';
+            this.newpasswordTextbox.PasswordChar = '*';
             this.newpasswordTextbox.PlaceholderText = "";
             this.newpasswordTextbox.SelectedText = "";
             this.newpasswordTextbox.ShadowDecoration.Parent = this.newpasswordTextbox;
@@ -341,14 +341,14 @@
             this.currentpasswordTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
             this.currentpasswordTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.currentpasswordTextbox.FocusedState.Parent = this.currentpasswordTextbox;
-            this.currentpasswordTextbox.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentpasswordTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.currentpasswordTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.currentpasswordTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.currentpasswordTextbox.HoverState.Parent = this.currentpasswordTextbox;
             this.currentpasswordTextbox.Location = new System.Drawing.Point(43, 335);
             this.currentpasswordTextbox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.currentpasswordTextbox.Name = "currentpasswordTextbox";
-            this.currentpasswordTextbox.PasswordChar = '\0';
+            this.currentpasswordTextbox.PasswordChar = '*';
             this.currentpasswordTextbox.PlaceholderText = "";
             this.currentpasswordTextbox.SelectedText = "";
             this.currentpasswordTextbox.ShadowDecoration.Parent = this.currentpasswordTextbox;
@@ -359,48 +359,48 @@
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Typo Round Bold Demo", 10F);
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(318, 314);
             this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(115, 18);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(111, 18);
             this.guna2HtmlLabel2.TabIndex = 18;
             this.guna2HtmlLabel2.Text = "Confirm Password";
             // 
             // guna2HtmlLabel3
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Typo Round Bold Demo", 10F);
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.guna2HtmlLabel3.Location = new System.Drawing.Point(45, 375);
             this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(95, 18);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(93, 18);
             this.guna2HtmlLabel3.TabIndex = 17;
             this.guna2HtmlLabel3.Text = "New Password";
             // 
             // guna2HtmlLabel4
             // 
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Typo Round Bold Demo", 10F);
+            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.guna2HtmlLabel4.Location = new System.Drawing.Point(45, 314);
             this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(111, 18);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(108, 18);
             this.guna2HtmlLabel4.TabIndex = 16;
             this.guna2HtmlLabel4.Text = "Current Password";
             // 
             // guna2HtmlLabel5
             // 
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Robaga Rounded Black", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.guna2HtmlLabel5.Location = new System.Drawing.Point(40, 285);
             this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(88, 23);
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(85, 22);
             this.guna2HtmlLabel5.TabIndex = 15;
             this.guna2HtmlLabel5.Text = "Password";
             // 
@@ -419,7 +419,7 @@
             this.firstnameTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
             this.firstnameTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.firstnameTextbox.FocusedState.Parent = this.firstnameTextbox;
-            this.firstnameTextbox.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstnameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.firstnameTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.firstnameTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.firstnameTextbox.HoverState.Parent = this.firstnameTextbox;
@@ -441,7 +441,7 @@
             this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2Button1.CustomImages.Parent = this.guna2Button1;
             this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.guna2Button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Location = new System.Drawing.Point(589, 336);
@@ -460,7 +460,7 @@
             this.guna2Button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2Button2.CustomImages.Parent = this.guna2Button2;
             this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.guna2Button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
             this.guna2Button2.Location = new System.Drawing.Point(589, 374);
@@ -505,7 +505,7 @@
             this.changephotoButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.changephotoButton.CustomImages.Parent = this.changephotoButton;
             this.changephotoButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.changephotoButton.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.changephotoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.changephotoButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.changephotoButton.HoverState.Parent = this.changephotoButton;
             this.changephotoButton.Location = new System.Drawing.Point(599, 196);
@@ -520,12 +520,12 @@
             // requiredUsername
             // 
             this.requiredUsername.AutoSize = true;
-            this.requiredUsername.Font = new System.Drawing.Font("Typo Round Bold Demo", 7F);
+            this.requiredUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
             this.requiredUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
             this.requiredUsername.Location = new System.Drawing.Point(411, 201);
             this.requiredUsername.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.requiredUsername.Name = "requiredUsername";
-            this.requiredUsername.Size = new System.Drawing.Size(111, 12);
+            this.requiredUsername.Size = new System.Drawing.Size(132, 13);
             this.requiredUsername.TabIndex = 46;
             this.requiredUsername.Text = "THIS IS REQUIRED FIELD";
             this.requiredUsername.Visible = false;
@@ -533,12 +533,12 @@
             // requiredEmail
             // 
             this.requiredEmail.AutoSize = true;
-            this.requiredEmail.Font = new System.Drawing.Font("Typo Round Bold Demo", 7F);
+            this.requiredEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
             this.requiredEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
             this.requiredEmail.Location = new System.Drawing.Point(140, 201);
             this.requiredEmail.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.requiredEmail.Name = "requiredEmail";
-            this.requiredEmail.Size = new System.Drawing.Size(111, 12);
+            this.requiredEmail.Size = new System.Drawing.Size(132, 13);
             this.requiredEmail.TabIndex = 45;
             this.requiredEmail.Text = "THIS IS REQUIRED FIELD";
             this.requiredEmail.Visible = false;
@@ -546,12 +546,12 @@
             // requiredLastName
             // 
             this.requiredLastName.AutoSize = true;
-            this.requiredLastName.Font = new System.Drawing.Font("Typo Round Bold Demo", 7F);
+            this.requiredLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
             this.requiredLastName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
             this.requiredLastName.Location = new System.Drawing.Point(409, 128);
             this.requiredLastName.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.requiredLastName.Name = "requiredLastName";
-            this.requiredLastName.Size = new System.Drawing.Size(111, 12);
+            this.requiredLastName.Size = new System.Drawing.Size(132, 13);
             this.requiredLastName.TabIndex = 44;
             this.requiredLastName.Text = "THIS IS REQUIRED FIELD";
             this.requiredLastName.Visible = false;
@@ -559,12 +559,12 @@
             // requiredFirstName
             // 
             this.requiredFirstName.AutoSize = true;
-            this.requiredFirstName.Font = new System.Drawing.Font("Typo Round Bold Demo", 7F);
+            this.requiredFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
             this.requiredFirstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
             this.requiredFirstName.Location = new System.Drawing.Point(140, 128);
             this.requiredFirstName.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.requiredFirstName.Name = "requiredFirstName";
-            this.requiredFirstName.Size = new System.Drawing.Size(111, 12);
+            this.requiredFirstName.Size = new System.Drawing.Size(132, 13);
             this.requiredFirstName.TabIndex = 43;
             this.requiredFirstName.Text = "THIS IS REQUIRED FIELD";
             this.requiredFirstName.Visible = false;
@@ -572,12 +572,12 @@
             // lastCondition
             // 
             this.lastCondition.AutoSize = true;
-            this.lastCondition.Font = new System.Drawing.Font("Typo Round Bold Demo", 7F);
+            this.lastCondition.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
             this.lastCondition.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
             this.lastCondition.Location = new System.Drawing.Point(327, 129);
             this.lastCondition.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lastCondition.Name = "lastCondition";
-            this.lastCondition.Size = new System.Drawing.Size(138, 12);
+            this.lastCondition.Size = new System.Drawing.Size(160, 13);
             this.lastCondition.TabIndex = 50;
             this.lastCondition.Text = "MUST ONLY CONTAIN LETTERS";
             this.lastCondition.Visible = false;
@@ -585,12 +585,12 @@
             // usernameTaken
             // 
             this.usernameTaken.AutoSize = true;
-            this.usernameTaken.Font = new System.Drawing.Font("Typo Round Bold Demo", 7F);
+            this.usernameTaken.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
             this.usernameTaken.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
             this.usernameTaken.Location = new System.Drawing.Point(327, 201);
             this.usernameTaken.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.usernameTaken.Name = "usernameTaken";
-            this.usernameTaken.Size = new System.Drawing.Size(95, 12);
+            this.usernameTaken.Size = new System.Drawing.Size(114, 13);
             this.usernameTaken.TabIndex = 49;
             this.usernameTaken.Text = "USERNAME IS TAKEN";
             this.usernameTaken.Visible = false;
@@ -598,12 +598,12 @@
             // nameCondition
             // 
             this.nameCondition.AutoSize = true;
-            this.nameCondition.Font = new System.Drawing.Font("Typo Round Bold Demo", 7F);
+            this.nameCondition.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
             this.nameCondition.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
             this.nameCondition.Location = new System.Drawing.Point(45, 129);
             this.nameCondition.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.nameCondition.Name = "nameCondition";
-            this.nameCondition.Size = new System.Drawing.Size(138, 12);
+            this.nameCondition.Size = new System.Drawing.Size(160, 13);
             this.nameCondition.TabIndex = 48;
             this.nameCondition.Text = "MUST ONLY CONTAIN LETTERS";
             this.nameCondition.Visible = false;
@@ -611,12 +611,12 @@
             // emailTaken
             // 
             this.emailTaken.AutoSize = true;
-            this.emailTaken.Font = new System.Drawing.Font("Typo Round Bold Demo", 7F);
+            this.emailTaken.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
             this.emailTaken.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
             this.emailTaken.Location = new System.Drawing.Point(45, 201);
             this.emailTaken.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.emailTaken.Name = "emailTaken";
-            this.emailTaken.Size = new System.Drawing.Size(74, 12);
+            this.emailTaken.Size = new System.Drawing.Size(88, 13);
             this.emailTaken.TabIndex = 47;
             this.emailTaken.Text = "EMAIL IS TAKEN";
             this.emailTaken.Visible = false;
@@ -624,12 +624,12 @@
             // newPassReq
             // 
             this.newPassReq.AutoSize = true;
-            this.newPassReq.Font = new System.Drawing.Font("Typo Round Bold Demo", 7F);
+            this.newPassReq.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
             this.newPassReq.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
             this.newPassReq.Location = new System.Drawing.Point(64, 426);
             this.newPassReq.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.newPassReq.Name = "newPassReq";
-            this.newPassReq.Size = new System.Drawing.Size(78, 12);
+            this.newPassReq.Size = new System.Drawing.Size(94, 13);
             this.newPassReq.TabIndex = 52;
             this.newPassReq.Text = "REQUIRED FIELD";
             this.newPassReq.Visible = false;
@@ -637,12 +637,12 @@
             // confPassReq
             // 
             this.confPassReq.AutoSize = true;
-            this.confPassReq.Font = new System.Drawing.Font("Typo Round Bold Demo", 7F);
+            this.confPassReq.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
             this.confPassReq.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
             this.confPassReq.Location = new System.Drawing.Point(322, 368);
             this.confPassReq.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.confPassReq.Name = "confPassReq";
-            this.confPassReq.Size = new System.Drawing.Size(78, 12);
+            this.confPassReq.Size = new System.Drawing.Size(94, 13);
             this.confPassReq.TabIndex = 51;
             this.confPassReq.Text = "REQUIRED FIELD";
             this.confPassReq.Visible = false;
@@ -650,12 +650,12 @@
             // passAndConfirm
             // 
             this.passAndConfirm.AutoSize = true;
-            this.passAndConfirm.Font = new System.Drawing.Font("Typo Round Bold Demo", 7F);
+            this.passAndConfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
             this.passAndConfirm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
             this.passAndConfirm.Location = new System.Drawing.Point(314, 368);
             this.passAndConfirm.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.passAndConfirm.Name = "passAndConfirm";
-            this.passAndConfirm.Size = new System.Drawing.Size(210, 12);
+            this.passAndConfirm.Size = new System.Drawing.Size(236, 13);
             this.passAndConfirm.TabIndex = 56;
             this.passAndConfirm.Text = "PASSWORD AND CONFIRM DOES NOT MATCH";
             this.passAndConfirm.Visible = false;
@@ -663,12 +663,12 @@
             // passCondition3
             // 
             this.passCondition3.AutoSize = true;
-            this.passCondition3.Font = new System.Drawing.Font("Typo Round Bold Demo", 7F);
+            this.passCondition3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
             this.passCondition3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
             this.passCondition3.Location = new System.Drawing.Point(46, 454);
             this.passCondition3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.passCondition3.Name = "passCondition3";
-            this.passCondition3.Size = new System.Drawing.Size(152, 12);
+            this.passCondition3.Size = new System.Drawing.Size(178, 13);
             this.passCondition3.TabIndex = 55;
             this.passCondition3.Text = "MUST HAVE NUMBER AND LETTER";
             this.passCondition3.Visible = false;
@@ -676,12 +676,12 @@
             // passCondition2
             // 
             this.passCondition2.AutoSize = true;
-            this.passCondition2.Font = new System.Drawing.Font("Typo Round Bold Demo", 7F);
+            this.passCondition2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
             this.passCondition2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
             this.passCondition2.Location = new System.Drawing.Point(46, 440);
             this.passCondition2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.passCondition2.Name = "passCondition2";
-            this.passCondition2.Size = new System.Drawing.Size(145, 12);
+            this.passCondition2.Size = new System.Drawing.Size(169, 13);
             this.passCondition2.TabIndex = 54;
             this.passCondition2.Text = "MUST HAVE UPPER AND LOWER";
             this.passCondition2.Visible = false;
@@ -689,12 +689,12 @@
             // passCondition1
             // 
             this.passCondition1.AutoSize = true;
-            this.passCondition1.Font = new System.Drawing.Font("Typo Round Bold Demo", 7F);
+            this.passCondition1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
             this.passCondition1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
             this.passCondition1.Location = new System.Drawing.Point(46, 426);
             this.passCondition1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.passCondition1.Name = "passCondition1";
-            this.passCondition1.Size = new System.Drawing.Size(110, 12);
+            this.passCondition1.Size = new System.Drawing.Size(131, 13);
             this.passCondition1.TabIndex = 53;
             this.passCondition1.Text = "ATLEAST 8 CHARACTERS";
             this.passCondition1.Visible = false;
@@ -702,11 +702,11 @@
             // codelabel
             // 
             this.codelabel.AutoSize = true;
-            this.codelabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.codelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.codelabel.Location = new System.Drawing.Point(80, 236);
             this.codelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.codelabel.Name = "codelabel";
-            this.codelabel.Size = new System.Drawing.Size(34, 14);
+            this.codelabel.Size = new System.Drawing.Size(37, 13);
             this.codelabel.TabIndex = 57;
             this.codelabel.Text = "CODE";
             this.codelabel.Visible = false;
@@ -717,7 +717,7 @@
             this.submitCode.CheckedState.Parent = this.submitCode;
             this.submitCode.CustomImages.Parent = this.submitCode;
             this.submitCode.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.submitCode.Font = new System.Drawing.Font("Typo Round Bold Demo", 8F);
+            this.submitCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.submitCode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.submitCode.HoverState.Parent = this.submitCode;
             this.submitCode.Location = new System.Drawing.Point(186, 229);
@@ -743,7 +743,7 @@
             this.enterCodeTextBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
             this.enterCodeTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.enterCodeTextBox.FocusedState.Parent = this.enterCodeTextBox;
-            this.enterCodeTextBox.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enterCodeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.enterCodeTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.enterCodeTextBox.HoverState.Parent = this.enterCodeTextBox;
             this.enterCodeTextBox.Location = new System.Drawing.Point(41, 229);
@@ -763,7 +763,7 @@
             this.guna2CircleButton1.CheckedState.Parent = this.guna2CircleButton1;
             this.guna2CircleButton1.CustomImages.Parent = this.guna2CircleButton1;
             this.guna2CircleButton1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2CircleButton1.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.guna2CircleButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
             this.guna2CircleButton1.HoverState.Parent = this.guna2CircleButton1;
             this.guna2CircleButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CircleButton1.Image")));
@@ -777,6 +777,7 @@
             this.guna2CircleButton1.Size = new System.Drawing.Size(20, 20);
             this.guna2CircleButton1.TabIndex = 61;
             this.guna2CircleButton1.UseTransparentBackground = true;
+            this.guna2CircleButton1.Click += new System.EventHandler(this.guna2CircleButton1_Click);
             // 
             // guna2CircleButton2
             // 
@@ -784,7 +785,7 @@
             this.guna2CircleButton2.CheckedState.Parent = this.guna2CircleButton2;
             this.guna2CircleButton2.CustomImages.Parent = this.guna2CircleButton2;
             this.guna2CircleButton2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2CircleButton2.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.guna2CircleButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.guna2CircleButton2.ForeColor = System.Drawing.Color.White;
             this.guna2CircleButton2.HoverState.Parent = this.guna2CircleButton2;
             this.guna2CircleButton2.Image = ((System.Drawing.Image)(resources.GetObject("guna2CircleButton2.Image")));
@@ -798,6 +799,7 @@
             this.guna2CircleButton2.Size = new System.Drawing.Size(20, 20);
             this.guna2CircleButton2.TabIndex = 61;
             this.guna2CircleButton2.UseTransparentBackground = true;
+            this.guna2CircleButton2.Click += new System.EventHandler(this.guna2CircleButton2_Click);
             // 
             // guna2CircleButton3
             // 
@@ -805,7 +807,7 @@
             this.guna2CircleButton3.CheckedState.Parent = this.guna2CircleButton3;
             this.guna2CircleButton3.CustomImages.Parent = this.guna2CircleButton3;
             this.guna2CircleButton3.FillColor = System.Drawing.Color.Transparent;
-            this.guna2CircleButton3.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.guna2CircleButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.guna2CircleButton3.ForeColor = System.Drawing.Color.White;
             this.guna2CircleButton3.HoverState.Parent = this.guna2CircleButton3;
             this.guna2CircleButton3.Image = ((System.Drawing.Image)(resources.GetObject("guna2CircleButton3.Image")));
@@ -819,6 +821,7 @@
             this.guna2CircleButton3.Size = new System.Drawing.Size(20, 20);
             this.guna2CircleButton3.TabIndex = 61;
             this.guna2CircleButton3.UseTransparentBackground = true;
+            this.guna2CircleButton3.Click += new System.EventHandler(this.guna2CircleButton3_Click);
             // 
             // Settings_Main
             // 
