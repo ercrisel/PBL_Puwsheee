@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace PBL_Puwsheee
 {
-    class Fade
+    public class Fade
     {
         public static void fadeInEffect(Form form, Timer timer)
         {

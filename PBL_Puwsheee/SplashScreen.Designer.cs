@@ -37,15 +37,13 @@
             this.loadingPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.logoLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.logoPicture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.loadingTimer = new System.Windows.Forms.Timer(this.components);
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPicture)).BeginInit();
             this.SuspendLayout();
             // 
             // countdown
             // 
-            this.countdown.Interval = 70;
+            this.countdown.Interval = 20;
             this.countdown.Tick += new System.EventHandler(this.countdownTick);
             // 
             // fadeIn
@@ -103,11 +101,6 @@
             this.logoPicture.TabIndex = 5;
             this.logoPicture.TabStop = false;
             // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 3000;
-            // 
             // SplashScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -126,6 +119,7 @@
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.logoPicture)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -137,7 +131,5 @@
         private Guna.UI2.WinForms.Guna2Panel loadingPanel;
         private Guna.UI2.WinForms.Guna2HtmlLabel logoLabel;
         private Guna.UI2.WinForms.Guna2CirclePictureBox logoPicture;
-        private System.Windows.Forms.Timer loadingTimer;
-        private System.Windows.Forms.Timer timer1;
     }
 }

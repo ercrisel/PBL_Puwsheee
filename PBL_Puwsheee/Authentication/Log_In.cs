@@ -88,6 +88,7 @@ namespace PBL_Puwsheee
             Sign_Up su = new Sign_Up();
             su.Show();
         }
+
         protected override CreateParams CreateParams // double buffeirng daw sabi ni google 
         {
             get
