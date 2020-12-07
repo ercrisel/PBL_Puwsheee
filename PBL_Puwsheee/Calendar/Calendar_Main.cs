@@ -140,31 +140,31 @@ namespace PBL_Puwsheee
                 switch (mood.Rank)
                 {
                     case 1:
-                        dateItem.BackColor1 = Color.Red;
+                        dateItem.BackColor1 = Color.FromArgb(142, 54, 51);
                         break;
                     case 2:
-                        dateItem.BackColor1 = Color.Orange;
+                        dateItem.BackColor1 = Color.FromArgb(82, 98, 51);
                         break;
                     case 3:
-                        dateItem.BackColor1 = Color.Yellow;
+                        dateItem.BackColor1 = Color.FromArgb(48, 88, 105);
                         break;
                     case 4:
-                        dateItem.BackColor1 = Color.Green;
+                        dateItem.BackColor1 = Color.FromArgb(110, 145, 148);
                         break;
                     case 5:
-                        dateItem.BackColor1 = Color.Blue;
+                        dateItem.BackColor1 = Color.FromArgb(184, 197, 193);
                         break;
                     case 6:
-                        dateItem.BackColor1 = Color.Purple;
+                        dateItem.BackColor1 = Color.FromArgb(214, 145, 123);
                         break;
                     case 7:
-                        dateItem.BackColor1 = Color.Violet;
+                        dateItem.BackColor1 = Color.FromArgb(141, 121, 159);
                         break;
                     case 8:
-                        dateItem.BackColor1 = Color.Pink;
+                        dateItem.BackColor1 = Color.FromArgb(252, 164, 62);
                         break;
                     default:
-                        dateItem.BackColor1 = Color.White;
+                        dateItem.BackColor1 = Color.FromArgb(255, 246, 227);
                         break;
                 }
             }
