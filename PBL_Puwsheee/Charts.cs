@@ -74,7 +74,10 @@ namespace PBL_Puwsheee
         private void dateTimePicker_ValueChanged(object sender, EventArgs e)
         {
             CheckValidDate();
+           
+
         }
+
 
         //CUSTOM METHODS
         private void InitializeDates()
