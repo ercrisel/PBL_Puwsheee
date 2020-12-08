@@ -20,6 +20,16 @@ namespace PBL_Puwsheee.Calendar
         private MoodEntry moodEntry;
         private bool inEditState;
 
+        protected override CreateParams CreateParams // double buffeirng daw sabi ni google 
+        {
+            get
+            {
+                CreateParams handleparam = base.CreateParams;
+                handleparam.ExStyle |= 0x02000000;
+                return handleparam;
+            }
+        }
+
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
         (
@@ -104,6 +114,18 @@ namespace PBL_Puwsheee.Calendar
             {
                 IsSettingsEditable(true);
                 DisplayRecordedMoodEntry();
+
+                foreach (var button in activitiesButtonsList)
+                {
+                    var tempActivity = (Activity)button.Tag;
+                    foreach (var activity in moodEntry.Activities)
+                    {
+                        if (button.Checked == false)
+                        {
+                            button.FillColor = Color.Transparent;
+                        }
+                    }
+                } 
             }
         }
 
@@ -240,6 +262,11 @@ namespace PBL_Puwsheee.Calendar
                 foreach (var activity in moodEntry.Activities)
                 {
                     button.Checked = (moodEntry.Mood.Rank == tempActivity.Id) ? button.Checked = true : button.Checked = false;
+
+                    if(button.Checked == false)
+                    {
+                        button.FillColor = Color.Silver;
+                    } 
                 }
             }
 

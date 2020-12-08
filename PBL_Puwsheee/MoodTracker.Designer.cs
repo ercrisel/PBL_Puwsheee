@@ -80,6 +80,7 @@
             this.submitButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitButton.BorderRadius = 16;
             this.submitButton.CheckedState.Parent = this.submitButton;
+            this.submitButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.submitButton.CustomImages.Parent = this.submitButton;
             this.submitButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.submitButton.Font = new System.Drawing.Font("MS Reference Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -423,6 +424,7 @@
             this.clearButton.BorderRadius = 16;
             this.clearButton.BorderThickness = 2;
             this.clearButton.CheckedState.Parent = this.clearButton;
+            this.clearButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.clearButton.CustomImages.Parent = this.clearButton;
             this.clearButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.clearButton.Font = new System.Drawing.Font("MS Reference Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
