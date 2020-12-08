@@ -44,6 +44,7 @@ namespace PBL_Puwsheee
             this.moodCountPieChart = new LiveCharts.WinForms.PieChart();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.resetButton = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.tabPage4.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -53,6 +54,8 @@ namespace PBL_Puwsheee
             // 
             // endDateTimePicker
             // 
+            this.endDateTimePicker.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
+            this.endDateTimePicker.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
             this.endDateTimePicker.Location = new System.Drawing.Point(525, 57);
             this.endDateTimePicker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.endDateTimePicker.Name = "endDateTimePicker";
@@ -62,6 +65,8 @@ namespace PBL_Puwsheee
             // 
             // startDateTimePicker
             // 
+            this.startDateTimePicker.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
+            this.startDateTimePicker.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
             this.startDateTimePicker.Location = new System.Drawing.Point(272, 57);
             this.startDateTimePicker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.startDateTimePicker.Name = "startDateTimePicker";
@@ -221,12 +226,28 @@ namespace PBL_Puwsheee
             this.resetButton.Text = "Reset";
             this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
             // 
+            // guna2DateTimePicker1
+            // 
+            this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(525, 12);
+            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
+            this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(242, 30);
+            this.guna2DateTimePicker1.TabIndex = 16;
+            this.guna2DateTimePicker1.Value = new System.DateTime(2020, 12, 8, 21, 9, 13, 614);
+            // 
             // Charts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.ClientSize = new System.Drawing.Size(1163, 613);
+            this.Controls.Add(this.guna2DateTimePicker1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.endDateTimePicker);
             this.Controls.Add(this.startDateTimePicker);
@@ -262,5 +283,6 @@ namespace PBL_Puwsheee
         private LiveCharts.WinForms.PieChart moodCountPieChart;
         private System.Windows.Forms.TabControl tabControl1;
         private Guna.UI2.WinForms.Guna2Button resetButton;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
     }
 }
