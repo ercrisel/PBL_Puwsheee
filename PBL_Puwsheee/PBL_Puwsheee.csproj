@@ -68,8 +68,8 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="WindowsBase" />
-    <Reference Include="WindowsFormsCalendar">
-      <HintPath>..\..\..\..\Downloads\WinFormsCalendar_1.1\WindowsFormsCalendar.dll</HintPath>
+    <Reference Include="WindowsFormsCalendar, Version=1.1.4610.23063, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WindowsFormsCalendar.1.1.0\lib\WindowsFormsCalendar.dll</HintPath>
     </Reference>
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>

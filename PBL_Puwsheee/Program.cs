@@ -17,7 +17,7 @@ namespace PBL_Puwsheee
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Charts(new Classes.UserInfo() { Username = "hrvrldn"})); //if you want to run the chart; change username then uncomment
-            Application.Run(new SplashScreen());
+            Application.Run(new Log_In());
         }
     }
 }

@@ -85,7 +85,10 @@ namespace PBL_Puwsheee
         private void signupButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             fadeOut.Start();
-            Sign_Up su = new Sign_Up();
+            //Sign_Up su = new Sign_Up();
+            //su.Show();
+            var su = new Sign_Up();
+            su.Closed += (s, args) => this.Close();
             su.Show();
         }
 

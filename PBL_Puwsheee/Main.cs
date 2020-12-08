@@ -77,14 +77,14 @@ namespace PBL_Puwsheee
 
         private void Main_Load(object sender, EventArgs e)
         {
-            //string username = Log_In.publicUserName;
-            //usernameLabel.Text = username;
-            //user.Username = username;
-            //user.LoadPicture(usericonPicture);
+            string username = Log_In.publicUserName;
+            usernameLabel.Text = username;
+            user.Username = username;
+            user.LoadPicture(usericonPicture);
             indicatorButton.Location = new Point(46, 54);
-            //user.Username = Log_In.publicUserName;
-            //userInfo.Username = Log_In.publicUserName;
-           
+            user.Username = Log_In.publicUserName;
+            userInfo.Username = Log_In.publicUserName;
+
         }
 
         private void openChildForm(Form childForm)
@@ -267,7 +267,11 @@ namespace PBL_Puwsheee
                 } */
             }
 
-        }   
+        }
 
+        private void displayPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

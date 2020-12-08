@@ -244,6 +244,7 @@
             // 
             this.showPasswordIcon.BackColor = System.Drawing.Color.Transparent;
             this.showPasswordIcon.CheckedState.Parent = this.showPasswordIcon;
+            this.showPasswordIcon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.showPasswordIcon.CustomImages.Parent = this.showPasswordIcon;
             this.showPasswordIcon.FillColor = System.Drawing.Color.Transparent;
             this.showPasswordIcon.Font = new System.Drawing.Font("Segoe UI", 9F);

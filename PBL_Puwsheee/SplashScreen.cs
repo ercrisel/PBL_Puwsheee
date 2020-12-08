@@ -35,17 +35,39 @@ namespace PBL_Puwsheee
 
         private void countdownTick(object sender, EventArgs e)
         {
+            if (count == 0)
+            {
+                countdown.Enabled = false;
+                fadeOut.Enabled = true;
+                return;
+            }
 
+            count -= 1;
         }
 
         private void fadeOutTick(object sender, EventArgs e)
         {
-
+            if (this.Opacity == 0)
+            {
+                fadeOut.Enabled = false;
+                Log_In logIn = new Log_In();
+                logIn.Show();
+                this.Hide();
+                return;
+            }
+            this.Opacity -= 0.01;
         }
 
         private void fadeInTick(object sender, EventArgs e)
         {
 
+            if (this.Opacity == 1)
+            {
+                fadeIn.Enabled = false;
+                countdown.Enabled = true;
+                return;
+            }
+            this.Opacity += 0.01;
         }
     }
 }

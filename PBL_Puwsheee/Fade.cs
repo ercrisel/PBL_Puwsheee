@@ -22,7 +22,7 @@ namespace PBL_Puwsheee
         {
             if (form.Opacity <= 0)
             {
-                form.Close();
+                form.Hide();
             }
             form.Opacity -= .2;
         }

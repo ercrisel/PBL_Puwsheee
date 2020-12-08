@@ -60,14 +60,14 @@ namespace PBL_Puwsheee
         /// </summary>
         private void LoadDates()
         {
-            var startDate = new DateTime(monthCalendar.ActiveMonth.Year, monthCalendar.ActiveMonth.Month, 1);
+            var startDate = new DateTime(monthCalendar2.ActiveMonth.Year, monthCalendar2.ActiveMonth.Month, 1);
             var endDate = startDate.AddMonths(1).AddDays(-1);
             var moodEntryList = GetListOfSelectedRangeMoodEntries(startDate, endDate);
 
             ClearData(); //clears previous data
             StoreDatainDateItems(moodEntryList);
             FormatDates();
-            monthCalendar.AddDateInfo(dateItems.OrderBy(x => x.Date).ToArray()); //orderby cuz debugging easier
+            monthCalendar2.AddDateInfo(dateItems.OrderBy(x => x.Date).ToArray()); //orderby cuz debugging easier
         }
 
         /// <summary>
@@ -111,7 +111,7 @@ namespace PBL_Puwsheee
         private void ClearData()
         {
             dateItems.Clear();
-            monthCalendar.ResetDateInfo();
+            monthCalendar2.ResetDateInfo();
         }
 
         /// <summary>
