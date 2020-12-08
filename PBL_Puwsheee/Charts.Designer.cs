@@ -53,136 +53,138 @@ namespace PBL_Puwsheee
             // 
             // endDateTimePicker
             // 
-            this.endDateTimePicker.Location = new System.Drawing.Point(394, 46);
-            this.endDateTimePicker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.endDateTimePicker.Location = new System.Drawing.Point(525, 57);
+            this.endDateTimePicker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.endDateTimePicker.Name = "endDateTimePicker";
-            this.endDateTimePicker.Size = new System.Drawing.Size(151, 20);
+            this.endDateTimePicker.Size = new System.Drawing.Size(200, 22);
             this.endDateTimePicker.TabIndex = 13;
             this.endDateTimePicker.ValueChanged += new System.EventHandler(this.dateTimePicker_ValueChanged);
             // 
             // startDateTimePicker
             // 
-            this.startDateTimePicker.Location = new System.Drawing.Point(204, 46);
-            this.startDateTimePicker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.startDateTimePicker.Location = new System.Drawing.Point(272, 57);
+            this.startDateTimePicker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.startDateTimePicker.Name = "startDateTimePicker";
-            this.startDateTimePicker.Size = new System.Drawing.Size(151, 20);
+            this.startDateTimePicker.Size = new System.Drawing.Size(200, 22);
             this.startDateTimePicker.TabIndex = 14;
             this.startDateTimePicker.ValueChanged += new System.EventHandler(this.dateTimePicker_ValueChanged);
             // 
             // resultsButton
             // 
+            this.resultsButton.BorderRadius = 16;
             this.resultsButton.CheckedState.Parent = this.resultsButton;
             this.resultsButton.CustomImages.Parent = this.resultsButton;
+            this.resultsButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.resultsButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.resultsButton.ForeColor = System.Drawing.Color.White;
+            this.resultsButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.resultsButton.HoverState.Parent = this.resultsButton;
-            this.resultsButton.Location = new System.Drawing.Point(584, 35);
-            this.resultsButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.resultsButton.Location = new System.Drawing.Point(779, 43);
+            this.resultsButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.resultsButton.Name = "resultsButton";
             this.resultsButton.ShadowDecoration.Parent = this.resultsButton;
-            this.resultsButton.Size = new System.Drawing.Size(81, 37);
+            this.resultsButton.Size = new System.Drawing.Size(108, 46);
             this.resultsButton.TabIndex = 12;
             this.resultsButton.Text = "See Results";
             this.resultsButton.Click += new System.EventHandler(this.resultsButton_Click);
             // 
             // tabPage4
             // 
+            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.tabPage4.Controls.Add(this.scoreHistoryCartesianChart);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(648, 352);
+            this.tabPage4.Size = new System.Drawing.Size(867, 436);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Score History Line Chart";
-            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // scoreHistoryCartesianChart
             // 
-            this.scoreHistoryCartesianChart.Location = new System.Drawing.Point(10, 12);
-            this.scoreHistoryCartesianChart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.scoreHistoryCartesianChart.Location = new System.Drawing.Point(13, 15);
+            this.scoreHistoryCartesianChart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.scoreHistoryCartesianChart.Name = "scoreHistoryCartesianChart";
-            this.scoreHistoryCartesianChart.Size = new System.Drawing.Size(629, 326);
+            this.scoreHistoryCartesianChart.Size = new System.Drawing.Size(839, 401);
             this.scoreHistoryCartesianChart.TabIndex = 6;
             this.scoreHistoryCartesianChart.Text = "cartesianChart1";
             // 
             // tabPage3
             // 
+            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.tabPage3.Controls.Add(this.moodEntriesPointChart);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(648, 352);
+            this.tabPage3.Size = new System.Drawing.Size(867, 436);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Mood Entries Point Chart";
-            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // moodEntriesPointChart
             // 
-            this.moodEntriesPointChart.Location = new System.Drawing.Point(10, 12);
-            this.moodEntriesPointChart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.moodEntriesPointChart.Location = new System.Drawing.Point(13, 15);
+            this.moodEntriesPointChart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.moodEntriesPointChart.Name = "moodEntriesPointChart";
-            this.moodEntriesPointChart.Size = new System.Drawing.Size(629, 326);
+            this.moodEntriesPointChart.Size = new System.Drawing.Size(839, 401);
             this.moodEntriesPointChart.TabIndex = 0;
             this.moodEntriesPointChart.Text = "cartesianChart1";
             // 
             // tabPage2
             // 
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.tabPage2.Controls.Add(this.activityCountCartesianChart);
             this.tabPage2.Controls.Add(this.activityCountPieChart);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(648, 352);
+            this.tabPage2.Size = new System.Drawing.Size(867, 436);
             this.tabPage2.TabIndex = 4;
             this.tabPage2.Text = "Activity Count Charts";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // activityCountCartesianChart
             // 
-            this.activityCountCartesianChart.Location = new System.Drawing.Point(308, 22);
-            this.activityCountCartesianChart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.activityCountCartesianChart.Location = new System.Drawing.Point(411, 27);
+            this.activityCountCartesianChart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.activityCountCartesianChart.Name = "activityCountCartesianChart";
-            this.activityCountCartesianChart.Size = new System.Drawing.Size(329, 315);
+            this.activityCountCartesianChart.Size = new System.Drawing.Size(439, 388);
             this.activityCountCartesianChart.TabIndex = 1;
             this.activityCountCartesianChart.Text = "cartesianChart1";
             // 
             // activityCountPieChart
             // 
-            this.activityCountPieChart.Location = new System.Drawing.Point(16, 22);
-            this.activityCountPieChart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.activityCountPieChart.Location = new System.Drawing.Point(21, 27);
+            this.activityCountPieChart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.activityCountPieChart.Name = "activityCountPieChart";
-            this.activityCountPieChart.Size = new System.Drawing.Size(286, 315);
+            this.activityCountPieChart.Size = new System.Drawing.Size(381, 388);
             this.activityCountPieChart.TabIndex = 0;
             this.activityCountPieChart.Text = "pieChart1";
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.tabPage1.Controls.Add(this.moodCountCartesianChart);
             this.tabPage1.Controls.Add(this.moodCountPieChart);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage1.Size = new System.Drawing.Size(648, 352);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage1.Size = new System.Drawing.Size(867, 436);
             this.tabPage1.TabIndex = 1;
             this.tabPage1.Text = "Mood Count Charts";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // moodCountCartesianChart
             // 
-            this.moodCountCartesianChart.Location = new System.Drawing.Point(308, 22);
-            this.moodCountCartesianChart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.moodCountCartesianChart.Location = new System.Drawing.Point(411, 27);
+            this.moodCountCartesianChart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.moodCountCartesianChart.Name = "moodCountCartesianChart";
-            this.moodCountCartesianChart.Size = new System.Drawing.Size(329, 315);
+            this.moodCountCartesianChart.Size = new System.Drawing.Size(439, 388);
             this.moodCountCartesianChart.TabIndex = 7;
             this.moodCountCartesianChart.Text = "cartesianChart1";
             // 
             // moodCountPieChart
             // 
-            this.moodCountPieChart.Location = new System.Drawing.Point(16, 22);
-            this.moodCountPieChart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.moodCountPieChart.Location = new System.Drawing.Point(21, 27);
+            this.moodCountPieChart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.moodCountPieChart.Name = "moodCountPieChart";
-            this.moodCountPieChart.Size = new System.Drawing.Size(286, 315);
+            this.moodCountPieChart.Size = new System.Drawing.Size(381, 388);
             this.moodCountPieChart.TabIndex = 6;
             this.moodCountPieChart.Text = "pieChart1";
             // 
@@ -192,42 +194,46 @@ namespace PBL_Puwsheee
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Location = new System.Drawing.Point(108, 84);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Location = new System.Drawing.Point(144, 103);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(656, 378);
+            this.tabControl1.Size = new System.Drawing.Size(875, 465);
             this.tabControl1.TabIndex = 15;
             // 
             // resetButton
             // 
+            this.resetButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
+            this.resetButton.BorderRadius = 16;
+            this.resetButton.BorderThickness = 2;
             this.resetButton.CheckedState.Parent = this.resetButton;
             this.resetButton.CustomImages.Parent = this.resetButton;
+            this.resetButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.resetButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.resetButton.ForeColor = System.Drawing.Color.White;
+            this.resetButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.resetButton.HoverState.Parent = this.resetButton;
-            this.resetButton.Location = new System.Drawing.Point(682, 35);
-            this.resetButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.resetButton.Location = new System.Drawing.Point(909, 43);
+            this.resetButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.resetButton.Name = "resetButton";
             this.resetButton.ShadowDecoration.Parent = this.resetButton;
-            this.resetButton.Size = new System.Drawing.Size(81, 37);
+            this.resetButton.Size = new System.Drawing.Size(108, 46);
             this.resetButton.TabIndex = 12;
             this.resetButton.Text = "Reset";
             this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
             // 
             // Charts
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.ClientSize = new System.Drawing.Size(872, 498);
+            this.ClientSize = new System.Drawing.Size(1163, 613);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.endDateTimePicker);
             this.Controls.Add(this.startDateTimePicker);
             this.Controls.Add(this.resetButton);
             this.Controls.Add(this.resultsButton);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Charts";
             this.Text = "Charts";
             this.Load += new System.EventHandler(this.Charts_Load);
