@@ -261,12 +261,10 @@ namespace PBL_Puwsheee.Calendar
                 var tempActivity = (Activity)button.Tag;
                 foreach (var activity in moodEntry.Activities)
                 {
-                    button.Checked = (moodEntry.Mood.Rank == tempActivity.Id) ? button.Checked = true : button.Checked = false;
+                    if (activity.Id == tempActivity.Id) button.Checked = true;
 
-                    if(button.Checked == false)
-                    {
-                        button.FillColor = Color.Silver;
-                    } 
+                    if (button.Checked == false) button.FillColor = Color.Silver;
+                    else button.FillColor = Color.Transparent;
                 }
             }
 
