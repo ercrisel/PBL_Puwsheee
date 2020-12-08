@@ -27,15 +27,15 @@ namespace PBL_Puwsheee
             int nHeightEllipse // width of ellipse
         );
 
-        //protected override CreateParams CreateParams // double buffeirng daw sabi ni google 
-        //{
-        //    get
-        //    {
-        //        CreateParams handleparam = base.CreateParams;
-        //        handleparam.ExStyle |= 0x02000000;
-        //        return handleparam;
-        //    }
-        //}
+        protected override CreateParams CreateParams // double buffeirng daw sabi ni google 
+        {
+            get
+            {
+                CreateParams handleparam = base.CreateParams;
+                handleparam.ExStyle |= 0x02000000;
+                return handleparam;
+            }
+        }
 
         public static void enableDoubleBuff(System.Windows.Forms.Control cont)
         {
@@ -179,7 +179,7 @@ namespace PBL_Puwsheee
         private void navBarPanelHover(object sender, EventArgs e)
         {
             animateTimer.Start();
-            tm.Start();
+          //  tm.Start();
       
         }
 

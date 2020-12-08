@@ -68,6 +68,8 @@ namespace PBL_Puwsheee
 
         private void MoodTracker_Load(object sender, EventArgs e)
         {
+            dateLabel.Text = "Today is: " + DateTime.Now.ToString("dd / MM / yyyy");
+
             moodButtonsList = moodPanel.Controls.OfType<Guna2Button>().ToList();
             activitiesButtonsList = activitiesPanel.Controls.OfType<Guna2Button>().ToList();
 
