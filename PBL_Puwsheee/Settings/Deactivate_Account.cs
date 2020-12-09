@@ -8,9 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using PBL_Puwsheee.Authentication.Class;
 
 namespace PBL_Puwsheee.Settings
 {
+    
     public partial class Deactivate_Account : Form
     {
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
@@ -43,9 +45,14 @@ namespace PBL_Puwsheee.Settings
 
         private void deleteButton_Click(object sender, EventArgs e)
         {
+            ChangeSettings cs = new ChangeSettings();
             // storeprocedure na mag dedelete ng account kekbye
             string usernameToDelete = Log_In.publicUserName;
-
+            cs.Username = usernameToDelete;
+            cs.DeactivateAccount();
+            // paki dala si user sa login na form ty
+          
+            
 
         }
     }
