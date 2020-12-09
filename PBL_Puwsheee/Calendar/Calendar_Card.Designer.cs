@@ -66,7 +66,7 @@
             // 
             // guna2CirclePictureBox1
             // 
-            this.guna2CirclePictureBox1.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
+            this.guna2CirclePictureBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.guna2CirclePictureBox1.Location = new System.Drawing.Point(158, 69);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -98,7 +98,6 @@
             // 
             // cookIcon
             // 
-            this.cookIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Cook;
             this.cookIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.cookIcon.BorderRadius = 15;
             this.cookIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
@@ -118,7 +117,6 @@
             // 
             // exerciseIcon
             // 
-            this.exerciseIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Exercise;
             this.exerciseIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.exerciseIcon.BorderRadius = 15;
             this.exerciseIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
@@ -138,7 +136,6 @@
             // 
             // gameIcon
             // 
-            this.gameIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Game;
             this.gameIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gameIcon.BorderRadius = 15;
             this.gameIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
@@ -158,7 +155,6 @@
             // 
             // musicIcon
             // 
-            this.musicIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Music;
             this.musicIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.musicIcon.BorderRadius = 15;
             this.musicIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
@@ -178,7 +174,6 @@
             // 
             // socialIcon
             // 
-            this.socialIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Social;
             this.socialIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.socialIcon.BorderRadius = 15;
             this.socialIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
@@ -198,7 +193,6 @@
             // 
             // sleepIcon
             // 
-            this.sleepIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Sleep;
             this.sleepIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.sleepIcon.BorderRadius = 15;
             this.sleepIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
@@ -218,7 +212,6 @@
             // 
             // shopIcon
             // 
-            this.shopIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Shop;
             this.shopIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.shopIcon.BorderRadius = 15;
             this.shopIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
@@ -238,7 +231,6 @@
             // 
             // readIcon
             // 
-            this.readIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Read;
             this.readIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.readIcon.BorderRadius = 15;
             this.readIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
@@ -258,7 +250,6 @@
             // 
             // watchIcon
             // 
-            this.watchIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Watch;
             this.watchIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.watchIcon.BorderRadius = 15;
             this.watchIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
@@ -278,7 +269,6 @@
             // 
             // travelIcon
             // 
-            this.travelIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Travel;
             this.travelIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.travelIcon.BorderRadius = 15;
             this.travelIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
@@ -298,7 +288,6 @@
             // 
             // studyIcon
             // 
-            this.studyIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Study;
             this.studyIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.studyIcon.BorderRadius = 15;
             this.studyIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
@@ -318,7 +307,6 @@
             // 
             // sportsIcon
             // 
-            this.sportsIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Sports;
             this.sportsIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.sportsIcon.BorderRadius = 15;
             this.sportsIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
@@ -411,7 +399,6 @@
             // 
             // backButton
             // 
-            this.backButton.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Back;
             this.backButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.backButton.BorderRadius = 10;
             this.backButton.CheckedState.Parent = this.backButton;
@@ -430,7 +417,6 @@
             // 
             // editButton
             // 
-            this.editButton.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Edit;
             this.editButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.editButton.BorderRadius = 10;
             this.editButton.CheckedState.Parent = this.editButton;
@@ -466,7 +452,6 @@
             // 
             // angryIcon
             // 
-            this.angryIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Angry;
             this.angryIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.angryIcon.BorderRadius = 15;
             this.angryIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
@@ -489,7 +474,6 @@
             // 
             // contentedIcon
             // 
-            this.contentedIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Contented;
             this.contentedIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.contentedIcon.BorderRadius = 15;
             this.contentedIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
@@ -512,7 +496,6 @@
             // 
             // happyIcon
             // 
-            this.happyIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Happy;
             this.happyIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.happyIcon.BorderRadius = 15;
             this.happyIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
@@ -535,7 +518,6 @@
             // 
             // flirtyIcon
             // 
-            this.flirtyIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Flirty;
             this.flirtyIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.flirtyIcon.BorderRadius = 15;
             this.flirtyIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
@@ -558,7 +540,6 @@
             // 
             // sadIcon
             // 
-            this.sadIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Sad;
             this.sadIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.sadIcon.BorderRadius = 15;
             this.sadIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
@@ -581,7 +562,6 @@
             // 
             // mehIcon
             // 
-            this.mehIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Meh;
             this.mehIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.mehIcon.BorderRadius = 15;
             this.mehIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
@@ -604,7 +584,6 @@
             // 
             // miserableIcon
             // 
-            this.miserableIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Miserable;
             this.miserableIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.miserableIcon.BorderRadius = 15;
             this.miserableIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
@@ -627,7 +606,6 @@
             // 
             // disgustedIcon
             // 
-            this.disgustedIcon.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Disgusted;
             this.disgustedIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.disgustedIcon.BorderRadius = 15;
             this.disgustedIcon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;

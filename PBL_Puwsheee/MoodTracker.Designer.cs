@@ -68,7 +68,7 @@
             // 
             this.moodLabel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.moodLabel.BackColor = System.Drawing.Color.Transparent;
-            this.moodLabel.Location = new System.Drawing.Point(144, 239);
+            this.moodLabel.Location = new System.Drawing.Point(145, 246);
             this.moodLabel.Margin = new System.Windows.Forms.Padding(4);
             this.moodLabel.Name = "moodLabel";
             this.moodLabel.Size = new System.Drawing.Size(3, 2);
@@ -83,10 +83,10 @@
             this.submitButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.submitButton.CustomImages.Parent = this.submitButton;
             this.submitButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.submitButton.Font = new System.Drawing.Font("MS Reference Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.submitButton.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.submitButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.submitButton.HoverState.Parent = this.submitButton;
-            this.submitButton.Location = new System.Drawing.Point(464, 479);
+            this.submitButton.Location = new System.Drawing.Point(477, 496);
             this.submitButton.Margin = new System.Windows.Forms.Padding(4);
             this.submitButton.Name = "submitButton";
             this.submitButton.ShadowDecoration.Parent = this.submitButton;
@@ -110,7 +110,7 @@
             this.activitiesPanel.Controls.Add(this.gameIcon);
             this.activitiesPanel.Controls.Add(this.cookIcon);
             this.activitiesPanel.Controls.Add(this.exerciseIcon);
-            this.activitiesPanel.Location = new System.Drawing.Point(33, 285);
+            this.activitiesPanel.Location = new System.Drawing.Point(34, 292);
             this.activitiesPanel.Margin = new System.Windows.Forms.Padding(4);
             this.activitiesPanel.Name = "activitiesPanel";
             this.activitiesPanel.ShadowDecoration.Parent = this.activitiesPanel;
@@ -427,10 +427,10 @@
             this.clearButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.clearButton.CustomImages.Parent = this.clearButton;
             this.clearButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.clearButton.Font = new System.Drawing.Font("MS Reference Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearButton.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.clearButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.clearButton.HoverState.Parent = this.clearButton;
-            this.clearButton.Location = new System.Drawing.Point(358, 479);
+            this.clearButton.Location = new System.Drawing.Point(371, 496);
             this.clearButton.Margin = new System.Windows.Forms.Padding(4);
             this.clearButton.Name = "clearButton";
             this.clearButton.ShadowDecoration.Parent = this.clearButton;
@@ -443,27 +443,27 @@
             // 
             this.contentLabel1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.contentLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.contentLabel1.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.contentLabel1.Font = new System.Drawing.Font("Typo Round Bold Demo", 11.5F);
             this.contentLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.contentLabel1.Location = new System.Drawing.Point(173, 56);
+            this.contentLabel1.Location = new System.Drawing.Point(137, 34);
             this.contentLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.contentLabel1.Name = "contentLabel1";
-            this.contentLabel1.Size = new System.Drawing.Size(76, 16);
+            this.contentLabel1.Size = new System.Drawing.Size(157, 21);
             this.contentLabel1.TabIndex = 34;
-            this.contentLabel1.Text = "How are you?";
+            this.contentLabel1.Text = "How are you feeling?";
             // 
             // contentLabel3
             // 
             this.contentLabel3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.contentLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.contentLabel3.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.contentLabel3.Font = new System.Drawing.Font("Typo Round Bold Demo", 11.5F);
             this.contentLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.contentLabel3.Location = new System.Drawing.Point(579, 77);
+            this.contentLabel3.Location = new System.Drawing.Point(597, 79);
             this.contentLabel3.Margin = new System.Windows.Forms.Padding(4);
             this.contentLabel3.Name = "contentLabel3";
-            this.contentLabel3.Size = new System.Drawing.Size(147, 16);
+            this.contentLabel3.Size = new System.Drawing.Size(215, 21);
             this.contentLabel3.TabIndex = 39;
-            this.contentLabel3.Text = "What have you been up to?";
+            this.contentLabel3.Text = "Anything you want to let out?";
             // 
             // notesTextbox
             // 
@@ -480,12 +480,12 @@
             this.notesTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
             this.notesTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.notesTextbox.FocusedState.Parent = this.notesTextbox;
-            this.notesTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.notesTextbox.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.notesTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.notesTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.notesTextbox.HoverState.Parent = this.notesTextbox;
-            this.notesTextbox.Location = new System.Drawing.Point(465, 104);
-            this.notesTextbox.Margin = new System.Windows.Forms.Padding(4);
+            this.notesTextbox.Location = new System.Drawing.Point(503, 107);
+            this.notesTextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.notesTextbox.MaxLength = 3000;
             this.notesTextbox.Multiline = true;
             this.notesTextbox.Name = "notesTextbox";
@@ -503,7 +503,7 @@
             this.labelMood.BackColor = System.Drawing.Color.Transparent;
             this.labelMood.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
             this.labelMood.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.labelMood.Location = new System.Drawing.Point(103, 224);
+            this.labelMood.Location = new System.Drawing.Point(99, 203);
             this.labelMood.Margin = new System.Windows.Forms.Padding(4);
             this.labelMood.Name = "labelMood";
             this.labelMood.Size = new System.Drawing.Size(38, 16);
@@ -514,25 +514,25 @@
             // 
             this.dateLabel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.dateLabel.BackColor = System.Drawing.Color.Transparent;
-            this.dateLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.dateLabel.Font = new System.Drawing.Font("Robaga Rounded Black", 10F);
             this.dateLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.dateLabel.Location = new System.Drawing.Point(11, 13);
+            this.dateLabel.Location = new System.Drawing.Point(774, 13);
             this.dateLabel.Margin = new System.Windows.Forms.Padding(4);
             this.dateLabel.Name = "dateLabel";
-            this.dateLabel.Size = new System.Drawing.Size(75, 16);
+            this.dateLabel.Size = new System.Drawing.Size(152, 18);
             this.dateLabel.TabIndex = 37;
-            this.dateLabel.Text = "Date: 12/12/12";
+            this.dateLabel.Text = "Today is: 09 / 12 / 2020";
             // 
             // contentLabel2
             // 
             this.contentLabel2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.contentLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.contentLabel2.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
+            this.contentLabel2.Font = new System.Drawing.Font("Typo Round Bold Demo", 11.5F);
             this.contentLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.contentLabel2.Location = new System.Drawing.Point(136, 258);
+            this.contentLabel2.Location = new System.Drawing.Point(108, 265);
             this.contentLabel2.Margin = new System.Windows.Forms.Padding(4);
             this.contentLabel2.Name = "contentLabel2";
-            this.contentLabel2.Size = new System.Drawing.Size(147, 16);
+            this.contentLabel2.Size = new System.Drawing.Size(202, 21);
             this.contentLabel2.TabIndex = 38;
             this.contentLabel2.Text = "What have you been up to?";
             // 
@@ -547,7 +547,7 @@
             this.moodPanel.Controls.Add(this.mehIcon);
             this.moodPanel.Controls.Add(this.miserableIcon);
             this.moodPanel.Controls.Add(this.disgustedIcon);
-            this.moodPanel.Location = new System.Drawing.Point(79, 83);
+            this.moodPanel.Location = new System.Drawing.Point(74, 62);
             this.moodPanel.Margin = new System.Windows.Forms.Padding(4);
             this.moodPanel.Name = "moodPanel";
             this.moodPanel.ShadowDecoration.Parent = this.moodPanel;
@@ -576,6 +576,7 @@
             this.angryIcon.TabIndex = 3;
             this.angryIcon.Tag = "Angry";
             this.angryIcon.Text = " ";
+            this.angryIcon.Click += new System.EventHandler(this.moodIcon_MouseHover);
             this.angryIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
             this.angryIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
             // 
@@ -601,6 +602,7 @@
             this.contentedIcon.TabIndex = 1;
             this.contentedIcon.Tag = "Contented";
             this.contentedIcon.Text = " ";
+            this.contentedIcon.Click += new System.EventHandler(this.moodIcon_MouseHover);
             this.contentedIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
             this.contentedIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
             // 
@@ -626,6 +628,7 @@
             this.happyIcon.TabIndex = 1;
             this.happyIcon.Tag = "Happy";
             this.happyIcon.Text = " ";
+            this.happyIcon.Click += new System.EventHandler(this.moodIcon_MouseHover);
             this.happyIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
             this.happyIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
             // 
@@ -651,6 +654,7 @@
             this.flirtyIcon.TabIndex = 2;
             this.flirtyIcon.Tag = "Flirty";
             this.flirtyIcon.Text = " ";
+            this.flirtyIcon.Click += new System.EventHandler(this.moodIcon_MouseHover);
             this.flirtyIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
             this.flirtyIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
             // 
@@ -676,6 +680,7 @@
             this.sadIcon.TabIndex = 6;
             this.sadIcon.Tag = "Sad";
             this.sadIcon.Text = " ";
+            this.sadIcon.Click += new System.EventHandler(this.moodIcon_MouseHover);
             this.sadIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
             this.sadIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
             // 
@@ -701,6 +706,7 @@
             this.mehIcon.TabIndex = 5;
             this.mehIcon.Tag = "Meh";
             this.mehIcon.Text = " ";
+            this.mehIcon.Click += new System.EventHandler(this.moodIcon_MouseHover);
             this.mehIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
             this.mehIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
             // 
@@ -726,6 +732,7 @@
             this.miserableIcon.TabIndex = 7;
             this.miserableIcon.Tag = "Miserable";
             this.miserableIcon.Text = " ";
+            this.miserableIcon.Click += new System.EventHandler(this.moodIcon_MouseHover);
             this.miserableIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
             this.miserableIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
             // 
@@ -751,6 +758,7 @@
             this.disgustedIcon.TabIndex = 8;
             this.disgustedIcon.Tag = "Disgusted";
             this.disgustedIcon.Text = " ";
+            this.disgustedIcon.Click += new System.EventHandler(this.moodIcon_MouseHover);
             this.disgustedIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
             this.disgustedIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
             // 
@@ -760,7 +768,7 @@
             this.labelActivities.BackColor = System.Drawing.Color.Transparent;
             this.labelActivities.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
             this.labelActivities.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.labelActivities.Location = new System.Drawing.Point(43, 439);
+            this.labelActivities.Location = new System.Drawing.Point(44, 446);
             this.labelActivities.Margin = new System.Windows.Forms.Padding(4);
             this.labelActivities.Name = "labelActivities";
             this.labelActivities.Size = new System.Drawing.Size(52, 16);
@@ -772,7 +780,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.ClientSize = new System.Drawing.Size(886, 536);
+            this.ClientSize = new System.Drawing.Size(936, 543);
             this.Controls.Add(this.submitButton);
             this.Controls.Add(this.activitiesPanel);
             this.Controls.Add(this.clearButton);

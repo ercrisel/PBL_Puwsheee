@@ -51,8 +51,9 @@ namespace PBL_Puwsheee
 
         private void moodIcon_MouseLeave(object sender, EventArgs e)
         {
-            labelMood.Text = "";
+            labelMood.Text = String.Empty;
         }
+
 
         private void activitiesIcon_MouseHover(object sender, EventArgs e)
         {
@@ -63,7 +64,7 @@ namespace PBL_Puwsheee
 
         private void activitiesIcon_MouseLeave(object sender, EventArgs e)
         {
-            labelActivities.Text = "";
+            labelActivities.Text = String.Empty;
         }
 
         private void MoodTracker_Load(object sender, EventArgs e)
@@ -151,6 +152,7 @@ namespace PBL_Puwsheee
             moodEntry.Activities = activities;
 
             moodEntry.Notes = notesTextbox.Text;
+
         }
 
         /// <summary>

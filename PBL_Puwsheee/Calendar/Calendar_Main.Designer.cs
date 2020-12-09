@@ -47,7 +47,7 @@
             this.monthCalendar2.Header.Font = new System.Drawing.Font("Robaga Rounded Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.monthCalendar2.Header.TextColor = System.Drawing.Color.White;
             this.monthCalendar2.ImageList = null;
-            this.monthCalendar2.Location = new System.Drawing.Point(2, 1);
+            this.monthCalendar2.Location = new System.Drawing.Point(21, 8);
             this.monthCalendar2.MaxDate = new System.DateTime(2030, 12, 6, 21, 49, 39, 497);
             this.monthCalendar2.MinDate = new System.DateTime(2010, 12, 6, 21, 49, 39, 497);
             this.monthCalendar2.Month.BackgroundImage = null;
@@ -84,7 +84,7 @@
             this.monthCalendar2.SelectTrailingDates = false;
             this.monthCalendar2.ShowFocus = false;
             this.monthCalendar2.ShowFooter = false;
-            this.monthCalendar2.Size = new System.Drawing.Size(880, 532);
+            this.monthCalendar2.Size = new System.Drawing.Size(903, 523);
             this.monthCalendar2.TabIndex = 0;
             this.monthCalendar2.TodayColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.monthCalendar2.Weekdays.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
@@ -103,7 +103,7 @@
             // Calendar_Main
             // 
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.ClientSize = new System.Drawing.Size(886, 536);
+            this.ClientSize = new System.Drawing.Size(936, 543);
             this.Controls.Add(this.monthCalendar2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Calendar_Main";
