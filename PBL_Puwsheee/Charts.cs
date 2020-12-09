@@ -365,5 +365,10 @@ namespace PBL_Puwsheee
                 }
             };
         }
+
+        private void moodCountCartesianChart_ChildChanged(object sender, System.Windows.Forms.Integration.ChildChangedEventArgs e)
+        {
+
+        }
     }
 }
