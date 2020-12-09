@@ -39,8 +39,6 @@
             this.seeresultButton = new Guna.UI2.WinForms.Guna2Button();
             this.resetButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.endDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.startDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.moodComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.endDateLabel = new System.Windows.Forms.Label();
@@ -95,6 +93,9 @@
             this.activity11CountIcon = new Guna.UI2.WinForms.Guna2CircleButton();
             this.activity10CountIcon = new Guna.UI2.WinForms.Guna2CircleButton();
             this.activity9CountIcon = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.startDateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.endDateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.topActivity3Icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.topActivity1Icon)).BeginInit();
@@ -283,24 +284,6 @@
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(352, 222);
             this.guna2ShadowPanel1.TabIndex = 16;
             this.guna2ShadowPanel1.Visible = false;
-            // 
-            // endDateTimePicker
-            // 
-            this.endDateTimePicker.Location = new System.Drawing.Point(45, 102);
-            this.endDateTimePicker.Margin = new System.Windows.Forms.Padding(4);
-            this.endDateTimePicker.Name = "endDateTimePicker";
-            this.endDateTimePicker.Size = new System.Drawing.Size(265, 22);
-            this.endDateTimePicker.TabIndex = 10;
-            this.endDateTimePicker.ValueChanged += new System.EventHandler(this.dateTimePicker_ValueChanged);
-            // 
-            // startDateTimePicker
-            // 
-            this.startDateTimePicker.Location = new System.Drawing.Point(45, 41);
-            this.startDateTimePicker.Margin = new System.Windows.Forms.Padding(4);
-            this.startDateTimePicker.Name = "startDateTimePicker";
-            this.startDateTimePicker.Size = new System.Drawing.Size(265, 22);
-            this.startDateTimePicker.TabIndex = 10;
-            this.startDateTimePicker.ValueChanged += new System.EventHandler(this.dateTimePicker_ValueChanged);
             // 
             // linkLabel1
             // 
@@ -1144,6 +1127,42 @@
             this.activity9CountIcon.Text = "0";
             this.activity9CountIcon.UseTransparentBackground = true;
             // 
+            // startDateTimePicker
+            // 
+            this.startDateTimePicker.BorderRadius = 10;
+            this.startDateTimePicker.CheckedState.Parent = this.startDateTimePicker;
+            this.startDateTimePicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
+            this.startDateTimePicker.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.startDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.startDateTimePicker.HoverState.Parent = this.startDateTimePicker;
+            this.startDateTimePicker.Location = new System.Drawing.Point(45, 44);
+            this.startDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.startDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.startDateTimePicker.Name = "startDateTimePicker";
+            this.startDateTimePicker.ShadowDecoration.Parent = this.startDateTimePicker;
+            this.startDateTimePicker.Size = new System.Drawing.Size(265, 30);
+            this.startDateTimePicker.TabIndex = 55;
+            this.startDateTimePicker.Value = new System.DateTime(2020, 12, 9, 14, 56, 53, 689);
+            this.startDateTimePicker.ValueChanged += new System.EventHandler(this.dateTimePicker_ValueChanged);
+            // 
+            // endDateTimePicker
+            // 
+            this.endDateTimePicker.BorderRadius = 10;
+            this.endDateTimePicker.CheckedState.Parent = this.endDateTimePicker;
+            this.endDateTimePicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
+            this.endDateTimePicker.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.endDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.endDateTimePicker.HoverState.Parent = this.endDateTimePicker;
+            this.endDateTimePicker.Location = new System.Drawing.Point(45, 97);
+            this.endDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.endDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.endDateTimePicker.Name = "endDateTimePicker";
+            this.endDateTimePicker.ShadowDecoration.Parent = this.endDateTimePicker;
+            this.endDateTimePicker.Size = new System.Drawing.Size(265, 30);
+            this.endDateTimePicker.TabIndex = 56;
+            this.endDateTimePicker.Value = new System.DateTime(2020, 12, 9, 14, 56, 53, 689);
+            this.endDateTimePicker.ValueChanged += new System.EventHandler(this.dateTimePicker_ValueChanged);
+            // 
             // Analysis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1294,8 +1313,6 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox activity9Icon;
         private Guna.UI2.WinForms.Guna2CirclePictureBox activity10Icon;
         private Guna.UI2.WinForms.Guna2CirclePictureBox activity12Icon;
-        private System.Windows.Forms.DateTimePicker endDateTimePicker;
-        private System.Windows.Forms.DateTimePicker startDateTimePicker;
         private Guna.UI2.WinForms.Guna2CircleButton topActivity1CountIcon;
         private Guna.UI2.WinForms.Guna2CircleButton topActivity2CountIcon;
         private Guna.UI2.WinForms.Guna2CircleButton topActivity3CountIcon;
@@ -1321,5 +1338,8 @@
         private Guna.UI2.WinForms.Guna2CircleButton activity11CountIcon;
         private Guna.UI2.WinForms.Guna2CircleButton activity10CountIcon;
         private Guna.UI2.WinForms.Guna2CircleButton activity9CountIcon;
+        private Guna.UI2.WinForms.Guna2DateTimePicker endDateTimePicker;
+        private Guna.UI2.WinForms.Guna2DateTimePicker startDateTimePicker;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

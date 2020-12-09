@@ -183,6 +183,7 @@ namespace PBL_Puwsheee
             this.moodCountCartesianChart.Size = new System.Drawing.Size(439, 388);
             this.moodCountCartesianChart.TabIndex = 7;
             this.moodCountCartesianChart.Text = "cartesianChart1";
+            this.moodCountCartesianChart.ChildChanged += new System.EventHandler<System.Windows.Forms.Integration.ChildChangedEventArgs>(this.moodCountCartesianChart_ChildChanged);
             // 
             // moodCountPieChart
             // 
