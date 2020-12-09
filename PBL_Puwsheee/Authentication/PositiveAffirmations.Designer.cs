@@ -50,12 +50,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Typo Round Bold Demo", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.label1.Location = new System.Drawing.Point(71, 60);
             this.label1.MaximumSize = new System.Drawing.Size(630, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(427, 39);
+            this.label1.Size = new System.Drawing.Size(399, 42);
             this.label1.TabIndex = 1;
             this.label1.Text = "Good day USERNAME! :)";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -86,12 +86,12 @@
             // quotations
             // 
             this.quotations.AutoSize = true;
-            this.quotations.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.quotations.Font = new System.Drawing.Font("Robaga Rounded Black", 15F);
             this.quotations.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.quotations.Location = new System.Drawing.Point(143, 78);
+            this.quotations.Location = new System.Drawing.Point(150, 69);
             this.quotations.MaximumSize = new System.Drawing.Size(600, 0);
             this.quotations.Name = "quotations";
-            this.quotations.Size = new System.Drawing.Size(596, 175);
+            this.quotations.Size = new System.Drawing.Size(588, 216);
             this.quotations.TabIndex = 0;
             this.quotations.Text = resources.GetString("quotations.Text");
             this.quotations.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
