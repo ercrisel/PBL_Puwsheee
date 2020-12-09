@@ -14,6 +14,16 @@ namespace PBL_Puwsheee.Test
 {
     public partial class Test_Questions : Form
     {
+        protected override CreateParams CreateParams // double buffeirng daw sabi ni google 
+        {
+            get
+            {
+                CreateParams handleparam = base.CreateParams;
+                handleparam.ExStyle |= 0x02000000;
+                return handleparam;
+            }
+        }
+
         private Form activeForm;
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
@@ -186,34 +196,34 @@ namespace PBL_Puwsheee.Test
                 switch (num)
                 {
                     case 1:
-                        questionLabel.Text = "I feel tired out for no good reason.";
+                        questionLabel.Text = "I feel tired out for no good reason";
                         break;
                     case 2:
-                        questionLabel.Text = "I feel nervous.";
+                        questionLabel.Text = "I feel nervous";
                         break;
                     case 3:
-                        questionLabel.Text = "I feel restless or fidgety.";
+                        questionLabel.Text = "I feel restless or fidgety";
                         break;
                     case 4:
                         questionLabel.Text = "I feel so nevous that nothing could calm you down?";
                         break;
                     case 5:
-                        questionLabel.Text = "I feel hopeless.";
+                        questionLabel.Text = "I feel hopeless";
                         break;
                     case 6:
                         questionLabel.Text = "I feel so restless I could not sit still?";
                         break;
                     case 7:
-                        questionLabel.Text = "I feel depressed.";
+                        questionLabel.Text = "I feel depressed";
                         break;
                     case 8:
-                        questionLabel.Text = "I feel that everything was an effort.";
+                        questionLabel.Text = "I feel that everything was an effort";
                         break;
                     case 9:
-                        questionLabel.Text = "I feel so sad that nothing could cheer you up.";
+                        questionLabel.Text = "I feel so sad that nothing could cheer you up";
                         break;
                     case 10:
-                        questionLabel.Text = "I feel worthless.";
+                        questionLabel.Text = "I feel worthless";
                         break;
                 }
             }
@@ -223,34 +233,34 @@ namespace PBL_Puwsheee.Test
                 switch (num)
                 {
                     case 1:
-                        questionLabel.Text = "I recognize my emotions as I experience them.";
+                        questionLabel.Text = "I recognize my emotions as I experience them";
                         break;
                     case 2:
-                        questionLabel.Text = "I lose my temper when I feel frustrated.";
+                        questionLabel.Text = "I lose my temper when I feel frustrated";
                         break;
                     case 3:
-                        questionLabel.Text = "People have told me that I'm a good listener.";
+                        questionLabel.Text = "People have told me that I'm a good listener";
                         break;
                     case 4:
-                        questionLabel.Text = "I know how to calm myself down when I feel anxious or upset.";
+                        questionLabel.Text = "I know how to calm myself down when I feel anxious or upset";
                         break;
                     case 5:
-                        questionLabel.Text = "I enjoy organizing groups.";
+                        questionLabel.Text = "I enjoy organizing groups";
                         break;
                     case 6:
-                        questionLabel.Text = "I find it hard to focus on something ove the long term.";
+                        questionLabel.Text = "I find it hard to focus on something ove the long term";
                         break;
                     case 7:
-                        questionLabel.Text = "I find it difficult to move on when I feel frustrated or unhappy.";
+                        questionLabel.Text = "I find it difficult to move on when I feel frustrated or unhappy";
                         break;
                     case 8:
-                        questionLabel.Text = "I know my strengths and weaknesses.";
+                        questionLabel.Text = "I know my strengths and weaknesses";
                         break;
                     case 9:
-                        questionLabel.Text = "I avoid conflict and negotiations.";
+                        questionLabel.Text = "I avoid conflict and negotiations";
                         break;
                     case 10:
-                        questionLabel.Text = "I feel that I don't enjoy my work.";
+                        questionLabel.Text = "I feel that I don't enjoy my work";
                         break;
                 }
             }
@@ -260,34 +270,34 @@ namespace PBL_Puwsheee.Test
                 switch (num)
                 {
                     case 1:
-                        questionLabel.Text = "I get enough sleep.";
+                        questionLabel.Text = "I get enough sleep";
                         break;
                     case 2:
-                        questionLabel.Text = "I make time to be with my thoughts and self-reflect.";
+                        questionLabel.Text = "I make time to be with my thoughts and self-reflect";
                         break;
                     case 3:
-                        questionLabel.Text = "I say no to extra responsibilities when my plate is already full.";
+                        questionLabel.Text = "I say no to extra responsibilities when my plate is already full";
                         break;
                     case 4:
-                        questionLabel.Text = "I allow myself to show emotions.";
+                        questionLabel.Text = "I allow myself to show emotions";
                         break;
                     case 5:
-                        questionLabel.Text = "I ask for help if I need it.";
+                        questionLabel.Text = "I ask for help if I need it";
                         break;
                     case 6:
                         questionLabel.Text = "I make quiet time for myself to complete necessary tasks";
                         break;
                     case 7:
-                        questionLabel.Text = "I strive for balance among work, family, relationships, play and rest.";
+                        questionLabel.Text = "I strive for balance among work, family, relationships, play and rest";
                         break;
                     case 8:
-                        questionLabel.Text = "I spend time with my pets or in spaces in which I feel comfortable.";
+                        questionLabel.Text = "I spend time with my pets or in spaces in which I feel comfortable";
                         break;
                     case 9:
                         questionLabel.Text = "I love myself and give myself positive affirmations";
                         break;
                     case 10:
-                        questionLabel.Text = "I spend time with people who make me happy.";
+                        questionLabel.Text = "I spend time with people who make me happy";
                         break;
                 }
             }

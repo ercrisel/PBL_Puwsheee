@@ -165,8 +165,8 @@ namespace PBL_Puwsheee
             PopulateLists();
             moodComboBox.Enabled = true; //user can comb through the different moods and activities grouped together
             moodComboBox.SelectedIndex = 7; //default value of comboBox
-            startDateLabel.Text = startDateTimePicker.Value.ToString();
-            endDateLabel.Text = endDateTimePicker.Value.ToString();
+            startDateLabel.Text = startDateTimePicker.Value.ToString("dd / MM / yyyy");
+            endDateLabel.Text = endDateTimePicker.Value.ToString("dd / MM / yyyy");
             PrepareTopActivityIcons();
             PrepareActivityIcons();
             PrepareMoodIcons();
