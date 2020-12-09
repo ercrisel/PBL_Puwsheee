@@ -68,7 +68,7 @@ namespace PBL_Puwsheee
         public void showCode()
         {
             label11.Visible = enterCodeTextBox.Visible = submitCodeButton.Visible = true;
-            signupButton.Left = 509;
+            signupButton.Visible = false;
  
         }
 
@@ -117,16 +117,20 @@ namespace PBL_Puwsheee
             string location = filePath + "\\SamplePhoto.png";
             userPicture.Image = Image.FromFile(location);
             user.ImageLocation = location;
+
+            loginPic.BackgroundImage = PBL_Puwsheee.Properties.Resources.login_signup_puwshee;
+            showPasswordIcon.BackgroundImage = PBL_Puwsheee.Properties.Resources.show_password;
+            showConfirmPasswordButton.BackgroundImage = PBL_Puwsheee.Properties.Resources.show_password;
         }
         public void showHidePassword(Guna2TextBox tb)
         {
-            if (tb.PasswordChar== '*')
+            if (tb.PasswordChar== '•')
             {
                 tb.PasswordChar = '\0';
             }
             else
             {
-                tb.PasswordChar = '*';
+                tb.PasswordChar = '•';
             }
         }
         // responsible para mag show and hide password
@@ -245,6 +249,11 @@ namespace PBL_Puwsheee
         private void showConfirmPasswordButton_Click(object sender, EventArgs e)
         {
             showHidePassword(confirmPasswordTextbox);
+        }
+
+        private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 

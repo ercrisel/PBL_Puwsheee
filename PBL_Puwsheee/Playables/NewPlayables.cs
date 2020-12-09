@@ -77,6 +77,7 @@ namespace PBL_Puwsheee.Playables
             energizerPic.BackgroundImage = PBL_Puwsheee.Properties.Resources.EnergizerPlayable;
             gratitudePic.BackgroundImage = PBL_Puwsheee.Properties.Resources.GratitudePlayable;
             anxietyPic.BackgroundImage = PBL_Puwsheee.Properties.Resources.AnxietyPlayable1;
+            relaxPic.BackgroundImage = PBL_Puwsheee.Properties.Resources.RelaxationPlayable;
         }
 
         private void musicPanel_Paint(object sender, PaintEventArgs e)

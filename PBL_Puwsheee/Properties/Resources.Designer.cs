@@ -459,6 +459,16 @@ namespace PBL_Puwsheee.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap login_signup_puwshee {
+            get {
+                object obj = ResourceManager.GetObject("login signup puwshee", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap medidatePic {
             get {
                 object obj = ResourceManager.GetObject("medidatePic", resourceCulture);
