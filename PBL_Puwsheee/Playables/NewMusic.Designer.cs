@@ -39,9 +39,11 @@ namespace PBL_Puwsheee.Playables
             this.playButton = new Guna.UI2.WinForms.Guna2CircleButton();
             this.pauseButton = new Guna.UI2.WinForms.Guna2CircleButton();
             this.backButton = new Guna.UI2.WinForms.Guna2Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.background = new System.Windows.Forms.PictureBox();
+            this.musicBg = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.background)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.musicBg)).BeginInit();
             this.SuspendLayout();
             // 
             // fadeOut
@@ -112,7 +114,6 @@ namespace PBL_Puwsheee.Playables
             this.playButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.playButton.ForeColor = System.Drawing.Color.White;
             this.playButton.HoverState.Parent = this.playButton;
-            this.playButton.Image = global::PBL_Puwsheee.Properties.Resources.musicPlay;
             this.playButton.ImageOffset = new System.Drawing.Point(1, 0);
             this.playButton.ImageSize = new System.Drawing.Size(65, 65);
             this.playButton.Location = new System.Drawing.Point(19, 12);
@@ -136,7 +137,6 @@ namespace PBL_Puwsheee.Playables
             this.pauseButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.pauseButton.ForeColor = System.Drawing.Color.White;
             this.pauseButton.HoverState.Parent = this.pauseButton;
-            this.pauseButton.Image = global::PBL_Puwsheee.Properties.Resources.musicPause;
             this.pauseButton.ImageOffset = new System.Drawing.Point(1, 0);
             this.pauseButton.ImageSize = new System.Drawing.Size(65, 65);
             this.pauseButton.Location = new System.Drawing.Point(19, 12);
@@ -162,7 +162,6 @@ namespace PBL_Puwsheee.Playables
             this.backButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.backButton.ForeColor = System.Drawing.Color.White;
             this.backButton.HoverState.Parent = this.backButton;
-            this.backButton.Image = global::PBL_Puwsheee.Properties.Resources.musicClose;
             this.backButton.ImageSize = new System.Drawing.Size(50, 50);
             this.backButton.Location = new System.Drawing.Point(975, 9);
             this.backButton.Name = "backButton";
@@ -172,16 +171,25 @@ namespace PBL_Puwsheee.Playables
             this.backButton.UseTransparentBackground = true;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
-            // pictureBox1
+            // background
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::PBL_Puwsheee.Properties.Resources.musicBackground;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1020, 610);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 25;
-            this.pictureBox1.TabStop = false;
+            this.background.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.background.Location = new System.Drawing.Point(0, 0);
+            this.background.Name = "background";
+            this.background.Size = new System.Drawing.Size(1020, 610);
+            this.background.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.background.TabIndex = 25;
+            this.background.TabStop = false;
+            // 
+            // musicBg
+            // 
+            this.musicBg.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.musicBg.Location = new System.Drawing.Point(0, 0);
+            this.musicBg.Name = "musicBg";
+            this.musicBg.Size = new System.Drawing.Size(1020, 610);
+            this.musicBg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.musicBg.TabIndex = 25;
+            this.musicBg.TabStop = false;
             // 
             // NewMusic
             // 
@@ -193,14 +201,15 @@ namespace PBL_Puwsheee.Playables
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.background);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NewMusic";
             this.Opacity = 0D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NewMusic";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.background)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.musicBg)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -215,8 +224,9 @@ namespace PBL_Puwsheee.Playables
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2CircleButton pauseButton;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox background;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2CircleButton playButton;
+        private System.Windows.Forms.PictureBox musicBg;
     }
 }

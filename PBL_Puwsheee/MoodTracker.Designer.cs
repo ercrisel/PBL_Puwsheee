@@ -563,7 +563,6 @@
             this.angryIcon.TabIndex = 3;
             this.angryIcon.Tag = "Angry";
             this.angryIcon.Text = " ";
-            this.angryIcon.Click += new System.EventHandler(this.moodIcon_MouseHover);
             this.angryIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
             this.angryIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
             // 
@@ -588,7 +587,6 @@
             this.contentedIcon.TabIndex = 1;
             this.contentedIcon.Tag = "Contented";
             this.contentedIcon.Text = " ";
-            this.contentedIcon.Click += new System.EventHandler(this.moodIcon_MouseHover);
             this.contentedIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
             this.contentedIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
             // 
@@ -613,7 +611,6 @@
             this.happyIcon.TabIndex = 1;
             this.happyIcon.Tag = "Happy";
             this.happyIcon.Text = " ";
-            this.happyIcon.Click += new System.EventHandler(this.moodIcon_MouseHover);
             this.happyIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
             this.happyIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
             // 
@@ -638,7 +635,6 @@
             this.flirtyIcon.TabIndex = 2;
             this.flirtyIcon.Tag = "Flirty";
             this.flirtyIcon.Text = " ";
-            this.flirtyIcon.Click += new System.EventHandler(this.moodIcon_MouseHover);
             this.flirtyIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
             this.flirtyIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
             // 
@@ -663,7 +659,6 @@
             this.sadIcon.TabIndex = 6;
             this.sadIcon.Tag = "Sad";
             this.sadIcon.Text = " ";
-            this.sadIcon.Click += new System.EventHandler(this.moodIcon_MouseHover);
             this.sadIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
             this.sadIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
             // 
@@ -688,7 +683,6 @@
             this.mehIcon.TabIndex = 5;
             this.mehIcon.Tag = "Meh";
             this.mehIcon.Text = " ";
-            this.mehIcon.Click += new System.EventHandler(this.moodIcon_MouseHover);
             this.mehIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
             this.mehIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
             // 
@@ -713,7 +707,6 @@
             this.miserableIcon.TabIndex = 7;
             this.miserableIcon.Tag = "Miserable";
             this.miserableIcon.Text = " ";
-            this.miserableIcon.Click += new System.EventHandler(this.moodIcon_MouseHover);
             this.miserableIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
             this.miserableIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
             // 
@@ -738,7 +731,6 @@
             this.disgustedIcon.TabIndex = 8;
             this.disgustedIcon.Tag = "Disgusted";
             this.disgustedIcon.Text = " ";
-            this.disgustedIcon.Click += new System.EventHandler(this.moodIcon_MouseHover);
             this.disgustedIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
             this.disgustedIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
             // 

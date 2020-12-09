@@ -66,6 +66,7 @@
             // 
             // guna2CirclePictureBox1
             // 
+            this.guna2CirclePictureBox1.Image = global::PBL_Puwsheee.Properties.Resources.Puwshee;
             this.guna2CirclePictureBox1.Location = new System.Drawing.Point(167, 80);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;

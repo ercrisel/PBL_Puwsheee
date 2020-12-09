@@ -141,7 +141,7 @@ namespace PBL_Puwsheee
                 switch (mood.Rank)
                 {
                     case 1:
-                        //dateItem.BackgroundImage = PBL_Puwsheee.Properties.Resources.Angry;
+                       // dateItem.BackgroundImage = PBL_Puwsheee.Properties.Resources.Angry;
                         dateItem.BackColor1 = Color.FromArgb(142, 54, 51);
                         break;
                     case 2:
@@ -169,7 +169,7 @@ namespace PBL_Puwsheee
                         dateItem.BackColor1 = Color.FromArgb(141, 121, 159);
                         break;
                     case 8:
-                        //dateItem.BackgroundImage = PBL_Puwsheee.Properties.Resources.Happy;
+                       // dateItem.BackgroundImage = PBL_Puwsheee.Properties.Resources.Happy;
                         dateItem.BackColor1 = Color.FromArgb(252, 164, 62);
                         break;
                     default:

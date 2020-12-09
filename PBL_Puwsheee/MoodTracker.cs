@@ -100,6 +100,32 @@ namespace PBL_Puwsheee
             travelIcon.Tag = new Activity(11);
             #endregion
 
+            #region Set Images 
+            //mood
+            angryIcon.BackgroundImage = PBL_Puwsheee.Properties.Resources.Angry;
+            flirtyIcon.BackgroundImage = PBL_Puwsheee.Properties.Resources.Flirty;
+            contentedIcon.BackgroundImage = PBL_Puwsheee.Properties.Resources.Contented;
+            happyIcon.BackgroundImage = PBL_Puwsheee.Properties.Resources.Happy;
+            mehIcon.BackgroundImage = PBL_Puwsheee.Properties.Resources.Meh;
+            sadIcon.BackgroundImage = PBL_Puwsheee.Properties.Resources.Sad;
+            miserableIcon.BackgroundImage = PBL_Puwsheee.Properties.Resources.Miserable;
+            disgustedIcon.BackgroundImage = PBL_Puwsheee.Properties.Resources.Disgusted;
+
+            //activities 
+            cookIcon.BackgroundImage = PBL_Puwsheee.Properties.Resources.Cook;
+            exerciseIcon.BackgroundImage = PBL_Puwsheee.Properties.Resources.Exercise;
+            gameIcon.BackgroundImage = PBL_Puwsheee.Properties.Resources.Game;
+            musicIcon.BackgroundImage = PBL_Puwsheee.Properties.Resources.Music;
+            readIcon.BackgroundImage = PBL_Puwsheee.Properties.Resources.Read;
+            studyIcon.BackgroundImage = PBL_Puwsheee.Properties.Resources.Study;
+            watchIcon.BackgroundImage = PBL_Puwsheee.Properties.Resources.Watch;
+            shopIcon.BackgroundImage = PBL_Puwsheee.Properties.Resources.Shop;
+            sportsIcon.BackgroundImage = PBL_Puwsheee.Properties.Resources.Sports;
+            sleepIcon.BackgroundImage = PBL_Puwsheee.Properties.Resources.Sleep;
+            socialIcon.BackgroundImage = PBL_Puwsheee.Properties.Resources.Social;
+            travelIcon.BackgroundImage = PBL_Puwsheee.Properties.Resources.Travel;
+            #endregion
+
             if (moodEntry.IsExistingRecord())
                 IsSettingsEditable(false);
             else

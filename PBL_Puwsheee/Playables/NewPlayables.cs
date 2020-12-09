@@ -68,5 +68,20 @@ namespace PBL_Puwsheee.Playables
             RelaxationMeditation relaxationForm = new RelaxationMeditation();
             relaxationForm.Show();
         }
+
+        private void NewPlayables_Load(object sender, EventArgs e)
+        {
+            breathingPict.BackgroundImage = PBL_Puwsheee.Properties.Resources.BreathPlayable;
+            musicPic.BackgroundImage = PBL_Puwsheee.Properties.Resources.musicPlayables;
+            rainPic.BackgroundImage = PBL_Puwsheee.Properties.Resources.rainPlayables;
+            energizerPic.BackgroundImage = PBL_Puwsheee.Properties.Resources.EnergizerPlayable;
+            gratitudePic.BackgroundImage = PBL_Puwsheee.Properties.Resources.GratitudePlayable;
+            anxietyPic.BackgroundImage = PBL_Puwsheee.Properties.Resources.AnxietyPlayable1;
+        }
+
+        private void musicPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

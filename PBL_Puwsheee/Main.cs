@@ -87,10 +87,21 @@ namespace PBL_Puwsheee
             user.LoadPicture(usericonPicture);
             user.Username = Log_In.publicUserName;
             userInfo.Username = Log_In.publicUserName;
+
+            #region Load images
+            moodtrackerButton.Image = PBL_Puwsheee.Properties.Resources.Mood_Tracker;
+            calendarButton.Image = PBL_Puwsheee.Properties.Resources.Calendar;
+            analysisButton.Image = PBL_Puwsheee.Properties.Resources.Analysis;
+            testButton.Image = PBL_Puwsheee.Properties.Resources.Test;
+            playablesButton.Image = PBL_Puwsheee.Properties.Resources.calmm;
+            settingsButton.Image = PBL_Puwsheee.Properties.Resources.sett;
+            #endregion
         }
 
         private void openChildForm(Form childForm)
         {
+            displayPanel.Visible = true;
+            bgPanel.Visible = true;
             if (activeForm != null)
                 activeForm.Close();
             activeForm = childForm;
@@ -156,7 +167,12 @@ namespace PBL_Puwsheee
 
         private void clickPlayables(object sender, EventArgs e)
         {
-            openChildForm(new Playables.NewPlayables());
+            Playables.NewPlayables playables= new Playables.NewPlayables() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            this.guna2ShadowPanel1.Controls.Add(playables);
+            playables.Show();
+            displayPanel.Visible = false;
+            bgPanel.Visible = false;
+
             playablesButton.BackColor = Color.FromArgb(86, 75, 97);
             indicator.Top = 323;
             #region Back to original color

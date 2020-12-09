@@ -33,6 +33,13 @@ namespace PBL_Puwsheee.Playables
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+
+            #region Load images
+            pictureBox1.Image = PBL_Puwsheee.Properties.Resources.relaxationGIF;
+            playButton.Image = PBL_Puwsheee.Properties.Resources.relaxPlay;
+            pauseButton.Image = PBL_Puwsheee.Properties.Resources.relaxPause;
+            backButton.Image = PBL_Puwsheee.Properties.Resources.relaxClose;
+            #endregion
         }
 
         private void fadeIn_Tick(object sender, EventArgs e)
