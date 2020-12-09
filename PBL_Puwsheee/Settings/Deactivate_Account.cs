@@ -43,6 +43,9 @@ namespace PBL_Puwsheee.Settings
 
         private void deleteButton_Click(object sender, EventArgs e)
         {
+            // storeprocedure na mag dedelete ng account kekbye
+            string usernameToDelete = Log_In.publicUserName;
+
 
         }
     }

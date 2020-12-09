@@ -72,8 +72,9 @@ namespace PBL_Puwsheee
 
         private void PositiveAffirmations_Load(object sender, EventArgs e)
         {
+          
             Random rand = new Random();
-
+           
             string[] affirmation =
             {
                 "I am doing my Best.",
@@ -104,6 +105,12 @@ namespace PBL_Puwsheee
             };
 
             int rand_affirmation = rand.Next(affirmation.Length);
+        }
+
+        private void PositiveAffirmations_Load_1(object sender, EventArgs e)
+        {
+            string greetings = label1.Text;
+            label1.Text = greetings.Replace("USERNAME", Log_In.publicUserName);
         }
     }
 }
