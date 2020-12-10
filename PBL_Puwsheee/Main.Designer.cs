@@ -299,7 +299,7 @@
             // 
             this.indicator.BackColor = System.Drawing.Color.Transparent;
             this.indicator.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(75)))), ((int)(((byte)(97)))));
-            this.indicator.Location = new System.Drawing.Point(8, 60);
+            this.indicator.Location = new System.Drawing.Point(8, 59);
             this.indicator.Name = "indicator";
             this.indicator.Radius = 10;
             this.indicator.ShadowColor = System.Drawing.Color.Black;

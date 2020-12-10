@@ -116,13 +116,14 @@ namespace PBL_Puwsheee
             firstNameTextbox.Focus();
             var projectPath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
             string filePath = Path.Combine(projectPath, "Resources");
-            string location = filePath + "\\SamplePhoto.png";
+            string location = filePath + "\\Puwshee.png";
             userPicture.Image = Image.FromFile(location);
             user.ImageLocation = location;
 
             loginPic.BackgroundImage = PBL_Puwsheee.Properties.Resources.login_signup_puwshee;
-            showPasswordIcon.BackgroundImage = PBL_Puwsheee.Properties.Resources.show_password;
-            showConfirmPasswordButton.BackgroundImage = PBL_Puwsheee.Properties.Resources.show_password;
+            showPasswordIcon.Image = PBL_Puwsheee.Properties.Resources.show_password;
+            pictureBox1.BackgroundImage = PBL_Puwsheee.Properties.Resources.Back;
+            showConfirmPasswordButton.Image = PBL_Puwsheee.Properties.Resources.show_password;
         }
         public void showHidePassword(Guna2TextBox tb)
         {

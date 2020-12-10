@@ -173,6 +173,9 @@ namespace PBL_Puwsheee.Playables
             // 
             // background
             // 
+            this.background.BackColor = System.Drawing.Color.Transparent;
+            this.background.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.musicBackground;
+            this.background.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.background.Dock = System.Windows.Forms.DockStyle.Fill;
             this.background.Location = new System.Drawing.Point(0, 0);
             this.background.Name = "background";

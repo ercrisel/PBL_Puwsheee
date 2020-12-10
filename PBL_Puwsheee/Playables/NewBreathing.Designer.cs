@@ -71,6 +71,7 @@ namespace PBL_Puwsheee.Playables
             // 
             // background
             // 
+            this.background.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.background.Location = new System.Drawing.Point(-2, -2);
             this.background.Name = "background";
             this.background.Size = new System.Drawing.Size(1020, 610);

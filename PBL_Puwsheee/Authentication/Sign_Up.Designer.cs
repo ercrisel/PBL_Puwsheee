@@ -96,7 +96,7 @@
             this.firstNameTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.firstNameTextbox.HoverState.Parent = this.firstNameTextbox;
             this.firstNameTextbox.Location = new System.Drawing.Point(108, 171);
-            this.firstNameTextbox.Margin = new System.Windows.Forms.Padding(4);
+            this.firstNameTextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.firstNameTextbox.Name = "firstNameTextbox";
             this.firstNameTextbox.PasswordChar = '\0';
             this.firstNameTextbox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
@@ -721,46 +721,25 @@
             this.guna2Panel3.Size = new System.Drawing.Size(309, 5);
             this.guna2Panel3.TabIndex = 49;
             // 
-            // firstNamePanel
+            // guna2Panel4
             // 
-            this.firstNamePanel.BorderRadius = 5;
-            this.firstNamePanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.firstNamePanel.Location = new System.Drawing.Point(108, 208);
-            this.firstNamePanel.Name = "firstNamePanel";
-            this.firstNamePanel.ShadowDecoration.Parent = this.firstNamePanel;
-            this.firstNamePanel.Size = new System.Drawing.Size(300, 5);
-            this.firstNamePanel.TabIndex = 49;
+            this.guna2Panel4.BorderRadius = 5;
+            this.guna2Panel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
+            this.guna2Panel4.Location = new System.Drawing.Point(108, 400);
+            this.guna2Panel4.Name = "guna2Panel4";
+            this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
+            this.guna2Panel4.Size = new System.Drawing.Size(293, 5);
+            this.guna2Panel4.TabIndex = 49;
             // 
-            // welcomeLabel
+            // guna2Panel5
             // 
-            this.welcomeLabel.BackColor = System.Drawing.Color.Transparent;
-            this.welcomeLabel.Font = new System.Drawing.Font("Robaga Rounded Black", 25F);
-            this.welcomeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.welcomeLabel.Location = new System.Drawing.Point(569, 15);
-            this.welcomeLabel.Name = "welcomeLabel";
-            this.welcomeLabel.Size = new System.Drawing.Size(447, 53);
-            this.welcomeLabel.TabIndex = 49;
-            this.welcomeLabel.Text = "CREATE AN ACCOUNT ";
-            // 
-            // loginPic
-            // 
-            this.loginPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.loginPic.Location = new System.Drawing.Point(-73, 210);
-            this.loginPic.Name = "loginPic";
-            this.loginPic.Size = new System.Drawing.Size(161, 135);
-            this.loginPic.TabIndex = 50;
-            this.loginPic.TabStop = false;
-            // 
-            // wrongCode
-            // 
-            this.wrongCode.AutoSize = true;
-            this.wrongCode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
-            this.wrongCode.Location = new System.Drawing.Point(289, 446);
-            this.wrongCode.Name = "wrongCode";
-            this.wrongCode.Size = new System.Drawing.Size(256, 17);
-            this.wrongCode.TabIndex = 50;
-            this.wrongCode.Text = "This is a wrong confirmation code!";
-            this.wrongCode.Visible = false;
+            this.guna2Panel5.BorderRadius = 5;
+            this.guna2Panel5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
+            this.guna2Panel5.Location = new System.Drawing.Point(438, 400);
+            this.guna2Panel5.Name = "guna2Panel5";
+            this.guna2Panel5.ShadowDecoration.Parent = this.guna2Panel5;
+            this.guna2Panel5.Size = new System.Drawing.Size(309, 5);
+            this.guna2Panel5.TabIndex = 49;
             // 
             // Sign_Up
             // 
