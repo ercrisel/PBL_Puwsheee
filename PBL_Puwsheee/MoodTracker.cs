@@ -136,27 +136,27 @@ namespace PBL_Puwsheee
             if (moodEntry.IsExistingRecord())
             {
                 IsSettingsEditable(false);
+                errorPanel.BringToFront();
             }
             else
             {
                 IsSettingsEditable(true);
+                errorPanel.SendToBack();
             }
 
             decrementButton.Visible = false;
+            clearButton.Visible = false;
+            submitButton.Visible = false;
+            incrementButton.Visible = true;
 
             moodSteps.Add(moodPanelBg);
             moodSteps.Add(activitiesPanelBg);
             moodSteps.Add(notesPanelBg);
             moodSteps[steps].BringToFront();
 
-            if(submitButton.Enabled == false)
-            {
-                errorPanel.BringToFront();
-            }
-            else if(submitButton.Enabled == true)
-            {
-                errorPanel.SendToBack();
-            }
+            if(submitButton.Enabled == false) errorPanel.BringToFront();
+            if(submitButton.Enabled == true) errorPanel.SendToBack();
+
         }
 
         private void submitButton_Click(object sender, EventArgs e)
@@ -168,11 +168,6 @@ namespace PBL_Puwsheee
             IsSettingsEditable(false);
             labelMood.Text = labelActivities.Text = string.Empty;
 
-            moodPanel.BringToFront();
-            clearButton.Visible = false;
-            submitButton.Visible = false;
-            decrementButton.Visible = false;
-            //insert Calendar_Main //redirects to calendar view
         }
 
         private void clearButton_Click(object sender, EventArgs e)

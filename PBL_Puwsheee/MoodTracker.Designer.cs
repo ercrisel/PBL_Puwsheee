@@ -62,7 +62,6 @@
             this.mehIcon = new Guna.UI2.WinForms.Guna2Button();
             this.miserableIcon = new Guna.UI2.WinForms.Guna2Button();
             this.disgustedIcon = new Guna.UI2.WinForms.Guna2Button();
-            this.incrementButton = new Guna.UI2.WinForms.Guna2Button();
             this.decrementButton = new Guna.UI2.WinForms.Guna2Button();
             this.moodPanelBg = new System.Windows.Forms.Panel();
             this.errorPanel = new System.Windows.Forms.Panel();
@@ -74,6 +73,7 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.decrementTimer = new System.Windows.Forms.Timer(this.components);
             this.incrementTimer = new System.Windows.Forms.Timer(this.components);
+            this.incrementButton = new Guna.UI2.WinForms.Guna2Button();
             this.activitiesPanel.SuspendLayout();
             this.moodPanel.SuspendLayout();
             this.moodPanelBg.SuspendLayout();
@@ -106,7 +106,7 @@
             this.submitButton.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.submitButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.submitButton.HoverState.Parent = this.submitButton;
-            this.submitButton.Location = new System.Drawing.Point(460, 481);
+            this.submitButton.Location = new System.Drawing.Point(466, 490);
             this.submitButton.Margin = new System.Windows.Forms.Padding(4);
             this.submitButton.Name = "submitButton";
             this.submitButton.ShadowDecoration.Parent = this.submitButton;
@@ -465,7 +465,7 @@
             this.clearButton.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.clearButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.clearButton.HoverState.Parent = this.clearButton;
-            this.clearButton.Location = new System.Drawing.Point(336, 481);
+            this.clearButton.Location = new System.Drawing.Point(341, 489);
             this.clearButton.Margin = new System.Windows.Forms.Padding(4);
             this.clearButton.Name = "clearButton";
             this.clearButton.ShadowDecoration.Parent = this.clearButton;
@@ -793,26 +793,6 @@
             this.disgustedIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
             this.disgustedIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
             // 
-            // incrementButton
-            // 
-            this.incrementButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.incrementButton.BorderRadius = 16;
-            this.incrementButton.BorderThickness = 2;
-            this.incrementButton.CheckedState.Parent = this.incrementButton;
-            this.incrementButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.incrementButton.CustomImages.Parent = this.incrementButton;
-            this.incrementButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.incrementButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.incrementButton.ForeColor = System.Drawing.Color.White;
-            this.incrementButton.HoverState.Parent = this.incrementButton;
-            this.incrementButton.Location = new System.Drawing.Point(862, 264);
-            this.incrementButton.Name = "incrementButton";
-            this.incrementButton.ShadowDecoration.Parent = this.incrementButton;
-            this.incrementButton.Size = new System.Drawing.Size(41, 38);
-            this.incrementButton.TabIndex = 84;
-            this.incrementButton.Text = ">";
-            this.incrementButton.Click += new System.EventHandler(this.incrementButton_Click);
-            // 
             // decrementButton
             // 
             this.decrementButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
@@ -832,6 +812,7 @@
             this.decrementButton.Size = new System.Drawing.Size(41, 38);
             this.decrementButton.TabIndex = 83;
             this.decrementButton.Text = "<";
+            this.decrementButton.Visible = false;
             this.decrementButton.Click += new System.EventHandler(this.decrementButton_Click);
             // 
             // moodPanelBg
@@ -847,9 +828,9 @@
             // 
             this.errorPanel.Controls.Add(this.moodTrackerGIF);
             this.errorPanel.Controls.Add(this.label1);
-            this.errorPanel.Location = new System.Drawing.Point(11, 38);
+            this.errorPanel.Location = new System.Drawing.Point(12, 38);
             this.errorPanel.Name = "errorPanel";
-            this.errorPanel.Size = new System.Drawing.Size(914, 497);
+            this.errorPanel.Size = new System.Drawing.Size(911, 497);
             this.errorPanel.TabIndex = 85;
             // 
             // moodTrackerGIF
@@ -871,10 +852,10 @@
             this.label1.Location = new System.Drawing.Point(135, 134);
             this.label1.MaximumSize = new System.Drawing.Size(678, 300);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(654, 48);
+            this.label1.Size = new System.Drawing.Size(664, 48);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Only one entry of the mood tracker is allowed. If you wish to edit your entry you" +
-    " may go to the \'calendar\' category.";
+            this.label1.Text = "Only one entry for the mood tracker is allowed. If you wish to edit your entry yo" +
+    "u may go to the \'calendar\' category.";
             // 
             // activitiesPanelBg
             // 
@@ -928,22 +909,42 @@
             this.incrementTimer.Tag = "Increment";
             this.incrementTimer.Tick += new System.EventHandler(this.incrementTimer_Tick);
             // 
+            // incrementButton
+            // 
+            this.incrementButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
+            this.incrementButton.BorderRadius = 16;
+            this.incrementButton.BorderThickness = 2;
+            this.incrementButton.CheckedState.Parent = this.incrementButton;
+            this.incrementButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.incrementButton.CustomImages.Parent = this.incrementButton;
+            this.incrementButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
+            this.incrementButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.incrementButton.ForeColor = System.Drawing.Color.White;
+            this.incrementButton.HoverState.Parent = this.incrementButton;
+            this.incrementButton.Location = new System.Drawing.Point(868, 267);
+            this.incrementButton.Name = "incrementButton";
+            this.incrementButton.ShadowDecoration.Parent = this.incrementButton;
+            this.incrementButton.Size = new System.Drawing.Size(41, 38);
+            this.incrementButton.TabIndex = 84;
+            this.incrementButton.Text = ">";
+            this.incrementButton.Click += new System.EventHandler(this.incrementButton_Click);
+            // 
             // MoodTracker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.ClientSize = new System.Drawing.Size(936, 543);
+            this.Controls.Add(this.decrementButton);
+            this.Controls.Add(this.incrementButton);
             this.Controls.Add(this.notesPanelBg);
             this.Controls.Add(this.activitiesPanelBg);
-            this.Controls.Add(this.moodPanelBg);
-            this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.incrementButton);
             this.Controls.Add(this.submitButton);
+            this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.dateLabel);
             this.Controls.Add(this.moodLabel);
-            this.Controls.Add(this.decrementButton);
+            this.Controls.Add(this.moodPanelBg);
             this.Controls.Add(this.errorPanel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -1003,7 +1004,6 @@
         private Guna.UI2.WinForms.Guna2Button miserableIcon;
         private Guna.UI2.WinForms.Guna2Button disgustedIcon;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelActivities;
-        private Guna.UI2.WinForms.Guna2Button incrementButton;
         private Guna.UI2.WinForms.Guna2Button decrementButton;
         private System.Windows.Forms.Panel moodPanelBg;
         private System.Windows.Forms.Panel errorPanel;
@@ -1015,5 +1015,6 @@
         private Guna.UI2.WinForms.Guna2Panel loadingPanel;
         private System.Windows.Forms.Timer decrementTimer;
         private System.Windows.Forms.Timer incrementTimer;
+        private Guna.UI2.WinForms.Guna2Button incrementButton;
     }
 }

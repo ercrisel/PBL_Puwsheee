@@ -67,7 +67,7 @@ namespace PBL_Puwsheee
         //EVENTS
         private void Analysis_Load(object sender, EventArgs e)
         {
-
+            editButton.BackgroundImage = PBL_Puwsheee.Properties.Resources.Edit;
             #region Populate Lists of Icons
             topActivityIcons = new List<Guna2CirclePictureBox> { topActivity1Icon, topActivity2Icon, topActivity3Icon, topActivity4Icon, topActivity5Icon };
             topActivityCountIcons = new List<Guna2CircleButton> { topActivity1CountIcon, topActivity2CountIcon, topActivity3CountIcon, topActivity4CountIcon, topActivity5CountIcon };
@@ -95,27 +95,15 @@ namespace PBL_Puwsheee
             LoadAnalysisOverview();
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            if (guna2ShadowPanel1.Visible == false)
-            {
-                guna2ShadowPanel1.Visible = true;
-                startDateTimePicker.Visible = true;
-                endDateTimePicker.Visible = true;
-                seeresultButton.Visible = true;
-            }
-            else
-            {
-                guna2ShadowPanel1.Visible = false;
-                startDateTimePicker.Visible = false;
-                endDateTimePicker.Visible = false;
-                seeresultButton.Visible = false;
-            }
-        }
-
         private void seeresultButton_Click(object sender, EventArgs e)
         {
             LoadAnalysisOverview();
+            startDateTimePicker.Visible = false;
+            endDateTimePicker.Visible = false;
+            seeresultButton.Visible = false;
+            startDateLabel.Visible = true;
+            endDateLabel.Visible = true;
+            editButton.Visible = true;
         }
 
         private void dateTimePicker_ValueChanged(object sender, EventArgs e)
@@ -437,6 +425,16 @@ namespace PBL_Puwsheee
             Charts charts = new Charts() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             //this.Panel.Controls.Add(charts);
             charts.Show();
+        }
+
+        private void editButton_Click(object sender, EventArgs e)
+        {
+            startDateTimePicker.Visible = true;
+            endDateTimePicker.Visible = true;
+            seeresultButton.Visible = true;
+            startDateLabel.Visible = false;
+            endDateLabel.Visible = false;
+            editButton.Visible = false;
         }
     }
 }

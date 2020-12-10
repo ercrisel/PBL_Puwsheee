@@ -76,6 +76,22 @@ namespace PBL_Puwsheee.Test
             currentquestionTextbox.Text = "Question " + currentQ.ToString();
             this.Controls.OfType<Guna2CustomRadioButton>().ToList().ForEach(p => p.Checked = false);
             displayChoice();
+
+            if (currentquestionTextbox.Text == "Question 1") decrementButton.Visible = false;
+            else if (currentquestionTextbox.Text != "Question 1") decrementButton.Visible = true;
+
+            if (currentquestionTextbox.Text == "Question 10")
+            {
+                clearButton.Visible = true;
+                submitButton.Visible = true;
+                incrementButton.Visible = false;
+            }
+            else if (currentquestionTextbox.Text != "Question 10")
+            {
+                clearButton.Visible = false;
+                submitButton.Visible = false;
+                incrementButton.Visible = true;
+            }
         }
 
         private void slot5RadioButton_Click(object sender, EventArgs e)
@@ -182,6 +198,10 @@ namespace PBL_Puwsheee.Test
         {
             typeoftestLabel.Text = this.Text;
             displayQuestion(1);
+
+            decrementButton.Visible = false;
+            clearButton.Visible = false;
+            submitButton.Visible = false;
         }
 
         private void clickBack(object sender, EventArgs e)
