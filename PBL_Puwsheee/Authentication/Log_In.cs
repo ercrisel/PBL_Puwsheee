@@ -60,7 +60,11 @@ namespace PBL_Puwsheee
                 {
                     publicUserName = user.Username;
                     publicPasswordInput = user.Password;
-                     MessageBox.Show("You will be redirected to the homepage, Login Success");
+                    // MessageBox.Show("You will be redirected to the homepage, Login Success");
+                    textBubble.Visible = true;
+                    label1.Visible = true;
+                    label2.Visible = false;
+                    label3.Visible = false;
                     
                     
                     fadeOut.Start();
@@ -69,8 +73,13 @@ namespace PBL_Puwsheee
                 }
                 else
                 {
-                    MessageBox.Show("NO ACCOUNT REGISTERED IN THAT USERNAME AND PASSWORD");
-                   
+                    //MessageBox.Show("NO ACCOUNT REGISTERED IN THAT USERNAME AND PASSWORD");
+                    textBubble.Visible = true;
+                    label1.Visible = false;
+                    label2.Visible = true;
+                    label3.Visible = true;
+
+
                 }
             }
             else
@@ -153,6 +162,11 @@ namespace PBL_Puwsheee
             {
                 passwordTextbox.PasswordChar = '•';
             }
+        }
+
+        private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
