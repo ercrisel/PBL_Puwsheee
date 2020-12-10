@@ -140,6 +140,8 @@ namespace PBL_Puwsheee
             usernameTextbox.Focus();
             loginPic.BackgroundImage = PBL_Puwsheee.Properties.Resources.login_signup_puwshee;
             showPasswordIcon.Image = PBL_Puwsheee.Properties.Resources.show_password;
+            messageBubbleOHNO.Image = PBL_Puwsheee.Properties.Resources.messageFail;
+            messgaeBubbleYEY.Image = PBL_Puwsheee.Properties.Resources.messageSuccess;
         }
 
         private void enterKeyLogIn(object sender, KeyEventArgs e)
@@ -164,6 +166,11 @@ namespace PBL_Puwsheee
         }
 
         private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void passwordTextbox_TextChanged_1(object sender, EventArgs e)
         {
 
         }

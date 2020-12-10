@@ -120,9 +120,9 @@ namespace PBL_Puwsheee
             userPicture.Image = Image.FromFile(location);
             user.ImageLocation = location;
 
-            loginPic.BackgroundImage = PBL_Puwsheee.Properties.Resources.login_signup_puwshee;
+            signUpPic.BackgroundImage = PBL_Puwsheee.Properties.Resources.login_signup_puwshee;
             showPasswordIcon.Image = PBL_Puwsheee.Properties.Resources.show_password;
-            pictureBox1.BackgroundImage = PBL_Puwsheee.Properties.Resources.Back;
+            backButton.BackgroundImage = PBL_Puwsheee.Properties.Resources.Back;
             showConfirmPasswordButton.Image = PBL_Puwsheee.Properties.Resources.show_password;
         }
         public void showHidePassword(Guna2TextBox tb)
@@ -212,7 +212,6 @@ namespace PBL_Puwsheee
             if (user.CorrectConfirmationCode())
             {
                 MessageBox.Show("Success", "Account Created");
-                wrongCode.Visible = false;
                 user.UploadEntriesToDatabase();
                 fadeOut.Start();
                 Log_In li = new Log_In();
@@ -223,7 +222,6 @@ namespace PBL_Puwsheee
             else
             {
                 // MessageBox.Show("Wrong Confirmation Code");
-                wrongCode.Visible = true;
               
             }
         }

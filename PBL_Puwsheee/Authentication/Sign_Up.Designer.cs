@@ -37,7 +37,6 @@
             this.confirmPasswordTextbox = new Guna.UI2.WinForms.Guna2TextBox();
             this.uploadimageButton = new Guna.UI2.WinForms.Guna2Button();
             this.signupButton = new Guna.UI2.WinForms.Guna2Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.userPicture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.firstNameCondition = new System.Windows.Forms.Label();
             this.lastNameCondition = new System.Windows.Forms.Label();
@@ -61,19 +60,18 @@
             this.fadeIn = new System.Windows.Forms.Timer(this.components);
             this.fadeOut = new System.Windows.Forms.Timer(this.components);
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.wrongCode = new System.Windows.Forms.Label();
             this.lastNamePanel = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.firstNamePanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.signUpPic = new System.Windows.Forms.PictureBox();
+            this.backButton = new Guna.UI2.WinForms.Guna2Button();
             this.welcomeLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.loginPic = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPicture)).BeginInit();
             this.guna2ShadowPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.loginPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.signUpPic)).BeginInit();
             this.SuspendLayout();
             // 
             // firstNameTextbox
@@ -96,7 +94,7 @@
             this.firstNameTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.firstNameTextbox.HoverState.Parent = this.firstNameTextbox;
             this.firstNameTextbox.Location = new System.Drawing.Point(108, 171);
-            this.firstNameTextbox.Margin = new System.Windows.Forms.Padding(4);
+            this.firstNameTextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.firstNameTextbox.Name = "firstNameTextbox";
             this.firstNameTextbox.PasswordChar = '\0';
             this.firstNameTextbox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
@@ -271,7 +269,7 @@
             // uploadimageButton
             // 
             this.uploadimageButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.uploadimageButton.BorderRadius = 16;
+            this.uploadimageButton.BorderRadius = 12;
             this.uploadimageButton.BorderThickness = 2;
             this.uploadimageButton.CheckedState.Parent = this.uploadimageButton;
             this.uploadimageButton.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -280,11 +278,11 @@
             this.uploadimageButton.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.uploadimageButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.uploadimageButton.HoverState.Parent = this.uploadimageButton;
-            this.uploadimageButton.Location = new System.Drawing.Point(381, 112);
+            this.uploadimageButton.Location = new System.Drawing.Point(381, 130);
             this.uploadimageButton.Margin = new System.Windows.Forms.Padding(4);
             this.uploadimageButton.Name = "uploadimageButton";
             this.uploadimageButton.ShadowDecoration.Parent = this.uploadimageButton;
-            this.uploadimageButton.Size = new System.Drawing.Size(102, 34);
+            this.uploadimageButton.Size = new System.Drawing.Size(102, 27);
             this.uploadimageButton.TabIndex = 24;
             this.uploadimageButton.Text = "Upload Image";
             this.uploadimageButton.Click += new System.EventHandler(this.uploadimageButton_Click);
@@ -308,22 +306,9 @@
             this.signupButton.Text = "Sign Up";
             this.signupButton.Click += new System.EventHandler(this.signupButton_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 13);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(43, 41);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 26;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // userPicture
             // 
-            this.userPicture.Location = new System.Drawing.Point(382, 14);
+            this.userPicture.Location = new System.Drawing.Point(382, 32);
             this.userPicture.Margin = new System.Windows.Forms.Padding(4);
             this.userPicture.Name = "userPicture";
             this.userPicture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -341,7 +326,7 @@
             this.firstNameCondition.Location = new System.Drawing.Point(251, 217);
             this.firstNameCondition.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.firstNameCondition.Name = "firstNameCondition";
-            this.firstNameCondition.Size = new System.Drawing.Size(198, 17);
+            this.firstNameCondition.Size = new System.Drawing.Size(157, 14);
             this.firstNameCondition.TabIndex = 27;
             this.firstNameCondition.Text = "MUST ONLY CONTAIN LETTERS";
             this.firstNameCondition.Visible = false;
@@ -354,7 +339,7 @@
             this.lastNameCondition.Location = new System.Drawing.Point(590, 215);
             this.lastNameCondition.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lastNameCondition.Name = "lastNameCondition";
-            this.lastNameCondition.Size = new System.Drawing.Size(198, 17);
+            this.lastNameCondition.Size = new System.Drawing.Size(157, 14);
             this.lastNameCondition.TabIndex = 28;
             this.lastNameCondition.Text = "MUST ONLY CONTAIN LETTERS";
             this.lastNameCondition.Visible = false;
@@ -367,7 +352,7 @@
             this.emailCondition.Location = new System.Drawing.Point(325, 302);
             this.emailCondition.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.emailCondition.Name = "emailCondition";
-            this.emailCondition.Size = new System.Drawing.Size(106, 17);
+            this.emailCondition.Size = new System.Drawing.Size(83, 14);
             this.emailCondition.TabIndex = 29;
             this.emailCondition.Text = "EMAIL IS TAKEN";
             this.emailCondition.Visible = false;
@@ -380,7 +365,7 @@
             this.usernameCondition.Location = new System.Drawing.Point(641, 300);
             this.usernameCondition.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.usernameCondition.Name = "usernameCondition";
-            this.usernameCondition.Size = new System.Drawing.Size(136, 17);
+            this.usernameCondition.Size = new System.Drawing.Size(106, 14);
             this.usernameCondition.TabIndex = 30;
             this.usernameCondition.Text = "USERNAME IS TAKEN";
             this.usernameCondition.Visible = false;
@@ -393,7 +378,7 @@
             this.requiredFirstName.Location = new System.Drawing.Point(270, 217);
             this.requiredFirstName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.requiredFirstName.Name = "requiredFirstName";
-            this.requiredFirstName.Size = new System.Drawing.Size(178, 17);
+            this.requiredFirstName.Size = new System.Drawing.Size(138, 14);
             this.requiredFirstName.TabIndex = 32;
             this.requiredFirstName.Text = "* THIS IS A REQUIRED FIELD";
             this.requiredFirstName.Visible = false;
@@ -406,7 +391,7 @@
             this.requiredUsername.Location = new System.Drawing.Point(609, 300);
             this.requiredUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.requiredUsername.Name = "requiredUsername";
-            this.requiredUsername.Size = new System.Drawing.Size(178, 17);
+            this.requiredUsername.Size = new System.Drawing.Size(138, 14);
             this.requiredUsername.TabIndex = 33;
             this.requiredUsername.Text = "* THIS IS A REQUIRED FIELD";
             this.requiredUsername.Visible = false;
@@ -419,7 +404,7 @@
             this.requiredLastName.Location = new System.Drawing.Point(609, 215);
             this.requiredLastName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.requiredLastName.Name = "requiredLastName";
-            this.requiredLastName.Size = new System.Drawing.Size(178, 17);
+            this.requiredLastName.Size = new System.Drawing.Size(138, 14);
             this.requiredLastName.TabIndex = 34;
             this.requiredLastName.Text = "* THIS IS A REQUIRED FIELD";
             this.requiredLastName.Visible = false;
@@ -432,7 +417,7 @@
             this.requiredEmail.Location = new System.Drawing.Point(270, 302);
             this.requiredEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.requiredEmail.Name = "requiredEmail";
-            this.requiredEmail.Size = new System.Drawing.Size(178, 17);
+            this.requiredEmail.Size = new System.Drawing.Size(138, 14);
             this.requiredEmail.TabIndex = 35;
             this.requiredEmail.Text = "* THIS IS A REQUIRED FIELD";
             this.requiredEmail.Visible = false;
@@ -445,7 +430,7 @@
             this.requiredPassword.Location = new System.Drawing.Point(259, 411);
             this.requiredPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.requiredPassword.Name = "requiredPassword";
-            this.requiredPassword.Size = new System.Drawing.Size(178, 17);
+            this.requiredPassword.Size = new System.Drawing.Size(138, 14);
             this.requiredPassword.TabIndex = 36;
             this.requiredPassword.Text = "* THIS IS A REQUIRED FIELD";
             this.requiredPassword.Visible = false;
@@ -458,7 +443,7 @@
             this.requiredConfirmPassword.Location = new System.Drawing.Point(609, 409);
             this.requiredConfirmPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.requiredConfirmPassword.Name = "requiredConfirmPassword";
-            this.requiredConfirmPassword.Size = new System.Drawing.Size(178, 17);
+            this.requiredConfirmPassword.Size = new System.Drawing.Size(138, 14);
             this.requiredConfirmPassword.TabIndex = 37;
             this.requiredConfirmPassword.Text = "* THIS IS A REQUIRED FIELD";
             this.requiredConfirmPassword.Visible = false;
@@ -471,7 +456,7 @@
             this.passAndConfirm.Location = new System.Drawing.Point(578, 409);
             this.passAndConfirm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.passAndConfirm.Name = "passAndConfirm";
-            this.passAndConfirm.Size = new System.Drawing.Size(213, 17);
+            this.passAndConfirm.Size = new System.Drawing.Size(169, 14);
             this.passAndConfirm.TabIndex = 38;
             this.passAndConfirm.Text = "Does not match with Password";
             this.passAndConfirm.Visible = false;
@@ -484,7 +469,7 @@
             this.passwordCondition3.Location = new System.Drawing.Point(230, 439);
             this.passwordCondition3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.passwordCondition3.Name = "passwordCondition3";
-            this.passwordCondition3.Size = new System.Drawing.Size(214, 17);
+            this.passwordCondition3.Size = new System.Drawing.Size(169, 14);
             this.passwordCondition3.TabIndex = 39;
             this.passwordCondition3.Text = "Must have numbers and letters";
             this.passwordCondition3.Visible = false;
@@ -497,7 +482,7 @@
             this.passwordCondition2.Location = new System.Drawing.Point(187, 425);
             this.passwordCondition2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.passwordCondition2.Name = "passwordCondition2";
-            this.passwordCondition2.Size = new System.Drawing.Size(272, 17);
+            this.passwordCondition2.Size = new System.Drawing.Size(212, 14);
             this.passwordCondition2.TabIndex = 40;
             this.passwordCondition2.Text = "Must contain uppercase and lowercase";
             this.passwordCondition2.Visible = false;
@@ -510,7 +495,7 @@
             this.passwordCondition1.Location = new System.Drawing.Point(238, 411);
             this.passwordCondition1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.passwordCondition1.Name = "passwordCondition1";
-            this.passwordCondition1.Size = new System.Drawing.Size(205, 17);
+            this.passwordCondition1.Size = new System.Drawing.Size(161, 14);
             this.passwordCondition1.TabIndex = 41;
             this.passwordCondition1.Text = "Must be 8 or more characters";
             this.passwordCondition1.Visible = false;
@@ -521,7 +506,7 @@
             this.label11.Location = new System.Drawing.Point(183, 486);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(218, 17);
+            this.label11.Size = new System.Drawing.Size(177, 13);
             this.label11.TabIndex = 42;
             this.label11.Text = "ENTER VERIFICATION CODE";
             this.label11.Visible = false;
@@ -627,17 +612,16 @@
             // guna2ShadowPanel1
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel1.Controls.Add(this.wrongCode);
             this.guna2ShadowPanel1.Controls.Add(this.showConfirmPasswordButton);
             this.guna2ShadowPanel1.Controls.Add(this.showPasswordIcon);
             this.guna2ShadowPanel1.Controls.Add(this.requiredEmail);
             this.guna2ShadowPanel1.Controls.Add(this.emailCondition);
+            this.guna2ShadowPanel1.Controls.Add(this.guna2Panel1);
             this.guna2ShadowPanel1.Controls.Add(this.lastNamePanel);
             this.guna2ShadowPanel1.Controls.Add(this.guna2Panel2);
             this.guna2ShadowPanel1.Controls.Add(this.guna2Panel5);
             this.guna2ShadowPanel1.Controls.Add(this.guna2Panel4);
             this.guna2ShadowPanel1.Controls.Add(this.guna2Panel3);
-            this.guna2ShadowPanel1.Controls.Add(this.firstNamePanel);
             this.guna2ShadowPanel1.Controls.Add(this.firstNameTextbox);
             this.guna2ShadowPanel1.Controls.Add(this.enterCodeTextBox);
             this.guna2ShadowPanel1.Controls.Add(this.submitCodeButton);
@@ -670,13 +654,6 @@
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(869, 546);
             this.guna2ShadowPanel1.TabIndex = 49;
             this.guna2ShadowPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2ShadowPanel1_Paint);
-            // 
-            // wrongCode
-            // 
-            this.wrongCode.Location = new System.Drawing.Point(0, 0);
-            this.wrongCode.Name = "wrongCode";
-            this.wrongCode.Size = new System.Drawing.Size(100, 23);
-            this.wrongCode.TabIndex = 0;
             // 
             // lastNamePanel
             // 
@@ -728,42 +705,69 @@
             this.guna2Panel3.Size = new System.Drawing.Size(309, 5);
             this.guna2Panel3.TabIndex = 49;
             // 
-            // firstNamePanel
+            // guna2Panel1
             // 
-            this.firstNamePanel.Location = new System.Drawing.Point(0, 0);
-            this.firstNamePanel.Name = "firstNamePanel";
-            this.firstNamePanel.ShadowDecoration.Parent = this.firstNamePanel;
-            this.firstNamePanel.Size = new System.Drawing.Size(200, 100);
-            this.firstNamePanel.TabIndex = 50;
+            this.guna2Panel1.BorderRadius = 5;
+            this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
+            this.guna2Panel1.Location = new System.Drawing.Point(108, 209);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
+            this.guna2Panel1.Size = new System.Drawing.Size(301, 5);
+            this.guna2Panel1.TabIndex = 49;
+            // 
+            // signUpPic
+            // 
+            this.signUpPic.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.login_signup_puwshee;
+            this.signUpPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.signUpPic.Location = new System.Drawing.Point(-33, 186);
+            this.signUpPic.Margin = new System.Windows.Forms.Padding(2);
+            this.signUpPic.Name = "signUpPic";
+            this.signUpPic.Size = new System.Drawing.Size(121, 110);
+            this.signUpPic.TabIndex = 11;
+            this.signUpPic.TabStop = false;
+            // 
+            // backButton
+            // 
+            this.backButton.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Back;
+            this.backButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.backButton.BorderRadius = 10;
+            this.backButton.CheckedState.Parent = this.backButton;
+            this.backButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.backButton.CustomImages.Parent = this.backButton;
+            this.backButton.FillColor = System.Drawing.Color.Transparent;
+            this.backButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.backButton.ForeColor = System.Drawing.Color.White;
+            this.backButton.HoverState.Parent = this.backButton;
+            this.backButton.ImageSize = new System.Drawing.Size(30, 30);
+            this.backButton.Location = new System.Drawing.Point(12, 12);
+            this.backButton.Name = "backButton";
+            this.backButton.ShadowDecoration.Parent = this.backButton;
+            this.backButton.Size = new System.Drawing.Size(43, 36);
+            this.backButton.TabIndex = 50;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
             // welcomeLabel
             // 
             this.welcomeLabel.BackColor = System.Drawing.Color.Transparent;
-            this.welcomeLabel.Location = new System.Drawing.Point(0, 0);
+            this.welcomeLabel.Font = new System.Drawing.Font("Robaga Rounded Black", 25F);
+            this.welcomeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
+            this.welcomeLabel.Location = new System.Drawing.Point(570, 13);
             this.welcomeLabel.Name = "welcomeLabel";
-            this.welcomeLabel.Size = new System.Drawing.Size(0, 0);
-            this.welcomeLabel.TabIndex = 1;
-            this.welcomeLabel.Text = null;
-            // 
-            // loginPic
-            // 
-            this.loginPic.Location = new System.Drawing.Point(0, 0);
-            this.loginPic.Name = "loginPic";
-            this.loginPic.Size = new System.Drawing.Size(100, 50);
-            this.loginPic.TabIndex = 0;
-            this.loginPic.TabStop = false;
+            this.welcomeLabel.Size = new System.Drawing.Size(351, 42);
+            this.welcomeLabel.TabIndex = 51;
+            this.welcomeLabel.Text = "CREATE AN ACCOUNT";
             // 
             // Sign_Up
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.ClientSize = new System.Drawing.Size(933, 595);
-            this.Controls.Add(this.loginPic);
             this.Controls.Add(this.welcomeLabel);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.backButton);
             this.Controls.Add(this.guna2ShadowPanel1);
             this.Controls.Add(this.label11);
+            this.Controls.Add(this.signUpPic);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Coral;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -772,11 +776,10 @@
             this.Opacity = 0D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Sign_Up_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPicture)).EndInit();
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2ShadowPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.loginPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.signUpPic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -793,7 +796,6 @@
         private Guna.UI2.WinForms.Guna2Button uploadimageButton;
         private Guna.UI2.WinForms.Guna2Button signupButton;
         protected internal Guna.UI2.WinForms.Guna2TextBox lastNameTextbox;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label firstNameCondition;
         private System.Windows.Forms.Label lastNameCondition;
         private System.Windows.Forms.Label emailCondition;
@@ -815,15 +817,15 @@
         private System.Windows.Forms.Timer fadeIn;
         private System.Windows.Forms.Timer fadeOut;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel welcomeLabel;
-        private System.Windows.Forms.PictureBox loginPic;
-        private Guna.UI2.WinForms.Guna2Panel firstNamePanel;
         private Guna.UI2.WinForms.Guna2Panel lastNamePanel;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2TextBox enterCodeTextBox;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
-        private System.Windows.Forms.Label wrongCode;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private System.Windows.Forms.PictureBox signUpPic;
+        private Guna.UI2.WinForms.Guna2Button backButton;
+        private Guna.UI2.WinForms.Guna2HtmlLabel welcomeLabel;
     }
 }
