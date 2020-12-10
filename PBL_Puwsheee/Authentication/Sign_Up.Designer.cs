@@ -61,6 +61,7 @@
             this.fadeIn = new System.Windows.Forms.Timer(this.components);
             this.fadeOut = new System.Windows.Forms.Timer(this.components);
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.wrongCode = new System.Windows.Forms.Label();
             this.lastNamePanel = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
@@ -69,7 +70,6 @@
             this.firstNamePanel = new Guna.UI2.WinForms.Guna2Panel();
             this.welcomeLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.loginPic = new System.Windows.Forms.PictureBox();
-            this.wrongCode = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPicture)).BeginInit();
             this.guna2ShadowPanel1.SuspendLayout();
@@ -96,7 +96,7 @@
             this.firstNameTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.firstNameTextbox.HoverState.Parent = this.firstNameTextbox;
             this.firstNameTextbox.Location = new System.Drawing.Point(108, 171);
-            this.firstNameTextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.firstNameTextbox.Margin = new System.Windows.Forms.Padding(4);
             this.firstNameTextbox.Name = "firstNameTextbox";
             this.firstNameTextbox.PasswordChar = '\0';
             this.firstNameTextbox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
@@ -280,7 +280,7 @@
             this.uploadimageButton.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.uploadimageButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.uploadimageButton.HoverState.Parent = this.uploadimageButton;
-            this.uploadimageButton.Location = new System.Drawing.Point(382, 112);
+            this.uploadimageButton.Location = new System.Drawing.Point(381, 112);
             this.uploadimageButton.Margin = new System.Windows.Forms.Padding(4);
             this.uploadimageButton.Name = "uploadimageButton";
             this.uploadimageButton.ShadowDecoration.Parent = this.uploadimageButton;
@@ -671,6 +671,13 @@
             this.guna2ShadowPanel1.TabIndex = 49;
             this.guna2ShadowPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2ShadowPanel1_Paint);
             // 
+            // wrongCode
+            // 
+            this.wrongCode.Location = new System.Drawing.Point(0, 0);
+            this.wrongCode.Name = "wrongCode";
+            this.wrongCode.Size = new System.Drawing.Size(100, 23);
+            this.wrongCode.TabIndex = 0;
+            // 
             // lastNamePanel
             // 
             this.lastNamePanel.BorderRadius = 5;
@@ -721,25 +728,30 @@
             this.guna2Panel3.Size = new System.Drawing.Size(309, 5);
             this.guna2Panel3.TabIndex = 49;
             // 
-            // guna2Panel4
+            // firstNamePanel
             // 
-            this.guna2Panel4.BorderRadius = 5;
-            this.guna2Panel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.guna2Panel4.Location = new System.Drawing.Point(108, 400);
-            this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
-            this.guna2Panel4.Size = new System.Drawing.Size(293, 5);
-            this.guna2Panel4.TabIndex = 49;
+            this.firstNamePanel.Location = new System.Drawing.Point(0, 0);
+            this.firstNamePanel.Name = "firstNamePanel";
+            this.firstNamePanel.ShadowDecoration.Parent = this.firstNamePanel;
+            this.firstNamePanel.Size = new System.Drawing.Size(200, 100);
+            this.firstNamePanel.TabIndex = 50;
             // 
-            // guna2Panel5
+            // welcomeLabel
             // 
-            this.guna2Panel5.BorderRadius = 5;
-            this.guna2Panel5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.guna2Panel5.Location = new System.Drawing.Point(438, 400);
-            this.guna2Panel5.Name = "guna2Panel5";
-            this.guna2Panel5.ShadowDecoration.Parent = this.guna2Panel5;
-            this.guna2Panel5.Size = new System.Drawing.Size(309, 5);
-            this.guna2Panel5.TabIndex = 49;
+            this.welcomeLabel.BackColor = System.Drawing.Color.Transparent;
+            this.welcomeLabel.Location = new System.Drawing.Point(0, 0);
+            this.welcomeLabel.Name = "welcomeLabel";
+            this.welcomeLabel.Size = new System.Drawing.Size(0, 0);
+            this.welcomeLabel.TabIndex = 1;
+            this.welcomeLabel.Text = null;
+            // 
+            // loginPic
+            // 
+            this.loginPic.Location = new System.Drawing.Point(0, 0);
+            this.loginPic.Name = "loginPic";
+            this.loginPic.Size = new System.Drawing.Size(100, 50);
+            this.loginPic.TabIndex = 0;
+            this.loginPic.TabStop = false;
             // 
             // Sign_Up
             // 
