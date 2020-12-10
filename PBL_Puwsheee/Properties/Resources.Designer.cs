@@ -100,6 +100,16 @@ namespace PBL_Puwsheee.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap angryCalendar {
+            get {
+                object obj = ResourceManager.GetObject("angryCalendar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream Anxiety {
@@ -241,6 +251,16 @@ namespace PBL_Puwsheee.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap contentedCalendar {
+            get {
+                object obj = ResourceManager.GetObject("contentedCalendar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cook {
             get {
                 object obj = ResourceManager.GetObject("Cook", resourceCulture);
@@ -254,6 +274,16 @@ namespace PBL_Puwsheee.Properties {
         internal static System.Drawing.Bitmap Disgusted {
             get {
                 object obj = ResourceManager.GetObject("Disgusted", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap disgustedCalendar {
+            get {
+                object obj = ResourceManager.GetObject("disgustedCalendar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -370,6 +400,16 @@ namespace PBL_Puwsheee.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap flirtyCalendar {
+            get {
+                object obj = ResourceManager.GetObject("flirtyCalendar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Game {
             get {
                 object obj = ResourceManager.GetObject("Game", resourceCulture);
@@ -449,6 +489,16 @@ namespace PBL_Puwsheee.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap happyCalendar {
+            get {
+                object obj = ResourceManager.GetObject("happyCalendar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap left {
             get {
                 object obj = ResourceManager.GetObject("left", resourceCulture);
@@ -489,9 +539,29 @@ namespace PBL_Puwsheee.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mehCalendar {
+            get {
+                object obj = ResourceManager.GetObject("mehCalendar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Miserable {
             get {
                 object obj = ResourceManager.GetObject("Miserable", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap miserableCalendar {
+            get {
+                object obj = ResourceManager.GetObject("miserableCalendar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -820,6 +890,16 @@ namespace PBL_Puwsheee.Properties {
         internal static System.Drawing.Bitmap Sad {
             get {
                 object obj = ResourceManager.GetObject("Sad", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sadCalendar {
+            get {
+                object obj = ResourceManager.GetObject("sadCalendar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

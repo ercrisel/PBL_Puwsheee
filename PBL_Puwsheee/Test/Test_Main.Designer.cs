@@ -118,11 +118,12 @@
             this.guna2Panel1.Controls.Add(this.anxietytestButton);
             this.guna2Panel1.Controls.Add(this.guna2TextBox1);
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.guna2Panel1.Location = new System.Drawing.Point(7, 100);
+            this.guna2Panel1.Location = new System.Drawing.Point(39, 117);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(265, 297);
             this.guna2Panel1.TabIndex = 19;
+            this.guna2Panel1.Click += new System.EventHandler(this.depressiontestButton_Click);
             // 
             // guna2GradientPanel1
             // 
@@ -159,9 +160,11 @@
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.SelectedText = "";
+            this.guna2TextBox1.SelectionStart = 104;
             this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
             this.guna2TextBox1.Size = new System.Drawing.Size(221, 63);
             this.guna2TextBox1.TabIndex = 20;
+            this.guna2TextBox1.Click += new System.EventHandler(this.depressiontestButton_Click);
             // 
             // guna2Panel2
             // 
@@ -170,11 +173,12 @@
             this.guna2Panel2.Controls.Add(this.stresstestbutton);
             this.guna2Panel2.Controls.Add(this.guna2TextBox2);
             this.guna2Panel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.guna2Panel2.Location = new System.Drawing.Point(302, 100);
+            this.guna2Panel2.Location = new System.Drawing.Point(334, 117);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(270, 297);
             this.guna2Panel2.TabIndex = 21;
+            this.guna2Panel2.Click += new System.EventHandler(this.depressiontestButton_Click);
             // 
             // guna2GradientPanel2
             // 
@@ -215,6 +219,7 @@
             this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
             this.guna2TextBox2.Size = new System.Drawing.Size(214, 59);
             this.guna2TextBox2.TabIndex = 20;
+            this.guna2TextBox2.Click += new System.EventHandler(this.depressiontestButton_Click);
             // 
             // guna2Panel3
             // 
@@ -223,11 +228,12 @@
             this.guna2Panel3.Controls.Add(this.depressiontestButton);
             this.guna2Panel3.Controls.Add(this.guna2TextBox3);
             this.guna2Panel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.guna2Panel3.Location = new System.Drawing.Point(607, 100);
+            this.guna2Panel3.Location = new System.Drawing.Point(639, 117);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
             this.guna2Panel3.Size = new System.Drawing.Size(265, 297);
             this.guna2Panel3.TabIndex = 22;
+            this.guna2Panel3.Click += new System.EventHandler(this.depressiontestButton_Click);
             // 
             // guna2GradientPanel3
             // 
@@ -268,13 +274,14 @@
             this.guna2TextBox3.ShadowDecoration.Parent = this.guna2TextBox3;
             this.guna2TextBox3.Size = new System.Drawing.Size(213, 59);
             this.guna2TextBox3.TabIndex = 20;
+            this.guna2TextBox3.Click += new System.EventHandler(this.depressiontestButton_Click);
             // 
             // Test_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.ClientSize = new System.Drawing.Size(883, 531);
+            this.ClientSize = new System.Drawing.Size(936, 543);
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);

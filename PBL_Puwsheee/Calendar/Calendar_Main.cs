@@ -141,36 +141,36 @@ namespace PBL_Puwsheee
                 switch (mood.Rank)
                 {
                     case 1:
-                       // dateItem.BackgroundImage = PBL_Puwsheee.Properties.Resources.Angry;
-                        dateItem.BackColor1 = Color.FromArgb(142, 54, 51);
+                        dateItem.BackgroundImage = PBL_Puwsheee.Properties.Resources.angryCalendar;
+                        //dateItem.BackColor1 = Color.FromArgb(142, 54, 51);
                         break;
                     case 2:
-                        //dateItem.BackgroundImage = PBL_Puwsheee.Properties.Resources.Disgusted; 
-                        dateItem.BackColor1 = Color.FromArgb(82, 98, 51);
+                        dateItem.BackgroundImage = PBL_Puwsheee.Properties.Resources.disgustedCalendar; 
+                        //dateItem.BackColor1 = Color.FromArgb(82, 98, 51);
                         break;
                     case 3:
-                        //dateItem.BackgroundImage = PBL_Puwsheee.Properties.Resources.Miserable;
-                        dateItem.BackColor1 = Color.FromArgb(48, 88, 105);
+                        dateItem.BackgroundImage = PBL_Puwsheee.Properties.Resources.miserableCalendar;
+                        //dateItem.BackColor1 = Color.FromArgb(48, 88, 105);
                         break;
                     case 4:
-                        //dateItem.BackgroundImage = PBL_Puwsheee.Properties.Resources.Sad;
-                        dateItem.BackColor1 = Color.FromArgb(110, 145, 148);
+                        dateItem.BackgroundImage = PBL_Puwsheee.Properties.Resources.sadCalendar;
+                        //dateItem.BackColor1 = Color.FromArgb(110, 145, 148);
                         break;
                     case 5:
-                        //dateItem.BackgroundImage = PBL_Puwsheee.Properties.Resources.Meh;
-                        dateItem.BackColor1 = Color.FromArgb(184, 197, 193);
+                        dateItem.BackgroundImage = PBL_Puwsheee.Properties.Resources.mehCalendar;
+                        //dateItem.BackColor1 = Color.FromArgb(184, 197, 193);
                         break;
                     case 6:
-                        //dateItem.BackgroundImage = PBL_Puwsheee.Properties.Resources.Flirty;
-                        dateItem.BackColor1 = Color.FromArgb(214, 145, 123);
+                        dateItem.BackgroundImage = PBL_Puwsheee.Properties.Resources.flirtyCalendar;
+                        //dateItem.BackColor1 = Color.FromArgb(214, 145, 123);
                         break;
                     case 7:
-                        //dateItem.BackgroundImage = PBL_Puwsheee.Properties.Resources.Contented;
-                        dateItem.BackColor1 = Color.FromArgb(141, 121, 159);
+                        dateItem.BackgroundImage = PBL_Puwsheee.Properties.Resources.contentedCalendar;
+                        //dateItem.BackColor1 = Color.FromArgb(141, 121, 159);
                         break;
                     case 8:
-                       // dateItem.BackgroundImage = PBL_Puwsheee.Properties.Resources.Happy;
-                        dateItem.BackColor1 = Color.FromArgb(252, 164, 62);
+                        dateItem.BackgroundImage = PBL_Puwsheee.Properties.Resources.happyCalendar;
+                        //dateItem.BackColor1 = Color.FromArgb(252, 164, 62);
                         break;
                     default:
                         dateItem.BackColor1 = Color.FromArgb(255, 246, 227);

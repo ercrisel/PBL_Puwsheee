@@ -266,8 +266,8 @@
             this.guna2ShadowPanel1.Controls.Add(this.startDateTimePicker);
             this.guna2ShadowPanel1.Controls.Add(this.seeresultButton);
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.guna2ShadowPanel1.Location = new System.Drawing.Point(604, 41);
-            this.guna2ShadowPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2ShadowPanel1.Location = new System.Drawing.Point(667, 34);
+            this.guna2ShadowPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.Radius = 10;
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
@@ -284,7 +284,7 @@
             this.endDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.endDateTimePicker.HoverState.Parent = this.endDateTimePicker;
             this.endDateTimePicker.Location = new System.Drawing.Point(23, 67);
-            this.endDateTimePicker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.endDateTimePicker.Margin = new System.Windows.Forms.Padding(2);
             this.endDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.endDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.endDateTimePicker.Name = "endDateTimePicker";
@@ -303,7 +303,7 @@
             this.startDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.startDateTimePicker.HoverState.Parent = this.startDateTimePicker;
             this.startDateTimePicker.Location = new System.Drawing.Point(24, 22);
-            this.startDateTimePicker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.startDateTimePicker.Margin = new System.Windows.Forms.Padding(2);
             this.startDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.startDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.startDateTimePicker.Name = "startDateTimePicker";
@@ -317,12 +317,12 @@
             // 
             this.linkLabel1.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(60)))), ((int)(((byte)(45)))));
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.Font = new System.Drawing.Font("Typo Round Bold Demo", 8F);
             this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.linkLabel1.Location = new System.Drawing.Point(705, 24);
+            this.linkLabel1.Location = new System.Drawing.Point(798, 18);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(160, 15);
+            this.linkLabel1.Size = new System.Drawing.Size(129, 14);
             this.linkLabel1.TabIndex = 17;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "See Previous Highlights";
@@ -1127,7 +1127,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.ClientSize = new System.Drawing.Size(885, 536);
+            this.ClientSize = new System.Drawing.Size(936, 543);
             this.Controls.Add(this.viewChartsButton);
             this.Controls.Add(this.guna2ShadowPanel1);
             this.Controls.Add(this.activity12CountIcon);

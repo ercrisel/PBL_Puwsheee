@@ -669,5 +669,29 @@
   <ItemGroup>
     <None Include="Resources\login signup puwshee.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\angryCalendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contentedCalendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disgustedCalendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flirtyCalendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happyCalendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mehCalendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miserableCalendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sadCalendar.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

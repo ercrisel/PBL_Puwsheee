@@ -127,7 +127,9 @@ namespace PBL_Puwsheee
             #endregion
 
             if (moodEntry.IsExistingRecord())
+            {
                 IsSettingsEditable(false);
+            }
             else
                 IsSettingsEditable(true);
         }
