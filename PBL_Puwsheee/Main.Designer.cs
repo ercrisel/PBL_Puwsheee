@@ -236,7 +236,6 @@
             // 
             // testButton
             // 
-            this.testButton.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.Test;
             this.testButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.testButton.BorderRadius = 10;
             this.testButton.CheckedState.Parent = this.testButton;

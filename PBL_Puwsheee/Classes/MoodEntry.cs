@@ -69,6 +69,7 @@ namespace PBL_Puwsheee.Classes
         public bool IsExistingRecord()
         {
             var isExisting = false;
+            username = Log_In.publicUserName;
 
             try
             {
