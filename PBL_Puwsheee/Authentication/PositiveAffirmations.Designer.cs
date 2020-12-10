@@ -88,7 +88,7 @@
             this.quotations.AutoSize = true;
             this.quotations.Font = new System.Drawing.Font("Robaga Rounded Black", 15F);
             this.quotations.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.quotations.Location = new System.Drawing.Point(143, 78);
+            this.quotations.Location = new System.Drawing.Point(150, 69);
             this.quotations.MaximumSize = new System.Drawing.Size(600, 0);
             this.quotations.Name = "quotations";
             this.quotations.Size = new System.Drawing.Size(588, 216);
@@ -98,19 +98,20 @@
             // 
             // PositiveAffirmations
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.ClientSize = new System.Drawing.Size(1020, 610);
             this.Controls.Add(this.quotationsPanel);
             this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Typo Round Bold Demo", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PositiveAffirmations";
             this.Opacity = 0D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PositiveAffirmations";
+            this.Load += new System.EventHandler(this.PositiveAffirmations_Load_1);
             this.quotationsPanel.ResumeLayout(false);
             this.quotationsPanel.PerformLayout();
             this.ResumeLayout(false);

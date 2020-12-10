@@ -33,8 +33,8 @@ namespace PBL_Puwsheee.Playables
             this.fadeIn = new System.Windows.Forms.Timer(this.components);
             this.fadeOut = new System.Windows.Forms.Timer(this.components);
             this.backButton = new Guna.UI2.WinForms.Guna2Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.background = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.background)).BeginInit();
             this.SuspendLayout();
             // 
             // fadeIn
@@ -60,7 +60,6 @@ namespace PBL_Puwsheee.Playables
             this.backButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.backButton.ForeColor = System.Drawing.Color.White;
             this.backButton.HoverState.Parent = this.backButton;
-            this.backButton.Image = global::PBL_Puwsheee.Properties.Resources.X;
             this.backButton.ImageSize = new System.Drawing.Size(30, 30);
             this.backButton.Location = new System.Drawing.Point(977, 8);
             this.backButton.Name = "backButton";
@@ -70,15 +69,14 @@ namespace PBL_Puwsheee.Playables
             this.backButton.UseTransparentBackground = true;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
-            // pictureBox1
+            // background
             // 
-            this.pictureBox1.Image = global::PBL_Puwsheee.Properties.Resources.breathingGIF;
-            this.pictureBox1.Location = new System.Drawing.Point(-2, -2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1020, 610);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.background.Location = new System.Drawing.Point(-2, -2);
+            this.background.Name = "background";
+            this.background.Size = new System.Drawing.Size(1020, 610);
+            this.background.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.background.TabIndex = 0;
+            this.background.TabStop = false;
             // 
             // NewBreathing
             // 
@@ -87,20 +85,20 @@ namespace PBL_Puwsheee.Playables
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.ClientSize = new System.Drawing.Size(1020, 610);
             this.Controls.Add(this.backButton);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.background);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NewBreathing";
             this.Opacity = 0D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NewBreathing";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.background)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox background;
         private System.Windows.Forms.Timer fadeIn;
         private System.Windows.Forms.Timer fadeOut;
         private Guna.UI2.WinForms.Guna2Button backButton;

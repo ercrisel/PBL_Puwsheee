@@ -131,17 +131,9 @@ namespace PBL_Puwsheee
 
         private void Log_In_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            //omg
-        }
-
-        private void Log_In_Load_1(object sender, EventArgs e)
-        {
             usernameTextbox.Focus();
+            loginPic.BackgroundImage = PBL_Puwsheee.Properties.Resources.login_signup_puwshee;
+            showPasswordIcon.BackgroundImage = PBL_Puwsheee.Properties.Resources.show_password;
         }
 
         private void enterKeyLogIn(object sender, KeyEventArgs e)
@@ -155,13 +147,13 @@ namespace PBL_Puwsheee
 
         private void showPasswordIcon_Click(object sender, EventArgs e)
         {
-            if (passwordTextbox.PasswordChar == '*')
+            if (passwordTextbox.PasswordChar == '•')
             {
                 passwordTextbox.PasswordChar = '\0';
             }
             else
             {
-                passwordTextbox.PasswordChar = '*';
+                passwordTextbox.PasswordChar = '•';
             }
         }
     }

@@ -211,5 +211,27 @@ namespace PBL_Puwsheee.Authentication.Class
         {
             cond1.Visible = cond2.Visible = cond3.Visible = cond4.Visible = cond5.Visible = cond6.Visible = false;
         }
+
+        public void DeactivateAccount()
+        {
+            SqlConnection connect = new SqlConnection(connectionString);
+            connect.Open();
+            SqlCommand command = new SqlCommand("spDeactivateAccount", connect);
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.AddWithValue("@Username", username);
+            command.ExecuteNonQuery();
+            connect.Close();
+        }
+        public void ClearData()
+        {
+            SqlConnection connect = new SqlConnection(connectionString);
+            connect.Open();
+            SqlCommand command = new SqlCommand("spClearData", connect);
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.AddWithValue("@Username", username);
+            command.ExecuteNonQuery();
+            connect.Close();
+
+        }
     }
 }

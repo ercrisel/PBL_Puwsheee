@@ -41,7 +41,6 @@ namespace PBL_Puwsheee.Playables
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::PBL_Puwsheee.Properties.Resources.gratitudeGIF;
             this.pictureBox1.Location = new System.Drawing.Point(0, -2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1021, 614);
@@ -71,7 +70,6 @@ namespace PBL_Puwsheee.Playables
             this.playButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.playButton.ForeColor = System.Drawing.Color.White;
             this.playButton.HoverState.Parent = this.playButton;
-            this.playButton.Image = global::PBL_Puwsheee.Properties.Resources.gratPlay;
             this.playButton.ImageOffset = new System.Drawing.Point(1, 0);
             this.playButton.ImageSize = new System.Drawing.Size(95, 95);
             this.playButton.Location = new System.Drawing.Point(456, 234);
@@ -95,7 +93,6 @@ namespace PBL_Puwsheee.Playables
             this.pauseButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.pauseButton.ForeColor = System.Drawing.Color.White;
             this.pauseButton.HoverState.Parent = this.pauseButton;
-            this.pauseButton.Image = global::PBL_Puwsheee.Properties.Resources.gratPause;
             this.pauseButton.ImageOffset = new System.Drawing.Point(1, 0);
             this.pauseButton.ImageSize = new System.Drawing.Size(95, 95);
             this.pauseButton.Location = new System.Drawing.Point(456, 234);
@@ -121,7 +118,6 @@ namespace PBL_Puwsheee.Playables
             this.backButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.backButton.ForeColor = System.Drawing.Color.White;
             this.backButton.HoverState.Parent = this.backButton;
-            this.backButton.Image = global::PBL_Puwsheee.Properties.Resources.gratClose;
             this.backButton.ImageOffset = new System.Drawing.Point(1, 0);
             this.backButton.ImageSize = new System.Drawing.Size(65, 65);
             this.backButton.Location = new System.Drawing.Point(972, 12);

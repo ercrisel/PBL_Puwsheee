@@ -633,6 +633,41 @@
   <ItemGroup>
     <None Include="Resources\relaxPlay.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\sett.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calmm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Music1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BreathPlayable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musicPlayables.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rainPlayables.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnergizerPlayable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GratitudePlayable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AnxietyPlayable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AnxietyPlayable1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RelaxationPlayable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login signup puwshee.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

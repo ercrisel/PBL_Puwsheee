@@ -15,6 +15,8 @@ namespace PBL_Puwsheee
         UserInfo userInfo;
 
         private Form activeForm;
+
+        #region For Rounded Corners
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
         private static extern IntPtr CreateRoundRectRgn
@@ -26,7 +28,8 @@ namespace PBL_Puwsheee
             int nWidthEllipse, // height of ellipse
             int nHeightEllipse // width of ellipse
         );
-
+        #endregion
+        #region Double Buffers
         protected override CreateParams CreateParams // double buffeirng daw sabi ni google 
         {
             get
@@ -43,17 +46,18 @@ namespace PBL_Puwsheee
             DemoProp.SetValue(cont, true, null);
         }
 
-        //internal static class NativeWinAPI
-        //{
-        //    internal static readonly int GWL_EXSTYLE = -20;
-        //    internal static readonly int WS_EX_COMPOSITED = 0x02000000;
+        internal static class NativeWinAPI
+        {
+            internal static readonly int GWL_EXSTYLE = -20;
+            internal static readonly int WS_EX_COMPOSITED = 0x02000000;
 
-        //    [DllImport("user32")]
-        //    internal static extern int GetWindowLong(IntPtr hWnd, int nIndex);
+            [DllImport("user32")]
+            internal static extern int GetWindowLong(IntPtr hWnd, int nIndex);
 
-        //    [DllImport("user32")]
-        //    internal static extern int SetWindowLong(IntPtr hWnd, int nIndex, int dwNewLong);
-        //}
+            [DllImport("user32")]
+            internal static extern int SetWindowLong(IntPtr hWnd, int nIndex, int dwNewLong);
+        }
+        #endregion  
 
         public Main()
         {
@@ -63,16 +67,16 @@ namespace PBL_Puwsheee
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
 
+            #region Double Buffer Functionality
             this.DoubleBuffered = true;
             enableDoubleBuff(displayPanel);
             enableDoubleBuff(bgPanel);
             enableDoubleBuff(navBarPanel);
-            enableDoubleBuff(navBarIconsPanel);
-            enableDoubleBuff(settingsPanel);
 
-            //int style = NativeWinAPI.GetWindowLong(this.Handle, NativeWinAPI.GWL_EXSTYLE);
-            //style |= NativeWinAPI.WS_EX_COMPOSITED;
-            //NativeWinAPI.SetWindowLong(this.Handle, NativeWinAPI.GWL_EXSTYLE, style);
+            int style = NativeWinAPI.GetWindowLong(this.Handle, NativeWinAPI.GWL_EXSTYLE);
+            style |= NativeWinAPI.WS_EX_COMPOSITED;
+            NativeWinAPI.SetWindowLong(this.Handle, NativeWinAPI.GWL_EXSTYLE, style);
+            #endregion
         }
 
         private void Main_Load(object sender, EventArgs e)
@@ -81,14 +85,23 @@ namespace PBL_Puwsheee
             usernameLabel.Text = username;
             user.Username = username;
             user.LoadPicture(usericonPicture);
-            indicatorButton.Location = new Point(46, 54);
             user.Username = Log_In.publicUserName;
             userInfo.Username = Log_In.publicUserName;
 
+            #region Load images
+            moodtrackerButton.Image = PBL_Puwsheee.Properties.Resources.Mood_Tracker;
+            calendarButton.Image = PBL_Puwsheee.Properties.Resources.Calendar;
+            analysisButton.Image = PBL_Puwsheee.Properties.Resources.Analysis;
+            testButton.Image = PBL_Puwsheee.Properties.Resources.Test;
+            playablesButton.Image = PBL_Puwsheee.Properties.Resources.calmm;
+            settingsButton.Image = PBL_Puwsheee.Properties.Resources.sett;
+            #endregion
         }
 
         private void openChildForm(Form childForm)
         {
+            displayPanel.Visible = true;
+            bgPanel.Visible = true;
             if (activeForm != null)
                 activeForm.Close();
             activeForm = childForm;
@@ -103,37 +116,76 @@ namespace PBL_Puwsheee
         private void clickMoodTracker(object sender, EventArgs e)
         {
             openChildForm(new MoodTracker(userInfo));
-            indicatorButton.Location = new Point(46, 54);
+            moodtrackerButton.BackColor = Color.FromArgb(86, 75, 97);
+            indicator.Top = 59;
+            #region Back to original color
+            calendarButton.BackColor = Color.FromArgb(33, 21, 41);
+            analysisButton.BackColor = Color.FromArgb(33, 21, 41);
+            testButton.BackColor = Color.FromArgb(33, 21, 41);
+            playablesButton.BackColor = Color.FromArgb(33, 21, 41);
+            #endregion
         }
 
         private void clickCalendar(object sender, EventArgs e)
         {
             openChildForm(new Calendar_Main(userInfo));
-            indicatorButton.Location = new Point(46, 110);
+            calendarButton.BackColor = Color.FromArgb(86, 75, 97);
+            indicator.Top = 125;
+            #region Back to original color
+            moodtrackerButton.BackColor = Color.FromArgb(33, 21, 41);
+            analysisButton.BackColor = Color.FromArgb(33, 21, 41);
+            testButton.BackColor = Color.FromArgb(33, 21, 41);
+            playablesButton.BackColor = Color.FromArgb(33, 21, 41);
+            #endregion
         }
-        
+
         private void clickAnalysis(object sender, EventArgs e)
         {
             openChildForm(new Analysis(userInfo));
-            indicatorButton.Location = new Point(46, 168);
+            analysisButton.BackColor = Color.FromArgb(86, 75, 97);
+            indicator.Top = 191;
+            #region Back to original color
+            calendarButton.BackColor = Color.FromArgb(33, 21, 41);
+            moodtrackerButton.BackColor = Color.FromArgb(33, 21, 41);
+            testButton.BackColor = Color.FromArgb(33, 21, 41);
+            playablesButton.BackColor = Color.FromArgb(33, 21, 41);
+            #endregion
         }
 
         private void clickTest(object sender, EventArgs e)
         {
             openChildForm(new Test.Test_Main());
-            indicatorButton.Location = new Point(46, 232);
+            testButton.BackColor = Color.FromArgb(86, 75, 97);
+            indicator.Top = 257;
+            #region Back to original color
+            moodtrackerButton.BackColor = Color.FromArgb(33, 21, 41);
+            calendarButton.BackColor = Color.FromArgb(33, 21, 41);
+            analysisButton.BackColor = Color.FromArgb(33, 21, 41);
+            playablesButton.BackColor = Color.FromArgb(33, 21, 41);
+            #endregion
         }
 
         private void clickPlayables(object sender, EventArgs e)
         {
-            openChildForm(new Playables.NewPlayables());
-            indicatorButton.Location = new Point(46, 292);
+            Playables.NewPlayables playables= new Playables.NewPlayables() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            this.guna2ShadowPanel1.Controls.Add(playables);
+            playables.Show();
+            displayPanel.Visible = false;
+            bgPanel.Visible = false;
+
+            playablesButton.BackColor = Color.FromArgb(86, 75, 97);
+            indicator.Top = 323;
+            #region Back to original color
+            moodtrackerButton.BackColor = Color.FromArgb(33, 21, 41);
+            calendarButton.BackColor = Color.FromArgb(33, 21, 41);
+            analysisButton.BackColor = Color.FromArgb(33, 21, 41);
+            testButton.BackColor = Color.FromArgb(33, 21, 41);
+            #endregion
         }
 
         private void clickVisualization(object sender, EventArgs e)
         {
             openChildForm(new MainVisualization());
-            indicatorButton.Location = new Point(46, 346);
         }
 
         private void exitPuwshee(object sender, EventArgs e)
@@ -143,6 +195,7 @@ namespace PBL_Puwsheee
 
         private void clickOptions(object sender, EventArgs e)
         {
+            #region Form Background
             Form bg = new Form();
             Form settings = new Settings.Settings_Main();
             bg.StartPosition = FormStartPosition.CenterScreen;
@@ -155,6 +208,7 @@ namespace PBL_Puwsheee
             bg.ShowInTaskbar = false;
             bg.Size = new Size(1020, 610);
             bg.Show();
+            #endregion
 
             settings.Owner = bg;
             settings.ShowDialog();
@@ -176,11 +230,11 @@ namespace PBL_Puwsheee
             this.WindowState = FormWindowState.Maximized;
         }
 
+        #region Sliding Panel (might not use this anymore)
         private void navBarPanelHover(object sender, EventArgs e)
         {
-            animateTimer.Start();
+          //  animateTimer.Start();
           //  tm.Start();
-      
         }
 
         bool hided = true;
@@ -190,10 +244,7 @@ namespace PBL_Puwsheee
         {
             if(hided)
             {
-                if (settingsLabel.Left <= 63) settingsLabel.Left += 10;
-             //   if (bgPanel.Width >= 806) bgPanel.Width -= 22;
-                if (bgPanel.Location.X <= 201) bgPanel.Location = new Point(bgPanel.Location.X + 22, 40); //bgPanel.Left += 22;
-
+                
                 navBarPanel.Width += 25;
 
                 if(navBarPanel.Width >= 165)
@@ -205,10 +256,6 @@ namespace PBL_Puwsheee
             }
             else
             {
-                if (settingsLabel.Left >= 17) settingsLabel.Left -= 10;
-            //    if (bgPanel.Width <= 917) bgPanel.Width += 22;
-                if (bgPanel.Location.X >= 89) bgPanel.Location = new Point(bgPanel.Location.X - 22, 40);//bgPanel.Left -= 22;
-
 
                 navBarPanel.Width -= 25;
 
@@ -220,17 +267,6 @@ namespace PBL_Puwsheee
             }
         }
 
-        private void fadeIn_Tick(object sender, EventArgs e)
-        {
-            Fade.fadeInEffect(this, fadeIn);
-        }
-
-        private void fadeOut_Tick(object sender, EventArgs e)
-        {
-            Fade.exitFade(this);
-        }
-
-        // eto code
         private void tm_Tick(object sender, EventArgs e)
         {
             if (!small)
@@ -267,6 +303,17 @@ namespace PBL_Puwsheee
                 } */
             }
 
+        }
+        #endregion  
+
+        private void fadeIn_Tick(object sender, EventArgs e)
+        {
+            Fade.fadeInEffect(this, fadeIn);
+        }
+
+        private void fadeOut_Tick(object sender, EventArgs e)
+        {
+            Fade.exitFade(this);
         }
 
         private void displayPanel_Paint(object sender, PaintEventArgs e)

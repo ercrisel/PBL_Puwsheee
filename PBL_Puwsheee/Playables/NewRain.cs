@@ -31,6 +31,13 @@ namespace PBL_Puwsheee.Playables
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+
+            #region Load images
+            pictureBox1.Image = PBL_Puwsheee.Properties.Resources.rainGIF;
+            playButton.Image = PBL_Puwsheee.Properties.Resources.rainPlay;
+            pauseButton.Image = PBL_Puwsheee.Properties.Resources.rainPause;
+            backButton.Image = PBL_Puwsheee.Properties.Resources.rainClose;
+            #endregion
         }
 
         SoundPlayer rain = new SoundPlayer(PBL_Puwsheee.Properties.Resources.Rain_sounds);

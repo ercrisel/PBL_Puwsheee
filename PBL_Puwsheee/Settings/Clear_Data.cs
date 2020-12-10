@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using PBL_Puwsheee.Authentication.Class;
 
 namespace PBL_Puwsheee.Settings
 {
@@ -34,6 +35,16 @@ namespace PBL_Puwsheee.Settings
         private void clickCancel(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            ChangeSettings cs = new ChangeSettings();
+            //code
+            string username = Log_In.publicUserName;
+            cs.Username = username;
+            cs.ClearData();
+            // pa change na lang yung form balik sa main diko kasi alam
         }
     }
 }
