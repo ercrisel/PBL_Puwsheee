@@ -42,20 +42,19 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.passwordPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.usernamePanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.passwordPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.showPasswordIcon = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.messgaeBubbleYEY = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.messageBubbleOHNO = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.loginPic = new System.Windows.Forms.PictureBox();
-            this.textBubble = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.guna2ShadowPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.passwordPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.messgaeBubbleYEY)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.messageBubbleOHNO)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginPic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textBubble)).BeginInit();
             this.SuspendLayout();
             // 
             // passwordTextbox
@@ -264,14 +263,16 @@
             this.guna2ShadowPanel1.TabIndex = 19;
             this.guna2ShadowPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2ShadowPanel1_Paint);
             // 
-            // pictureBox1
+            // usernamePanel
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(3, -217);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(518, 291);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
+            this.usernamePanel.BorderRadius = 5;
+            this.usernamePanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
+            this.usernamePanel.Location = new System.Drawing.Point(128, 122);
+            this.usernamePanel.Margin = new System.Windows.Forms.Padding(4);
+            this.usernamePanel.Name = "usernamePanel";
+            this.usernamePanel.ShadowDecoration.Parent = this.usernamePanel;
+            this.usernamePanel.Size = new System.Drawing.Size(491, 6);
+            this.usernamePanel.TabIndex = 10;
             // 
             // passwordPanel
             // 
@@ -284,17 +285,6 @@
             this.passwordPanel.ShadowDecoration.Parent = this.passwordPanel;
             this.passwordPanel.Size = new System.Drawing.Size(491, 6);
             this.passwordPanel.TabIndex = 10;
-            // 
-            // usernamePanel
-            // 
-            this.usernamePanel.BorderRadius = 5;
-            this.usernamePanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.usernamePanel.Location = new System.Drawing.Point(128, 122);
-            this.usernamePanel.Margin = new System.Windows.Forms.Padding(4);
-            this.usernamePanel.Name = "usernamePanel";
-            this.usernamePanel.ShadowDecoration.Parent = this.usernamePanel;
-            this.usernamePanel.Size = new System.Drawing.Size(491, 6);
-            this.usernamePanel.TabIndex = 10;
             // 
             // showPasswordIcon
             // 
@@ -318,6 +308,43 @@
             this.showPasswordIcon.UseTransparentBackground = true;
             this.showPasswordIcon.Click += new System.EventHandler(this.showPasswordIcon_Click);
             // 
+            // messgaeBubbleYEY
+            // 
+            this.messgaeBubbleYEY.BackColor = System.Drawing.Color.Transparent;
+            this.messgaeBubbleYEY.Image = global::PBL_Puwsheee.Properties.Resources.messageSuccess;
+            this.messgaeBubbleYEY.Location = new System.Drawing.Point(105, -6);
+            this.messgaeBubbleYEY.Name = "messgaeBubbleYEY";
+            this.messgaeBubbleYEY.ShadowDecoration.Parent = this.messgaeBubbleYEY;
+            this.messgaeBubbleYEY.Size = new System.Drawing.Size(256, 200);
+            this.messgaeBubbleYEY.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.messgaeBubbleYEY.TabIndex = 11;
+            this.messgaeBubbleYEY.TabStop = false;
+            this.messgaeBubbleYEY.UseTransparentBackground = true;
+            this.messgaeBubbleYEY.Visible = false;
+            // 
+            // messageBubbleOHNO
+            // 
+            this.messageBubbleOHNO.BackColor = System.Drawing.Color.Transparent;
+            this.messageBubbleOHNO.Image = global::PBL_Puwsheee.Properties.Resources.messageFail;
+            this.messageBubbleOHNO.Location = new System.Drawing.Point(105, -6);
+            this.messageBubbleOHNO.Name = "messageBubbleOHNO";
+            this.messageBubbleOHNO.ShadowDecoration.Parent = this.messageBubbleOHNO;
+            this.messageBubbleOHNO.Size = new System.Drawing.Size(256, 210);
+            this.messageBubbleOHNO.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.messageBubbleOHNO.TabIndex = 11;
+            this.messageBubbleOHNO.TabStop = false;
+            this.messageBubbleOHNO.UseTransparentBackground = true;
+            this.messageBubbleOHNO.Visible = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(3, -217);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(518, 291);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
             // loginPic
             // 
             this.loginPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -328,69 +355,14 @@
             this.loginPic.TabIndex = 10;
             this.loginPic.TabStop = false;
             // 
-            // textBubble
-            // 
-            this.textBubble.BackColor = System.Drawing.Color.Transparent;
-            this.textBubble.Image = global::PBL_Puwsheee.Properties.Resources.bt;
-            this.textBubble.Location = new System.Drawing.Point(-57, -48);
-            this.textBubble.Name = "textBubble";
-            this.textBubble.ShadowDecoration.Parent = this.textBubble;
-            this.textBubble.Size = new System.Drawing.Size(606, 242);
-            this.textBubble.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.textBubble.TabIndex = 11;
-            this.textBubble.TabStop = false;
-            this.textBubble.UseTransparentBackground = true;
-            this.textBubble.Visible = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.label1.Font = new System.Drawing.Font("Typo Round Bold Demo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.label1.Location = new System.Drawing.Point(140, 56);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(221, 19);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Yey, your login was a success!";
-            this.label1.Visible = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.label2.Font = new System.Drawing.Font("Typo Round Bold Demo", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.label2.Location = new System.Drawing.Point(141, 50);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(221, 15);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "Oh no, there is no account registered";
-            this.label2.Visible = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.label3.Font = new System.Drawing.Font("Typo Round Bold Demo", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.label3.Location = new System.Drawing.Point(157, 65);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(182, 15);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "with that email and username";
-            this.label3.Visible = false;
-            // 
             // Log_In
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.ClientSize = new System.Drawing.Size(819, 559);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBubble);
+            this.Controls.Add(this.messageBubbleOHNO);
+            this.Controls.Add(this.messgaeBubbleYEY);
             this.Controls.Add(this.guna2ShadowPanel1);
             this.Controls.Add(this.signupButton);
             this.Controls.Add(this.textLabel);
@@ -406,10 +378,11 @@
             this.Load += new System.EventHandler(this.Log_In_Load);
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2ShadowPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.passwordPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.messgaeBubbleYEY)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.messageBubbleOHNO)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginPic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textBubble)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -435,9 +408,7 @@
         private Guna.UI2.WinForms.Guna2Panel usernamePanel;
         private Guna.UI2.WinForms.Guna2Panel passwordPanel;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Guna.UI2.WinForms.Guna2PictureBox textBubble;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2PictureBox messgaeBubbleYEY;
+        private Guna.UI2.WinForms.Guna2PictureBox messageBubbleOHNO;
     }
 }

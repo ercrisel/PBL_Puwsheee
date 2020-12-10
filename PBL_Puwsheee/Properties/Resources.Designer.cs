@@ -559,6 +559,26 @@ namespace PBL_Puwsheee.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap messageFail {
+            get {
+                object obj = ResourceManager.GetObject("messageFail", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap messageSuccess {
+            get {
+                object obj = ResourceManager.GetObject("messageSuccess", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Miserable {
             get {
                 object obj = ResourceManager.GetObject("Miserable", resourceCulture);
