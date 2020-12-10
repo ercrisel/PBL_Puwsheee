@@ -176,7 +176,7 @@ namespace PBL_Puwsheee.Settings
             }
             else
             {
-                MessageBox.Show("Complete the fields");
+                //MessageBox.Show("Complete the fields");
             }
         }
 
@@ -244,7 +244,8 @@ namespace PBL_Puwsheee.Settings
             su.Code = enterCodeTextBox.Text;
             if (su.CorrectConfirmationCode())
             {
-                MessageBox.Show("Correct Confirmation Code");
+                // MessageBox.Show("Correct Confirmation Code");
+                wrongCode.Visible = false;
                 hideConfirmationCode();
                 setValues();
                 if (changePic)
@@ -260,10 +261,12 @@ namespace PBL_Puwsheee.Settings
                 Log_In.publicUserName = user.Username;
                 clearPass();
                 user.HideConditions(passCondition1, passCondition2, passCondition3, passAndConfirm, newPassReq, confPassReq);
+              
             }
             else
             {
-                MessageBox.Show("Wrong Code");
+                //MessageBox.Show("Wrong Code");
+                wrongCode.Visible = true;
             }
         }
 
@@ -297,7 +300,8 @@ namespace PBL_Puwsheee.Settings
                 currentpasswordTextbox.Text = newpasswordTextbox.Text = confirmTexbox.Text = string.Empty;
                 loadAndDisableBtn();
                 user.HideConditions(passCondition1, passCondition2, passCondition3, passAndConfirm, newPassReq, confPassReq);
-                MessageBox.Show("Password Changed Successfully");
+                // MessageBox.Show("Password Changed Successfully");
+                passwordSuccess.Visible = true;
             }
 
         }
