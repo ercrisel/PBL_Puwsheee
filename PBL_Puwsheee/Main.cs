@@ -62,7 +62,7 @@ namespace PBL_Puwsheee
         public Main()
         {
             InitializeComponent();
-            userInfo = new UserInfo() { Username = "hrvrldn" }; //sets up userInfo !!!!!! wee woo wee woo !!!!!! enter username first before you run; or idk, pwede niyo rin run ng wala, iz just that walang ipapakita
+            userInfo = new UserInfo() { Username =  Log_In.publicUserName }; //sets up userInfo !!!!!! wee woo wee woo !!!!!! enter username first before you run; or idk, pwede niyo rin run ng wala, iz just that walang ipapakita
             openChildForm(new MoodTracker(userInfo));
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
@@ -87,6 +87,8 @@ namespace PBL_Puwsheee
             user.LoadPicture(usericonPicture);
             user.Username = Log_In.publicUserName;
             userInfo.Username = Log_In.publicUserName;
+            TestScore ts = new TestScore();
+            ts.Username = Log_In.publicUserName;
 
             #region Load images
             moodtrackerButton.Image = PBL_Puwsheee.Properties.Resources.Mood_Tracker;

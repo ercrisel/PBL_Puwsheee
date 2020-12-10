@@ -211,7 +211,9 @@ namespace PBL_Puwsheee
             user.Code = enterCodeTextBox.Text.ToUpper();
             if (user.CorrectConfirmationCode())
             {
-                MessageBox.Show("Success", "Account Created");
+                //MessageBox.Show("Success", "Account Created");
+                guna2PictureBox1.Visible = true;
+                guna2PictureBox2.Visible = false;
                 user.UploadEntriesToDatabase();
                 fadeOut.Start();
                 Log_In li = new Log_In();
@@ -221,8 +223,10 @@ namespace PBL_Puwsheee
             }
             else
             {
+                guna2PictureBox1.Visible = false;
+                guna2PictureBox2.Visible = true;
                 // MessageBox.Show("Wrong Confirmation Code");
-              
+
             }
         }
 
@@ -258,6 +262,11 @@ namespace PBL_Puwsheee
         }
 
         private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void userPicture_Click(object sender, EventArgs e)
         {
 
         }
