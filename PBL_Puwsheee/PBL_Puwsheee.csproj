@@ -694,6 +694,12 @@
     <None Include="Resources\sadCalendar.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\messageSuccess.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\messageFail.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\moodTrackerGIF.gif" />
   </ItemGroup>
   <ItemGroup>

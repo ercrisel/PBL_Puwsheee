@@ -61,10 +61,10 @@ namespace PBL_Puwsheee
                     publicUserName = user.Username;
                     publicPasswordInput = user.Password;
                     // MessageBox.Show("You will be redirected to the homepage, Login Success");
-                    textBubble.Visible = true;
-                    successLabel1.Visible = true;
-                    errorLabel1.Visible = false;
-                    errorLabel2.Visible = false;
+                    messgaeBubbleYEY.Visible = true;
+                    messageBubbleOHNO.Visible = false;
+                    
+                  
                     
                     
                     fadeOut.Start();
@@ -74,10 +74,9 @@ namespace PBL_Puwsheee
                 else
                 {
                     //MessageBox.Show("NO ACCOUNT REGISTERED IN THAT USERNAME AND PASSWORD");
-                    textBubble.Visible = true;
-                    successLabel1.Visible = false;
-                    errorLabel1.Visible = true;
-                    errorLabel2.Visible = true;
+                    messageBubbleOHNO.Visible = true;
+                    messgaeBubbleYEY.Visible = false;
+                   
 
 
                 }
