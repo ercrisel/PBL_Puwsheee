@@ -70,14 +70,11 @@ namespace PBL_Puwsheee
             this.Opacity += 0.01;
         }
 
-        private void PositiveAffirmations_Load(object sender, EventArgs e)
+        public string GetRandomAffirmation()
         {
-          
-            Random rand = new Random();
-           
             string[] affirmation =
             {
-                "I am doing my Best.",
+                "I Got This.",
                 "I choose to be Happy and to Love Myself Today",
                 "My Possibilities are Endless",
                 "I am in Love with Myself and my Body.",
@@ -104,7 +101,14 @@ namespace PBL_Puwsheee
                 "I Love Myself."
             };
 
-            int rand_affirmation = rand.Next(affirmation.Length);
+            Random random = new Random();
+            int i = random.Next(affirmation.Length);
+            return affirmation[i];
+        }
+
+        private void PositiveAffirmations_Load(object sender, EventArgs e)
+        {
+            quotations.Text = "testing";
         }
 
         private void PositiveAffirmations_Load_1(object sender, EventArgs e)
