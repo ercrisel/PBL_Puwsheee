@@ -20,7 +20,7 @@ namespace PBL_Puwsheee
 
         List<Panel> moodSteps = new List<Panel>();
         int steps;
-        int next = 50;
+        int next = 150;
 
         public MoodTracker()
         {
@@ -307,13 +307,13 @@ namespace PBL_Puwsheee
 
         private void incrementTimer_Tick(object sender, EventArgs e)
         {
-            loadingPanel.Width += 10;
+            loadingPanel.Width += 50;
             if (loadingPanel.Width >= next) incrementTimer.Stop();
         }
 
         private void decrementTimer_Tick(object sender, EventArgs e)
         {
-            loadingPanel.Width -= 10;
+            loadingPanel.Width -= 50;
             if (loadingPanel.Width <= next) decrementTimer.Stop();
         }
     }

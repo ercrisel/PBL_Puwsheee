@@ -35,6 +35,7 @@
             this.activitiesPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.travelIcon = new Guna.UI2.WinForms.Guna2Button();
             this.studyIcon = new Guna.UI2.WinForms.Guna2Button();
+            this.labelActivities = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.sportsIcon = new Guna.UI2.WinForms.Guna2Button();
             this.socialIcon = new Guna.UI2.WinForms.Guna2Button();
             this.shopIcon = new Guna.UI2.WinForms.Guna2Button();
@@ -61,7 +62,6 @@
             this.mehIcon = new Guna.UI2.WinForms.Guna2Button();
             this.miserableIcon = new Guna.UI2.WinForms.Guna2Button();
             this.disgustedIcon = new Guna.UI2.WinForms.Guna2Button();
-            this.labelActivities = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.incrementButton = new Guna.UI2.WinForms.Guna2Button();
             this.decrementButton = new Guna.UI2.WinForms.Guna2Button();
             this.moodPanelBg = new System.Windows.Forms.Panel();
@@ -188,6 +188,19 @@
             this.studyIcon.Text = " ";
             this.studyIcon.MouseLeave += new System.EventHandler(this.activitiesIcon_MouseLeave);
             this.studyIcon.MouseHover += new System.EventHandler(this.activitiesIcon_MouseHover);
+            // 
+            // labelActivities
+            // 
+            this.labelActivities.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.labelActivities.BackColor = System.Drawing.Color.Transparent;
+            this.labelActivities.Font = new System.Drawing.Font("Typo Round Bold Demo", 12F);
+            this.labelActivities.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.labelActivities.Location = new System.Drawing.Point(566, 259);
+            this.labelActivities.Margin = new System.Windows.Forms.Padding(4);
+            this.labelActivities.Name = "labelActivities";
+            this.labelActivities.Size = new System.Drawing.Size(73, 22);
+            this.labelActivities.TabIndex = 36;
+            this.labelActivities.Text = "ACTIVITES";
             // 
             // sportsIcon
             // 
@@ -502,7 +515,7 @@
             this.notesTextbox.DisabledState.Parent = this.notesTextbox;
             this.notesTextbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.notesTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.notesTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.notesTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.notesTextbox.FocusedState.Parent = this.notesTextbox;
             this.notesTextbox.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.notesTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
@@ -780,19 +793,6 @@
             this.disgustedIcon.MouseLeave += new System.EventHandler(this.moodIcon_MouseLeave);
             this.disgustedIcon.MouseHover += new System.EventHandler(this.moodIcon_MouseHover);
             // 
-            // labelActivities
-            // 
-            this.labelActivities.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.labelActivities.BackColor = System.Drawing.Color.Transparent;
-            this.labelActivities.Font = new System.Drawing.Font("Typo Round Bold Demo", 12F);
-            this.labelActivities.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.labelActivities.Location = new System.Drawing.Point(566, 259);
-            this.labelActivities.Margin = new System.Windows.Forms.Padding(4);
-            this.labelActivities.Name = "labelActivities";
-            this.labelActivities.Size = new System.Drawing.Size(73, 22);
-            this.labelActivities.TabIndex = 36;
-            this.labelActivities.Text = "ACTIVITES";
-            // 
             // incrementButton
             // 
             this.incrementButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
@@ -838,7 +838,7 @@
             // 
             this.moodPanelBg.Controls.Add(this.contentLabel1);
             this.moodPanelBg.Controls.Add(this.moodPanel);
-            this.moodPanelBg.Location = new System.Drawing.Point(83, 95);
+            this.moodPanelBg.Location = new System.Drawing.Point(73, 95);
             this.moodPanelBg.Name = "moodPanelBg";
             this.moodPanelBg.Size = new System.Drawing.Size(773, 384);
             this.moodPanelBg.TabIndex = 85;
@@ -880,7 +880,7 @@
             // 
             this.activitiesPanelBg.Controls.Add(this.activitiesPanel);
             this.activitiesPanelBg.Controls.Add(this.contentLabel2);
-            this.activitiesPanelBg.Location = new System.Drawing.Point(83, 95);
+            this.activitiesPanelBg.Location = new System.Drawing.Point(73, 95);
             this.activitiesPanelBg.Name = "activitiesPanelBg";
             this.activitiesPanelBg.Size = new System.Drawing.Size(773, 384);
             this.activitiesPanelBg.TabIndex = 85;
@@ -889,7 +889,7 @@
             // 
             this.notesPanelBg.Controls.Add(this.contentLabel3);
             this.notesPanelBg.Controls.Add(this.notesTextbox);
-            this.notesPanelBg.Location = new System.Drawing.Point(83, 95);
+            this.notesPanelBg.Location = new System.Drawing.Point(73, 95);
             this.notesPanelBg.Name = "notesPanelBg";
             this.notesPanelBg.Size = new System.Drawing.Size(773, 384);
             this.notesPanelBg.TabIndex = 85;
@@ -899,7 +899,7 @@
             this.loadingPanel.BackColor = System.Drawing.Color.Transparent;
             this.loadingPanel.BorderRadius = 5;
             this.loadingPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.loadingPanel.Location = new System.Drawing.Point(1, 0);
+            this.loadingPanel.Location = new System.Drawing.Point(-11, 0);
             this.loadingPanel.Name = "loadingPanel";
             this.loadingPanel.ShadowDecoration.Parent = this.loadingPanel;
             this.loadingPanel.Size = new System.Drawing.Size(150, 7);
@@ -910,7 +910,7 @@
             this.guna2Panel1.BorderRadius = 5;
             this.guna2Panel1.Controls.Add(this.loadingPanel);
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.guna2Panel1.Location = new System.Drawing.Point(255, 62);
+            this.guna2Panel1.Location = new System.Drawing.Point(243, 62);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(450, 7);
@@ -918,15 +918,13 @@
             // 
             // decrementTimer
             // 
-            this.decrementTimer.Enabled = true;
-            this.decrementTimer.Interval = 40;
+            this.decrementTimer.Interval = 10;
             this.decrementTimer.Tag = "Decrement";
             this.decrementTimer.Tick += new System.EventHandler(this.decrementTimer_Tick);
             // 
             // incrementTimer
             // 
-            this.incrementTimer.Enabled = true;
-            this.incrementTimer.Interval = 40;
+            this.incrementTimer.Interval = 10;
             this.incrementTimer.Tag = "Increment";
             this.incrementTimer.Tick += new System.EventHandler(this.incrementTimer_Tick);
             // 
