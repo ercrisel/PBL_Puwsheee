@@ -42,10 +42,10 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.loginPic = new System.Windows.Forms.PictureBox();
-            this.showPasswordIcon = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.usernamePanel = new Guna.UI2.WinForms.Guna2Panel();
             this.passwordPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.usernamePanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.showPasswordIcon = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.loginPic = new System.Windows.Forms.PictureBox();
             this.guna2ShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.loginPic)).BeginInit();
             this.SuspendLayout();
@@ -70,7 +70,7 @@
             this.passwordTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.passwordTextbox.HoverState.Parent = this.passwordTextbox;
             this.passwordTextbox.Location = new System.Drawing.Point(92, 167);
-            this.passwordTextbox.Margin = new System.Windows.Forms.Padding(4);
+            this.passwordTextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.passwordTextbox.Name = "passwordTextbox";
             this.passwordTextbox.PasswordChar = '•';
             this.passwordTextbox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
@@ -130,7 +130,7 @@
             this.usernameTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.usernameTextbox.HoverState.Parent = this.usernameTextbox;
             this.usernameTextbox.Location = new System.Drawing.Point(92, 65);
-            this.usernameTextbox.Margin = new System.Windows.Forms.Padding(4);
+            this.usernameTextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.usernameTextbox.Name = "usernameTextbox";
             this.usernameTextbox.PasswordChar = '\0';
             this.usernameTextbox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
@@ -230,10 +230,10 @@
             // guna2ShadowPanel1
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel1.Controls.Add(this.showPasswordIcon);
             this.guna2ShadowPanel1.Controls.Add(this.passwordPanel);
             this.guna2ShadowPanel1.Controls.Add(this.usernamePanel);
             this.guna2ShadowPanel1.Controls.Add(this.usernameTextbox);
-            this.guna2ShadowPanel1.Controls.Add(this.showPasswordIcon);
             this.guna2ShadowPanel1.Controls.Add(this.linkLabel1);
             this.guna2ShadowPanel1.Controls.Add(this.guna2HtmlLabel1);
             this.guna2ShadowPanel1.Controls.Add(this.loginButton);
@@ -249,14 +249,25 @@
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(612, 450);
             this.guna2ShadowPanel1.TabIndex = 19;
             // 
-            // loginPic
+            // passwordPanel
             // 
-            this.loginPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.loginPic.Location = new System.Drawing.Point(-73, 56);
-            this.loginPic.Name = "loginPic";
-            this.loginPic.Size = new System.Drawing.Size(161, 135);
-            this.loginPic.TabIndex = 10;
-            this.loginPic.TabStop = false;
+            this.passwordPanel.BorderRadius = 5;
+            this.passwordPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
+            this.passwordPanel.Location = new System.Drawing.Point(96, 199);
+            this.passwordPanel.Name = "passwordPanel";
+            this.passwordPanel.ShadowDecoration.Parent = this.passwordPanel;
+            this.passwordPanel.Size = new System.Drawing.Size(368, 5);
+            this.passwordPanel.TabIndex = 10;
+            // 
+            // usernamePanel
+            // 
+            this.usernamePanel.BorderRadius = 5;
+            this.usernamePanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
+            this.usernamePanel.Location = new System.Drawing.Point(96, 99);
+            this.usernamePanel.Name = "usernamePanel";
+            this.usernamePanel.ShadowDecoration.Parent = this.usernamePanel;
+            this.usernamePanel.Size = new System.Drawing.Size(368, 5);
+            this.usernamePanel.TabIndex = 10;
             // 
             // showPasswordIcon
             // 
@@ -280,25 +291,14 @@
             this.showPasswordIcon.UseTransparentBackground = true;
             this.showPasswordIcon.Click += new System.EventHandler(this.showPasswordIcon_Click);
             // 
-            // usernamePanel
+            // loginPic
             // 
-            this.usernamePanel.BorderRadius = 5;
-            this.usernamePanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.usernamePanel.Location = new System.Drawing.Point(96, 99);
-            this.usernamePanel.Name = "usernamePanel";
-            this.usernamePanel.ShadowDecoration.Parent = this.usernamePanel;
-            this.usernamePanel.Size = new System.Drawing.Size(368, 5);
-            this.usernamePanel.TabIndex = 10;
-            // 
-            // passwordPanel
-            // 
-            this.passwordPanel.BorderRadius = 5;
-            this.passwordPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.passwordPanel.Location = new System.Drawing.Point(96, 199);
-            this.passwordPanel.Name = "passwordPanel";
-            this.passwordPanel.ShadowDecoration.Parent = this.passwordPanel;
-            this.passwordPanel.Size = new System.Drawing.Size(368, 5);
-            this.passwordPanel.TabIndex = 10;
+            this.loginPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.loginPic.Location = new System.Drawing.Point(-73, 56);
+            this.loginPic.Name = "loginPic";
+            this.loginPic.Size = new System.Drawing.Size(161, 135);
+            this.loginPic.TabIndex = 10;
+            this.loginPic.TabStop = false;
             // 
             // Log_In
             // 

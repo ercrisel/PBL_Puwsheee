@@ -156,7 +156,7 @@ namespace PBL_Puwsheee
         {
             openChildForm(new Test.Test_Main());
             testButton.BackColor = Color.FromArgb(86, 75, 97);
-            indicator.Top = 257;
+            indicator.Top = 262;
             #region Back to original color
             moodtrackerButton.BackColor = Color.FromArgb(33, 21, 41);
             calendarButton.BackColor = Color.FromArgb(33, 21, 41);

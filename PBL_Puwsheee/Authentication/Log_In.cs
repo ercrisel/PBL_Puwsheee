@@ -129,7 +129,7 @@ namespace PBL_Puwsheee
         {
             usernameTextbox.Focus();
             loginPic.BackgroundImage = PBL_Puwsheee.Properties.Resources.login_signup_puwshee;
-            showPasswordIcon.BackgroundImage = PBL_Puwsheee.Properties.Resources.show_password;
+            showPasswordIcon.Image = PBL_Puwsheee.Properties.Resources.show_password;
         }
 
         private void enterKeyLogIn(object sender, KeyEventArgs e)
