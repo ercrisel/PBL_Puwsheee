@@ -18,6 +18,10 @@ namespace PBL_Puwsheee
         private List<Guna2Button> activitiesButtonsList = new List<Guna2Button>();
         private MoodEntry moodEntry = new MoodEntry();
 
+        List<Panel> moodSteps = new List<Panel>();
+        int steps;
+        int next = 50;
+
         public MoodTracker()
         {
             InitializeComponent();
@@ -101,6 +105,8 @@ namespace PBL_Puwsheee
             #endregion
 
             #region Set Images 
+            moodTrackerGIF.Image = PBL_Puwsheee.Properties.Resources.moodTrackerGIF;
+
             //mood
             angryIcon.BackgroundImage = PBL_Puwsheee.Properties.Resources.Angry;
             flirtyIcon.BackgroundImage = PBL_Puwsheee.Properties.Resources.Flirty;
@@ -124,6 +130,7 @@ namespace PBL_Puwsheee
             sleepIcon.BackgroundImage = PBL_Puwsheee.Properties.Resources.Sleep;
             socialIcon.BackgroundImage = PBL_Puwsheee.Properties.Resources.Social;
             travelIcon.BackgroundImage = PBL_Puwsheee.Properties.Resources.Travel;
+            moodTrackerGIF.Image = PBL_Puwsheee.Properties.Resources.moodTrackerGIF;
             #endregion
 
             if (moodEntry.IsExistingRecord())
@@ -131,7 +138,25 @@ namespace PBL_Puwsheee
                 IsSettingsEditable(false);
             }
             else
+            {
                 IsSettingsEditable(true);
+            }
+
+            decrementButton.Visible = false;
+
+            moodSteps.Add(moodPanelBg);
+            moodSteps.Add(activitiesPanelBg);
+            moodSteps.Add(notesPanelBg);
+            moodSteps[steps].BringToFront();
+
+            if(submitButton.Enabled == false)
+            {
+                errorPanel.BringToFront();
+            }
+            else if(submitButton.Enabled == true)
+            {
+                errorPanel.SendToBack();
+            }
         }
 
         private void submitButton_Click(object sender, EventArgs e)
@@ -180,7 +205,6 @@ namespace PBL_Puwsheee
             moodEntry.Activities = activities;
 
             moodEntry.Notes = notesTextbox.Text;
-
         }
 
         /// <summary>
@@ -234,6 +258,63 @@ namespace PBL_Puwsheee
         public void ChangeSingleButtonProperty(Guna2Button button, bool preference)
         {
             button.Enabled = preference; // function that sets Visible and Enabled of a button; if there are changes, refer to this function
+        }
+
+        private void incrementButton_Click(object sender, EventArgs e)
+        {
+            if (steps < moodSteps.Count - 1)
+            {
+                moodSteps[++steps].BringToFront();
+            }
+
+            if (moodSteps[steps] != moodPanelBg)
+            {
+                decrementButton.Visible = true;
+            }
+
+            if (moodSteps[steps] == notesPanelBg)
+            {
+                submitButton.Visible = true;
+                clearButton.Visible = true;
+                incrementButton.Visible = false;
+            }
+
+            incrementTimer.Start();
+            next += 150;
+        }
+
+        private void decrementButton_Click(object sender, EventArgs e)
+        {
+            if (steps > 0)
+            {
+                moodSteps[--steps].BringToFront();
+            }
+
+            if (moodSteps[steps] == moodPanelBg)
+            {
+                decrementButton.Visible = false;
+            }
+
+            if (moodSteps[steps] != notesPanelBg)
+            {
+                submitButton.Visible = false;
+                clearButton.Visible = false;
+                incrementButton.Visible = true;
+            }
+            decrementTimer.Start();
+            next -= 150;
+        }
+
+        private void incrementTimer_Tick(object sender, EventArgs e)
+        {
+            loadingPanel.Width += 10;
+            if (loadingPanel.Width >= next) incrementTimer.Stop();
+        }
+
+        private void decrementTimer_Tick(object sender, EventArgs e)
+        {
+            loadingPanel.Width -= 10;
+            if (loadingPanel.Width <= next) decrementTimer.Stop();
         }
     }
 }

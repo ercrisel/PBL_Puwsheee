@@ -121,7 +121,7 @@
             // PositiveAffirmationGIF
             // 
             this.PositiveAffirmationGIF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PositiveAffirmationGIF.Image = global::PBL_Puwsheee.Properties.Resources.positiveAffirmationsGIF;
+            //this.PositiveAffirmationGIF.Image = global::PBL_Puwsheee.Properties.Resources.positiveAffirmationsGIF;
             this.PositiveAffirmationGIF.Location = new System.Drawing.Point(178, 291);
             this.PositiveAffirmationGIF.Name = "PositiveAffirmationGIF";
             this.PositiveAffirmationGIF.ShadowDecoration.Parent = this.PositiveAffirmationGIF;

@@ -80,13 +80,13 @@ namespace PBL_Puwsheee
                 "You Got This.",
                 "One Breath at a Time",
                 "There are Endless Possibilities for you to try",
-                "You are Perfect just the way you are, sp love yourself and your body.",
+                "You are Perfect just the way you are, so love yourself and your body.",
                 "You should be proud of yourself.",
                 "One breath at a time.",
                 "You should step into the daylight and let it go.",
                 "You are Loved, Endlessly loved.",
                 "You will grow in due season.",
-                "You are worthy if the same love you give.",
+                "You are worthy of the same love you give.",
                 "You will grow how you were meant to be.",
                 "You are learning and growing everyday even when it does not seem that way.",
                 "Pause. Breathe. Reflect. You have bloomed in beautiful ways. Don't let yourself forget.",
@@ -108,6 +108,8 @@ namespace PBL_Puwsheee
             //int i = random.Next(affirmation.Length);
             String affirmationDisplay = affirmation[random.Next(affirmation.Length)];
             quotations.Text = affirmationDisplay;
+
+            PositiveAffirmationGIF.Image = PBL_Puwsheee.Properties.Resources.positiveAffirmationsGIF;
         }
 
         private void PositiveAffirmations_Load_1(object sender, EventArgs e)
