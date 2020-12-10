@@ -31,9 +31,8 @@ namespace PBL_Puwsheee.Playables
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
 
-            background.BackgroundImage = PBL_Puwsheee.Properties.Resources.breathingGIF;
+            background.Image = PBL_Puwsheee.Properties.Resources.breathingGIF;
             backButton.Image = PBL_Puwsheee.Properties.Resources.X;
-
         }
 
         private void fadeIn_Tick(object sender, EventArgs e)

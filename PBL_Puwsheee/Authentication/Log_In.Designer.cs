@@ -51,7 +51,6 @@
             this.successLabel1 = new System.Windows.Forms.Label();
             this.errorLabel1 = new System.Windows.Forms.Label();
             this.errorLabel2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.guna2ShadowPanel1.SuspendLayout();
             this.passwordPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -215,7 +214,7 @@
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(176, 316);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(123, 16);
             this.guna2HtmlLabel1.TabIndex = 3;
@@ -239,7 +238,6 @@
             // guna2ShadowPanel1
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel1.Controls.Add(this.label1);
             this.guna2ShadowPanel1.Controls.Add(this.usernamePanel);
             this.guna2ShadowPanel1.Controls.Add(this.passwordPanel);
             this.guna2ShadowPanel1.Controls.Add(this.usernameTextbox);
@@ -284,7 +282,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(2, -176);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(388, 236);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -304,7 +302,7 @@
             this.showPasswordIcon.ImageOffset = new System.Drawing.Point(1, 0);
             this.showPasswordIcon.ImageSize = new System.Drawing.Size(24, 24);
             this.showPasswordIcon.Location = new System.Drawing.Point(428, 176);
-            this.showPasswordIcon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.showPasswordIcon.Margin = new System.Windows.Forms.Padding(2);
             this.showPasswordIcon.Name = "showPasswordIcon";
             this.showPasswordIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.showPasswordIcon.ShadowDecoration.Parent = this.showPasswordIcon;
@@ -327,7 +325,7 @@
             this.textBubble.BackColor = System.Drawing.Color.Transparent;
             this.textBubble.Image = global::PBL_Puwsheee.Properties.Resources.bt;
             this.textBubble.Location = new System.Drawing.Point(-43, -39);
-            this.textBubble.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBubble.Margin = new System.Windows.Forms.Padding(2);
             this.textBubble.Name = "textBubble";
             this.textBubble.ShadowDecoration.Parent = this.textBubble;
             this.textBubble.Size = new System.Drawing.Size(454, 197);
@@ -379,20 +377,6 @@
             this.errorLabel2.Text = "with that email and username";
             this.errorLabel2.Visible = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.label1.Font = new System.Drawing.Font("Typo Round Bold Demo", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.label1.Location = new System.Drawing.Point(218, 35);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 12);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "with that email and username";
-            this.label1.Visible = false;
-            // 
             // Log_In
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -411,7 +395,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Log_In";
             this.Opacity = 0D;
-            this.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Padding = new System.Windows.Forms.Padding(5);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Log_In";
             this.Load += new System.EventHandler(this.Log_In_Load);
@@ -450,6 +434,5 @@
         private System.Windows.Forms.Label successLabel1;
         private System.Windows.Forms.Label errorLabel1;
         private System.Windows.Forms.Label errorLabel2;
-        private System.Windows.Forms.Label label1;
     }
 }

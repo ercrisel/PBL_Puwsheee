@@ -35,7 +35,7 @@ namespace PBL_Puwsheee.Playables
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
 
             #region Load images
-            background.BackgroundImage = PBL_Puwsheee.Properties.Resources.musicBackground; 
+            background.Image = PBL_Puwsheee.Properties.Resources.musicBackground; 
             musicBg.Image = PBL_Puwsheee.Properties.Resources.musicBackground;
             playButton.Image = PBL_Puwsheee.Properties.Resources.musicPlay;
             pauseButton.Image = PBL_Puwsheee.Properties.Resources.musicPause;

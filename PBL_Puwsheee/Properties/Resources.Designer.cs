@@ -589,6 +589,16 @@ namespace PBL_Puwsheee.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap moodTrackerGIF {
+            get {
+                object obj = ResourceManager.GetObject("moodTrackerGIF", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Music {
             get {
                 object obj = ResourceManager.GetObject("Music", resourceCulture);
@@ -712,6 +722,16 @@ namespace PBL_Puwsheee.Properties {
         internal static System.Drawing.Bitmap Playables {
             get {
                 object obj = ResourceManager.GetObject("Playables", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap positiveAffirmationsGIF {
+            get {
+                object obj = ResourceManager.GetObject("positiveAffirmationsGIF", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

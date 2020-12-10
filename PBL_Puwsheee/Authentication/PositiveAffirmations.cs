@@ -70,51 +70,49 @@ namespace PBL_Puwsheee
             this.Opacity += 0.01;
         }
 
-        public string GetRandomAffirmation()
+        private void PositiveAffirmations_Load(object sender, EventArgs e)
         {
+            string greetings = label1.Text;
+            label1.Text = greetings.Replace("USERNAME", Log_In.publicUserName);
+
             string[] affirmation =
             {
-                "I Got This.",
-                "I choose to be Happy and to Love Myself Today",
-                "My Possibilities are Endless",
-                "I am in Love with Myself and my Body.",
-                "I am Proud of Myself.",
-                "I am becoming more Confident everyday.",
-                "I believe in Myself.",
-                "I am Brave, Bold, and Beautiful.",
-                "I am Worthy.",
-                "Today is going to be a Great Day.",
-                "I am Grateful for All that I have.",
-                "My Thoughts become my Reality.",
-                "I am Free of Worry and Regret.",
-                "I am Talented and Intelligent.",
-                "I believe in Me.",
-                "I acknowledge my own Self-worth; my Confidence is Soaring.",
-                "I am not my Mistakes.",
-                "I accept Myself Unconditionally.",
-                "I am Enough.",
-                "I believe in the Person I dream of Becoming.",
-                "Positivity is a choice; I choose to be positive.",
-                "I am now creating my Live exactly as I want it.",
-                "There is no wrong Decision.",
-                "I Honor my Commitments to Myself.",
-                "I Love Myself."
+                "You Got This.",
+                "One Breath at a Time",
+                "There are Endless Possibilities for you to try",
+                "You are Perfect just the way you are, sp love yourself and your body.",
+                "You should be proud of yourself.",
+                "One breath at a time.",
+                "You should step into the daylight and let it go.",
+                "You are Loved, Endlessly loved.",
+                "You will grow in due season.",
+                "You are worthy if the same love you give.",
+                "You will grow how you were meant to be.",
+                "You are learning and growing everyday even when it does not seem that way.",
+                "Pause. Breathe. Reflect. You have bloomed in beautiful ways. Don't let yourself forget.",
+                "You are not a burden for having burdens.",
+                "You are not always required to impress anyone with your life choices.",
+                "You're allowed to pace yourself.",
+                "Every single breath you breathe is proof that you are finding your way in this.",
+                "You do not have to sort through everything tonight.",
+                "You have not missed out on what was meant for you.",
+                "You can still be who you are meant to be without meeting everyone's expectations of you.",
+                "All along, you were strong.",
+                "The way you speak to yourself matters.",
+                "When your thought have torn at the lining of your strength, take heart, be still, there is grace for this.",
+                "When you can't find the sunshine, be the sunshine.",
+                "All this pain will teach you everything worth knowing."
             };
 
             Random random = new Random();
-            int i = random.Next(affirmation.Length);
-            return affirmation[i];
-        }
-
-        private void PositiveAffirmations_Load(object sender, EventArgs e)
-        {
-            quotations.Text = "testing";
+            //int i = random.Next(affirmation.Length);
+            String affirmationDisplay = affirmation[random.Next(affirmation.Length)];
+            quotations.Text = affirmationDisplay;
         }
 
         private void PositiveAffirmations_Load_1(object sender, EventArgs e)
         {
-            string greetings = label1.Text;
-            label1.Text = greetings.Replace("USERNAME", Log_In.publicUserName);
+            
         }
     }
 }
