@@ -34,8 +34,8 @@
             this.fadeOut = new System.Windows.Forms.Timer(this.components);
             this.fadeIn = new System.Windows.Forms.Timer(this.components);
             this.label2 = new System.Windows.Forms.Label();
-            this.quotations = new Guna.UI2.WinForms.Guna2TextBox();
             this.PositiveAffirmationGIF = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.quotation = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.PositiveAffirmationGIF)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,44 +84,9 @@
             this.label2.Text = "always remember that...";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // quotations
-            // 
-            this.quotations.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.quotations.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.quotations.CausesValidation = false;
-            this.quotations.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.quotations.DefaultText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor in" +
-    "cididunt ut labore et dolore magna aliqua. ";
-            this.quotations.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.quotations.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.quotations.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.quotations.DisabledState.Parent = this.quotations;
-            this.quotations.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.quotations.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.quotations.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.quotations.FocusedState.Parent = this.quotations;
-            this.quotations.Font = new System.Drawing.Font("Robaga Rounded Black", 17F);
-            this.quotations.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.quotations.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.quotations.HoverState.Parent = this.quotations;
-            this.quotations.Location = new System.Drawing.Point(95, 141);
-            this.quotations.Multiline = true;
-            this.quotations.Name = "quotations";
-            this.quotations.PasswordChar = '\0';
-            this.quotations.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.quotations.PlaceholderText = "";
-            this.quotations.ReadOnly = true;
-            this.quotations.SelectedText = "";
-            this.quotations.ShadowDecoration.Parent = this.quotations;
-            this.quotations.Size = new System.Drawing.Size(406, 171);
-            this.quotations.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.quotations.TabIndex = 2;
-            this.quotations.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // PositiveAffirmationGIF
             // 
             this.PositiveAffirmationGIF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            //this.PositiveAffirmationGIF.Image = global::PBL_Puwsheee.Properties.Resources.positiveAffirmationsGIF;
             this.PositiveAffirmationGIF.Location = new System.Drawing.Point(178, 291);
             this.PositiveAffirmationGIF.Name = "PositiveAffirmationGIF";
             this.PositiveAffirmationGIF.ShadowDecoration.Parent = this.PositiveAffirmationGIF;
@@ -130,13 +95,35 @@
             this.PositiveAffirmationGIF.TabIndex = 3;
             this.PositiveAffirmationGIF.TabStop = false;
             // 
+            // quotation
+            // 
+            this.quotation.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.quotation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.quotation.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.quotation.CausesValidation = false;
+            this.quotation.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.quotation.Font = new System.Drawing.Font("Robaga Rounded Black", 17F);
+            this.quotation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.quotation.HideSelection = false;
+            this.quotation.Location = new System.Drawing.Point(94, 181);
+            this.quotation.MaximumSize = new System.Drawing.Size(406, 171);
+            this.quotation.Multiline = true;
+            this.quotation.Name = "quotation";
+            this.quotation.ReadOnly = true;
+            this.quotation.Size = new System.Drawing.Size(406, 129);
+            this.quotation.TabIndex = 4;
+            this.quotation.TabStop = false;
+            this.quotation.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor in" +
+    "cididunt ut labore et dolore magna aliqua. ";
+            this.quotation.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // PositiveAffirmations
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.ClientSize = new System.Drawing.Size(614, 454);
-            this.Controls.Add(this.quotations);
+            this.Controls.Add(this.quotation);
             this.Controls.Add(this.PositiveAffirmationGIF);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -160,7 +147,7 @@
         private System.Windows.Forms.Timer fadeIn;
         private System.Windows.Forms.Timer fadeOut;
         private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2TextBox quotations;
         private Guna.UI2.WinForms.Guna2PictureBox PositiveAffirmationGIF;
+        private System.Windows.Forms.TextBox quotation;
     }
 }

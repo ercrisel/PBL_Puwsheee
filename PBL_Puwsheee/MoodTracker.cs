@@ -168,6 +168,10 @@ namespace PBL_Puwsheee
             IsSettingsEditable(false);
             labelMood.Text = labelActivities.Text = string.Empty;
 
+            moodPanel.BringToFront();
+            clearButton.Visible = false;
+            submitButton.Visible = false;
+            decrementButton.Visible = false;
             //insert Calendar_Main //redirects to calendar view
         }
 
@@ -307,13 +311,13 @@ namespace PBL_Puwsheee
 
         private void incrementTimer_Tick(object sender, EventArgs e)
         {
-            loadingPanel.Width += 50;
+            loadingPanel.Width += 150;
             if (loadingPanel.Width >= next) incrementTimer.Stop();
         }
 
         private void decrementTimer_Tick(object sender, EventArgs e)
         {
-            loadingPanel.Width -= 50;
+            loadingPanel.Width -= 155;
             if (loadingPanel.Width <= next) decrementTimer.Stop();
         }
     }

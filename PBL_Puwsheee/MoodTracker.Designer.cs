@@ -519,7 +519,7 @@
             this.notesTextbox.FocusedState.Parent = this.notesTextbox;
             this.notesTextbox.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.notesTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.notesTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.notesTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.notesTextbox.HoverState.Parent = this.notesTextbox;
             this.notesTextbox.Location = new System.Drawing.Point(81, 79);
             this.notesTextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -899,10 +899,10 @@
             this.loadingPanel.BackColor = System.Drawing.Color.Transparent;
             this.loadingPanel.BorderRadius = 5;
             this.loadingPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.loadingPanel.Location = new System.Drawing.Point(-11, 0);
+            this.loadingPanel.Location = new System.Drawing.Point(-21, 0);
             this.loadingPanel.Name = "loadingPanel";
             this.loadingPanel.ShadowDecoration.Parent = this.loadingPanel;
-            this.loadingPanel.Size = new System.Drawing.Size(150, 7);
+            this.loadingPanel.Size = new System.Drawing.Size(166, 7);
             this.loadingPanel.TabIndex = 90;
             // 
             // guna2Panel1
@@ -910,10 +910,10 @@
             this.guna2Panel1.BorderRadius = 5;
             this.guna2Panel1.Controls.Add(this.loadingPanel);
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.guna2Panel1.Location = new System.Drawing.Point(243, 62);
+            this.guna2Panel1.Location = new System.Drawing.Point(248, 62);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(450, 7);
+            this.guna2Panel1.Size = new System.Drawing.Size(438, 7);
             this.guna2Panel1.TabIndex = 90;
             // 
             // decrementTimer

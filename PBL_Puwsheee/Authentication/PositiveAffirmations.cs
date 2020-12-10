@@ -72,6 +72,8 @@ namespace PBL_Puwsheee
 
         private void PositiveAffirmations_Load(object sender, EventArgs e)
         {
+            label1.Focus();
+
             string greetings = label1.Text;
             label1.Text = greetings.Replace("USERNAME", Log_In.publicUserName);
 
@@ -107,14 +109,9 @@ namespace PBL_Puwsheee
             Random random = new Random();
             //int i = random.Next(affirmation.Length);
             String affirmationDisplay = affirmation[random.Next(affirmation.Length)];
-            quotations.Text = affirmationDisplay;
+            quotation.Text = affirmationDisplay;
 
             PositiveAffirmationGIF.Image = PBL_Puwsheee.Properties.Resources.positiveAffirmationsGIF;
-        }
-
-        private void PositiveAffirmations_Load_1(object sender, EventArgs e)
-        {
-            
         }
     }
 }
