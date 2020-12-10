@@ -39,6 +39,8 @@
             this.seeresultButton = new Guna.UI2.WinForms.Guna2Button();
             this.resetButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.endDateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.startDateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.moodComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.endDateLabel = new System.Windows.Forms.Label();
@@ -93,8 +95,7 @@
             this.activity11CountIcon = new Guna.UI2.WinForms.Guna2CircleButton();
             this.activity10CountIcon = new Guna.UI2.WinForms.Guna2CircleButton();
             this.activity9CountIcon = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.startDateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.endDateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.viewChartsButton = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.topActivity3Icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.topActivity1Icon)).BeginInit();
@@ -128,7 +129,7 @@
             // 
             this.guna2CirclePictureBox1.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
             this.guna2CirclePictureBox1.Location = new System.Drawing.Point(199, 96);
-            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
@@ -141,7 +142,7 @@
             // 
             this.topActivity3Icon.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
             this.topActivity3Icon.Location = new System.Drawing.Point(177, 335);
-            this.topActivity3Icon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.topActivity3Icon.Margin = new System.Windows.Forms.Padding(4);
             this.topActivity3Icon.Name = "topActivity3Icon";
             this.topActivity3Icon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.topActivity3Icon.ShadowDecoration.Parent = this.topActivity3Icon;
@@ -154,7 +155,7 @@
             // 
             this.topActivity1Icon.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
             this.topActivity1Icon.Location = new System.Drawing.Point(15, 335);
-            this.topActivity1Icon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.topActivity1Icon.Margin = new System.Windows.Forms.Padding(4);
             this.topActivity1Icon.Name = "topActivity1Icon";
             this.topActivity1Icon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.topActivity1Icon.ShadowDecoration.Parent = this.topActivity1Icon;
@@ -167,7 +168,7 @@
             // 
             this.topActivity2Icon.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
             this.topActivity2Icon.Location = new System.Drawing.Point(96, 335);
-            this.topActivity2Icon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.topActivity2Icon.Margin = new System.Windows.Forms.Padding(4);
             this.topActivity2Icon.Name = "topActivity2Icon";
             this.topActivity2Icon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.topActivity2Icon.ShadowDecoration.Parent = this.topActivity2Icon;
@@ -180,7 +181,7 @@
             // 
             this.topActivity4Icon.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
             this.topActivity4Icon.Location = new System.Drawing.Point(259, 335);
-            this.topActivity4Icon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.topActivity4Icon.Margin = new System.Windows.Forms.Padding(4);
             this.topActivity4Icon.Name = "topActivity4Icon";
             this.topActivity4Icon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.topActivity4Icon.ShadowDecoration.Parent = this.topActivity4Icon;
@@ -193,7 +194,7 @@
             // 
             this.topActivity5Icon.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
             this.topActivity5Icon.Location = new System.Drawing.Point(341, 335);
-            this.topActivity5Icon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.topActivity5Icon.Margin = new System.Windows.Forms.Padding(4);
             this.topActivity5Icon.Name = "topActivity5Icon";
             this.topActivity5Icon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.topActivity5Icon.ShadowDecoration.Parent = this.topActivity5Icon;
@@ -208,7 +209,7 @@
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(60, 78);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(38, 19);
             this.guna2HtmlLabel1.TabIndex = 5;
@@ -220,7 +221,7 @@
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(60, 294);
-            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(159, 19);
             this.guna2HtmlLabel2.TabIndex = 6;
@@ -237,8 +238,8 @@
             this.seeresultButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.seeresultButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.seeresultButton.HoverState.Parent = this.seeresultButton;
-            this.seeresultButton.Location = new System.Drawing.Point(127, 162);
-            this.seeresultButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.seeresultButton.Location = new System.Drawing.Point(130, 161);
+            this.seeresultButton.Margin = new System.Windows.Forms.Padding(4);
             this.seeresultButton.Name = "seeresultButton";
             this.seeresultButton.ShadowDecoration.Parent = this.seeresultButton;
             this.seeresultButton.Size = new System.Drawing.Size(116, 44);
@@ -259,8 +260,8 @@
             this.resetButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.resetButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.resetButton.HoverState.Parent = this.resetButton;
-            this.resetButton.Location = new System.Drawing.Point(531, 585);
-            this.resetButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.resetButton.Location = new System.Drawing.Point(450, 585);
+            this.resetButton.Margin = new System.Windows.Forms.Padding(4);
             this.resetButton.Name = "resetButton";
             this.resetButton.ShadowDecoration.Parent = this.resetButton;
             this.resetButton.Size = new System.Drawing.Size(121, 42);
@@ -283,6 +284,42 @@
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(352, 222);
             this.guna2ShadowPanel1.TabIndex = 16;
             this.guna2ShadowPanel1.Visible = false;
+            // 
+            // endDateTimePicker
+            // 
+            this.endDateTimePicker.BorderRadius = 10;
+            this.endDateTimePicker.CheckedState.Parent = this.endDateTimePicker;
+            this.endDateTimePicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
+            this.endDateTimePicker.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.endDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.endDateTimePicker.HoverState.Parent = this.endDateTimePicker;
+            this.endDateTimePicker.Location = new System.Drawing.Point(35, 97);
+            this.endDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.endDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.endDateTimePicker.Name = "endDateTimePicker";
+            this.endDateTimePicker.ShadowDecoration.Parent = this.endDateTimePicker;
+            this.endDateTimePicker.Size = new System.Drawing.Size(289, 35);
+            this.endDateTimePicker.TabIndex = 56;
+            this.endDateTimePicker.Value = new System.DateTime(2020, 12, 9, 15, 3, 31, 529);
+            this.endDateTimePicker.ValueChanged += new System.EventHandler(this.dateTimePicker_ValueChanged);
+            // 
+            // startDateTimePicker
+            // 
+            this.startDateTimePicker.BorderRadius = 10;
+            this.startDateTimePicker.CheckedState.Parent = this.startDateTimePicker;
+            this.startDateTimePicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
+            this.startDateTimePicker.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.startDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.startDateTimePicker.HoverState.Parent = this.startDateTimePicker;
+            this.startDateTimePicker.Location = new System.Drawing.Point(36, 46);
+            this.startDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.startDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.startDateTimePicker.Name = "startDateTimePicker";
+            this.startDateTimePicker.ShadowDecoration.Parent = this.startDateTimePicker;
+            this.startDateTimePicker.Size = new System.Drawing.Size(288, 35);
+            this.startDateTimePicker.TabIndex = 55;
+            this.startDateTimePicker.Value = new System.DateTime(2020, 12, 9, 15, 3, 31, 529);
+            this.startDateTimePicker.ValueChanged += new System.EventHandler(this.dateTimePicker_ValueChanged);
             // 
             // linkLabel1
             // 
@@ -314,7 +351,7 @@
             this.moodComboBox.ItemHeight = 30;
             this.moodComboBox.ItemsAppearance.Parent = this.moodComboBox;
             this.moodComboBox.Location = new System.Drawing.Point(117, 202);
-            this.moodComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.moodComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.moodComboBox.Name = "moodComboBox";
             this.moodComboBox.ShadowDecoration.Parent = this.moodComboBox;
             this.moodComboBox.Size = new System.Drawing.Size(259, 36);
@@ -395,7 +432,7 @@
             // 
             this.mood4Icon.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
             this.mood4Icon.Location = new System.Drawing.Point(711, 263);
-            this.mood4Icon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mood4Icon.Margin = new System.Windows.Forms.Padding(4);
             this.mood4Icon.Name = "mood4Icon";
             this.mood4Icon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.mood4Icon.ShadowDecoration.Parent = this.mood4Icon;
@@ -408,7 +445,7 @@
             // 
             this.mood2Icon.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
             this.mood2Icon.Location = new System.Drawing.Point(548, 263);
-            this.mood2Icon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mood2Icon.Margin = new System.Windows.Forms.Padding(4);
             this.mood2Icon.Name = "mood2Icon";
             this.mood2Icon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.mood2Icon.ShadowDecoration.Parent = this.mood2Icon;
@@ -421,7 +458,7 @@
             // 
             this.mood1Icon.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
             this.mood1Icon.Location = new System.Drawing.Point(467, 263);
-            this.mood1Icon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mood1Icon.Margin = new System.Windows.Forms.Padding(4);
             this.mood1Icon.Name = "mood1Icon";
             this.mood1Icon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.mood1Icon.ShadowDecoration.Parent = this.mood1Icon;
@@ -434,7 +471,7 @@
             // 
             this.mood3Icon.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
             this.mood3Icon.Location = new System.Drawing.Point(629, 263);
-            this.mood3Icon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mood3Icon.Margin = new System.Windows.Forms.Padding(4);
             this.mood3Icon.Name = "mood3Icon";
             this.mood3Icon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.mood3Icon.ShadowDecoration.Parent = this.mood3Icon;
@@ -447,7 +484,7 @@
             // 
             this.mood7Icon.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
             this.mood7Icon.Location = new System.Drawing.Point(629, 350);
-            this.mood7Icon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mood7Icon.Margin = new System.Windows.Forms.Padding(4);
             this.mood7Icon.Name = "mood7Icon";
             this.mood7Icon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.mood7Icon.ShadowDecoration.Parent = this.mood7Icon;
@@ -460,7 +497,7 @@
             // 
             this.mood5Icon.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
             this.mood5Icon.Location = new System.Drawing.Point(467, 350);
-            this.mood5Icon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mood5Icon.Margin = new System.Windows.Forms.Padding(4);
             this.mood5Icon.Name = "mood5Icon";
             this.mood5Icon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.mood5Icon.ShadowDecoration.Parent = this.mood5Icon;
@@ -473,7 +510,7 @@
             // 
             this.mood6Icon.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
             this.mood6Icon.Location = new System.Drawing.Point(548, 350);
-            this.mood6Icon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mood6Icon.Margin = new System.Windows.Forms.Padding(4);
             this.mood6Icon.Name = "mood6Icon";
             this.mood6Icon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.mood6Icon.ShadowDecoration.Parent = this.mood6Icon;
@@ -486,7 +523,7 @@
             // 
             this.mood8Icon.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
             this.mood8Icon.Location = new System.Drawing.Point(711, 350);
-            this.mood8Icon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mood8Icon.Margin = new System.Windows.Forms.Padding(4);
             this.mood8Icon.Name = "mood8Icon";
             this.mood8Icon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.mood8Icon.ShadowDecoration.Parent = this.mood8Icon;
@@ -499,7 +536,7 @@
             // 
             this.activity3Icon.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
             this.activity3Icon.Location = new System.Drawing.Point(984, 263);
-            this.activity3Icon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.activity3Icon.Margin = new System.Windows.Forms.Padding(4);
             this.activity3Icon.Name = "activity3Icon";
             this.activity3Icon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.activity3Icon.ShadowDecoration.Parent = this.activity3Icon;
@@ -512,7 +549,7 @@
             // 
             this.activity7Icon.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
             this.activity7Icon.Location = new System.Drawing.Point(985, 350);
-            this.activity7Icon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.activity7Icon.Margin = new System.Windows.Forms.Padding(4);
             this.activity7Icon.Name = "activity7Icon";
             this.activity7Icon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.activity7Icon.ShadowDecoration.Parent = this.activity7Icon;
@@ -525,7 +562,7 @@
             // 
             this.activity1Icon.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
             this.activity1Icon.Location = new System.Drawing.Point(823, 263);
-            this.activity1Icon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.activity1Icon.Margin = new System.Windows.Forms.Padding(4);
             this.activity1Icon.Name = "activity1Icon";
             this.activity1Icon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.activity1Icon.ShadowDecoration.Parent = this.activity1Icon;
@@ -538,7 +575,7 @@
             // 
             this.activity5Icon.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
             this.activity5Icon.Location = new System.Drawing.Point(823, 350);
-            this.activity5Icon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.activity5Icon.Margin = new System.Windows.Forms.Padding(4);
             this.activity5Icon.Name = "activity5Icon";
             this.activity5Icon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.activity5Icon.ShadowDecoration.Parent = this.activity5Icon;
@@ -551,7 +588,7 @@
             // 
             this.activity2Icon.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
             this.activity2Icon.Location = new System.Drawing.Point(904, 263);
-            this.activity2Icon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.activity2Icon.Margin = new System.Windows.Forms.Padding(4);
             this.activity2Icon.Name = "activity2Icon";
             this.activity2Icon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.activity2Icon.ShadowDecoration.Parent = this.activity2Icon;
@@ -564,7 +601,7 @@
             // 
             this.activity6Icon.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
             this.activity6Icon.Location = new System.Drawing.Point(904, 350);
-            this.activity6Icon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.activity6Icon.Margin = new System.Windows.Forms.Padding(4);
             this.activity6Icon.Name = "activity6Icon";
             this.activity6Icon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.activity6Icon.ShadowDecoration.Parent = this.activity6Icon;
@@ -577,7 +614,7 @@
             // 
             this.activity4Icon.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
             this.activity4Icon.Location = new System.Drawing.Point(1067, 263);
-            this.activity4Icon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.activity4Icon.Margin = new System.Windows.Forms.Padding(4);
             this.activity4Icon.Name = "activity4Icon";
             this.activity4Icon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.activity4Icon.ShadowDecoration.Parent = this.activity4Icon;
@@ -590,7 +627,7 @@
             // 
             this.activity8Icon.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
             this.activity8Icon.Location = new System.Drawing.Point(1067, 350);
-            this.activity8Icon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.activity8Icon.Margin = new System.Windows.Forms.Padding(4);
             this.activity8Icon.Name = "activity8Icon";
             this.activity8Icon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.activity8Icon.ShadowDecoration.Parent = this.activity8Icon;
@@ -603,7 +640,7 @@
             // 
             this.activity11Icon.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
             this.activity11Icon.Location = new System.Drawing.Point(985, 436);
-            this.activity11Icon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.activity11Icon.Margin = new System.Windows.Forms.Padding(4);
             this.activity11Icon.Name = "activity11Icon";
             this.activity11Icon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.activity11Icon.ShadowDecoration.Parent = this.activity11Icon;
@@ -616,7 +653,7 @@
             // 
             this.activity9Icon.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
             this.activity9Icon.Location = new System.Drawing.Point(823, 436);
-            this.activity9Icon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.activity9Icon.Margin = new System.Windows.Forms.Padding(4);
             this.activity9Icon.Name = "activity9Icon";
             this.activity9Icon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.activity9Icon.ShadowDecoration.Parent = this.activity9Icon;
@@ -629,7 +666,7 @@
             // 
             this.activity10Icon.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
             this.activity10Icon.Location = new System.Drawing.Point(904, 436);
-            this.activity10Icon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.activity10Icon.Margin = new System.Windows.Forms.Padding(4);
             this.activity10Icon.Name = "activity10Icon";
             this.activity10Icon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.activity10Icon.ShadowDecoration.Parent = this.activity10Icon;
@@ -642,7 +679,7 @@
             // 
             this.activity12Icon.Image = global::PBL_Puwsheee.Properties.Resources.SamplePhoto;
             this.activity12Icon.Location = new System.Drawing.Point(1067, 436);
-            this.activity12Icon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.activity12Icon.Margin = new System.Windows.Forms.Padding(4);
             this.activity12Icon.Name = "activity12Icon";
             this.activity12Icon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.activity12Icon.ShadowDecoration.Parent = this.activity12Icon;
@@ -661,7 +698,7 @@
             this.topActivity1CountIcon.ForeColor = System.Drawing.Color.White;
             this.topActivity1CountIcon.HoverState.Parent = this.topActivity1CountIcon;
             this.topActivity1CountIcon.Location = new System.Drawing.Point(56, 380);
-            this.topActivity1CountIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.topActivity1CountIcon.Margin = new System.Windows.Forms.Padding(4);
             this.topActivity1CountIcon.Name = "topActivity1CountIcon";
             this.topActivity1CountIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.topActivity1CountIcon.ShadowDecoration.Parent = this.topActivity1CountIcon;
@@ -680,7 +717,7 @@
             this.topActivity2CountIcon.ForeColor = System.Drawing.Color.White;
             this.topActivity2CountIcon.HoverState.Parent = this.topActivity2CountIcon;
             this.topActivity2CountIcon.Location = new System.Drawing.Point(136, 380);
-            this.topActivity2CountIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.topActivity2CountIcon.Margin = new System.Windows.Forms.Padding(4);
             this.topActivity2CountIcon.Name = "topActivity2CountIcon";
             this.topActivity2CountIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.topActivity2CountIcon.ShadowDecoration.Parent = this.topActivity2CountIcon;
@@ -699,7 +736,7 @@
             this.topActivity3CountIcon.ForeColor = System.Drawing.Color.White;
             this.topActivity3CountIcon.HoverState.Parent = this.topActivity3CountIcon;
             this.topActivity3CountIcon.Location = new System.Drawing.Point(216, 380);
-            this.topActivity3CountIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.topActivity3CountIcon.Margin = new System.Windows.Forms.Padding(4);
             this.topActivity3CountIcon.Name = "topActivity3CountIcon";
             this.topActivity3CountIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.topActivity3CountIcon.ShadowDecoration.Parent = this.topActivity3CountIcon;
@@ -718,7 +755,7 @@
             this.topActivity4CountIcon.ForeColor = System.Drawing.Color.White;
             this.topActivity4CountIcon.HoverState.Parent = this.topActivity4CountIcon;
             this.topActivity4CountIcon.Location = new System.Drawing.Point(296, 380);
-            this.topActivity4CountIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.topActivity4CountIcon.Margin = new System.Windows.Forms.Padding(4);
             this.topActivity4CountIcon.Name = "topActivity4CountIcon";
             this.topActivity4CountIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.topActivity4CountIcon.ShadowDecoration.Parent = this.topActivity4CountIcon;
@@ -737,7 +774,7 @@
             this.topActivity5CountIcon.ForeColor = System.Drawing.Color.White;
             this.topActivity5CountIcon.HoverState.Parent = this.topActivity5CountIcon;
             this.topActivity5CountIcon.Location = new System.Drawing.Point(376, 380);
-            this.topActivity5CountIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.topActivity5CountIcon.Margin = new System.Windows.Forms.Padding(4);
             this.topActivity5CountIcon.Name = "topActivity5CountIcon";
             this.topActivity5CountIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.topActivity5CountIcon.ShadowDecoration.Parent = this.topActivity5CountIcon;
@@ -756,7 +793,7 @@
             this.mood4CountIcon.ForeColor = System.Drawing.Color.White;
             this.mood4CountIcon.HoverState.Parent = this.mood4CountIcon;
             this.mood4CountIcon.Location = new System.Drawing.Point(749, 306);
-            this.mood4CountIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mood4CountIcon.Margin = new System.Windows.Forms.Padding(4);
             this.mood4CountIcon.Name = "mood4CountIcon";
             this.mood4CountIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.mood4CountIcon.ShadowDecoration.Parent = this.mood4CountIcon;
@@ -775,7 +812,7 @@
             this.mood3CountIcon.ForeColor = System.Drawing.Color.White;
             this.mood3CountIcon.HoverState.Parent = this.mood3CountIcon;
             this.mood3CountIcon.Location = new System.Drawing.Point(669, 306);
-            this.mood3CountIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mood3CountIcon.Margin = new System.Windows.Forms.Padding(4);
             this.mood3CountIcon.Name = "mood3CountIcon";
             this.mood3CountIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.mood3CountIcon.ShadowDecoration.Parent = this.mood3CountIcon;
@@ -794,7 +831,7 @@
             this.mood2CountIcon.ForeColor = System.Drawing.Color.White;
             this.mood2CountIcon.HoverState.Parent = this.mood2CountIcon;
             this.mood2CountIcon.Location = new System.Drawing.Point(589, 306);
-            this.mood2CountIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mood2CountIcon.Margin = new System.Windows.Forms.Padding(4);
             this.mood2CountIcon.Name = "mood2CountIcon";
             this.mood2CountIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.mood2CountIcon.ShadowDecoration.Parent = this.mood2CountIcon;
@@ -813,7 +850,7 @@
             this.mood1CountIcon.ForeColor = System.Drawing.Color.White;
             this.mood1CountIcon.HoverState.Parent = this.mood1CountIcon;
             this.mood1CountIcon.Location = new System.Drawing.Point(509, 306);
-            this.mood1CountIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mood1CountIcon.Margin = new System.Windows.Forms.Padding(4);
             this.mood1CountIcon.Name = "mood1CountIcon";
             this.mood1CountIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.mood1CountIcon.ShadowDecoration.Parent = this.mood1CountIcon;
@@ -832,7 +869,7 @@
             this.mood8CountIcon.ForeColor = System.Drawing.Color.White;
             this.mood8CountIcon.HoverState.Parent = this.mood8CountIcon;
             this.mood8CountIcon.Location = new System.Drawing.Point(749, 394);
-            this.mood8CountIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mood8CountIcon.Margin = new System.Windows.Forms.Padding(4);
             this.mood8CountIcon.Name = "mood8CountIcon";
             this.mood8CountIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.mood8CountIcon.ShadowDecoration.Parent = this.mood8CountIcon;
@@ -851,7 +888,7 @@
             this.mood7CountIcon.ForeColor = System.Drawing.Color.White;
             this.mood7CountIcon.HoverState.Parent = this.mood7CountIcon;
             this.mood7CountIcon.Location = new System.Drawing.Point(669, 394);
-            this.mood7CountIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mood7CountIcon.Margin = new System.Windows.Forms.Padding(4);
             this.mood7CountIcon.Name = "mood7CountIcon";
             this.mood7CountIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.mood7CountIcon.ShadowDecoration.Parent = this.mood7CountIcon;
@@ -870,7 +907,7 @@
             this.mood6CountIcon.ForeColor = System.Drawing.Color.White;
             this.mood6CountIcon.HoverState.Parent = this.mood6CountIcon;
             this.mood6CountIcon.Location = new System.Drawing.Point(589, 394);
-            this.mood6CountIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mood6CountIcon.Margin = new System.Windows.Forms.Padding(4);
             this.mood6CountIcon.Name = "mood6CountIcon";
             this.mood6CountIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.mood6CountIcon.ShadowDecoration.Parent = this.mood6CountIcon;
@@ -889,7 +926,7 @@
             this.mood5CountIcon.ForeColor = System.Drawing.Color.White;
             this.mood5CountIcon.HoverState.Parent = this.mood5CountIcon;
             this.mood5CountIcon.Location = new System.Drawing.Point(509, 394);
-            this.mood5CountIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mood5CountIcon.Margin = new System.Windows.Forms.Padding(4);
             this.mood5CountIcon.Name = "mood5CountIcon";
             this.mood5CountIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.mood5CountIcon.ShadowDecoration.Parent = this.mood5CountIcon;
@@ -908,7 +945,7 @@
             this.activity4CountIcon.ForeColor = System.Drawing.Color.White;
             this.activity4CountIcon.HoverState.Parent = this.activity4CountIcon;
             this.activity4CountIcon.Location = new System.Drawing.Point(1103, 306);
-            this.activity4CountIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.activity4CountIcon.Margin = new System.Windows.Forms.Padding(4);
             this.activity4CountIcon.Name = "activity4CountIcon";
             this.activity4CountIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.activity4CountIcon.ShadowDecoration.Parent = this.activity4CountIcon;
@@ -927,7 +964,7 @@
             this.activity3CountIcon.ForeColor = System.Drawing.Color.White;
             this.activity3CountIcon.HoverState.Parent = this.activity3CountIcon;
             this.activity3CountIcon.Location = new System.Drawing.Point(1023, 306);
-            this.activity3CountIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.activity3CountIcon.Margin = new System.Windows.Forms.Padding(4);
             this.activity3CountIcon.Name = "activity3CountIcon";
             this.activity3CountIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.activity3CountIcon.ShadowDecoration.Parent = this.activity3CountIcon;
@@ -946,7 +983,7 @@
             this.activity2CountIcon.ForeColor = System.Drawing.Color.White;
             this.activity2CountIcon.HoverState.Parent = this.activity2CountIcon;
             this.activity2CountIcon.Location = new System.Drawing.Point(943, 306);
-            this.activity2CountIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.activity2CountIcon.Margin = new System.Windows.Forms.Padding(4);
             this.activity2CountIcon.Name = "activity2CountIcon";
             this.activity2CountIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.activity2CountIcon.ShadowDecoration.Parent = this.activity2CountIcon;
@@ -965,7 +1002,7 @@
             this.activity1CountIcon.ForeColor = System.Drawing.Color.White;
             this.activity1CountIcon.HoverState.Parent = this.activity1CountIcon;
             this.activity1CountIcon.Location = new System.Drawing.Point(863, 306);
-            this.activity1CountIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.activity1CountIcon.Margin = new System.Windows.Forms.Padding(4);
             this.activity1CountIcon.Name = "activity1CountIcon";
             this.activity1CountIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.activity1CountIcon.ShadowDecoration.Parent = this.activity1CountIcon;
@@ -984,7 +1021,7 @@
             this.activity8CountIcon.ForeColor = System.Drawing.Color.White;
             this.activity8CountIcon.HoverState.Parent = this.activity8CountIcon;
             this.activity8CountIcon.Location = new System.Drawing.Point(1103, 394);
-            this.activity8CountIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.activity8CountIcon.Margin = new System.Windows.Forms.Padding(4);
             this.activity8CountIcon.Name = "activity8CountIcon";
             this.activity8CountIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.activity8CountIcon.ShadowDecoration.Parent = this.activity8CountIcon;
@@ -1003,7 +1040,7 @@
             this.activity7CountIcon.ForeColor = System.Drawing.Color.White;
             this.activity7CountIcon.HoverState.Parent = this.activity7CountIcon;
             this.activity7CountIcon.Location = new System.Drawing.Point(1023, 394);
-            this.activity7CountIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.activity7CountIcon.Margin = new System.Windows.Forms.Padding(4);
             this.activity7CountIcon.Name = "activity7CountIcon";
             this.activity7CountIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.activity7CountIcon.ShadowDecoration.Parent = this.activity7CountIcon;
@@ -1022,7 +1059,7 @@
             this.activity6CountIcon.ForeColor = System.Drawing.Color.White;
             this.activity6CountIcon.HoverState.Parent = this.activity6CountIcon;
             this.activity6CountIcon.Location = new System.Drawing.Point(943, 394);
-            this.activity6CountIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.activity6CountIcon.Margin = new System.Windows.Forms.Padding(4);
             this.activity6CountIcon.Name = "activity6CountIcon";
             this.activity6CountIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.activity6CountIcon.ShadowDecoration.Parent = this.activity6CountIcon;
@@ -1041,7 +1078,7 @@
             this.activity5CountIcon.ForeColor = System.Drawing.Color.White;
             this.activity5CountIcon.HoverState.Parent = this.activity5CountIcon;
             this.activity5CountIcon.Location = new System.Drawing.Point(863, 394);
-            this.activity5CountIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.activity5CountIcon.Margin = new System.Windows.Forms.Padding(4);
             this.activity5CountIcon.Name = "activity5CountIcon";
             this.activity5CountIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.activity5CountIcon.ShadowDecoration.Parent = this.activity5CountIcon;
@@ -1060,7 +1097,7 @@
             this.activity12CountIcon.ForeColor = System.Drawing.Color.White;
             this.activity12CountIcon.HoverState.Parent = this.activity12CountIcon;
             this.activity12CountIcon.Location = new System.Drawing.Point(1103, 481);
-            this.activity12CountIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.activity12CountIcon.Margin = new System.Windows.Forms.Padding(4);
             this.activity12CountIcon.Name = "activity12CountIcon";
             this.activity12CountIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.activity12CountIcon.ShadowDecoration.Parent = this.activity12CountIcon;
@@ -1079,7 +1116,7 @@
             this.activity11CountIcon.ForeColor = System.Drawing.Color.White;
             this.activity11CountIcon.HoverState.Parent = this.activity11CountIcon;
             this.activity11CountIcon.Location = new System.Drawing.Point(1023, 481);
-            this.activity11CountIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.activity11CountIcon.Margin = new System.Windows.Forms.Padding(4);
             this.activity11CountIcon.Name = "activity11CountIcon";
             this.activity11CountIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.activity11CountIcon.ShadowDecoration.Parent = this.activity11CountIcon;
@@ -1098,7 +1135,7 @@
             this.activity10CountIcon.ForeColor = System.Drawing.Color.White;
             this.activity10CountIcon.HoverState.Parent = this.activity10CountIcon;
             this.activity10CountIcon.Location = new System.Drawing.Point(943, 481);
-            this.activity10CountIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.activity10CountIcon.Margin = new System.Windows.Forms.Padding(4);
             this.activity10CountIcon.Name = "activity10CountIcon";
             this.activity10CountIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.activity10CountIcon.ShadowDecoration.Parent = this.activity10CountIcon;
@@ -1117,7 +1154,7 @@
             this.activity9CountIcon.ForeColor = System.Drawing.Color.White;
             this.activity9CountIcon.HoverState.Parent = this.activity9CountIcon;
             this.activity9CountIcon.Location = new System.Drawing.Point(863, 481);
-            this.activity9CountIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.activity9CountIcon.Margin = new System.Windows.Forms.Padding(4);
             this.activity9CountIcon.Name = "activity9CountIcon";
             this.activity9CountIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.activity9CountIcon.ShadowDecoration.Parent = this.activity9CountIcon;
@@ -1126,41 +1163,25 @@
             this.activity9CountIcon.Text = "0";
             this.activity9CountIcon.UseTransparentBackground = true;
             // 
-            // startDateTimePicker
+            // viewChartsButton
             // 
-            this.startDateTimePicker.BorderRadius = 10;
-            this.startDateTimePicker.CheckedState.Parent = this.startDateTimePicker;
-            this.startDateTimePicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.startDateTimePicker.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.startDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.startDateTimePicker.HoverState.Parent = this.startDateTimePicker;
-            this.startDateTimePicker.Location = new System.Drawing.Point(45, 46);
-            this.startDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.startDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.startDateTimePicker.Name = "startDateTimePicker";
-            this.startDateTimePicker.ShadowDecoration.Parent = this.startDateTimePicker;
-            this.startDateTimePicker.Size = new System.Drawing.Size(265, 35);
-            this.startDateTimePicker.TabIndex = 55;
-            this.startDateTimePicker.Value = new System.DateTime(2020, 12, 9, 15, 3, 31, 529);
-            this.startDateTimePicker.ValueChanged += new System.EventHandler(this.dateTimePicker_ValueChanged);
-            // 
-            // endDateTimePicker
-            // 
-            this.endDateTimePicker.BorderRadius = 10;
-            this.endDateTimePicker.CheckedState.Parent = this.endDateTimePicker;
-            this.endDateTimePicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.endDateTimePicker.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.endDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.endDateTimePicker.HoverState.Parent = this.endDateTimePicker;
-            this.endDateTimePicker.Location = new System.Drawing.Point(46, 97);
-            this.endDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.endDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.endDateTimePicker.Name = "endDateTimePicker";
-            this.endDateTimePicker.ShadowDecoration.Parent = this.endDateTimePicker;
-            this.endDateTimePicker.Size = new System.Drawing.Size(265, 35);
-            this.endDateTimePicker.TabIndex = 56;
-            this.endDateTimePicker.Value = new System.DateTime(2020, 12, 9, 15, 3, 31, 529);
-            this.endDateTimePicker.ValueChanged += new System.EventHandler(this.dateTimePicker_ValueChanged);
+            this.viewChartsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.viewChartsButton.BorderRadius = 16;
+            this.viewChartsButton.CheckedState.Parent = this.viewChartsButton;
+            this.viewChartsButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.viewChartsButton.CustomImages.Parent = this.viewChartsButton;
+            this.viewChartsButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
+            this.viewChartsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.viewChartsButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
+            this.viewChartsButton.HoverState.Parent = this.viewChartsButton;
+            this.viewChartsButton.Location = new System.Drawing.Point(623, 585);
+            this.viewChartsButton.Margin = new System.Windows.Forms.Padding(4);
+            this.viewChartsButton.Name = "viewChartsButton";
+            this.viewChartsButton.ShadowDecoration.Parent = this.viewChartsButton;
+            this.viewChartsButton.Size = new System.Drawing.Size(121, 42);
+            this.viewChartsButton.TabIndex = 57;
+            this.viewChartsButton.Text = "View Charts";
+            this.viewChartsButton.Click += new System.EventHandler(this.viewChartsButton_Click);
             // 
             // Analysis
             // 
@@ -1168,6 +1189,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.ClientSize = new System.Drawing.Size(1180, 660);
+            this.Controls.Add(this.viewChartsButton);
             this.Controls.Add(this.guna2ShadowPanel1);
             this.Controls.Add(this.activity12CountIcon);
             this.Controls.Add(this.activity11CountIcon);
@@ -1234,7 +1256,7 @@
             this.Controls.Add(this.guna2CirclePictureBox1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Analysis";
             this.Text = "Analysis";
             this.Load += new System.EventHandler(this.Analysis_Load);
@@ -1339,5 +1361,6 @@
         private Guna.UI2.WinForms.Guna2CircleButton activity9CountIcon;
         private Guna.UI2.WinForms.Guna2DateTimePicker endDateTimePicker;
         private Guna.UI2.WinForms.Guna2DateTimePicker startDateTimePicker;
+        private Guna.UI2.WinForms.Guna2Button viewChartsButton;
     }
 }

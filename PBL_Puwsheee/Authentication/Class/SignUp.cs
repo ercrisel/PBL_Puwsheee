@@ -234,7 +234,8 @@ namespace PBL_Puwsheee.Authentication.Class
                 smt.EnableSsl = true;
                 smt.Port = 587;
                 smt.Send(msg);
-                MessageBox.Show("The verification code is sent successfully please check your email.", "Success", MessageBoxButtons.OK);
+               // MessageBox.Show("The verification code is sent successfully please check your email.", "Success", MessageBoxButtons.OK);
+               
             }
             catch (Exception ex)
             {

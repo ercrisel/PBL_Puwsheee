@@ -265,6 +265,7 @@ namespace PBL_Puwsheee
             this.Controls.Add(this.resultsButton);
             this.Controls.Add(this.guna2ShadowPanel1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Charts";
             this.Text = "Charts";

@@ -60,7 +60,8 @@ namespace PBL_Puwsheee
                 {
                     publicUserName = user.Username;
                     publicPasswordInput = user.Password;
-                    MessageBox.Show("You will be redirected to the homepage, Login Success");
+                     MessageBox.Show("You will be redirected to the homepage, Login Success");
+                    
                     
                     fadeOut.Start();
                     PositiveAffirmations pa = new PositiveAffirmations();
@@ -69,6 +70,7 @@ namespace PBL_Puwsheee
                 else
                 {
                     MessageBox.Show("NO ACCOUNT REGISTERED IN THAT USERNAME AND PASSWORD");
+                   
                 }
             }
             else
