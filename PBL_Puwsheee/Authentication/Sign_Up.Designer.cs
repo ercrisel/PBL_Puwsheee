@@ -67,6 +67,8 @@
             this.showConfirmPasswordButton = new Guna.UI2.WinForms.Guna2CircleButton();
             this.fadeIn = new System.Windows.Forms.Timer(this.components);
             this.fadeOut = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPicture)).BeginInit();
             this.SuspendLayout();
@@ -110,7 +112,7 @@
             this.firstnameLabel.Location = new System.Drawing.Point(49, 225);
             this.firstnameLabel.Margin = new System.Windows.Forms.Padding(4);
             this.firstnameLabel.Name = "firstnameLabel";
-            this.firstnameLabel.Size = new System.Drawing.Size(77, 17);
+            this.firstnameLabel.Size = new System.Drawing.Size(91, 20);
             this.firstnameLabel.TabIndex = 12;
             this.firstnameLabel.Text = "First Name:";
             // 
@@ -277,7 +279,7 @@
             this.lastnameLabel.Location = new System.Drawing.Point(504, 225);
             this.lastnameLabel.Margin = new System.Windows.Forms.Padding(4);
             this.lastnameLabel.Name = "lastnameLabel";
-            this.lastnameLabel.Size = new System.Drawing.Size(76, 17);
+            this.lastnameLabel.Size = new System.Drawing.Size(89, 20);
             this.lastnameLabel.TabIndex = 18;
             this.lastnameLabel.Text = "Last Name:";
             // 
@@ -289,7 +291,7 @@
             this.emailLabel.Location = new System.Drawing.Point(28, 308);
             this.emailLabel.Margin = new System.Windows.Forms.Padding(4);
             this.emailLabel.Name = "emailLabel";
-            this.emailLabel.Size = new System.Drawing.Size(99, 17);
+            this.emailLabel.Size = new System.Drawing.Size(116, 20);
             this.emailLabel.TabIndex = 19;
             this.emailLabel.Text = "Email Address:";
             // 
@@ -301,7 +303,7 @@
             this.usernameLabel.Location = new System.Drawing.Point(507, 308);
             this.usernameLabel.Margin = new System.Windows.Forms.Padding(4);
             this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(73, 17);
+            this.usernameLabel.Size = new System.Drawing.Size(85, 20);
             this.usernameLabel.TabIndex = 20;
             this.usernameLabel.Text = "Username:";
             // 
@@ -313,7 +315,7 @@
             this.passwordLabel.Location = new System.Drawing.Point(51, 391);
             this.passwordLabel.Margin = new System.Windows.Forms.Padding(4);
             this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(69, 17);
+            this.passwordLabel.Size = new System.Drawing.Size(83, 20);
             this.passwordLabel.TabIndex = 21;
             this.passwordLabel.Text = "Password:";
             // 
@@ -325,7 +327,7 @@
             this.confirmpasswordLabel.Location = new System.Drawing.Point(459, 391);
             this.confirmpasswordLabel.Margin = new System.Windows.Forms.Padding(4);
             this.confirmpasswordLabel.Name = "confirmpasswordLabel";
-            this.confirmpasswordLabel.Size = new System.Drawing.Size(123, 17);
+            this.confirmpasswordLabel.Size = new System.Drawing.Size(148, 20);
             this.confirmpasswordLabel.TabIndex = 0;
             this.confirmpasswordLabel.Text = "Confirm Password:";
             // 
@@ -404,7 +406,7 @@
             this.firstNameCondition.Location = new System.Drawing.Point(187, 256);
             this.firstNameCondition.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.firstNameCondition.Name = "firstNameCondition";
-            this.firstNameCondition.Size = new System.Drawing.Size(170, 12);
+            this.firstNameCondition.Size = new System.Drawing.Size(198, 13);
             this.firstNameCondition.TabIndex = 27;
             this.firstNameCondition.Text = "MUST ONLY CONTAIN LETTERS";
             this.firstNameCondition.Visible = false;
@@ -417,7 +419,7 @@
             this.lastNameCondition.Location = new System.Drawing.Point(644, 257);
             this.lastNameCondition.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lastNameCondition.Name = "lastNameCondition";
-            this.lastNameCondition.Size = new System.Drawing.Size(170, 12);
+            this.lastNameCondition.Size = new System.Drawing.Size(198, 13);
             this.lastNameCondition.TabIndex = 28;
             this.lastNameCondition.Text = "MUST ONLY CONTAIN LETTERS";
             this.lastNameCondition.Visible = false;
@@ -430,7 +432,7 @@
             this.emailCondition.Location = new System.Drawing.Point(223, 342);
             this.emailCondition.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.emailCondition.Name = "emailCondition";
-            this.emailCondition.Size = new System.Drawing.Size(93, 12);
+            this.emailCondition.Size = new System.Drawing.Size(105, 13);
             this.emailCondition.TabIndex = 29;
             this.emailCondition.Text = "EMAIL IS TAKEN";
             this.emailCondition.Visible = false;
@@ -443,7 +445,7 @@
             this.usernameCondition.Location = new System.Drawing.Point(669, 341);
             this.usernameCondition.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.usernameCondition.Name = "usernameCondition";
-            this.usernameCondition.Size = new System.Drawing.Size(121, 12);
+            this.usernameCondition.Size = new System.Drawing.Size(137, 13);
             this.usernameCondition.TabIndex = 30;
             this.usernameCondition.Text = "USERNAME IS TAKEN";
             this.usernameCondition.Visible = false;
@@ -456,7 +458,7 @@
             this.requiredFirstName.Location = new System.Drawing.Point(187, 257);
             this.requiredFirstName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.requiredFirstName.Name = "requiredFirstName";
-            this.requiredFirstName.Size = new System.Drawing.Size(159, 12);
+            this.requiredFirstName.Size = new System.Drawing.Size(181, 13);
             this.requiredFirstName.TabIndex = 32;
             this.requiredFirstName.Text = "* THIS IS A REQUIRED FIELD";
             this.requiredFirstName.Visible = false;
@@ -469,7 +471,7 @@
             this.requiredUsername.Location = new System.Drawing.Point(655, 341);
             this.requiredUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.requiredUsername.Name = "requiredUsername";
-            this.requiredUsername.Size = new System.Drawing.Size(159, 12);
+            this.requiredUsername.Size = new System.Drawing.Size(181, 13);
             this.requiredUsername.TabIndex = 33;
             this.requiredUsername.Text = "* THIS IS A REQUIRED FIELD";
             this.requiredUsername.Visible = false;
@@ -482,7 +484,7 @@
             this.requiredLastName.Location = new System.Drawing.Point(655, 257);
             this.requiredLastName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.requiredLastName.Name = "requiredLastName";
-            this.requiredLastName.Size = new System.Drawing.Size(159, 12);
+            this.requiredLastName.Size = new System.Drawing.Size(181, 13);
             this.requiredLastName.TabIndex = 34;
             this.requiredLastName.Text = "* THIS IS A REQUIRED FIELD";
             this.requiredLastName.Visible = false;
@@ -495,7 +497,7 @@
             this.requiredEmail.Location = new System.Drawing.Point(187, 342);
             this.requiredEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.requiredEmail.Name = "requiredEmail";
-            this.requiredEmail.Size = new System.Drawing.Size(159, 12);
+            this.requiredEmail.Size = new System.Drawing.Size(181, 13);
             this.requiredEmail.TabIndex = 35;
             this.requiredEmail.Text = "* THIS IS A REQUIRED FIELD";
             this.requiredEmail.Visible = false;
@@ -508,7 +510,7 @@
             this.requiredPassword.Location = new System.Drawing.Point(187, 421);
             this.requiredPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.requiredPassword.Name = "requiredPassword";
-            this.requiredPassword.Size = new System.Drawing.Size(159, 12);
+            this.requiredPassword.Size = new System.Drawing.Size(181, 13);
             this.requiredPassword.TabIndex = 36;
             this.requiredPassword.Text = "* THIS IS A REQUIRED FIELD";
             this.requiredPassword.Visible = false;
@@ -521,7 +523,7 @@
             this.requiredConfirmPassword.Location = new System.Drawing.Point(663, 421);
             this.requiredConfirmPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.requiredConfirmPassword.Name = "requiredConfirmPassword";
-            this.requiredConfirmPassword.Size = new System.Drawing.Size(159, 12);
+            this.requiredConfirmPassword.Size = new System.Drawing.Size(181, 13);
             this.requiredConfirmPassword.TabIndex = 37;
             this.requiredConfirmPassword.Text = "* THIS IS A REQUIRED FIELD";
             this.requiredConfirmPassword.Visible = false;
@@ -534,7 +536,7 @@
             this.passAndConfirm.Location = new System.Drawing.Point(604, 422);
             this.passAndConfirm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.passAndConfirm.Name = "passAndConfirm";
-            this.passAndConfirm.Size = new System.Drawing.Size(318, 12);
+            this.passAndConfirm.Size = new System.Drawing.Size(358, 13);
             this.passAndConfirm.TabIndex = 38;
             this.passAndConfirm.Text = "PASSWORD AND CONFIRM PASSWORD DOES NOT MATCH";
             this.passAndConfirm.Visible = false;
@@ -547,7 +549,7 @@
             this.passwordCondition3.Location = new System.Drawing.Point(143, 478);
             this.passwordCondition3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.passwordCondition3.Name = "passwordCondition3";
-            this.passwordCondition3.Size = new System.Drawing.Size(162, 12);
+            this.passwordCondition3.Size = new System.Drawing.Size(181, 13);
             this.passwordCondition3.TabIndex = 39;
             this.passwordCondition3.Text = "Must have numbers and letters";
             this.passwordCondition3.Visible = false;
@@ -560,7 +562,7 @@
             this.passwordCondition2.Location = new System.Drawing.Point(143, 461);
             this.passwordCondition2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.passwordCondition2.Name = "passwordCondition2";
-            this.passwordCondition2.Size = new System.Drawing.Size(202, 12);
+            this.passwordCondition2.Size = new System.Drawing.Size(229, 13);
             this.passwordCondition2.TabIndex = 40;
             this.passwordCondition2.Text = "Must contain uppercase and lowercase";
             this.passwordCondition2.Visible = false;
@@ -573,7 +575,7 @@
             this.passwordCondition1.Location = new System.Drawing.Point(143, 447);
             this.passwordCondition1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.passwordCondition1.Name = "passwordCondition1";
-            this.passwordCondition1.Size = new System.Drawing.Size(205, 12);
+            this.passwordCondition1.Size = new System.Drawing.Size(230, 13);
             this.passwordCondition1.TabIndex = 41;
             this.passwordCondition1.Text = "Password must be 8 or more characters";
             this.passwordCondition1.Visible = false;
@@ -584,7 +586,7 @@
             this.label11.Location = new System.Drawing.Point(168, 516);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(177, 13);
+            this.label11.Size = new System.Drawing.Size(218, 17);
             this.label11.TabIndex = 42;
             this.label11.Text = "ENTER VERIFICATION CODE";
             this.label11.Visible = false;
@@ -643,7 +645,7 @@
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(190, 88);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(107, 31);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(133, 38);
             this.guna2HtmlLabel1.TabIndex = 46;
             this.guna2HtmlLabel1.Text = "SIGN UP";
             // 
@@ -697,12 +699,38 @@
             // 
             this.fadeOut.Tick += new System.EventHandler(this.fadeOut_Tick);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
+            this.label1.Location = new System.Drawing.Point(331, 547);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(235, 18);
+            this.label1.TabIndex = 49;
+            this.label1.Text = "PLEASE FILL UP ALL FIELDS!";
+            this.label1.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
+            this.label2.Location = new System.Drawing.Point(143, 551);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(157, 15);
+            this.label2.TabIndex = 50;
+            this.label2.Text = "Wrong verification code";
+            this.label2.Visible = false;
+            // 
             // Sign_Up
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.ClientSize = new System.Drawing.Size(900, 600);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.showConfirmPasswordButton);
             this.Controls.Add(this.showPasswordIcon);
             this.Controls.Add(this.guna2HtmlLabel1);
@@ -793,5 +821,7 @@
         private Guna.UI2.WinForms.Guna2CircleButton showConfirmPasswordButton;
         private System.Windows.Forms.Timer fadeIn;
         private System.Windows.Forms.Timer fadeOut;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

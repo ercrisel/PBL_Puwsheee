@@ -60,7 +60,9 @@ namespace PBL_Puwsheee
                 {
                     publicUserName = user.Username;
                     publicPasswordInput = user.Password;
-                    MessageBox.Show("You will be redirected to the homepage, Login Success");
+                    // MessageBox.Show("You will be redirected to the homepage, Login Success");
+                    label1.Visible = false;
+                    label2.Visible = true;
                     
                     fadeOut.Start();
                     PositiveAffirmations pa = new PositiveAffirmations();
@@ -68,7 +70,9 @@ namespace PBL_Puwsheee
                 }
                 else
                 {
-                    MessageBox.Show("NO ACCOUNT REGISTERED IN THAT USERNAME AND PASSWORD");
+                    //MessageBox.Show("NO ACCOUNT REGISTERED IN THAT USERNAME AND PASSWORD");
+                    label1.Visible = true;
+                    label2.Visible = false;
                 }
             }
             else

@@ -83,9 +83,10 @@ namespace PBL_Puwsheee
             if (conditions())
             {
                 
-                MessageBox.Show("Account is being created.. Please wait for the confirmation email sent to the email provided", "Success", MessageBoxButtons.OK);
+                //MessageBox.Show("Account is being created.. Please wait for the confirmation email sent to the email provided", "Success", MessageBoxButtons.OK);
                 user.SendEmailToCode();
                 showCode();
+                label1.Visible = false;
             }
             else
             {
@@ -96,7 +97,9 @@ namespace PBL_Puwsheee
                 {
                     user.ShowRequiredFields(textboxes[i], labels[i]);
 ;               }
-                MessageBox.Show("Please fill up all fields","Error", MessageBoxButtons.OK,MessageBoxIcon.Error);
+                // MessageBox.Show("Please fill up all fields","Error", MessageBoxButtons.OK,MessageBoxIcon.Error);
+                label1.Visible = true;
+
             }          
         }
 
@@ -209,10 +212,13 @@ namespace PBL_Puwsheee
                 fadeOut.Start();
                 Log_In li = new Log_In();
                 li.Show();
+                label1.Visible = false;
+                label2.Visible = false;
             }
             else
             {
-                MessageBox.Show("Wrong Confirmation Code");
+                // MessageBox.Show("Wrong Confirmation Code");
+                label2.Visible = true;
             }
         }
 
