@@ -705,5 +705,11 @@
   <ItemGroup>
     <None Include="Resources\positiveAffirmationsGIF.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\messageAccept1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\messageDecline.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
