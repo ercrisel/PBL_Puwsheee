@@ -59,6 +59,8 @@ namespace PBL_Puwsheee
             InitializeDates();
             CreateLists();
             LoadAnalysisCharts();
+            moodCountSMALL.Size = new Size(122, 41);
+            moodCountSMALL.Location = new Point(41, 78);
         }
 
         private void resultsButton_Click(object sender, EventArgs e)
@@ -319,7 +321,7 @@ namespace PBL_Puwsheee
                 {
                     Title = "Mood",
                     Values = tempMoodChartValues,
-                    Stroke = System.Windows.Media.Brushes.Transparent,
+                    Stroke = System.Windows.Media.Brushes.White,
                     Fill = System.Windows.Media.Brushes.Transparent,
                     PointGeometrySize = 10,
                     PointForeground = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(34, 46, 49))
@@ -473,70 +475,78 @@ namespace PBL_Puwsheee
 
         private void activityCountSMALL_Click(object sender, EventArgs e)
         {
-            moodCountBIG.Visible = false;
-            moodCountSMALL.Visible = true;
             moodCountPanel.Visible = false;
             activityCountPanel.Visible = true;
-            activityCountSMALL.Visible = false;
-            activityCountBIG.Visible = true;
-            moodEntriesBIG.Visible = false;
-            moodEntriesSMALL.Visible = true;
             moodEntriesPanel.Visible = false;
-            testScoreBIG.Visible = false;
-            testScoreSMALL.Visible = true;
             testScorePanel.Visible = false;
             thePanel.FillColor2 = Color.FromArgb(202, 167, 189);
+
+            moodCountSMALL.Size = new Size(122, 27);
+            activityCountSMALL.Size = new Size(122, 41);
+            testScoreSMALL.Size = new Size(122, 27);
+            moodEntriesSMALL.Size = new Size(122, 27);
+
+            moodCountSMALL.Location = new Point(40, 93);
+            activityCountSMALL.Location = new Point(162, 78);
+            testScoreSMALL.Location = new Point(403, 93);
+            moodEntriesSMALL.Location = new Point(283, 93);
         }
 
         private void moodCountSMALL_Click(object sender, EventArgs e)
         {
-            moodCountBIG.Visible = true;
-            moodCountSMALL.Visible = false;
             moodCountPanel.Visible = true;
             activityCountPanel.Visible = false;
-            activityCountSMALL.Visible = true;
-            activityCountBIG.Visible = false;
-            moodEntriesBIG.Visible = false;
-            moodEntriesSMALL.Visible = true;
             moodEntriesPanel.Visible = false;
-            testScoreBIG.Visible = false;
-            testScoreSMALL.Visible = true;
             testScorePanel.Visible = false;
             thePanel.FillColor2 = Color.FromArgb(154, 145, 172);
+
+            moodCountSMALL.Size = new Size(122, 41);
+            activityCountSMALL.Size = new Size(122, 27);
+            testScoreSMALL.Size = new Size(122, 27);
+            moodEntriesSMALL.Size = new Size(122, 27);
+
+            moodCountSMALL.Location = new Point(41, 78);
+            activityCountSMALL.Location = new Point(162, 93);
+            testScoreSMALL.Location = new Point(403, 93);
+            moodEntriesSMALL.Location = new Point(283, 93);
         }
 
         private void moodEntriesSMALL_Click(object sender, EventArgs e)
         {
-            moodCountBIG.Visible = false;
-            moodCountSMALL.Visible = true;
             moodCountPanel.Visible = false;
             activityCountPanel.Visible = false;
-            activityCountSMALL.Visible = true;
-            activityCountBIG.Visible = false;
-            moodEntriesBIG.Visible = true;
-            moodEntriesSMALL.Visible = false;
             moodEntriesPanel.Visible = true;
-            testScoreBIG.Visible = false;
-            testScoreSMALL.Visible = true;
             testScorePanel.Visible = false;
             thePanel.FillColor2 = Color.FromArgb(255, 185, 196);
+
+            moodCountSMALL.Size = new Size(122, 27);
+            activityCountSMALL.Size = new Size(122, 27);
+            testScoreSMALL.Size = new Size(122, 27);
+            moodEntriesSMALL.Size = new Size(122, 41);
+
+            moodCountSMALL.Location = new Point(40, 93);
+            activityCountSMALL.Location = new Point(162, 93);
+            testScoreSMALL.Location = new Point(403, 93);
+            moodEntriesSMALL.Location = new Point(283, 78);
         }
 
         private void testScoreSMALL_Click(object sender, EventArgs e)
         {
-            moodCountBIG.Visible = false;
-            moodCountSMALL.Visible = true;
             moodCountPanel.Visible = false;
             activityCountPanel.Visible = false;
-            activityCountSMALL.Visible = true;
-            activityCountBIG.Visible = false;
-            moodEntriesBIG.Visible = false;
-            moodEntriesSMALL.Visible = true;
             moodEntriesPanel.Visible = false;
-            testScoreBIG.Visible = true;
-            testScoreSMALL.Visible = false;
             testScorePanel.Visible = true;
             thePanel.FillColor2 = Color.FromArgb(255, 211, 212);
+
+            moodCountSMALL.Size = new Size(122, 27);
+            activityCountSMALL.Size = new Size(122, 27);
+            testScoreSMALL.Size = new Size(122, 41);
+            moodEntriesSMALL.Size = new Size(122, 27);
+
+            moodCountSMALL.Location = new Point(40, 93);
+            activityCountSMALL.Location = new Point(162, 93);
+            testScoreSMALL.Location = new Point(403, 78);
+            moodEntriesSMALL.Location = new Point(283, 93);
         }
     }
 

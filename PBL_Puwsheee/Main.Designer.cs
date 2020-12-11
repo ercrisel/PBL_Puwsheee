@@ -39,6 +39,7 @@
             this.settingsButton = new Guna.UI2.WinForms.Guna2Button();
             this.playablesButton = new Guna.UI2.WinForms.Guna2Button();
             this.analysisButton = new Guna.UI2.WinForms.Guna2Button();
+            this.chartsButton = new Guna.UI2.WinForms.Guna2Button();
             this.testButton = new Guna.UI2.WinForms.Guna2Button();
             this.moodtrackerButton = new Guna.UI2.WinForms.Guna2Button();
             this.calendarButton = new Guna.UI2.WinForms.Guna2Button();
@@ -49,8 +50,8 @@
             this.fadeIn = new System.Windows.Forms.Timer(this.components);
             this.fadeOut = new System.Windows.Forms.Timer(this.components);
             this.tm = new System.Windows.Forms.Timer(this.components);
-            this.usericonPicture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.usericonPicture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.windowsPanel.SuspendLayout();
             this.navBarPanel.SuspendLayout();
             this.bgPanel.SuspendLayout();
@@ -142,6 +143,7 @@
             this.navBarPanel.Controls.Add(this.settingsButton);
             this.navBarPanel.Controls.Add(this.playablesButton);
             this.navBarPanel.Controls.Add(this.analysisButton);
+            this.navBarPanel.Controls.Add(this.chartsButton);
             this.navBarPanel.Controls.Add(this.testButton);
             this.navBarPanel.Controls.Add(this.moodtrackerButton);
             this.navBarPanel.Controls.Add(this.calendarButton);
@@ -205,7 +207,7 @@
             this.playablesButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.playablesButton.ForeColor = System.Drawing.Color.White;
             this.playablesButton.HoverState.Parent = this.playablesButton;
-            this.playablesButton.Location = new System.Drawing.Point(27, 340);
+            this.playablesButton.Location = new System.Drawing.Point(27, 402);
             this.playablesButton.Margin = new System.Windows.Forms.Padding(4);
             this.playablesButton.Name = "playablesButton";
             this.playablesButton.ShadowDecoration.Parent = this.playablesButton;
@@ -234,6 +236,27 @@
             this.analysisButton.Text = " ";
             this.analysisButton.Click += new System.EventHandler(this.clickAnalysis);
             // 
+            // chartsButton
+            // 
+            this.chartsButton.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.chartsIcon;
+            this.chartsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.chartsButton.BorderRadius = 10;
+            this.chartsButton.CheckedState.Parent = this.chartsButton;
+            this.chartsButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.chartsButton.CustomImages.Parent = this.chartsButton;
+            this.chartsButton.FillColor = System.Drawing.Color.Transparent;
+            this.chartsButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.chartsButton.ForeColor = System.Drawing.Color.White;
+            this.chartsButton.HoverState.Parent = this.chartsButton;
+            this.chartsButton.Location = new System.Drawing.Point(27, 273);
+            this.chartsButton.Margin = new System.Windows.Forms.Padding(4);
+            this.chartsButton.Name = "chartsButton";
+            this.chartsButton.ShadowDecoration.Parent = this.chartsButton;
+            this.chartsButton.Size = new System.Drawing.Size(22, 22);
+            this.chartsButton.TabIndex = 6;
+            this.chartsButton.Text = " ";
+            this.chartsButton.Click += new System.EventHandler(this.chartsButton_Click);
+            // 
             // testButton
             // 
             this.testButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -245,7 +268,7 @@
             this.testButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.testButton.ForeColor = System.Drawing.Color.White;
             this.testButton.HoverState.Parent = this.testButton;
-            this.testButton.Location = new System.Drawing.Point(27, 280);
+            this.testButton.Location = new System.Drawing.Point(27, 342);
             this.testButton.Margin = new System.Windows.Forms.Padding(4);
             this.testButton.Name = "testButton";
             this.testButton.ShadowDecoration.Parent = this.testButton;
@@ -299,7 +322,7 @@
             // 
             this.indicator.BackColor = System.Drawing.Color.Transparent;
             this.indicator.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(75)))), ((int)(((byte)(97)))));
-            this.indicator.Location = new System.Drawing.Point(8, 59);
+            this.indicator.Location = new System.Drawing.Point(8, 62);
             this.indicator.Name = "indicator";
             this.indicator.Radius = 10;
             this.indicator.ShadowColor = System.Drawing.Color.Black;
@@ -360,20 +383,6 @@
             this.tm.Interval = 1;
             this.tm.Tick += new System.EventHandler(this.tm_Tick);
             // 
-            // usericonPicture
-            // 
-            this.usericonPicture.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.usericonPicture.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.usericonPicture.Location = new System.Drawing.Point(11, 11);
-            this.usericonPicture.Margin = new System.Windows.Forms.Padding(2);
-            this.usericonPicture.Name = "usericonPicture";
-            this.usericonPicture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.usericonPicture.ShadowDecoration.Parent = this.usericonPicture;
-            this.usericonPicture.Size = new System.Drawing.Size(55, 55);
-            this.usericonPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.usericonPicture.TabIndex = 5;
-            this.usericonPicture.TabStop = false;
-            // 
             // guna2ShadowPanel1
             // 
             this.guna2ShadowPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -387,6 +396,20 @@
             this.guna2ShadowPanel1.ShadowShift = 1;
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(963, 569);
             this.guna2ShadowPanel1.TabIndex = 13;
+            // 
+            // usericonPicture
+            // 
+            this.usericonPicture.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.usericonPicture.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.usericonPicture.Location = new System.Drawing.Point(11, 11);
+            this.usericonPicture.Margin = new System.Windows.Forms.Padding(2);
+            this.usericonPicture.Name = "usericonPicture";
+            this.usericonPicture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.usericonPicture.ShadowDecoration.Parent = this.usericonPicture;
+            this.usericonPicture.Size = new System.Drawing.Size(55, 55);
+            this.usericonPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.usericonPicture.TabIndex = 5;
+            this.usericonPicture.TabStop = false;
             // 
             // Main
             // 
@@ -440,6 +463,7 @@
         private Guna.UI2.WinForms.Guna2Button settingsButton;
         private Guna.UI2.WinForms.Guna2ShadowPanel indicator;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
+        private Guna.UI2.WinForms.Guna2Button chartsButton;
     }
 }
 

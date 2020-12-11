@@ -322,7 +322,7 @@ namespace PBL_Puwsheee
             if (activityCount.count == 0) //default
             {
                 currentIcon.Image = null;
-                currentIcon.FillColor = Color.Black;
+                currentIcon.FillColor = Color.FromArgb(255, 246, 227);
             }
             else
             {
@@ -376,7 +376,7 @@ namespace PBL_Puwsheee
                     currentIcon.Image = PBL_Puwsheee.Properties.Resources.Watch;
                     break;
                 default:
-                    currentIcon.FillColor = Color.Black;
+                    currentIcon.FillColor = Color.FromArgb(255, 246, 227);
                     break;
             }
         }
@@ -415,17 +415,11 @@ namespace PBL_Puwsheee
                     currentIcon.Image = PBL_Puwsheee.Properties.Resources.Happy;
                     break;
                 default:
-                    currentIcon.FillColor = Color.Black;
+                    currentIcon.FillColor = Color.FromArgb(255, 246, 227);
                     break;
             }
         }
 
-        private void viewChartsButton_Click(object sender, EventArgs e)
-        {
-            Charts charts = new Charts(user) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            //this.Panel.Controls.Add(charts);
-            charts.Show();
-        }
 
         private void editButton_Click(object sender, EventArgs e)
         {

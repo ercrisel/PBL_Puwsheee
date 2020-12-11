@@ -27,12 +27,20 @@ namespace PBL_Puwsheee.Playables
             );
 
         SoundPlayer anxiety = new SoundPlayer(PBL_Puwsheee.Properties.Resources.Anxiety);
+       
 
         public AnxietyMeditation()
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+
+            #region Load images
+            pictureBox1.Image = PBL_Puwsheee.Properties.Resources.anxietyGIF;
+            playButton.Image = PBL_Puwsheee.Properties.Resources.anxietyPlay;
+            pauseButton.Image = PBL_Puwsheee.Properties.Resources.anxietyPause;
+            backButton.Image = PBL_Puwsheee.Properties.Resources.anxietyClose;
+            #endregion
         }
 
         private void fadeIn_Tick(object sender, EventArgs e)
@@ -52,6 +60,7 @@ namespace PBL_Puwsheee.Playables
             fadeOut.Start();
         }
 
+        
         private void play_Click(object sender, EventArgs e)
         {
             anxiety.Play();
@@ -68,6 +77,8 @@ namespace PBL_Puwsheee.Playables
             pauseButton.Visible = false;
             pauseButton.SendToBack();
         }
+
+        
     }
 
 }

@@ -92,7 +92,6 @@
             this.activity11CountIcon = new Guna.UI2.WinForms.Guna2CircleButton();
             this.activity10CountIcon = new Guna.UI2.WinForms.Guna2CircleButton();
             this.activity9CountIcon = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.viewChartsButton = new Guna.UI2.WinForms.Guna2Button();
             this.editButton = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.topActivity3Icon)).BeginInit();
@@ -1040,25 +1039,6 @@
             this.activity9CountIcon.Text = "0";
             this.activity9CountIcon.UseTransparentBackground = true;
             // 
-            // viewChartsButton
-            // 
-            this.viewChartsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.viewChartsButton.BorderRadius = 16;
-            this.viewChartsButton.CheckedState.Parent = this.viewChartsButton;
-            this.viewChartsButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.viewChartsButton.CustomImages.Parent = this.viewChartsButton;
-            this.viewChartsButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.viewChartsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.viewChartsButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.viewChartsButton.HoverState.Parent = this.viewChartsButton;
-            this.viewChartsButton.Location = new System.Drawing.Point(836, 55);
-            this.viewChartsButton.Name = "viewChartsButton";
-            this.viewChartsButton.ShadowDecoration.Parent = this.viewChartsButton;
-            this.viewChartsButton.Size = new System.Drawing.Size(91, 34);
-            this.viewChartsButton.TabIndex = 57;
-            this.viewChartsButton.Text = "View Charts";
-            this.viewChartsButton.Click += new System.EventHandler(this.viewChartsButton_Click);
-            // 
             // editButton
             // 
             this.editButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -1086,7 +1066,6 @@
             this.ClientSize = new System.Drawing.Size(936, 543);
             this.Controls.Add(this.editButton);
             this.Controls.Add(this.seeresultButton);
-            this.Controls.Add(this.viewChartsButton);
             this.Controls.Add(this.activity12CountIcon);
             this.Controls.Add(this.activity11CountIcon);
             this.Controls.Add(this.activity10CountIcon);
@@ -1252,7 +1231,6 @@
         private Guna.UI2.WinForms.Guna2CircleButton activity9CountIcon;
         private Guna.UI2.WinForms.Guna2DateTimePicker endDateTimePicker;
         private Guna.UI2.WinForms.Guna2DateTimePicker startDateTimePicker;
-        private Guna.UI2.WinForms.Guna2Button viewChartsButton;
         private Guna.UI2.WinForms.Guna2Button editButton;
     }
 }
