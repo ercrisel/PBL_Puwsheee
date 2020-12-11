@@ -471,8 +471,74 @@ namespace PBL_Puwsheee
 
         }
 
-       
+        private void activityCountSMALL_Click(object sender, EventArgs e)
+        {
+            moodCountBIG.Visible = false;
+            moodCountSMALL.Visible = true;
+            moodCountPanel.Visible = false;
+            activityCountPanel.Visible = true;
+            activityCountSMALL.Visible = false;
+            activityCountBIG.Visible = true;
+            moodEntriesBIG.Visible = false;
+            moodEntriesSMALL.Visible = true;
+            moodEntriesPanel.Visible = false;
+            testScoreBIG.Visible = false;
+            testScoreSMALL.Visible = true;
+            testScorePanel.Visible = false;
+            thePanel.FillColor2 = Color.FromArgb(202, 167, 189);
         }
+
+        private void moodCountSMALL_Click(object sender, EventArgs e)
+        {
+            moodCountBIG.Visible = true;
+            moodCountSMALL.Visible = false;
+            moodCountPanel.Visible = true;
+            activityCountPanel.Visible = false;
+            activityCountSMALL.Visible = true;
+            activityCountBIG.Visible = false;
+            moodEntriesBIG.Visible = false;
+            moodEntriesSMALL.Visible = true;
+            moodEntriesPanel.Visible = false;
+            testScoreBIG.Visible = false;
+            testScoreSMALL.Visible = true;
+            testScorePanel.Visible = false;
+            thePanel.FillColor2 = Color.FromArgb(154, 145, 172);
+        }
+
+        private void moodEntriesSMALL_Click(object sender, EventArgs e)
+        {
+            moodCountBIG.Visible = false;
+            moodCountSMALL.Visible = true;
+            moodCountPanel.Visible = false;
+            activityCountPanel.Visible = false;
+            activityCountSMALL.Visible = true;
+            activityCountBIG.Visible = false;
+            moodEntriesBIG.Visible = true;
+            moodEntriesSMALL.Visible = false;
+            moodEntriesPanel.Visible = true;
+            testScoreBIG.Visible = false;
+            testScoreSMALL.Visible = true;
+            testScorePanel.Visible = false;
+            thePanel.FillColor2 = Color.FromArgb(255, 185, 196);
+        }
+
+        private void testScoreSMALL_Click(object sender, EventArgs e)
+        {
+            moodCountBIG.Visible = false;
+            moodCountSMALL.Visible = true;
+            moodCountPanel.Visible = false;
+            activityCountPanel.Visible = false;
+            activityCountSMALL.Visible = true;
+            activityCountBIG.Visible = false;
+            moodEntriesBIG.Visible = false;
+            moodEntriesSMALL.Visible = true;
+            moodEntriesPanel.Visible = false;
+            testScoreBIG.Visible = true;
+            testScoreSMALL.Visible = false;
+            testScorePanel.Visible = true;
+            thePanel.FillColor2 = Color.FromArgb(255, 211, 212);
+        }
+    }
 
 }
 
