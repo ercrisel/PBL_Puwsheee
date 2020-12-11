@@ -720,5 +720,17 @@
   <ItemGroup>
     <None Include="Resources\chartsIcon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depressionanxietyImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iqtestImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selfcareImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SplashScreen.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
