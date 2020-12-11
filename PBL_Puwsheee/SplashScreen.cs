@@ -31,18 +31,15 @@ namespace PBL_Puwsheee
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
 
-        int count = 20;
-
         private void countdownTick(object sender, EventArgs e)
         {
-            if (count == 0)
+            loadingPanel.Width += 3;
+            if (loadingPanel.Width >= loadingbasisPanel.Width)
             {
                 countdown.Enabled = false;
                 fadeOut.Enabled = true;
                 return;
             }
-
-            count -= 1;
         }
 
         private void fadeOutTick(object sender, EventArgs e)
@@ -68,6 +65,11 @@ namespace PBL_Puwsheee
                 return;
             }
             this.Opacity += 0.01;
+        }
+
+        private void SplashScreen_Load(object sender, EventArgs e)
+        {
+            this.BackgroundImage = PBL_Puwsheee.Properties.Resources.SplashScreen;
         }
     }
 }
