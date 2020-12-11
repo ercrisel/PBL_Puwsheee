@@ -67,7 +67,9 @@ namespace PBL_Puwsheee.Test
 
         private void Test_Main_Load(object sender, EventArgs e)
         {
-
+            guna2GradientPanel1.BackgroundImage = PBL_Puwsheee.Properties.Resources.selfcareImage;
+            guna2GradientPanel2.BackgroundImage = PBL_Puwsheee.Properties.Resources._2ndpicture;
+            guna2GradientPanel3.BackgroundImage = PBL_Puwsheee.Properties.Resources.depressionImage;
         }
     }
 }

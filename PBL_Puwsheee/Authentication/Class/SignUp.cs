@@ -222,7 +222,7 @@ namespace PBL_Puwsheee.Authentication.Class
                 msg.From = new MailAddress("puwshee@gmail.com");
                 msg.To.Add(emailAddress);
                 Console.WriteLine(emailAddress);
-                msg.Subject = "Ready to meet Puwshee?~ ฅ(＾・ω・＾ฅ)";
+                msg.Subject = "Ready to meet Puwshee? ฅ(＾・ω・＾ฅ)";
 
                 msg.Body = "Meow, " + username + "!~ /ᐠ .ᆺ. ᐟ\\ﾉ" +
                     "\n\nWe're purrleased that you signed up for Puwshee." +
