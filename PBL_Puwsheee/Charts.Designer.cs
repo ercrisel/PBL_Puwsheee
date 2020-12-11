@@ -171,6 +171,7 @@ namespace PBL_Puwsheee
             this.moodCountPieChart.Size = new System.Drawing.Size(381, 388);
             this.moodCountPieChart.TabIndex = 6;
             this.moodCountPieChart.Text = "pieChart1";
+            this.moodCountPieChart.ChildChanged += new System.EventHandler<System.Windows.Forms.Integration.ChildChangedEventArgs>(this.moodCountPieChart_ChildChanged);
             // 
             // tabControl1
             // 
@@ -213,7 +214,7 @@ namespace PBL_Puwsheee
             this.startDateTimePicker.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.startDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.startDateTimePicker.HoverState.Parent = this.startDateTimePicker;
-            this.startDateTimePicker.Location = new System.Drawing.Point(148, 43);
+            this.startDateTimePicker.Location = new System.Drawing.Point(148, 28);
             this.startDateTimePicker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.startDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.startDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
@@ -232,7 +233,7 @@ namespace PBL_Puwsheee
             this.endDateTimePicker.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.endDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.endDateTimePicker.HoverState.Parent = this.endDateTimePicker;
-            this.endDateTimePicker.Location = new System.Drawing.Point(468, 43);
+            this.endDateTimePicker.Location = new System.Drawing.Point(466, 28);
             this.endDateTimePicker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.endDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.endDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
@@ -246,7 +247,7 @@ namespace PBL_Puwsheee
             // guna2ShadowPanel1
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
+            this.guna2ShadowPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.guna2ShadowPanel1.Location = new System.Drawing.Point(115, 79);
             this.guna2ShadowPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";

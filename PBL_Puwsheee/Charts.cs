@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace PBL_Puwsheee
 {
     /// <summary>
@@ -74,7 +75,7 @@ namespace PBL_Puwsheee
         private void dateTimePicker_ValueChanged(object sender, EventArgs e)
         {
             CheckValidDate();
-           
+
 
         }
 
@@ -241,15 +242,21 @@ namespace PBL_Puwsheee
                 {
                     Title = mood.Category,
                     Values = new ChartValues<double>() { moodCount.count },
+                    Fill = ChangeMoodColor(mood.Rank),
+                    Stroke = ChangeMoodColor(mood.Rank),
                     DataLabels = true,
                     LabelPoint = labelPoint
-                });
+
+
+                }) ;
 
                 moodCountCartesianChart.Series.Add(
                 new ColumnSeries
                 {
                     Title = mood.Category,
-                    Values = new ChartValues<double>() { moodCount.count }
+                    Values = new ChartValues<double>() { moodCount.count },
+                    Fill = ChangeMoodColor(mood.Rank),
+                    Stroke = ChangeMoodColor(mood.Rank),
                 });
             }
         }
@@ -272,15 +279,19 @@ namespace PBL_Puwsheee
                 {
                     Title = activity.Category,
                     Values = new ChartValues<double>() { activityCount.count },
+                    Fill = ChangeActivityColor(activity.Id),
+                    Stroke = ChangeActivityColor(activity.Id),
                     DataLabels = true,
                     LabelPoint = labelPoint
-                });
+                }) ;
 
                 activityCountCartesianChart.Series.Add(
                 new ColumnSeries
                 {
                     Title = activity.Category,
-                    Values = new ChartValues<double>() { activityCount.count }
+                    Values = new ChartValues<double>() { activityCount.count },
+                    Fill = ChangeActivityColor(activity.Id),
+                    Stroke = ChangeActivityColor(activity.Id),
                 });
             }
         }
@@ -352,6 +363,7 @@ namespace PBL_Puwsheee
                 {
                     Title = "Good Self Care",
                     Values = tempTest1ChartValues
+
                 },
                 new LineSeries
                 {
@@ -366,9 +378,101 @@ namespace PBL_Puwsheee
             };
         }
 
+        private System.Windows.Media.SolidColorBrush ChangeMoodColor(int id)
+        {
+            System.Windows.Media.SolidColorBrush colorBrush = new System.Windows.Media.SolidColorBrush();
+            switch (id)
+            {
+                case 1:
+                    colorBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(142, 54, 51));
+                    break;
+                case 2:
+                    colorBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(82, 98, 51));
+                    break;
+                case 3:
+                    colorBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(48, 88, 105));
+                    break;
+                case 4:
+                    colorBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(110, 145, 148));
+                    break;
+                case 5:
+                    colorBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(184, 197, 193));
+                    break;
+                case 6:
+                    colorBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(214, 145, 123));
+                    break;
+                case 7:
+                    colorBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(141, 121, 159));
+                    break;
+                case 8:
+                    colorBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(252, 164, 62));
+                    break;
+            }
+
+
+
+            return colorBrush;
+        }
+
+        private System.Windows.Media.SolidColorBrush ChangeActivityColor(int id)
+        {
+            System.Windows.Media.SolidColorBrush colorBrush = new System.Windows.Media.SolidColorBrush();
+            switch (id)
+            {
+                case 1:
+                    colorBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(225, 206, 201));
+                    break;
+                case 2:
+                    colorBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(235, 230, 229));
+                    break;
+                case 3:
+                    colorBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(223, 216, 220));
+                    break;
+                case 4:
+                    colorBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(210, 193, 206));
+                    break;
+                case 5:
+                    colorBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(180, 186, 212));
+                    break;
+                case 6:
+                    colorBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(212, 207, 189));
+                    break;
+                case 7:
+                    colorBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(245, 232, 201));
+                    break;
+                case 8:
+                    colorBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(227, 223, 164));
+                    break;
+                case 9:
+                    colorBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(214, 207, 203));
+                    break;
+                case 10:
+                    colorBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(228, 221, 215));
+                    break;
+                case 11:
+                    colorBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(183, 174, 195));
+                    break;
+                case 12:
+                    colorBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(218, 183, 184));
+                    break;
+            }
+
+
+
+            return colorBrush;
+        }
         private void moodCountCartesianChart_ChildChanged(object sender, System.Windows.Forms.Integration.ChildChangedEventArgs e)
         {
 
         }
-    }
+
+        private void moodCountPieChart_ChildChanged(object sender, System.Windows.Forms.Integration.ChildChangedEventArgs e)
+        {
+
+        }
+
+       
+        }
+
 }
+

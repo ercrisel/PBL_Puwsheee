@@ -215,11 +215,11 @@
             this.changepasswordButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.changepasswordButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.changepasswordButton.HoverState.Parent = this.changepasswordButton;
-            this.changepasswordButton.Location = new System.Drawing.Point(416, 531);
+            this.changepasswordButton.Location = new System.Drawing.Point(422, 531);
             this.changepasswordButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.changepasswordButton.Name = "changepasswordButton";
             this.changepasswordButton.ShadowDecoration.Parent = this.changepasswordButton;
-            this.changepasswordButton.Size = new System.Drawing.Size(288, 39);
+            this.changepasswordButton.Size = new System.Drawing.Size(287, 39);
             this.changepasswordButton.TabIndex = 24;
             this.changepasswordButton.Text = "Change Password";
             this.changepasswordButton.Click += new System.EventHandler(this.changepasswordButton_Click);
@@ -845,7 +845,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.ClientSize = new System.Drawing.Size(1027, 676);
+            this.ClientSize = new System.Drawing.Size(1020, 620);
             this.Controls.Add(this.newPasswordPanel);
             this.Controls.Add(this.confirmPasswordPanel);
             this.Controls.Add(this.currentPasswordPanel);
