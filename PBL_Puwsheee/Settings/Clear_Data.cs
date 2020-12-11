@@ -45,6 +45,11 @@ namespace PBL_Puwsheee.Settings
             cs.Username = username;
             cs.ClearData();
             // pa change na lang yung form balik sa main diko kasi alam
+            for (int i = Application.OpenForms.Count - 1; i >= 0; i--)
+            {
+                if (Application.OpenForms[i].Name != "Main")
+                    Application.OpenForms[i].Close();
+            }
         }
     }
 }

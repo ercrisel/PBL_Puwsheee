@@ -76,9 +76,11 @@ namespace PBL_Puwsheee.Settings
                 bg.TopMost = true;
                 bg.Location = this.Location;
                 bg.ShowInTaskbar = false;
-                bg.Size = new Size(770, 517);
+                bg.Size = new Size(1020, 610);
                 bg.Show();
-                
+
+                Settings_Main sett = new Settings_Main();
+                sett.Owner = clearForm;
                 clearForm.Owner = bg;
                 clearForm.BringToFront();
                 clearForm.ShowDialog();
@@ -99,7 +101,7 @@ namespace PBL_Puwsheee.Settings
                 bg.TopMost = true;
                 bg.Location = this.Location;
                 bg.ShowInTaskbar = false;
-                bg.Size = new Size(770, 517);
+                bg.Size = new Size(1020, 610);
                 bg.Show();
 
                 deactivateForm.Owner = bg;
@@ -120,6 +122,10 @@ namespace PBL_Puwsheee.Settings
         {
             user.Username = Log_In.publicUserName;
             user.LoadAllUserInformation(firstnameTextbox, lastnameTextbox,emailTextbox,usernameTextbox,userImage);
+            guna2CircleButton1.Image = PBL_Puwsheee.Properties.Resources.visualization;
+            guna2CircleButton2.Image = PBL_Puwsheee.Properties.Resources.visualization;
+            guna2CircleButton3.Image = PBL_Puwsheee.Properties.Resources.visualization;
+            pictureBox1.BackgroundImage= PBL_Puwsheee.Properties.Resources.Back;
         }
 
         private void backButton_Click(object sender, EventArgs e)
@@ -202,8 +208,6 @@ namespace PBL_Puwsheee.Settings
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Main m = new Main();
-            m.Show();
 
         }
 
@@ -330,6 +334,11 @@ namespace PBL_Puwsheee.Settings
         private void guna2CircleButton3_Click(object sender, EventArgs e)
         {
             showHidePassword(confirmTexbox);
+        }
+
+        private void userImage_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

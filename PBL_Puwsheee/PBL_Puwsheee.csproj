@@ -732,5 +732,14 @@
   <ItemGroup>
     <None Include="Resources\SplashScreen.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogInLabel.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signUpLabel.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

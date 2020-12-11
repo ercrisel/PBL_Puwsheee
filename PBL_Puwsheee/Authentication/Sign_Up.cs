@@ -62,7 +62,7 @@ namespace PBL_Puwsheee
         {
             fadeOut.Start();
             Log_In login = new Log_In();
-            login.Show();
+            login.Show(); 
         }
 
         public void showCode()
@@ -112,7 +112,6 @@ namespace PBL_Puwsheee
         // pag nag load si form
         private void Sign_Up_Load(object sender, EventArgs e)
         {
-            fadeIn.Start();
             firstNameTextbox.Focus();
             var projectPath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
             string filePath = Path.Combine(projectPath, "Resources");
@@ -212,8 +211,8 @@ namespace PBL_Puwsheee
             if (user.CorrectConfirmationCode())
             {
                 //MessageBox.Show("Success", "Account Created");
-                guna2PictureBox1.Visible = true;
-                guna2PictureBox2.Visible = false;
+                accountCreated.Visible = true;
+                wrongCode.Visible = false;
                 user.UploadEntriesToDatabase();
                 fadeOut.Start();
                 Log_In li = new Log_In();
@@ -223,8 +222,8 @@ namespace PBL_Puwsheee
             }
             else
             {
-                guna2PictureBox1.Visible = false;
-                guna2PictureBox2.Visible = true;
+                accountCreated.Visible = false;
+                wrongCode.Visible = true;
                 // MessageBox.Show("Wrong Confirmation Code");
 
             }
@@ -269,6 +268,55 @@ namespace PBL_Puwsheee
         private void userPicture_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2PictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            fadeOut.Start();
+            Application.Exit();
+        }
+
+        private void logLabelSign_Click(object sender, EventArgs e)
+        {
+            //this.Width = 614;
+            //this.Height = 454;
+            sizeTimer.Start();
+        }
+
+        private void signLabelSign_Click(object sender, EventArgs e)
+        {
+            //this.Width = 933;
+            //this.Height = 595;
+            sizeTimer.Start();
+        }
+
+        bool small = false;
+
+        private void sizeTimer_Tick(object sender, EventArgs e)
+        {
+            if(small)
+            {
+                if(this.Height <= 595) this.Height += 10;
+                
+                this.Width += 10;
+                if (this.Width >= 933) sizeTimer.Stop();
+
+                small = false;
+            }
+            else
+            {
+                if (this.Height <= 454) this.Height -= 5;
+
+                this.Width -= 5;
+                if (this.Width <= 614) sizeTimer.Stop();
+
+                small = true;
+            }
         }
     }
 
