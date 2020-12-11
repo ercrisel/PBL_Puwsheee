@@ -32,14 +32,14 @@
             this.stresstestbutton = new Guna.UI2.WinForms.Guna2Button();
             this.depressiontestButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
@@ -125,18 +125,6 @@
             this.guna2Panel1.TabIndex = 19;
             this.guna2Panel1.Click += new System.EventHandler(this.depressiontestButton_Click);
             // 
-            // guna2GradientPanel1
-            // 
-            this.guna2GradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.guna2GradientPanel1.BorderRadius = 14;
-            this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(13, 14);
-            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(239, 172);
-            this.guna2GradientPanel1.TabIndex = 21;
-            // 
             // guna2TextBox1
             // 
             this.guna2TextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
@@ -183,9 +171,11 @@
             // guna2GradientPanel2
             // 
             this.guna2GradientPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
+            this.guna2GradientPanel2.BackgroundImage = global::PBL_Puwsheee.Properties.Resources._2ndpicture;
+            this.guna2GradientPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.guna2GradientPanel2.BorderRadius = 14;
-            this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.guna2GradientPanel2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.Transparent;
             this.guna2GradientPanel2.Location = new System.Drawing.Point(14, 13);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
             this.guna2GradientPanel2.ShadowDecoration.Parent = this.guna2GradientPanel2;
@@ -235,18 +225,6 @@
             this.guna2Panel3.TabIndex = 22;
             this.guna2Panel3.Click += new System.EventHandler(this.depressiontestButton_Click);
             // 
-            // guna2GradientPanel3
-            // 
-            this.guna2GradientPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.guna2GradientPanel3.BorderRadius = 14;
-            this.guna2GradientPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2GradientPanel3.Location = new System.Drawing.Point(14, 14);
-            this.guna2GradientPanel3.Name = "guna2GradientPanel3";
-            this.guna2GradientPanel3.ShadowDecoration.Parent = this.guna2GradientPanel3;
-            this.guna2GradientPanel3.Size = new System.Drawing.Size(239, 172);
-            this.guna2GradientPanel3.TabIndex = 23;
-            // 
             // guna2TextBox3
             // 
             this.guna2TextBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
@@ -275,6 +253,34 @@
             this.guna2TextBox3.Size = new System.Drawing.Size(213, 59);
             this.guna2TextBox3.TabIndex = 20;
             this.guna2TextBox3.Click += new System.EventHandler(this.depressiontestButton_Click);
+            // 
+            // guna2GradientPanel3
+            // 
+            this.guna2GradientPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
+            this.guna2GradientPanel3.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.depressionImage;
+            this.guna2GradientPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.guna2GradientPanel3.BorderRadius = 14;
+            this.guna2GradientPanel3.FillColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel3.Location = new System.Drawing.Point(14, 14);
+            this.guna2GradientPanel3.Name = "guna2GradientPanel3";
+            this.guna2GradientPanel3.ShadowDecoration.Parent = this.guna2GradientPanel3;
+            this.guna2GradientPanel3.Size = new System.Drawing.Size(239, 172);
+            this.guna2GradientPanel3.TabIndex = 23;
+            // 
+            // guna2GradientPanel1
+            // 
+            this.guna2GradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
+            this.guna2GradientPanel1.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.selfcareImage;
+            this.guna2GradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.guna2GradientPanel1.BorderRadius = 14;
+            this.guna2GradientPanel1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(13, 14);
+            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
+            this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(239, 172);
+            this.guna2GradientPanel1.TabIndex = 21;
             // 
             // Test_Main
             // 

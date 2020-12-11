@@ -31,18 +31,15 @@ namespace PBL_Puwsheee
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
 
-        int count = 20;
-
         private void countdownTick(object sender, EventArgs e)
         {
-            if (count == 0)
+            loadingPanel.Width += 7;
+            if (loadingPanel.Width <= loadingbasisPanel.Width)
             {
                 countdown.Enabled = false;
                 fadeOut.Enabled = true;
                 return;
             }
-
-            count -= 1;
         }
 
         private void fadeOutTick(object sender, EventArgs e)

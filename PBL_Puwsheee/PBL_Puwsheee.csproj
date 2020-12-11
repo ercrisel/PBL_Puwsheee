@@ -203,7 +203,7 @@
     <Compile Include="Authentication\Sign_Up.Designer.cs">
       <DependentUpon>Sign_Up.cs</DependentUpon>
     </Compile>
-    <Compile Include="Properties\Resources1.Designer.cs">
+    <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
@@ -320,7 +320,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
-      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Authentication\Sign_Up.resx">
       <DependentUpon>Sign_Up.cs</DependentUpon>
@@ -710,6 +710,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\messageDecline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selfcareImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2ndpicture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3rdpicture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depressionImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SplashScreen.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
