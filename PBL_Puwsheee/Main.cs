@@ -97,6 +97,7 @@ namespace PBL_Puwsheee
             testButton.Image = PBL_Puwsheee.Properties.Resources.Test;
             playablesButton.Image = PBL_Puwsheee.Properties.Resources.calmm;
             settingsButton.Image = PBL_Puwsheee.Properties.Resources.sett;
+            chartsButton.BackgroundImage = PBL_Puwsheee.Properties.Resources.chartsIcon;
             #endregion
         }
 
@@ -119,12 +120,13 @@ namespace PBL_Puwsheee
         {
             openChildForm(new MoodTracker(userInfo));
             moodtrackerButton.BackColor = Color.FromArgb(86, 75, 97);
-            indicator.Top = 59;
+            indicator.Top = 61;
             #region Back to original color
             calendarButton.BackColor = Color.FromArgb(33, 21, 41);
             analysisButton.BackColor = Color.FromArgb(33, 21, 41);
             testButton.BackColor = Color.FromArgb(33, 21, 41);
             playablesButton.BackColor = Color.FromArgb(33, 21, 41);
+            chartsButton.BackColor = Color.FromArgb(33, 21, 41);
             #endregion
         }
 
@@ -138,6 +140,7 @@ namespace PBL_Puwsheee
             analysisButton.BackColor = Color.FromArgb(33, 21, 41);
             testButton.BackColor = Color.FromArgb(33, 21, 41);
             playablesButton.BackColor = Color.FromArgb(33, 21, 41);
+            chartsButton.BackColor = Color.FromArgb(33, 21, 41);
             #endregion
         }
 
@@ -151,6 +154,7 @@ namespace PBL_Puwsheee
             moodtrackerButton.BackColor = Color.FromArgb(33, 21, 41);
             testButton.BackColor = Color.FromArgb(33, 21, 41);
             playablesButton.BackColor = Color.FromArgb(33, 21, 41);
+            chartsButton.BackColor = Color.FromArgb(33, 21, 41);
             #endregion
         }
 
@@ -158,12 +162,13 @@ namespace PBL_Puwsheee
         {
             openChildForm(new Test.Test_Main());
             testButton.BackColor = Color.FromArgb(86, 75, 97);
-            indicator.Top = 262;
+            indicator.Top = 325;
             #region Back to original color
             moodtrackerButton.BackColor = Color.FromArgb(33, 21, 41);
             calendarButton.BackColor = Color.FromArgb(33, 21, 41);
             analysisButton.BackColor = Color.FromArgb(33, 21, 41);
             playablesButton.BackColor = Color.FromArgb(33, 21, 41);
+            chartsButton.BackColor = Color.FromArgb(33, 21, 41);
             #endregion
         }
 
@@ -176,8 +181,9 @@ namespace PBL_Puwsheee
             bgPanel.Visible = false;
 
             playablesButton.BackColor = Color.FromArgb(86, 75, 97);
-            indicator.Top = 323;
+            indicator.Top = 385;
             #region Back to original color
+            chartsButton.BackColor = Color.FromArgb(33, 21, 41);
             moodtrackerButton.BackColor = Color.FromArgb(33, 21, 41);
             calendarButton.BackColor = Color.FromArgb(33, 21, 41);
             analysisButton.BackColor = Color.FromArgb(33, 21, 41);
@@ -321,6 +327,27 @@ namespace PBL_Puwsheee
         private void displayPanel_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void chartsButton_Click(object sender, EventArgs e)
+        {
+            Charts charts = new Charts() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            this.guna2ShadowPanel1.Controls.Add(charts);
+            charts.Show();
+
+            displayPanel.Visible = false;
+            bgPanel.Visible = false;
+
+            chartsButton.BackColor = Color.FromArgb(86, 75, 97);
+            indicator.Top = 256;
+
+            #region Back to original color
+            playablesButton.BackColor = Color.FromArgb(33, 21, 41);
+            moodtrackerButton.BackColor = Color.FromArgb(33, 21, 41);
+            calendarButton.BackColor = Color.FromArgb(33, 21, 41);
+            analysisButton.BackColor = Color.FromArgb(33, 21, 41);
+            testButton.BackColor = Color.FromArgb(33, 21, 41);
+            #endregion
         }
     }
 }

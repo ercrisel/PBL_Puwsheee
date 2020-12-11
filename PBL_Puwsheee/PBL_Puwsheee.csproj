@@ -670,9 +670,6 @@
     <None Include="Resources\login signup puwshee.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\angryCalendar.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\contentedCalendar.png" />
   </ItemGroup>
   <ItemGroup>
@@ -716,6 +713,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\analysisCountButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\angryCalendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chartsIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

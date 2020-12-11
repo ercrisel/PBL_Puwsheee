@@ -171,7 +171,7 @@
             // guna2GradientPanel2
             // 
             this.guna2GradientPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.guna2GradientPanel2.BackgroundImage = global::PBL_Puwsheee.Properties.Resources._2ndpicture;
+//            this.guna2GradientPanel2.BackgroundImage = global::PBL_Puwsheee.Properties.Resources._2ndpicture;
             this.guna2GradientPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.guna2GradientPanel2.BorderRadius = 14;
             this.guna2GradientPanel2.FillColor = System.Drawing.Color.Transparent;
@@ -257,7 +257,7 @@
             // guna2GradientPanel3
             // 
             this.guna2GradientPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.guna2GradientPanel3.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.depressionImage;
+//            this.guna2GradientPanel3.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.depressionImage;
             this.guna2GradientPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.guna2GradientPanel3.BorderRadius = 14;
             this.guna2GradientPanel3.FillColor = System.Drawing.Color.Transparent;
@@ -271,7 +271,7 @@
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.guna2GradientPanel1.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.selfcareImage;
+        //    this.guna2GradientPanel1.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.selfcareImage;
             this.guna2GradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.guna2GradientPanel1.BorderRadius = 14;
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.Transparent;

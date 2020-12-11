@@ -69,7 +69,7 @@ namespace PBL_Puwsheee
 
         private void SplashScreen_Load(object sender, EventArgs e)
         {
-            this.BackgroundImage = PBL_Puwsheee.Properties.Resources.SplashScreen;
+           // this.BackgroundImage = PBL_Puwsheee.Properties.Resources.SplashScreen;
         }
     }
 }
