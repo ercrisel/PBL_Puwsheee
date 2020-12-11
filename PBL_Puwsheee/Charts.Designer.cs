@@ -279,6 +279,7 @@ namespace PBL_Puwsheee
             this.testScoreSMALL.BackColor = System.Drawing.Color.Transparent;
             this.testScoreSMALL.BorderRadius = 10;
             this.testScoreSMALL.CheckedState.Parent = this.testScoreSMALL;
+            this.testScoreSMALL.Cursor = System.Windows.Forms.Cursors.Hand;
             this.testScoreSMALL.CustomImages.Parent = this.testScoreSMALL;
             this.testScoreSMALL.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(218)))), ((int)(((byte)(196)))));
             this.testScoreSMALL.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
@@ -299,6 +300,7 @@ namespace PBL_Puwsheee
             this.moodEntriesSMALL.BackColor = System.Drawing.Color.Transparent;
             this.moodEntriesSMALL.BorderRadius = 10;
             this.moodEntriesSMALL.CheckedState.Parent = this.moodEntriesSMALL;
+            this.moodEntriesSMALL.Cursor = System.Windows.Forms.Cursors.Hand;
             this.moodEntriesSMALL.CustomImages.Parent = this.moodEntriesSMALL;
             this.moodEntriesSMALL.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(218)))), ((int)(((byte)(196)))));
             this.moodEntriesSMALL.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(196)))));
@@ -320,6 +322,7 @@ namespace PBL_Puwsheee
             this.activityCountSMALL.BackColor = System.Drawing.Color.Transparent;
             this.activityCountSMALL.BorderRadius = 10;
             this.activityCountSMALL.CheckedState.Parent = this.activityCountSMALL;
+            this.activityCountSMALL.Cursor = System.Windows.Forms.Cursors.Hand;
             this.activityCountSMALL.CustomImages.Parent = this.activityCountSMALL;
             this.activityCountSMALL.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(218)))), ((int)(((byte)(196)))));
             this.activityCountSMALL.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(167)))), ((int)(((byte)(189)))));
@@ -340,6 +343,7 @@ namespace PBL_Puwsheee
             this.moodCountSMALL.BackColor = System.Drawing.Color.Transparent;
             this.moodCountSMALL.BorderRadius = 10;
             this.moodCountSMALL.CheckedState.Parent = this.moodCountSMALL;
+            this.moodCountSMALL.Cursor = System.Windows.Forms.Cursors.Hand;
             this.moodCountSMALL.CustomImages.Parent = this.moodCountSMALL;
             this.moodCountSMALL.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(218)))), ((int)(((byte)(196)))));
             this.moodCountSMALL.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(145)))), ((int)(((byte)(172)))));
@@ -441,10 +445,10 @@ namespace PBL_Puwsheee
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.ClientSize = new System.Drawing.Size(1163, 613);
-            this.Controls.Add(this.testScoreBIG);
-            this.Controls.Add(this.moodEntriesBIG);
             this.Controls.Add(this.moodCountBIG);
             this.Controls.Add(this.activityCountBIG);
+            this.Controls.Add(this.moodEntriesBIG);
+            this.Controls.Add(this.testScoreBIG);
             this.Controls.Add(this.endDateTimePicker);
             this.Controls.Add(this.startDateTimePicker);
             this.Controls.Add(this.resetButton);
