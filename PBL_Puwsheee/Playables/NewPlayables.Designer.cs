@@ -91,9 +91,10 @@ namespace PBL_Puwsheee.Playables
             this.breathingButton.ForeColor = System.Drawing.Color.White;
             this.breathingButton.HoverState.Parent = this.breathingButton;
             this.breathingButton.Location = new System.Drawing.Point(0, 0);
+            this.breathingButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.breathingButton.Name = "breathingButton";
             this.breathingButton.ShadowDecoration.Parent = this.breathingButton;
-            this.breathingButton.Size = new System.Drawing.Size(351, 161);
+            this.breathingButton.Size = new System.Drawing.Size(468, 198);
             this.breathingButton.TabIndex = 1;
             this.breathingButton.UseTransparentBackground = true;
             this.breathingButton.Click += new System.EventHandler(this.breathingButton_Click);
@@ -111,9 +112,10 @@ namespace PBL_Puwsheee.Playables
             this.musicButton.ForeColor = System.Drawing.Color.White;
             this.musicButton.HoverState.Parent = this.musicButton;
             this.musicButton.Location = new System.Drawing.Point(0, 0);
+            this.musicButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.musicButton.Name = "musicButton";
             this.musicButton.ShadowDecoration.Parent = this.musicButton;
-            this.musicButton.Size = new System.Drawing.Size(351, 161);
+            this.musicButton.Size = new System.Drawing.Size(468, 198);
             this.musicButton.TabIndex = 2;
             this.musicButton.UseTransparentBackground = true;
             this.musicButton.Click += new System.EventHandler(this.musicButton_Click);
@@ -124,9 +126,10 @@ namespace PBL_Puwsheee.Playables
             this.musicLabel.BackColor = System.Drawing.Color.Transparent;
             this.musicLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.musicLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.musicLabel.Location = new System.Drawing.Point(8, 123);
+            this.musicLabel.Location = new System.Drawing.Point(11, 151);
+            this.musicLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.musicLabel.Name = "musicLabel";
-            this.musicLabel.Size = new System.Drawing.Size(76, 30);
+            this.musicLabel.Size = new System.Drawing.Size(96, 37);
             this.musicLabel.TabIndex = 0;
             this.musicLabel.Text = "Music";
             // 
@@ -142,9 +145,10 @@ namespace PBL_Puwsheee.Playables
             this.natureButton.ForeColor = System.Drawing.Color.White;
             this.natureButton.HoverState.Parent = this.natureButton;
             this.natureButton.Location = new System.Drawing.Point(0, 0);
+            this.natureButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.natureButton.Name = "natureButton";
             this.natureButton.ShadowDecoration.Parent = this.natureButton;
-            this.natureButton.Size = new System.Drawing.Size(351, 161);
+            this.natureButton.Size = new System.Drawing.Size(468, 198);
             this.natureButton.TabIndex = 2;
             this.natureButton.UseTransparentBackground = true;
             this.natureButton.Click += new System.EventHandler(this.natureButton_Click);
@@ -155,9 +159,10 @@ namespace PBL_Puwsheee.Playables
             this.natureLabel.BackColor = System.Drawing.Color.Transparent;
             this.natureLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.natureLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.natureLabel.Location = new System.Drawing.Point(8, 124);
+            this.natureLabel.Location = new System.Drawing.Point(11, 153);
+            this.natureLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.natureLabel.Name = "natureLabel";
-            this.natureLabel.Size = new System.Drawing.Size(63, 30);
+            this.natureLabel.Size = new System.Drawing.Size(79, 37);
             this.natureLabel.TabIndex = 0;
             this.natureLabel.Text = "Rain";
             // 
@@ -168,9 +173,10 @@ namespace PBL_Puwsheee.Playables
             this.energizerLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.energizerLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.energizerLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.energizerLabel.Location = new System.Drawing.Point(52, 192);
+            this.energizerLabel.Location = new System.Drawing.Point(69, 236);
+            this.energizerLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.energizerLabel.Name = "energizerLabel";
-            this.energizerLabel.Size = new System.Drawing.Size(121, 30);
+            this.energizerLabel.Size = new System.Drawing.Size(152, 37);
             this.energizerLabel.TabIndex = 0;
             this.energizerLabel.Text = "Energizer";
             this.energizerLabel.Click += new System.EventHandler(this.energizerLabel_Click);
@@ -182,9 +188,10 @@ namespace PBL_Puwsheee.Playables
             this.relaxationLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.relaxationLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.relaxationLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.relaxationLabel.Location = new System.Drawing.Point(48, 198);
+            this.relaxationLabel.Location = new System.Drawing.Point(64, 244);
+            this.relaxationLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.relaxationLabel.Name = "relaxationLabel";
-            this.relaxationLabel.Size = new System.Drawing.Size(136, 30);
+            this.relaxationLabel.Size = new System.Drawing.Size(172, 37);
             this.relaxationLabel.TabIndex = 0;
             this.relaxationLabel.Text = "Relaxation";
             this.relaxationLabel.Click += new System.EventHandler(this.relaxationLabel_Click);
@@ -196,9 +203,10 @@ namespace PBL_Puwsheee.Playables
             this.gratitudeLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gratitudeLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gratitudeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.gratitudeLabel.Location = new System.Drawing.Point(55, 192);
+            this.gratitudeLabel.Location = new System.Drawing.Point(73, 236);
+            this.gratitudeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gratitudeLabel.Name = "gratitudeLabel";
-            this.gratitudeLabel.Size = new System.Drawing.Size(124, 30);
+            this.gratitudeLabel.Size = new System.Drawing.Size(156, 37);
             this.gratitudeLabel.TabIndex = 0;
             this.gratitudeLabel.Text = "Gratitude";
             this.gratitudeLabel.Click += new System.EventHandler(this.gratitudeLabel_Click);
@@ -210,9 +218,10 @@ namespace PBL_Puwsheee.Playables
             this.anxietyLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.anxietyLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.anxietyLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.anxietyLabel.Location = new System.Drawing.Point(61, 198);
+            this.anxietyLabel.Location = new System.Drawing.Point(81, 244);
+            this.anxietyLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.anxietyLabel.Name = "anxietyLabel";
-            this.anxietyLabel.Size = new System.Drawing.Size(98, 30);
+            this.anxietyLabel.Size = new System.Drawing.Size(123, 37);
             this.anxietyLabel.TabIndex = 0;
             this.anxietyLabel.Text = "Anxiety";
             this.anxietyLabel.Click += new System.EventHandler(this.anxietyLabel_Click);
@@ -226,9 +235,10 @@ namespace PBL_Puwsheee.Playables
             this.breathingLabel.BackColor = System.Drawing.Color.Transparent;
             this.breathingLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.breathingLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.breathingLabel.Location = new System.Drawing.Point(12, 127);
+            this.breathingLabel.Location = new System.Drawing.Point(16, 156);
+            this.breathingLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.breathingLabel.Name = "breathingLabel";
-            this.breathingLabel.Size = new System.Drawing.Size(222, 30);
+            this.breathingLabel.Size = new System.Drawing.Size(279, 37);
             this.breathingLabel.TabIndex = 0;
             this.breathingLabel.Text = "Breathing Exercise";
             // 
@@ -241,22 +251,24 @@ namespace PBL_Puwsheee.Playables
             this.breathingPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(166)))), ((int)(((byte)(130)))));
             this.breathingPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(203)))), ((int)(((byte)(207)))));
             this.breathingPanel.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.breathingPanel.Location = new System.Drawing.Point(28, 12);
+            this.breathingPanel.Location = new System.Drawing.Point(37, 15);
+            this.breathingPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.breathingPanel.Name = "breathingPanel";
             this.breathingPanel.ShadowDecoration.BorderRadius = 100;
             this.breathingPanel.ShadowDecoration.CustomizableEdges.BottomLeft = false;
             this.breathingPanel.ShadowDecoration.CustomizableEdges.BottomRight = false;
             this.breathingPanel.ShadowDecoration.Parent = this.breathingPanel;
-            this.breathingPanel.Size = new System.Drawing.Size(351, 161);
+            this.breathingPanel.Size = new System.Drawing.Size(468, 198);
             this.breathingPanel.TabIndex = 3;
             // 
             // breathingPict
             // 
             this.breathingPict.BackColor = System.Drawing.Color.Transparent;
             this.breathingPict.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.breathingPict.Location = new System.Drawing.Point(17, 3);
+            this.breathingPict.Location = new System.Drawing.Point(23, 4);
+            this.breathingPict.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.breathingPict.Name = "breathingPict";
-            this.breathingPict.Size = new System.Drawing.Size(318, 146);
+            this.breathingPict.Size = new System.Drawing.Size(424, 180);
             this.breathingPict.TabIndex = 0;
             this.breathingPict.TabStop = false;
             // 
@@ -269,22 +281,24 @@ namespace PBL_Puwsheee.Playables
             this.musicPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(93)))), ((int)(((byte)(115)))));
             this.musicPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(194)))), ((int)(((byte)(193)))));
             this.musicPanel.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.musicPanel.Location = new System.Drawing.Point(28, 191);
+            this.musicPanel.Location = new System.Drawing.Point(37, 235);
+            this.musicPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.musicPanel.Name = "musicPanel";
             this.musicPanel.ShadowDecoration.BorderRadius = 100;
             this.musicPanel.ShadowDecoration.CustomizableEdges.BottomLeft = false;
             this.musicPanel.ShadowDecoration.CustomizableEdges.BottomRight = false;
             this.musicPanel.ShadowDecoration.Parent = this.musicPanel;
-            this.musicPanel.Size = new System.Drawing.Size(351, 161);
+            this.musicPanel.Size = new System.Drawing.Size(468, 198);
             this.musicPanel.TabIndex = 3;
             // 
             // musicPic
             // 
             this.musicPic.BackColor = System.Drawing.Color.Transparent;
             this.musicPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.musicPic.Location = new System.Drawing.Point(-6, -19);
+            this.musicPic.Location = new System.Drawing.Point(-8, -23);
+            this.musicPic.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.musicPic.Name = "musicPic";
-            this.musicPic.Size = new System.Drawing.Size(301, 197);
+            this.musicPic.Size = new System.Drawing.Size(401, 242);
             this.musicPic.TabIndex = 0;
             this.musicPic.TabStop = false;
             // 
@@ -299,7 +313,7 @@ namespace PBL_Puwsheee.Playables
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.label1.Location = new System.Drawing.Point(14, 126);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(222, 30);
+            this.label1.Size = new System.Drawing.Size(279, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "Breathing Exercise";
             // 
@@ -329,22 +343,24 @@ namespace PBL_Puwsheee.Playables
             this.naturePanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(91)))), ((int)(((byte)(75)))));
             this.naturePanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(201)))), ((int)(((byte)(203)))));
             this.naturePanel.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.naturePanel.Location = new System.Drawing.Point(28, 370);
+            this.naturePanel.Location = new System.Drawing.Point(37, 455);
+            this.naturePanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.naturePanel.Name = "naturePanel";
             this.naturePanel.ShadowDecoration.BorderRadius = 100;
             this.naturePanel.ShadowDecoration.CustomizableEdges.BottomLeft = false;
             this.naturePanel.ShadowDecoration.CustomizableEdges.BottomRight = false;
             this.naturePanel.ShadowDecoration.Parent = this.naturePanel;
-            this.naturePanel.Size = new System.Drawing.Size(351, 161);
+            this.naturePanel.Size = new System.Drawing.Size(468, 198);
             this.naturePanel.TabIndex = 3;
             // 
             // rainPic
             // 
             this.rainPic.BackColor = System.Drawing.Color.Transparent;
             this.rainPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.rainPic.Location = new System.Drawing.Point(-6, -31);
+            this.rainPic.Location = new System.Drawing.Point(-8, -38);
+            this.rainPic.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rainPic.Name = "rainPic";
-            this.rainPic.Size = new System.Drawing.Size(354, 192);
+            this.rainPic.Size = new System.Drawing.Size(472, 236);
             this.rainPic.TabIndex = 0;
             this.rainPic.TabStop = false;
             // 
@@ -357,10 +373,11 @@ namespace PBL_Puwsheee.Playables
             this.relaxationPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(163)))), ((int)(((byte)(125)))));
             this.relaxationPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(154)))), ((int)(((byte)(183)))));
             this.relaxationPanel.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.relaxationPanel.Location = new System.Drawing.Point(672, 300);
+            this.relaxationPanel.Location = new System.Drawing.Point(896, 369);
+            this.relaxationPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.relaxationPanel.Name = "relaxationPanel";
             this.relaxationPanel.ShadowDecoration.Parent = this.relaxationPanel;
-            this.relaxationPanel.Size = new System.Drawing.Size(236, 234);
+            this.relaxationPanel.Size = new System.Drawing.Size(315, 288);
             this.relaxationPanel.TabIndex = 4;
             // 
             // relaxationButton
@@ -376,9 +393,10 @@ namespace PBL_Puwsheee.Playables
             this.relaxationButton.ForeColor = System.Drawing.Color.White;
             this.relaxationButton.HoverState.Parent = this.relaxationButton;
             this.relaxationButton.Location = new System.Drawing.Point(0, 0);
+            this.relaxationButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.relaxationButton.Name = "relaxationButton";
             this.relaxationButton.ShadowDecoration.Parent = this.relaxationButton;
-            this.relaxationButton.Size = new System.Drawing.Size(236, 234);
+            this.relaxationButton.Size = new System.Drawing.Size(315, 288);
             this.relaxationButton.TabIndex = 3;
             this.relaxationButton.UseTransparentBackground = true;
             this.relaxationButton.Click += new System.EventHandler(this.relaxationLabel_Click);
@@ -387,9 +405,10 @@ namespace PBL_Puwsheee.Playables
             // 
             this.relaxPic.BackColor = System.Drawing.Color.Transparent;
             this.relaxPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.relaxPic.Location = new System.Drawing.Point(33, 24);
+            this.relaxPic.Location = new System.Drawing.Point(44, 30);
+            this.relaxPic.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.relaxPic.Name = "relaxPic";
-            this.relaxPic.Size = new System.Drawing.Size(172, 160);
+            this.relaxPic.Size = new System.Drawing.Size(229, 197);
             this.relaxPic.TabIndex = 1;
             this.relaxPic.TabStop = false;
             // 
@@ -402,10 +421,11 @@ namespace PBL_Puwsheee.Playables
             this.energizerPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(207)))), ((int)(((byte)(188)))));
             this.energizerPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(224)))), ((int)(((byte)(149)))));
             this.energizerPanel.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.energizerPanel.Location = new System.Drawing.Point(419, 52);
+            this.energizerPanel.Location = new System.Drawing.Point(559, 64);
+            this.energizerPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.energizerPanel.Name = "energizerPanel";
             this.energizerPanel.ShadowDecoration.Parent = this.energizerPanel;
-            this.energizerPanel.Size = new System.Drawing.Size(236, 234);
+            this.energizerPanel.Size = new System.Drawing.Size(315, 288);
             this.energizerPanel.TabIndex = 4;
             // 
             // energizerButton
@@ -420,9 +440,10 @@ namespace PBL_Puwsheee.Playables
             this.energizerButton.ForeColor = System.Drawing.Color.White;
             this.energizerButton.HoverState.Parent = this.energizerButton;
             this.energizerButton.Location = new System.Drawing.Point(1, 0);
+            this.energizerButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.energizerButton.Name = "energizerButton";
             this.energizerButton.ShadowDecoration.Parent = this.energizerButton;
-            this.energizerButton.Size = new System.Drawing.Size(236, 234);
+            this.energizerButton.Size = new System.Drawing.Size(315, 288);
             this.energizerButton.TabIndex = 3;
             this.energizerButton.UseTransparentBackground = true;
             this.energizerButton.Click += new System.EventHandler(this.energizerLabel_Click);
@@ -431,9 +452,10 @@ namespace PBL_Puwsheee.Playables
             // 
             this.energizerPic.BackColor = System.Drawing.Color.Transparent;
             this.energizerPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.energizerPic.Location = new System.Drawing.Point(32, 15);
+            this.energizerPic.Location = new System.Drawing.Point(43, 18);
+            this.energizerPic.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.energizerPic.Name = "energizerPic";
-            this.energizerPic.Size = new System.Drawing.Size(172, 160);
+            this.energizerPic.Size = new System.Drawing.Size(229, 197);
             this.energizerPic.TabIndex = 1;
             this.energizerPic.TabStop = false;
             // 
@@ -446,10 +468,11 @@ namespace PBL_Puwsheee.Playables
             this.gratitudePanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(218)))), ((int)(((byte)(196)))));
             this.gratitudePanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(132)))), ((int)(((byte)(155)))));
             this.gratitudePanel.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.gratitudePanel.Location = new System.Drawing.Point(672, 52);
+            this.gratitudePanel.Location = new System.Drawing.Point(896, 64);
+            this.gratitudePanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gratitudePanel.Name = "gratitudePanel";
             this.gratitudePanel.ShadowDecoration.Parent = this.gratitudePanel;
-            this.gratitudePanel.Size = new System.Drawing.Size(236, 234);
+            this.gratitudePanel.Size = new System.Drawing.Size(315, 288);
             this.gratitudePanel.TabIndex = 4;
             // 
             // gratitudeButton
@@ -464,9 +487,10 @@ namespace PBL_Puwsheee.Playables
             this.gratitudeButton.ForeColor = System.Drawing.Color.White;
             this.gratitudeButton.HoverState.Parent = this.gratitudeButton;
             this.gratitudeButton.Location = new System.Drawing.Point(0, 0);
+            this.gratitudeButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gratitudeButton.Name = "gratitudeButton";
             this.gratitudeButton.ShadowDecoration.Parent = this.gratitudeButton;
-            this.gratitudeButton.Size = new System.Drawing.Size(236, 234);
+            this.gratitudeButton.Size = new System.Drawing.Size(315, 288);
             this.gratitudeButton.TabIndex = 3;
             this.gratitudeButton.UseTransparentBackground = true;
             this.gratitudeButton.Click += new System.EventHandler(this.relaxationLabel_Click);
@@ -475,9 +499,10 @@ namespace PBL_Puwsheee.Playables
             // 
             this.gratitudePic.BackColor = System.Drawing.Color.Transparent;
             this.gratitudePic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gratitudePic.Location = new System.Drawing.Point(33, 15);
+            this.gratitudePic.Location = new System.Drawing.Point(44, 18);
+            this.gratitudePic.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gratitudePic.Name = "gratitudePic";
-            this.gratitudePic.Size = new System.Drawing.Size(172, 160);
+            this.gratitudePic.Size = new System.Drawing.Size(229, 197);
             this.gratitudePic.TabIndex = 1;
             this.gratitudePic.TabStop = false;
             // 
@@ -490,10 +515,11 @@ namespace PBL_Puwsheee.Playables
             this.anxietyPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(238)))), ((int)(((byte)(239)))));
             this.anxietyPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(200)))), ((int)(((byte)(148)))));
             this.anxietyPanel.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.anxietyPanel.Location = new System.Drawing.Point(419, 300);
+            this.anxietyPanel.Location = new System.Drawing.Point(559, 369);
+            this.anxietyPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.anxietyPanel.Name = "anxietyPanel";
             this.anxietyPanel.ShadowDecoration.Parent = this.anxietyPanel;
-            this.anxietyPanel.Size = new System.Drawing.Size(236, 234);
+            this.anxietyPanel.Size = new System.Drawing.Size(315, 288);
             this.anxietyPanel.TabIndex = 4;
             // 
             // anxietyButton
@@ -508,9 +534,10 @@ namespace PBL_Puwsheee.Playables
             this.anxietyButton.ForeColor = System.Drawing.Color.White;
             this.anxietyButton.HoverState.Parent = this.anxietyButton;
             this.anxietyButton.Location = new System.Drawing.Point(1, 0);
+            this.anxietyButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.anxietyButton.Name = "anxietyButton";
             this.anxietyButton.ShadowDecoration.Parent = this.anxietyButton;
-            this.anxietyButton.Size = new System.Drawing.Size(236, 234);
+            this.anxietyButton.Size = new System.Drawing.Size(315, 288);
             this.anxietyButton.TabIndex = 3;
             this.anxietyButton.UseTransparentBackground = true;
             this.anxietyButton.Click += new System.EventHandler(this.anxietyLabel_Click);
@@ -519,9 +546,10 @@ namespace PBL_Puwsheee.Playables
             // 
             this.anxietyPic.BackColor = System.Drawing.Color.Transparent;
             this.anxietyPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.anxietyPic.Location = new System.Drawing.Point(32, 24);
+            this.anxietyPic.Location = new System.Drawing.Point(43, 30);
+            this.anxietyPic.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.anxietyPic.Name = "anxietyPic";
-            this.anxietyPic.Size = new System.Drawing.Size(172, 160);
+            this.anxietyPic.Size = new System.Drawing.Size(229, 197);
             this.anxietyPic.TabIndex = 1;
             this.anxietyPic.TabStop = false;
             // 
@@ -544,18 +572,19 @@ namespace PBL_Puwsheee.Playables
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Robaga Rounded Black", 15F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(567, 12);
+            this.label2.Location = new System.Drawing.Point(756, 15);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(194, 24);
+            this.label2.Size = new System.Drawing.Size(239, 30);
             this.label2.TabIndex = 0;
             this.label2.Text = "Medidate Section";
             // 
             // NewPlayables
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.ClientSize = new System.Drawing.Size(963, 569);
+            this.ClientSize = new System.Drawing.Size(1284, 700);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.energizerPanel);
             this.Controls.Add(this.anxietyPanel);
@@ -565,6 +594,7 @@ namespace PBL_Puwsheee.Playables
             this.Controls.Add(this.musicPanel);
             this.Controls.Add(this.breathingPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "NewPlayables";
             this.Text = "A";
             this.Load += new System.EventHandler(this.NewPlayables_Load);

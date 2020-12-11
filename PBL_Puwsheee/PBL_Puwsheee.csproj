@@ -49,7 +49,7 @@
       <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="MonthCalendar">
-      <HintPath>..\..\..\..\Downloads\MonthCalendar.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\MonthCalendar_demo_vs2005_1\MonthCalendar.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -712,19 +712,10 @@
     <None Include="Resources\messageDecline.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\selfcareImage.png" />
+    <None Include="Resources\moodCountButtton.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\2ndpicture.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\3rdpicture.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\depressionImage.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SplashScreen.png" />
+    <None Include="Resources\analysisCountButton.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
