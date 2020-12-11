@@ -222,9 +222,16 @@ namespace PBL_Puwsheee.Authentication.Class
                 msg.From = new MailAddress("puwshee@gmail.com");
                 msg.To.Add(emailAddress);
                 Console.WriteLine(emailAddress);
-                msg.Subject = "===PUWSHEE CONFIRMATION CODE===";
+                msg.Subject = "Ready to meet Puwshee?~ ฅ(＾・ω・＾ฅ)";
 
-                msg.Body = "Hi, " + username + " this is your confirmation code :   " + codeToBeSent + "." + DateTime.Now.ToString();
+                msg.Body = "Meow, " + username + "!~ /ᐠ .ᆺ. ᐟ\\ﾉ" +
+                    "\n\nWe're purrleased that you signed up for Puwshee." +
+                    "\nYou're purrfect to be part of the Puwshee Community." +
+                    "\nGet ready to meet Puwshee, and her other Friends." +
+                    "\n\nHere's is the Confirmation Code:\n" + codeToBeSent + "\n\nWelcome to Puwshee!" +
+                    "\nLingid'e Lengke" +
+                    "\nThe Makers of Puwshee" + 
+                    "\n\n" + DateTime.Now.ToString();
                 SmtpClient smt = new SmtpClient();
                 smt.Host = "smtp.gmail.com";
                 System.Net.NetworkCredential ntcd = new NetworkCredential();
