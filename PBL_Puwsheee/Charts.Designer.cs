@@ -171,6 +171,7 @@ namespace PBL_Puwsheee
             this.moodCountPieChart.Size = new System.Drawing.Size(381, 388);
             this.moodCountPieChart.TabIndex = 6;
             this.moodCountPieChart.Text = "pieChart1";
+            this.moodCountPieChart.ChildChanged += new System.EventHandler<System.Windows.Forms.Integration.ChildChangedEventArgs>(this.moodCountPieChart_ChildChanged);
             // 
             // tabControl1
             // 

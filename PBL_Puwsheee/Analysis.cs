@@ -422,7 +422,7 @@ namespace PBL_Puwsheee
 
         private void viewChartsButton_Click(object sender, EventArgs e)
         {
-            Charts charts = new Charts() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            Charts charts = new Charts(user) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             //this.Panel.Controls.Add(charts);
             charts.Show();
         }
