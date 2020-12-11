@@ -73,7 +73,7 @@
             this.loadingPanel.Location = new System.Drawing.Point(0, 0);
             this.loadingPanel.Name = "loadingPanel";
             this.loadingPanel.ShadowDecoration.Parent = this.loadingPanel;
-            this.loadingPanel.Size = new System.Drawing.Size(956, 10);
+            this.loadingPanel.Size = new System.Drawing.Size(0, 10);
             this.loadingPanel.TabIndex = 1;
             // 
             // SplashScreen
@@ -92,6 +92,7 @@
             this.Padding = new System.Windows.Forms.Padding(5);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SplashScreen";
+            this.Load += new System.EventHandler(this.SplashScreen_Load);
             this.loadingbasisPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 

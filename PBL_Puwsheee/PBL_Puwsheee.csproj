@@ -49,7 +49,7 @@
       <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="MonthCalendar">
-      <HintPath>..\..\..\..\Downloads\MonthCalendar_demo_vs2005_1\MonthCalendar.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\MonthCalendar.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />

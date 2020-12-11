@@ -33,8 +33,8 @@ namespace PBL_Puwsheee
 
         private void countdownTick(object sender, EventArgs e)
         {
-            loadingPanel.Width += 7;
-            if (loadingPanel.Width <= loadingbasisPanel.Width)
+            loadingPanel.Width += 3;
+            if (loadingPanel.Width >= loadingbasisPanel.Width)
             {
                 countdown.Enabled = false;
                 fadeOut.Enabled = true;
@@ -65,6 +65,11 @@ namespace PBL_Puwsheee
                 return;
             }
             this.Opacity += 0.01;
+        }
+
+        private void SplashScreen_Load(object sender, EventArgs e)
+        {
+            this.BackgroundImage = PBL_Puwsheee.Properties.Resources.SplashScreen;
         }
     }
 }
