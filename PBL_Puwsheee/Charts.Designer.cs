@@ -314,7 +314,6 @@ namespace PBL_Puwsheee
             this.moodEntriesSMALL.TabIndex = 24;
             this.moodEntriesSMALL.Text = "Mood Entries Chart";
             this.moodEntriesSMALL.UseTransparentBackground = true;
-            this.moodEntriesSMALL.Visible = false;
             this.moodEntriesSMALL.Click += new System.EventHandler(this.moodEntriesSMALL_Click);
             // 
             // activityCountSMALL
@@ -445,9 +444,9 @@ namespace PBL_Puwsheee
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.ClientSize = new System.Drawing.Size(1163, 613);
+            this.Controls.Add(this.moodEntriesBIG);
             this.Controls.Add(this.moodCountBIG);
             this.Controls.Add(this.activityCountBIG);
-            this.Controls.Add(this.moodEntriesBIG);
             this.Controls.Add(this.testScoreBIG);
             this.Controls.Add(this.endDateTimePicker);
             this.Controls.Add(this.startDateTimePicker);
