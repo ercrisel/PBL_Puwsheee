@@ -102,13 +102,6 @@ namespace PBL_Puwsheee
             }          
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            fadeOut.Start();
-            Log_In li = new Log_In();
-            li.Show();
-        }
-
         // pag nag load si form
         private void Sign_Up_Load(object sender, EventArgs e)
         {
@@ -281,43 +274,7 @@ namespace PBL_Puwsheee
             Application.Exit();
         }
 
-        private void logLabelSign_Click(object sender, EventArgs e)
-        {
-            //this.Width = 614;
-            //this.Height = 454;
-            sizeTimer.Start();
-        }
-
-        private void signLabelSign_Click(object sender, EventArgs e)
-        {
-            //this.Width = 933;
-            //this.Height = 595;
-            sizeTimer.Start();
-        }
-
-        bool small = false;
-
-        private void sizeTimer_Tick(object sender, EventArgs e)
-        {
-            if(small)
-            {
-                if(this.Height <= 595) this.Height += 10;
-                
-                this.Width += 10;
-                if (this.Width >= 933) sizeTimer.Stop();
-
-                small = false;
-            }
-            else
-            {
-                if (this.Height <= 454) this.Height -= 5;
-
-                this.Width -= 5;
-                if (this.Width <= 614) sizeTimer.Stop();
-
-                small = true;
-            }
-        }
+       
     }
 
     

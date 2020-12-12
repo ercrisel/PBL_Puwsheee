@@ -27,6 +27,15 @@ namespace PBL_Puwsheee
             form.Opacity -= .2;
         }
 
+        public static void fadeOutSignUp(Form form)
+        {
+            if (form.Opacity <= 0)
+            {
+                form.Hide();
+            }
+            form.Opacity -= .1;
+        }
+
         public static void exitFade(Form form)
         {
             if (form.Opacity <= 0)

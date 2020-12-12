@@ -59,8 +59,6 @@
             this.fadeIn = new System.Windows.Forms.Timer(this.components);
             this.fadeOut = new System.Windows.Forms.Timer(this.components);
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.signLabelSign = new System.Windows.Forms.PictureBox();
-            this.logLabelSign = new System.Windows.Forms.PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.lastNamePanel = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
@@ -73,11 +71,7 @@
             this.backButton = new Guna.UI2.WinForms.Guna2Button();
             this.wrongCode = new Guna.UI2.WinForms.Guna2PictureBox();
             this.accountCreated = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.sizeTimer = new System.Windows.Forms.Timer(this.components);
-            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.guna2ShadowPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.signLabelSign)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logLabelSign)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.signUpPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wrongCode)).BeginInit();
@@ -99,7 +93,7 @@
             this.firstNameTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.firstNameTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.firstNameTextbox.FocusedState.Parent = this.firstNameTextbox;
-            this.firstNameTextbox.Font = new System.Drawing.Font("Century Gothic", 13F);
+            this.firstNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.firstNameTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.firstNameTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.firstNameTextbox.HoverState.Parent = this.firstNameTextbox;
@@ -131,7 +125,7 @@
             this.lastNameTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.lastNameTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.lastNameTextbox.FocusedState.Parent = this.lastNameTextbox;
-            this.lastNameTextbox.Font = new System.Drawing.Font("Century Gothic", 13F);
+            this.lastNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.lastNameTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.lastNameTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.lastNameTextbox.HoverState.Parent = this.lastNameTextbox;
@@ -163,7 +157,7 @@
             this.emailTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.emailTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.emailTextbox.FocusedState.Parent = this.emailTextbox;
-            this.emailTextbox.Font = new System.Drawing.Font("Century Gothic", 13F);
+            this.emailTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.emailTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.emailTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.emailTextbox.HoverState.Parent = this.emailTextbox;
@@ -195,7 +189,7 @@
             this.usernameTexbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.usernameTexbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.usernameTexbox.FocusedState.Parent = this.usernameTexbox;
-            this.usernameTexbox.Font = new System.Drawing.Font("Century Gothic", 13F);
+            this.usernameTexbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.usernameTexbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.usernameTexbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.usernameTexbox.HoverState.Parent = this.usernameTexbox;
@@ -227,7 +221,7 @@
             this.passwordTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.passwordTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.passwordTextbox.FocusedState.Parent = this.passwordTextbox;
-            this.passwordTextbox.Font = new System.Drawing.Font("Century Gothic", 13F);
+            this.passwordTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.passwordTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.passwordTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.passwordTextbox.HoverState.Parent = this.passwordTextbox;
@@ -259,7 +253,7 @@
             this.confirmPasswordTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.confirmPasswordTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.confirmPasswordTextbox.FocusedState.Parent = this.confirmPasswordTextbox;
-            this.confirmPasswordTextbox.Font = new System.Drawing.Font("Century Gothic", 13F);
+            this.confirmPasswordTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.confirmPasswordTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.confirmPasswordTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.confirmPasswordTextbox.HoverState.Parent = this.confirmPasswordTextbox;
@@ -285,7 +279,7 @@
             this.uploadimageButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uploadimageButton.CustomImages.Parent = this.uploadimageButton;
             this.uploadimageButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
-            this.uploadimageButton.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.uploadimageButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.uploadimageButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.uploadimageButton.HoverState.Parent = this.uploadimageButton;
             this.uploadimageButton.Location = new System.Drawing.Point(381, 130);
@@ -304,7 +298,7 @@
             this.signupButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.signupButton.CustomImages.Parent = this.signupButton;
             this.signupButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.signupButton.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.signupButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.signupButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.signupButton.HoverState.Parent = this.signupButton;
             this.signupButton.Location = new System.Drawing.Point(273, 467);
@@ -515,7 +509,7 @@
             this.submitCodeButton.CheckedState.Parent = this.submitCodeButton;
             this.submitCodeButton.CustomImages.Parent = this.submitCodeButton;
             this.submitCodeButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.submitCodeButton.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.submitCodeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.submitCodeButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.submitCodeButton.HoverState.Parent = this.submitCodeButton;
             this.submitCodeButton.Location = new System.Drawing.Point(472, 467);
@@ -542,7 +536,7 @@
             this.enterCodeTextBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
             this.enterCodeTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.enterCodeTextBox.FocusedState.Parent = this.enterCodeTextBox;
-            this.enterCodeTextBox.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Bold);
+            this.enterCodeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold);
             this.enterCodeTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.enterCodeTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.enterCodeTextBox.HoverState.Parent = this.enterCodeTextBox;
@@ -610,8 +604,6 @@
             // guna2ShadowPanel1
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel1.Controls.Add(this.signLabelSign);
-            this.guna2ShadowPanel1.Controls.Add(this.logLabelSign);
             this.guna2ShadowPanel1.Controls.Add(this.showConfirmPasswordButton);
             this.guna2ShadowPanel1.Controls.Add(this.showPasswordIcon);
             this.guna2ShadowPanel1.Controls.Add(this.requiredEmail);
@@ -654,27 +646,6 @@
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(869, 546);
             this.guna2ShadowPanel1.TabIndex = 49;
             this.guna2ShadowPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2ShadowPanel1_Paint);
-            // 
-            // signLabelSign
-            // 
-            this.signLabelSign.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.signLabelSign.Location = new System.Drawing.Point(9, 125);
-            this.signLabelSign.Name = "signLabelSign";
-            this.signLabelSign.Size = new System.Drawing.Size(42, 90);
-            this.signLabelSign.TabIndex = 50;
-            this.signLabelSign.TabStop = false;
-            this.signLabelSign.Click += new System.EventHandler(this.signLabelSign_Click);
-            // 
-            // logLabelSign
-            // 
-            this.logLabelSign.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.logLabelSign.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.logLabelSign.Location = new System.Drawing.Point(8, 30);
-            this.logLabelSign.Name = "logLabelSign";
-            this.logLabelSign.Size = new System.Drawing.Size(44, 76);
-            this.logLabelSign.TabIndex = 50;
-            this.logLabelSign.TabStop = false;
-            this.logLabelSign.Click += new System.EventHandler(this.logLabelSign_Click);
             // 
             // guna2Panel1
             // 
@@ -816,15 +787,6 @@
             this.accountCreated.UseTransparentBackground = true;
             this.accountCreated.Visible = false;
             // 
-            // sizeTimer
-            // 
-            this.sizeTimer.Interval = 10;
-            this.sizeTimer.Tick += new System.EventHandler(this.sizeTimer_Tick);
-            // 
-            // guna2AnimateWindow1
-            // 
-            this.guna2AnimateWindow1.AnimationType = Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_SLIDE;
-            // 
             // Sign_Up
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -850,8 +812,6 @@
             this.Load += new System.EventHandler(this.Sign_Up_Load);
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2ShadowPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.signLabelSign)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logLabelSign)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.signUpPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wrongCode)).EndInit();
@@ -905,9 +865,5 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel createLabel;
         private Guna.UI2.WinForms.Guna2PictureBox accountCreated;
         private Guna.UI2.WinForms.Guna2PictureBox wrongCode;
-        private System.Windows.Forms.PictureBox signLabelSign;
-        private System.Windows.Forms.PictureBox logLabelSign;
-        private System.Windows.Forms.Timer sizeTimer;
-        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
     }
 }

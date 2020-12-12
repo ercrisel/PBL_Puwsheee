@@ -43,11 +43,11 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.usernamePanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.messageBubbleOHNO = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.messgaeBubbleYEY = new Guna.UI2.WinForms.Guna2PictureBox();
             this.passwordPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.showPasswordIcon = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.messageBubbleOHNO = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.messgaeBubbleYEY = new Guna.UI2.WinForms.Guna2PictureBox();
             this.loginPic = new System.Windows.Forms.PictureBox();
             this.textBubble = new Guna.UI2.WinForms.Guna2PictureBox();
             this.successLabel1 = new System.Windows.Forms.Label();
@@ -57,10 +57,10 @@
             this.exitButton = new Guna.UI2.WinForms.Guna2Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.guna2ShadowPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.messageBubbleOHNO)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.messgaeBubbleYEY)).BeginInit();
             this.passwordPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.messageBubbleOHNO)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.messgaeBubbleYEY)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBubble)).BeginInit();
             this.SuspendLayout();
@@ -80,7 +80,7 @@
             this.passwordTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.passwordTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.passwordTextbox.FocusedState.Parent = this.passwordTextbox;
-            this.passwordTextbox.Font = new System.Drawing.Font("Century Gothic", 13F);
+            this.passwordTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.passwordTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.passwordTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.passwordTextbox.HoverState.Parent = this.passwordTextbox;
@@ -115,7 +115,7 @@
             this.loginButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.loginButton.CustomImages.Parent = this.loginButton;
             this.loginButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.loginButton.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.loginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.loginButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.loginButton.HoverState.Parent = this.loginButton;
             this.loginButton.Location = new System.Drawing.Point(165, 278);
@@ -141,7 +141,7 @@
             this.usernameTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.usernameTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.usernameTextbox.FocusedState.Parent = this.usernameTextbox;
-            this.usernameTextbox.Font = new System.Drawing.Font("Century Gothic", 13F);
+            this.usernameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.usernameTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.usernameTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.usernameTextbox.HoverState.Parent = this.usernameTextbox;
@@ -214,7 +214,7 @@
             // 
             // fadeOut
             // 
-            this.fadeOut.Interval = 500;
+            this.fadeOut.Interval = 50;
             this.fadeOut.Tick += new System.EventHandler(this.fadeOut_Tick);
             // 
             // guna2HtmlLabel1
@@ -277,32 +277,6 @@
             this.usernamePanel.Size = new System.Drawing.Size(368, 5);
             this.usernamePanel.TabIndex = 10;
             // 
-            // messageBubbleOHNO
-            // 
-            this.messageBubbleOHNO.BackColor = System.Drawing.Color.Transparent;
-            this.messageBubbleOHNO.Location = new System.Drawing.Point(92, 15);
-            this.messageBubbleOHNO.Name = "messageBubbleOHNO";
-            this.messageBubbleOHNO.ShadowDecoration.Parent = this.messageBubbleOHNO;
-            this.messageBubbleOHNO.Size = new System.Drawing.Size(163, 142);
-            this.messageBubbleOHNO.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.messageBubbleOHNO.TabIndex = 11;
-            this.messageBubbleOHNO.TabStop = false;
-            this.messageBubbleOHNO.UseTransparentBackground = true;
-            this.messageBubbleOHNO.Visible = false;
-            // 
-            // messgaeBubbleYEY
-            // 
-            this.messgaeBubbleYEY.BackColor = System.Drawing.Color.Transparent;
-            this.messgaeBubbleYEY.Location = new System.Drawing.Point(92, 12);
-            this.messgaeBubbleYEY.Name = "messgaeBubbleYEY";
-            this.messgaeBubbleYEY.ShadowDecoration.Parent = this.messgaeBubbleYEY;
-            this.messgaeBubbleYEY.Size = new System.Drawing.Size(163, 142);
-            this.messgaeBubbleYEY.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.messgaeBubbleYEY.TabIndex = 11;
-            this.messgaeBubbleYEY.TabStop = false;
-            this.messgaeBubbleYEY.UseTransparentBackground = true;
-            this.messgaeBubbleYEY.Visible = false;
-            // 
             // passwordPanel
             // 
             this.passwordPanel.BorderRadius = 3;
@@ -345,6 +319,32 @@
             this.showPasswordIcon.TabIndex = 6;
             this.showPasswordIcon.UseTransparentBackground = true;
             this.showPasswordIcon.Click += new System.EventHandler(this.showPasswordIcon_Click);
+            // 
+            // messageBubbleOHNO
+            // 
+            this.messageBubbleOHNO.BackColor = System.Drawing.Color.Transparent;
+            this.messageBubbleOHNO.Location = new System.Drawing.Point(92, 15);
+            this.messageBubbleOHNO.Name = "messageBubbleOHNO";
+            this.messageBubbleOHNO.ShadowDecoration.Parent = this.messageBubbleOHNO;
+            this.messageBubbleOHNO.Size = new System.Drawing.Size(163, 142);
+            this.messageBubbleOHNO.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.messageBubbleOHNO.TabIndex = 11;
+            this.messageBubbleOHNO.TabStop = false;
+            this.messageBubbleOHNO.UseTransparentBackground = true;
+            this.messageBubbleOHNO.Visible = false;
+            // 
+            // messgaeBubbleYEY
+            // 
+            this.messgaeBubbleYEY.BackColor = System.Drawing.Color.Transparent;
+            this.messgaeBubbleYEY.Location = new System.Drawing.Point(92, 12);
+            this.messgaeBubbleYEY.Name = "messgaeBubbleYEY";
+            this.messgaeBubbleYEY.ShadowDecoration.Parent = this.messgaeBubbleYEY;
+            this.messgaeBubbleYEY.Size = new System.Drawing.Size(163, 142);
+            this.messgaeBubbleYEY.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.messgaeBubbleYEY.TabIndex = 11;
+            this.messgaeBubbleYEY.TabStop = false;
+            this.messgaeBubbleYEY.UseTransparentBackground = true;
+            this.messgaeBubbleYEY.Visible = false;
             // 
             // loginPic
             // 
@@ -414,7 +414,6 @@
             // 
             // exitButton
             // 
-            this.exitButton.BackgroundImage = global::PBL_Puwsheee.Properties.Resources.logout;
             this.exitButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.exitButton.BorderRadius = 10;
             this.exitButton.CheckedState.Parent = this.exitButton;
@@ -459,10 +458,10 @@
             this.Load += new System.EventHandler(this.Log_In_Load);
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2ShadowPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.messageBubbleOHNO)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.messgaeBubbleYEY)).EndInit();
             this.passwordPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.messageBubbleOHNO)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.messgaeBubbleYEY)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBubble)).EndInit();
             this.ResumeLayout(false);

@@ -132,7 +132,7 @@ namespace PBL_Puwsheee
 
         private void fadeOut_Tick(object sender, EventArgs e)
         {
-            Fade.fadeOutEffect(this);
+            Fade.fadeOutSignUp(this);
         }
 
         private void Log_In_Load(object sender, EventArgs e)

@@ -51,14 +51,33 @@ namespace PBL_Puwsheee.Settings
             cs.Username = usernameToDelete;
             cs.DeactivateAccount();
             // paki dala si user sa login na form ty
+           
             Log_In login = new Log_In();
             login.Show();
 
-            for (int i = Application.OpenForms.Count - 1; i >= 0; i--)
+            //for (int i = Application.OpenForms.Count - 1; i >= 0; i--)
+            //{
+            //    if (Application.OpenForms[i].Name != "Log_In")
+            //    {
+            //        Application.OpenForms[i].Close();
+            //    }  
+            //}
+
+            List<Form> openForms = new List<Form>();
+
+            foreach (Form form in Application.OpenForms)
             {
-                if (Application.OpenForms[i].Name != "Log_In")
-                    Application.OpenForms[i].Close();
+                openForms.Add(form);
             }
+
+            foreach (Form form in openForms)
+            {
+                if (form.Name != "Log_In")
+                {
+                    form.Close();
+                }
+            }
+
 
 
         }

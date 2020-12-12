@@ -113,7 +113,7 @@
             this.lastnameTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.lastnameTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.lastnameTextbox.FocusedState.Parent = this.lastnameTextbox;
-            this.lastnameTextbox.Font = new System.Drawing.Font("Century Gothic", 13F);
+            this.lastnameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.lastnameTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.lastnameTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.lastnameTextbox.HoverState.Parent = this.lastnameTextbox;
@@ -144,7 +144,7 @@
             this.emailTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.emailTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.emailTextbox.FocusedState.Parent = this.emailTextbox;
-            this.emailTextbox.Font = new System.Drawing.Font("Century Gothic", 13F);
+            this.emailTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.emailTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.emailTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.emailTextbox.HoverState.Parent = this.emailTextbox;
@@ -175,7 +175,7 @@
             this.usernameTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.usernameTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.usernameTextbox.FocusedState.Parent = this.usernameTextbox;
-            this.usernameTextbox.Font = new System.Drawing.Font("Century Gothic", 13F);
+            this.usernameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.usernameTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.usernameTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.usernameTextbox.HoverState.Parent = this.usernameTextbox;
@@ -199,7 +199,7 @@
             this.savechangesButton.CustomImages.Parent = this.savechangesButton;
             this.savechangesButton.Enabled = false;
             this.savechangesButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.savechangesButton.Font = new System.Drawing.Font("Century Gothic", 8.25F);
+            this.savechangesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.savechangesButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.savechangesButton.HoverState.Parent = this.savechangesButton;
             this.savechangesButton.Location = new System.Drawing.Point(96, 424);
@@ -220,7 +220,7 @@
             this.changepasswordButton.CustomImages.Parent = this.changepasswordButton;
             this.changepasswordButton.Enabled = false;
             this.changepasswordButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.changepasswordButton.Font = new System.Drawing.Font("Century Gothic", 8.25F);
+            this.changepasswordButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.changepasswordButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.changepasswordButton.HoverState.Parent = this.changepasswordButton;
             this.changepasswordButton.Location = new System.Drawing.Point(78, 302);
@@ -248,7 +248,7 @@
             this.confirmTexbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.confirmTexbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.confirmTexbox.FocusedState.Parent = this.confirmTexbox;
-            this.confirmTexbox.Font = new System.Drawing.Font("Century Gothic", 13F);
+            this.confirmTexbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.confirmTexbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.confirmTexbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.confirmTexbox.HoverState.Parent = this.confirmTexbox;
@@ -280,7 +280,7 @@
             this.newpasswordTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.newpasswordTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.newpasswordTextbox.FocusedState.Parent = this.newpasswordTextbox;
-            this.newpasswordTextbox.Font = new System.Drawing.Font("Century Gothic", 13F);
+            this.newpasswordTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.newpasswordTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.newpasswordTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.newpasswordTextbox.HoverState.Parent = this.newpasswordTextbox;
@@ -312,7 +312,7 @@
             this.currentpasswordTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.currentpasswordTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.currentpasswordTextbox.FocusedState.Parent = this.currentpasswordTextbox;
-            this.currentpasswordTextbox.Font = new System.Drawing.Font("Century Gothic", 13F);
+            this.currentpasswordTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.currentpasswordTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.currentpasswordTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.currentpasswordTextbox.HoverState.Parent = this.currentpasswordTextbox;
@@ -355,7 +355,7 @@
             this.firstnameTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.firstnameTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.firstnameTextbox.FocusedState.Parent = this.firstnameTextbox;
-            this.firstnameTextbox.Font = new System.Drawing.Font("Century Gothic", 13F);
+            this.firstnameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.firstnameTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.firstnameTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.firstnameTextbox.HoverState.Parent = this.firstnameTextbox;
@@ -378,10 +378,10 @@
             this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2Button1.CustomImages.Parent = this.guna2Button1;
             this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Century Gothic", 8F);
+            this.guna2Button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(633, 11);
+            this.guna2Button1.Location = new System.Drawing.Point(633, 24);
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
@@ -397,10 +397,10 @@
             this.guna2Button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2Button2.CustomImages.Parent = this.guna2Button2;
             this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Century Gothic", 8F);
+            this.guna2Button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(779, 11);
+            this.guna2Button2.Location = new System.Drawing.Point(779, 24);
             this.guna2Button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
@@ -442,7 +442,7 @@
             this.changephotoButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.changephotoButton.CustomImages.Parent = this.changephotoButton;
             this.changephotoButton.FillColor = System.Drawing.Color.Transparent;
-            this.changephotoButton.Font = new System.Drawing.Font("Century Gothic", 8F);
+            this.changephotoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.changephotoButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.changephotoButton.HoverState.Parent = this.changephotoButton;
             this.changephotoButton.Location = new System.Drawing.Point(481, 76);
@@ -658,7 +658,7 @@
             this.submitCode.CheckedState.Parent = this.submitCode;
             this.submitCode.CustomImages.Parent = this.submitCode;
             this.submitCode.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.submitCode.Font = new System.Drawing.Font("Century Gothic", 8.25F);
+            this.submitCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.submitCode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.submitCode.HoverState.Parent = this.submitCode;
             this.submitCode.Location = new System.Drawing.Point(297, 353);
@@ -710,7 +710,7 @@
             this.guna2CircleButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CircleButton1.Image")));
             this.guna2CircleButton1.ImageOffset = new System.Drawing.Point(1, 0);
             this.guna2CircleButton1.ImageSize = new System.Drawing.Size(18, 18);
-            this.guna2CircleButton1.Location = new System.Drawing.Point(308, 129);
+            this.guna2CircleButton1.Location = new System.Drawing.Point(311, 129);
             this.guna2CircleButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2CircleButton1.Name = "guna2CircleButton1";
             this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -729,9 +729,10 @@
             this.guna2CircleButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.guna2CircleButton2.ForeColor = System.Drawing.Color.White;
             this.guna2CircleButton2.HoverState.Parent = this.guna2CircleButton2;
+            this.guna2CircleButton2.Image = ((System.Drawing.Image)(resources.GetObject("guna2CircleButton2.Image")));
             this.guna2CircleButton2.ImageOffset = new System.Drawing.Point(1, 0);
             this.guna2CircleButton2.ImageSize = new System.Drawing.Size(18, 18);
-            this.guna2CircleButton2.Location = new System.Drawing.Point(306, 44);
+            this.guna2CircleButton2.Location = new System.Drawing.Point(311, 62);
             this.guna2CircleButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2CircleButton2.Name = "guna2CircleButton2";
             this.guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -950,7 +951,7 @@
             // 
             // Settings_Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.ClientSize = new System.Drawing.Size(939, 473);
@@ -987,7 +988,7 @@
             this.Controls.Add(this.emailTextbox);
             this.Controls.Add(this.guna2Panel3);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Settings_Main";

@@ -23,35 +23,7 @@ namespace PBL_Puwsheee
         int steps;
         int next = 150;
 
-        #region Double Buffers
-        protected override CreateParams CreateParams // double buffeirng daw sabi ni google 
-        {
-            get
-            {
-                CreateParams handleparam = base.CreateParams;
-                handleparam.ExStyle |= 0x02000000;
-                return handleparam;
-            }
-        }
-
-        public static void enableDoubleBuff(System.Windows.Forms.Control cont)
-        {
-            System.Reflection.PropertyInfo DemoProp = typeof(System.Windows.Forms.Control).GetProperty("DoubleBuffered", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
-            DemoProp.SetValue(cont, true, null);
-        }
-
-        internal static class NativeWinAPI
-        {
-            internal static readonly int GWL_EXSTYLE = -20;
-            internal static readonly int WS_EX_COMPOSITED = 0x02000000;
-
-            [DllImport("user32")]
-            internal static extern int GetWindowLong(IntPtr hWnd, int nIndex);
-
-            [DllImport("user32")]
-            internal static extern int SetWindowLong(IntPtr hWnd, int nIndex, int dwNewLong);
-        }
-        #endregion  
+        
 
         public MoodTracker()
         {
@@ -61,20 +33,6 @@ namespace PBL_Puwsheee
         public MoodTracker(UserInfo userInfo)
         {
             InitializeComponent();
-
-            #region Double Buffer Functionality
-            this.DoubleBuffered = true;
-            enableDoubleBuff(moodPanelBg);
-            enableDoubleBuff(activitiesPanelBg);
-            enableDoubleBuff(notesPanelBg);
-            enableDoubleBuff(errorPanel);
-            enableDoubleBuff(moodPanel);
-            enableDoubleBuff(activitiesPanel);
-
-            int style = NativeWinAPI.GetWindowLong(this.Handle, NativeWinAPI.GWL_EXSTYLE);
-            style |= NativeWinAPI.WS_EX_COMPOSITED;
-            NativeWinAPI.SetWindowLong(this.Handle, NativeWinAPI.GWL_EXSTYLE, style);
-            #endregion
 
             var user = userInfo;
             moodEntry.Username = user.Username; 
@@ -349,16 +307,16 @@ namespace PBL_Puwsheee
             //loadingPanel.Width += 150;
             //if (loadingPanel.Width >= next) incrementTimer.Stop();
 
-            indicate.Value += 1;
+            indicate.Value += 3;
 
-            //if (moodSteps[steps] == activitiesPanelBg)
-            //{
-            //    if (indicate.Value >= 64) incrementTimer.Stop();
-            //}
-            //else if (moodSteps[steps] == notesPanelBg)
-            //{
-            //    if (indicate.Value >= 100) incrementTimer.Stop();
-            //}
+            if (moodSteps[steps] == activitiesPanelBg)
+            {
+                if (indicate.Value >= 64) incrementTimer.Stop();
+            }
+            else if (moodSteps[steps] == notesPanelBg)
+            {
+                if (indicate.Value >= 100) incrementTimer.Stop();
+            }
         }
 
         private void decrementTimer_Tick(object sender, EventArgs e)
@@ -366,16 +324,16 @@ namespace PBL_Puwsheee
             //loadingPanel.Width -= 155;
             //if (loadingPanel.Width <= next) decrementTimer.Stop();
 
-            indicate.Value -= 1;
+            indicate.Value -= 3;
 
-            //if (moodSteps[steps] == moodPanelBg)
-            //{
-            //    if (indicate.Value <= 33) decrementTimer.Stop();
-            //}
-            //else if (moodSteps[steps] == activitiesPanelBg)
-            //{
-            //    if (indicate.Value <= 64) decrementTimer.Stop();
-            //}
+            if (moodSteps[steps] == moodPanelBg)
+            {
+                if (indicate.Value <= 33) decrementTimer.Stop();
+            }
+            else if (moodSteps[steps] == activitiesPanelBg)
+            {
+                if (indicate.Value <= 64) decrementTimer.Stop();
+            }
         }
     }
 }

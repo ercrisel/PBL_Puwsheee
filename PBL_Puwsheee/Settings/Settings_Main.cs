@@ -126,6 +126,7 @@ namespace PBL_Puwsheee.Settings
             guna2CircleButton2.Image = PBL_Puwsheee.Properties.Resources.visualization;
             guna2CircleButton3.Image = PBL_Puwsheee.Properties.Resources.visualization;
             pictureBox1.BackgroundImage= PBL_Puwsheee.Properties.Resources.Back;
+            changephotoButton.BackgroundImage = PBL_Puwsheee.Properties.Resources.Edit;
         }
 
         private void backButton_Click(object sender, EventArgs e)
