@@ -42,12 +42,13 @@ namespace PBL_Puwsheee
             this.cancelButton.BorderRadius = 16;
             this.cancelButton.BorderThickness = 2;
             this.cancelButton.CheckedState.Parent = this.cancelButton;
+            this.cancelButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cancelButton.CustomImages.Parent = this.cancelButton;
             this.cancelButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.cancelButton.Font = new System.Drawing.Font("Typo Round Bold Demo", 11F);
             this.cancelButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.cancelButton.HoverState.Parent = this.cancelButton;
-            this.cancelButton.Location = new System.Drawing.Point(181, 344);
+            this.cancelButton.Location = new System.Drawing.Point(195, 344);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.ShadowDecoration.Parent = this.cancelButton;
             this.cancelButton.Size = new System.Drawing.Size(113, 35);
@@ -60,7 +61,7 @@ namespace PBL_Puwsheee
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Typo Round Bold Demo", 20F);
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(24, 12);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(38, 12);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(426, 36);
             this.guna2HtmlLabel2.TabIndex = 7;
@@ -71,7 +72,7 @@ namespace PBL_Puwsheee
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Typo Round Bold Demo", 15F);
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(134, 54);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(148, 54);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(206, 27);
             this.guna2HtmlLabel1.TabIndex = 7;
@@ -79,8 +80,7 @@ namespace PBL_Puwsheee
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::PBL_Puwsheee.Properties.Resources.testCat;
-            this.pictureBox1.Location = new System.Drawing.Point(85, 70);
+            this.pictureBox1.Location = new System.Drawing.Point(99, 70);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(304, 252);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
