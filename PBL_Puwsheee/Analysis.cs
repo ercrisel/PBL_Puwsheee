@@ -433,9 +433,7 @@ namespace PBL_Puwsheee
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            Charts ch = new Charts(user);
-            ch.ShowDialog();
-
+           
 
         }
     }
