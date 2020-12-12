@@ -52,8 +52,8 @@ namespace PBL_Puwsheee.Settings
             cs.DeactivateAccount();
             // paki dala si user sa login na form ty     
 
-            Log_In mainForm = new Log_In();
-            mainForm.Show();
+            Log_In logInForm = new Log_In();
+            logInForm.Show();
             this.Close();
 
             for (int i = Application.OpenForms.Count - 1; i >= 0; i--)

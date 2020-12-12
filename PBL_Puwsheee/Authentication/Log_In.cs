@@ -61,13 +61,13 @@ namespace PBL_Puwsheee
                     publicUserName = user.Username;
                     publicPasswordInput = user.Password;
                     // MessageBox.Show("You will be redirected to the homepage, Login Success");
-                    messgaeBubbleYEY.Visible = true;
+                  //  messgaeBubbleYEY.Visible = true;
                     messageBubbleOHNO.Visible = false;
                     
                   
                     
                     
-                    fadeOut.Start();
+                    timer2.Start();
                     PositiveAffirmations pa = new PositiveAffirmations();
                     pa.Show();
                 }
@@ -183,6 +183,18 @@ namespace PBL_Puwsheee
         private void timer1_Tick(object sender, EventArgs e)
         {
             Fade.exitFade(this);
+        }
+
+        int time = 3;
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            time--;
+            if (time <= 0) Fade.fadeOutEffect(this);
+        }
+
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+
         }
     }
 }

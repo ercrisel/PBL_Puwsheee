@@ -312,13 +312,13 @@ namespace PBL_Puwsheee.Settings
         }
         public void showHidePassword(Guna2TextBox tb)
         {
-            if (tb.PasswordChar == '*')
+            if (tb.PasswordChar == '•')
             {
                 tb.PasswordChar = '\0';
             }
             else
             {
-                tb.PasswordChar = '*';
+                tb.PasswordChar = '•';
             }
         }
 

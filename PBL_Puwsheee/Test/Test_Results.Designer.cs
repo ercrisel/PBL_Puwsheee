@@ -117,6 +117,7 @@
             this.averagescoreProgressBar.Controls.Add(this.averageLabel);
             this.averagescoreProgressBar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
             this.averagescoreProgressBar.Location = new System.Drawing.Point(51, 232);
+            this.averagescoreProgressBar.Maximum = 50;
             this.averagescoreProgressBar.Name = "averagescoreProgressBar";
             this.averagescoreProgressBar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.averagescoreProgressBar.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
@@ -199,11 +200,12 @@
             this.DescriptionLabel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
             this.DescriptionLabel.FocusedState.BorderColor = System.Drawing.Color.Transparent;
             this.DescriptionLabel.FocusedState.Parent = this.DescriptionLabel;
-            this.DescriptionLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 10F);
+            this.DescriptionLabel.Font = new System.Drawing.Font("Robaga Rounded Black", 10F);
             this.DescriptionLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.DescriptionLabel.HoverState.BorderColor = System.Drawing.Color.Transparent;
             this.DescriptionLabel.HoverState.Parent = this.DescriptionLabel;
             this.DescriptionLabel.Location = new System.Drawing.Point(200, 101);
+            this.DescriptionLabel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.DescriptionLabel.Multiline = true;
             this.DescriptionLabel.Name = "DescriptionLabel";
             this.DescriptionLabel.PasswordChar = '\0';
@@ -238,7 +240,7 @@
             this.testresultLabel.HoverState.BorderColor = System.Drawing.Color.Transparent;
             this.testresultLabel.HoverState.Parent = this.testresultLabel;
             this.testresultLabel.Location = new System.Drawing.Point(258, 44);
-            this.testresultLabel.Margin = new System.Windows.Forms.Padding(4);
+            this.testresultLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.testresultLabel.Name = "testresultLabel";
             this.testresultLabel.PasswordChar = '\0';
             this.testresultLabel.PlaceholderText = "";

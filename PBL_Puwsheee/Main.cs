@@ -359,5 +359,25 @@ namespace PBL_Puwsheee
 
 
         }
+
+        private void usernameLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void logOut_Click(object sender, EventArgs e)
+        {
+            Log_In logInForm = new Log_In();
+            logInForm.Show();
+            this.Close();
+
+            //for (int i = Application.OpenForms.Count - 1; i >= 0; i--)
+            //{
+            //    if (Application.OpenForms[i].Name == "Settings_Main" || Application.OpenForms[i].Name == "Main")
+            //    {
+            //        Application.OpenForms[i].Close();
+            //    }
+            //}
+        }
     }
 }
