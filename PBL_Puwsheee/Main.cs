@@ -331,7 +331,7 @@ namespace PBL_Puwsheee
 
         private void chartsButton_Click(object sender, EventArgs e)
         {
-            Charts charts = new Charts() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            Charts charts = new Charts(userInfo) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             this.guna2ShadowPanel1.Controls.Add(charts);
             charts.Show();
 
