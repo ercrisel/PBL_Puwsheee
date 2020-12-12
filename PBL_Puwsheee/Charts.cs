@@ -321,7 +321,7 @@ namespace PBL_Puwsheee
                 {
                     Title = "Mood",
                     Values = tempMoodChartValues,
-                    Stroke = System.Windows.Media.Brushes.White,
+                    Stroke = System.Windows.Media.Brushes.Plum,
                     Fill = System.Windows.Media.Brushes.Transparent,
                     PointGeometrySize = 10,
                     PointForeground = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(34, 46, 49))
@@ -364,18 +364,21 @@ namespace PBL_Puwsheee
                 new LineSeries
                 {
                     Title = "Good Self Care",
-                    Values = tempTest1ChartValues
+                    Values = tempTest1ChartValues,
+                    Stroke =  System.Windows.Media.Brushes.LightPink,
 
                 },
                 new LineSeries
                 {
                     Title = "Emotional Intelligence Score",
-                    Values = tempTest2ChartValues
+                    Values = tempTest2ChartValues,
+                    Stroke =  System.Windows.Media.Brushes.Lavender,
                 },
                 new LineSeries
                 {
                     Title = "Anxiety and Depression Score",
-                    Values = tempTest3ChartValues
+                    Values = tempTest3ChartValues,
+                    Stroke =  System.Windows.Media.Brushes.LightSalmon,
                 }
             };
         }
