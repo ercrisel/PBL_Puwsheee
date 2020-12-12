@@ -132,7 +132,7 @@ namespace PBL_Puwsheee
 
         private void fadeOut_Tick(object sender, EventArgs e)
         {
-            Fade.fadeOutEffect(this);
+            Fade.fadeOutSignUp(this);
         }
 
         private void Log_In_Load(object sender, EventArgs e)
@@ -173,6 +173,16 @@ namespace PBL_Puwsheee
         private void passwordTextbox_TextChanged_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Fade.exitFade(this);
         }
     }
 }

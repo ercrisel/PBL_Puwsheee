@@ -232,6 +232,12 @@
     <Compile Include="SplashScreen.Designer.cs">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="testMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="testMessage.Designer.cs">
+      <DependentUpon>testMessage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Test\TestResult.cs" />
     <Compile Include="Test\Test_Questions.cs">
       <SubType>Form</SubType>
@@ -337,6 +343,9 @@
     <EmbeddedResource Include="SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="testMessage.resx">
+      <DependentUpon>testMessage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Test\Test_Questions.resx">
       <DependentUpon>Test_Questions.cs</DependentUpon>
     </EmbeddedResource>
@@ -367,6 +376,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\GOTHIC.TTF" />
     <None Include="Resources\Robaga-Rounded-Black.ttf" />
     <None Include="Resources\SamplePhoto.png" />
   </ItemGroup>
@@ -719,6 +729,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\chartsIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depressionanxietyImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iqtestImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selfcareImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SplashScreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogInLabel.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signUpLabel.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\testCat.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

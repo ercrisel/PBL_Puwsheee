@@ -104,6 +104,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Edit_Entry";
             this.TopMost = true;
+            this.Load += new System.EventHandler(this.Edit_Entry_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

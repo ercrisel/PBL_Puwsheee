@@ -61,15 +61,35 @@ namespace PBL_Puwsheee.Test
             }
             else
             {
-                MessageBox.Show(" bawal na sagutan gago next day na lang");
+                //MessageBox.Show(" bawal na sagutan gago next day na lang");
+
+                Form bg = new Form();
+                using (Form message = new testMessage())
+                {
+                    bg.StartPosition = FormStartPosition.CenterScreen;
+                    bg.FormBorderStyle = FormBorderStyle.None;
+                    bg.Opacity = .50d;
+                    bg.BackColor = Color.Black;
+                    bg.WindowState = FormWindowState.Normal;
+                    bg.TopMost = true;
+                    bg.Location = this.Location;
+                    bg.ShowInTaskbar = false;
+                    bg.Size = new Size(1020, 610);
+                    bg.Show();
+
+                    message.Owner = bg;
+                    message.BringToFront();
+                    message.ShowDialog();
+                    bg.Dispose();
+                }
             }
         }
 
         private void Test_Main_Load(object sender, EventArgs e)
         {
-            //guna2GradientPanel1.BackgroundImage = PBL_Puwsheee.Properties.Resources.selfcareImage;
-            //guna2GradientPanel2.BackgroundImage = PBL_Puwsheee.Properties.Resources._2ndpicture;
-            //guna2GradientPanel3.BackgroundImage = PBL_Puwsheee.Properties.Resources.depressionImage;
+            guna2GradientPanel1.BackgroundImage = PBL_Puwsheee.Properties.Resources.selfcareImage;
+            guna2GradientPanel2.BackgroundImage = PBL_Puwsheee.Properties.Resources.iqtestImage;
+            guna2GradientPanel3.BackgroundImage = PBL_Puwsheee.Properties.Resources.depressionanxietyImage;
         }
     }
 }

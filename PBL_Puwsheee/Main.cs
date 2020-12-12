@@ -68,10 +68,10 @@ namespace PBL_Puwsheee
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
 
             #region Double Buffer Functionality
-            this.DoubleBuffered = true;
-            enableDoubleBuff(displayPanel);
-            enableDoubleBuff(bgPanel);
-            enableDoubleBuff(navBarPanel);
+            //this.DoubleBuffered = true;
+            //enableDoubleBuff(displayPanel);
+            //enableDoubleBuff(bgPanel);
+            //enableDoubleBuff(navBarPanel);
 
             int style = NativeWinAPI.GetWindowLong(this.Handle, NativeWinAPI.GWL_EXSTYLE);
             style |= NativeWinAPI.WS_EX_COMPOSITED;

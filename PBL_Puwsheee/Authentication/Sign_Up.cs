@@ -62,7 +62,7 @@ namespace PBL_Puwsheee
         {
             fadeOut.Start();
             Log_In login = new Log_In();
-            login.Show();
+            login.Show(); 
         }
 
         public void showCode()
@@ -102,17 +102,9 @@ namespace PBL_Puwsheee
             }          
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            fadeOut.Start();
-            Log_In li = new Log_In();
-            li.Show();
-        }
-
         // pag nag load si form
         private void Sign_Up_Load(object sender, EventArgs e)
         {
-            fadeIn.Start();
             firstNameTextbox.Focus();
             var projectPath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
             string filePath = Path.Combine(projectPath, "Resources");
@@ -120,10 +112,14 @@ namespace PBL_Puwsheee
             userPicture.Image = Image.FromFile(location);
             user.ImageLocation = location;
 
+            enterCodeTextBox.Cursor = Cursors.IBeam;
+
             signUpPic.BackgroundImage = PBL_Puwsheee.Properties.Resources.login_signup_puwshee;
             showPasswordIcon.Image = PBL_Puwsheee.Properties.Resources.show_password;
             backButton.BackgroundImage = PBL_Puwsheee.Properties.Resources.Back;
             showConfirmPasswordButton.Image = PBL_Puwsheee.Properties.Resources.show_password;
+            wrongCode.Image = PBL_Puwsheee.Properties.Resources.messageDecline;
+            accountCreated.Image = PBL_Puwsheee.Properties.Resources.messageAccept;
         }
         public void showHidePassword(Guna2TextBox tb)
         {
@@ -212,8 +208,8 @@ namespace PBL_Puwsheee
             if (user.CorrectConfirmationCode())
             {
                 //MessageBox.Show("Success", "Account Created");
-                guna2PictureBox1.Visible = true;
-                guna2PictureBox2.Visible = false;
+                accountCreated.Visible = true;
+                wrongCode.Visible = false;
                 user.UploadEntriesToDatabase();
                 fadeOut.Start();
                 Log_In li = new Log_In();
@@ -223,8 +219,8 @@ namespace PBL_Puwsheee
             }
             else
             {
-                guna2PictureBox1.Visible = false;
-                guna2PictureBox2.Visible = true;
+                accountCreated.Visible = false;
+                wrongCode.Visible = true;
                 // MessageBox.Show("Wrong Confirmation Code");
 
             }
@@ -269,6 +265,23 @@ namespace PBL_Puwsheee
         private void userPicture_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2PictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            fadeOut.Start();
+            Application.Exit();
+        }
+
+        private void enterCodeTextBox_TextChanged(object sender, EventArgs e)
+        {
+            enterCodeTextBox.CharacterCasing = CharacterCasing.Upper;
+            enterCodeTextBox.PlaceholderText = String.Empty;
         }
     }
 

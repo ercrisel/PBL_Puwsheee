@@ -72,6 +72,7 @@ namespace PBL_Puwsheee
 
         private void PositiveAffirmations_Load(object sender, EventArgs e)
         {
+            
             label1.Focus();
 
             string greetings = label1.Text;

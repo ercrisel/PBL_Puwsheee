@@ -285,7 +285,7 @@ namespace PBL_Puwsheee.Authentication.Class
             command.Parameters.AddWithValue("@Verified", verified);
             command.ExecuteNonQuery();
             connect.Close();
-            MessageBox.Show("Account Created Successfully");
+            //MessageBox.Show("Account Created Successfully");
         }
     }
 }
