@@ -346,7 +346,7 @@ namespace PBL_Puwsheee
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.ClientSize = new System.Drawing.Size(1020, 920);
+            this.ClientSize = new System.Drawing.Size(1288, 727);
             this.Controls.Add(this.testScoreSMALL);
             this.Controls.Add(this.moodEntriesSMALL);
             this.Controls.Add(this.activityCountSMALL);
@@ -362,7 +362,6 @@ namespace PBL_Puwsheee
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MinimumSize = new System.Drawing.Size(1020, 920);
             this.Name = "Charts";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Charts";
