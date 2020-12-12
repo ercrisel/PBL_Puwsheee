@@ -112,10 +112,14 @@ namespace PBL_Puwsheee
             userPicture.Image = Image.FromFile(location);
             user.ImageLocation = location;
 
+            enterCodeTextBox.Cursor = Cursors.IBeam;
+
             signUpPic.BackgroundImage = PBL_Puwsheee.Properties.Resources.login_signup_puwshee;
             showPasswordIcon.Image = PBL_Puwsheee.Properties.Resources.show_password;
             backButton.BackgroundImage = PBL_Puwsheee.Properties.Resources.Back;
             showConfirmPasswordButton.Image = PBL_Puwsheee.Properties.Resources.show_password;
+            wrongCode.Image = PBL_Puwsheee.Properties.Resources.messageDecline;
+            accountCreated.Image = PBL_Puwsheee.Properties.Resources.messageAccept;
         }
         public void showHidePassword(Guna2TextBox tb)
         {

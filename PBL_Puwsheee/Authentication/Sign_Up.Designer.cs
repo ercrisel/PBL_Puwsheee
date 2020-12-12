@@ -59,22 +59,22 @@
             this.fadeIn = new System.Windows.Forms.Timer(this.components);
             this.fadeOut = new System.Windows.Forms.Timer(this.components);
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.lastNamePanel = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.userPicture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.createLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.backButton = new Guna.UI2.WinForms.Guna2Button();
             this.wrongCode = new Guna.UI2.WinForms.Guna2PictureBox();
             this.accountCreated = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.userPicture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.signUpPic = new System.Windows.Forms.PictureBox();
             this.guna2ShadowPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.userPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wrongCode)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.accountCreated)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.signUpPic)).BeginInit();
             this.SuspendLayout();
             // 
@@ -526,7 +526,7 @@
             // enterCodeTextBox
             // 
             this.enterCodeTextBox.BorderRadius = 20;
-            this.enterCodeTextBox.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.enterCodeTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.enterCodeTextBox.DefaultText = "";
             this.enterCodeTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.enterCodeTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -550,7 +550,6 @@
             this.enterCodeTextBox.Size = new System.Drawing.Size(197, 39);
             this.enterCodeTextBox.TabIndex = 6;
             this.enterCodeTextBox.TextOffset = new System.Drawing.Point(2, 0);
-            this.enterCodeTextBox.UseWaitCursor = true;
             this.enterCodeTextBox.Visible = false;
             this.enterCodeTextBox.TextChanged += new System.EventHandler(this.enterCodeTextBox_TextChanged);
             this.enterCodeTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.enterKeySignUp);
@@ -649,6 +648,16 @@
             this.guna2ShadowPanel1.TabIndex = 49;
             this.guna2ShadowPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2ShadowPanel1_Paint);
             // 
+            // guna2Panel5
+            // 
+            this.guna2Panel5.BorderRadius = 5;
+            this.guna2Panel5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
+            this.guna2Panel5.Location = new System.Drawing.Point(438, 402);
+            this.guna2Panel5.Name = "guna2Panel5";
+            this.guna2Panel5.ShadowDecoration.Parent = this.guna2Panel5;
+            this.guna2Panel5.Size = new System.Drawing.Size(309, 5);
+            this.guna2Panel5.TabIndex = 49;
+            // 
             // guna2Panel1
             // 
             this.guna2Panel1.BorderRadius = 5;
@@ -679,16 +688,6 @@
             this.guna2Panel2.Size = new System.Drawing.Size(300, 5);
             this.guna2Panel2.TabIndex = 49;
             // 
-            // guna2Panel5
-            // 
-            this.guna2Panel5.BorderRadius = 5;
-            this.guna2Panel5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.guna2Panel5.Location = new System.Drawing.Point(438, 402);
-            this.guna2Panel5.Name = "guna2Panel5";
-            this.guna2Panel5.ShadowDecoration.Parent = this.guna2Panel5;
-            this.guna2Panel5.Size = new System.Drawing.Size(309, 5);
-            this.guna2Panel5.TabIndex = 49;
-            // 
             // guna2Panel4
             // 
             this.guna2Panel4.BorderRadius = 5;
@@ -708,6 +707,19 @@
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
             this.guna2Panel3.Size = new System.Drawing.Size(309, 5);
             this.guna2Panel3.TabIndex = 49;
+            // 
+            // userPicture
+            // 
+            this.userPicture.Location = new System.Drawing.Point(382, 32);
+            this.userPicture.Margin = new System.Windows.Forms.Padding(4);
+            this.userPicture.Name = "userPicture";
+            this.userPicture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.userPicture.ShadowDecoration.Parent = this.userPicture;
+            this.userPicture.Size = new System.Drawing.Size(102, 88);
+            this.userPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.userPicture.TabIndex = 23;
+            this.userPicture.TabStop = false;
+            this.userPicture.Click += new System.EventHandler(this.userPicture_Click);
             // 
             // createLabel
             // 
@@ -742,6 +754,7 @@
             // wrongCode
             // 
             this.wrongCode.BackColor = System.Drawing.Color.Transparent;
+            this.wrongCode.Image = global::PBL_Puwsheee.Properties.Resources.messageFail;
             this.wrongCode.Location = new System.Drawing.Point(95, -7);
             this.wrongCode.Name = "wrongCode";
             this.wrongCode.ShadowDecoration.Parent = this.wrongCode;
@@ -765,19 +778,6 @@
             this.accountCreated.TabStop = false;
             this.accountCreated.UseTransparentBackground = true;
             this.accountCreated.Visible = false;
-            // 
-            // userPicture
-            // 
-            this.userPicture.Location = new System.Drawing.Point(382, 32);
-            this.userPicture.Margin = new System.Windows.Forms.Padding(4);
-            this.userPicture.Name = "userPicture";
-            this.userPicture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.userPicture.ShadowDecoration.Parent = this.userPicture;
-            this.userPicture.Size = new System.Drawing.Size(102, 88);
-            this.userPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.userPicture.TabIndex = 23;
-            this.userPicture.TabStop = false;
-            this.userPicture.Click += new System.EventHandler(this.userPicture_Click);
             // 
             // signUpPic
             // 
@@ -814,9 +814,9 @@
             this.Load += new System.EventHandler(this.Sign_Up_Load);
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2ShadowPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.userPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wrongCode)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.accountCreated)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.signUpPic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

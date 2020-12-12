@@ -697,6 +697,7 @@
             this.enterCodeTextBox.Size = new System.Drawing.Size(175, 30);
             this.enterCodeTextBox.TabIndex = 59;
             this.enterCodeTextBox.Visible = false;
+            this.enterCodeTextBox.TextChanged += new System.EventHandler(this.enterCodeTextBox_TextChanged);
             // 
             // guna2CircleButton1
             // 

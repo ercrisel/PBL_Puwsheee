@@ -61,7 +61,27 @@ namespace PBL_Puwsheee.Test
             }
             else
             {
-                MessageBox.Show(" bawal na sagutan gago next day na lang");
+                //MessageBox.Show(" bawal na sagutan gago next day na lang");
+
+                Form bg = new Form();
+                using (Form message = new testMessage())
+                {
+                    bg.StartPosition = FormStartPosition.CenterScreen;
+                    bg.FormBorderStyle = FormBorderStyle.None;
+                    bg.Opacity = .50d;
+                    bg.BackColor = Color.Black;
+                    bg.WindowState = FormWindowState.Normal;
+                    bg.TopMost = true;
+                    bg.Location = this.Location;
+                    bg.ShowInTaskbar = false;
+                    bg.Size = new Size(1020, 610);
+                    bg.Show();
+
+                    message.Owner = bg;
+                    message.BringToFront();
+                    message.ShowDialog();
+                    bg.Dispose();
+                }
             }
         }
 

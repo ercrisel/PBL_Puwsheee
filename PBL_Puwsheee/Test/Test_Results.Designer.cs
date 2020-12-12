@@ -163,6 +163,7 @@
             this.guna2Button1.BorderRadius = 16;
             this.guna2Button1.BorderThickness = 2;
             this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2Button1.CustomImages.Parent = this.guna2Button1;
             this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.guna2Button1.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
@@ -237,7 +238,7 @@
             this.testresultLabel.HoverState.BorderColor = System.Drawing.Color.Transparent;
             this.testresultLabel.HoverState.Parent = this.testresultLabel;
             this.testresultLabel.Location = new System.Drawing.Point(258, 44);
-            this.testresultLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.testresultLabel.Margin = new System.Windows.Forms.Padding(4);
             this.testresultLabel.Name = "testresultLabel";
             this.testresultLabel.PasswordChar = '\0';
             this.testresultLabel.PlaceholderText = "";

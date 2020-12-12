@@ -232,6 +232,12 @@
     <Compile Include="SplashScreen.Designer.cs">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="testMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="testMessage.Designer.cs">
+      <DependentUpon>testMessage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Test\TestResult.cs" />
     <Compile Include="Test\Test_Questions.cs">
       <SubType>Form</SubType>
@@ -336,6 +342,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="testMessage.resx">
+      <DependentUpon>testMessage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Test\Test_Questions.resx">
       <DependentUpon>Test_Questions.cs</DependentUpon>
@@ -741,6 +750,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\testCat.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

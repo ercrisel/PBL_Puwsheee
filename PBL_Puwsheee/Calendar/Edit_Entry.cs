@@ -34,5 +34,10 @@ namespace PBL_Puwsheee.Calendar
         {
             this.Close();
         }
+
+        private void Edit_Entry_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -341,5 +341,11 @@ namespace PBL_Puwsheee.Settings
         {
 
         }
+
+        private void enterCodeTextBox_TextChanged(object sender, EventArgs e)
+        {
+            enterCodeTextBox.CharacterCasing = CharacterCasing.Upper;
+            enterCodeTextBox.PlaceholderText = String.Empty;
+        }
     }
 }

@@ -225,13 +225,13 @@ namespace PBL_Puwsheee.Test
                         questionLabel.Text = "I feel restless or fidgety";
                         break;
                     case 4:
-                        questionLabel.Text = "I feel so nevous that nothing could calm you down?";
+                        questionLabel.Text = "I feel so nervous that nothing could calm me down";
                         break;
                     case 5:
                         questionLabel.Text = "I feel hopeless";
                         break;
                     case 6:
-                        questionLabel.Text = "I feel so restless I could not sit still?";
+                        questionLabel.Text = "I feel so restless I could not sit still";
                         break;
                     case 7:
                         questionLabel.Text = "I feel depressed";
@@ -240,7 +240,7 @@ namespace PBL_Puwsheee.Test
                         questionLabel.Text = "I feel that everything was an effort";
                         break;
                     case 9:
-                        questionLabel.Text = "I feel so sad that nothing could cheer you up";
+                        questionLabel.Text = "I feel so sad that nothing could cheer me up";
                         break;
                     case 10:
                         questionLabel.Text = "I feel worthless";
@@ -268,7 +268,7 @@ namespace PBL_Puwsheee.Test
                         questionLabel.Text = "I enjoy organizing groups";
                         break;
                     case 6:
-                        questionLabel.Text = "I find it hard to focus on something ove the long term";
+                        questionLabel.Text = "I find it hard to focus on something over the long term";
                         break;
                     case 7:
                         questionLabel.Text = "I find it difficult to move on when I feel frustrated or unhappy";
