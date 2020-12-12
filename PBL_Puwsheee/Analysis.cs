@@ -430,5 +430,13 @@ namespace PBL_Puwsheee
             endDateLabel.Visible = false;
             editButton.Visible = false;
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            Charts ch = new Charts(user);
+            ch.ShowDialog();
+
+
+        }
     }
 }

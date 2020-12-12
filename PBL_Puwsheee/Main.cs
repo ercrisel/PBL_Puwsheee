@@ -331,6 +331,7 @@ namespace PBL_Puwsheee
 
         private void chartsButton_Click(object sender, EventArgs e)
         {
+           /*
             Charts charts = new Charts(userInfo) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             this.guna2ShadowPanel1.Controls.Add(charts);
             charts.Show();
@@ -348,6 +349,15 @@ namespace PBL_Puwsheee
             analysisButton.BackColor = Color.FromArgb(33, 21, 41);
             testButton.BackColor = Color.FromArgb(33, 21, 41);
             #endregion
+           */
+
+            
+
+            Charts ch = new Charts(userInfo);
+            ch.ShowDialog();
+
+
+
         }
     }
 }

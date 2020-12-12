@@ -45,6 +45,7 @@ namespace PBL_Puwsheee
         public Charts()
         {
             InitializeComponent();
+            this.ControlBox = false;
         }
 
         public Charts(UserInfo userInfo)
@@ -61,6 +62,7 @@ namespace PBL_Puwsheee
             LoadAnalysisCharts();
             moodCountSMALL.Size = new Size(122, 41);
             moodCountSMALL.Location = new Point(41, 78);
+            this.Size = new Size(1360, 751);
         }
 
         private void resultsButton_Click(object sender, EventArgs e)

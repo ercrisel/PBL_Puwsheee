@@ -65,7 +65,7 @@ namespace PBL_Puwsheee
             this.resultsButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.resultsButton.HoverState.Parent = this.resultsButton;
             this.resultsButton.Location = new System.Drawing.Point(661, 11);
-            this.resultsButton.Margin = new System.Windows.Forms.Padding(2);
+            this.resultsButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.resultsButton.Name = "resultsButton";
             this.resultsButton.ShadowDecoration.Parent = this.resultsButton;
             this.resultsButton.Size = new System.Drawing.Size(81, 37);
@@ -76,7 +76,7 @@ namespace PBL_Puwsheee
             // scoreHistoryCartesianChart
             // 
             this.scoreHistoryCartesianChart.Location = new System.Drawing.Point(24, 38);
-            this.scoreHistoryCartesianChart.Margin = new System.Windows.Forms.Padding(2);
+            this.scoreHistoryCartesianChart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.scoreHistoryCartesianChart.Name = "scoreHistoryCartesianChart";
             this.scoreHistoryCartesianChart.Size = new System.Drawing.Size(829, 367);
             this.scoreHistoryCartesianChart.TabIndex = 6;
@@ -85,7 +85,7 @@ namespace PBL_Puwsheee
             // moodEntriesPointChart
             // 
             this.moodEntriesPointChart.Location = new System.Drawing.Point(24, 38);
-            this.moodEntriesPointChart.Margin = new System.Windows.Forms.Padding(2);
+            this.moodEntriesPointChart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.moodEntriesPointChart.Name = "moodEntriesPointChart";
             this.moodEntriesPointChart.Size = new System.Drawing.Size(829, 367);
             this.moodEntriesPointChart.TabIndex = 0;
@@ -94,7 +94,7 @@ namespace PBL_Puwsheee
             // activityCountPieChart
             // 
             this.activityCountPieChart.Location = new System.Drawing.Point(11, 66);
-            this.activityCountPieChart.Margin = new System.Windows.Forms.Padding(2);
+            this.activityCountPieChart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.activityCountPieChart.Name = "activityCountPieChart";
             this.activityCountPieChart.Size = new System.Drawing.Size(308, 288);
             this.activityCountPieChart.TabIndex = 0;
@@ -103,7 +103,7 @@ namespace PBL_Puwsheee
             // moodCountCartesianChart
             // 
             this.moodCountCartesianChart.Location = new System.Drawing.Point(329, 47);
-            this.moodCountCartesianChart.Margin = new System.Windows.Forms.Padding(2);
+            this.moodCountCartesianChart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.moodCountCartesianChart.Name = "moodCountCartesianChart";
             this.moodCountCartesianChart.Size = new System.Drawing.Size(532, 337);
             this.moodCountCartesianChart.TabIndex = 7;
@@ -122,7 +122,7 @@ namespace PBL_Puwsheee
             this.resetButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.resetButton.HoverState.Parent = this.resetButton;
             this.resetButton.Location = new System.Drawing.Point(889, 11);
-            this.resetButton.Margin = new System.Windows.Forms.Padding(2);
+            this.resetButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.resetButton.Name = "resetButton";
             this.resetButton.ShadowDecoration.Parent = this.resetButton;
             this.resetButton.Size = new System.Drawing.Size(63, 22);
@@ -139,7 +139,7 @@ namespace PBL_Puwsheee
             this.startDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.startDateTimePicker.HoverState.Parent = this.startDateTimePicker;
             this.startDateTimePicker.Location = new System.Drawing.Point(224, 11);
-            this.startDateTimePicker.Margin = new System.Windows.Forms.Padding(2);
+            this.startDateTimePicker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.startDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.startDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.startDateTimePicker.Name = "startDateTimePicker";
@@ -158,7 +158,7 @@ namespace PBL_Puwsheee
             this.endDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.endDateTimePicker.HoverState.Parent = this.endDateTimePicker;
             this.endDateTimePicker.Location = new System.Drawing.Point(443, 11);
-            this.endDateTimePicker.Margin = new System.Windows.Forms.Padding(2);
+            this.endDateTimePicker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.endDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.endDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.endDateTimePicker.Name = "endDateTimePicker";
@@ -175,7 +175,7 @@ namespace PBL_Puwsheee
             this.thePanel.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(218)))), ((int)(((byte)(196)))));
             this.thePanel.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(145)))), ((int)(((byte)(172)))));
             this.thePanel.Location = new System.Drawing.Point(38, 113);
-            this.thePanel.Margin = new System.Windows.Forms.Padding(2);
+            this.thePanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.thePanel.Name = "thePanel";
             this.thePanel.ShadowDecoration.Parent = this.thePanel;
             this.thePanel.Size = new System.Drawing.Size(888, 441);
@@ -187,7 +187,7 @@ namespace PBL_Puwsheee
             this.testScorePanel.BorderRadius = 20;
             this.testScorePanel.Controls.Add(this.scoreHistoryCartesianChart);
             this.testScorePanel.Location = new System.Drawing.Point(3, 11);
-            this.testScorePanel.Margin = new System.Windows.Forms.Padding(2);
+            this.testScorePanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.testScorePanel.Name = "testScorePanel";
             this.testScorePanel.ShadowDecoration.Parent = this.testScorePanel;
             this.testScorePanel.Size = new System.Drawing.Size(880, 425);
@@ -200,7 +200,7 @@ namespace PBL_Puwsheee
             this.moodEntriesPanel.BorderRadius = 10;
             this.moodEntriesPanel.Controls.Add(this.moodEntriesPointChart);
             this.moodEntriesPanel.Location = new System.Drawing.Point(41, 124);
-            this.moodEntriesPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.moodEntriesPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.moodEntriesPanel.Name = "moodEntriesPanel";
             this.moodEntriesPanel.ShadowDecoration.Parent = this.moodEntriesPanel;
             this.moodEntriesPanel.Size = new System.Drawing.Size(883, 428);
@@ -214,7 +214,7 @@ namespace PBL_Puwsheee
             this.activityCountPanel.Controls.Add(this.activityCountCartesianChart);
             this.activityCountPanel.Controls.Add(this.activityCountPieChart);
             this.activityCountPanel.Location = new System.Drawing.Point(41, 124);
-            this.activityCountPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.activityCountPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.activityCountPanel.Name = "activityCountPanel";
             this.activityCountPanel.ShadowDecoration.Parent = this.activityCountPanel;
             this.activityCountPanel.Size = new System.Drawing.Size(881, 425);
@@ -224,7 +224,7 @@ namespace PBL_Puwsheee
             // activityCountCartesianChart
             // 
             this.activityCountCartesianChart.Location = new System.Drawing.Point(329, 47);
-            this.activityCountCartesianChart.Margin = new System.Windows.Forms.Padding(2);
+            this.activityCountCartesianChart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.activityCountCartesianChart.Name = "activityCountCartesianChart";
             this.activityCountCartesianChart.Size = new System.Drawing.Size(532, 337);
             this.activityCountCartesianChart.TabIndex = 1;
@@ -237,7 +237,7 @@ namespace PBL_Puwsheee
             this.moodCountPanel.Controls.Add(this.moodCountPieChart);
             this.moodCountPanel.Controls.Add(this.moodCountCartesianChart);
             this.moodCountPanel.Location = new System.Drawing.Point(41, 124);
-            this.moodCountPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.moodCountPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.moodCountPanel.Name = "moodCountPanel";
             this.moodCountPanel.ShadowDecoration.Parent = this.moodCountPanel;
             this.moodCountPanel.Size = new System.Drawing.Size(881, 425);
@@ -246,7 +246,7 @@ namespace PBL_Puwsheee
             // moodCountPieChart
             // 
             this.moodCountPieChart.Location = new System.Drawing.Point(11, 66);
-            this.moodCountPieChart.Margin = new System.Windows.Forms.Padding(2);
+            this.moodCountPieChart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.moodCountPieChart.Name = "moodCountPieChart";
             this.moodCountPieChart.Size = new System.Drawing.Size(308, 288);
             this.moodCountPieChart.TabIndex = 6;
@@ -266,7 +266,7 @@ namespace PBL_Puwsheee
             this.testScoreSMALL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.testScoreSMALL.HoverState.Parent = this.testScoreSMALL;
             this.testScoreSMALL.Location = new System.Drawing.Point(403, 93);
-            this.testScoreSMALL.Margin = new System.Windows.Forms.Padding(2);
+            this.testScoreSMALL.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.testScoreSMALL.Name = "testScoreSMALL";
             this.testScoreSMALL.ShadowDecoration.Parent = this.testScoreSMALL;
             this.testScoreSMALL.Size = new System.Drawing.Size(122, 27);
@@ -288,7 +288,7 @@ namespace PBL_Puwsheee
             this.moodEntriesSMALL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.moodEntriesSMALL.HoverState.Parent = this.moodEntriesSMALL;
             this.moodEntriesSMALL.Location = new System.Drawing.Point(283, 93);
-            this.moodEntriesSMALL.Margin = new System.Windows.Forms.Padding(2);
+            this.moodEntriesSMALL.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.moodEntriesSMALL.Name = "moodEntriesSMALL";
             this.moodEntriesSMALL.ShadowDecoration.Parent = this.moodEntriesSMALL;
             this.moodEntriesSMALL.Size = new System.Drawing.Size(122, 27);
@@ -310,7 +310,7 @@ namespace PBL_Puwsheee
             this.activityCountSMALL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.activityCountSMALL.HoverState.Parent = this.activityCountSMALL;
             this.activityCountSMALL.Location = new System.Drawing.Point(162, 93);
-            this.activityCountSMALL.Margin = new System.Windows.Forms.Padding(2);
+            this.activityCountSMALL.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.activityCountSMALL.Name = "activityCountSMALL";
             this.activityCountSMALL.ShadowDecoration.Parent = this.activityCountSMALL;
             this.activityCountSMALL.Size = new System.Drawing.Size(122, 27);
@@ -332,7 +332,7 @@ namespace PBL_Puwsheee
             this.moodCountSMALL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.moodCountSMALL.HoverState.Parent = this.moodCountSMALL;
             this.moodCountSMALL.Location = new System.Drawing.Point(41, 93);
-            this.moodCountSMALL.Margin = new System.Windows.Forms.Padding(2);
+            this.moodCountSMALL.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.moodCountSMALL.Name = "moodCountSMALL";
             this.moodCountSMALL.ShadowDecoration.Parent = this.moodCountSMALL;
             this.moodCountSMALL.Size = new System.Drawing.Size(122, 27);
@@ -346,10 +346,7 @@ namespace PBL_Puwsheee
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.ClientSize = new System.Drawing.Size(963, 569);
-            this.Controls.Add(this.moodEntriesPanel);
-            this.Controls.Add(this.activityCountPanel);
-            this.Controls.Add(this.moodCountPanel);
+            this.ClientSize = new System.Drawing.Size(1020, 610);
             this.Controls.Add(this.testScoreSMALL);
             this.Controls.Add(this.moodEntriesSMALL);
             this.Controls.Add(this.activityCountSMALL);
@@ -359,10 +356,15 @@ namespace PBL_Puwsheee
             this.Controls.Add(this.resetButton);
             this.Controls.Add(this.resultsButton);
             this.Controls.Add(this.thePanel);
+            this.Controls.Add(this.moodEntriesPanel);
+            this.Controls.Add(this.activityCountPanel);
+            this.Controls.Add(this.moodCountPanel);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MinimumSize = new System.Drawing.Size(1020, 610);
             this.Name = "Charts";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Charts";
             this.Load += new System.EventHandler(this.Charts_Load);
             this.thePanel.ResumeLayout(false);
