@@ -274,7 +274,11 @@ namespace PBL_Puwsheee
             Application.Exit();
         }
 
-       
+        private void enterCodeTextBox_TextChanged(object sender, EventArgs e)
+        {
+            enterCodeTextBox.CharacterCasing = CharacterCasing.Upper;
+            enterCodeTextBox.PlaceholderText = String.Empty;
+        }
     }
 
     

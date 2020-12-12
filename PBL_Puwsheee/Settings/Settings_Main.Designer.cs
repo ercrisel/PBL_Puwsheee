@@ -199,7 +199,7 @@
             this.savechangesButton.CustomImages.Parent = this.savechangesButton;
             this.savechangesButton.Enabled = false;
             this.savechangesButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.savechangesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.savechangesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.savechangesButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.savechangesButton.HoverState.Parent = this.savechangesButton;
             this.savechangesButton.Location = new System.Drawing.Point(96, 424);
@@ -220,7 +220,7 @@
             this.changepasswordButton.CustomImages.Parent = this.changepasswordButton;
             this.changepasswordButton.Enabled = false;
             this.changepasswordButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.changepasswordButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.changepasswordButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.changepasswordButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.changepasswordButton.HoverState.Parent = this.changepasswordButton;
             this.changepasswordButton.Location = new System.Drawing.Point(78, 302);
@@ -378,7 +378,7 @@
             this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2Button1.CustomImages.Parent = this.guna2Button1;
             this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.guna2Button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Location = new System.Drawing.Point(633, 24);
@@ -397,7 +397,7 @@
             this.guna2Button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2Button2.CustomImages.Parent = this.guna2Button2;
             this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(27)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.guna2Button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
             this.guna2Button2.Location = new System.Drawing.Point(779, 24);
@@ -658,7 +658,7 @@
             this.submitCode.CheckedState.Parent = this.submitCode;
             this.submitCode.CustomImages.Parent = this.submitCode;
             this.submitCode.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.submitCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.submitCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.submitCode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.submitCode.HoverState.Parent = this.submitCode;
             this.submitCode.Location = new System.Drawing.Point(297, 353);
@@ -684,7 +684,7 @@
             this.enterCodeTextBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
             this.enterCodeTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.enterCodeTextBox.FocusedState.Parent = this.enterCodeTextBox;
-            this.enterCodeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enterCodeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.enterCodeTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.enterCodeTextBox.HoverState.Parent = this.enterCodeTextBox;
             this.enterCodeTextBox.Location = new System.Drawing.Point(116, 353);

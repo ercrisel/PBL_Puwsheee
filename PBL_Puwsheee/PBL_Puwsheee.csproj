@@ -367,6 +367,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\GOTHIC.TTF" />
     <None Include="Resources\Robaga-Rounded-Black.ttf" />
     <None Include="Resources\SamplePhoto.png" />
   </ItemGroup>

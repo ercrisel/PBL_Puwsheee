@@ -80,7 +80,7 @@
             this.passwordTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.passwordTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.passwordTextbox.FocusedState.Parent = this.passwordTextbox;
-            this.passwordTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.passwordTextbox.Font = new System.Drawing.Font("Century Gothic", 13F);
             this.passwordTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.passwordTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.passwordTextbox.HoverState.Parent = this.passwordTextbox;
@@ -115,7 +115,7 @@
             this.loginButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.loginButton.CustomImages.Parent = this.loginButton;
             this.loginButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
-            this.loginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.loginButton.Font = new System.Drawing.Font("Century Gothic", 13F);
             this.loginButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.loginButton.HoverState.Parent = this.loginButton;
             this.loginButton.Location = new System.Drawing.Point(165, 278);
@@ -141,7 +141,7 @@
             this.usernameTextbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.usernameTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.usernameTextbox.FocusedState.Parent = this.usernameTextbox;
-            this.usernameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.usernameTextbox.Font = new System.Drawing.Font("Century Gothic", 13F);
             this.usernameTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.usernameTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.usernameTextbox.HoverState.Parent = this.usernameTextbox;
@@ -222,7 +222,7 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Typo Round Bold Demo", 8.25F);
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(175, 315);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(176, 316);
             this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(123, 16);
