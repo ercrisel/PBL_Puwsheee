@@ -507,6 +507,7 @@
             // 
             this.submitCodeButton.BorderRadius = 20;
             this.submitCodeButton.CheckedState.Parent = this.submitCodeButton;
+            this.submitCodeButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.submitCodeButton.CustomImages.Parent = this.submitCodeButton;
             this.submitCodeButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.submitCodeButton.Font = new System.Drawing.Font("Century Gothic", 10F);
@@ -558,6 +559,7 @@
             // 
             this.showPasswordIcon.BackColor = System.Drawing.Color.Transparent;
             this.showPasswordIcon.CheckedState.Parent = this.showPasswordIcon;
+            this.showPasswordIcon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.showPasswordIcon.CustomImages.Parent = this.showPasswordIcon;
             this.showPasswordIcon.FillColor = System.Drawing.Color.Transparent;
             this.showPasswordIcon.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -577,6 +579,7 @@
             // 
             this.showConfirmPasswordButton.BackColor = System.Drawing.Color.Transparent;
             this.showConfirmPasswordButton.CheckedState.Parent = this.showConfirmPasswordButton;
+            this.showConfirmPasswordButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.showConfirmPasswordButton.CustomImages.Parent = this.showConfirmPasswordButton;
             this.showConfirmPasswordButton.FillColor = System.Drawing.Color.Transparent;
             this.showConfirmPasswordButton.Font = new System.Drawing.Font("Segoe UI", 9F);

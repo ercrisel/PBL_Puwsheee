@@ -242,6 +242,7 @@
             // 
             this.endDateTimePicker.BorderRadius = 10;
             this.endDateTimePicker.CheckedState.Parent = this.endDateTimePicker;
+            this.endDateTimePicker.Cursor = System.Windows.Forms.Cursors.Hand;
             this.endDateTimePicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
             this.endDateTimePicker.Font = new System.Drawing.Font("Typo Round Bold Demo", 10F);
             this.endDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
@@ -262,6 +263,7 @@
             // 
             this.startDateTimePicker.BorderRadius = 10;
             this.startDateTimePicker.CheckedState.Parent = this.startDateTimePicker;
+            this.startDateTimePicker.Cursor = System.Windows.Forms.Cursors.Hand;
             this.startDateTimePicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
             this.startDateTimePicker.Font = new System.Drawing.Font("Typo Round Bold Demo", 10F);
             this.startDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
@@ -282,6 +284,7 @@
             // 
             this.moodComboBox.BackColor = System.Drawing.Color.Transparent;
             this.moodComboBox.BorderRadius = 10;
+            this.moodComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.moodComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.moodComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.moodComboBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));

@@ -49,7 +49,7 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Typo Round Bold Demo", 9F);
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(46, 67);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(46, 47);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(64, 17);
             this.guna2HtmlLabel1.TabIndex = 0;
@@ -60,7 +60,7 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Typo Round Bold Demo", 9F);
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(46, 211);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(46, 191);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(86, 17);
             this.guna2HtmlLabel2.TabIndex = 1;
@@ -70,21 +70,21 @@
             // 
             this.currentscoreProgressBar.Controls.Add(this.currentscoreLabel);
             this.currentscoreProgressBar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.currentscoreProgressBar.Location = new System.Drawing.Point(56, 88);
+            this.currentscoreProgressBar.Location = new System.Drawing.Point(51, 68);
             this.currentscoreProgressBar.Maximum = 50;
             this.currentscoreProgressBar.Name = "currentscoreProgressBar";
             this.currentscoreProgressBar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.currentscoreProgressBar.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.currentscoreProgressBar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.currentscoreProgressBar.ShadowDecoration.Parent = this.currentscoreProgressBar;
-            this.currentscoreProgressBar.Size = new System.Drawing.Size(109, 105);
+            this.currentscoreProgressBar.Size = new System.Drawing.Size(110, 110);
             this.currentscoreProgressBar.TabIndex = 3;
             // 
             // currentscoreLabel
             // 
             this.currentscoreLabel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.currentscoreLabel.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.currentscoreLabel.DefaultText = "50";
+            this.currentscoreLabel.DefaultText = "48";
             this.currentscoreLabel.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.currentscoreLabel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.currentscoreLabel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -93,20 +93,19 @@
             this.currentscoreLabel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.currentscoreLabel.FocusedState.BorderColor = System.Drawing.Color.Transparent;
             this.currentscoreLabel.FocusedState.Parent = this.currentscoreLabel;
-            this.currentscoreLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 10F);
+            this.currentscoreLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 8F);
             this.currentscoreLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.currentscoreLabel.HoverState.BorderColor = System.Drawing.Color.Transparent;
             this.currentscoreLabel.HoverState.Parent = this.currentscoreLabel;
             this.currentscoreLabel.IconLeftSize = new System.Drawing.Size(0, 0);
             this.currentscoreLabel.IconRightSize = new System.Drawing.Size(0, 0);
-            this.currentscoreLabel.Location = new System.Drawing.Point(34, 35);
+            this.currentscoreLabel.Location = new System.Drawing.Point(36, 38);
             this.currentscoreLabel.Margin = new System.Windows.Forms.Padding(0);
             this.currentscoreLabel.Multiline = true;
             this.currentscoreLabel.Name = "currentscoreLabel";
             this.currentscoreLabel.PasswordChar = '\0';
             this.currentscoreLabel.PlaceholderText = "";
             this.currentscoreLabel.SelectedText = "";
-            this.currentscoreLabel.SelectionStart = 2;
             this.currentscoreLabel.ShadowDecoration.Parent = this.currentscoreLabel;
             this.currentscoreLabel.Size = new System.Drawing.Size(37, 35);
             this.currentscoreLabel.TabIndex = 11;
@@ -116,21 +115,21 @@
             // 
             this.averagescoreProgressBar.Controls.Add(this.averageLabel);
             this.averagescoreProgressBar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
-            this.averagescoreProgressBar.Location = new System.Drawing.Point(51, 232);
+            this.averagescoreProgressBar.Location = new System.Drawing.Point(51, 212);
             this.averagescoreProgressBar.Maximum = 50;
             this.averagescoreProgressBar.Name = "averagescoreProgressBar";
             this.averagescoreProgressBar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
             this.averagescoreProgressBar.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.averagescoreProgressBar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.averagescoreProgressBar.ShadowDecoration.Parent = this.averagescoreProgressBar;
-            this.averagescoreProgressBar.Size = new System.Drawing.Size(109, 105);
+            this.averagescoreProgressBar.Size = new System.Drawing.Size(110, 110);
             this.averagescoreProgressBar.TabIndex = 4;
             // 
             // averageLabel
             // 
             this.averageLabel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.averageLabel.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.averageLabel.DefaultText = "50";
+            this.averageLabel.DefaultText = "48";
             this.averageLabel.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.averageLabel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.averageLabel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -139,20 +138,19 @@
             this.averageLabel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(198)))), ((int)(((byte)(187)))));
             this.averageLabel.FocusedState.BorderColor = System.Drawing.Color.Transparent;
             this.averageLabel.FocusedState.Parent = this.averageLabel;
-            this.averageLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 10F);
+            this.averageLabel.Font = new System.Drawing.Font("Typo Round Bold Demo", 8F);
             this.averageLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.averageLabel.HoverState.BorderColor = System.Drawing.Color.Transparent;
             this.averageLabel.HoverState.Parent = this.averageLabel;
             this.averageLabel.IconLeftSize = new System.Drawing.Size(0, 0);
             this.averageLabel.IconRightSize = new System.Drawing.Size(0, 0);
-            this.averageLabel.Location = new System.Drawing.Point(36, 35);
+            this.averageLabel.Location = new System.Drawing.Point(36, 38);
             this.averageLabel.Margin = new System.Windows.Forms.Padding(0);
             this.averageLabel.Multiline = true;
             this.averageLabel.Name = "averageLabel";
             this.averageLabel.PasswordChar = '\0';
             this.averageLabel.PlaceholderText = "";
             this.averageLabel.SelectedText = "";
-            this.averageLabel.SelectionStart = 2;
             this.averageLabel.ShadowDecoration.Parent = this.averageLabel;
             this.averageLabel.Size = new System.Drawing.Size(37, 35);
             this.averageLabel.TabIndex = 12;
@@ -240,7 +238,7 @@
             this.testresultLabel.HoverState.BorderColor = System.Drawing.Color.Transparent;
             this.testresultLabel.HoverState.Parent = this.testresultLabel;
             this.testresultLabel.Location = new System.Drawing.Point(258, 44);
-            this.testresultLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.testresultLabel.Margin = new System.Windows.Forms.Padding(4);
             this.testresultLabel.Name = "testresultLabel";
             this.testresultLabel.PasswordChar = '\0';
             this.testresultLabel.PlaceholderText = "";

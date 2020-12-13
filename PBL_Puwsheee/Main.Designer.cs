@@ -34,8 +34,9 @@
             this.MinBtn = new Guna.UI2.WinForms.Guna2CircleButton();
             this.windowsPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.navBarPanel = new System.Windows.Forms.Panel();
-            this.visualizationButton = new Guna.UI2.WinForms.Guna2Button();
             this.settingsButton = new Guna.UI2.WinForms.Guna2Button();
+            this.logOut = new Guna.UI2.WinForms.Guna2Button();
+            this.visualizationButton = new Guna.UI2.WinForms.Guna2Button();
             this.playablesButton = new Guna.UI2.WinForms.Guna2Button();
             this.analysisButton = new Guna.UI2.WinForms.Guna2Button();
             this.chartsButton = new Guna.UI2.WinForms.Guna2Button();
@@ -52,7 +53,6 @@
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.usericonPicture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.usernameLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.logOut = new Guna.UI2.WinForms.Guna2Button();
             this.windowsPanel.SuspendLayout();
             this.navBarPanel.SuspendLayout();
             this.bgPanel.SuspendLayout();
@@ -145,6 +145,43 @@
             this.navBarPanel.MouseEnter += new System.EventHandler(this.Main_Load);
             this.navBarPanel.MouseLeave += new System.EventHandler(this.Main_Load);
             // 
+            // settingsButton
+            // 
+            this.settingsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.settingsButton.BorderRadius = 10;
+            this.settingsButton.CheckedState.Parent = this.settingsButton;
+            this.settingsButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsButton.CustomImages.Parent = this.settingsButton;
+            this.settingsButton.FillColor = System.Drawing.Color.Transparent;
+            this.settingsButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.settingsButton.ForeColor = System.Drawing.Color.White;
+            this.settingsButton.HoverState.Parent = this.settingsButton;
+            this.settingsButton.Location = new System.Drawing.Point(27, 509);
+            this.settingsButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.settingsButton.Name = "settingsButton";
+            this.settingsButton.ShadowDecoration.Parent = this.settingsButton;
+            this.settingsButton.Size = new System.Drawing.Size(22, 22);
+            this.settingsButton.TabIndex = 7;
+            this.settingsButton.Text = " ";
+            this.settingsButton.Click += new System.EventHandler(this.clickOptions);
+            // 
+            // logOut
+            // 
+            this.logOut.CheckedState.Parent = this.logOut;
+            this.logOut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.logOut.CustomImages.Parent = this.logOut;
+            this.logOut.FillColor = System.Drawing.Color.Transparent;
+            this.logOut.Font = new System.Drawing.Font("Robaga Rounded Black", 10F);
+            this.logOut.ForeColor = System.Drawing.Color.White;
+            this.logOut.HoverState.Parent = this.logOut;
+            this.logOut.Location = new System.Drawing.Point(-17, 529);
+            this.logOut.Name = "logOut";
+            this.logOut.ShadowDecoration.Parent = this.logOut;
+            this.logOut.Size = new System.Drawing.Size(109, 41);
+            this.logOut.TabIndex = 0;
+            this.logOut.Text = "Log-out";
+            this.logOut.Click += new System.EventHandler(this.logOut_Click);
+            // 
             // visualizationButton
             // 
             this.visualizationButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -165,26 +202,6 @@
             this.visualizationButton.Text = " ";
             this.visualizationButton.Visible = false;
             this.visualizationButton.Click += new System.EventHandler(this.clickVisualization);
-            // 
-            // settingsButton
-            // 
-            this.settingsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.settingsButton.BorderRadius = 10;
-            this.settingsButton.CheckedState.Parent = this.settingsButton;
-            this.settingsButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsButton.CustomImages.Parent = this.settingsButton;
-            this.settingsButton.FillColor = System.Drawing.Color.Transparent;
-            this.settingsButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.settingsButton.ForeColor = System.Drawing.Color.White;
-            this.settingsButton.HoverState.Parent = this.settingsButton;
-            this.settingsButton.Location = new System.Drawing.Point(27, 509);
-            this.settingsButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.settingsButton.Name = "settingsButton";
-            this.settingsButton.ShadowDecoration.Parent = this.settingsButton;
-            this.settingsButton.Size = new System.Drawing.Size(22, 22);
-            this.settingsButton.TabIndex = 7;
-            this.settingsButton.Text = " ";
-            this.settingsButton.Click += new System.EventHandler(this.clickOptions);
             // 
             // playablesButton
             // 
@@ -406,27 +423,11 @@
             this.usernameLabel.Font = new System.Drawing.Font("Robaga Rounded Black", 11F);
             this.usernameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(227)))));
             this.usernameLabel.Location = new System.Drawing.Point(80, 19);
-            this.usernameLabel.Margin = new System.Windows.Forms.Padding(4);
+            this.usernameLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.usernameLabel.Name = "usernameLabel";
             this.usernameLabel.Size = new System.Drawing.Size(82, 20);
             this.usernameLabel.TabIndex = 9;
             this.usernameLabel.Text = "Username";
-            // 
-            // logOut
-            // 
-            this.logOut.CheckedState.Parent = this.logOut;
-            this.logOut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.logOut.CustomImages.Parent = this.logOut;
-            this.logOut.FillColor = System.Drawing.Color.Transparent;
-            this.logOut.Font = new System.Drawing.Font("Robaga Rounded Black", 10F);
-            this.logOut.ForeColor = System.Drawing.Color.White;
-            this.logOut.HoverState.Parent = this.logOut;
-            this.logOut.Location = new System.Drawing.Point(-17, 529);
-            this.logOut.Name = "logOut";
-            this.logOut.ShadowDecoration.Parent = this.logOut;
-            this.logOut.Size = new System.Drawing.Size(109, 41);
-            this.logOut.TabIndex = 0;
-            this.logOut.Text = "Log-out";
             // 
             // Main
             // 

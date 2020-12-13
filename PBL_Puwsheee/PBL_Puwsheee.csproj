@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{BA955C79-1A4D-4F0A-A191-2B0DAB7B9FF5}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <RootNamespace>PBL_Puwsheee</RootNamespace>
     <AssemblyName>PBL_Puwsheee</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>

@@ -142,6 +142,7 @@ namespace PBL_Puwsheee
             showPasswordIcon.Image = PBL_Puwsheee.Properties.Resources.show_password;
             messageBubbleOHNO.Image = PBL_Puwsheee.Properties.Resources.messageFail;
             messgaeBubbleYEY.Image = PBL_Puwsheee.Properties.Resources.messageSuccess;
+            exitButton.BackgroundImage = PBL_Puwsheee.Properties.Resources.Exit;
         }
 
         private void enterKeyLogIn(object sender, KeyEventArgs e)
